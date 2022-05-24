@@ -1,10 +1,34 @@
 {
-	"sections":{
-		"custom-content":{
-			"type": "custom-content"
-		}
-	},
-   "order":[
-    "custom-content"
-   ]
+  "sections": {
+    "custom-content": {
+      "type": "custom-content",
+      "settings": {
+        "code": "<div class=\"homepagelogo\"> <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0144\/7018\/5017\/files\/cc_logo_2fb0ad95-164b-4859-97ae-e2ef1996a278.png\" id=\"LogoImage\" alt=\"Couture Candy\" border=\"0\">\n<\/div>",
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding_top": "",
+        "section_padding_right": "",
+        "section_padding_bottom": "",
+        "section_padding_left": "",
+        "hidden_section": false
+      }
+    },
+    "165340057706066aef": {
+      "type": "custom-content",
+      "settings": {
+        "code": "<div class=\"home_banner\">\n\t<a href=\"https:\/\/www.couturecandy.com\/collections\/dresses\">\n\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0144\/7018\/5017\/files\/couture-candy-august-is-social-season-2021_878210f0-8d04-4e01-a8af-dfa72ad00245.jpg\" august=\"\" is=\"\" social=\"\" season=\"\">\n\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0144\/7018\/5017\/files\/couture-candy-august-is-social-season-2021_878210f0-8d04-4e01-a8af-dfa72ad00245.jpg\" alt=\"2021 August is Social Season\" class=\"mobile_image\">\n\t<\/a>\n<\/div>",
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding_top": "",
+        "section_padding_right": "",
+        "section_padding_bottom": "",
+        "section_padding_left": "",
+        "hidden_section": false
+      }
+    }
+  },
+  "order": [
+    "custom-content",
+    "165340057706066aef"
+  ]
 }
