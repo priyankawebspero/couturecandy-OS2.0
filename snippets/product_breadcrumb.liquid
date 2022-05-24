@@ -1,0 +1,20 @@
+{% assign instructions = product.metafields.yotpo %}
+{% assign key = 'bottomline' %}
+{% assign get = instructions.key | split: "text-m" %}
+
+<div style="display:none;">{{ get }}</div>
+<nav class="shopify-breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+          <li itemprop="itemListElement" itemscope
+      itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="/"><span itemprop="name">{{ 'general.breadcrumbs.home' | t }}</span></a>
+              <meta itemprop="position" content="1" />
+          </li>
+        {%- assign vname = product.vendor -%}
+          {%- if vname != blank -%}
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+              <a itemprop="item" href="/collections/{{vname  | handle }}"><span itemprop="name">{{ vname  }}</span></a>
+               <meta itemprop="position" content="{%- if template contains 'product' and collection.url -%}
+          3 {% else %} 2 {% endif %}" />
+            </li>
+           {%- endif -%}
+           <span class="breadcrumb-last">{{ product.title }}</span></nav>

@@ -1,0 +1,87 @@
+<div class="sidebarmenu_div bridesmaid_sidebar">
+        <div class="parentcategoryblock open">
+                <span class="TitleHeading open ">All Popular Bridesmaid Dresses</span>
+                   <ul class="sidemenu">
+              {% for link in linklists.all-popular-bridesmaid-dresses.links %}
+             <li ><h4><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h4></li>
+              {% endfor %} 
+            </ul>               
+        </div>
+        <div class="parentcategoryblock">
+                <span class="TitleHeading">Bridesmaid Dresses By Style</span>
+                
+             <ul class="sidemenu">
+              {% for link in linklists.bridesmaid-dresses-by-style.links %}
+               <li ><h4><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h4></li>
+              {% endfor %} 
+            </ul>
+        </div>
+        <div class="parentcategoryblock">
+                <span class="TitleHeading">Bridesmaid Dresses By Length</span>
+                
+             <ul class="sidemenu">
+              {% for link in linklists.bridesmaid-dresses-by-length.links %}
+               <li ><h4><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h4></li>
+              {% endfor %} 
+            </ul>
+        </div>
+        <div class="parentcategoryblock">
+                <span class="TitleHeading">Bridesmaid Dresses By Size</span>
+                    <ul class="sidemenu">
+              {% for link in linklists.bridesmaid-dresses-by-size.links %}
+                     <li ><h4><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h4></li>
+              {% endfor %} 
+            </ul>
+        </div>
+        <div class="parentcategoryblock">
+                <span class="TitleHeading">Bridesmaid Dresses By Fabric</span>
+                        <ul class="sidemenu">
+              {% for link in linklists.bridesmaid-dresses-by-fabric.links %}
+              <li ><h4><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h4></li>
+              {% endfor %} 
+            </ul>
+        </div>
+        <div class="parentcategoryblock">
+                <span class="TitleHeading">Bridesmaid Dresses By Neckline</span>
+                    <ul class="sidemenu">
+              {% for link in linklists.bridesmaid-dresses-by-neckline.links %}
+              <li ><h4><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h4></li>
+              {% endfor %} 
+            </ul>
+        </div>
+  		<div class="parentcategoryblock">
+                <span class="TitleHeading">Bridesmaid Dresses By Color</span>
+                    <ul class="sidemenu">
+              {% for link in linklists.bridesmaid-dresses-by-color.links %}
+              <li ><h4><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h4></li>
+              {% endfor %} 
+            </ul>
+        </div>
+  {%comment%}
+ 		<div class="parentcategoryblock">
+                <span class="TitleHeading">Bridesmaid Dresses By Designer</span>
+                    <ul class="sidemenu">
+              {% for link in linklists.bridesmaid-dresses-by-designer.links %}
+              <li ><h4><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h4></li>
+              {% endfor %} 
+            </ul>
+        </div>
+  {%endcomment%}
+  <div class="parentcategoryblock">
+                	<span class="TitleHeading">Bridesmaid by Season</span>
+                    <ul class="sidemenu">
+              {% for link in linklists.bridesmaid-by-season.links %}
+              <li ><h4><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h4></li>
+              {% endfor %} 
+            </ul>
+        </div>
+    <div class="parentcategoryblock">
+                	<span class="TitleHeading">Bridesmaid By Budget</span>
+                    <ul class="sidemenu">
+              {% for link in linklists.bridesmaid-by-budget.links %}
+              <li ><h4><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h4></li>
+              {% endfor %} 
+            </ul>
+        </div>
+  
+</div>

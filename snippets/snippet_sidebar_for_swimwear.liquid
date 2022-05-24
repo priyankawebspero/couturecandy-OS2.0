@@ -1,0 +1,17 @@
+<div class="sidebarmenu_div">
+    <div class="parentcategoryblock open">
+        <h5 class="TitleHeading open ">swimwear</h5>
+           <ul class="sidemenu">
+              {% for link in linklists.swimwear.links %}
+                     <li class=""><h3><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+            </ul>       
+    </div>
+    <div class="headings_side">
+        <a href="/collections/accessories">shop Accessories</a>
+        <a href="/collections/apparel">shop Clothing</a>
+        <a href="/collections/dresses">shop Dresses</a>
+        <a href="/pages/designers">shop by designers</a>
+               
+    </div>
+</div>

@@ -1,0 +1,21 @@
+{%- assign allproductin_a_cat = 0 -%}
+<style>
+  .sidebarmenu_div .parentcategoryblock .TitleHeading.onafter:after{
+    display:none;
+  }
+</style>
+<div class="sidebarmenu_div">
+    <div class="parentcategoryblock">
+      <h5 class="TitleHeading onafter">CATEGORIES</h5>
+      <ul class="sidemenu {{ collection.handle }}" style="display: block;">
+         <li class=""><h3><a href="/collections/{{ collection.handle }}/Dresses">Dresses</a></h3></li>
+        {% if collection.handle == 'mon-cheri' or collection.handle == '' or collection.handle == '' or collection.handle == 'saiid-kobeisy' or collection.handle == '' or collection.handle == '' %}
+            <li class=""></li>
+          {%- else -%}
+         	<li class="sad">
+         	<h3> <a href="/collections/{{ collection.handle }}/Sale">Sale</a></h3>
+        </li>
+        {%- endif -%} 
+      </ul>
+     </div>
+</div>

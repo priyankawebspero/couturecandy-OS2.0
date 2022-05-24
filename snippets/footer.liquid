@@ -1,0 +1,72 @@
+{%- if settings.html_before_footer != blank -%}<div class="basel-prefooter"><div class="container">{{settings.html_before_footer}}</div></div>{%- endif -%}
+<footer class="footer-container color-scheme-{{settings.footer_color_scheme}}">
+   {%- section 'gl_footer' -%}
+  
+  {% if template == 'index' %}
+  <div class="more_info_coutre_candy">
+    
+    <div class="container">
+      
+      {% include 'footer_more_info' %}
+    
+    </div>
+  
+  </div>
+    {%- endif -%}
+  
+    <div class="addressdiv">
+    
+    <div itemscope itemtype="http://schema.org/LocalBusiness">
+      <div style="display: none;" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+  <img src="https://cdn.shopify.com/s/files/1/0144/7018/5017/files/cc_logo_8b4634e1-85de-4e33-a1e0-819da60312be_140x.png" itemprop="url">
+</div>
+      <span style="display: none;" itemprop="priceRange">$25 - $6000</span>
+  <a style="display: none;" itemprop="url" href="https://www.couturecandy.com/">
+    <div itemprop="name"><strong>CoutureCandy</strong></div>
+  </a>
+  <div style="display: none;" itemprop="description">Discover the newest brands from up and coming designers at the lowest prices | 110% price match guarantee!</div>
+  <div class="addresbar" style="width: 100%; text-align: center; padding-bottom: 8px;text-transform:uppercase;">
+
+      <div style="color:#fff;width: auto;display: inline-block;margin: 0 2px;" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+    <strong>Address : </strong><span itemprop="streetAddress">4050 w Sunset Rd, Suite H – Dock Door 25</span>, <span itemprop="addressLocality">Las Vegas</span>, <span itemprop="addressRegion">NV</span> -  <span itemprop="postalCode">89118</span> <span itemprop="addressCountry">USA</span>
+  </div>
+      <div class="telbar" style="width: auto; display: inline-block; margin: 0 1px;">
+
+  <strong style="color:#fff;">Tel : </strong><span itemprop="telephone"><a href="tel:(855) 445-8601">(855) 445-8601</a></span>
+        <strong style="color:#fff;">Email : </strong><span itemprop="email"><a href="mailto:cs@couturecandy.com">cs@couturecandy.com</a></span>
+      </div> </div>
+</div>
+    
+</div>
+   {%- if settings.copyrights_text != blank -%}
+   <div class="copyrights-wrapper copyrights-{{settings.copyrights_layout}}">
+      <div class="container">
+        <div class="min-footer" style="border-top: 1px solid rgba(255,255,255,.1);">
+            <div class="col-left">{%- if settings.copyrights_text contains 'social_buttons_share' -%}{%- include 'social-sharing', gl_design:'icons-design-default', gl_size:'icons-size-default' -%}{%- elsif settings.copyrights_text contains 'social_buttons_follow' -%}{%- include 'social-sharing', gl_design:'icons-design-default', gl_size:'icons-size-default', follow_social:true -%}{%- else -%}{{settings.copyrights_text}}{%- endif -%}</div>
+            {%- if settings.copyrights_next_text != blank -%}
+            <div class="col-right">{%- if settings.copyrights_next_text contains 'social_buttons_share' -%}{%- include 'social-sharing', gl_design:'icons-design-default', gl_size:'icons-size-default' -%}{%- elsif settings.copyrights_next_text contains 'social_buttons_follow' -%}{%- include 'social-sharing', gl_design:'icons-design-default', gl_size:'icons-size-default', follow_social:true -%}{%- else -%}{{settings.copyrights_next_text}}{%- endif -%}</div>
+            {%- endif -%}
+         </div>
+      </div>
+   </div>
+  
+   {%- endif -%}
+  
+  
+ <script>
+  $(document).ready(function(){
+  $('.moreless-button').click(function () {
+    $('.append-content-custom').slideToggle();
+    if ($('.moreless-button').text() == "Read Less") {
+      $(this).text("Read More");
+    } else {
+      $(this).text("Read Less");
+    }
+  });
+
+  });
+</script>
+  
+
+  
+</footer>

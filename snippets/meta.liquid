@@ -1,0 +1,82 @@
+<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+  <meta name="theme-color" content="{{ settings.color_primary }}">
+  <meta name="author" content="{{ shop.domain | strip_html | strip }}">
+  <meta name="msvalidate.01" content="8BA77E72B27710936ACB44C48B176C68" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Security-Policy" content="block-all-mixed-content">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="google-site-verification" content="uNyud5IX_hzvOUqdb4FrTPFZ4dGGPNeTYGGt8G8-yfQ" />
+ 
+  <meta name="robots" content="index, follow">
+  
+  <meta name="google-site-verification" content="tZL7TRIeXljhic50KX2FmPu7OimcE2bBA9_DRUBs488" />
+  {% assign change_con = 'https://www.couturecandy.com' | append: {{collection.url}} | append: '/dresses' %}
+  {% if canonical_url == change_con %}
+    <link rel="canonical" href="https://www.couturecandy.com{{collection.url}}">
+  {%- else -%}
+    <link rel="canonical" href="{{ canonical_url | remove:'.html' }}">
+  {% endif %}
+  {% assign Cname = 'https://www.couturecandy.com' | append: {{collection.url}} | append: '/sale' %}
+  
+  {% if template == 'cart' %}
+     <link href='//fonts.googleapis.com/css?family=Droid+Sans:400,700|Montserrat:400,700' rel='stylesheet' type='text/css' />
+  {% endif %}
+  {%- if settings.favicon != blank -%}
+    <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x' }}" type="image/png">
+  {% endif %}
+   {%- if settings.favicon_apple != blank -%}
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ settings.favicon_apple | img_url: '152x' }}">
+  {%- endif -%}
+
+
+  <script type="text/javascript">document.documentElement.className = document.documentElement.className.replace('no-js', 'yes-js js_active js')</script>
+   {%- capture seo_title -%}
+    {{ page_title }}
+    {%- if current_tags -%}
+      {%- assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
+    {%- endif -%}
+    {%- if current_page != 1 -%}
+      &ndash; {{ 'general.meta.page' | t: page: current_page }}
+    {%- endif -%}
+    {%- unless page_title contains shop.name -%}
+      &ndash; {{ shop.name }}
+    {%- endunless -%}
+  {%- endcapture -%}
+{% if canonical_url == 'https://www.couturecandy.com/collections' %}
+  <title>Designer Collection Of Prom, Evening Event Dresses</title>
+{% else %}
+{% if canonical_url == Cname %}
+    <title class="{{change_con}}">Sale {{ seo_title | remove: '&ndash; Tagged &quot;Sale&quot;' }}</title>
+  {% else %}
+        <title>{{ seo_title }} </title>
+  {% endif %}
+{% endif %}
+  {%- if page_description -%}
+    {% if template == "product" %}
+          {% assign product_vendor = product.vendor | downcase | handleize %}
+          {% assign product_handle = product.handle | downcase %}
+            {% case product_handle %}
+            {% when 'sherri-hill-11335-beaded-embroidered-tulle-v-neck-a-line-dress','sherri-hill-52022-scoop-taffeta-long-a-line-dress','sherri-hill-52364-metallic-crisscross-back-long-a-line-dress','sherri-hill-52925-long-beaded-lace-mermaid-dress','sherri-hill-51671-strapless-taffeta-long-mermaid-dress-with-train','jovani-60283-sequined-deep-v-neck-trumpet-dress','jovani-55634-sheer-floral-appliques-v-neck-ballgown','jovani-5908-strapless-sweetheart-corset-illusion-bodice-mermaid-gown','jovani-45811-v-neckline-prom-dress-with-nude-cut-outs','jovani-64521-lace-off-shoulder-mermaid-dress-with-train','sherri-hill-52613-long-scoop-neck-fitted-dress-with-train','sherri-hill-52614-sexy-lace-up-back-fitted-dress','sherri-hill-52921-halter-neck-satin-a-line-dress-with-slit','sherri-hill-51703-sherri-hill-high-neckline-long-dress-51703','sherri-hill-52454-fully-beaded-lace-up-back-fitted-evening-dress','sherri-hill-52779-crisscross-lace-up-fitted-sexy-dress','sherri-hill-51206-sleeveless-v-neck-fitted-beaded-and-sequined-dress','sherri-hill-51822-plunging-empire-taffeta-a-line-dress' %}
+                <meta name="description" content="{{ page_description | escape }}"> 
+              {% else %}
+                {% if product_vendor == 'tarik-ediz' or product_vendor == 'mac-duggal' or product_vendor == 'alyce-paris' or product_vendor == 'la-femme' or product_vendor == 'faviana' or product_vendor == 'jasz-couture' or product_vendor == 'dancing-queen' or product_vendor == 'colors-dress' or product_vendor == 'elizabeth-k' or product_vendor == 'cassandra-stone' or product_vendor == 'cinderella-divine' or product_vendor == 'ashley-lauren' or product_vendor == 'lara-dresses' or product_vendor == 'princesa-by-ariana-vara' or product_vendor == 'portia-and-scarlett' or product_vendor == 'quinceanera-collection' or product_vendor == 'alexander-by-daymor' or product_vendor == 'cristallini' or product_vendor == 'cecilia-couture' or product_vendor == 'colette-by-mon-cheri' or product_vendor == 'damas' or product_vendor == 'mori-lee' or product_vendor == 'vizcaya-by-mori-lee' or product_vendor == 'gls-by-gloria' %}
+                  <meta name="description" content="{{ product.description | strip_html | strip | truncate: 170,'' }}">  
+                {%- else -%}
+                <meta name="description" content="Buy the {{ product.title }} at {{ shop.domain }}.Shop {{product.vendor}} now for attractive discounts.">  
+                {% endif %}
+            {% endcase %}
+    {%- else -%}
+        {% if canonical_url == 'https://www.couturecandy.com/collections' %}
+              <meta name="description" content="Couture Candy offers pageant dresses from top designers for weddings, prom, homecoming, evening events & more. Shop wide selection of gorgeous bridal & evening gowns today!">  
+        {% else %}
+           {% if canonical_url == Cname %}
+              <meta name="description" content="Sale: Upto 70% Off on {{ collection.title }} dresses. Enjoy heavy discounts on {{ collection.title }} at Couture Candy. Visit site now to enjoy free shipping on orders above $99!"> 
+            {% else %}
+            <meta name="description" content="{{ page_description | escape }}"> 
+           {% endif %}      
+        {% endif %}
+
+    {%- endif -%}
+    {%- endif -%}

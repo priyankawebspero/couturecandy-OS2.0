@@ -1,0 +1,14 @@
+<div class="product_img_trust_seal {{padding_class}}">
+  {%- assign image = settings.img_trust_seal -%}
+  {%- assign product_image_size = image.width | append: 'x' -%}
+  <img alt="{{image.alt}}" src="{%-include 'gl_image_format',cache:true,src: image.src, size: product_image_size -%}">
+   {%- if product.vendor == 'Sherri Hill' -%}
+   	<div class="brand-script" style="display: inline-block;">  
+		<div class="auth-holder">  
+				<script type='text/javascript'> var _currentScript = document.currentScript || null; (function ()
+{ var script = document.createElement('script'); script.type = 'text/javascript'; script.src = 'https://www.sherrihill.com/seal/js/webseal.js'; script.async = true; var firstScript = document.getElementsByTagName('script')[0]; firstScript.parentNode.insertBefore(script, firstScript) }
+)();</script>
+		</div>  
+	</div>
+   {%- endif -%}
+</div>

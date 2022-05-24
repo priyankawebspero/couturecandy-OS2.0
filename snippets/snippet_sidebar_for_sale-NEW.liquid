@@ -1,0 +1,10 @@
+<div class="sidebarmenu_div" style="padding-top: 0;">
+  <div class="parentcategoryblock open">
+    <h5 class="TitleHeading open">Popular CATEGORIES</h5>
+       <ul class="sidemenu sidebar_sale">
+              {% for link in linklists.popular-categories.links %}
+                     <li class=""><h3><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+            </ul>   
+  </div>  
+</div>

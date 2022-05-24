@@ -1,0 +1,19 @@
+{%- comment -%} Variables set by Weglot's preferences panel {%- endcomment -%}
+{%- assign original_language = "en" -%}
+{%- assign destination_languages = "es,fr,ar,pt,ga" | split: ',' -%}
+{%- assign sub_domains = false -%}
+{%- assign main_domain = canonical_url | split: '://' | last | split: '/' | first | split: 'www.' | last -%}
+
+{%- unless request.path contains "/collections/affordable-prom-dresses" or request.path contains "/collections/alyce-paris" or request.path contains "/collections/blue-dresses" or request.path contains "/collections/bridesmaid-dresses" or request.path contains "/collections/cinderella-divine" or request.path contains "(?i)(/collections/blue-dresses)" or request.path contains "(?i)^(?!(((/products/.*))|((/collections/prom-dresses))|((/collections/dresses))|((/collections/cocktail-dresses))|((/collections/mother-of-the-bride-dresses))|((/collections/plus-size-dresses))|((/collections/homecoming-dresses))|((/collections/quinceanera-dresses))|((/collections/formal-gowns)))).*" or request.path contains "(?i)(/collections/mac-duggal)" -%}
+<link rel="alternate" hreflang="{{ original_language }}" href="{{ canonical_url }}">
+  {%- if sub_domains -%}
+    {% for language in destination_languages %}
+<link rel="alternate" hreflang="{{ language | replace:"zh","zh-CN" | replace:"tw","zh-TW" }}" href="https://{{ language }}.{{ main_domain }}{{ request.path }}">
+    {% endfor %}
+  {%- else -%}
+	  {%- assign canonical_path = canonical_url | split: main_domain | last -%}
+    {% for language in destination_languages %}
+<link rel="alternate" hreflang="{{ language | replace:"zh","zh-CN" | replace:"tw","zh-TW" }}" href="https://{{ request.host }}/a/l/{{ language }}{{ canonical_path }}">
+    {% endfor %}
+  {%- endif -%}
+{%- endunless -%}

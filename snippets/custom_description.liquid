@@ -1,0 +1,23 @@
+{% if product.description contains 'Details:' %}
+{% assign product_details_last = product.description | split: "Details:" | last | strip_newlines %}
+{% assign product_details = product_details_last | split: "Length:" | first | split: ","  %}
+{% assign create_new_array = product_details_last | split: "Length:" | first   %}
+{% assign DetailSize = product_details.size %}
+{% assign my_float = DetailSize | times: 1.0 %}
+{% assign product_details_count = 22 | divided_by: my_float %}
+{% assign count_Limit = product_details_count | round %} 
+{% capture content_details %}
+{% for i in (1..count_Limit) %}
+     {{ create_new_array  | strip_html }},
+{% endfor %}
+{% endcapture %}
+{% assign The_details = content_details | split: "," %}
+{% if product_details_count %}
+<p>{{ The_details[0] }} {{ The_details[1] }} and {{ The_details[2] }} {{ product.vendor }}{{ product.sku }} Dress with {{ The_details[3] }} by Couture Candy. The dress has a great fit at the top and waist. Such fit also helps in giving a figure flattering look. {{ product.vendor }} dresses create an exclusive and fashionable lifestyle for the new age trendsetting women. From enhancing fit, form and fashion, the dresses have a lot of styling to offer.
+
+Talking about the dress worn by the model, here are a few details of the dress. The sexy {{ The_details[4] }} of the dress is no less than a fairytale dress due to the {{ The_details[5] }} pattern that it has. With the huge {{ The_details[6] }} Dresses Sale, this {{ The_details[7] }} dress is by far the most sold dress. The dress has a {{ The_details[8] }} which is best for the women who are willing to style with elegance. Such {{ The_details[9] }} dresses look good on women with all body types and shapes. Basically these are the dresses for the women of today’s generation. Also, a good neckline creates balance and proportion between the arms, neck and chest of the women while showcasing the best features. This {{ The_details[10] }} {{ The_details[11] }} is best suitable for all the special occasions where you wish to stand out of the crowd. The one worn by the model has a {{ The_details[12] }} and {{ The_details[13] }} bodice to level up your fashion game. The nipped pleats that radiate the bodice in the {{product.vendor}} {{ The_details[14] }} {{ The_details[15] }} dress will take you back to your fairytale moment that you always dreamt of. The color looks best on medium to fair skin tones and also gives an illusion of great body shape. You can also check out different colors like {{ The_details[16] }} in the same pattern from the massive collection.
+The wide collection of {{ product.vendor }} {{ The_details[17] }} have a great way of styling up women with creative patterns and necklines. Also check out the {{ product.vendor }}  {{ The_details[18] }} clearance sale for different {{ product.vendor }} dresses and revamp your wardrobe with these designer dresses. Get your hand on this  {{ The_details[19] }}  {{ The_details[20] }} by choosing your size from  {{ The_details[21] }} and slay at the event night.
+</p>
+
+{% endif %}
+{% endif %}

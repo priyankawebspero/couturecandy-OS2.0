@@ -1,0 +1,143 @@
+{%- if settings.product_sidebar == 'left' -%}
+   {%- case settings.size_sidebar -%}
+     {% when '1' %}
+       {%- assign class_gl = 'col-sm-10 col-sm-push-2' -%}
+       {%- assign class_sidebar = 'col-sm-2 col-sm-pull-10' -%}
+     {% when '2' %}
+       {%- assign class_gl = 'col-sm-9 col-sm-push-3' -%}
+       {%- assign class_sidebar = 'col-sm-3 col-sm-pull-9' -%}
+     {% when '3' %}
+       {%- assign class_gl = 'col-sm-8 col-sm-push-4' -%}
+       {%- assign class_sidebar = 'col-sm-4 col-sm-pull-8' -%}
+   {%- endcase -%}
+{%- elsif settings.product_sidebar == 'right' -%}
+   {%- case settings.size_sidebar -%}
+     {% when '1' %}
+       {%- assign class_gl = 'col-sm-10' -%}
+       {%- assign class_sidebar = 'col-sm-2' -%}
+     {% when '2' %}
+       {%- assign class_gl = 'col-sm-9' -%}
+       {%- assign class_sidebar = 'col-sm-3' -%}
+     {% when '3' %}
+       {%- assign class_gl = 'col-sm-8' -%}
+       {%- assign class_sidebar = 'col-sm-4' -%}
+   {%- endcase -%}
+{%- else -%}
+   {%- assign class_gl = 'col-sm-12' -%}
+{%- endif -%}
+<div class="main-page-wrapper">
+   <!-- MAIN CONTENT AREA -->
+   {%- include 'page_heading', page_title:page.title -%}
+   <div class="container">
+      <div class="row">
+        {%- if show_breadcrums -%}
+        	{%- include 'BreadcrumbMenu', page_handle:page.handle -%}<!-- .breadcrumbs -->
+        {%- endif -%}
+        <aside class="sidebar-container col-sm-3 sidebar-2" role="complementary">
+              <div class="sidebar-inner">
+                 <!-- {%- include 'snippet_sidebar_pages' -%}-->
+                	{%- include 'prom-pages-side-bar' -%}
+              </div><!-- .sidebar-inner -->
+           </aside><!-- .sidebar-container -->
+         <div class="site-content col-sm-9" role="main">
+            {{ page.content }}
+           
+           <div class="prom-work-des">
+             
+               <div class="prom-work-des-inner">
+                 
+                   <div class="prom-work-boxes">
+                     <span class="prom-icons"><img src="https://cdn.shopify.com/s/files/1/0144/7018/5017/files/planning-wear.png" alt="planning-wear" /></span>
+                     
+                    <h3><a href="/pages/planning-for-prom">PLANNING FOR PROM & WHAT TO WEAR</a></h3>
+                     <p>No matter if you’re planning a prom event for your classmates or figuring out your own prom-related expenses,
+                       the key to a memorable prom is “planning”. This section will walk you through the ins-and-outs of 
+                       budgeting for prom and managing a timeline to achieve your prom goals. We have some 
+                       special advice for prom committee members... </p>
+                     
+                     <div class="explore-more-prom">
+                       <a href="/pages/planning-for-prom">Explore More</a>
+                      </div>
+
+                   </div>
+                 
+                    <div class="prom-work-boxes">
+                     <span class="prom-icons">
+                       <img src="https://cdn.shopify.com/s/files/1/0144/7018/5017/files/ready-for-party.png" alt="ready-for-party" /></span>
+                     
+                    <h3><a href="/pages/getting-ready-for-prom">GETTING READY FOR PROM</a></h3>
+                     <p>There’s a lot more to creating the perfect prom look than selecting the dress. From your hair and makeup to
+                       nails and accessories, we’ve got you covered from head to toe. 
+                       Let our fashion experts shed out their best advice on hair, makeup, 
+                       and nails to help you create the perfect prom look that you dream of. 
+                       Our tips and tricks will let you highlight your unique... </p>
+                      
+                      <div class="explore-more-prom">
+                       <a href="/pages/getting-ready-for-prom">Explore More</a>
+                      </div>
+
+                   </div>
+                 
+                  <div class="prom-work-boxes">
+                     <span class="prom-icons">
+                       <img src="https://cdn.shopify.com/s/files/1/0144/7018/5017/files/the_prom-night-icon.png" alt="the_prom-night-icon" /></span>
+                     
+                    <h3><a href="/pages/the-night-of-prom">ALL ABOUT THE PROM NIGHT</a></h3>
+                     <p>Still not confident about knowing everything about prom? This section will tell you more about 
+                       the prom festivities, dance, and what to expect on prom night. You will also find more do’s and 
+                       don’ts for before and after the prom night. This section will also tell you what to take to
+                       prom and how to prep your bag or purse with all the prom-essentials.</p>
+                    
+                    <div class="explore-more-prom">
+                       <a href="/pages/the-night-of-prom">Explore More</a>
+                      </div>
+
+                   </div>
+                 
+                 <div class="prom-work-boxes">
+                     <span class="prom-icons">
+                       <img src="https://cdn.shopify.com/s/files/1/0144/7018/5017/files/more_prom-icon.png" alt="more_prom-icon" /></span>
+                     
+                    <h3><a href="/pages/more-prom">MORE PROM</a></h3>
+                    <p>Been there, done that? Still have some questions that keep ringing in your 
+                       head? Well, here are all the prom FAQs answered by fashion experts and 
+                       designers. Give them a read and you’ll find answers to all your 
+                       bubbling prom-related queries. Know more about the fashion terms 
+                       frequently used by designers and sellers that are beyond your understanding. 
+                       Also...</p>
+                   
+                   <div class="explore-more-prom">
+                       <a href="/pages/more-prom">Explore More</a>
+                      </div>
+
+                   </div>
+                 
+
+
+               </div>
+           
+           </div>
+           
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Yotpo Reviews Tab -->
+<script async="async" type="text/javascript"> (function e(){var e=document.createElement("script");e.type="text/javascript",e.async=!0, e.src="//staticw2.yotpo.com/Mi5S4G8kBf4HYxRQL5Sq6ZbNhltQ6TH3q8K1oXYW/widget.js";var t=document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e,t)})(); </script>
+<script type="text/javascript">
+  $('.promduide_cate_block ul.sidemenu_prom').hide();
+     $('.promduide_cate_block.open ul.sidemenu_prom').show();
+
+      $(".promduide_cate_block .promguide-side-title").on("click", function() {
+            $(".promduide_cate_block.open .sidemenu_prom").hide('slow');
+            if ($(this).hasClass('open')) {
+                $(this).removeClass('open').siblings('ul').hide('slow');
+                $(this).closest('.promduideside_div .promduide_cate_block').removeClass('open')
+            } else {
+                $(".promduideside_div .promduide_cate_block").siblings().removeClass('open');
+                $(".promduideside_div .promduide_cate_block .promguide-side-title").removeClass('open');
+                $(this).closest('.promduideside_div .promduide_cate_block').toggleClass('open');
+                $(this).toggleClass('open').siblings('ul').show('slow')
+            }
+        });
+</script>

@@ -1,0 +1,51 @@
+{%- if settings.product_sidebar == 'left' -%}
+   {%- case settings.size_sidebar -%}
+     {% when '1' %}
+       {%- assign class_gl = 'col-sm-10 col-sm-push-2' -%}
+       {%- assign class_sidebar = 'col-sm-2 col-sm-pull-10' -%}
+     {% when '2' %}
+       {%- assign class_gl = 'col-sm-9 col-sm-push-3' -%}
+       {%- assign class_sidebar = 'col-sm-3 col-sm-pull-9' -%}
+     {% when '3' %}
+       {%- assign class_gl = 'col-sm-8 col-sm-push-4' -%}
+       {%- assign class_sidebar = 'col-sm-4 col-sm-pull-8' -%}
+   {%- endcase -%}
+{%- elsif settings.product_sidebar == 'right' -%}
+   {%- case settings.size_sidebar -%}
+     {% when '1' %}
+       {%- assign class_gl = 'col-sm-10' -%}
+       {%- assign class_sidebar = 'col-sm-2' -%}
+     {% when '2' %}
+       {%- assign class_gl = 'col-sm-9' -%}
+       {%- assign class_sidebar = 'col-sm-3' -%}
+     {% when '3' %}
+       {%- assign class_gl = 'col-sm-8' -%}
+       {%- assign class_sidebar = 'col-sm-4' -%}
+   {%- endcase -%}
+{%- else -%}
+   {%- assign class_gl = 'col-sm-12' -%}
+{%- endif -%}
+<div class="main-page-wrapper CCbrand">
+   <!-- MAIN CONTENT AREA -->
+   <div class="container">
+      <div class="row">
+         <div class="category_main_title">
+                <h1 class="category-title">{{collection.title}}</h1>
+        </div>
+	   	{%- include 'BreadcrumbMenu', page_handle:collection.handle -%}
+        <aside class="sidebar-container col-sm-3 sidebar-2" role="complementary">
+              <div class="sidebar-inner">
+                {%- include 'snippet_sidebar_for_brands' -%}
+              </div><!-- .sidebar-inner -->
+        </aside><!-- .sidebar-container -->
+         <div class="site-content col-sm-9" role="main">
+            {%- if collection.description != blank and settings.show_des_collection -%}
+                <div class="term-description promo-banner CategoryDescription" id="des_{{collection.id}}">
+                     {{collection.description}}
+           </div>
+            {%- endif -%}
+            {% section 'collection-template-bc-sf-filter' %}
+         </div>
+      </div>
+   </div>
+</div>

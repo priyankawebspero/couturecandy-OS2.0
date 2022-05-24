@@ -1,0 +1,68 @@
+<div class="sidebarmenu_div">
+        <div class="parentcategoryblock open">
+                <span class="TitleHeading open ">Popular Dresses</span>
+                   <ul class="sidemenu">
+              {% for link in linklists.popular-dresses.links %}
+             <li ><h4><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h4></li>
+              {% endfor %} 
+            </ul>               
+        </div>
+        <div class="parentcategoryblock">
+                <span class="TitleHeading">Shop By Event</span>
+                
+             <ul class="sidemenu">
+              {% for link in linklists.shop-by-event.links %}
+               <li ><h4><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h4></li>
+              {% endfor %} 
+            </ul>
+        </div>
+        <div class="parentcategoryblock">
+                <span class="TitleHeading">Shop by Length</span>
+                
+             <ul class="sidemenu">
+              {% for link in linklists.shop-by-length.links %}
+               <li ><h4><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h4></li>
+              {% endfor %} 
+            </ul>
+        </div>
+        <div class="parentcategoryblock">
+                <span class="TitleHeading">Shop By Style</span>
+                    <ul class="sidemenu">
+              {% for link in linklists.shop-by-style.links %}
+                     <li ><h4><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h4></li>
+              {% endfor %} 
+            </ul>
+        </div>
+        <div class="parentcategoryblock">
+                <span class="TitleHeading">Shop by Color</span>
+                        <ul class="sidemenu">
+              {% for link in linklists.shop-by-color.links %}
+              <li ><h4><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h4></li>
+              {% endfor %} 
+            </ul>
+        </div>
+        <div class="parentcategoryblock">
+                <span class="TitleHeading">Shop by Detail</span>
+                    <ul class="sidemenu">
+              {% for link in linklists.shop-by-detail.links %}
+              <li ><h4><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h4></li>
+              {% endfor %} 
+            </ul>
+        </div>
+  		<div class="parentcategoryblock">
+                <span class="TitleHeading">Shop by Body</span>
+                    <ul class="sidemenu">
+              {% for link in linklists.shop-by-body.links %}
+              <li ><h4><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h4></li>
+              {% endfor %} 
+            </ul>
+        </div>
+ 		<div class="parentcategoryblock">
+                <span class="TitleHeading">Shop by Fabric</span>
+                    <ul class="sidemenu">
+              {% for link in linklists.shop-by-fabric.links %}
+              <li ><h4><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h4></li>
+              {% endfor %} 
+            </ul>
+        </div>
+</div>

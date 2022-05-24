@@ -1,0 +1,539 @@
+{% assign hand = collection.handle | downcase %}
+{% if hand contains 'sale' %}
+  {% assign sale_url = collection.handle | downcase %}
+{% else %}  
+{% assign sale_url = collection.handle | downcase | append: '-sale' %}
+{% endif %}
+<div class="sidebarmenu_div">
+{% case hand %} 
+{% when 'jovani' , 'jovani-prom-dresses' , 'jovani-homecoming-dresses' , 'jovani-mother-of-bride-dresses' , 'jovani-evening-dresses' , 'jovani-cocktail-dresses' ,'jovani-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Jovani</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.jovani-new-collection.links %}
+               <li><h3 class="{{ link.title | handleize }}"><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'mac-duggal' , 'mac-duggal-prom-dresses' , 'mac-duggal-homecoming-dresses' , 'mac-duggal-cocktail-dresses' , 'mac-duggal-mother-of-bride-dresses' , 'mac-duggal-evening-dresses','mac-duggal-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Mac Duggal</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.mac-duggal-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'faviana' , 'faviana-prom-dresses' , 'faviana-homecoming-dresses' , 'faviana-mother-of-bride-dresses' , 'faviana-evening-dresses' , 'faviana-cocktail-dresses' ,'faviana-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Faviana</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.faviana-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'alyce-paris' , 'alyce-paris-prom-dresses' , 'alyce-paris-homecoming-dresses' , 'alyce-paris-mother-of-bride-dresses' , 'alyce-paris-evening-dresses' , 'alyce-paris-cocktail-dresses', 'alyce-paris-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Alyce Paris</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.alyce-paris-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'la-femme' , 'la-femme-prom-dresses' , 'la-femme-homecoming-dresses' , 'la-femme-mother-of-bride-dresses' , 'la-femme-evening-dresses' , 'la-femme-cocktail-dresses','la-femme-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">La Femme</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.la-femme-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'tarik-ediz' , 'tarik-ediz-prom-dresses' , 'tarik-ediz-homecoming-dresses' , 'tarik-ediz-mother-of-bride-dresses' , 'tarik-ediz-evening-dresses' , 'tarik-ediz-cocktail-dresses','tarik-ediz-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Tarik Ediz</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.tarik-ediz-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'terani-couture' , 'terani-couture-prom-dresses' , 'terani-couture-homecoming-dresses' , 'terani-couture-mother-of-bride-dresses' , 'terani-couture-evening-dresses' , 'terani-couture-cocktail-dresses','terani-couture-sale' %}
+  <div class="parentcategoryblock open">
+    <h5 class="TitleHeading1 onafter">Terani Couture</h5>
+    <ul class="sidemenu">
+          {% for link in linklists.terani-couture-new-collection.links %}
+           <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+          {% endfor %} 
+          
+        </ul>   
+  </div>
+{% when 'mon-cheri' , 'ivonne-d-for-mon-cheri' , 'mon-cheri-mother-of-bride-dresses' , 'mon-cheri-wedding-dresses' , 'mon-cheri-formal-dresses' , 'mon-cheri-evening-dresses' , 'mon-cheri-bridal-dresses' , 'mon-cheri-prom-dresses' , 'cameron-blake' , 'montage-by-mon-cheri-dresses' , 'social-occasions-by-mon-cheri','mon-cheri-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Mon Cheri</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.mon-cheri-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'ellie-wilde-prom-dresses' , 'ellie-wilde', 'ellie-wilde-evening-dresses', 'ellie-wilde-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Ellie Wilde</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.ellie-wilde-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+
+{% when 'ashley-lauren' , 'ashley-lauren-mother-of-bride-dresses', 'ashley-lauren-bridal-dresses' , 'ashley-lauren-evening-dresses' , 'ashley-lauren-cocktail-dresses' , 'ashley-lauren-prom-dresses' , 'ashley-lauren-pageant-dresses', 'ashley-lauren-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Ashley Lauren</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.ashley-lauren-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+
+{% when 'cinderella-divine', 'cinderella-divine-mother-of-bride-dresses', 'cinderella-divine-bridesmaid-dresses','cinderella-divine-evening-dresses','cinderella-divine-prom-dresses','cinderella-divine-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Cinderella Divine</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.cinderella-divine-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'may-queen' ,'may-queen-mother-of-bride-dresses' , 'may-queen-bridesmaid-dresses','may-queen-wedding-guest-dresses','may-queen-quinceanera-dresses','may-queen-homecoming-dresses','may-queen-prom-dresses','may-queen-sale'
+ %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">May Queen</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.may-queen-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+
+{% when 'dancing-queen' , 'dancing-queen-mother-of-bride-dresses','dancing-queen-wedding-guest-dresses','dancing-queen-bridesmaid-dresses','dancing-queen-quinceanera-dresses','dancing-queen-homecoming-dresses','dancing-queen-prom-dresses','dancing-queen-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Dancing Queen</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.dancing-queen-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+
+{% when 'mnm-couture' , 'mnm-couture-bridesmaid-dresses','mnm-couture-mermaid-dresses','mnm-couture-evening-dresses','mnm-couture-formal-dresses','mnm-couture-prom-dresses','mnm-couture-pageant-dresses','mnm-couture-summer-dresses','mnm-couture-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">MNM Couture</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.mnm-couture-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'christina-wu-elegance', 'christina-wu-elegance-mother-of-bride-dresses','christina-wu-elegance-bridesmaid-dresses','christina-wu-elegance-wedding-guest-dresses',
+'christina-wu-elegance-bridal-dresses','christina-wu-elegance-evening-dresses','christina-wu-elegance-prom-dresses','christina-wu-elegance-formal-dresses','christina-wu-elegance-homecoming-dresses','christina-wu-elegance-quinceanera-dresses','christina-wu-elegance-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Christina Wu Elegance</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.christina-wu-elegance-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'clarisse', 'clarisse-prom-dresses','clarisse-evening-dresses','clarisse-white-dresses','clarisse-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Clarisse</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.clarisse-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'elizabeth-k','elizabeth-k-mother-of-bride-dresses','elizabeth-k-bridesmaid-dresses','elizabeth-k-bridal-dresses','elizabeth-k-prom-dresses','elizabeth-k-quinceanera-dresses','elizabeth-k-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Elizabeth K</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.elizabeth-k-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+
+{% when 'lenovia','lenovia-mother-of-bride-dresses','lenovia-bridesmaid-dresses','lenovia-homecoming-dresses','lenovia-cocktail-dresses','lenovia-formal-dresses','lenovia-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">lenovia</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.lenovia-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+
+{% when 'madison-james','madison-james-wedding-guest-dresses','madison-james-prom-dresses','madison-james-homecoming-dresses','madison-james-cocktail-dresses' , 'madison-james-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Madison James</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.madison-james-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'nox-anabel','nox-anabel-mother-of-bride-dresses','nox-anabel-bridesmaid-dresses','nox-anabel-wedding-guest-dresses','nox-anabel-cocktail-dresses','nox-anabel-evening-dresses','nox-anabel-prom-dresses', 'nox-anabel-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Nox Anabel</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.nox-anabel-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div> 
+{% when 'rachel-allan','rachel-allan-bridal-dresses','rachel-allan-cocktail-dresses','rachel-allan-prom-dresses','rachel-allan-evening-dresses','rachel-allan-homecoming-dresses', 'rachel-allan-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Rachel Allan</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.rachel-allan-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>                   
+
+{% when 'soulmates','soulmates-mother-of-bride-dresses','soulmates-evening-dresses','soulmates-cocktail-dresses','soulmates-party-dresses','soulmates-wedding-guest-dresses','soulmates-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Soulmates</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.soulmates-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>                   
+
+{% when 'scala','scala-prom-dresses','scala-bridal-dresses','scala-wedding-guest-dresses','scala-cocktail-dresses','scala-homecoming-dresses','scala-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">SCALA</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.scala-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>                   
+{% when 'shail-k','shail-k-prom-dresses','shail-k-evening-dresses','shail-k-pageant-dresses','shail-k-homecoming-dresses','shail-k-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Shail K</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.shail-k-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>  
+{% when 'tiffany-designs','tiffany-designs-prom-dresses','tiffany-designs-homecoming-dresses','tiffany-designs-pageant-dresses','tiffany-designs-ball-gowns','tiffany-designs-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Tiffany Designs</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.tiffany-designs-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'tiffany-homecoming','tiffany-homecoming-dresses','tiffany-homecoming-prom-dresses','tiffany-homecoming-ball-gowns,'tiffany-homecoming-evening-dresses','tiffany-homecoming-cocktail-dresses','tiffany-homecoming-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Tiffany Homecoming</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.tiffany-homecoming-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'angela-alison','angela-alison-prom-dresses','angela-alison-evening-dresses','angela-alison-homecoming-dresses','angela-alison-ball-gowns','angela-alison-formal-dresses','angela-alison-wedding-guest-dresses','angela-alison-bridesmaid-dresses','angela-alison-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Angela Alison</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.angela-alison-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'wilderly-bride-by-allure-bridals','wilderly-bride-by-allure-bridals-bridesmaid-dresses','wilderly-bride-by-allure-bridals-bridal-dresses','wilderly-bride-by-allure-bridals-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Wilderly Bride by Allure Bridals</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.wilderly-bride-by-allure-bridals-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'edition-gemy-maalouf','edition-gemy-maalouf-sale','edition-gemy-maalouf-prom-dresses','edition-gemy-maalouf-evening-dresses','edition-gemy-maalouf-homecoming-dresses' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Beside Couture by Gemy</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.beside-couture-by-gemy-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div> 
+{% when 'blush-by-alexia-designs','blush-by-alexia-designs-bridesmaid-dresses','blush-by-alexia-designs-prom-dresses','blush-by-alexia-designs-homecoming-dresses','blush-by-alexia-designs-evening-dresses','blush-cocktail-dresses','blush-ball-gowns','blush-by-alexia-designs-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Blush by Alexia Designs</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.blush-by-alexia-designs-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'cassandra-stone','cassandra-stone-prom-dresses','cassandra-stone-evening-dresses','cassandra-stone-homecoming-dresses','cassandra-stone-formal-dresses','cassandra-stone-pageant-dresses', 'cassandra-stone-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Cassandra Stone</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.cassandra-stone-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div> 
+{% when 'dessy-collection','dessy-collection-bridesmaid-dresses','dessy-collection-wedding-guest-dresses', 'dessy-collection-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Dessy Collection</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.dessy-collection-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'tadashi-shoji','tadashi-shoji-evening-gowns','tadashi-shoji-cocktail-dresses', 'tadashi-shoji-plus-size-dresses','tadashi-shoji-mother-of-the-bride-groom','tadashi-shoji-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Tadashi Shoji</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.tadashi-shoji-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              <!--  -->
+            </ul>   
+      </div>
+{% when 'sherri-hill','sherri-hill-prom-dresses','sherri-hill-evening-dresses','sherri-hill-cocktail-dresses','sherri-hill-bridal-dresses','sherri-hill-sale', 'sherri-hill-shorts' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Sherri Hill</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.sherri-hill-new-collection.links %}
+               <li class="{{ link.title | handleize }}"><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              <!--  -->
+            </ul>   
+      </div>
+  <div class="brand-script">
+    <script type="text/javascript">// <![CDATA[
+     var _currentScript = document.currentScript || null; (function ()
+    { var script = document.createElement('script'); script.type = 'text/javascript'; script.src = 'https://www.sherrihill.com/seal/js/webseal.js'; script.async = true; var firstScript = document.getElementsByTagName('script')[0]; firstScript.parentNode.insertBefore(script, firstScript) }
+    )();
+    // ]]></script>
+    </div>
+{% when 'colors-dress','colors-dress-bridesmaid-dresses','colors-dress-ballgowns','colors-dress-mermaid-dresses','colors-dress-prom-dresses','colors-dress-homecoming-dresses','colors-dress-formal-dresses' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Colors Dress</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.colors-dress-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'dave-johnny','dave-johnny-mother-of-the-bride-dresses','dave-johnny-bridal-dresses','dave-johnny-formal-dresses','dave-johnny-cocktail-dresses','dave-johnny-evening-dresses','dave-johnny-prom-dresses','dave-johnny-homecoming-dresses','dave-johnny-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Dave Johnny</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.dave-johnny-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'daymor-couture','daymor-couture-mother-of-the-bride-dresses','daymor-couture-wedding-guest-dresses','daymor-couture-cocktail-dresses','daymor-couture-prom-dresses','daymor-couture-homecoming-dresses','daymor-couture-formal-dresses','daymor-couture-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Daymor Couture</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.daymor-couture-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'feriani-couture','feriani-couture-mother-of-the-bride-dresses','feriani-couture-evening-dresses','feriani-couture-cocktail-dresses','feriani-couture-prom-dresses','feriani-couture-formal-gowns','feriani-couture-homecoming-dresses','feriani-couture-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Feriani Couture</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.feriani-couture-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'janique','janique-mother-of-the-bride-dresses','janique-formal-dresses','janique-cocktail-dresses','janique-evening-dresses','janique-prom-dresses','janique-pageant-dresses','janique-homecoming-dresses','janique-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Janique</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.janique-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'jolene-collection','jolene-collection-prom-dresses','jolene-collection-homecoming-dresses','jolene-collection-cocktail-dresses','jolene-collection-formal-dresses','jolene-collection-evening-dresses','jolene-collection-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Jolene Collection</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.jolene-collection-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'lara-dresses','lara-mother-of-the-bride-dresses','lara-evening-dresses','lara-prom-dresses','lara-cocktail-dresses','lara-formal-dresses','lara-homecoming-dresses','lara-dresses-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Lara Dresses</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.lara-dresses-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'morrell-maxie','morrell-maxie-mother-of-the-bride-dresses','morrell-maxie-wedding-guest-dresses','morrell-maxie-prom-dresses','morrell-maxie-evening-dresses','morrell-maxie-homecoming-dresses','morrell-maxie-formal-dresses','morrell-maxie-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Morrell Maxie</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.morrell-maxie-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'park-108','park-108-mother-of-the-bride-dresses','park-108-formal-dresses','park-108-wedding-guest-dresses','park-108-cocktail-dresses','park-108-evening-dresses','park-108-homecoming-dresses','park-108-prom-dresses','park-108-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Park 108</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.park-108-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'poly-usa','poly-usa-mother-of-the-bride-dresses','poly-usa-bridesmaid-dresses','poly-usa-wedding-guest-dresses','poly-usa-prom-dresses','poly-usa-homecoming-dresses','poly-usa-cocktail-dresses','poly-usa-formal-dresses','poly-usa-evening-dresses','poly-usa-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Poly usa</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.poly-usa-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'primavera-couture','primavera-couture-prom-dresses','primavera-couture-homecoming-dresses','primavera-couture-cocktail-dresses','primavera-couture-evening-dresses','primavera-couture-formal-dresses','primavera-couture-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Primavera Couture</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.primavera-couture-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'rina-di-montella','rina-di-montella-mother-of-the-bride-dresses','rina-di-montella-wedding-guest-dresses','rina-di-montella-evening-dresses','rina-di-montella-formal-dresses','rina-di-montella-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Rina Di Montella</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.rina-di-montella-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'saiid-kobeisy','saiid-kobeisy-evening-dresses','saiid-kobeisy-formal-dresses','saiid-kobeisy-prom-dresses','saiid-kobeisy-cocktail-dresses','saiid-kobeisy-homecoming-dresses','saiid-kobeisy-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Saiid Kobeisy</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.saiid-kobeisy-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'studio-17','studio-17-prom-dresses','studio-17-evening-dresses','studio-17-graduation-dresses','studio-17-ballgowns','studio-17-formal-dresses','studio-17-wedding-guest-dresses','studio-17-homecoming-dresses','studio-17-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Studio 17</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.studio-17-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'theia','theia-bridesmaid-dresses','theia-wedding-guest-dresses','theia-evening-dresses','theia-cocktail-dresses','theia-prom-dresses','theia-homecoming-dresses','theia-sale' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Theia</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.theia-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'mori-lee','mori-lee-wedding-dresses','mori-lee-plus-size-wedding-dresses','mori-lee-bridesmaid-dresses','vizcaya-by-mori-lee','mori-lee-party-dresses','mori-lee-evening-dresses','mgny-by-mori-lee','mori-lee-prom-dresses' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Mori Lee</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.mori-lee-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+{% when 'quinceanera-dresses' %}
+      <div class="parentcategoryblock open">
+        <h5 class="TitleHeading1 onafter">Quinceanera Dresses</h5>
+        <ul class="sidemenu">
+              {% for link in linklists.quinceanera-dresses-new-collection.links %}
+               <li><h3><a href="{{ link.url }}" {% if link.active %} class="active" style="display: none;" {% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+              
+            </ul>   
+      </div>
+
+{% else %}
+{% endcase %}
+</div>

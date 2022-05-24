@@ -1,0 +1,84 @@
+
+{% assign collection_hanlde = collection.url | downcase %}
+{% if template contains 'page' %}
+    {% assign collection_hanlde = page.url | downcase %}
+{% endif %}
+{% assign show_custom_bd = false %}
+<div class="breadcrumbs">
+  {% if collection.handle == "homecoming-dresses" %}
+  <h1 style="display:none !important;">Homecoming Dresses 2021, Short and Long HoCo Party Dresses
+</h1>
+  {% endif %}
+<ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope
+        itemtype="https://schema.org/ListItem">
+      <a class="home" itemprop="item" href="{{ shop.url }}">
+          <span itemprop="name">Home</span></a>
+         <meta itemprop="position" content="1" />
+    </li>
+{% for link in linklists.breadcrumb-menu.links %}
+    {% assign link_hanlde = link.url | downcase %}
+    {% if link.links != blank %}
+      {% for child_link in link.links %}
+          {% assign child_link_hanlde = child_link.url | downcase %}
+            {% if child_link_hanlde == collection_hanlde %}
+                  {% assign show_custom_bd = true %} 
+                    <li class="child_link_hanlde" itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                      <a itemscope itemtype="https://schema.org/WebPage"
+                         itemprop="item" itemid="{{ link.url }}"
+                         href="{{ link.url }}">
+                        <span itemprop="name">{{ link.title }}</span></a>
+                      <meta itemprop="position" content="2" />
+                     </li>
+                    <li class="child_link_hanlde" itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                      <a itemprop="item" href="{{child_link.url}}">
+                        <span itemprop="name">{{ child_link.title }}</span></a>
+                      <meta itemprop="position" content="3" />
+                    </li>
+                     {% break %}
+            {% endif %}
+           {% if child_link.links != blank %}
+                    {% for third_child_link in child_link.links %} 
+                        {% assign third_child_link_name = third_child_link.url | downcase %}
+                        {% if third_child_link_name == collection_hanlde %}
+                          {% assign show_custom_bd = true %} 
+                           <li class="third_child_link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a itemscope itemtype="https://schema.org/WebPage"
+                               itemprop="item" itemid="{{ link.url }}"
+                               href="{{ link.url }}">
+                              <span itemprop="name">{{ link.title }}</span></a>
+                            <meta itemprop="position" content="2" />
+                           </li>
+                          <li class="third_child_link" itemprop="itemListElement" itemscope
+                              itemtype="https://schema.org/ListItem">
+                            <a itemprop="item" href="{{child_link.url}}">
+                              <span itemprop="name">{{ child_link.title }}</span></a>
+                            <meta itemprop="position" content="3" />
+                          </li>
+                        <li class="third_child_link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="{{third_child_link.url}}">
+                        <span itemprop="name">{{ third_child_link.title }}</span></a>
+                        <meta itemprop="position" content="4" />
+                        </li>
+                         {% break %}
+                        {% endif %}  
+                    {% endfor %}
+          {% endif %}  
+     {% endfor %}
+    {% endif %} 
+{% endfor %}
+{% if show_custom_bd != true %}
+ <li itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                <a itemscope itemtype="https://schema.org/WebPage"
+                   itemprop="item" itemid="{{ collection.url }}"
+                   href="{{ collection.url }}">
+                  <span itemprop="name" class="current">{{ collection.title }}</span></a>
+                <meta itemprop="position" content="2" />
+            </li>
+{%else%}
+ </ol>
+{% endif %} 
+</div><!-- .breadcrumbs -->

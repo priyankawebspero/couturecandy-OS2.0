@@ -1,0 +1,68 @@
+<div class="sidebarmenu_div wedding_sidebar">
+        <div class="parentcategoryblock open">
+                <span class="TitleHeading open ">All Wedding Dresses</span>
+                   <ul class="sidemenu">
+              {% for link in linklists.all-wedding-dresses.links %}
+             <li ><h4><a href="{{ link.url }}"  {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h4></li>
+              {% endfor %} 
+            </ul>               
+        </div>
+        <div class="parentcategoryblock">
+                <span class="TitleHeading">Wedding Dresses By Size</span>
+                
+             <ul class="sidemenu">
+              {% for link in linklists.wedding-dresses-by-size-body-type.links %}
+               <li ><h4><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h4></li>
+              {% endfor %} 
+            </ul>
+        </div>
+        <div class="parentcategoryblock">
+                <span class="TitleHeading">Wedding Dresses By Neckline</span>
+                
+             <ul class="sidemenu">
+              {% for link in linklists.wedding-dresses-by-neckline.links %}
+               <li ><h4><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h4></li>
+              {% endfor %} 
+            </ul>
+        </div>
+        <div class="parentcategoryblock">
+                <span class="TitleHeading">Wedding Dresses By Length</span>
+                    <ul class="sidemenu">
+              {% for link in linklists.wedding-dresses-by-length.links %}
+                     <li ><h4><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h4></li>
+              {% endfor %} 
+            </ul>
+        </div>
+        <div class="parentcategoryblock">
+                <span class="TitleHeading">Wedding Dresses By Price</span>
+                   <ul class="sidemenu">
+              {% for link in linklists.wedding-dresses-by-price.links %}
+              <li ><h4><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h4></li>
+              {% endfor %} 
+            </ul>
+        </div>
+        <div class="parentcategoryblock">
+                <span class="TitleHeading">Wedding Dresses By Silhouette</span>
+                    <ul class="sidemenu">
+              {% for link in linklists.wedding-dresses-by-silhouette.links %}
+              <li ><h4><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h4></li>
+              {% endfor %} 
+            </ul>
+        </div>
+  		<div class="parentcategoryblock">
+                <span class="TitleHeading">Wedding Dresses By Fabric</span>
+                    <ul class="sidemenu">
+              {% for link in linklists.wedding-dresses-by-fabric.links %}
+              <li ><h4><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h4></li>
+              {% endfor %} 
+            </ul>
+        </div>
+ 		<div class="parentcategoryblock">
+                <span class="TitleHeading">Wedding Dresses By Color</span>
+                    <ul class="sidemenu">
+              {% for link in linklists.wedding-dresses-by-color.links %}
+              <li ><h4><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h4></li>
+              {% endfor %} 
+            </ul>
+        </div>
+</div>

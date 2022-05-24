@@ -1,0 +1,10 @@
+<div class="sidebarmenu_div">
+  <div class="parentcategoryblock homecoming_side">
+       <ul class="sidemenu">
+           {% for link in linklists.homecoming-pages-sidebar.links %}
+         <li class=""><h3><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></h3></li>
+              {% endfor %} 
+		</ul>   
+  </div>
+  
+</div>

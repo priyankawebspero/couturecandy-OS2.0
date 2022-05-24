@@ -1,0 +1,66 @@
+{%- if settings.product_sidebar == 'left' -%}
+   {%- case settings.size_sidebar -%}
+     {% when '1' %}
+       {%- assign class_gl = 'col-sm-10 col-sm-push-2' -%}
+       {%- assign class_sidebar = 'col-sm-2 col-sm-pull-10' -%}
+     {% when '2' %}
+       {%- assign class_gl = 'col-sm-9 col-sm-push-3' -%}
+       {%- assign class_sidebar = 'col-sm-3 col-sm-pull-9' -%}
+     {% when '3' %}
+       {%- assign class_gl = 'col-sm-8 col-sm-push-4' -%}
+       {%- assign class_sidebar = 'col-sm-4 col-sm-pull-8' -%}
+   {%- endcase -%}
+{%- elsif settings.product_sidebar == 'right' -%}
+   {%- case settings.size_sidebar -%}
+     {% when '1' %}
+       {%- assign class_gl = 'col-sm-10' -%}
+       {%- assign class_sidebar = 'col-sm-2' -%}
+     {% when '2' %}
+       {%- assign class_gl = 'col-sm-9' -%}
+       {%- assign class_sidebar = 'col-sm-3' -%}
+     {% when '3' %}
+       {%- assign class_gl = 'col-sm-8' -%}
+       {%- assign class_sidebar = 'col-sm-4' -%}
+   {%- endcase -%}
+{%- else -%}
+   {%- assign class_gl = 'col-sm-12' -%}
+{%- endif -%}
+<div class="main-page-wrapper search-template">
+   <!-- MAIN CONTENT AREA -->
+    <div class="bc-sf-search-container">
+    <h1 class="bc-sf-search-result-header"></h1>
+    <form class="bc-sf-search-form" action="/search" method="get" role="search">
+      <input class="bc-sf-search-box" type="search" name="q" value="{{ search.terms | escape }}">
+      <button type="submit" class="bc-sf-search-btn"></button>
+    </form>
+    <p class="bc-sf-search-result-number"></p>
+  </div>
+  
+   <div class="container">
+      <div class="row">
+        {%- if show_breadcrums -%}<div class="breadcrumbs col-sm-12" xmlns:v="http://rdf.data-vocabulary.org/#"><a href="/" rel="v:url" property="v:title">{{ 'general.breadcrumbs.home' | t }}</a> » <span class="current">{{ page_title }}</span></div><!-- .breadcrumbs -->{%- endif -%}
+        <aside class="sidebar-container col-sm-3 sidebar-2" role="complementary">
+              <div class="sidebar-inner">
+                  {%- include 'snippet_sidebar_for_dresses' -%}
+              </div><!-- .sidebar-inner -->
+           </aside><!-- .sidebar-container -->
+         <div class="site-content col-sm-9" role="main">
+            {% section 'search-template-bc-sf-filter' %}
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Yotpo Reviews Tab -->
+<script async="async" type="text/javascript"> (function e(){var e=document.createElement("script");e.type="text/javascript",e.async=!0, e.src="//staticw2.yotpo.com/Mi5S4G8kBf4HYxRQL5Sq6ZbNhltQ6TH3q8K1oXYW/widget.js";var t=document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e,t)})(); </script>
+
+<script type="text/javascript">
+   var template_suffix = "{{ collection.template_suffix | downcase }}";
+  if ($(window).width() > 767){
+  $('.parentcategoryblock ul.sidemenu').hide();
+  $('.parentcategoryblock.open ul.sidemenu').show();
+  $('.parentcategoryblock .TitleHeading').click(function() {
+    $(this).toggleClass('open').siblings('ul').slideToggle();
+    return false;
+  });    
+  }
+</script>

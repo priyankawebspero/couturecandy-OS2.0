@@ -1,0 +1,223 @@
+{%- assign settings_pr_img_size = settings.use_eq_height -%}
+{%- assign products_columns = settings.products_columns -%}
+{%- assign shop_different_grid = settings.shop_different_grid -%}
+{%- assign loop_countdown = settings.loop_sale_countdown -%}
+{%- assign general_layout = false -%}
+{%- if settings.general_layout == 'wide' or settings.general_layout == 'contetn_full' -%}
+   {%- assign general_layout = true -%}
+{%- endif -%}
+{%- if current_tags != blank -%}
+      {%- assign has_current_tags = true -%}
+      {%- assign list_current_tag = '' -%}
+      {%- for current_tag in current_tags -%}
+          {%- assign current_tag_downcase = current_tag | downcase -%}
+          {%- assign list_current_tag = list_current_tag | append:current_tag_downcase | append:',' -%}
+       {%- endfor -%}
+       {%- assign current_tags = list_current_tag | split:',' -%}
+   {%- endif -%}
+{%- if settings.shop_sidebar == 'left' -%}
+   {%- case settings.shop_size_sidebar -%}
+     {% when '1' %}
+       {%- assign class_gl = 'col-sm-10 col-sm-push-2' -%}
+       {%- assign class_sidebar = 'col-sm-2 col-sm-pull-10' -%}
+     {% when '2' %}
+       {%- assign class_gl = 'col-sm-9 ' -%}
+       {%- assign class_sidebar = 'col-sm-3' -%}
+     {% when '3' %}
+       {%- assign class_gl = 'col-sm-8 col-sm-push-4' -%}
+       {%- assign class_sidebar = 'col-sm-4 col-sm-pull-8' -%}
+   {%- endcase -%}
+{%- elsif settings.shop_sidebar == 'right' -%}
+   {%- case settings.shop_size_sidebar -%}
+     {% when '1' %}
+       {%- assign class_gl = 'col-sm-10' -%}
+       {%- assign class_sidebar = 'col-sm-2' -%}
+     {% when '2' %}
+       {%- assign class_gl = 'col-sm-9' -%}
+       {%- assign class_sidebar = 'col-sm-3' -%}
+     {% when '3' %}
+       {%- assign class_gl = 'col-sm-8' -%}
+       {%- assign class_sidebar = 'col-sm-4' -%}
+   {%- endcase -%}
+{%- else -%}
+   {%- assign class_gl = 'col-sm-12' -%}
+{%- endif -%}
+{%- if shop_different_grid == false -%}
+{%- case products_columns -%}
+    {%- when '2' -%}
+      {%- assign gl_colum_width = 'col-xs-6 col-sm-4 col-md-6' -%}
+      {%- if general_layout -%}{%- assign image_size = '774x' -%}{%- else-%}{%- assign image_size = '555x' -%}{%-endif-%}
+    {%- when '3' -%}
+      {%- assign gl_colum_width = 'col-xs-6 col-sm-4 col-md-4' -%}
+      {%- if general_layout -%}{%- assign image_size = '505x' -%}{%- else-%}{%- assign image_size = '370x' -%}{%-endif-%} 
+    {%- when '4' -%}
+      {%- assign gl_colum_width = 'col-xs-6 col-sm-4 col-md-3' -%}
+      {%- if general_layout -%}{%- assign image_size = '370x' -%}{%- else-%}{%- assign image_size = '263x' -%}{%-endif-%}
+   {%- when '6' -%}
+      {%- assign gl_colum_width = 'col-xs-6 col-sm-4 col-md-2' -%}
+      {%- if general_layout -%}{%- assign image_size = '237x' -%}{%- else-%}{%- assign image_size = '165x' -%}{%-endif-%}
+{%- endcase -%}
+{%- endif -%}
+{%- case settings.products_hover -%}
+    {%- when 'base' -%}
+      {%- assign gl_include = 'section_loop_product_base' -%} 
+    {%- when 'alt' -%}
+      {%- assign gl_include = 'section_loop_product_alt' -%}
+    {%- when 'button' -%}
+      {%- assign gl_include = 'section_loop_product_button' -%}
+   {%- when 'info' -%}
+      {%- assign gl_include = 'section_loop_product_info' -%}
+   {%- when 'link' -%}
+      {%- assign gl_include = 'section_loop_product_link' -%}
+   {%- when 'standard' -%}
+      {%- assign gl_include = 'section_loop_product_standard' -%}
+   {%- when 'excerpt' -%}
+      {%- assign gl_include = 'section_loop_product_excerpt' -%}
+   {%- when 'quick' -%}
+      {%- assign gl_include = 'section_loop_product_quick' -%}
+{%- endcase -%}
+{%- case settings.collection_countdown_style -%}
+    {%- when 'light' -%}
+      {%- assign countdown_style = 'color-scheme-dark timer-size-small timer-style-standard' -%} 
+    {%- when 'dark' -%}
+      {%- assign countdown_style = 'color-scheme-light timer-size-small timer-style-standard' -%}
+    {%- when 'transparent_1' -%}
+      {%- assign countdown_style = 'color-scheme-light timer-size-small timer-style-transparent' -%}
+   {%- when 'transparent_2' -%}
+      {%- assign countdown_style = 'color-scheme-dark timer-size-small timer-style-transparent' -%}
+{%- endcase -%}
+{%- if settings.sale_countdown -%}
+   {%- assign section_settings_countdown = true -%}
+{%- else -%}
+   {%- assign section_settings_countdown = false -%}
+{%- endif -%}
+{%- if settings.shop_image_size != blank -%}{%- assign crop_nt = settings.shop_image_size -%}{%- endif -%}
+{%- if settings.use_wishlist -%}{%- include 'nitro-wishlist' -%}{%- endif -%}
+{%- if current_tags != blank -%}
+   {%- assign __color_current_tags = canonical_url | split: collection.handle -%}
+   {%- assign color_current_tags = __color_current_tags[1] | split:'?page' | first | remove_first: "/" -%}
+   {%- assign _no_current_tags = color_current_tags | split: "+" -%}
+   {%- assign _color_current_tags = color_current_tags | split: "+" | reverse -%}
+{%- endif -%}
+{%- if template.suffix != blank -%}
+   {%- assign template_suffix = template.suffix -%}
+   {%- assign check_template_list = true -%} 
+{%- else -%}
+   {%- assign check_template_list = false -%} 
+{%- endif -%}
+{%- capture cat_link_nathan_xxx -%}{{ 'nathan_xyz' | link_to_remove_tag: '' }}{%- endcapture -%}
+{%- assign cat_link_nathan_xx = cat_link_nathan_xxx | split:'href="' | last | split:'"' | first -%}
+{%- assign sort_symboy = '?&'-%}
+{%- if collection.current_vendor %}{%- assign sort_symboy = '&'-%}{%- endif -%}
+<div class="main-page-wrapper">
+
+  {%- if settings.use_top_categories -%}
+  <div class="page-title page-title-default title-size-{{settings.collection_title_size}} color-scheme-{{settings.collection_title_color}} title-design-centered without-title title-shop"{%- if settings.use_specify_image and collection.image %} style="{%- assign image = collection.image -%}{%- assign image_width = image.width | append:'x' -%}background-image: url({%-include 'gl_image_format',src: image , size: image_width -%})"{%- endif -%}>
+     <div class="container">
+        <div class="nav-shop">
+            <a href="javascript:baselThemeModule.backHistory()" class="basel-back-btn basel-tooltip"><span class="basel-tooltip-label">Back</span><span>Back</span></a>
+           <a href="#" class="basel-show-categories">{{ 'collections.general.categories' | t }}</a>
+           <ul class="basel-product-categories">
+               {%- case settings.top_categories_source -%}
+                  {%- when 'top_categories_show_all' -%}
+                     {%- comment -%}<li class="cat-link shop-all-link{%- if collection.handle == 'all' %} current-cat{%- endif -%}"><a href="/collections/all{%- if check_template_list -%}?&view={{template_suffix}}{%- endif-%}">{{ 'collections.general.title_all' | t }}</a></li>{%- endcomment -%}
+                     {%- for category in collections -%}
+                        {%- if category.products.size > 0 and forloop.index < 8 and category.handle != 'all' -%}
+                        <li class="cat-item{%- if collection.handle == category.handle %} current-cat{%- endif -%}"><a href="{{ category.url }}{%- if check_template_list -%}?&view={{template_suffix}}{%- endif-%}">{{ category.title }}</a></li>
+                        {%- endif -%}
+                     {%- endfor -%}
+                     {%- if collections.size > 7 -%}
+                        <li class="cat-item">
+                          <a href="/collections/all">{{ 'collections.general.other' | t }}</a>
+                          <ul class="children">
+                          {%- for category in collections offset:7 -%}
+                              {%- if category.products.size > 0 -%}
+                              <li class="cat-item{%- if collection.handle == category.handle %} current-cat{%- endif -%}"><a href="{{ category.url }}{%- if check_template_list -%}?&view={{template_suffix}}{%- endif-%}">{{ category.title }}</a></li>
+                              {%- endif -%}
+                          {%- endfor -%}
+                          </ul>
+                        </li>
+                     {%- endif -%}
+                  {%- else -%}
+                  {%- assign top_link_list = settings.top_categories_link_list -%}
+             {%- for link in linklists[top_link_list].links -%}
+                                 {%- if link.type == 'collection_link' or link.type == 'catalog_link' -%}
+                                    {%- assign child_list_handle = link.title | split: '[' | first | handleize -%}
+                                    {%- if linklists[child_list_handle].links != blank -%}
+                                      <li class="cat-item {%- if link.active or collection.handle == link.object.handle %}  current-cat{%- endif -%}">
+                                         <a href="{{ link.url }}{%- if check_template_list -%}?&view={{template_suffix}}{%- endif-%}">{{ link.title | split: '[' | first }}</a>
+                                         <ul class="children">
+                                         {%- for childlink in linklists[child_list_handle].links -%}
+                                             {%- if childlink.type == 'collection_link' -%}
+                                             <li class="cat-item{%- if collection.handle == childlink.object.handle %}  current-cat{%- endif -%}"><a href="{{ childlink.url }}{%- if check_template_list -%}?&view={{template_suffix}}{%- endif-%}">{{ childlink.title | split: '[' | first }}</a></li>
+                                             {%- endif -%}
+                                         {%- endfor -%}
+                                         </ul>                                       
+                                       </li>
+                                    {%- elsif link.links != blank -%}
+                       <li class="cat-item {%- if link.active %}  current-cat{%- endif -%}">
+                                         <a href="{{ link.url }}{%- if check_template_list -%}?&view={{template_suffix}}{%- endif-%}">{{ link.title | split: '[' | first }}</a>
+                                         <ul class="children">
+                                         {%- for child_link in link.links -%}
+                                             {%- if child_link.type == 'collection_link' -%}
+                                             <li class="cat-item{%- if child_link.active %}  current-cat{%- endif -%}"><a href="{{ child_link.url }}{%- if check_template_list -%}?&view={{template_suffix}}{%- endif-%}">{{ child_link.title | split: '[' | first }}</a></li>
+                                             {%- endif -%}
+                                         {%- endfor -%}
+                                         </ul>                                       
+                                       </li>
+                                    {%- else -%}
+                                       <li class="cat-item{%- if link.active or collection.handle == link.object.handle %}  current-cat{%- endif -%}"><a href="{{ link.url }}{%- if check_template_list -%}?&view={{template_suffix}}{%- endif-%}">{{ link.title | split: '[' | first }}</a></li>
+                                    {%- endif -%}
+                                 {%- endif -%}
+                              {%- else -%}
+                              {{ 'homepage.onboarding.no_content' | t }}
+                              {%- endfor -%}
+               {%- endcase -%}
+           </ul>
+        </div>
+     </div>
+  </div>
+  {%- endif -%}
+   <div class="container">
+      <div class="row">
+        <div class="category_main_title">
+                {% if collection.handle == "homecoming-dresses" %}
+                                        <h2 class="category-title-custom">{{collection.title}}</h2>
+                                                                  {%else%}
+                                                                  <h1 class="category-title">{{collection.title}}</h1>
+               	{% endif %}
+        </div>
+        	{%- include 'BreadcrumbMenu', page_handle:collection.handle -%}
+        {%- if settings.shop_sidebar != '1' -%}
+         <aside class="sidebar-container {{class_sidebar}} sidebar-{{settings.shop_size_sidebar}}" role="complementary">
+            <div class="sidebar-inner">
+				{%- include 'snippet_sidebar_for_dresses' -%}
+            </div><!-- .sidebar-inner -->
+         </aside><!-- .sidebar-container -->
+         {%- endif -%}
+        <div class="site-content {{class_gl}}" role="main">
+           {%- if collection.description != blank and settings.show_des_collection -%}
+                <div class="term-description promo-banner CategoryDescription" id="des_{{collection.id}}">
+                     {{collection.description}}</div>
+            {%- endif -%}
+           {% section 'collection-template-bc-sf-filter' %}
+       </div>
+   </div><!-- end container -->
+</div><!-- MAIN CONTENT AREA -->
+{%- if settings.ajax_shop == false -%}
+<script type="text/javascript">
+$('.shopify-ordering' ).on( 'change', 'select.orderby', function() {
+      $( this ).closest( 'form' ).submit();
+});
+</script>
+{%- endif -%}
+<script type="text/javascript">
+  if ($(window).width() > 767){
+  $('.parentcategoryblock ul.sidemenu').hide();
+  $('.parentcategoryblock.open ul.sidemenu').show();
+  $('.parentcategoryblock .TitleHeading').click(function() {
+    $(this).toggleClass('open').siblings('ul').slideToggle();
+    return false;
+  });    
+  }
+</script>

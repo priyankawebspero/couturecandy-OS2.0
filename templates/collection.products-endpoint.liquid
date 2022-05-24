@@ -1,0 +1,30 @@
+{% comment %} Please don’t update this content {% endcomment %}
+
+{% layout none %}
+{% paginate collection.products by 50 %}
+  {
+    "products":
+      [
+        {% for product in collection.products %}
+          {
+            "id":{{ product.id }},
+            "position":{{ forloop.index }},
+            "metafields":[
+              
+              {% comment %}
+                Image Alt
+              {% endcomment %}
+              {% for image in product.images %}
+                {
+                  "namespace":{{ image.id }},
+                  "key": "{{ image.src }}",
+                  "value": {{ image.alt | json }}
+                },
+              {% endfor %}
+  
+            ]
+          },
+        {% endfor %}
+      ]
+  }
+{% endpaginate %}

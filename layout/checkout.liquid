@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}" dir="{{ direction }}" class="{{ checkout_html_classes }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0">
+    <meta name="referrer" content="origin">
+
+    <title>{{ page_title }}</title>
+    
+    {{ 'checkoutcustom.css' | asset_url | stylesheet_tag }}
+    
+    {{ content_for_header }}
+    {{ checkout_stylesheets }}
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    {{ checkout_scripts }}
+  </head>
+  <body id="checkout">
+
+    {{ skip_to_content_link }}
+
+    <div class="banner" data-header>
+      <div class="wrap">
+        {{ content_for_logo }}
+      </div>
+    </div>
+
+    {{ order_summary_toggle }}
+
+    <div class="content" data-content>
+      <div class="wrap">
+        <div class="main" role="main">
+          <div class="main__header">
+            {{ content_for_logo }}
+            {{ breadcrumb }}
+            {{ alternative_payment_methods }}
+          </div>
+          <div class="main__content">
+            {{ content_for_layout }}
+          </div>
+          <div class="main__footer">
+            {{ content_for_footer }}
+          </div>
+        </div>
+        <div class="sidebar" role="complementary">
+          <div class="sidebar__header">
+            {{ content_for_logo }}
+          </div>
+          <div class="sidebar__content as">
+            <h1	class="sidetitle">Order Summary</h1>
+            {{ content_for_order_summary }}
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+     <script src="{{ 'checkoutcustom.js' | asset_url }}"></script>
+    {{ tracking_code }}
+    {% assign emailCust =  '' %}
+{% assign setHashedEmail = 'setEmail' %}
+{% if customer %}
+	  {% assign emailCust = customer.email | remove: ' ' | strip_newlines | downcase | md5 %}
+		{% assign setHashedEmail = 'setHashedEmail' %}
+	{% else %}
+  {% assign emailCust = emailCust | remove: ' ' | strip_newlines | downcase | md5 %}
+{% assign setHashedEmail = 'setEmail' %}
+{% endif %}
+      <script>
+    
+    
+    function getMobileOperatingSystem() {
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      // Windows Phone must come first because its UA also contains "Android"
+    if (/windows phone/i.test(userAgent)) {
+        return "m";
+    }
+
+    if (/android/i.test(userAgent)) {
+        return "m";
+    }
+	
+	if (/iPhone/i.test(userAgent)) {
+        return "m";
+    }
+
+
+    // iOS detection from: http://stackoverflow.com/a/9039885/177710
+    if (/iPad/.test(userAgent) && !window.MSStream) {
+        return "t";
+    }
+
+    return "d";
+}
+var checkDevice = getMobileOperatingSystem();
+    
+  </script>
+<script type="text/javascript" src="//static.criteo.net/js/ld/ld.js" async="true"></script>
+    {{ 'flits-checkout.js' | asset_url | script_tag}}
+<script type="text/javascript">
+ 
+  var Order_Numbesssr = "{{ checkout.order_id }}";
+  if(Order_Numbesssr > 0){
+window.criteo_q = window.criteo_q || [];
+window.criteo_q.push(
+	{ event: "setAccount", account: 29071 },
+	{ event: "{{setHashedEmail}}", email: "{{emailCust}}" },
+	{ event: "setSiteType", type: checkDevice },
+    { event: "trackTransaction", id: Order_Numbesssr, item: [
+      {%- for line in checkout.line_items -%}
+      { id: "{{ line.product.id }}", price: {{line.product.price | money_without_currency | remove : '.00'}}, quantity: {{ line.quantity }} },
+{%- endfor -%}
+	]}
+);
+  }
+</script>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+  <script>
+  // fake vistor 
+   var finalval = $.cookie("last_stock");
+    if(finalval==null){
+         $.cookie("last_stock", '');
+      }
+  var myVar = setInterval(myTimer, 15000);
+
+  function myTimer() {
+      var product_quantity = $('#vistorspan').text();
+      $.cookie("last_stock", product_quantity);
+      var savec = $.cookie("last_stock");
+      if(savec > 2){
+      var less_the_stock = savec - 1;
+      $.cookie("last_stock", less_the_stock); // Sample 1
+      var finalVal = $.cookie("last_stock");
+      console.log(finalVal);
+      }
+      else{
+      var finalVal = product_quantity;
+      }
+      $('#vistorspan').replaceWith('<span id="vistorspan">' + finalVal +'</span>');
+  }
+  var finalval = $.cookie("last_stock");
+  if(finalval!=''){
+    $('#vistorspan').replaceWith('<span id="vistorspan">' + finalval +'</span>');
+  }
+
+     /* Light YouTube Embeds by @labnol */
+      /* Web: http://labnol.org/?p=27941 */
+
+      document.addEventListener("DOMContentLoaded",
+          function() {
+              var div, n,
+                  v = document.getElementsByClassName("youtube-player");
+              for (n = 0; n < v.length; n++) {
+                  div = document.createElement("div");
+                  div.setAttribute("data-id", v[n].dataset.id);
+                  div.innerHTML = labnolThumb(v[n].dataset.id);
+                  div.onclick = labnolIframe;
+                  v[n].appendChild(div);
+              }
+          });
+
+
+      function labnolThumb(id) {
+          var thumb = '<img src="https://cdn.shopify.com/s/files/1/0144/7018/5017/files/hqdefault.jpg">',
+              play = '<div class="play"></div>';
+          return thumb.replace("ID", id) + play;
+      }
+
+      function labnolIframe() {
+          var iframe = document.createElement("iframe");
+          var embed = "https://www.youtube.com/embed/ID?autoplay=1";
+          iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+          iframe.setAttribute("frameborder", "0");
+          iframe.setAttribute("allowfullscreen", "1");
+          this.parentNode.replaceChild(iframe, this);
+      }
+    var modal = document.getElementById('popup');
+    var cover = document.getElementById('cover');
+    var btn = document.getElementById("customSizeChartNew");
+    var span = document.getElementsByClassName("close")[0];
+    var video = document.getElementsByClassName("youtube-player").innerHTML = find('iframe');
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+        cover.style.display = "block";
+        //console.log(video);
+    }
+    cover.onclick = function() {
+        modal.style.display = "none";
+        cover.style.display = "none";
+        //video.pause();
+        //$('.youtube-player iframe')[0].pause();
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+        cover.style.display = "none";
+        //video.pause();
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+            cover.style.display = "none";
+        }
+    }
+	
+    
+//     // read more:
+//     // Configure/customize these variables.
+//     var showChar = 300;  // How many characters are shown by default
+//     var moretext = "Read more...";
+//     var lesstext = "Read less";
+    
+
+//    	$('.shopify-Tabs-panel--description').each(function() {
+//         var table = $(this).find('table').html();
+//         var create_table ='<table class="table" pdp="">'+table+'</table>';
+//         var filter = $(this).find('table').remove();
+//         var content = $(this).html();
+//         if(content.length > showChar) {
+//             var c = content.substr(0, showChar);
+//             var h = content.substr(showChar, content.length - showChar).replace(/\s+/g, " ").trim();
+//             var html = "<div class='top_content'>"+c +'</div>'+'<span class="morecontent">\
+//             '+ h + '</span><span class="morelink">' + moretext + '</span>'+create_table;
+//             $(this).html(html);
+//         }
+ 
+//     });
+ 
+//     $(".morelink").click(function(){
+//         if($(this).hasClass("less")) {
+//             $(this).removeClass("less");
+//             $(this).html(moretext);
+//         } else {
+//             $(this).addClass("less");
+//             $(this).html(lesstext);
+//         }
+//         $(this).parent().prev().toggle();
+//         $(this).prev().toggle();
+//         return false;
+//     });
+    
+    
+  </script>    

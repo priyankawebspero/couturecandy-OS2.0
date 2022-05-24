@@ -1,0 +1,75 @@
+{%- assign allproductin_a_cat = 0 -%}
+    
+{% assign sale_pro_list = 0 %}
+{% paginate collection.products by 1000 %}
+
+    {% for product in collection.products %}
+    {% if product.available %}
+       {% assign allproductin_a_cat = allproductin_a_cat | plus: 1 %}   
+    {% endif %}
+            {% if product.tags contains 'Sale' and product.available %}
+            {% assign sale_pro_list = sale_pro_list | plus: 1 %}
+            {% endif %}
+    {% endfor %}
+    
+{% endpaginate %}         
+<input type="hidden" name="collection" id="collectionid" value="{{ collection.id }}">
+<input type="hidden" name="collection" id="collectiontotalproduct" value="{{ collection.all_products_count }}">
+
+<style>
+  .sidebarmenu_div .parentcategoryblock .TitleHeading.onafter:after{
+    display:none;
+  }
+</style>
+<div class="sidebarmenu_div">
+    <div class="parentcategoryblock">
+      <h5 class="TitleHeading onafter">CATEGORIES</h5>
+      <ul class="sidemenu {{ collection.handle }}" style="display: block;">
+    {% if collection.handle == 'karen-zambos' or collection.handle == 'snowman-ny' or collection.handle == 'tresor-collection' or collection.handle == 'jarin-k-jewelry' or collection.handle == 'bettinis' or collection.handle == 'ashley-schenkein-jewelry' or collection.handle == 'union-of-angels' or collection.handle == 'chichi-active' or collection.handle == 'montce-swim' or collection.handle == 'joelle-hawkens-by-treesje' or collection.handle == 'black-box-swim' or collection.handle == 'del-mar-swimwear' or collection.handle == 'mofe-handbags' or collection.handle == 'kovey' or collection.handle == 'winston-white' or collection.handle == 'poema-swim' or collection.handle == 'treesje' or collection.handle == 'cz-by-kenneth-jay-lane' or collection.handle == 'leah-shlaer-swimwear' or collection.handle == 'logan-hollowell' or collection.handle == 'helen-jon' or collection.handle == 'raga' or collection.handle == 'workhorse-jewelry' or collection.handle == 'lolli-swimwear' or collection.handle == 'heather-hawkins' or collection.handle == 'clhei' or collection.handle == 'nirvanic-swim' or collection.handle == 'lamarque' or collection.handle == 'elizabeth-buenaventura' or collection.handle == 'nicolita-swimwear' or collection.handle == 'merritt-charles' or collection.handle == 'rachael-ryen' or collection.handle == 'heather-gardner' or collection.handle == 'bluefish-sport' or collection.handle == 'elizabeth-cole-jewelry' %}
+              {% for product_type in collection.all_types and product.available %}
+               {% if product_type != '' %}
+                      {% assign the_type = product_type %}
+               {% endif %}
+               {% assign typeCount = 0 %}
+                  {% paginate collection.products by 1000 %}
+                  {% for product in collection.products %}
+                      {% if product.type == the_type and product.available %}
+                            {% assign typeCount = typeCount | plus: 1 %}
+                      {% endif %}
+              {% endfor %}
+              {% endpaginate %}
+                {% if typeCount > 0 %}<li><a href="/collections/{{ collection.handle }}/?_=pf&pf_pt_product_type={{ the_type }}">{{ the_type }}({{ typeCount }})</a></li> {% endif %}
+            {% endfor %}
+          {%- else -%}
+           <li class=""><a href="/collections/{{ collection.handle }}/Dresses">Dresses({{ allproductin_a_cat }})</a></li>
+       {%- endif -%} 
+        {% if collection.handle == 'jovani' or collection.handle == 'jovani-bridal' or collection.handle == 'scala' or collection.handle == 'faviana' or collection.handle == 'saiid-kobeisy' or collection.handle == 'tarik-ediz' %}
+            <li class=""></li>
+          {%- else -%}
+         <li class="sad">
+          <a href="/collections/{{ collection.handle }}/Sale">
+                {% if sale_pro_list > 0 %}Sale({{ sale_pro_list }}){% endif %}
+          </a>
+        </li>
+        {%- endif -%} 
+      </ul>
+     </div>
+</div>
+<script type="text/javascript">
+  var id = $('#collectionid').val();
+  var collectiontotalproduct = $('#collectiontotalproduct').val();
+  var url = '/collections/'+id+'/count.json';
+  $.getJSON(url, function(response) {
+         var count =  Math.round(response['collection']['products_count']/200);
+         var allpro = new Array();
+         for (var i = 1; i <= count; i++) {
+              var productsURL = '/collections/'+id+'/products.json?&limit=250&page='+i; 
+               $.getJSON(productsURL, function(response) {
+                  var l = response['products'].length;
+                  allpro.push(l);
+               });
+         }
+         console.log(allpro);
+  });
+</script>
+

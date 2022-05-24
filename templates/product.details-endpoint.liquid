@@ -1,0 +1,23 @@
+{% comment %} Please don’t update this content {% endcomment %}
+
+{% layout none %}
+{
+  "product":
+    {
+      "id":{{ product.id }},
+      "metafields":[
+        
+              {% comment %}
+                Image Alt
+              {% endcomment %}
+              {% for image in product.images %}
+                {
+                  "namespace":{{ image.id }},
+                  "key": "{{ image.src }}",
+                  "value": {{ image.alt | json }}
+                },
+              {% endfor %}
+  
+      ]
+    }
+}

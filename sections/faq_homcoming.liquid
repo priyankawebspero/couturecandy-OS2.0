@@ -1,0 +1,241 @@
+<div class="shopify_explorer__content">
+  <div class="page_top">
+    {%- if page.title -%}
+        <div class="page_upper" {%- if section.settings.page_top_image -%} style="background: url('{{section.settings.page_top_image | img_url: '1024x'}}');" {%- endif -%}>
+        </div>
+    {%- endif -%}
+    {%- if section.settings.page_title -%}
+      <div class="faq-banner-txt"><h1 class="custom_page_title">{{section.settings.page_title}}</h1>
+         <div class="breadcrumbs">
+         <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+              <a class="home" itemprop="item" href="{{ shop.url }}">
+                  <span itemprop="name">Home</span></a>
+                 <meta itemprop="position" content="1" />
+            </li>
+              <li itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+              <a class="homecoming" itemprop="item" href="https://www.couturecandy.com/collections/homecoming-dresses">
+                  <span itemprop="name">HOMECOMING DRESSES</span></a>
+                 <meta itemprop="position" content="2" />
+            </li>
+          </ol>
+             </div>
+      {%- endif -%}
+      {%- if section.settings.page_description -%}
+      <div class="page_description">
+            {{section.settings.page_description}}
+      </div>
+        {%- endif -%}</div>
+  </div>
+  {%- assign expand_questions = section.settings.expand_questions -%}
+  {%- for block in section.blocks -%}
+    {%- case block.type -%}
+      {%- when 'separator' -%}
+        <h3 class="shopify_explorer_faq__separator h3" {{ block.shopify_attributes }}>{{ block.settings.title | escape }}</h3>
+      {%- when 'question' -%}
+        <div class="shopify_explorer_faq__item {% unless expand_questions %}shopify_explorer_faq__item--expandable{% endunless %}" {{ block.shopify_attributes }}>
+          <h3 class="shopify_explorer_faq__question h5 {% unless expand_questions %}link{% endunless %}">{{ block.settings.title }}</h3>
+          <div class="shopify_explorer_faq__answer rte">
+            {{ block.settings.answer }}
+          </div>
+        </div>
+    {%- endcase -%}
+  {%- endfor -%}
+</div>
+{% schema %}
+  {
+    "name": "FAQ Homecoming",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "expand_questions",
+        "label": "Expand all questions by default",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "page_title",
+        "label": "Heading"
+      },
+      {
+        "type": "textarea",
+        "id": "page_description",
+        "label": "Description"
+      },
+      {
+        "type": "image_picker",
+        "id": "page_top_image",
+        "label": "Select Banner Image"
+      }
+  ],
+    "blocks": [
+      {
+        "type": "separator",
+        "name": "Section separator",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading"
+          }
+        ]
+      },
+      {
+        "type": "question",
+        "name": "Question",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Question"
+          },
+          {
+            "type": "html",
+            "id": "answer",
+            "label": "Answer"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+{% stylesheet %}
+{% endstylesheet %}
+{% javascript %}
+(function() {
+  $('body').on('click', '.shopify_explorer_faq__question', function() {
+    $(this).next('.shopify_explorer_faq__answer').slideToggle(150).toggleClass('active');
+    $(this).toggleClass('active');
+  });
+  $(document).on('shopify:block:select', '#shopify-section-page-shopify_explorer_faq-template', function(event) {
+    $(event.target).find('.shopify_explorer_faq__answer').slideDown(150);
+  });
+  $(document).on('shopify:block:deselect', '#shopify-section-page-shopify_explorer_faq-template', function(event) {
+    $(event.target).find('.shopify_explorer_faq__answer').slideUp(150);
+  });
+}());
+{% endjavascript %}
+<style>
+/**
+ * FAQ
+ */
+.shopify_explorer_faq__item--expandable > .shopify_explorer_faq__question {
+  cursor: pointer;
+}
+.shopify_explorer_faq__item--expandable > .shopify_explorer_faq__answer {
+  display: none;
+}
+.shopify_explorer_faq__separator {
+  text-transform: none;
+  text-align: center;
+}
+.shopify_explorer_faq__separator :not(:first-child) {
+  margin-top: 1.2em;
+}
+.shopify_explorer_faq__item {
+  border-bottom: 1px solid #ccc;
+}
+
+  
+  .page_upper {
+    min-height: 370px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    /* background-position: center !important; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%; */
+    color: #fff;
+    font-size: 40px;
+}
+
+.faq-banner-txt {
+    background: #fff;
+    margin-top: -50px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 10px;
+    padding: 25px;
+  text-align: center;
+}
+
+.faq-banner-txt .custom_page_title {
+    text-align: center;
+}
+
+.faq-banner-txt .page_description {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+}
+  
+.shopify_explorer_faq__item .shopify_explorer_faq__question {
+    margin-bottom: 0;
+    position: relative;
+    padding: 15px 15px 15px 10px;
+    padding-right: 30px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+.shopify_explorer_faq__item .shopify_explorer_faq__question.active::before {
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+.shopify_explorer_faq__item .shopify_explorer_faq__answer {
+  padding: 20px 5px 15px 5px;
+}
+
+.shopify_explorer_faq__item .shopify_explorer_faq__question::before {
+  position: absolute;
+  right: 0;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  content: '';
+  display: block;
+  height: 12px;
+  margin-top: -11px;
+  pointer-events: none;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  -webkit-transform-origin: 66% 66%;
+  -ms-transform-origin: 66% 66%;
+  transform-origin: 66% 66%;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  width: 12px;
+}
+  
+ .shopify_explorer_faq__item .shopify_explorer_faq__answer.active {
+    border-top: 1px solid #ccc;
+}
+  
+@media (max-width: 590px) {
+  .shopify_explorer_faq__item .shopify_explorer_faq__question::before {
+    width: 8px;
+    height: 8px;
+    margin-top: -7px;
+    right: 3px;
+  }
+  
+.page_upper {
+    min-height: 280px;
+    margin-top: 35px;
+}
+  
+.faq-banner-txt {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+}
+</style>
