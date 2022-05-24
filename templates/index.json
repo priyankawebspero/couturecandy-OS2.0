@@ -1,10 +1,12 @@
 {
-	"section":{
-		"custom html":{
-			"type": "custom-content"
-		}
-	},
-"order":[
-  "custom html"
-]
+  "sections": {
+    "custom-content": {
+      "type": "custom-content",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "custom-content"
+  ]
 }
