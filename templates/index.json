@@ -1,0 +1,10 @@
+{
+	"section":{
+		"custom html":{
+			"type": "custom-content"
+		}
+	},
+"order":[
+  "custom html"
+]
+}
