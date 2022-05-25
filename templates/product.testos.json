@@ -2,6 +2,22 @@
   "sections": {
     "product-main": {
       "type": "product-main",
+      "blocks": {
+        "be3201cb-0bcd-418c-8598-3b504835cf11": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "357bdf02-8307-4956-a753-14de463f8338": {
+          "type": "additional",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "be3201cb-0bcd-418c-8598-3b504835cf11",
+        "357bdf02-8307-4956-a753-14de463f8338"
+      ],
       "settings": {
       }
     },
