@@ -736,7 +736,7 @@
         "info": "couturecandy@gmail.com"
       },
       {
-        "type": "text",
+        "type": "html",
         "id": "top_bar_text_middle",
         "label": "___ Announcement Bar Text",
         "info": "couturecandy@gmail.com"
