@@ -510,7 +510,6 @@
                        {%- if product.images.size > 1 and design_products_page != 'product-design-sticky' -%}<div class="{%- if settings.thumbnails_position == 'left' -%}col-md-2 col-md-pull-9{%- else -%}col-sm-12{%- endif -%}"><div id="gl_thumbnails" class="thumbnails"></div></div>{%- endif -%}
                     </div>
                     {%- if settings.use_view_360 -%}
-                       {%- section 'product_360_section' -%}
                     {%- elsif product.metafields.meta.video contains 'youtube' or product.metafields.meta.video contains 'vimeo' -%}
                        <div class="product-additional-galleries">
                           <div class="product-video-button">
