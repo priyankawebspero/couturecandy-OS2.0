@@ -1,0 +1,27 @@
+{% if template == "index" %}
+<link rel="preload" href="{{ 'tab_shopify.min.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
+{%- endif -%}
+<link rel="preload" href="{{ 'gl_linecons_icons.min.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ 'gl_linecons_icons.min.css' | asset_url }}"></noscript>
+<link rel="preload" href="{{ 'gl_vendor.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="{{ 'main.min.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
+{%- include 'load-css' -%}
+<!-- Logo CSS -->
+{%- include 'inc_css_home' -%}
+{%- if settings.show_custom_css -%}
+<link rel="preload" href="{{ 'custom.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
+{%- endif-%}  
+{%- if template contains 'product' -%}
+{%- include 'space_check_variant' -%}         
+<link rel="stylesheet" type="text/css" href="{{ 'cloudzoom.css' | asset_url }}" />
+{%- endif-%}
+
+{% if template != "collection" and template != "index" %} 
+{%- assign yotpo_offload_content = shop.metafields.yotpo.yotpo_offload_content %}
+{%- assign time_now = 'now' | date: '%s' %}
+{%- assign yotpo_live_time = shop.metafields.yotpo.yotpo_live | date: '%s' %}
+{%- assign diffSeconds = time_now | minus: yotpo_live_time %}
+  {%- if yotpo_offload_content == 'yes' and diffSeconds < 86400 -%}
+    {{ 'yotpo-full-css.css' | asset_url | stylesheet_tag }}
+  {%- endif -%}
+{%- endif -%}
