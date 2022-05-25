@@ -7,4 +7,12 @@
 			$('body').removeClass(Weglot.getLanguageName(prevLang));
 			$('body').addClass(Weglot.getLanguageName(newLang));
 	});
+  switchers: [
+       { // Move switcher somewhere in the page
+           location: {
+               target: ".switchers", // You'll probably have to change it (see the step below in order to find the correct CSS selector)
+               sibling: null
+           }
+       }
+   ]
 </script>
