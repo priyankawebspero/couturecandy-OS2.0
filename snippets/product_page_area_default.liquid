@@ -566,7 +566,7 @@
                        <div class="basel-scroll-content">
                         {% assign vendortitle = product.vendor | downcase  %}
 
-                        {% assign vendortitle_handle = product.vendor | | handleize  %}
+                        {% assign vendortitle_handle = product.vendor | handleize  %}
                       <h1 itemprop="name" class="product_title entry-title">{{ product.title }}</h1>
                            {% for collection in product.collections  -%}
                                       {% assign collectionurls = collection.url  %}
