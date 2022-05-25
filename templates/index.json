@@ -1,18 +1,5 @@
 {
   "sections": {
-    "custom-content": {
-      "type": "custom-content",
-      "settings": {
-        "code": "<div class=\"homepagelogo\"> <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0144\/7018\/5017\/files\/cc_logo_2fb0ad95-164b-4859-97ae-e2ef1996a278.png\" id=\"LogoImage\" alt=\"Couture Candy\" border=\"0\">\n<\/div>",
-        "section_margin_top": "",
-        "section_margin_bottom": "",
-        "section_padding_top": "",
-        "section_padding_right": "",
-        "section_padding_bottom": "",
-        "section_padding_left": "",
-        "hidden_section": false
-      }
-    },
     "165340057706066aef": {
       "type": "custom-content",
       "settings": {
@@ -28,7 +15,6 @@
     }
   },
   "order": [
-    "custom-content",
     "165340057706066aef"
   ]
 }
