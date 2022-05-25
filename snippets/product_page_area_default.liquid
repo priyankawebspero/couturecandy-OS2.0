@@ -16,7 +16,7 @@
    {%- assign downcased_option = option.name | downcase -%}
    {%- assign downcased_option_check = option.name | downcase | prepend: '"' | append: '"' | strip -%} 
    {%- if downcased_option == 'color' or downcased_option == 'colour' or gl_color_name contains downcased_option_check -%}
-     {%- assign colour_count = option.values.size | plus:0 -%}
+     {%- assign colour_count = option.values.size  -%}
    {%- endif -%}
 {%- endfor -%}
 {%- if settings.product_sidebar == 'left' -%}
