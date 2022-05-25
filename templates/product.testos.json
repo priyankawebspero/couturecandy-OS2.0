@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "product-main": {
+      "type": "product-main",
+      "settings": {
+      }
+    },
+    "product_360_section": {
+      "type": "product_360_section",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "product-main",
+    "product_360_section"
+  ]
+}
