@@ -14,7 +14,7 @@
                <td class="value with-swatches">
                   <div class="swatches-select " data-id="{{ option_index }}" data-option-index="{{ option_index }}">
                      {%-assign index = 0 %}
-                     {%- for value in option.values | sort: 'title' -%}
+                     {%- for value in option.values -%}
                         <div class="basel-swatch bg_color basel-tooltip swatch-size-{{settings.swatch_size}}{%- if settings.swatch_style == '1' %} colored-swatch{%- else %} image-swatch{%- endif %}{%- if first_available_variant and option.selected_value == value %} active-swatch{%- elsif forloop.first == true and product.selected_variant == blank and first_available_variant == false %} active-swatch{%- elsif option.selected_value == value and product.selected_variant != blank and first_available_variant == false %} active-swatch{%- endif %} bg_{{ value  | handleize  }} swatch-enabled" data-value='{{ value | handleize }}' data-image-id="{{ featured_image_id[index] }}">
                            <span class="basel-tooltip-label">{{ value }}</span>{{ value }}
                         </div>
