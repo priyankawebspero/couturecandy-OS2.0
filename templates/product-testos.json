@@ -1,0 +1,15 @@
+{
+    "name": "Default product template",
+    "sections": {
+      "product-main": {
+        "type": "product-main"
+      },
+      "product_360_section": {
+        "type": "product_360_section"
+      }
+    },
+    "order": [
+      "product-main"
+    ]
+  }
+  
