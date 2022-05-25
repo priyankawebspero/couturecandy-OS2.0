@@ -578,11 +578,11 @@
 
                              </div>
                         </div>
-                         {%- if settings.show_product_page_rating -%}
+                         
                           <a href="#ReviewSection" class="shopify-product-rating">
                             <div class="yotpo bottomLine" data-product-id="{{ product.id }}"  data-url="{{ product.url }}"></div>          
                            </a>
-                          {%- endif -%}
+                          
                           <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
                             <input type="hidden" name="Product_Price" id="tracking_price" value="{{ product.price | money_without_currency }}">
                              <p class="price" id="productPrice">
