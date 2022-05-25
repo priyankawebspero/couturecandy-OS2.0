@@ -111,9 +111,7 @@
   </div>
   {%- endif -%}
 
-  {%- if settings.enable_popup -%}{%- include 'basel-promo-popup' -%}{%- endif -%}  
-  {%- if settings.enable_cookies_popup -%}{%- include 'basel-cookies-popup' -%}{%- endif -%}
-  {%- if settings.enable_suggest_products -%}{%- include 'tea_suggest' -%}{%- endif -%}
+ {%- if settings.enable_suggest_products -%}{%- include 'tea_suggest' -%}{%- endif -%}
 
   {%- if template contains 'product' or template contains 'article' or check_photowipe -%}
   {%- include 'photoswipe' -%}
