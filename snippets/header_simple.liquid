@@ -2,8 +2,8 @@
    <div class="wrapp-header">
      <div class="header_middle_block">
        <div class="switchers col-4"></div>
-       <div class="logo col-4"></div>
-       <div class="search col-4"></div>
+       <div class="logo col-4">{%- include 'gl_logo' -%}</div>
+       <div class="search col-4">{%- include 'header_search' -%}</div>
      </div>
      
       <div class="main-nav site-navigation basel-navigation menu-{{settings.basel_menu_align}}" role="navigation">{%- section 'gl_mega_menu' -%}</div>
@@ -13,8 +13,7 @@
        <div class="number-and-social-top-bar" style="display: inline-block;font-size: 13px;font-family: &quot;&quot;,Helvetica,sans-serif;color: #333;">
      	 		Call Us:<span style="margin-left:10px;"><a href="tel:(855)445-8601">(855) 445-8601</a></span>
  		</div>
-        {%- include 'header_wishlist' -%} 
-        {%- include 'header_search' -%}
+        {%- include 'header_wishlist' -%}         
          {%- unless settings.cart_design == 'disable' or settings.catalog_mode or template contains 'cart' -%}
          <div class="shopping-cart basel-cart-design-{{settings.cart_design}} basel-cart-icon{%- if settings.cart_position == 'side' %} cart-widget-opener{%- endif %}{%- if settings.shopping_icon_alt %} basel-cart-alt{%- endif -%}">
             <a href="/cart">
