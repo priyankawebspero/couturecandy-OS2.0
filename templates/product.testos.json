@@ -9,16 +9,10 @@
       "type": "product_360_section",
       "settings": {
       }
-    },
-    "gl-product-page-description": {
-      "type": "gl-product-page-description",
-      "settings": {
-      }
     }
   },
   "order": [
     "product-main",
-    "product_360_section",
-    "gl-product-page-description"
+    "product_360_section"
   ]
 }
