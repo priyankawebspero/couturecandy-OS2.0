@@ -1124,13 +1124,6 @@
                  </div><!-- .summary --> 
               </div>  
            </div>
-           {%- if settings.product_sidebar != '1' -%}
-           <aside class="sidebar-container {{class_sidebar}} sidebar-{{settings.product_sidebar}}" role="complementary">
-              <div class="sidebar-inner">
-                 {%- section 'gl_section_sidebar_product' -%}<!-- .widget-area -->
-              </div><!-- .sidebar-inner -->
-           </aside><!-- .sidebar-container -->
-           {%- endif -%}
         </div>
      </div>
      {%- if settings.show_share_btn and design_products_page == 'product-design-alt' -%}
