@@ -9,7 +9,8 @@
       }
     },
     "order": [
-      "product-main"
+      "product-main",
+       "product_360_section"
     ]
   }
   
