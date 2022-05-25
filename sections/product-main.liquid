@@ -117,3 +117,109 @@ window.criteo_q.push(
 );
 </script>
 <script src="https://widget.sezzle.com/v1/javascript/price-widget?uuid=bd0b31d4-a0b6-4036-868a-27a0e13ed47a"></script>
+{%- schema -%}
+  {
+    "name": "Tab Descriptions",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Custom Metafields (namespace: additions)"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "description",
+        "name": "Description",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Description"
+          }
+        ]
+      },
+      {
+        "type": "review",
+        "name": "Review",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Reviews"
+          },  
+          {
+          "type": "checkbox",
+          "id": "use_count_reviews",
+          "label": "Show number count Reviews",
+          "default": false
+          }
+        ]
+      },
+      {
+        "type": "bundle",
+        "name": "Product Bundle",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Buy With Bundle"
+          }
+        ]
+      },
+      {
+        "type": "additional",
+        "name": "Additional Information",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Additional Information"
+          }
+        ]
+      },
+      {
+        "type": "html",
+        "name": "Custom HTML",
+        "settings": [
+         {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Shipping & Delivery"
+          },
+          {
+            "type": "html",
+            "id": "code",
+            "label": "HTML"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "name": "Text",
+        "settings": [
+            {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Talk about your brand"
+            },
+            {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            }
+         ]
+      }
+    ]
+  }
+{% endschema %}
