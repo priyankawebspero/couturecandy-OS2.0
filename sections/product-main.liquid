@@ -127,16 +127,32 @@ window.criteo_q.push(
       }
     ],
     "blocks": [
-        {
+      {
         "type": "description",
-        "name": "description",
-        "limit": 1
-        },
-        {
-          "type": "additional",
-          "name": "additional",
-          "limit": 1
-        }
+        "name": "t:sections.main-product.blocks.description.name",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Description"
+          }
+        ]
+      },
+      {
+        "type": "additional",
+        "name": "t:sections.main-product.blocks.additional.name",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Additional Information"
+          }
+        ]
+      }
     ]
   }
 {% endschema %}
