@@ -13,7 +13,7 @@
   {%- include 'check_label_gl' -%}
   {%- if settings.color_name_check != blank -%}{%- assign _gl_color_name = settings.color_name_check | replace: ' ,', ',' | replace: ', ', ',' | split: ',' -%}{%- assign gl_color_name = _gl_color_name | downcase -%}{%-else-%}{%- assign gl_color_name = '\nathan_dt\' -%}{%-endif-%}
   {%- for option in product.options_with_values -%}
-     {%- assign downcased_option = option.name | downcase -%}
+     {%- assign downcased_option = option.name -%}
      {%- assign downcased_option_check = option.name  -%} 
      {%- if downcased_option == 'color' or downcased_option == 'colour' or gl_color_name contains downcased_option_check -%}
        {%- assign colour_count = option.values.size | plus:0 -%}
