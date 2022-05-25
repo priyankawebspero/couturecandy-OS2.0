@@ -2,54 +2,12 @@
 <!--[if IE 9]> <html class="ie9 no-js" lang="{{ shop.locale }}"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="{{ shop.locale }}"> <!--<![endif]-->
 <head>
-   {% include 'yett' %}
-  <!-- Anti-flicker snippet (recommended) -->
-<style>.async-hide { opacity: 0 !important} </style>
-<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
-h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
-(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
-})(window,document.documentElement,'async-hide','dataLayer',4000,
-{'GTM-PQJPKCB':true});</script>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PQJPKCB');</script>
-  <!-- End Google Tag Manager -->
+ <!-- yett control the execution of (third party) scripts -->
+{%- include 'yett' -%}
 {%- include 'meta' -%}
-
 {%- include 'social-meta-tags' -%}
-  <script>
-    function getMobileOperatingSystem() {
-		  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-      // Windows Phone must come first because its UA also contains "Android"
-    if (/windows phone/i.test(userAgent)) {
-        return "m";
-    }
-
-    if (/android/i.test(userAgent)) {
-        return "m";
-    }
-  
-  if (/iPhone/i.test(userAgent)) {
-        return "m";
-    }
-
-
-    // iOS detection from: http://stackoverflow.com/a/9039885/177710
-    if (/iPad/.test(userAgent) && !window.MSStream) {
-        return "t";
-    }
-
-    return "d";
-}
-var checkDevice = getMobileOperatingSystem();
-    
-  </script>
 {% assign emailCust =  '' %}
-
 {% assign setHashedEmail = 'setEmail' %}
 {% if customer %}
     {% assign emailCust = customer.email | remove: ' ' | strip_newlines | downcase | md5 %}
@@ -59,71 +17,22 @@ var checkDevice = getMobileOperatingSystem();
 {% assign setHashedEmail = 'setEmail' %}
 {% endif %}
   
-    {% if template == "index" %}
-      <meta name="facebook-domain-verification" content="65kh83o91knyi4e2aa294mfau2ovt1" />
-      <link rel="preload" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap"  as="font" />
-      <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" as="font" /> 
-      <script type="text/javascript" src="https://static.criteo.net/js/ld/ld.js?shop=couture-candy.myshopify.com" async="true"></script>
-      <script type="text/javascript">
-      window.criteo_q = window.criteo_q || [];
-      window.criteo_q.push(
-        { event: "setAccount", account: 29071 },
-        { event: "{{setHashedEmail}}", email: "{{emailCust}}" },
-        { event: "setSiteType", type: checkDevice },
-        { event: "viewHome" }
-      );
-      </script>
-      {{ 'tab_shopify.min.css' | asset_url | stylesheet_tag }}
-    {%- endif -%}
   {%- capture check_admin -%}{{ content_for_header }}{%- endcapture -%}
   {%- capture check_tab -%}{{ content_for_layout  }}{%- endcapture -%}
-   <link rel="preload" href="{{ 'gl_linecons_icons.min.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="{{ 'gl_linecons_icons.min.css' | asset_url }}"></noscript>
-  {%- if check_admin contains 'design_mode' -%}{%- assign admin_shopify = true -%}{%- endif -%}
-  {%- if check_tab contains 'section_tab_gl_css' -%}
-  {%- assign section_tab_css_enable = true -%}
-  {%- endif -%}
+
   {%- if check_tab contains 'gl_has_youtube' or check_tab contains 'has_section_gl_js' or check_tab contains 'animated_counter' -%}
   {%- assign section_js_enable = true -%}
   {%- endif -%}
   {%- if check_tab contains 'gl_has_google_map' -%}
   {%- assign section_js_googlem_enable = true -%}
   {%- endif -%}
-  {%- include 'gl_header_css' -%}
+
   {%- include 'load-css' -%}
-  {%- if request.host contains 'demo-basel' -%}
-  <script type="text/javascript">(function(){var externallyFramed=false;try{externallyFramed=top.location.host!=location.host;}catch(err){externallyFramed=true;}if(externallyFramed){top.location='https://demo-basel2.myshopify.com/';}})();</script>
-  {%- endif -%}
-  <!-- Logo CSS -->
-  {%- include 'inc_css_home' -%}
-  {%- if settings.show_custom_css -%}{{ 'custom.css' | asset_url | stylesheet_tag }}{%- endif-%}
-  {%- if template contains 'product' -%}{%- include 'space_check_variant' -%}{%- endif-%}
-  {{ '//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js' | script_tag }}
+  {%- include 'head-style' -%}
+  {%- include 'head-script-before-content' -%}
+
   {{ content_for_header }}
-  {% if template == 'cart' %}
-      <script> (function(src, callback){var s, r, t; r = false; s = document.createElement('script'); s.type = 'text/javascript';s.src = src; s.onload = s.onreadystatechange = function() { if ( !r && (!this.readyState || this.readyState == 'complete') ) { r = true; callback(); } };t = document.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t);}('https://biz.sitejabber.com/js/widget.min.1589224101.js', function() { new STJR.ReviewCarouselWidget({ id: 'reviewCarouselWidget',url:'couturecandy.com'}).render(); }) );</script>
-  {%- endif -%}
- {% if template == 'product' %}
-   <!--YOTO-->
-  <script type="text/javascript">(function e(){var e=document.createElement("script");e.type="text/javascript",e.async=true,e.src="//staticw2.yotpo.com/Mi5S4G8kBf4HYxRQL5Sq6ZbNhltQ6TH3q8K1oXYW/widget.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();</script>
-  <!--product-page-zoom-->
-    <script src="{{ 'cloudzoom.js' | asset_url }}"></script>
-    <script type="text/javascript">
-          CloudZoom.quickStart(); // cz  
-    </script>
-    
-    <link rel="stylesheet" type="text/css" href="{{ 'cloudzoom.css' | asset_url }}" />
- {%- endif -%}
-  <!--=========================================Header=========================================-->
-<!-- Global Site Tag (gtag.js) - Google AdWords:AW-950821702 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-950821702"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-950821702', {'send_page_view': false});
-</script>
-   
+
   <!-- Abandoned Cart Information -->
   <div id="care-cart-customer-information" style="display:none">
     {"id":"{{customer.id}}", "email":"{{ customer.email }}","default_address":{{ customer.default_address | json }},"first_name":"{{ customer.first_name }}","last_name":"{{ customer.last_name }}","name":"{{ customer.name }}" }
@@ -134,64 +43,33 @@ var checkDevice = getMobileOperatingSystem();
   <div id="care-cart-shop-information" style="display:none">
     {"domain":"{{shop.permanent_domain}}" }
   </div>
-  <!--  ShopInformation -->
-  
+  <!--  ShopInformation -->  
   <!--EndCareCartCustomCode-->
-  <!--Yahoo script-->
-  <script type="application/javascript">(function(w,d,t,r,u){w[u]=w[u]||[];w[u].push({'projectId':'10000','properties':{'pixelId':'10089243'}});var s=d.createElement(t);s.src=r;s.async=true;s.onload=s.onreadystatechange=function(){var y,rs=this.readyState,c=w[u];if(rs&&rs!="complete"&&rs!="loaded"){return}try{y=YAHOO.ywa.I13N.fireBeacon;w[u]=[];w[u].push=function(p){y([p])};y(c)}catch(e){}};var scr=d.getElementsByTagName(t)[0],par=scr.parentNode;par.insertBefore(s,scr)})(window,document,"script","https://s.yimg.com/wi/ytc.js","dotq");</script>
-  <!--Yahoo script END-->
 
-<!--Pinterest Conversion Tracking-->
-<script type="text/javascript">
-!function(e){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var n=window.pintrk;n.queue=[],n.version="3.0";var t=document.createElement("script");t.async=!0,t.src=e;var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
- 
-pintrk('load','2612396004968');
-pintrk('page');
-</script>
-<noscript>
-<img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2612396004968&noscript=1" />
-</noscript>
-{% if template != "collection" and template != "index" %} 
-{%- assign yotpo_offload_content = shop.metafields.yotpo.yotpo_offload_content %}
-{%- assign time_now = 'now' | date: '%s' %}
-{%- assign yotpo_live_time = shop.metafields.yotpo.yotpo_live | date: '%s' %}
-{%- assign diffSeconds = time_now | minus: yotpo_live_time %}
-  {%- if yotpo_offload_content == 'yes' and diffSeconds < 86400 -%}
-    {{ 'yotpo-full-css.css' | asset_url | stylesheet_tag }}
-  {%- endif -%}
-{%- endif -%}
-{% render 'weglot_hreftags' %}
-{% render 'weglot_switcher' %}
-<!--begin-bc-sf-filter-css-->
+  {% render 'weglot_hreftags' %}
+  {% render 'weglot_switcher' %}
+
+  <!--begin-bc-sf-filter-css-->
   {% include 'bc-sf-filter-style' %}
-<!--end-bc-sf-filter-css-->
-<!-- Hotjar Tracking Code for https://www.couturecandy.com -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:1453480,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+  <!--end-bc-sf-filter-css-->
+  {%- include 'head-script-after-content' -%}
 </head>
 
+
 {%- include 'class_body_theme' -%}
+
 <body class="{%- if settings.ajax_shop -%}basel-ajax-shop-on{%- endif %} template-{{ template | split: '.' | first }} {{header_class }} {{footer_layout}} {{ general_layout }} {{ search_layout }} {{ tab_class }} {{ design_products }} global-header-{{settings.header_design}} global-cart-design-{{settings.cart_design}}{%- if customer %} logged-in{%- endif %}{%- if catalog_mode %} catalog-mode-on{%- else %} catalog-mode-off{%- endif %}{%- unless template contains 'index' %} shopify shopify-page{%- endunless %}{%- if template contains '404' %} error404{%- endif-%}">
+
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQJPKCB"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>  
   <!-- End Google Tag Manager (noscript) -->
-  {%- if settings.color_light_mobile_menu -%}
-  <div class="nt_light">{%- section 'gl_mobile_menu'-%}</div>
-  {%- else -%}
+
   {%- section 'gl_mobile_menu'-%}
-  {%- endif -%}
   <!--END MOBILE-NAV-->
     
   {%- if settings.cart_position == 'side' -%}{%- include 'cart_widget_side'-%}{%- endif -%}
+
   <div class="website-wrapper">
     {%- include 'header'-%}
     {{ content_for_layout }}
@@ -205,214 +83,91 @@ pintrk('page');
   </div>
   <!-- end wrapper -->
   {%- if settings.show_backtop -%}<a href="#" class="scrollToTop basel-tooltip"><span class="basel-tooltip-label">Scroll To Top</span>Scroll To Top</a>{%- endif -%}
-  <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'lazysizes.js' | asset_url }}" async="async"></script><!--<![endif]-->
-  <!--[if lte IE 9]><script src="{{ 'lazysizes.js' | asset_url }}"></script><![endif]-->
-  {%- include 'theme_string' -%}
-  {%- if template.directory == 'customers' -%}
-    {{ 'shopify_common.js' | shopify_asset_url | script_tag }}
-    {{ 'customer_area.js'  | shopify_asset_url | script_tag }}
-  {%- endif -%}
-  {% if admin_shopify -%}
-    {%- if settings.enable_update -%}{{ 'tea-update-theme.js' | asset_url | script_tag }}{%- include 'tea_update_theme' -%}{%- endif -%}
-    {{ 'tta.min.css' | asset_url | stylesheet_tag }}
-  {%- elsif section_tab_css_enable -%}
-    {{ 'tta.min.css' | asset_url | stylesheet_tag }}
-  {%- endif -%}
-  {% if admin_shopify -%}
-    {{ 'animate.min.css' | asset_url | stylesheet_tag }}
-    <script async="async" src="{{ 'waypoints.min.js' | asset_url }}"></script>
-    <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'js_cp_gl_section.min.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
-    <!--[if lte IE 9]><script src="{{ 'js_cp_gl_section.min.js' | asset_url }}"></script><![endif]-->
-  {%- elsif section_js_enable -%}
-    {{ 'animate.min.css' | asset_url | stylesheet_tag }}
-    <script async="async" src="{{ 'waypoints.min.js' | asset_url }}"></script>
-    <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'js_cp_gl.min.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
-    <!--[if lte IE 9]><script src="{{ 'js_cp_gl.min.js' | asset_url }}"></script><![endif]-->
-  {%- endif -%}
+  
+   {%- include 'footer-scripts' -%}
+
   {% if template contains 'collection' and settings.use_pagination == 'infinit' -%}
+  <!-- trigger function on scroll point -->
   <script async="async" src="{{ 'waypoints.min.js' | asset_url }}"></script>
   {%- endif -%}
+
   {%- assign gl_portfolio = settings.blog_portfolio -%}
   {%- if blog.handle == gl_portfolio and settings.portfolio_full_width -%}
     <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'js_cp_gl.min.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
     <!--[if lte IE 9]><script src="{{ 'js_cp_gl.min.js' | asset_url }}"></script><![endif]-->
-  {%- endif -%}
-  {%- include 'gl_bottom_js'-%}
-  {% if admin_shopify -%}
-  <script async="async" src="https://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.22"></script>
-  {%- elsif section_js_googlem_enable and settings.api_key != blank -%}<script src="https://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.22"></script>{%- endif -%}
+  {%- endif -%}  
+
   {%- include 'gl-currencies' -%}
+
    <script> const NITRO_CHECKOUT_SELECTOR = [".nitro-bundle-checkout"];</script>
+
   {%- if settings.enable_header_banner -%}
   <div class="header-banner color-scheme-light">
     {%- if settings.close_banner_btn -%}<a href="#" class="close-header-banner"></a>{%- endif -%}
-   {%- if settings.link_banner != blank -%}<a href="{{settings.link_banner}}" class="header-banner-link"></a>{%- endif -%}
+   {%- if settings.link_banner != blank -%}<a href="{{settings.link_banner}}" class="header-banner-link"></a>{%- endif -%}   
     <div class="container header-banner-container">
       <p style="text-align: center; color: {{settings.header_banner_text}} !important;">{{settings.banner_content | strip_html }}</p>
     </div>
   </div>
   {%- endif -%}
-  {%- if settings.enable_popup -%}{%- include 'basel-promo-popup' -%}{%- endif -%}
+
+  {%- if settings.enable_popup -%}{%- include 'basel-promo-popup' -%}{%- endif -%}  
   {%- if settings.enable_cookies_popup -%}{%- include 'basel-cookies-popup' -%}{%- endif -%}
   {%- if settings.enable_suggest_products -%}{%- include 'tea_suggest' -%}{%- endif -%}
-  {%- if admin_shopify -%}
-  <a class="buy-basel" href="https://teathemes.net/forums/"><img src="{{ 'envt-icon.png' | asset_url }}" width="20" height="20" alt="Purchase on Themeforest">Support <strong>Basel</strong></a>
-  {%- elsif request.host contains 'basel' -%}
-  <a class="buy-basel" href="{{ shop.refund_policy }}"><img class="price" src="//cdn.shopify.com/s/files/1/1933/6253/files/59.png" alt="price"><img class="envato-logo" src="//cdn.shopify.com/s/files/1/1933/6253/files/envato-logo.png" alt="envato-logo"></a>
+
+  {%- if template contains 'product' or template contains 'article' or check_photowipe -%}
+  {%- include 'photoswipe' -%}
   {%- endif -%}
-  {%- if template contains 'product' or template contains 'article' or check_photowipe -%}{%- include 'photoswipe' -%}{%- endif -%}
+
   {%- if settings.use_compare and pages['compare'].empty? != true -%}{%- include 'gl_compare' -%}{%- endif -%}
+
   {%- if settings.custom_js != blank -%}
   <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'custom_js.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
     <!--[if lte IE 9]><script src="{{ 'custom_js.js' | asset_url }}"></script><![endif]-->
+
   {%- endif -%}
+
   {%- include 'last_catelog_mod',var_last:true -%}
 
-<!--=========================================Footer=========================================-->
-<!-- google dynamic remarketing tag for theme.liquid -->
 
-{% if template contains 'product' %}
-<script type="text/javascript">
-  var json_product = {{ product | json }};
-</script>
-<script>
-  var ecomm_prodid=[];
-  for(var i=0;i<json_product.variants.length;i++)
-    ecomm_prodid.push('shopify_US_{{product.id}}_'+json_product.variants[i].id);
-</script>
-<script type="text/javascript">
-  var google_tag_params = {
-    ecomm_prodid: ecomm_prodid,
-    ecomm_pagetype: 'product',
-    ecomm_totalvalue: parseFloat('{{ product.price | money_without_currency | remove: ","}}')
-  };
-</script>
-{% elsif template contains 'collection' %}
-<script type="text/javascript">
-  var google_tag_params = {
-    ecomm_pagetype: 'category'
-  };
-</script>
-{% elsif template contains 'cart' %}
-<script type="text/javascript">
-  var id = new Array();
-  {% for item in cart.items %}
-  id.push('shopify_US_{{item.product.id}}_{{item.variant.id}}');
-   {% endfor %}
+  <!-- CRITEO START -->
+  {% include 'criteo-tracking' %}
+  <!-- CRITEO END -->
 
-   var google_tag_params = {
-     ecomm_prodid: id,
-     ecomm_pagetype: 'cart',
-     ecomm_totalvalue: parseFloat('{{ cart.total_price | money_without_currency | remove: ","}}')
-   };
-</script>
-{% elsif template contains 'search' %}
-<script type="text/javascript">
-  var google_tag_params = {
-    ecomm_pagetype: 'searchresults'
-  };
-</script>
-{% elsif template contains 'index' %}
-  <script> (function(src, callback){var s, r, t; r = false; s = document.createElement('script'); s.type = 'text/javascript';s.src = src; s.onload = s.onreadystatechange = function() { if ( !r && (!this.readyState || this.readyState == 'complete') ) { r = true; callback(); } };t = document.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t);}('https://biz.sitejabber.com/js/widget.min.1589224101.js', function() { new STJR.ReviewCarouselWidget({ id: 'reviewCarouselWidget',url:'couturecandy.com'}).render(); }) );</script>
-<script type="text/javascript">
-  var google_tag_params = {
-    ecomm_pagetype: 'home'
-  };
-</script>
-{% else %}
-<script type="text/javascript">
-  var google_tag_params = {
-    ecomm_pagetype: 'other'
-  };
-</script>
-{% endif %}
-<script>
-gtag('event', 'page_view', {'send_to': 'AW-950821702',
-'ecomm_prodid':window.google_tag_params.ecomm_prodid,
-'ecomm_pagetype': window.google_tag_params.ecomm_pagetype,
-'ecomm_totalvalue':window.google_tag_params.ecomm_totalvalue
-});
-</script>
+  <!--begin-bc-sf-filter-js-->
+    {% include 'bc-sf-filter' %}
+  <!--end-bc-sf-filter-js-->
 
-<!-- Begin Google Analytics Vertical Attributes -->
-<script type="text/javascript">
-ga('set','dimension1', '{% if template contains "product" %}shopify_US_{{product.id}}_{{product.variants.first.id}}{% endif %}');
-ga('set','dimension2', '{{product.price_min|money_without_currency}}');
-ga('set','dimension3', '{{template}}');
-</script>
-
-
-<!-- CRITEO START -->
-{% include 'criteo-tracking' %}
-<!-- CRITEO END -->
-
-<!--begin-bc-sf-filter-js-->
-  {% include 'bc-sf-filter' %}
-<!--end-bc-sf-filter-js-->
-{% comment %} Init BC Action List {% endcomment %}
-<!--start-bc-al-init-->
+  {% comment %} Init BC Action List {% endcomment %}
+  <!--start-bc-al-init-->
   {% include 'bc-al-init' %}
-<!--end-bc-al-init-->
-{% comment %} Init Recently Viewed Products {% endcomment %}
-{% comment %}
-<!-- start-bc-recently-viewed-product-init -->
+  <!--end-bc-al-init (Init Recently Viewed Products)-->
+
+  {% comment %}
+  <!-- start-bc-recently-viewed-product-init -->
   {% include 'bc-recently-viewed-product-init' %}
-<!-- end-bc-recently-viewed-product-init -->
-{% endcomment %}
-{% comment %} Init Most Popular Widgets {% endcomment %}
-{% comment %}
-<!--start-bc-most-popular-product-init-->
-  {% include 'bc-most-popular-product-init' %}
-<!--end-bc-most-popular-product-init-->
-{% endcomment %}
+  <!-- end-bc-recently-viewed-product-init -->
+  {% endcomment %}
+
+  {% comment %} Init Most Popular Widgets {% endcomment %}
+
+  {% comment %}
+  <!--start-bc-most-popular-product-init-->
+    {% include 'bc-most-popular-product-init' %}
+  <!--end-bc-most-popular-product-init-->
+  {% endcomment %}
   
-<script>
-var replaced = false;  
-var threshold =10;
-var scrolled =0;   
- $(window).on('keyup keypress scroll touch click mousemove', function(e) {
-   scrolled++;
-
-
-   if(!replaced && scrolled>threshold ){
-      console.log('yett unblocked');
-         window.yett.unblock() ;
-         replaced = true;
-   }
- })
-</script>
-
 <!-- **BEGIN** Hextom SPM Integration // Main Include - DO NOT MODIFY -->
         {% render 'hextom_spm_main', product: product, customer: customer %}
         <!-- **END** Hextom SPM Integration // Main Include - DO NOT MODIFY -->
-  <script type="text/javascript">
-  setTimeout(function(){ 
-     var pageURL = $(location).attr("href");
-     var Lastpage_visit = sessionStorage.getItem("LastpageURL");
-      if (!Lastpage_visit || Lastpage_visit != pageURL) {
-          sessionStorage.setItem('LastpageURL',pageURL);
-      }
-     var lastCount = parseInt(sessionStorage.getItem("pages_view"));
-     var value = 0;
-     if (!lastCount) {
-        value = 1;
-     }else{
-        if (pageURL != Lastpage_visit) {
-            value = lastCount + 1;
-          if (value > 2) {
-            gtag('event', 'conversion', {'send_to': 'AW-950821702/Tyf0CKHIi-oBEMbGscUD'});
-          }
-        }else{
-          value = lastCount;
-        }
-     }
-     sessionStorage.setItem('pages_view',value);
-  }, 1000); 
-</script>
-<!--Gorgias Chat Widget Start--><script>!function(_){_.GORGIAS_CHAT_APP_ID="550",_.GORGIAS_CHAT_BASE_URL="us-east1-898b.production.gorgias.chat",_.GORGIAS_API_BASE_URL="config.gorgias.chat";var e=new XMLHttpRequest;e.open("GET","https://config.gorgias.chat/applications/550",!0),e.onload=function(n){if(4===e.readyState)if(200===e.status){var t=JSON.parse(e.responseText);if(!t.application||!t.bundleVersion)throw new Error("Missing fields in the response body - https://config.gorgias.chat/applications/550");if(_.GORGIAS_CHAT_APP=t.application,_.GORGIAS_CHAT_BUNDLE_VERSION=t.bundleVersion,t&&t.texts&&(_.GORGIAS_CHAT_TEXTS=t.texts),!document.getElementById("gorgias-chat-container")){var o=document.createElement("div");o.id="gorgias-chat-container",document.body.appendChild(o);var r=document.createElement("script");r.setAttribute("defer",!0),r.src="https://storage.googleapis.com/gorgias-chat-production-client-builds/{bundleVersion}/static/js/main.js".replace("{bundleVersion}",t.bundleVersion),document.body.appendChild(r)}}else console.error("Failed request GET - https://config.gorgias.chat/applications/550")},e.onerror=function(_){console.error(_)},e.send()}(window||{});</script><script>!function(n){n.IS_SHOPIFY=!0,n.SHOPIFY_PERMANENT_DOMAIN="{{shop.permanent_domain}}",n.SHOPIFY_CUSTOMER_ID="{{customer.id}}"}(window||{});</script><!--Gorgias Chat Widget End-->  {% include 'revy-bundle-script' %}</body>
-{% if template != "index" %} 
-{% include 'flits_snippet' %}
-{% endif %}
+
+ {% include 'revy-bundle-script' %}
+
+</body>
+
+  {% if template != "index" %} 
+  {% include 'flits_snippet' %}
+  {% endif %}
 </html>    <!-- StartDeliveryDateRange version: 1.1 -->
     <script>
       var DeliveryDateRangeData = (function() {
@@ -420,7 +175,6 @@ var scrolled =0;
           product: null,
           cartProducts: []
         };
-
         {% if product %}
           {% assign collection_titles = product.collections | map: 'title' | downcase %}
           data.product = (function() {
@@ -448,5 +202,4 @@ var scrolled =0;
 
         return data;
       })();
-console.log('from git');
 </script>
