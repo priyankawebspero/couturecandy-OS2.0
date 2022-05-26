@@ -232,9 +232,8 @@
                         {%- if block.settings.email != blank -%}<p class="email"><a href="mailto:{{block.settings.email}}"><i class="fa fa-envelope" aria-hidden="true"></i> {{block.settings.email}}</a></p>{%- endif -%}
                         {%- if block.settings.phone != blank -%}<p class="tel"></p><a href="tel:{{block.settings.phone}}"><i class="fa fa-phone" aria-hidden="true"></i> {{block.settings.phone}}</a></p>{%- endif -%}
                         {%- if block.settings.heading_second != blank -%}<h5 class="widget-title">{{block.settings.heading_second}}</h5>{%- endif -%}
-                        
-                        {%- if settings.html != blank -%}
-                        <div class="socials">{%- if settings.html contains '[social_buttons' -%}{{settings.html | split:'[social_buttons' | first }} {% if settings.html contains 'social_buttons_share' -%}{%- assign gl_follow_social = false -%}{%- else -%}{%- assign gl_follow_social = true -%}{%- endif -%}{%- include 'social-sharing', gl_design:'icons-design-colored', gl_size:'icons-size-small', follow_social:gl_follow_social -%}{%-else-%}{{settings.html}}{%- endif -%}</div>
+                        {%- if block.settings.social_icon -%}
+                        {%- include 'social-sharing', gl_design:'icons-design-colored', gl_size:'icons-size-small', follow_social:gl_follow_social -%}
                         {%- endif -%}
                         {%- if block.settings.enabled_payment_types and block.settings.footer_payment_image != blank -%}
                         {%- assign image = block.settings.footer_payment_image -%}
@@ -356,21 +355,10 @@
             "default": "Heading Social"
          },
          {
-            "type": "html",
-            "id": "html",
-            "label": "Text",
-            "default": "<p>Use this text to share information about your brand with your customers.</p>"
-         },
-         {
-           "type": "checkbox",
-           "id": "enabled_payment_types",
-           "label": "Show image payment",
+            "type": "checkbox",
+            "id": "social_icon",
+            "label": "Enable Social Icons",
             "default": true
-         },
-         {
-           "type": "image_picker",
-           "id": "footer_payment_image",
-           "label": "upload image payment"
          }
         ]
       },
