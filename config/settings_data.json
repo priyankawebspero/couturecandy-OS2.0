@@ -1183,7 +1183,11 @@
             "type": "html",
             "settings": {
               "title": "Connect With Us",
-              "html": "",
+              "address": "Enter Address",
+              "email": "Enter Email",
+              "phone": "Enter Phone Number",
+              "heading_second": "Heading Social",
+              "html": "[social_buttons_follow]",
               "enabled_payment_types": false
             }
           },
