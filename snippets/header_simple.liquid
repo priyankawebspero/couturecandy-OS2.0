@@ -34,6 +34,7 @@
          {%- unless settings.cart_design == 'disable' or settings.catalog_mode or template contains 'cart' -%}
          <div class="shopping-cart basel-cart-design-{{settings.cart_design}} basel-cart-icon{%- if settings.cart_position == 'side' %} cart-widget-opener{%- endif %}{%- if settings.shopping_icon_alt %} basel-cart-alt{%- endif -%}">
             <a href="/cart">
+              <img src="https://cdn.shopify.com/s/files/1/0014/9526/9470/files/shopping-bag.svg?v=1653558313" alt="cart-icon" width="22px">
                <span>Cart (<span class="cartCount">{{ cart.item_count }}</span>)</span>
                <span class="basel-cart-totals">
                   <span class="basel-cart-number cartCount">{{ cart.item_count }}</span>
