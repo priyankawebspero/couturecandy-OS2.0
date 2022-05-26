@@ -228,6 +228,9 @@
                   <div id="text-{{block.id}}" class="footer-widget widget_text">
                      {%- if block.settings.title != blank -%}<h5 class="widget-title">{{block.settings.title}}</h5>{%- endif -%}
                      <div class="textwidget">
+                        <p class="address">{{block.settings.address}}</p>
+                        <p class="email"><a href="mailto:{{block.settings.email}}">{{block.settings.email}}</a></p>
+                        <p class="tel"></p><a href="tel:{{block.settings.phone}}">{{block.settings.phone}}</a></p>
                         {{block.settings.html}}
                         {%- if block.settings.enabled_payment_types and block.settings.footer_payment_image != blank -%}
                         {%- assign image = block.settings.footer_payment_image -%}
@@ -327,6 +330,21 @@
             "id": "title",
             "label": "Heading",
             "default": "About The Store"
+         },{
+            "type": "text",
+            "id": "address",
+            "label": "Address",
+            "default": "Enter Address"
+         },{
+            "type": "text",
+            "id": "email",
+            "label": "Email",
+            "default": "Enter Email"
+         },{
+            "type": "text",
+            "id": "phone",
+            "label": "Phone",
+            "default": "Enter Phone Number"
          },
          {
             "type": "html",
