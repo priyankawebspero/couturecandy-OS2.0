@@ -1,6 +1,6 @@
 <div class="container">
   <div class="header_middle_block">
-    <div class="switchers col-4"></div>
+    <div id="myDiv" class="switchers col-4"></div>
     <div class="logo col-4">{%- include 'gl_logo' -%}</div>
     <div class="search col-4"> 
       <div id="shopify_product_search-14" class="header-widget shopify widget_product_search">
@@ -54,3 +54,47 @@
       </div>
    </div>
 </div>
+
+<script>
+function() {
+    // CHANGE THIS SELECTOR to the element you want to add your custom switcher to.
+    var myDiv = document.getElementById("myDiv");
+    
+    if (!Weglot) {
+        return;
+    }
+
+    //Create array of options to be added
+    var availableLanguages = Weglot.options.languages
+        .map(function(language) {
+            return language.language_to;
+        })
+        .concat(Weglot.options.language_from);
+    
+    //Create and append select list
+    var selectList = document.createElement("select");
+    myDiv.appendChild(selectList);
+    
+    var currentLang = Weglot.getCurrentLang();
+    
+    //Create and append the options
+    for (var i = 0; i < availableLanguages.length; i++) {
+        var lang = availableLanguages[i];
+        var option = document.createElement("option");
+        option.value = lang;
+        option.text = Weglot.getLanguageName(lang);
+        if (lang === currentLang) {
+            option.selected = "selected";        
+        }
+        selectList.appendChild(option);
+    }
+    
+    selectList.onchange = function(){
+        Weglot.switchTo(this.value);
+    };
+    
+    Weglot.on("languageChanged", function(lang) {
+        selectList.value = lang;
+    });
+}()
+  </Script>
