@@ -212,6 +212,7 @@
                <div class="footer-column footer-column-{{forloop.index}} {{class_col}}" {{ block.shopify_attributes }}>
                   <div id="text-{{block.id}}" class="footer-widget widget_text">
                      {%- if block.settings.title != blank -%}<h5 class="widget-title">{{block.settings.title}}</h5>{%- endif -%}
+                     {%- if block.settings.ns_text != blank -%}<p class="newstext">{{block.settings.ns_text}}</p>{%- endif -%}
                      <div class="textwidget">
                         {%- include 'gl_form_newlester' -%}
                         <div class="bbb">
@@ -372,6 +373,11 @@
             "id": "title",
             "label": "Heading",
             "default": "Newsletter"
+         },{
+            "type": "text",
+            "id": "ns_text",
+            "label": "Text",
+            "default": "Newsletter Text"
          },
          {
            "type": "checkbox",
