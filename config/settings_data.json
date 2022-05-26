@@ -1194,6 +1194,7 @@
             "type": "newsletter",
             "settings": {
               "title": "Newsletter",
+              "ns_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
               "use_mailchimp": true
             }
           }
