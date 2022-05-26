@@ -1183,7 +1183,7 @@
             "type": "html",
             "settings": {
               "title": "Connect With Us",
-              "address": "4050 W. Sunset Road, Suite H – Dock Door 25, Las Vegas, NV - 89118 USA",
+              "address": "4050 W. Sunset Road, Suite H – Dock Door 25, <br>Las Vegas, NV - 89118 USA",
               "email": "cs@couturecandy.com",
               "phone": "(855) 445-8601",
               "heading_second": "Heading Social",
