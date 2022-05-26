@@ -212,9 +212,9 @@
                <div class="footer-column footer-column-{{forloop.index}} {{class_col}}" {{ block.shopify_attributes }}>
                   <div id="text-{{block.id}}" class="footer-widget widget_text">
                      {%- if block.settings.title != blank -%}<h5 class="widget-title">{{block.settings.title}}</h5>{%- endif -%}
-                     {%- if block.settings.ns_text != blank -%}<p class="newstext">{{block.settings.ns_text}}</p>{%- endif -%}
                      <div class="textwidget">
                         {%- include 'gl_form_newlester' -%}
+                        {%- if block.settings.ns_text != blank -%}<p class="newstext">{{block.settings.ns_text}}</p>{%- endif -%}
                         <div class="bbb">
                           <img src="https://cdn.shopify.com/s/files/1/0144/7018/5017/files/bbb-footer.png" alt="bbb-footer">
                         </div>
