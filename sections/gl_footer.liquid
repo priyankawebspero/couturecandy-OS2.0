@@ -228,9 +228,9 @@
                   <div id="text-{{block.id}}" class="footer-widget widget_text">
                      {%- if block.settings.title != blank -%}<h5 class="widget-title">{{block.settings.title}}</h5>{%- endif -%}
                      <div class="textwidget">
-                        {%- if block.settings.address != blank -%}<p class="address">{{block.settings.address}}</p>
-                        {%- if block.settings.email != blank -%}<p class="email"><a href="mailto:{{block.settings.email}}">{{block.settings.email}}</a></p>
-                        {%- if block.settings.phone != blank -%}<p class="tel"></p><a href="tel:{{block.settings.phone}}">{{block.settings.phone}}</a></p>
+                        {%- if block.settings.address != blank -%}<p class="address"><i class="fa fa-home"></i> {{block.settings.address}}</p>{%- endif -%}
+                        {%- if block.settings.email != blank -%}<p class="email"><a href="mailto:{{block.settings.email}}"><i class="fa fa-envelope" aria-hidden="true"></i> {{block.settings.email}}</a></p>{%- endif -%}
+                        {%- if block.settings.phone != blank -%}<p class="tel"></p><a href="tel:{{block.settings.phone}}"><i class="fa fa-phone" aria-hidden="true"></i> {{block.settings.phone}}</a></p>{%- endif -%}
                         {%- if block.settings.heading_second != blank -%}<h5 class="widget-title">{{block.settings.heading_second}}</h5>{%- endif -%}
                         
                         {%- if settings.html != blank -%}
