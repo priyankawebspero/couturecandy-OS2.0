@@ -228,10 +228,13 @@
                   <div id="text-{{block.id}}" class="footer-widget widget_text">
                      {%- if block.settings.title != blank -%}<h5 class="widget-title">{{block.settings.title}}</h5>{%- endif -%}
                      <div class="textwidget">
-                        <p class="address">{{block.settings.address}}</p>
-                        <p class="email"><a href="mailto:{{block.settings.email}}">{{block.settings.email}}</a></p>
-                        <p class="tel"></p><a href="tel:{{block.settings.phone}}">{{block.settings.phone}}</a></p>
-                        {{block.settings.html}}
+                        {%- if block.settings.address != blank -%}<p class="address">{{block.settings.address}}</p>
+                        {%- if block.settings.email != blank -%}<p class="email"><a href="mailto:{{block.settings.email}}">{{block.settings.email}}</a></p>
+                        {%- if block.settings.phone != blank -%}<p class="tel"></p><a href="tel:{{block.settings.phone}}">{{block.settings.phone}}</a></p>
+                        {%- if block.settings.heading_second != blank -%}<h5 class="widget-title">{{block.settings.heading_second}}</h5>{%- endif -%}
+                        {%- if settings.html != blank -%}
+                        <div class="socials">{%- if settings.html contains '[social_buttons' -%}{{settings.html | split:'[social_buttons' | first }} {% if settings.html contains 'social_buttons_share' -%}{%- assign gl_follow_social = false -%}{%- else -%}{%- assign gl_follow_social = true -%}{%- endif -%}{%- include 'social-sharing', gl_design:'icons-design-colored', gl_size:'icons-size-small', follow_social:gl_follow_social -%}{%-else-%}{{settings.html}}{%- endif -%}</div>
+                        {%- endif -%}
                         {%- if block.settings.enabled_payment_types and block.settings.footer_payment_image != blank -%}
                         {%- assign image = block.settings.footer_payment_image -%}
                         {%- assign image_width = image.width | append:'x' -%}
@@ -345,6 +348,11 @@
             "id": "phone",
             "label": "Phone",
             "default": "Enter Phone Number"
+         },{
+            "type": "text",
+            "id": "heading_second",
+            "label": "Heading",
+            "default": "Heading"
          },
          {
             "type": "html",
