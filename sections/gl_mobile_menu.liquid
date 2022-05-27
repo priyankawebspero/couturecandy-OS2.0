@@ -23,9 +23,9 @@
  </div>
 {%- endfor -%}
 <div class="menu-mobile-nav-container">
-   {%- if section.settings.menu != blank -%}
+   {%- if block.settings.menu != blank -%}
    <ul id="menu-mobile-nav" class="site-mobile-menu">
-      {%- for link in linklists[section.settings.menu].links -%}
+      {%- for link in linklists[block.settings.menu].links -%}
          {%- assign child_list_handle = link.title | split: '[' | first | handleize -%}
          {%- if linklists[link.handle].links.size > 0 or linklists[child_list_handle].links != blank -%}
             <li class="menu-item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item-design-default item-event-hover{%- if link.active %} current_page_item{%- endif -%}">
@@ -106,13 +106,13 @@
          </div>
       </li>
       {%- endif -%}
-      {%- if settings.show_language_currencies and settings.language_link_list != blank -%}
+      {%- if settings.show_language_currencies and block.settings.language_link_list != blank -%}
       <li class="language menu-item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item-design-default item-event-hover{%- if link.active %} current_page_item{%- endif -%}">
          <a href="#">{{ settings.language_title }}</a>
          <div class="sub-menu-dropdown color-scheme-dark">
             <div class="container">
                <ul class="sub-menu color-scheme-dark">
-                  {%- for link in linklists[settings.language_link_list].links -%}
+                  {%- for link in linklists[block.settings.language_link_list].links -%}
                      <li class="menu-item menu-item-design-default item-event-hover{%- if childlink.active %} current_page_item{%- endif -%}"><a href="{{ link.url }}">{{ link.title | split: '[' | first }}</a></li>
                   {%- endfor -%}
                </ul>
@@ -146,7 +146,13 @@
          "type": "text",
          "id": "menu_text",
          "label": "Add Menu title"
-       }
+       },
+ 	 {
+        "type": "link_list",
+        "id": "menu",
+        "label": "Add Menu",
+        "default": "main-menu"
+      }
       
       ]
     }
