@@ -126,17 +126,24 @@
     "settings": [
    ],
    "blocks": [
-     {
-       "name": "Slide",
-       "type": "slide",
-       "settings": [
-         {
-           "type": "image_picker",
-           "id": "image",
-           "label": "Image"
-         }
-       ]
-     }
+   {
+      "type": "menublock",
+      "name": "Menu Block",
+      "settings":[
+      {
+         "type": "image_picker",
+         "id": "menu_image",
+         "label": "Add Image for menu"         
+       },
+       {
+         "type": "text",
+         "id": "menu_text",
+         "label": "Add Menu title"
+       }
+      
+      ]
+    }
    ]
+
   }
 {% endschema %}
