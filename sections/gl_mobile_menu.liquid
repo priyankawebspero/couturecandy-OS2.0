@@ -18,11 +18,11 @@
 
 {%- for block in section.blocks -%}
  <div class="menu_block">
+   <div class="menu_inner_block">
   {% if block.settings.menu_text != 'blank' %}<div class="menu_title">{{block.settings.menu_text}}</div>{%-endif-%}
   {% if block.settings.menu_text != 'blank' %}<div class="menu_image"><img src="{{block.settings.menu_image | img_url:'200x'}}" alt="{{block.settings.menu_text}}"></div>{%-endif-%}
- </div>
-
-<div class="menu-mobile-nav-container">
+   </div>
+   <div class="menu-mobile-nav-container">
    {%- if block.settings.menu != blank -%}
    <ul id="menu-mobile-nav" class="site-mobile-menu">
       {%- for link in linklists[block.settings.menu].links -%}
@@ -125,6 +125,9 @@
    <br><h5 style="color: white;padding-top: 12px;padding-bottom: 12px;padding-right: 15px;padding-left: 15px;text-transform: uppercase;">Create your first navigation menu sidebar using the sidebar.</h5>
    {%- endif -%}
 </div>
+
+</div>
+
 
 {%- endfor -%}
 
