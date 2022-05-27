@@ -15,6 +15,13 @@
   </div>
   {%- endif -%}
 </div>
+
+{%- for block in section.blocks -%}
+ <div class="menu_block">
+  {% if block.settings.menu_text != 'blank' %}<div class="menu_title">{{block.settings.menu_text}}</div>{%-endif-%}
+  {% if block.settings.menu_text != 'blank' %}<div class="menu_image"><img src="{{block.settings.menu_image | img_url:'200x'}}" alt="{{block.settings.menu_text}}"></div>{%-endif-%}
+ </div>
+{%- endfor -%}
 <div class="menu-mobile-nav-container">
    {%- if section.settings.menu != blank -%}
    <ul id="menu-mobile-nav" class="site-mobile-menu">
@@ -120,14 +127,14 @@
 </div>
 {%- include 'header_account' -%}
 {%- schema -%}
- {
+  {
     "name": "Mobile Side Menu",
     "class": "mobile-nav",
     "settings": [
    ],
    "blocks": [
    {
-      "type": "menublock",
+      "type": "menu_block",
       "name": "Menu Block",
       "settings":[
       {
@@ -144,6 +151,5 @@
       ]
     }
    ]
-
   }
 {% endschema %}
