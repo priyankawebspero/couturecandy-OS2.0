@@ -167,6 +167,6 @@
 {% endschema %}
 <script>
   $('.menu_title').on('click', function(){
-  $(this).parent().toggleClass('active');
+  $(this).closest('.menu_block').toggleClass('active');
     })
 </script>
