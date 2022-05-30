@@ -1,0 +1,46 @@
+<section class="sub-page-banner-section">
+    <a href="{{ block.settings.link }}" class="">
+    {% if section.settings.image_desktop != blank %}
+        <img src="{{ section.settings.image_desktop | img_url: 'master' }}" data-chksrc="{{ section.settings.image_desktop | img_url: 'master' }}" data-src="{{ section.settings.image_desktop | img_url: 'master' }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="}" data-sizes="auto" class="lazyload banner-image desktop-xs" alt="{{ section.settings.image_desktop.alt }}">
+    {% endif %}
+    {% if section.settings.image_desktop != blank %}
+        <img src="{{ section.settings.image_mobile | img_url: 'master' }}" data-chksrc="{{ section.settings.image_mobile | img_url: 'master' }}" data-src="{{ section.settings.image_mobile | img_url: 'master' }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="}" data-sizes="auto" class="lazyload banner-image mobile-xs" alt="{{ section.settings.image_mobile.alt }}">    </a>
+    {% endif %}
+</section>
+  
+  {% schema %}
+    {
+    "name": "Single Banner",
+        "settings": [
+            {
+            "type": "text",
+            "id": "title",
+            "label": "Heading"
+            }
+        ],
+        "blocks": [
+          {
+            "type": "Slide",
+            "name": "slide",
+            "limit": 1,
+            "settings": [
+              {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image"
+              }
+            ]
+          }
+        ],
+        "presets": [
+          {
+            "name": "Single Banner",
+            "blocks": [
+            {
+              "type": "Slide"
+            }
+          ]
+          }
+       ]      
+    }
+  {% endschema %}
