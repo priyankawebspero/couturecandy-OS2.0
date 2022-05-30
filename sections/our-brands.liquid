@@ -4,7 +4,7 @@
     <div class="col-md-3">
         <a href="{{ block.settings.link }}" class="link">
         {% if block.settings.image != blank %}
-            <img src="{{ block.settings.image | img_url: 'master' }}" data-chksrc="{{ section.settings.image | img_url: 'master' }}" data-src="{{ section.settings.image | img_url: 'master' }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="}" data-sizes="auto" class="lazyload banner-image desktop-xs" alt="{{ block.settings.image.alt }}">
+            <img src="{{ block.settings.image | img_url: 'master' }}" data-chksrc="{{ block.settings.image | img_url: 'master' }}" data-src="{{ block.settings.image | img_url: 'master' }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="}" data-sizes="auto" class="lazyload banner-image desktop-xs" alt="{{ block.settings.image.alt }}">
         {% endif %}
         </a>
     </div>
