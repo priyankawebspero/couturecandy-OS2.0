@@ -12,9 +12,36 @@
         "section_padding_left": "",
         "hidden_section": false
       }
+    },
+    "165390901603cb214c": {
+      "type": "gl_section_product_gird",
+      "settings": {
+        "row_stretch": "default",
+        "home_featured_products": "a-line-dresses",
+        "paginate_index": "4",
+        "use_pagination": "view-all",
+        "grid_columns": "4",
+        "products_hover": "base",
+        "sale_countdown": false,
+        "loop_sale_countdown": false,
+        "countdown_style": "dark",
+        "use_eq_height": true,
+        "image_size": "jas_cover",
+        "section_bg_color": "",
+        "section_border_color": "",
+        "section_border_style": "solid",
+        "section_border": "",
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding_top": "",
+        "section_padding_right": "",
+        "section_padding_bottom": "",
+        "section_padding_left": ""
+      }
     }
   },
   "order": [
-    "165340057706066aef"
+    "165340057706066aef",
+    "165390901603cb214c"
   ]
 }
