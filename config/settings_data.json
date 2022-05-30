@@ -1011,8 +1011,65 @@
       },
       "gl_mobile_menu": {
         "type": "gl_mobile_menu",
+        "blocks": {
+          "18484e8c-02cd-42dc-98e1-1bf9b6499dd9": {
+            "type": "menu_block",
+            "settings": {
+              "menu_image": "shopify:\/\/shop_images\/terani-couture_160x_ae5e94eb-0dd1-4897-9388-0356be8c9201.png",
+              "menu_text": "PROM",
+              "menu": "main-menu"
+            }
+          },
+          "18b00088-c6b1-48d1-812e-958d2c3d200d": {
+            "type": "menu_block",
+            "settings": {
+              "menu_image": "shopify:\/\/shop_images\/sherri-hill-couture-candy_300x_54b26b1f-2c2b-4ef6-90f8-6adb529035eb.png",
+              "menu_text": "DRESSES",
+              "menu": "customer-care"
+            }
+          },
+          "e764391b-b8bb-4bab-b5bb-be579f7f42ba": {
+            "type": "menu_block",
+            "settings": {
+              "menu_image": "shopify:\/\/shop_images\/faviana-logo1_300x_442efaa0-f95c-4882-aede-37143fd617b0.png",
+              "menu_text": "WEDDING",
+              "menu": "main-menu"
+            }
+          },
+          "31315696-888b-45cf-9a0d-d6a1db969115": {
+            "type": "menu_block",
+            "settings": {
+              "menu_image": "shopify:\/\/shop_images\/tarikediz_300x_10453023-938d-4e2c-95c7-9ad689ddf422.jpg",
+              "menu_text": "MOB",
+              "menu": "main-menu"
+            }
+          },
+          "1550db37-ff1d-4512-9ea0-55e188460520": {
+            "type": "menu_block",
+            "settings": {
+              "menu_image": "shopify:\/\/shop_images\/macduggal_300x_1.jpg",
+              "menu_text": "BRIDESMAID",
+              "menu": "main-menu"
+            }
+          },
+          "85973de1-1aba-474e-bd2d-f854c8710048": {
+            "type": "menu_block",
+            "settings": {
+              "menu_image": "shopify:\/\/shop_images\/lafemme_255x_1681006a-5682-4793-b889-236ab0366c65.jpg",
+              "menu_text": "PLUS SIZE",
+              "menu": "main-menu"
+            }
+          }
+        },
+        "block_order": [
+          "18484e8c-02cd-42dc-98e1-1bf9b6499dd9",
+          "18b00088-c6b1-48d1-812e-958d2c3d200d",
+          "e764391b-b8bb-4bab-b5bb-be579f7f42ba",
+          "31315696-888b-45cf-9a0d-d6a1db969115",
+          "1550db37-ff1d-4512-9ea0-55e188460520",
+          "85973de1-1aba-474e-bd2d-f854c8710048"
+        ],
         "settings": {
-          "menu": "main-menu"
         }
       },
       "gl_mega-navigation": {
