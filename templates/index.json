@@ -141,6 +141,34 @@
             "image": "shopify:\/\/shop_images\/logo-2.jpg",
             "link": ""
           }
+        },
+        "6bdefe8f-2f97-47c3-b11e-d56a75510fed": {
+          "type": "Brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-9.jpg",
+            "link": ""
+          }
+        },
+        "185f3185-e2e4-4978-ae78-30ef758b34dd": {
+          "type": "Brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-7.jpg",
+            "link": ""
+          }
+        },
+        "4d12ba70-df80-41c0-b3da-7d6d942c0f8c": {
+          "type": "Brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-1.jpg",
+            "link": ""
+          }
+        },
+        "86f3fa8d-864c-4f04-bbac-c0a89b762846": {
+          "type": "Brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-6.jpg",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -158,16 +186,87 @@
         "9685f873-42f4-4120-a4d5-6046a064964d",
         "1831dda5-0cde-4d46-b1ec-cd6726681c9b",
         "6e2b9810-7f1e-463f-a397-cb674cd2b8e5",
-        "2bfa22b6-a15f-44ce-a0c5-ea552ce60b8c"
+        "2bfa22b6-a15f-44ce-a0c5-ea552ce60b8c",
+        "6bdefe8f-2f97-47c3-b11e-d56a75510fed",
+        "185f3185-e2e4-4978-ae78-30ef758b34dd",
+        "4d12ba70-df80-41c0-b3da-7d6d942c0f8c",
+        "86f3fa8d-864c-4f04-bbac-c0a89b762846"
       ],
       "settings": {
-        "title": ""
+        "title": "OUR FEATURED BRANDS"
+      }
+    },
+    "1653916013b1f6c860": {
+      "type": "gl_section_categories_furniture",
+      "blocks": {
+        "1653916013d85199cb-0": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mother-of-bride.jpg",
+            "id_collection": "",
+            "width": "3"
+          }
+        },
+        "1653916013d85199cb-1": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wedding-dresses.jpg",
+            "id_collection": "",
+            "width": "3"
+          }
+        },
+        "1653916013d85199cb-2": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wedding-guest.jpg",
+            "id_collection": "",
+            "width": "3"
+          }
+        },
+        "1653916013d85199cb-3": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bridesmaid.jpg",
+            "id_collection": "",
+            "width": "3"
+          }
+        }
+      },
+      "block_order": [
+        "1653916013d85199cb-0",
+        "1653916013d85199cb-1",
+        "1653916013d85199cb-2",
+        "1653916013d85199cb-3"
+      ],
+      "settings": {
+        "title": "FEATURED CATEGORIES",
+        "sub_title": "",
+        "categories_layout": "default",
+        "categories_design": "default",
+        "space_categories": "30",
+        "silder_speed": "5000",
+        "silder_per_view": "4",
+        "hide_pagination": false,
+        "hide_button": false,
+        "slider_loop": false,
+        "autoplay": false,
+        "section_bg_color": "",
+        "section_border_color": "",
+        "section_border_style": "solid",
+        "section_border": "",
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding_top": "",
+        "section_padding_right": "",
+        "section_padding_bottom": "",
+        "section_padding_left": ""
       }
     }
   },
   "order": [
     "16539111747fa4ce03",
     "165390901603cb214c",
-    "1653914668ef75e938"
+    "1653914668ef75e938",
+    "1653916013b1f6c860"
   ]
 }
