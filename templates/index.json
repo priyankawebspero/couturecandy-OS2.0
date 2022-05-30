@@ -4,7 +4,7 @@
       "type": "single-banner",
       "settings": {
         "image_desktop": "shopify:\/\/shop_images\/banner-img.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/banner-img.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-img-min.jpg",
         "link": ""
       }
     },
