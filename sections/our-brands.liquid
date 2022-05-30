@@ -1,7 +1,9 @@
 <section class="brands-banner-section">
 <div class="row">
     {% if section.settings.title != black %}
-    <div class="Heading text-center"><h2> {{section.settings.title}} </h2></div>
+    <div class="liner-continer">             
+        <h4 class="title"><span class="title-separator"></span> {{section.settings.title}}</h4>         
+      </div>
     {% endif %}
     {%- for block in section.blocks -%}
     <div class="col-md-2 brand_block">
