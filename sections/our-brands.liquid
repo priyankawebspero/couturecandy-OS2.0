@@ -1,11 +1,18 @@
-<section class="sub-page-banner-section">
-    <a href="{{ block.settings.link }}" class="">
-    {% if section.settings.image_desktop != blank %}
-        <img src="{{ section.settings.image_desktop | img_url: 'master' }}" data-chksrc="{{ section.settings.image_desktop | img_url: 'master' }}" data-src="{{ section.settings.image_desktop | img_url: 'master' }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="}" data-sizes="auto" class="lazyload banner-image desktop-xs" alt="{{ section.settings.image_desktop.alt }}">
-    {% endif %}
-    {% if section.settings.image_desktop != blank %}
-        <img src="{{ section.settings.image_mobile | img_url: 'master' }}" data-chksrc="{{ section.settings.image_mobile | img_url: 'master' }}" data-src="{{ section.settings.image_mobile | img_url: 'master' }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="}" data-sizes="auto" class="lazyload banner-image mobile-xs" alt="{{ section.settings.image_mobile.alt }}">    </a>
-    {% endif %}
+<section class="brands-banner-section">
+<div class="row">
+    {%- for block in section.blocks -%}
+    <div class="col-md-3">
+        <a href="{{ section.settings.link }}" class="">
+        {% if section.settings.image_desktop != blank %}
+            <img src="{{ section.settings.image_desktop | img_url: 'master' }}" data-chksrc="{{ section.settings.image_desktop | img_url: 'master' }}" data-src="{{ section.settings.image_desktop | img_url: 'master' }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="}" data-sizes="auto" class="lazyload banner-image desktop-xs" alt="{{ section.settings.image_desktop.alt }}">
+        {% endif %}
+        {% if section.settings.image_desktop != blank %}
+            <img src="{{ section.settings.image_mobile | img_url: 'master' }}" data-chksrc="{{ section.settings.image_mobile | img_url: 'master' }}" data-src="{{ section.settings.image_mobile | img_url: 'master' }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="}" data-sizes="auto" class="lazyload banner-image mobile-xs" alt="{{ section.settings.image_mobile.alt }}">    </a>
+        {% endif %}
+        </a>
+    </div>
+    {%- endfor -%}
+</div>
 </section>
   
   {% schema %}
@@ -27,7 +34,12 @@
               {
                 "type": "image_picker",
                 "id": "image",
-                "label": "Image"
+                "label": "Add Brand Logo"
+              },
+              {
+                "type": "link",
+                "id": "link",
+                "label": "Add brand url"
               }
             ]
           }
