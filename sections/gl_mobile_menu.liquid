@@ -180,6 +180,8 @@
   {% if block.settings.menu_text != 'blank' %}<div class="menu_title">{{block.settings.menu_text}}</div>{%-endif-%}
   {% if block.settings.menu_text != 'blank' %}<div class="menu_image"><img src="{{block.settings.menu_image | img_url:'200x'}}" alt="{{block.settings.menu_text}}"></div>{%-endif-%}
    </div>
+
+   <span class="back_to_menu">< back </span>
    <div class="menu-mobile-nav-container">
    {%- if block.settings.menu != blank -%}
    <ul id="menu-mobile-nav" class="site-mobile-menu">
@@ -325,7 +327,11 @@
 {% endschema %}
 <script>
   $('.menu_title').on('click', function(){
-  $(this).closest('.menu_block').toggleClass('active');
+  $(this).closest('.menu_block').addClass('active');
+    })
+
+    $('.back_to_menu').on('click', function(){
+  $(this).closest('.menu_block').removeClass('active');
     })
 </script>
 
