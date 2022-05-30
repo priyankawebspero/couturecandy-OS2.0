@@ -1,5 +1,8 @@
 <section class="brands-banner-section">
 <div class="row">
+    {% if section.settings.title != black %}
+    <div class="Heading"><h2> {{section.settings.title}} </h2></div>
+    {% endif %}
     {%- for block in section.blocks -%}
     <div class="col-md-3">
         <a href="{{ block.settings.link }}" class="link">
