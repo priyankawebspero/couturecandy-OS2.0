@@ -91,9 +91,9 @@
                         <img src="//cdn.shopify.com/s/files/1/1933/6253/files/portfolio-placeholder.jpg" alt="{{ shop.name }} category">
                       {%- endif -%}
                      </div>
-                    {%- if collection != blank and number_of_collection > 2 -%}
-                    <span class="products-cat-number">{{ 'sections.categories.products_cat_number' | t: count: number_of_collection }}</span>
-                    {%- endif -%}
+                  </a>
+                  <a href="{%- if collection.empty? -%}/admin/collections{%- else -%}{{ collection.url }}{%- endif -%}" class="category-link-button">
+                    {{block.settings.button}}
                   </a>
                   <div class="hover-mask">
                     <a href="{%- if collection.empty? -%}/admin/collections{%- else -%}{{ collection.url }}{%- endif -%}"><h2>{%- if collection.empty? -%}{{ 'homepage.onboarding.collection_title' | t }}{%- else -%}{{ collection.title }}{%- endif -%}</h2></a>
@@ -405,6 +405,11 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "button",
+          "label": "Collection Title"
         },
         {
              "type":"collection",
