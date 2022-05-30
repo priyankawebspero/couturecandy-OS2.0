@@ -139,7 +139,7 @@
           "type": "masonry_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Mother-of-bride.jpg",
-            "id_collection": "",
+            "id_collection": "alyce-paris",
             "width": "3"
           }
         },
@@ -147,7 +147,7 @@
           "type": "masonry_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Wedding-dresses.jpg",
-            "id_collection": "",
+            "id_collection": "adriana-papell-sale",
             "width": "3"
           }
         },
@@ -155,7 +155,7 @@
           "type": "masonry_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Wedding-guest.jpg",
-            "id_collection": "",
+            "id_collection": "adrianna-papell",
             "width": "3"
           }
         },
@@ -163,7 +163,7 @@
           "type": "masonry_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Bridesmaid.jpg",
-            "id_collection": "",
+            "id_collection": "adrianna-papell",
             "width": "3"
           }
         }
