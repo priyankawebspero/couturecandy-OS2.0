@@ -1,10 +1,10 @@
 <section class="brands-banner-section">
 <div class="row">
     {% if section.settings.title != black %}
-    <div class="Heading"><h2> {{section.settings.title}} </h2></div>
+    <div class="Heading text-center"><h2> {{section.settings.title}} </h2></div>
     {% endif %}
     {%- for block in section.blocks -%}
-    <div class="col-md-3">
+    <div class="col-md-2 brand_block">
         <a href="{{ block.settings.link }}" class="link">
         {% if block.settings.image != blank %}
             <img src="{{ block.settings.image | img_url: 'master' }}" data-chksrc="{{ block.settings.image | img_url: 'master' }}" data-src="{{ block.settings.image | img_url: 'master' }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="}" data-sizes="auto" class="lazyload banner-image desktop-xs" alt="{{ block.settings.image.alt }}">
