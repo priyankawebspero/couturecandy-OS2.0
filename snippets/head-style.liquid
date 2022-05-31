@@ -7,8 +7,7 @@
 <link rel="preload" href="{{ 'main.min.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
 {%- include 'load-css' -%}
 <!-- Logo CSS -->
-{%- include 'inc_css_home' -%}
- 
+<link rel="stylesheet" type="text/css" href="{{ 'commom.min.css' | asset_url }}" /> 
 {%- if template contains 'product' -%}
 {%- include 'space_check_variant' -%}         
 <link rel="stylesheet" type="text/css" href="{{ 'cloudzoom.css' | asset_url }}" />
