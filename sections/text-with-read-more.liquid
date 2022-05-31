@@ -1,12 +1,43 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
-{% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
+<section class="sub-page-banner-section">
+    <div class="row">
+        <div class="col-md-12">
+            <a href="{{ section.settings.link }}" class="">
+            {% if section.settings.image_desktop != blank %}
+                <img src="{{ section.settings.image_desktop | img_url: 'master' }}" data-chksrc="{{ section.settings.image_desktop | img_url: 'master' }}" data-src="{{ section.settings.image_desktop | img_url: 'master' }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="}" data-sizes="auto" class="lazyload banner-image desktop-xs" alt="{{ section.settings.image_desktop.alt }}">
+            {% endif %}
+            {% if section.settings.image_desktop != blank %}
+                <img src="{{ section.settings.image_mobile | img_url: 'master' }}" data-chksrc="{{ section.settings.image_mobile | img_url: 'master' }}" data-src="{{ section.settings.image_mobile | img_url: 'master' }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="}" data-sizes="auto" class="lazyload banner-image mobile-xs" alt="{{ section.settings.image_mobile.alt }}" style="display:none;">    </a>
+            {% endif %}
+            </a>
+        </div>
+    </div>
+</section>
+  
+  {% schema %}
+    {
+    "name": "text-with-read-more",
+    "class": "text-with-read-more",
+        "settings": [
+            {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+            },
+            {
+            "type": "richtext",
+            "id": "text_above",
+            "label": "Before Read More Text"
+            },
+            {
+            "type": "richtext",
+            "id": "text_below",
+            "label": "After Read More Text"
+            }
+        ],
+        "presets": [
+          {
+            "name": "text-with-read-more"
+          }
+       ]      
+    }
+  {% endschema %}
