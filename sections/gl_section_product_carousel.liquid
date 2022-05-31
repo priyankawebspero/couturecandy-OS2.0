@@ -80,7 +80,7 @@
              This collection is empty by default and must have products added to it
            {%- endcomment -%}
            <div class="spb_wrapper">
-                                   dfgjkhdjfdgh
+                                  
              <div class="{%- if settings_pr_img_size -%}equal-columns {% endif -%}{{section.settings.image_size}} gl_carousel_container">
                  <div class="owl-carousel gl_carousel_data" data-time='{{ section.settings.silder_speed | plus: 0 }}' data-nav='{%- if section.settings.hide_button -%}false{%- else -%}true{%- endif -%}' data-items='{{ number }}' data-dots='{%- if section.settings.hide_pagination -%}false{%- else -%}true{%- endif -%}' data-autoplay='{%- if section.settings.autoplay -%}true{%- else -%}false{%- endif -%}' data-loop='{%- if section.settings.slider_loop -%}true{%- else -%}false{%- endif -%}' data-medium='{%- if number > 2 -%}{{ number | minus: 1 }}{%- else -%}2{%- endif -%}'>
                     {%- for product in collection.products -%}
