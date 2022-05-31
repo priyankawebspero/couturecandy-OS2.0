@@ -58,14 +58,7 @@
        </div>
     </div>
   </div>
-  {%- comment -%}
-  {%- assign index = forloop.index -%}{%- assign modulo = index | modulo:2 -%}
-  {%- if modulo == 0 and section.id == '1505698928106' -%}
-  <div class="clearfix visible-sm-block"></div>
-  <div class="clearfix visible-md-block visible-lg-block"></div>
-  {%- endif -%}
-   {%- endcomment -%}
-  {%- endfor -%}
+   {%- endfor -%}
   {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}             
   <div class="clear"></div>
   <div class="basel-button-wrapper text-center gl_mt_50">
