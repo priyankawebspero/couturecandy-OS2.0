@@ -266,98 +266,35 @@
         "text_below": "<p>Wearing a designer prom dress shouldn’t be an exorbitant affair for any teen. We, at CoutureCandy, strive to get the best prices for our dear shoppers. Our on-sale prom dresses under $100 can be easily mistaken for $1000. We offer best-sellers from top designers like Jovani, Sherri Hill, and Blush, etc. at highly discounted prices online. Thousands of long and short prom dresses are available in different styles, sizes and price ranges - ready to be shipped to prom-goers around the world.<\/p>"
       }
     },
-    "165400288879b04066": {
-      "type": "gl_section_promo_banner",
+    "1654005036571929f8": {
+      "type": "banner-categories",
       "blocks": {
-        "1654002887119c6c5b-0": {
-          "type": "banner",
+        "1654005036d5d16ee9-0": {
+          "type": "banner-1",
           "settings": {
-            "banner_width": "6",
-            "hide_medium": false,
-            "hide_small": false,
-            "hide_extra_small": false,
             "image": "shopify:\/\/shop_images\/Prom-dresses_36dffd4f-5c20-46bd-af2c-fa2857289e63.jpg",
-            "banner_content": "",
+            "category_heading": "",
+            "category_content": "",
             "banner_btn_title": "",
-            "banner_link": "",
-            "button_size": "small",
-            "button_color": "white",
-            "button_style_color": "default",
-            "banner_alignment": "center",
-            "banner_vertical_alignment": "top",
-            "banner_effect": "default",
-            "banner_content_style": "default",
-            "banner_color": "light",
-            "enable_increase": false,
-            "block_border_color": "",
-            "block_border_style": "solid",
-            "block_border": "",
-            "block_margin_top": "",
-            "block_margin_bottom": "",
-            "block_padding": "",
-            "position_text_block": "top",
-            "enable_text_block": false,
-            "heading": "Heading",
-            "text_block": "<p>Viverra rutrum fringilla curabitur.<\/p>",
-            "banner_text_color": "light"
+            "banner_link": ""
           }
         },
-        "9439d544-80ac-4c11-a46f-5e6b34648218": {
-          "type": "banner",
+        "1654005036d5d16ee9-1": {
+          "type": "banner-2",
           "settings": {
-            "banner_width": "6",
-            "hide_medium": false,
-            "hide_small": false,
-            "hide_extra_small": false,
             "image": "shopify:\/\/shop_images\/Occasion_ff8eaf3b-ba91-48e1-bf4f-f2a48bb15a47.jpg",
-            "banner_content": "",
+            "category_heading": "",
+            "category_content": "",
             "banner_btn_title": "",
-            "banner_link": "",
-            "button_size": "small",
-            "button_color": "white",
-            "button_style_color": "default",
-            "banner_alignment": "center",
-            "banner_vertical_alignment": "top",
-            "banner_effect": "default",
-            "banner_content_style": "default",
-            "banner_color": "light",
-            "enable_increase": false,
-            "block_border_color": "",
-            "block_border_style": "solid",
-            "block_border": "",
-            "block_margin_top": "",
-            "block_margin_bottom": "",
-            "block_padding": "",
-            "position_text_block": "top",
-            "enable_text_block": false,
-            "heading": "Heading",
-            "text_block": "<p>Viverra rutrum fringilla curabitur.<\/p>",
-            "banner_text_color": "light"
+            "banner_link": ""
           }
         }
       },
       "block_order": [
-        "1654002887119c6c5b-0",
-        "9439d544-80ac-4c11-a46f-5e6b34648218"
+        "1654005036d5d16ee9-0",
+        "1654005036d5d16ee9-1"
       ],
       "settings": {
-        "row_stretch": "default",
-        "columns_gap": "inherit",
-        "button_label": "",
-        "button_link": "",
-        "button_color": "white",
-        "button_style": "bordered",
-        "button_size": "default",
-        "section_bg_color": "",
-        "section_border_color": "",
-        "section_border_style": "solid",
-        "section_border": "",
-        "section_margin_top": "",
-        "section_margin_bottom": "",
-        "section_padding_top": "",
-        "section_padding_right": "",
-        "section_padding_bottom": "",
-        "section_padding_left": ""
       }
     }
   },
@@ -369,6 +306,6 @@
     "16539999234cb01da9",
     "16539975212558b7d0",
     "16539976128b65b898",
-    "165400288879b04066"
+    "1654005036571929f8"
   ]
 }
