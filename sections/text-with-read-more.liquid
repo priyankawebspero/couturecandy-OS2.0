@@ -1,14 +1,21 @@
 <section class="sub-page-banner-section">
     <div class="row">
         <div class="col-md-12">
-            <a href="{{ section.settings.link }}" class="">
-            {% if section.settings.image_desktop != blank %}
-                <img src="{{ section.settings.image_desktop | img_url: 'master' }}" data-chksrc="{{ section.settings.image_desktop | img_url: 'master' }}" data-src="{{ section.settings.image_desktop | img_url: 'master' }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="}" data-sizes="auto" class="lazyload banner-image desktop-xs" alt="{{ section.settings.image_desktop.alt }}">
-            {% endif %}
-            {% if section.settings.image_desktop != blank %}
-                <img src="{{ section.settings.image_mobile | img_url: 'master' }}" data-chksrc="{{ section.settings.image_mobile | img_url: 'master' }}" data-src="{{ section.settings.image_mobile | img_url: 'master' }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="}" data-sizes="auto" class="lazyload banner-image mobile-xs" alt="{{ section.settings.image_mobile.alt }}" style="display:none;">    </a>
-            {% endif %}
-            </a>
+          <div class="information content">
+            {%- if section.settings.text_above != blank  and section.settings.text_below != blank -%}
+                {% if section.settings.heading != black %}
+                <div class="liner-continer">             
+                  <h4 class="title"><span class="title-separator"></span> {{section.settings.heading}}</h4>         
+                </div>
+                {% endif %}
+                   {{section.settings.text_above}}
+                 <span class="btn read_more">{{section.settings.read_more}}</span>
+                 <div class="more_text">
+                   {{section.settings.text_below}}
+                    <span class="btn read_more">{{section.settings.read_less}}</span>
+                </div>      
+            {%- endif -%}            
+          </div>            
         </div>
     </div>
 </section>
@@ -27,11 +34,19 @@
             "type": "richtext",
             "id": "text_above",
             "label": "Before Read More Text"
+            },{
+            "type": "text",
+            "id": "read_more",
+            "label": "Read More Text"
             },
             {
             "type": "richtext",
             "id": "text_below",
             "label": "After Read More Text"
+            },{
+            "type": "text",
+            "id": "read_less",
+            "label": "Read More Text"
             }
         ],
         "presets": [
