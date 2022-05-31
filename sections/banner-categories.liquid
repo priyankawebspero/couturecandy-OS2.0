@@ -1,5 +1,6 @@
 <div {{ data_section }} data-section-id="{{ section.id }}" data-section-type="banners-section" class="gl_custom_{{section.id}} gl_column-gap-{{ section.settings.columns_gap }} featured-collection">
   {%- for block in section.blocks -%}
+  
   <div class="spb_column gl_column_container gl_col-md-6 gl_col-lg-6">
     <div class="gl_column-inner"> 
        <div class="spb_wrapper">
@@ -34,6 +35,7 @@
        </div>
     </div>
   </div>
+  
   {%- endfor -%}
 </div>
 
