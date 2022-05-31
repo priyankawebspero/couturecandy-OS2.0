@@ -235,6 +235,19 @@
         "section_padding_left": ""
       }
     },
+    "16539999234cb01da9": {
+      "type": "custom-content",
+      "settings": {
+        "code": "<div id=\"reviewCarouselWidget\">\n<div class=\"headline\" style=\"\">Real Reviews From Real Customers<\/div>\n<div id=\"reviewCarouselWidgetInner\" class=\"stjr-widget\"><\/div>\n<\/div>",
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding_top": "",
+        "section_padding_right": "",
+        "section_padding_bottom": "",
+        "section_padding_left": "",
+        "hidden_section": false
+      }
+    },
     "16539975212558b7d0": {
       "type": "text-with-read-more",
       "settings": {
@@ -252,19 +265,6 @@
         "read_more": "Read More",
         "text_below": "<p>Wearing a designer prom dress shouldn’t be an exorbitant affair for any teen. We, at CoutureCandy, strive to get the best prices for our dear shoppers. Our on-sale prom dresses under $100 can be easily mistaken for $1000. We offer best-sellers from top designers like Jovani, Sherri Hill, and Blush, etc. at highly discounted prices online. Thousands of long and short prom dresses are available in different styles, sizes and price ranges - ready to be shipped to prom-goers around the world.<\/p>"
       }
-    },
-    "16539999234cb01da9": {
-      "type": "custom-content",
-      "settings": {
-        "code": "<div id=\"reviewCarouselWidget\">\n<div class=\"headline\" style=\"\">Real Reviews From Real Customers<\/div>\n<div id=\"reviewCarouselWidgetInner\" class=\"stjr-widget\"><\/div>\n<\/div>",
-        "section_margin_top": "",
-        "section_margin_bottom": "",
-        "section_padding_top": "",
-        "section_padding_right": "",
-        "section_padding_bottom": "",
-        "section_padding_left": "",
-        "hidden_section": false
-      }
     }
   },
   "order": [
@@ -272,8 +272,8 @@
     "165390901603cb214c",
     "1653914668ef75e938",
     "1653916013b1f6c860",
+    "16539999234cb01da9",
     "16539975212558b7d0",
-    "16539976128b65b898",
-    "16539999234cb01da9"
+    "16539976128b65b898"
   ]
 }
