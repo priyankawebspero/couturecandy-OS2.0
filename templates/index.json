@@ -11,6 +11,7 @@
     "165390901603cb214c": {
       "type": "gl_section_product_gird",
       "settings": {
+        "heading": "SHOP POPULAR DRESSES",
         "row_stretch": "default",
         "home_featured_products": "a-line-dresses",
         "paginate_index": "4",
