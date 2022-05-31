@@ -19,7 +19,7 @@
  <script>
   $(document).ready(function(){
   $('.moreless-button').click(function () {
-    $('.append-content-custom').slideToggle();
+    $(this).parent('.append-content-custom').slideToggle();
     if ($('.moreless-button').text() == "Read Less") {
       $(this).text("Read More");
     } else {
