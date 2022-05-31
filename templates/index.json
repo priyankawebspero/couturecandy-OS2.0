@@ -181,7 +181,7 @@
           "type": "masonry_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Wedding-dresses.jpg",
-            "button": "",
+            "button": "WEDDING DRESSES",
             "id_collection": "adriana-papell-sale",
             "width": "3"
           }
@@ -190,7 +190,7 @@
           "type": "masonry_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Wedding-guest.jpg",
-            "button": "",
+            "button": "WEDDING GUEST",
             "id_collection": "adrianna-papell",
             "width": "3"
           }
