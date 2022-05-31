@@ -4,8 +4,8 @@
     <div class="gl_column-inner"> 
        <div class="spb_wrapper">
           <div class="promo-banner" onclick="window.location.href='{{ block.settings.banner_link }}'">
-             <div class="main-wrapp-img">
-                <div class="banner-imagegl_col-md-6 gl_col-lg-6">
+             <div class="main-wrapp-img gl_col-md-6 gl_col-lg-6">
+                <div class="banner-image">
                    {%- if block.settings.image == blank -%}
                    <img class="promo-banner-image image-1" src="//cdn.shopify.com/s/files/1/1933/6253/files/portfolio-placeholder_600x400_crop_center.jpg?12790048884060573015" width="600" height="420" alt="market-banner-sport" title="market-banner-sport">                                                     
                    {%- else -%}
@@ -16,7 +16,7 @@
                   {%- endif -%}
                 </div>
              </div>
-             <div class="wrapper-content-baner">
+             <div class="wrapper-content-baner gl_col-md-6 gl_col-lg-6">
                 <div class="banner-inner">
                 {%- if block.settings.category_heading != blank -%}
                   <h5>{{ block.settings.category_heading }}</h5>
