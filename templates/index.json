@@ -199,7 +199,7 @@
           "type": "masonry_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Bridesmaid.jpg",
-            "button": "",
+            "button": "BRIDSMAID",
             "id_collection": "adrianna-papell",
             "width": "3"
           }
