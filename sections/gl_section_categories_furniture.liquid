@@ -68,7 +68,7 @@
                 {%- endif -%}
                 <div class="category-content">
                   <a href="{%- if collection.empty? -%}/admin/collections{%- else -%}{{ collection.url }}{%- endif -%}" class="category-link">
-                    <div class="product-category-thumbnail">
+                    <div class="product-category-thumbnail ghjhjkghjk">
                       {%- if block_image != blank -%}
                                {%- assign img_url = block_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                                <img src="{{ block_image | img_url: '180x' }}" data-src="{{ img_url }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ block_image.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 attachment-shop_catalog size-shop_catalog" alt="{{block_image.alt}}" >
