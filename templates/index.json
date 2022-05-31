@@ -3,8 +3,8 @@
     "16539111747fa4ce03": {
       "type": "single-banner",
       "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/banner-img.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/banner-img-min.jpg",
+        "image_desktop": "shopify:\/\/shop_images\/cc_wedding1.png",
+        "image_mobile": "shopify:\/\/shop_images\/cc_wedding1.png",
         "link": ""
       }
     },
@@ -139,6 +139,7 @@
           "type": "masonry_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Mother-of-bride.jpg",
+            "button": "",
             "id_collection": "alyce-paris",
             "width": "3"
           }
@@ -147,6 +148,7 @@
           "type": "masonry_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Wedding-dresses.jpg",
+            "button": "",
             "id_collection": "adriana-papell-sale",
             "width": "3"
           }
@@ -155,6 +157,7 @@
           "type": "masonry_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Wedding-guest.jpg",
+            "button": "",
             "id_collection": "adrianna-papell",
             "width": "3"
           }
@@ -163,6 +166,7 @@
           "type": "masonry_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Bridesmaid.jpg",
+            "button": "",
             "id_collection": "adrianna-papell",
             "width": "3"
           }
