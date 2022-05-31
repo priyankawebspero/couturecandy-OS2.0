@@ -1,4 +1,4 @@
-<div {{ data_section }} data-section-id="{{ section.id }}" data-section-type="banners-section" class="gl_custom_{{section.id}} gl_column-gap-{{ section.settings.columns_gap }} featured-collection">
+<div {{ data_section }} data-section-id="{{ section.id }}" data-section-type="banners-section" class="gl_custom_{{section.id}} featured-collection">
   {%- for block in section.blocks -%}
   <div class="spb_column gl_column_container gl_col-md-{{ block.settings.banner_width }} gl_col-lg-{{ block.settings.banner_width }}{%- if block.settings.hide_small %} gl_hidden-sm{%- else %} gl_col-sm-{{ block.settings.banner_width }}{%- endif %}{%- if block.settings.hide_extra_small %} gl_hidden-xs{%- endif %}{%- if block.settings.hide_medium %} gl_hidden-md{%- endif -%}{%- if block.settings.hide_small %} gl_hidden-sm{%- endif %}" {{block.shopify_attributes}}>
     {%- if block.settings.block_margin_top != blank or block.settings.block_margin_bottom != blank or block.settings.block_padding != blank or block.settings.block_border != blank  -%}
