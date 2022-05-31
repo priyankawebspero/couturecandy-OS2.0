@@ -1,12 +1,106 @@
-{% schema %}
+{%- schema -%}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Promo Banner",
+    "class": "index-section gl_section_promo_banner",
+    "max_blocks": 2,
+    "settings": [
+     ],
+    "blocks": [
+      {
+        "type": "banner-1",
+        "name": "Category Style 1",
+        "settings": [
+        {
+          "type": "header",
+          "content": "== Promo Banner settings"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "Select image"
+        },
+        {
+          "type": "text",
+          "id": "category_heading",
+          "label": "Category Heading",
+          "info": "Add here Category Heading"
+        },
+        {
+          "type": "text",
+          "id": "category_content",
+          "label": "Category Content",
+          "info": "Add here Category Content"
+        },
+        {
+          "type": "text",
+          "id": "banner_btn_title",
+          "label": "Button title",
+          "info": "Add here few words to your title button."
+        },
+        {
+          "type": "url",
+          "id": "banner_link",
+          "label": "Banner link",
+          "info": "Enter URL if you want this banner to have a link."
+        }
+        ]
+      },
+      {
+              "type": "banner-2",
+              "name": "Category Style 2",
+              "settings": [
+              {
+                "type": "header",
+                "content": "== Promo Banner settings"
+              },
+              {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image",
+                "info": "Select image"
+              },
+              {
+                "type": "text",
+                "id": "category_heading",
+                "label": "Category Heading",
+                "info": "Add here Category Heading"
+              },
+              {
+                "type": "text",
+                "id": "category_content",
+                "label": "Category Content",
+                "info": "Add here Category Content"
+              },
+              {
+                "type": "text",
+                "id": "banner_btn_title",
+                "label": "Button title",
+                "info": "Add here few words to your title button."
+              },
+              {
+                "type": "url",
+                "id": "banner_link",
+                "label": "Banner link",
+                "info": "Enter URL if you want this banner to have a link."
+              }
+              ]
+            }
+    ],
+    "presets": [
+      {
+        "name": "Promo banner",
+        "category": "Image",
+        "blocks": [
+          {
+            "type": "banner-1"
+          },
+          {
+            "type": "banner-2"
+          }
+        ]
+      }
+    ]
   }
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
