@@ -273,10 +273,10 @@
           "type": "banner-1",
           "settings": {
             "image": "shopify:\/\/shop_images\/Prom-dresses_36dffd4f-5c20-46bd-af2c-fa2857289e63.jpg",
-            "category_heading": "",
-            "category_content": "",
-            "banner_btn_title": "",
-            "banner_link": ""
+            "category_heading": "Prom Dresses",
+            "category_content": "Shop our latest selection",
+            "banner_btn_title": "SHOP NOW",
+            "banner_link": "#"
           }
         },
         "1654005036d5d16ee9-1": {
