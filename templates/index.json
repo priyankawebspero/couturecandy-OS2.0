@@ -283,20 +283,20 @@
           "type": "banner-2",
           "settings": {
             "image": "shopify:\/\/shop_images\/Occasion_ff8eaf3b-ba91-48e1-bf4f-f2a48bb15a47.jpg",
-            "category_heading": "",
-            "category_content": "",
-            "banner_btn_title": "",
-            "banner_link": "",
+            "category_heading": "Occasion",
+            "category_content": "Dresses for every occasion",
+            "banner_btn_title": "SHOP NOW",
+            "banner_link": "#",
             "image1": "shopify:\/\/shop_images\/Cocktail-dresses.jpg",
-            "category_heading1": "",
-            "category_content1": "",
-            "banner_btn_title1": "",
-            "banner_link1": "",
+            "category_heading1": "COCKTAIL DRESSES",
+            "category_content1": "Looks that stay warm in style",
+            "banner_btn_title1": "SHOP NOW",
+            "banner_link1": "#",
             "image2": "shopify:\/\/shop_images\/Formal-Gowns.jpg",
-            "category_heading2": "",
-            "category_content2": "",
-            "banner_btn_title2": "",
-            "banner_link2": ""
+            "category_heading2": "FORMAL GOWNS",
+            "category_content2": "In every shape & size",
+            "banner_btn_title2": "SHOP NOW",
+            "banner_link2": "#"
           }
         }
       },
