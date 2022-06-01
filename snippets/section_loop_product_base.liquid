@@ -27,8 +27,9 @@
 {%- endif -%}
 <div class="product-grid-item product basel-hover-base{{gl_colum_mobile}}{{ gl_colum_width }} purchasable {% if sold_out %} outofstock{%- endif -%}">
    <div class="product-element-top">
-      {%- if settings.use_wishlist and pages['wishlist'].empty? != true -%} {%- include 'gl-wishlist-product' -%}{%- endif -%}
       {%- include 'product_element_image' -%}
+      {%- if settings.use_wishlist and pages['wishlist'].empty? != true -%} {%- include 'gl-wishlist-product' -%}{%- endif -%}
+
    </div>
    {%- if settings.show_product_color and colour_count > 1 -%}
       {%- include 'swatches_on_grid' -%}
