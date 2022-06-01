@@ -1,6 +1,6 @@
 <div {{ data_section }} data-section-id="{{ section.id }}" data-section-type="banners-section" class="gl_custom_{{section.id}} gl_column-gap-{{ section.settings.columns_gap }} featured-collection">
   {%- for block in section.blocks -%}
-  
+  {% if block.type == 'banner-1' %}
   <div class="spb_column gl_column_container gl_col-md-6 gl_col-lg-6">
     <div class="gl_column-inner"> 
        <div class="spb_wrapper">
@@ -35,6 +35,102 @@
        </div>
     </div>
   </div>
+{% elsif block.type == 'banner-2' %}
+<div class="spb_column gl_column_container gl_col-md-6 gl_col-lg-6">
+  <div class="gl_column-inner"> 
+     <div class="spb_wrapper">
+      <div class="gl_col-md-12 gl_col-lg-12">
+        <div class="promo-banner" onclick="window.location.href='{{ block.settings.banner_link }}'">
+           <div class="main-wrapp-img gl_col-md-6 gl_col-lg-6">
+              <div class="banner-image">
+                 {%- if block.settings.image == blank -%}
+                 <img class="promo-banner-image image-1" src="//cdn.shopify.com/s/files/1/1933/6253/files/portfolio-placeholder_600x400_crop_center.jpg?12790048884060573015" width="600" height="420" alt="market-banner-sport" title="market-banner-sport">                                                     
+                 {%- else -%}
+                 {%- assign image = block.settings.image -%}
+                 {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                             <img src="{{ image | img_url: '50x50' }}" data-src="{{ img_url }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 promo-banner-image image-1" alt="{{image.alt}}" >
+                             <div class="jas-wrap-lazy"></div>
+                {%- endif -%}
+              </div>
+           </div>
+           <div class="wrapper-content-baner gl_col-md-6 gl_col-lg-6">
+              <div class="banner-inner">
+              {%- if block.settings.category_heading != blank -%}
+                <h5>{{ block.settings.category_heading }}</h5>
+              {%- endif -%}
+                 {%- if block.settings.category_content != blank -%}
+                <div> {{ block.settings.category_content }} </div>
+              {%- endif -%}
+               {%- if block.settings.banner_link != blank and block.settings.banner_btn_title != blank  -%}
+                  <p><a class="btn" href="{{ block.settings.banner_link }}">{{ block.settings.banner_btn_title }}</a></p>
+                {%- endif -%}
+              </div>
+           </div>
+        </div>
+      </div>
+      <div class="gl_col-md-12 gl_col-lg-12">
+        <div class="promo-banner" onclick="window.location.href='{{ block.settings.banner_link1 }}'">
+          <div class="main-wrapp-img gl_col-md-6 gl_col-lg-6">
+             <div class="banner-image">
+                {%- if block.settings.image1 == blank -%}
+                <img class="promo-banner-image image-1" src="//cdn.shopify.com/s/files/1/1933/6253/files/portfolio-placeholder_600x400_crop_center.jpg?12790048884060573015" width="600" height="420" alt="market-banner-sport" title="market-banner-sport">                                                     
+                {%- else -%}
+                {%- assign image = block.settings.image1 -%}
+                {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                            <img src="{{ image | img_url: '50x50' }}" data-src="{{ img_url }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 promo-banner-image image-1" alt="{{image.alt}}" >
+                            <div class="jas-wrap-lazy"></div>
+               {%- endif -%}
+             </div>
+          </div>
+          <div class="wrapper-content-baner gl_col-md-6 gl_col-lg-6">
+             <div class="banner-inner">
+             {%- if block.settings.category_heading1 != blank -%}
+               <h5>{{ block.settings.category_heading1 }}</h5>
+             {%- endif -%}
+                {%- if block.settings.category_content1 != blank -%}
+               <div> {{ block.settings.category_content1 }} </div>
+             {%- endif -%}
+              {%- if block.settings.banner_link1 != blank and block.settings.banner_btn_title1 != blank  -%}
+                 <p><a class="btn" href="{{ block.settings.banner_link1 }}">{{ block.settings.banner_btn_title1 }}</a></p>
+               {%- endif -%}
+             </div>
+          </div>
+       </div>
+      </div>
+      <div class="gl_col-md-12 gl_col-lg-12">
+        <div class="promo-banner" onclick="window.location.href='{{ block.settings.banner_link2 }}'">
+          <div class="main-wrapp-img gl_col-md-6 gl_col-lg-6">
+             <div class="banner-image">
+                {%- if block.settings.image2 == blank -%}
+                <img class="promo-banner-image image-1" src="//cdn.shopify.com/s/files/1/1933/6253/files/portfolio-placeholder_600x400_crop_center.jpg?12790048884060573015" width="600" height="420" alt="market-banner-sport" title="market-banner-sport">                                                     
+                {%- else -%}
+                {%- assign image = block.settings.image2 -%}
+                {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                            <img src="{{ image | img_url: '50x50' }}" data-src="{{ img_url }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 promo-banner-image image-1" alt="{{image.alt}}" >
+                            <div class="jas-wrap-lazy"></div>
+               {%- endif -%}
+             </div>
+          </div>
+          <div class="wrapper-content-baner gl_col-md-6 gl_col-lg-6">
+             <div class="banner-inner">
+             {%- if block.settings.category_heading2 != blank -%}
+               <h5>{{ block.settings.category_heading2 }}</h5>
+             {%- endif -%}
+                {%- if block.settings.category_content2 != blank -%}
+               <div> {{ block.settings.category_content2 }} </div>
+             {%- endif -%}
+              {%- if block.settings.banner_link2 != blank and block.settings.banner_btn_title2 != blank  -%}
+                 <p><a class="btn" href="{{ block.settings.banner_link2 }}">{{ block.settings.banner_btn_title2 }}</a></p>
+               {%- endif -%}
+             </div>
+          </div>
+       </div>
+      </div>
+     </div>
+  </div>
+</div>
+{% endif %}
+ 
   
   {%- endfor -%}
 </div>
