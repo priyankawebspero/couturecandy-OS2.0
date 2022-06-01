@@ -27,14 +27,8 @@
 {%- endif -%}
 <div class="product-grid-item product basel-hover-base{{gl_colum_mobile}}{{ gl_colum_width }} purchasable {% if sold_out %} outofstock{%- endif -%}">
    <div class="product-element-top">
+      {%- if settings.use_wishlist and pages['wishlist'].empty? != true -%} {%- include 'gl-wishlist-product' -%}{%- endif -%}
       {%- include 'product_element_image' -%}
-      <div class="hover-mask">
-         <div class="basel-add-btn">{%- include 'gl_btn_add' -%}</div>
-         {%- if settings.use_quickview -%}<div class="quick-view"><a href="javascript void(0);" data-get="{{ url_nt }}{%- if url_nt_bl -%}&{%- else %}/?{%- endif -%}view=quick_view" class="open-quick-view basel-tooltip"><span class="basel-tooltip-label">{{ 'sections.basel_tooltip.quick_view' | t }}</span>{{ 'sections.basel_tooltip.quick_view' | t }}</a></div>{%- endif -%}
-         {%- if settings.use_wishlist and pages['wishlist'].empty? != true -%} {%- include 'gl-wishlist-product' -%}{%- endif -%}
-         {%- if settings.use_compare and pages['compare'].empty? != true -%}<div class="product-compare-button"><a href="#compare_popup" data-pid="{{product.handle}}_sp_{{product.id}}" class="compare button basel-tooltip" rel="nofollow"><span class="basel-tooltip-label">{{ 'sections.basel_tooltip.compare' | t }}</span>{{ 'sections.basel_tooltip.compare' | t }}</a></div>{%- endif -%}
-         <div class="clear"></div>
-      </div>
    </div>
    {%- if settings.show_product_color and colour_count > 1 -%}
       {%- include 'swatches_on_grid' -%}
