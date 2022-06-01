@@ -8,6 +8,47 @@
         "link": ""
       }
     },
+    "1654005036571929f8": {
+      "type": "banner-categories",
+      "blocks": {
+        "1654005036d5d16ee9-0": {
+          "type": "banner-1",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Prom-dresses_36dffd4f-5c20-46bd-af2c-fa2857289e63.jpg",
+            "category_heading": "Prom Dresses",
+            "category_content": "Shop our latest selection",
+            "banner_btn_title": "SHOP NOW",
+            "banner_link": "#"
+          }
+        },
+        "1654005036d5d16ee9-1": {
+          "type": "banner-2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Occasion_ff8eaf3b-ba91-48e1-bf4f-f2a48bb15a47.jpg",
+            "category_heading": "Occasion",
+            "category_content": "Dresses for every occasion",
+            "banner_btn_title": "SHOP NOW",
+            "banner_link": "#",
+            "image1": "shopify:\/\/shop_images\/Cocktail-dresses.jpg",
+            "category_heading1": "COCKTAIL DRESSES",
+            "category_content1": "Looks that stay warm in style",
+            "banner_btn_title1": "SHOP NOW",
+            "banner_link1": "#",
+            "image2": "shopify:\/\/shop_images\/Formal-Gowns.jpg",
+            "category_heading2": "FORMAL GOWNS",
+            "category_content2": "In every shape & size",
+            "banner_btn_title2": "SHOP NOW",
+            "banner_link2": "#"
+          }
+        }
+      },
+      "block_order": [
+        "1654005036d5d16ee9-0",
+        "1654005036d5d16ee9-1"
+      ],
+      "settings": {
+      }
+    },
     "165390901603cb214c": {
       "type": "gl_section_product_gird",
       "settings": {
@@ -265,57 +306,16 @@
         "read_more": "Read More",
         "text_below": "<p>Wearing a designer prom dress shouldn’t be an exorbitant affair for any teen. We, at CoutureCandy, strive to get the best prices for our dear shoppers. Our on-sale prom dresses under $100 can be easily mistaken for $1000. We offer best-sellers from top designers like Jovani, Sherri Hill, and Blush, etc. at highly discounted prices online. Thousands of long and short prom dresses are available in different styles, sizes and price ranges - ready to be shipped to prom-goers around the world.<\/p>"
       }
-    },
-    "1654005036571929f8": {
-      "type": "banner-categories",
-      "blocks": {
-        "1654005036d5d16ee9-0": {
-          "type": "banner-1",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Prom-dresses_36dffd4f-5c20-46bd-af2c-fa2857289e63.jpg",
-            "category_heading": "Prom Dresses",
-            "category_content": "Shop our latest selection",
-            "banner_btn_title": "SHOP NOW",
-            "banner_link": "#"
-          }
-        },
-        "1654005036d5d16ee9-1": {
-          "type": "banner-2",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Occasion_ff8eaf3b-ba91-48e1-bf4f-f2a48bb15a47.jpg",
-            "category_heading": "Occasion",
-            "category_content": "Dresses for every occasion",
-            "banner_btn_title": "SHOP NOW",
-            "banner_link": "#",
-            "image1": "shopify:\/\/shop_images\/Cocktail-dresses.jpg",
-            "category_heading1": "COCKTAIL DRESSES",
-            "category_content1": "Looks that stay warm in style",
-            "banner_btn_title1": "SHOP NOW",
-            "banner_link1": "#",
-            "image2": "shopify:\/\/shop_images\/Formal-Gowns.jpg",
-            "category_heading2": "FORMAL GOWNS",
-            "category_content2": "In every shape & size",
-            "banner_btn_title2": "SHOP NOW",
-            "banner_link2": "#"
-          }
-        }
-      },
-      "block_order": [
-        "1654005036d5d16ee9-0",
-        "1654005036d5d16ee9-1"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
     "16539111747fa4ce03",
+    "1654005036571929f8",
     "165390901603cb214c",
     "1653914668ef75e938",
     "1653916013b1f6c860",
     "16539999234cb01da9",
     "16539975212558b7d0",
-    "16539976128b65b898",
-    "1654005036571929f8"
+    "16539976128b65b898"
   ]
 }
