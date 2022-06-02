@@ -306,6 +306,66 @@
         "read_more": "Read More",
         "text_below": "<p>Wearing a designer prom dress shouldn’t be an exorbitant affair for any teen. We, at CoutureCandy, strive to get the best prices for our dear shoppers. Our on-sale prom dresses under $100 can be easily mistaken for $1000. We offer best-sellers from top designers like Jovani, Sherri Hill, and Blush, etc. at highly discounted prices online. Thousands of long and short prom dresses are available in different styles, sizes and price ranges - ready to be shipped to prom-goers around the world.<\/p>"
       }
+    },
+    "16541439641d011f7d": {
+      "type": "gl_section_categories_furniture",
+      "blocks": {
+        "16541439647bf16666-2": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Pageant-dress.jpg",
+            "button": "",
+            "id_collection": "",
+            "width": "4"
+          }
+        },
+        "16541439647bf16666-1": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/homecoming-dres.jpg",
+            "button": "",
+            "id_collection": "",
+            "width": "4"
+          }
+        },
+        "16541439647bf16666-0": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Graduation-dress.jpg",
+            "button": "",
+            "id_collection": "",
+            "width": "4"
+          }
+        }
+      },
+      "block_order": [
+        "16541439647bf16666-2",
+        "16541439647bf16666-1",
+        "16541439647bf16666-0"
+      ],
+      "settings": {
+        "title": "FEATURED CATEGORIES",
+        "sub_title": "MADE THE HARD WAY",
+        "categories_layout": "default",
+        "categories_design": "default",
+        "space_categories": "30",
+        "silder_speed": "5000",
+        "silder_per_view": "4",
+        "hide_pagination": false,
+        "hide_button": false,
+        "slider_loop": false,
+        "autoplay": false,
+        "section_bg_color": "",
+        "section_border_color": "",
+        "section_border_style": "solid",
+        "section_border": "",
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding_top": "",
+        "section_padding_right": "",
+        "section_padding_bottom": "",
+        "section_padding_left": ""
+      }
     }
   },
   "order": [
@@ -316,6 +376,7 @@
     "1653916013b1f6c860",
     "16539999234cb01da9",
     "16539975212558b7d0",
-    "16539976128b65b898"
+    "16539976128b65b898",
+    "16541439641d011f7d"
   ]
 }
