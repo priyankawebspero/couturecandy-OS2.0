@@ -68,7 +68,7 @@
         "other": "{{ count }} results for “{{ terms }}”"
       },
       "results_with_collection": "{{ collection }} Search results for “{{ terms }}”",
-      "placeholder": "Search",
+      "placeholder": "Search your dress here...",
       "close_search": "close",
       "submit": "Search"
     },
