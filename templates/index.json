@@ -372,6 +372,24 @@
         "text_below": "<p>Our collection includes elegant floor-length formal gowns, short semi-formal party dresses, sexy long prom dresses, flirty short prom dresses, and cute homecoming dresses that are not only perfect for prom but also for partying with friends, attending balls, office events, or family gatherings. We have a huge selection of formal evening gowns for Prom 2022 by top designers in a variety of styles, colors, and fabric. Our party dresses are versatile and affordable, which makes them a great fit for any occasion - formal or informal. Our collections of long and short prom dresses are perfect for all body types and shapes. From petite prom dresses to plus-size prom dresses, discover outfits that will suit your unique figure for Prom 2022. If you’re on a budget, shop for a beautiful prom outfit from our sale section at discounted prices, and you're dressed to slay. So choose your dream dress from our designer prom dresses selection or HoCo outfits, and celebrate in style with CoutureCandy!<\/p>"
       }
     },
+    "1654146502d0584442": {
+      "type": "apps",
+      "blocks": {
+        "a551c399-ac91-4cb8-86c5-7e1de6d4643e": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 18,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "a551c399-ac91-4cb8-86c5-7e1de6d4643e"
+      ],
+      "settings": {
+      }
+    },
     "16539976128b65b898": {
       "type": "text-with-read-more",
       "settings": {
@@ -391,6 +409,7 @@
     "16541439641d011f7d",
     "16539999234cb01da9",
     "16539975212558b7d0",
+    "1654146502d0584442",
     "16539976128b65b898"
   ]
 }
