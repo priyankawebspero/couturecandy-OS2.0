@@ -284,37 +284,6 @@
         "section_padding_left": ""
       }
     },
-    "16539999234cb01da9": {
-      "type": "custom-content",
-      "settings": {
-        "code": "<div id=\"reviewCarouselWidget\">\n<div class=\"headline\" style=\"\">Real Reviews From Real Customers<\/div>\n<div id=\"reviewCarouselWidgetInner\" class=\"stjr-widget\"><\/div>\n<\/div>",
-        "section_margin_top": "",
-        "section_margin_bottom": "",
-        "section_padding_top": "",
-        "section_padding_right": "",
-        "section_padding_bottom": "",
-        "section_padding_left": "",
-        "hidden_section": false
-      }
-    },
-    "16539975212558b7d0": {
-      "type": "text-with-read-more",
-      "settings": {
-        "heading": "SHOP THE LATEST DRESSES & GOWNS AT COUTURECANDY!",
-        "text_above": "<p>CoutureCandy’s trendy and affordable collection of 2022 prom dresses is perfect for all types of events - formal or informal. The reason is the versatility and variety offered by different prom-favorite designers like Sherri Hill, Jovani, Faviana, Ellie Wilde, etc. on our all-inclusive store. Be it senior prom 2022, junior prom, pageant contest, or homecoming, our collection of long and short prom dresses has got you fashionably covered.<\/p>",
-        "read_more": "Read More",
-        "text_below": "<p>Our collection includes elegant floor-length formal gowns, short semi-formal party dresses, sexy long prom dresses, flirty short prom dresses, and cute homecoming dresses that are not only perfect for prom but also for partying with friends, attending balls, office events, or family gatherings. We have a huge selection of formal evening gowns for Prom 2022 by top designers in a variety of styles, colors, and fabric. Our party dresses are versatile and affordable, which makes them a great fit for any occasion - formal or informal. Our collections of long and short prom dresses are perfect for all body types and shapes. From petite prom dresses to plus-size prom dresses, discover outfits that will suit your unique figure for Prom 2022. If you’re on a budget, shop for a beautiful prom outfit from our sale section at discounted prices, and you're dressed to slay. So choose your dream dress from our designer prom dresses selection or HoCo outfits, and celebrate in style with CoutureCandy!<\/p>"
-      }
-    },
-    "16539976128b65b898": {
-      "type": "text-with-read-more",
-      "settings": {
-        "heading": "AT COUTURE CANDY, PROM SEASON NEVER ENDS!",
-        "text_above": "<p>Shop online for the latest designer prom dresses exclusively on CoutureCandy! From senior prom dresses to junior prom outfits, you will find the dress that suits your unique style, hiding in our pool of formal gowns and cute short prom dresses. From curve-enhancing mermaid and trumpet dresses to flowy a-line gowns and short dresses, finding the perfect fit is now easier with CoutureCandy. Boasting the latest fashion trends, our designer prom dresses will make you the ultimate trendsetter this Prom 2022.<\/p>",
-        "read_more": "Read More",
-        "text_below": "<p>Wearing a designer prom dress shouldn’t be an exorbitant affair for any teen. We, at CoutureCandy, strive to get the best prices for our dear shoppers. Our on-sale prom dresses under $100 can be easily mistaken for $1000. We offer best-sellers from top designers like Jovani, Sherri Hill, and Blush, etc. at highly discounted prices online. Thousands of long and short prom dresses are available in different styles, sizes and price ranges - ready to be shipped to prom-goers around the world.<\/p>"
-      }
-    },
     "16541439641d011f7d": {
       "type": "gl_section_categories_furniture",
       "blocks": {
@@ -359,7 +328,7 @@
       ],
       "settings": {
         "title": "FEATURED CATEGORIES",
-        "sub_title": "MADE THE HARD WAY",
+        "sub_title": "",
         "categories_layout": "default",
         "categories_design": "default",
         "space_categories": "30",
@@ -380,6 +349,37 @@
         "section_padding_bottom": "",
         "section_padding_left": ""
       }
+    },
+    "16539999234cb01da9": {
+      "type": "custom-content",
+      "settings": {
+        "code": "<div id=\"reviewCarouselWidget\">\n<div class=\"headline\" style=\"\">Real Reviews From Real Customers<\/div>\n<div id=\"reviewCarouselWidgetInner\" class=\"stjr-widget\"><\/div>\n<\/div>",
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding_top": "",
+        "section_padding_right": "",
+        "section_padding_bottom": "",
+        "section_padding_left": "",
+        "hidden_section": false
+      }
+    },
+    "16539975212558b7d0": {
+      "type": "text-with-read-more",
+      "settings": {
+        "heading": "SHOP THE LATEST DRESSES & GOWNS AT COUTURECANDY!",
+        "text_above": "<p>CoutureCandy’s trendy and affordable collection of 2022 prom dresses is perfect for all types of events - formal or informal. The reason is the versatility and variety offered by different prom-favorite designers like Sherri Hill, Jovani, Faviana, Ellie Wilde, etc. on our all-inclusive store. Be it senior prom 2022, junior prom, pageant contest, or homecoming, our collection of long and short prom dresses has got you fashionably covered.<\/p>",
+        "read_more": "Read More",
+        "text_below": "<p>Our collection includes elegant floor-length formal gowns, short semi-formal party dresses, sexy long prom dresses, flirty short prom dresses, and cute homecoming dresses that are not only perfect for prom but also for partying with friends, attending balls, office events, or family gatherings. We have a huge selection of formal evening gowns for Prom 2022 by top designers in a variety of styles, colors, and fabric. Our party dresses are versatile and affordable, which makes them a great fit for any occasion - formal or informal. Our collections of long and short prom dresses are perfect for all body types and shapes. From petite prom dresses to plus-size prom dresses, discover outfits that will suit your unique figure for Prom 2022. If you’re on a budget, shop for a beautiful prom outfit from our sale section at discounted prices, and you're dressed to slay. So choose your dream dress from our designer prom dresses selection or HoCo outfits, and celebrate in style with CoutureCandy!<\/p>"
+      }
+    },
+    "16539976128b65b898": {
+      "type": "text-with-read-more",
+      "settings": {
+        "heading": "AT COUTURE CANDY, PROM SEASON NEVER ENDS!",
+        "text_above": "<p>Shop online for the latest designer prom dresses exclusively on CoutureCandy! From senior prom dresses to junior prom outfits, you will find the dress that suits your unique style, hiding in our pool of formal gowns and cute short prom dresses. From curve-enhancing mermaid and trumpet dresses to flowy a-line gowns and short dresses, finding the perfect fit is now easier with CoutureCandy. Boasting the latest fashion trends, our designer prom dresses will make you the ultimate trendsetter this Prom 2022.<\/p>",
+        "read_more": "Read More",
+        "text_below": "<p>Wearing a designer prom dress shouldn’t be an exorbitant affair for any teen. We, at CoutureCandy, strive to get the best prices for our dear shoppers. Our on-sale prom dresses under $100 can be easily mistaken for $1000. We offer best-sellers from top designers like Jovani, Sherri Hill, and Blush, etc. at highly discounted prices online. Thousands of long and short prom dresses are available in different styles, sizes and price ranges - ready to be shipped to prom-goers around the world.<\/p>"
+      }
     }
   },
   "order": [
@@ -388,9 +388,9 @@
     "165390901603cb214c",
     "1653914668ef75e938",
     "1653916013b1f6c860",
+    "16541439641d011f7d",
     "16539999234cb01da9",
     "16539975212558b7d0",
-    "16539976128b65b898",
-    "16541439641d011f7d"
+    "16539976128b65b898"
   ]
 }
