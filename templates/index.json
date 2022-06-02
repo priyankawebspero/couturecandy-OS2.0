@@ -213,6 +213,8 @@
           "type": "masonry_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Mother-of-bride.jpg",
+            "heading": "",
+            "content": "",
             "button": "MOTHEROF BRIDE",
             "id_collection": "alyce-paris",
             "width": "3"
@@ -222,6 +224,8 @@
           "type": "masonry_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Wedding-dresses.jpg",
+            "heading": "",
+            "content": "",
             "button": "WEDDING DRESSES",
             "id_collection": "adriana-papell-sale",
             "width": "3"
@@ -231,6 +235,8 @@
           "type": "masonry_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Wedding-guest.jpg",
+            "heading": "",
+            "content": "",
             "button": "WEDDING GUEST",
             "id_collection": "adrianna-papell",
             "width": "3"
@@ -240,6 +246,8 @@
           "type": "masonry_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Bridesmaid.jpg",
+            "heading": "",
+            "content": "",
             "button": "BRIDSMAID",
             "id_collection": "adrianna-papell",
             "width": "3"
@@ -314,8 +322,10 @@
           "type": "masonry_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Pageant-dress.jpg",
-            "button": "",
-            "id_collection": "",
+            "heading": "PAGEANT DRESSES",
+            "content": "your dream is their dream",
+            "button": "Shop Now",
+            "id_collection": "adrianna-papell",
             "width": "4"
           }
         },
@@ -323,6 +333,8 @@
           "type": "masonry_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/homecoming-dres.jpg",
+            "heading": "",
+            "content": "",
             "button": "",
             "id_collection": "",
             "width": "4"
@@ -332,6 +344,8 @@
           "type": "masonry_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Graduation-dress.jpg",
+            "heading": "",
+            "content": "",
             "button": "",
             "id_collection": "",
             "width": "4"
