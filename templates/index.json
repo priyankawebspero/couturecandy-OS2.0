@@ -333,10 +333,10 @@
           "type": "masonry_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/homecoming-dres.jpg",
-            "heading": "",
-            "content": "",
-            "button": "",
-            "id_collection": "",
+            "heading": "HOMECOMING <br> DRESSES",
+            "content": "the ultimate homecoming dresses",
+            "button": "SHOP NOW",
+            "id_collection": "360-cashmere",
             "width": "4"
           }
         },
@@ -344,10 +344,10 @@
           "type": "masonry_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Graduation-dress.jpg",
-            "heading": "",
-            "content": "",
-            "button": "",
-            "id_collection": "",
+            "heading": "GRADUATION <br> DRESSES",
+            "content": "the ultimate graduation party dresses",
+            "button": "SHOP NOW",
+            "id_collection": "accessories",
             "width": "4"
           }
         }
