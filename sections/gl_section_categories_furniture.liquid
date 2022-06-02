@@ -91,7 +91,9 @@
                     {{block.settings.button}}
                   </a>
                   <div class="hover-mask">
-                    <a href="{%- if collection.empty? -%}/admin/collections{%- else -%}{{ collection.url }}{%- endif -%}"><h2>{%- if collection.empty? -%}{{ 'homepage.onboarding.collection_title' | t }}{%- else -%}{{ collection.title }}{%- endif -%}</h2></a>
+                    {%- if block.settings.heading != blank -%} <h2>{{block.settings.heading}}</h2>{%- endif -%}
+                    {%- if block.settings.content != blank -%} <div class="content">{{block.settings.content}}</div>{%- endif -%}
+                    <a href="{%- if collection.empty? -%}/admin/collections{%- else -%}{{ collection.url }}{%- endif -%}"><p class="btn">{%- if collection.empty? -%}{{ 'homepage.onboarding.collection_title' | t }}{%- else -%}{{ collection.title }}{%- endif -%}</p></a>
                   </div>
                 </div>
                 {%- if section.settings.categories_layout == 'carousel'  -%}</div>{%- endif -%}
@@ -110,7 +112,7 @@
   {
     "name": "Product categories",
     "class": "index-section tea_categories",
-    "max_blocks": 6,
+    "max_blocks": 10,
     "settings": [
       {
         "type": "header",
@@ -396,15 +398,26 @@
       "type": "masonry_image",
       "name": "Categories Masonry",
       "settings": [
+        
         {
           "type": "image_picker",
           "id": "image",
           "label": "Image"
         },
+ 		 {
+          "type": "text",
+          "id": "heading",
+          "label": "Collection Title"
+        },
+        {
+          "type": "text",
+          "id": "content",
+          "label": "Collection Content"
+        },
         {
           "type": "text",
           "id": "button",
-          "label": "Collection Title"
+          "label": "Button Title"
         },
         {
              "type":"collection",
