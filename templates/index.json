@@ -14,7 +14,7 @@
         "1654005036d5d16ee9-0": {
           "type": "banner-1",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Prom-dresses_36dffd4f-5c20-46bd-af2c-fa2857289e63.jpg",
+            "image": "shopify:\/\/shop_images\/Prom-dresses_36a3e9ca-73c8-40af-a453-3a209a822459.jpg",
             "category_heading": "Prom Dresses",
             "category_content": "Shop our latest selection",
             "banner_btn_title": "SHOP NOW",
@@ -24,7 +24,7 @@
         "1654005036d5d16ee9-1": {
           "type": "banner-2",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Occasion_ff8eaf3b-ba91-48e1-bf4f-f2a48bb15a47.jpg",
+            "image": "shopify:\/\/shop_images\/Occasion_196d11cc-08ca-41a0-b692-00a032c5809f.jpg",
             "category_heading": "Occasion",
             "category_content": "Dresses for every occasion",
             "banner_btn_title": "SHOP NOW",
@@ -82,7 +82,6 @@
         "59018970-5927-4c73-bd0b-110fb0918fe0": {
           "type": "Brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_7f1fc816-36ff-43ef-ad6f-c9f84d9eceec.jpg",
             "link": ""
           }
         },
@@ -96,7 +95,6 @@
         "0dd2be6d-34f3-48b0-978a-8e207232b79d": {
           "type": "Brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3_f71c3e49-a11e-4d2e-a5e8-f2e5e402a071.jpg",
             "link": ""
           }
         },
@@ -159,14 +157,12 @@
         "7fc8ad6d-b3a4-4e0b-a5de-ff48cee5ddad": {
           "type": "Brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/12.jpg",
             "link": ""
           }
         },
         "0eba3c45-382d-4897-b2f4-5f4d7e9be81a": {
           "type": "Brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/13.jpg",
             "link": ""
           }
         },
@@ -180,7 +176,6 @@
         "94ccef59-48c4-4004-a683-68c8f114ad9a": {
           "type": "Brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/15.jpg",
             "link": ""
           }
         }
@@ -212,7 +207,6 @@
         "1653916013d85199cb-0": {
           "type": "masonry_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Mother-of-bride.jpg",
             "heading": "",
             "content": "",
             "button": "MOTHEROF BRIDE",
@@ -223,7 +217,6 @@
         "1653916013d85199cb-1": {
           "type": "masonry_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Wedding-dresses.jpg",
             "heading": "",
             "content": "",
             "button": "WEDDING DRESSES",
@@ -234,7 +227,6 @@
         "1653916013d85199cb-2": {
           "type": "masonry_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Wedding-guest.jpg",
             "heading": "",
             "content": "",
             "button": "WEDDING GUEST",
@@ -245,7 +237,6 @@
         "1653916013d85199cb-3": {
           "type": "masonry_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Bridesmaid.jpg",
             "heading": "",
             "content": "",
             "button": "BRIDSMAID",
@@ -290,7 +281,6 @@
         "16541439647bf16666-2": {
           "type": "masonry_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Pageant-dress.jpg",
             "heading": "PAGEANT DRESSES",
             "content": "your dream is their dream",
             "button": "Shop Now",
@@ -301,7 +291,6 @@
         "16541439647bf16666-1": {
           "type": "masonry_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/homecoming-dres.jpg",
             "heading": "HOMECOMING <br> DRESSES",
             "content": "the ultimate homecoming dresses",
             "button": "SHOP NOW",
@@ -312,7 +301,6 @@
         "16541439647bf16666-0": {
           "type": "masonry_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Graduation-dress.jpg",
             "heading": "GRADUATION <br> DRESSES",
             "content": "the ultimate graduation party dresses",
             "button": "SHOP NOW",
@@ -374,19 +362,6 @@
     },
     "1654146502d0584442": {
       "type": "apps",
-      "blocks": {
-        "a551c399-ac91-4cb8-86c5-7e1de6d4643e": {
-          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
-          "settings": {
-            "heading_size": 18,
-            "feed_width": 100,
-            "html_area": ""
-          }
-        }
-      },
-      "block_order": [
-        "a551c399-ac91-4cb8-86c5-7e1de6d4643e"
-      ],
       "settings": {
       }
     },
