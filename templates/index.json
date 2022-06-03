@@ -212,6 +212,7 @@
         "1653916013d85199cb-0": {
           "type": "masonry_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Mother-of-bride.jpg",
             "heading": "",
             "content": "",
             "button": "MOTHEROF BRIDE",
@@ -222,6 +223,7 @@
         "1653916013d85199cb-1": {
           "type": "masonry_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Wedding-dresses.jpg",
             "heading": "",
             "content": "",
             "button": "WEDDING DRESSES",
@@ -232,6 +234,7 @@
         "1653916013d85199cb-2": {
           "type": "masonry_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Wedding-guest.jpg",
             "heading": "",
             "content": "",
             "button": "WEDDING GUEST",
@@ -242,6 +245,7 @@
         "1653916013d85199cb-3": {
           "type": "masonry_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Bridesmaid.jpg",
             "heading": "",
             "content": "",
             "button": "BRIDSMAID",
@@ -286,6 +290,7 @@
         "16541439647bf16666-2": {
           "type": "masonry_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/1_b41d8cfc-c73c-48cc-8f41-4eb4d79796e2.jpg",
             "heading": "PAGEANT DRESSES",
             "content": "your dream is their dream",
             "button": "Shop Now",
@@ -296,7 +301,8 @@
         "16541439647bf16666-1": {
           "type": "masonry_image",
           "settings": {
-            "heading": "HOMECOMING <br> DRESSES",
+            "image": "shopify:\/\/shop_images\/2_038f2ade-65f9-4476-ab61-0e8f2f4a048f.jpg",
+            "heading": "HOMECOMING  DRESSES",
             "content": "the ultimate homecoming dresses",
             "button": "SHOP NOW",
             "id_collection": "360-cashmere",
@@ -306,7 +312,8 @@
         "16541439647bf16666-0": {
           "type": "masonry_image",
           "settings": {
-            "heading": "GRADUATION <br> DRESSES",
+            "image": "shopify:\/\/shop_images\/3_73930f79-794c-40c1-851c-47863db576a2.jpg",
+            "heading": "GRADUATION  DRESSES",
             "content": "the ultimate graduation party dresses",
             "button": "SHOP NOW",
             "id_collection": "accessories",
