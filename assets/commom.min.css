@@ -122,6 +122,25 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
     color: #000;
 }
 
+.main-header .container .header_middle_block .search form button#searchsubmit {
+    font-size: 16px;
+    background: #e94949;
+    width: auto;
+    top: 0;
+    height: 100%;
+    color: #fff;
+    padding: 10px 15px;
+    line-height: 32px;
+}
+
+.main-header .container .header_middle_block .search form button#searchsubmit:hover, 
+.main-header .container .header_middle_block .search form button#searchsubmit:focus{ background: #fff;}
+
+
+.main-header .container .header_middle_block .search form button#searchsubmit:after {
+    display: none;
+}
+
 .title-wrapper .title, .brands-banner-section .title {
     font-size: 52px !important;
     margin-bottom: 70px !important;
