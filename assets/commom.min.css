@@ -96,7 +96,7 @@ section.brands-banner-section {
     margin-bottom: 0px;
 }
 
-.product-grid-item .product-element-top a {
+.product-grid-item .product-element-top>a {
     /* margin-bottom: 10px; */
     border: 1px solid #b4b4b4;
     margin-bottom: 10px;
