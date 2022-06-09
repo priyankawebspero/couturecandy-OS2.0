@@ -84,7 +84,7 @@ section.sub-page-banner-section .title {
     margin-bottom: 30px;
 }
 
-section.sub-page-banner-section .titlee:before {
+section.sub-page-banner-section .title:before {
     content: "";
     display: block;
     width: 85px;
