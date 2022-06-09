@@ -16,3 +16,12 @@ background: #000;
 	color: #fff;
 	font-size: 20px;
 }
+
+
+
+
+.added_to_cart.btn-color-primary, .btn.btn-color-primary, .button.btn-color-primary, button.btn-color-primary, input[type=submit].btn-color-primary {
+    background-color: #e94949;
+    color: #fff;
+    border-color: #e94949;
+}
