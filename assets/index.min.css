@@ -213,3 +213,7 @@ div#shopify-section-template--14532934697043__1654005036571929f8 .spb_wrapper .p
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     display: block;
 }
+
+div#shopify-section-template--14532934697043__1654005036571929f8 .spb_wrapper .promo-banner {
+    overflow: visible;
+}
