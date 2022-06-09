@@ -7,6 +7,7 @@
 
 }
 
+body, p, btn, input, button{ font-family: 'google_sansregular';}
 
 header {
     display: none !important;
