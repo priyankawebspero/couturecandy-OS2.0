@@ -70,3 +70,18 @@ section.brands-banner-section {
 .gl_column_container.gl_col-sm-12>.gl_column-inner {
     padding: 0 50px;
 }
+
+.title {
+    text-align: center;
+    font-size: 52px;
+    margin-bottom: 60px;
+}
+
+.title:before{
+    content: "";
+    display: block;
+    width: 85px;
+    height: 5px;
+    background: #000;
+    margin: 0 auto 25px auto;
+}
