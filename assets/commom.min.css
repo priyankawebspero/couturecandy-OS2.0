@@ -1,3 +1,18 @@
 .title, h1, h2, h3, h4, h5, h6 {
    font-family: 'Playfair Display', serif;
 }
+
+.title-wrapper .title {
+    font-size: 52px !important;
+    margin-bottom: 70px !important;
+}
+
+
+.title-wrapper .title:before {
+    content: "";
+    display: block;
+    width: 85px;
+    height: 5px;
+    background: #000;
+    margin: 0 auto 25px auto;
+}
