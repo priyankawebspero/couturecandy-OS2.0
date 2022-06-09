@@ -88,14 +88,16 @@
                      </div>
                   </a>
                   <div class="Wrap_button_cs">
-                  <div class="cs_category_pop"><a href="{%- if collection.empty? -%}/admin/collections{%- else -%}{{ collection.url }}{%- endif -%}" class="category-link-button">
-                    {{block.settings.button}}
-                  </a></div>
+                  
                   <div class="hover-mask">
                     {%- if block.settings.heading != blank -%} <h2>{{block.settings.heading}}</h2>{%- endif -%}
                     {%- if block.settings.content != blank -%} <div class="content">{{block.settings.content}}</div>{%- endif -%}
                     <a href="{%- if collection.empty? -%}/admin/collections{%- else -%}{{ collection.url }}{%- endif -%}"><p class="btn">{%- if collection.empty? -%}{{ 'homepage.onboarding.collection_title' | t }}{%- else -%}{{ collection.title }}{%- endif -%}</p></a>
-                    </div></div>
+                    </div>
+                  <div class="cs_category_pop"><a href="{%- if collection.empty? -%}/admin/collections{%- else -%}{{ collection.url }}{%- endif -%}" class="category-link-button">
+                    {{block.settings.button}}
+                  </a></div>
+                  </div>
                 </div>
                 {%- if section.settings.categories_layout == 'carousel'  -%}</div>{%- endif -%}
             </div>
