@@ -353,3 +353,8 @@ div#reviewCarouselWidget  .stjr-reviews-carousel {
 div#reviewCarouselWidget  .stjr-reviews-carousel .js-stjr-reviews-carousel-content {
     max-width: 100%;
 }
+
+div#reviewCarouselWidget .stjr-reviews-carousel .js-stjr-reviews-carousel-content .stjr-reviews-carousel-pages__page-inner {
+    margin-left: 0;
+    margin-right: 0;
+}
