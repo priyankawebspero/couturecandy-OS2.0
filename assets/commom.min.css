@@ -291,3 +291,23 @@ p.newstext {
     color: #fff;
     border-radius: 5px;
 }
+
+.footer-column .textwidget form .mailchimp-input-icon {
+    max-width: 100%;
+}
+
+.footer-column .textwidget form input[type="submit"] {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    height: 100%;
+    background: #e94949;
+    border: 1px solid #e94949;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.footer-column .textwidget form input[type="submit"]:hover {
+    background: #fff;
+    color: #e94949;
+}
