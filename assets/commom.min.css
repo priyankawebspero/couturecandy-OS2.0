@@ -17,7 +17,7 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
 .topbar-wrapp {
     background: #0f0f0f;
     height: auto;
-    padding: 10px 0;
+    padding: 0;
 }
 
 .topbar-wrapp .container {
