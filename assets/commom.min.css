@@ -42,3 +42,14 @@ section.brands-banner-section {
     text-align: center;
     margin-bottom: 30px;
 }
+
+.gl_row {
+    margin: 0;
+}
+
+.spb__column.gl_column_container.gl_col-sm-12>.gl_column-inner {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+}
