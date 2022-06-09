@@ -310,4 +310,5 @@ p.newstext {
 .footer-column .textwidget form input[type="submit"]:hover {
     background: #fff;
     color: #e94949;
+  border-color: #e94949;
 }
