@@ -234,3 +234,15 @@ div#shopify-section-template--14532934697043__1654005036571929f8 .promo-banner .
 div#shopify-section-template--14532934697043__1654005036571929f8 .promo-banner .banner-inner h5 {
     font-size: 65px;
 }
+
+div#shopify-section-template--14532934697043__1654005036571929f8 .promo-banner .banner-inner h5 {
+    font-size: 55px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+div#shopify-section-template--14532934697043__1654005036571929f8 .featured-collection>.gl_col-md-6.gl_col-lg-6:first-child .promo-banner .banner-inner h5 {
+
+   font-size: 124px;
+  
+}
