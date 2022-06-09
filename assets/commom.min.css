@@ -82,6 +82,17 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
     margin-right: 15px;
 }
 
+.main-header .wrapp-header ul#menu-main-navigation>li>a {
+    font-family: 'google_sansregular';
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+.main-header .wrapp-header ul#menu-main-navigation>li>a:hover {
+    color: #e94949;
+}
+
 .title-wrapper .title, .brands-banner-section .title {
     font-size: 52px !important;
     margin-bottom: 70px !important;
