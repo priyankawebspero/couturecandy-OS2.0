@@ -131,6 +131,7 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
     color: #fff;
     padding: 10px 15px;
     line-height: 32px;
+    border-radius: 0 5px 5px 0;
 }
 
 .main-header .container .header_middle_block .search form button#searchsubmit:hover, 
