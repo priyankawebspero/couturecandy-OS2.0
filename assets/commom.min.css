@@ -64,6 +64,7 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
     position: relative;
     top: 0;
     padding-top: 20px;
+    background: #fff;
 }
 
 .main-header .wrapp-header {
