@@ -71,10 +71,24 @@ div#shopify-section-template--14532934697043__165390901603cb214c {
 
 section.sub-page-banner-section {
     background: #f8f8f8;
-    padding: 50px;
+    padding: 60px 50px;
     text-align: center;
 }
 
 section.sub-page-banner-section .liner-continer {
     display: block;
+}
+
+section.sub-page-banner-section .title {
+    font-size: 52px !important;
+    margin-bottom: 40px;
+}
+
+section.sub-page-banner-section .titlee:before {
+    content: "";
+    display: block;
+    width: 85px;
+    height: 5px;
+    background: #000;
+    margin: 0 auto 25px auto;
 }
