@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'google_sansregular';
+    src: url('googlesans-regular.woff2') format('woff2'),
+         url('googlesans-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 header {
     display: none !important;
 }
