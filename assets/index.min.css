@@ -266,3 +266,22 @@ footer .widget-title:before {
 .footer-column .textwidget ul.social-icons {
     text-align: left;
 }
+.footer-column .textwidget ul.social-icons li {
+    background: none;
+    border-radius: 0;
+    width: auto;
+    height: auto;
+    margin-right: 15px;
+}
+
+.footer-column .textwidget ul.social-icons li a {
+    color: #525252;
+}
+
+.footer-column .textwidget ul.social-icons li a:hover {
+  color: #e94949 !important;
+}
+
+.footer-column .textwidget ul.social-icons li a i {
+    font-size: 25px;
+}
