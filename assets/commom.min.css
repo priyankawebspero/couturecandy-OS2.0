@@ -97,6 +97,18 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
     color: #e94949;
 }
 
+.main-header .container .header_middle_block .logo .regular-logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.main-header .container .header_middle_block .logo  .site-logo {
+    margin-right: 0;
+    text-align: center;
+    display: block;
+    padding-right: 0 !important;
+}
+
 .title-wrapper .title, .brands-banner-section .title {
     font-size: 52px !important;
     margin-bottom: 70px !important;
