@@ -278,3 +278,7 @@ p.newstext {
     letter-spacing: .5px;
     margin-bottom: 32px;
 }
+
+.footer-column .textwidget form .mailchimp-input-icon:before {
+    display: none;
+}
