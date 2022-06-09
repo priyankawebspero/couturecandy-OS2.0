@@ -148,9 +148,8 @@ div#shopify-section-template--14532934697043__165390901603cb214c {
     left: 15px;
     /* height: 100%; */
     padding: 25px;
+  padding-left: 40px;
     display: flex;
-    align-items: center;
-    flex-direction: column;
     flex-wrap: wrap;
     transform: translateY(-50%);
    -webkit-transform: translateY(-50%);
