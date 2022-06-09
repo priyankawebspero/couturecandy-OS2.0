@@ -195,3 +195,9 @@ div#shopify-section-template--14532934697043__165390901603cb214c {
     background: #e94949;
     color: #fff !important;
 }
+
+/*-------------footer-css-----------*/
+
+div#MobileFooter {
+    display: none;
+}
