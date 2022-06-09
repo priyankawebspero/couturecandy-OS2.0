@@ -289,3 +289,18 @@ footer .widget-title:before {
 .footer-container .widget-area {
     padding: 70px 0 20px 0 !important;
 }
+
+.widget_text .textwidget p.address, .widget_text .textwidget p.email {
+    padding-left: 30px;
+    position: relative;
+    font-size: 15px;
+    letter-spacing: .5px;
+}
+
+.widget_text .textwidget p.address i, .widget_text .textwidget p.email i {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    font-size: 20px;
+    color: #e94949;
+}
