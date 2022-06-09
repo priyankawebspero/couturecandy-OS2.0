@@ -201,3 +201,24 @@ div#shopify-section-template--14532934697043__165390901603cb214c {
 div#MobileFooter {
     display: none;
 }
+
+footer {
+    background: #0f0f0f;
+}
+
+footer .widget-title {
+    font-family: 'google_sansregular';
+    font-weight: normal;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+footer .widget-title:before {
+    position: relative;
+    bottom: 0;
+    display: block;
+    width: 60px;
+    background: #fff !important;
+    height: 3px;
+    margin-bottom: 10px;
+}
