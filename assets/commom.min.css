@@ -108,3 +108,18 @@ section.brands-banner-section {
     right: 0;
     top: 0;
 }
+
+.swatches-on-grid .swatch-on-grid:before {
+    content: "";
+    left: -3px;
+    right: -3px;
+    top: -3px;
+    bottom: -3px;
+    border: 1px solid #000;
+    position: absolute;
+    border-radius: 30px;
+}
+
+.swatches-on-grid .swatch-on-grid {
+    margin: 0 6px;
+}
