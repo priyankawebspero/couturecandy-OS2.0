@@ -282,3 +282,12 @@ p.newstext {
 .footer-column .textwidget form .mailchimp-input-icon:before {
     display: none;
 }
+
+.footer-column .textwidget form .mailchimp-input-icon input[type="email"] {
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    height: 49px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+}
