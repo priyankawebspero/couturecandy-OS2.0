@@ -136,3 +136,8 @@ a.btn:hover {
     background: #000 !important;
     border-color: #000 !important;
 }
+
+.basel-products-element {
+    position: relative;
+    margin-bottom: 40px;
+}
