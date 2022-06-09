@@ -6,7 +6,9 @@ section.sub-page-banner-section .row {
 section.sub-page-banner-section .row .col-md-12 {
     padding: 0;
 }
-
+div#shopify-section-template--14532934697043__165390901603cb214c {
+    clear: both;
+}
 
 #shopify-section-template--14532934697043__1653916013b1f6c860 .category-content .product-category-thumbnail img {
     width: 100%;
