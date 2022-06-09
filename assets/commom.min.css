@@ -109,6 +109,19 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
     padding-right: 0 !important;
 }
 
+.main-header .container .header_middle_block .search form {
+    width: 100%;
+    max-width: 442px;
+}
+
+.main-header .container .header_middle_block .search form input[type=text] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 50px 10px 15px;
+    font-size: 16px;
+    color: #000;
+}
+
 .title-wrapper .title, .brands-banner-section .title {
     font-size: 52px !important;
     margin-bottom: 70px !important;
