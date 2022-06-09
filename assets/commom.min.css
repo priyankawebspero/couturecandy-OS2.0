@@ -33,6 +33,13 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
     padding: 0 0px;
 }
 
+.main-header .container .header_middle_block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 50px;
+}
+
 .enable-sticky-header.basel-header-overlap.basel-top-bar-on .main-header {
     position: relative;
     top: 0;
