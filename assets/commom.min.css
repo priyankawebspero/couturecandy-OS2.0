@@ -319,3 +319,16 @@ p.newstext {
 .stjr-reviews-carousel-attribution {
     display: none !important;
 }
+
+
+div#reviewCarouselWidget {
+    padding: 20px 50px 90px 50px;
+}
+
+div#reviewCarouselWidget .headline {
+    text-align: center;
+    font-size: 52px !important;
+    margin-bottom: 70px !important;
+    color: #191919;
+    font-family: 'Playfair Display', serif;
+}
