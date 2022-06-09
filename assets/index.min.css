@@ -14,3 +14,13 @@
     -moz-transform: scale(1);
 }
 
+#shopify-section-template--14532934697043__1653916013b1f6c860 .category-content {
+    overflow: visible;
+}
+
+#shopify-section-template--14532934697043__1653916013b1f6c860 .category-content .cs_category_pop {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+}
