@@ -151,3 +151,11 @@ a.btn:hover {
 .product-grid-item .product-title {
     margin-bottom: 15px;
 }
+
+.product-grid-item .price {
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 18px;
+    /* margin-top: 10px; */
+}
