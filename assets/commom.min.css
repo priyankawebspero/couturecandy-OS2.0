@@ -37,7 +37,22 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 0 50px;
+    padding: 0 35px;
+}
+
+.main-header .container .header_middle_block .col-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 15px;
+}
+
+.main-header .container .header_middle_block .logo.col-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
 }
 
 .enable-sticky-header.basel-header-overlap.basel-top-bar-on .main-header {
