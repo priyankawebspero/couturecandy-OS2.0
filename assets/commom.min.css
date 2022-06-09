@@ -72,6 +72,15 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
     border-top: 1px solid #ccc !important;
     border-bottom: 1px solid #ccc !important;
 }
+.main-header .wrapp-header ul#menu-main-navigation {
+    margin-left:-15px;
+    margin-right:-15px;
+}
+
+.main-header .wrapp-header ul#menu-main-navigation li {
+    margin-left: 15px;
+    margin-right: 15px;
+}
 
 .title-wrapper .title, .brands-banner-section .title {
     font-size: 52px !important;
