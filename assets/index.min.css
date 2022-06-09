@@ -35,6 +35,7 @@ div#shopify-section-template--14532934697043__165390901603cb214c {
     bottom: -20px;
 }
 
+
 #shopify-section-template--14532934697043__1653916013b1f6c860 .category-content .cs_category_pop a {
     background: #000;
     color: #fff;
@@ -44,4 +45,5 @@ div#shopify-section-template--14532934697043__165390901603cb214c {
     display: inline-block;
     vertical-align: top;
     letter-spacing: 1px;
+    text-decoration: none;
 }
