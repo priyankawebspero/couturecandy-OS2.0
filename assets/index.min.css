@@ -74,3 +74,7 @@ section.sub-page-banner-section {
     padding: 50px;
     text-align: center;
 }
+
+section.sub-page-banner-section .liner-continer {
+    display: block;
+}
