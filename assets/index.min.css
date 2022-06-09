@@ -218,3 +218,17 @@ div#shopify-section-template--14532934697043__1654005036571929f8 .spb_wrapper .p
     overflow: visible;
     margin: 0;
 }
+
+div#shopify-section-template--14532934697043__1654005036571929f8 .promo-banner .wrapper-content-baner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    right: 15px;
+}
+
+div#shopify-section-template--14532934697043__1654005036571929f8 .spb_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
