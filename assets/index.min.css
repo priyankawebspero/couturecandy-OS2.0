@@ -132,7 +132,7 @@ div#shopify-section-template--14532934697043__165390901603cb214c {
 }
 
 #shopify-section-template--14532934697043__16541439641d011f7d .Wrap_button_cs .hover-mask {
-    position: relative;
+    position: static;
     left: 0;
     bottom: 0;
     box-shadow: none !important;
