@@ -6,13 +6,13 @@ header {
    font-family: 'Playfair Display', serif;
 }
 
-.title-wrapper .title {
+.title-wrapper .title, .brands-banner-section .title {
     font-size: 52px !important;
     margin-bottom: 70px !important;
 }
 
 
-.title-wrapper .title:before {
+.title-wrapper .title:before, .brands-banner-section .title:before {
     content: "";
     display: block;
     width: 85px;
