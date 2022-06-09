@@ -140,6 +140,7 @@ div#shopify-section-template--14532934697043__165390901603cb214c {
     -moz-transform: inherit;
     -o-transform: inherit;
   background: none !important;
+  order: 1;
 }
 
 #shopify-section-template--14532934697043__16541439641d011f7d .Wrap_button_cs {
@@ -169,4 +170,8 @@ div#shopify-section-template--14532934697043__165390901603cb214c {
     color: #fff;
     letter-spacing: 2px;
     line-height: 1.8;
+}
+
+#shopify-section-template--14532934697043__16541439641d011f7d .Wrap_button_cs .cs_category_pop {
+    order: 2;
 }
