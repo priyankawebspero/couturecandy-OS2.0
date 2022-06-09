@@ -147,3 +147,7 @@ a.btn:hover {
     position: relative;
     margin-bottom: 40px;
 }
+
+.product-grid-item .product-title {
+    margin-bottom: 15px;
+}
