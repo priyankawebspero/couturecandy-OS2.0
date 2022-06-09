@@ -55,6 +55,10 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
     max-width: 50%;
 }
 
+.main-header .container .header_middle_block .logo .basel-logo-wrap {
+    margin: 0;
+}
+
 .enable-sticky-header.basel-header-overlap.basel-top-bar-on .main-header {
     position: relative;
     top: 0;
