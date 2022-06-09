@@ -138,6 +138,10 @@ div#shopify-section-template--14532934697043__165390901603cb214c {
     box-shadow: none !important;
   background: none !important;
   order: 1;
+  -webkit-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 #shopify-section-template--14532934697043__16541439641d011f7d .Wrap_button_cs {
