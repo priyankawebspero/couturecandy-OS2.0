@@ -246,3 +246,10 @@ div#shopify-section-template--14532934697043__1654005036571929f8 .featured-colle
    font-size: 124px;
   
 }
+
+div#shopify-section-template--14532934697043__1654005036571929f8 .promo-banner .banner-inner h5 + div {
+    font-size: 18px;
+    color: #000;
+    letter-spacing: 1px;
+    margin: 20px 0;
+}
