@@ -332,3 +332,12 @@ div#reviewCarouselWidget .headline {
     color: #191919;
     font-family: 'Playfair Display', serif;
 }
+
+div#reviewCarouselWidget .headline:before {
+    content: "";
+    display: block;
+    width: 85px;
+    height: 5px;
+    background: #000;
+    margin: 0 auto 25px auto;
+}
