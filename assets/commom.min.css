@@ -85,3 +85,10 @@ section.brands-banner-section {
     background: #000;
     margin: 0 auto 25px auto;
 }
+
+.product-grid-item .product-title a {
+    font-family: 'google_sansregular';
+    color: #000;
+    font-size: 17px;
+    line-height: 1.5;
+}
