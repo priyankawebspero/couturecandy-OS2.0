@@ -237,3 +237,19 @@ footer .widget-title:before {
     font-size: 16px;
     line-height: normal;
 }
+
+.footer-container .container {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.footer-container .copyrights-wrapper {
+    background: #000;
+    padding: 15px 0 10px;
+}
+
+.footer-container .copyrights-wrapper .min-footer {
+    border: none !important;
+    padding: 10px 0;
+}
