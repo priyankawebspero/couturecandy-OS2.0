@@ -189,6 +189,33 @@ a[href^=tel] {
     padding: 0 15px;
 }
 
+.topbar-content .socials {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.topbar-content .top_bar_email {
+    display: inline-block;
+    vertical-align: middle;
+    border-left: 2px solid #8f8f8f;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 15px;
+    margin-left: 10px;
+}
+
+.topbar-content .top_bar_email a {
+    color: #fff;
+    font-size: 15px;
+}
+
+.topbar-content .top_bar_email a i {
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+
+
 .title-wrapper .title, .brands-banner-section .title {
     font-size: 52px !important;
     margin-bottom: 70px !important;
