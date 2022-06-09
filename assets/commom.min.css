@@ -159,3 +159,115 @@ a.btn:hover {
     font-size: 18px;
     /* margin-top: 10px; */
 }
+
+
+/*-------------footer-css-----------*/
+
+div#MobileFooter {
+    display: none;
+}
+
+footer {
+    background: #0f0f0f;
+}
+
+footer .widget-title {
+    font-family: 'google_sansregular';
+    font-weight: normal;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+footer .widget-title:before {
+    position: relative;
+    bottom: 0;
+    display: block;
+    width: 60px;
+    background: #fff !important;
+    height: 3px;
+    margin-bottom: 10px;
+}
+
+.footer-container.color-scheme-light ul li {
+    border: none !important;
+    margin-bottom: 20px;
+}
+
+.footer-container.color-scheme-light ul li a {
+    color: #fff;
+}
+
+.footer-container ul.menu li a {
+    font-size: 16px;
+    line-height: normal;
+  color: #fff !important;
+}
+
+.footer-container ul.menu li a:hover {
+  color: #e94949 !important;
+}
+
+.footer-container .container {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.footer-container .copyrights-wrapper {
+    background: #000;
+    padding: 15px 0 10px;
+}
+
+.footer-container .copyrights-wrapper .min-footer {
+    border: none !important;
+    padding: 10px 0;
+}
+
+.footer-column .textwidget .widget-title {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.footer-column .textwidget ul.social-icons {
+    text-align: left;
+}
+.footer-column .textwidget ul.social-icons li {
+    background: none;
+    border-radius: 0;
+    width: auto;
+    height: auto;
+    margin-right: 15px;
+}
+
+.footer-column .textwidget ul.social-icons li a {
+    color: #525252;
+}
+
+.footer-column .textwidget ul.social-icons li a:hover {
+  color: #e94949 !important;
+}
+
+.footer-column .textwidget ul.social-icons li a i {
+    font-size: 25px;
+}
+
+.footer-container .widget-area {
+    padding: 70px 0 20px 0 !important;
+}
+
+.widget_text .textwidget p.address, .widget_text .textwidget p.email, .widget_text .textwidget p.tel {
+    padding-left: 30px;
+    position: relative;
+    font-size: 15px;
+    letter-spacing: .5px;
+}
+
+.widget_text .textwidget p.address i, .widget_text .textwidget p.email i, .widget_text .textwidget p.tel i {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    font-size: 20px;
+    color: #e94949;
+}
+
+.widget_text .textwidget p.email i{font-size: 17px;}
