@@ -313,3 +313,7 @@ p.newstext {
   border-color: #fff;
   opacity: 1;
 }
+
+.stjr-reviews-carousel-attribution {
+    display: none !important;
+}
