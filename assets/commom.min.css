@@ -30,7 +30,7 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
 .main-header .container {
     max-width: 100% !important;
     width: 100% !important;
-    padding: 0 50px;
+    padding: 0 0px;
 }
 
 .enable-sticky-header.basel-header-overlap.basel-top-bar-on .main-header {
