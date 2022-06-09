@@ -214,7 +214,17 @@ a[href^=tel] {
     margin-right: 5px;
 }
 
+.topbar-content .top_bar_middle .top_bar_text_middle {
+    text-align: center;
+}
 
+.topbar-content .top_bar_right .top_bar_text_middle {
+    text-align: right;
+}
+.topbar-content .top_bar_right .top_bar_text_middle a {
+    color: #fff !important;
+    text-decoration: none !important;
+}
 
 .title-wrapper .title, .brands-banner-section .title {
     font-size: 52px !important;
