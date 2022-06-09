@@ -307,7 +307,7 @@ p.newstext {
     padding-right: 30px;
 }
 
-.footer-column .textwidget form input[type="submit"]:hover {
+.footer-column .textwidget form input[type="submit"]:hover, .footer-column .textwidget form input[type="submit"]:focus {
     background: #fff;
     color: #e94949;
   border-color: #fff;
