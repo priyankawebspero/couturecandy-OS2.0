@@ -123,3 +123,16 @@ section.brands-banner-section {
 .swatches-on-grid .swatch-on-grid {
     margin: 0 6px;
 }
+
+a.btn {
+    font-size: 18px;
+    min-width: 165px;
+    height: 55px;
+    line-height: 55px;
+    padding: 0 15px;
+}
+
+a.btn:hover {
+    background: #000 !important;
+    border-color: #000 !important;
+}
