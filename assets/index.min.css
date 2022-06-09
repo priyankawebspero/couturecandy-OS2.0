@@ -285,3 +285,7 @@ footer .widget-title:before {
 .footer-column .textwidget ul.social-icons li a i {
     font-size: 25px;
 }
+
+.footer-container .widget-area {
+    padding: 70px 0 20px 0;
+}
