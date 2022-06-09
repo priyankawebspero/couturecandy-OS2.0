@@ -154,6 +154,20 @@ a[href^=tel] {
     color: #e94949;
 }
 
+.topbar-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.topbar-content .col-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.33%%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 15px;
+}
+
 .title-wrapper .title, .brands-banner-section .title {
     font-size: 52px !important;
     margin-bottom: 70px !important;
