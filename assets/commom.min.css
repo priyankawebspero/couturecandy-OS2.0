@@ -375,3 +375,9 @@ div#reviewCarouselWidget .stjr-reviews-carousel-pagination .stjr-reviews-carouse
     width: 25px;
     background: #e94949;
 }
+
+div#reviewCarouselWidget .stjr-review__content {
+    color: #000;
+    font-size: 16px;
+    font-family: 'google_sansregular' !important;
+}
