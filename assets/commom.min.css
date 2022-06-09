@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'google_sansregular';
-    src: url('googlesans-regular.woff2') format('woff2'),
-         url('googlesans-regular.woff') format('woff');
+    src: url('//cdn.shopify.com/s/files/1/0144/7018/5017/t/48/assets/googlesans-regular.woff2') format('woff2'),
+         url('//cdn.shopify.com/s/files/1/0144/7018/5017/t/48/assets/googlesans-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
