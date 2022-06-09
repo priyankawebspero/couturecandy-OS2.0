@@ -135,7 +135,9 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
 }
 
 .main-header .container .header_middle_block .search form button#searchsubmit:hover, 
-.main-header .container .header_middle_block .search form button#searchsubmit:focus{ background: #fff;}
+.main-header .container .header_middle_block .search form button#searchsubmit:focus{ background: #fff;
+opacity:1 !important;
+}
 
 
 .main-header .container .header_middle_block .search form button#searchsubmit:after {
