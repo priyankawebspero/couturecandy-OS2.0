@@ -39,7 +39,9 @@ header {
 section.brands-banner-section {
     padding: 90px 50px 60px 50px;
     background: #f8f8f8;
+    clear: both;
 }
+
 
 .brands-banner-section .col-md-2.brand_block {
     width: 20%;
