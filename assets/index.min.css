@@ -46,4 +46,17 @@ div#shopify-section-template--14532934697043__165390901603cb214c {
     vertical-align: top;
     letter-spacing: 1px;
     text-decoration: none;
+  transition: all .3s ease-in-out;
+}
+
+#shopify-section-template--14532934697043__1653916013b1f6c860 .category-content:hover .cs_category_pop a{
+    background: #e94949;
+}
+
+#shopify-section-template--14532934697043__1653916013b1f6c860 .category-content .product-category-thumbnail img {
+    transition: all .3s ease-in-out;
+}
+
+#shopify-section-template--14532934697043__1653916013b1f6c860 .category-content:hover .product-category-thumbnail img {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
