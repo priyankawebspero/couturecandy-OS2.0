@@ -159,7 +159,10 @@ a[href^=tel] {
     align-items: center;
     flex-wrap: wrap;
     margin: 0 -15px;
+    width: auto;
 }
+
+
 .topbar-content .socials .social-icons li {
     background: none !important;
     width: auto;
