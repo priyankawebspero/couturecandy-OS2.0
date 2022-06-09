@@ -67,3 +67,6 @@ section.brands-banner-section {
     padding-bottom: 60px !important;
 }
 
+.gl_column_container.gl_col-sm-12>.gl_column-inner {
+    padding: 0 50px;
+}
