@@ -60,3 +60,11 @@ div#shopify-section-template--14532934697043__165390901603cb214c {
 #shopify-section-template--14532934697043__1653916013b1f6c860 .category-content:hover .product-category-thumbnail img {
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
+
+#shopify-section-template--14532934697043__1653916013b1f6c860 .category-content {
+    transition: all .3s ease-in-out;
+}
+
+#shopify-section-template--14532934697043__1653916013b1f6c860 .category-content:hover {
+    transform: translateY(-10px);
+}
