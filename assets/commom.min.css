@@ -271,3 +271,10 @@ footer .widget-title:before {
 }
 
 .widget_text .textwidget p.email i{font-size: 17px;}
+
+p.newstext {
+    font-size: 15px;
+    line-height: 1.8;
+    letter-spacing: .5px;
+    margin-bottom: 32px;
+}
