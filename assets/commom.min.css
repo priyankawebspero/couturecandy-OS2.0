@@ -25,3 +25,8 @@ header {
     background: #000;
     margin: 0 auto 25px auto;
 }
+
+section.brands-banner-section {
+    padding: 90px 50px;
+    background: #f8f8f8;
+}
