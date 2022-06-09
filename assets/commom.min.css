@@ -358,3 +358,20 @@ div#reviewCarouselWidget .stjr-reviews-carousel .js-stjr-reviews-carousel-conten
     margin-left: 0;
     margin-right: 0;
 }
+
+div#reviewCarouselWidget .stjr-reviews-carousel .stjr-reviews-carousel-pagination {
+    margin-top: 30px;
+}
+
+div#reviewCarouselWidget .stjr-reviews-carousel-pagination .stjr-reviews-carousel-pagination__dot {
+    width: 13px;
+    height: 13px;
+    border-radius: 30px;
+    transition: all .3s ease-in-out;
+    background: #c2c2c2;
+}
+
+div#reviewCarouselWidget .stjr-reviews-carousel-pagination .stjr-reviews-carousel-pagination__dot.stjr-reviews-carousel-pagination__dot--active {
+    width: 25px;
+    background: #e94949;
+}
