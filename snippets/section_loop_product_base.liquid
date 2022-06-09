@@ -33,7 +33,17 @@
    </div>
   <div class="product-element-bottom">
    <h3 class="product-title"><a href="{{ url_nt }}">{{ product.vendor }}{{ product.title }}</a></h3>
-  <div class="gl_star-rating"><span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span></div>
+  <div class="gl_star-rating"><div class="yotpo bottomLine"
+    data-appkey="Mi5S4G8kBf4HYxRQL5Sq6ZbNhltQ6TH3q8K1oXYW"
+    data-domain="{{shop.permanent_domain | escape }}"
+    data-product-id="{{ product.id }}"
+    data-product-models="{{ product.id }}"
+    data-name="{{ product.title | escape }}"
+    data-url="{{ shop.url }}{{ product.url }}"
+    data-image-url="{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}"
+    data-description="{{ product.description | escape }}"
+    data-bread-crumbs="{% for tag in product.tags %}{{ tag | escape }};{% endfor %}">
+</div></div>
    <span class="price">
        {%- if product.price_varies -%}
 		<span class="Bold-theme-hook-DO-NOT-DELETE bold_product_price" data-override-value-set="1" data-override-value="{{ product.price_max }}" style="display:none !important;"></span>{{ product.price_max | money }}
