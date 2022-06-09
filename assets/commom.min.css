@@ -102,3 +102,9 @@ section.brands-banner-section {
     margin-right: 20px;
     margin-top: 5px;
 }
+
+.product-element-top .yith-wcwl-add-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
