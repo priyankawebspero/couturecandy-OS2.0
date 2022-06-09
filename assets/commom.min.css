@@ -96,3 +96,9 @@ section.brands-banner-section {
 .product-element-top {
     border: 1px solid #b4b4b4;
 }
+
+.basel-hover-base .product-element-top .yith-wcwl-add-to-wishlist>div>a:before {
+    font-size: 24px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
