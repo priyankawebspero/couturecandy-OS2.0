@@ -341,3 +341,15 @@ div#reviewCarouselWidget .headline:before {
     background: #000;
     margin: 0 auto 25px auto;
 }
+
+div#reviewCarouselWidget .stjr-reviews-carousel-nav {
+    display: none !important;
+}
+
+div#reviewCarouselWidget  .stjr-reviews-carousel {
+    margin: 0;
+}
+
+div#reviewCarouselWidget  .stjr-reviews-carousel .js-stjr-reviews-carousel-content {
+    max-width: 100%;
+}
