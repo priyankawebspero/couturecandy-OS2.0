@@ -158,6 +158,27 @@ a[href^=tel] {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.topbar-content .socials .social-icons li {
+    background: none !important;
+    width: auto;
+    height: auto;
+    margin-bottom: 0 !important;
+    margin-right: 9px;
+}
+
+.topbar-content .socials .social-icons li a {
+    color: #8f8f8f;
+}
+
+.topbar-content .socials .social-icons li a:hover {
+    color: #fff;
+}
+
+.topbar-content .socials .social-icons li i {
+    line-height: normal;
+    font-size: 20px;
 }
 
 .topbar-content .col-4 {
