@@ -126,3 +126,7 @@ div#shopify-section-template--14532934697043__165390901603cb214c {
 .liner-continer {
     display: block !important;
 }
+
+#shopify-section-template--14532934697043__16541439641d011f7d .category-content .product-category-thumbnail img {
+    width: 100%;
+}
