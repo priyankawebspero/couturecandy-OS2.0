@@ -144,6 +144,16 @@ opacity:1 !important;
     display: none;
 }
 
+.top_bar_text_middle {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+a[href^=tel] {
+    color: #e94949;
+}
+
 .title-wrapper .title, .brands-banner-section .title {
     font-size: 52px !important;
     margin-bottom: 70px !important;
