@@ -224,6 +224,20 @@ a[href^=tel] {
 .topbar-content .top_bar_right .top_bar_text_middle a {
     color: #fff !important;
     text-decoration: none !important;
+    letter-spacing: 0;
+    font-size: 15px;
+}
+
+.topbar-content .top_bar_right .top_bar_text_middle a i {
+    font-size: 18px;
+    vertical-align: middle;
+    position: relative;
+    margin-right: 5px;
+}
+
+.topbar-content .top_bar_right .top_bar_text_middle a:hover{
+color: #e94949 !important;
+
 }
 
 .title-wrapper .title, .brands-banner-section .title {
