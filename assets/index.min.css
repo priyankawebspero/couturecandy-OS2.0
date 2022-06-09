@@ -145,7 +145,7 @@ div#shopify-section-template--14532934697043__165390901603cb214c {
 #shopify-section-template--14532934697043__16541439641d011f7d .Wrap_button_cs {
     position: absolute;
     top: 50%;
-    left: 15px;
+    left: 0px;
     /* height: 100%; */
     padding: 25px;
   padding-left: 40px;
@@ -155,6 +155,8 @@ div#shopify-section-template--14532934697043__165390901603cb214c {
    -webkit-transform: translateY(-50%);
    -moz-transform: translateY(-50%);
     text-align: left;
+  max-width: 400px;
+  width:100%;
 }
 
 #shopify-section-template--14532934697043__16541439641d011f7d .Wrap_button_cs h2 {
