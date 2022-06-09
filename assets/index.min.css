@@ -304,3 +304,5 @@ footer .widget-title:before {
     font-size: 20px;
     color: #e94949;
 }
+
+.widget_text .textwidget p.email i{font-size: 17px;}
