@@ -139,4 +139,21 @@ div#shopify-section-template--14532934697043__165390901603cb214c {
     -webkit-transform: inherit;
     -moz-transform: inherit;
     -o-transform: inherit;
+  background: none !important;
+}
+
+#shopify-section-template--14532934697043__16541439641d011f7d .Wrap_button_cs {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    /* height: 100%; */
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transform: translateY(-50%);
+   -webkit-transform: translateY(-50%);
+   -moz-transform: translateY(-50%);
+    text-align: left;
 }
