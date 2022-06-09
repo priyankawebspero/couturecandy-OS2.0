@@ -92,3 +92,7 @@ section.brands-banner-section {
     font-size: 17px;
     line-height: 1.5;
 }
+
+.product-element-top {
+    border: 1px solid #b4b4b4;
+}
