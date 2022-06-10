@@ -458,4 +458,12 @@ div#shopify-section-template--14532934697043__1654005036571929f8 {
     padding: 9px 12px;
 }
   
+div#shopify-section-template--14532934697043__1654005036571929f8 .featured-collection>.gl_col-md-6.gl_col-lg-6:first-child .spb_wrapper .btn {
+    width: auto;
+    min-width: 140px;
+    padding: 16px 15px;
+    font-size: 14px;
+    margin-top: 15px;
+}
+  
 }
