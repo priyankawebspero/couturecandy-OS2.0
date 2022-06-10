@@ -32,19 +32,20 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
     height: 17px;
     line-height: 16px;
     background-color: #e94949;
-    font-size: 12px;
+    font-size: 11px;
     color: #fff;
     top: -4px;
 }
 
 .basel-cart-design-2>a .basel-cart-number, .basel-cart-design-3>a .basel-cart-number {
-   width: 17px;
+    width: 17px;
     height: 17px;
     line-height: 16px;
     background-color: #e94949;
-    font-size: 12px;
+    font-size: 11px;
     color: #fff;
     top: -4px;
+    left: 15px;
 }
 
 .topbar-wrapp {
