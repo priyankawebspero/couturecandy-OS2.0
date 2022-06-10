@@ -830,6 +830,10 @@ div#reviewCarouselWidget {
 section.brands-banner-section {
     padding: 90px 30px 60px 30px;
 }
+  
+  .text-with-read-more section.sub-page-banner-section {
+    padding: 70px 30px;
+}
 
 }
 
@@ -886,6 +890,15 @@ section.brands-banner-section {
 #shopify-section-template--14532934697043__16539999234cb01da9 .stjr-reviews-carousel-review-border .stjr-reviews-carousel-review {
     margin-left: 0;
     margin-right: 0;
+}
+  
+  footer .widget-title {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+  
+footer .widget-title:before {
+    width: 40px;
 }
   
 }
