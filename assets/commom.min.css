@@ -24,6 +24,27 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
     order: 2;
 }
 
+.main-header .container .header_middle_block .switchers div#currency_switcher .doubly-nice-select.right:before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 15px;
+    background: #000;
+    position: absolute;
+    right: -8px;
+    top: 11px;
+}
+
+.main-header .container .header_middle_block .switchers div#currency_switcher .doubly-nice-select.right {
+    border: none;
+    padding-left: 0;
+    margin-right: 15px;
+    height: 37px;
+}
+.main-header .container .header_middle_block .switchers div#currency_switcher .doubly-nice-select.right span.current {
+    color: #000;
+}
+
 header.main-header .wg-drop.country-selector .wgcurrent {
     border: none;
 }
