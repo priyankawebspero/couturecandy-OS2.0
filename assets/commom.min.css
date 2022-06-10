@@ -14,6 +14,10 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
    font-family: 'Playfair Display', serif;
 }
 
+header.main-header .wg-drop.country-selector .wgcurrent {
+    border: none;
+}
+
 .main-header .right-column .shopping-cart a:before {
     display: none;
 }
