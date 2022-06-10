@@ -808,7 +808,10 @@ div#reviewCarouselWidget .stjr-review__content .stjr-review__read_more_link {
 .main-nav .menu>li.menu-item-design-sized .sub-menu-dropdown .top_nav_main .top_section {
     width: 16.66%;
     padding: 0 15px;
+    float: left;
 }
+
+
 .main-nav .menu>li.menu-item-design-sized .sub-menu-dropdown .top_nav_main .top_section .top_section_menu_ul li {
     margin-left: 0 !important;
     margin-right: 0 !important;
