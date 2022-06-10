@@ -875,4 +875,8 @@ section.brands-banner-section {
     max-width: 33.33%;
 }
   
+  .topbar-content .top_bar_middle .top_bar_text_middle {
+    letter-spacing: 0;
+}
+  
 }
