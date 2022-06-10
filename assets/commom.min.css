@@ -689,3 +689,18 @@ div#reviewCarouselWidget .stjr-review__content .stjr-review__read_more_link {
     color: #e94949;
     text-decoration: underline !important;
 }
+
+
+@media only screen and (max-width:1550px){
+
+.main-header .wrapp-header {
+    /* display: block; */
+    padding: 0 30px;
+}
+  
+.main-header .wrapp-header ul#menu-main-navigation li {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+}
