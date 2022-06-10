@@ -715,3 +715,14 @@ div#reviewCarouselWidget .stjr-review__content .stjr-review__read_more_link {
 }
 
 }
+
+
+@media only screen and (max-width:1275px){
+  
+.right-column .wishlist-info-widget {
+    margin-right: 7px;
+    margin-left: 10px;
+}
+  
+  
+}
