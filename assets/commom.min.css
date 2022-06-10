@@ -30,6 +30,11 @@ header.main-header .wg-drop.country-selector .wgcurrent a {
     font-size: 15px;
 }
 
+header.main-header .wg-drop.country-selector.closed .wgcurrent:after {
+    transform: rotate(0deg);
+    height: 37px;
+}
+
 .main-header .right-column .shopping-cart a:before {
     display: none;
 }
