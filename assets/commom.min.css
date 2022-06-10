@@ -700,6 +700,11 @@ div#reviewCarouselWidget .stjr-review__content .stjr-review__read_more_link {
     padding: 0 30px;
 }
   
+.spb__column.gl_column_container.gl_col-sm-12>.gl_column-inner {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+  
 .main-header .wrapp-header ul#menu-main-navigation li {
     margin-left: 8px;
     margin-right: 8px;
