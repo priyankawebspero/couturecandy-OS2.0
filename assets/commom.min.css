@@ -835,6 +835,20 @@ div#reviewCarouselWidget .stjr-review__content .stjr-review__read_more_link {
     position: static;
 }
 
+.main-nav .menu>li.menu-item-design-sized .sub-menu-dropdown .top_nav_main .top_section .top_section_heading {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.main-nav .menu>li.menu-item-design-sized .sub-menu-dropdown .top_nav_main .top_section .top_section_heading:before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #e94949;
+    margin-bottom: 6px;
+}
+
 @media only screen and (max-width:1550px){
 
 .main-header .wrapp-header {
