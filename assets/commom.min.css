@@ -922,4 +922,8 @@ p.newstext {
     display: none;
 }
   
+.product-grid-item .product-title a {
+    font-size: 15px;
+}
+  
 }
