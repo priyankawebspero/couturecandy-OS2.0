@@ -18,6 +18,10 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
     display: none;
 }
 
+.right-column>div a, .right-column>div ul li a {
+    color: #000;
+}
+
 .topbar-wrapp {
     background: #0f0f0f;
     height: auto;
