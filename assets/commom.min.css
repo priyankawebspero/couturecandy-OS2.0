@@ -18,6 +18,12 @@ header.main-header .wg-drop.country-selector .wgcurrent {
     border: none;
 }
 
+header.main-header .wg-drop.country-selector .wg-flags a img.wg-flag {
+    height: 17px;
+    margin-right: 5px;
+    vertical-align: top;
+}
+
 .main-header .right-column .shopping-cart a:before {
     display: none;
 }
