@@ -938,6 +938,10 @@ p.newstext {
     font-size: 15px;
 }
   
+.main-header .wrapp-header ul#menu-main-navigation>li>a {
+    font-size: 13px;
+}
+  
 }
 
 @media only screen and (max-width:1199px) and (min-width:992px){
@@ -962,5 +966,6 @@ p.newstext {
     margin-left: 7px;
 }
   
+
   
 }
