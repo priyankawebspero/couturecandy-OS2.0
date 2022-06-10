@@ -41,9 +41,7 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
     margin-right: 15px;
     height: 37px;
 }
-.main-header .container .header_middle_block .switchers div#currency_switcher .doubly-nice-select.right span.current {
-    color: #000;
-}
+
 
 .main-header .header_middle_block .switchers .doubly-nice-select:after {
     border-bottom: 2px solid #000;
@@ -51,6 +49,12 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
     height: 6px;
     top: 14px;
     width: 6px;
+}
+
+.main-header .container .header_middle_block .switchers div#currency_switcher .doubly-nice-select.right span.current {
+    color: #000;
+    font-family: 'google_sansregular';
+    font-size: 15px;
 }
 
 header.main-header .wg-drop.country-selector .wgcurrent {
