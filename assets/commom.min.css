@@ -24,6 +24,12 @@ header.main-header .wg-drop.country-selector .wg-flags a img.wg-flag {
     vertical-align: top;
 }
 
+header.main-header .wg-drop.country-selector .wgcurrent a {
+    padding-right: 34px;
+    color: #000 !important;
+    font-size: 15px;
+}
+
 .main-header .right-column .shopping-cart a:before {
     display: none;
 }
