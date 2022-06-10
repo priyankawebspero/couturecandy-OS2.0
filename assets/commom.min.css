@@ -879,4 +879,8 @@ section.brands-banner-section {
     letter-spacing: 0;
 }
   
+.main-header .wrapp-header ul#menu-main-navigation li:first-child {
+    margin-left: 0;
+}
+  
 }
