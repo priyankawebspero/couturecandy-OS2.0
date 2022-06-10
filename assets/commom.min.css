@@ -683,13 +683,19 @@ div#reviewCarouselWidget .stjr-reviews-carousel-pagination .stjr-reviews-carouse
 
 div#reviewCarouselWidget .stjr-review__content {
     color: #000;
-    font-size: 16px;
+    font-size: 15px;
     font-family: 'google_sansregular' !important;
 }
 
 div#reviewCarouselWidget .stjr-review__content .stjr-review__read_more_link {
     color: #e94949;
     text-decoration: underline !important;
+}
+
+.stjr-reviews-carousel-review .stjr-review__stars .stars--widgets .star {
+    font-size: 16px;
+    margin: 0 2px;
+  color: #e94949;
 }
 
 
