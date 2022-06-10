@@ -978,6 +978,8 @@ p.newstext {
 .main-header .wrapp-header {
     padding: 0 20px;
 }
-
+.main-header .container .header_middle_block {
+    padding: 0 0px 20px 0px;
+}
   
 }
