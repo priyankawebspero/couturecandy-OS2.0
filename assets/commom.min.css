@@ -905,4 +905,8 @@ footer .widget-title:before {
     position: relative;
 }
   
+.footer-container ul.menu li a {
+    font-size: 15px;
+}
+  
 }
