@@ -724,5 +724,14 @@ div#reviewCarouselWidget .stjr-review__content .stjr-review__read_more_link {
     margin-left: 10px;
 }
   
+.main-header .wrapp-header ul#menu-main-navigation li {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+  
+.main-header .wrapp-header ul#menu-main-navigation>li>a {
+    font-size: 14px;
+}
+  
   
 }
