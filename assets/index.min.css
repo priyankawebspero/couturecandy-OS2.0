@@ -347,7 +347,7 @@ div#shopify-section-template--14532934697043__1654005036571929f8 .featured-colle
 }
 
 #shopify-section-template--14532934697043__1654005036571929f8 .spb_column.gl_column_container.gl_col-md-6.gl_col-lg-6:last-child .gl_column-inner .spb_wrapper .gl_col-md-12.gl_col-lg-12:first-child .wrapper-content-baner .banner-inner {
-    max-width: 470px;
+    max-width: 58%;
     margin-left: auto;
     text-align: center;
 }
@@ -418,4 +418,13 @@ div#shopify-section-template--14532934697043__1654005036571929f8 .featured-colle
 
 #shopify-section-template--14532934697043__1654005036571929f8 .spb_column.gl_column_container.gl_col-md-6.gl_col-lg-6:last-child>.gl_column-inner {
     padding-left: 23px;
+}
+
+
+@media only screen and (max-width:1550px){
+  
+ div#shopify-section-template--14532934697043__1654005036571929f8 .featured-collection>.gl_col-md-6.gl_col-lg-6:first-child .promo-banner .banner-inner h5 {
+    font-size: 4.5vw;
+}
+  
 }
