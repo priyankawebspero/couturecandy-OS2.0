@@ -707,9 +707,10 @@ div#reviewCarouselWidget .stjr-review__content .stjr-review__read_more_link {
 }
   
 .main-header .container .header_middle_block {
-    padding: 0 15px;
+    padding: 0 15px 20px 15px;
 }
   
+
 .topbar-wrapp .container {
     padding: 0 30px;
 }
