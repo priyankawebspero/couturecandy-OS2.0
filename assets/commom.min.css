@@ -991,3 +991,20 @@ p.newstext {
 }
   
 }
+
+
+@media only screen and (max-width:991px){
+  
+  
+.topbar-content .socials {
+    display: none;
+}
+  
+.topbar-content .top_bar_email {
+    border-left: inherit;
+    padding-left: 0;
+    margin-left: 0;
+}
+  
+  
+}
