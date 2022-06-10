@@ -450,3 +450,12 @@ div#shopify-section-template--14532934697043__1654005036571929f8 {
 
   
 }
+
+@media only screen and (max-width:1199px){
+  
+  div#shopify-section-template--14532934697043__1654005036571929f8 .promo-banner .banner-inner .btn {
+    font-size: 13px;
+    padding: 9px 12px;
+}
+  
+}
