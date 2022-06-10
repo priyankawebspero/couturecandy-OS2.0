@@ -24,6 +24,10 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
     margin-left: 15px;
 }
 
+.main-header .right-column {
+    padding-top: 7px;
+}
+
 .right-column>div a, .right-column>div ul li a {
     color: #000;
 }
