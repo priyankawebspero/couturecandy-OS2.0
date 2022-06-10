@@ -35,6 +35,12 @@ header.main-header .wg-drop.country-selector.closed .wgcurrent:after {
     height: 37px;
 }
 
+header.main-header .wg-drop.country-selector .wgcurrent:after {
+    height: 37px;
+    line-height: 37px;
+  transform: rotate(-90deg);
+}
+
 .main-header .right-column .shopping-cart a:before {
     display: none;
 }
