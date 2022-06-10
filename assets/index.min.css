@@ -312,3 +312,15 @@ div#shopify-section-template--14532934697043__1654005036571929f8 .featured-colle
     margin-top: -100px;
     height: 100%;
 }
+
+div#shopify-section-template--14532934697043__1654005036571929f8 .promo-banner .banner-inner h5 + div {
+    text-align: center;
+}
+
+div#shopify-section-template--14532934697043__1654005036571929f8 .featured-collection>.gl_col-md-6.gl_col-lg-6:first-child .spb_wrapper .wrapper-content-baner.gl_col-md-6.gl_col-lg-6 h5 + div {
+    font-size: 1.3vw;
+}
+
+div#shopify-section-template--14532934697043__1654005036571929f8 .featured-collection>.gl_col-md-6.gl_col-lg-6 .spb_wrapper p {
+    text-align: center;
+}
