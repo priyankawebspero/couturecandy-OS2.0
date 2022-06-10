@@ -702,5 +702,8 @@ div#reviewCarouselWidget .stjr-review__content .stjr-review__read_more_link {
     margin-left: 8px;
     margin-right: 8px;
 }
+.main-header .wrapp-header ul#menu-main-navigation>li>a {
+    font-size: 15px;
+}
 
 }
