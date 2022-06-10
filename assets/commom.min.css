@@ -18,6 +18,12 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
     display: none;
 }
 
+.right-column .wishlist-info-widget {
+    margin-right: 10px;
+    text-align: center;
+    margin-left: 15px;
+}
+
 .right-column>div a, .right-column>div ul li a {
     color: #000;
 }
