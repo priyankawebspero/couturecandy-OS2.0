@@ -830,6 +830,10 @@ div#reviewCarouselWidget .stjr-review__content .stjr-review__read_more_link {
     text-decoration: none !important;
 }
 
+.main-header .wrapp-header ul#menu-main-navigation li {
+    position: static;
+}
+
 @media only screen and (max-width:1550px){
 
 .main-header .wrapp-header {
