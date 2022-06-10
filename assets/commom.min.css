@@ -45,6 +45,14 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
     color: #000;
 }
 
+.main-header .header_middle_block .switchers .doubly-nice-select:after {
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+    height: 6px;
+    top: 14px;
+    width: 6px;
+}
+
 header.main-header .wg-drop.country-selector .wgcurrent {
     border: none;
 }
