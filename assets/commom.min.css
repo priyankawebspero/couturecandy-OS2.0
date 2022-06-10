@@ -14,7 +14,10 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
    font-family: 'Playfair Display', serif;
 }
 
-
+.main-header .doubly-nice-select.right .list {
+    left: 0 !important;
+    right: auto !important;
+}
 .main-header .container .header_middle_block .switchers {
     display: flex;
     align-items: center;
