@@ -14,6 +14,16 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
    font-family: 'Playfair Display', serif;
 }
 
+
+.main-header .container .header_middle_block .switchers {
+    display: flex;
+    align-items: center;
+}
+
+.main-header .container .header_middle_block .switchers div#freeshipping_top {
+    order: 2;
+}
+
 header.main-header .wg-drop.country-selector .wgcurrent {
     border: none;
 }
