@@ -692,6 +692,32 @@ div#reviewCarouselWidget .stjr-review__content .stjr-review__read_more_link {
     text-decoration: underline !important;
 }
 
+.stjr-reviews-carousel-review-border .stjr-reviews-carousel-review:before {
+    display: block;
+    font-size: 18px;
+    line-height: 55px;
+    font-family: simple-line-icons;
+    content: "\e005";
+    width: 55px;
+    height: 55px;
+    border: 1px solid #ced4da;
+    text-align: center;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    top: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+}
+
+.stjr-reviews-carousel-review-border .stjr-reviews-carousel-review {
+    position: relative;
+    margin-top: 30px;
+    overflow: visible;
+    padding-top: 50px;
+}
+
 
 @media only screen and (max-width:1550px){
 
