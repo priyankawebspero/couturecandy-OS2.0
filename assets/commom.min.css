@@ -726,6 +726,10 @@ div#reviewCarouselWidget .stjr-review__content .stjr-review__read_more_link {
     font-size: 14px;
     padding: 9px 15px;
 }
+  
+.gl_column_container.gl_col-sm-12>.gl_column-inner {
+    padding: 0 30px;
+}
 
 }
 
