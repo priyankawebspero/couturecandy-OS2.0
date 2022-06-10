@@ -22,6 +22,11 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
     color: #000;
 }
 
+.right-column .wishlist-info-widget>a:after, .right-column .wishlist-info-widget>a:before {
+    font-size: 25px;
+    line-height: 27px;
+}
+
 .topbar-wrapp {
     background: #0f0f0f;
     height: auto;
