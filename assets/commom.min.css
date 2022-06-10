@@ -826,6 +826,10 @@ div#reviewCarouselWidget {
 .footer-container .container {
     padding: 0 30px;
 }
+  
+section.brands-banner-section {
+    padding: 90px 30px 60px 30px;
+}
 
 }
 
