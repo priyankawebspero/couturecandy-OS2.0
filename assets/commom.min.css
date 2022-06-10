@@ -162,7 +162,7 @@ header.main-header .wg-drop.country-selector .wgcurrent:after {
 
 .main-header .container .header_middle_block .col-4 {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 25%%;
+    -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
     padding: 0 15px;
@@ -857,6 +857,22 @@ section.brands-banner-section {
 #shopify-section-template--14532934697043__1654005036571929f8 .spb_column.gl_column_container.gl_col-md-6.gl_col-lg-6:last-child .gl_column-inner .spb_wrapper .gl_col-md-12.gl_col-lg-12 .wrapper-content-baner .banner-inner {
     padding-right: 0;
     padding-left: 0;
+}
+  
+}
+
+@media only screen and (max-width:1199px){
+  
+  .main-header .container .header_middle_block .logo.col-4 {
+    -ms-flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+  
+.main-header .container .header_middle_block .col-4 {
+    -ms-flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
 }
   
 }
