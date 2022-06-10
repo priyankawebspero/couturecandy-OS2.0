@@ -301,3 +301,14 @@ div#shopify-section-template--14532934697043__1654005036571929f8 .featured-colle
     width: 100%;
 }
 
+#shopify-section-template--14532934697043__1654005036571929f8 .spb_column.gl_column_container.gl_col-md-6.gl_col-lg-6 {
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+
+div#shopify-section-template--14532934697043__1654005036571929f8 .featured-collection>.gl_col-md-6.gl_col-lg-6:first-child .spb_wrapper .wrapper-content-baner.gl_col-md-6.gl_col-lg-6 {
+    max-width: 490px;
+    margin-top: -100px;
+    height: 100%;
+}
