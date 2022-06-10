@@ -900,5 +900,9 @@ section.brands-banner-section {
 footer .widget-title:before {
     width: 40px;
 }
+
+.footer-column .textwidget form input[type="submit"] {
+    position: relative;
+}
   
 }
