@@ -410,3 +410,7 @@ div#shopify-section-template--14532934697043__1654005036571929f8 .featured-colle
 div#shopify-section-template--14532934697043__1654005036571929f8 .featured-collection>.gl_col-md-6.gl_col-lg-6:first-child>.gl_column-inner {
     padding-right: 12px;
 }
+
+#shopify-section-template--14532934697043__1654005036571929f8 .spb_column.gl_column_container.gl_col-md-6.gl_col-lg-6:last-child>.gl_column-inner {
+    padding-left: 23px;
+}
