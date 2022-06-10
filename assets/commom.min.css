@@ -18,6 +18,11 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
     display: none;
 }
 
+.main-header .right-column .shopping-cart a svg {
+    width: 24px !important;
+    height: 24px !important;
+}
+
 .right-column .wishlist-info-widget {
     margin-right: 10px;
     text-align: center;
