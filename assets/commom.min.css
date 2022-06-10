@@ -909,4 +909,17 @@ footer .widget-title:before {
     font-size: 15px;
 }
   
+p.newstext {
+    font-size: 14px;
+}
+  
+.widget_text .textwidget p.address, .widget_text .textwidget p.email, .widget_text .textwidget p.tel {
+    font-size: 14px;
+    letter-spacing: 0;
+}
+  
+.widget_text .textwidget p.address br {
+    display: none;
+}
+  
 }
