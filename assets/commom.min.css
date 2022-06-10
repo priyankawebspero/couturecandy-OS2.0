@@ -975,5 +975,9 @@ p.newstext {
     font-size: 12px;
 } 
 
+.main-header .wrapp-header {
+    padding: 0 20px;
+}
+
   
 }
