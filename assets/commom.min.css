@@ -947,6 +947,11 @@ p.newstext {
     margin-right: 4px;
 }
   
+.title-wrapper .title, .brands-banner-section .title {
+    font-size: 42px !important;
+    margin-bottom: 50px !important;
+}
+  
 }
 
 @media only screen and (max-width:1199px) and (min-width:992px){
