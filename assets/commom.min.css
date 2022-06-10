@@ -716,6 +716,10 @@ div#reviewCarouselWidget .stjr-review__content .stjr-review__read_more_link {
     padding-top: 50px;
 }
 
+.stjr-reviews-carousel-review-border .stjr-reviews-carousel-review * {
+    text-align: center !important;
+}
+
 
 @media only screen and (max-width:1550px){
 
