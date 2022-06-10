@@ -692,6 +692,7 @@ div#reviewCarouselWidget .stjr-review__content .stjr-review__read_more_link {
     text-decoration: underline !important;
 }
 
+
 #shopify-section-template--14532934697043__16539999234cb01da9 .stjr-reviews-carousel-review-border .stjr-reviews-carousel-review:before {
     display: block;
     font-size: 18px;
@@ -700,13 +701,14 @@ div#reviewCarouselWidget .stjr-review__content .stjr-review__read_more_link {
     content: "\e005";
     width: 55px;
     height: 55px;
-    border: 1px solid #ced4da;
+    border: 1px solid #e94949;
     text-align: center;
     border-radius: 30px;
     position: absolute;
     top: -28px;
-    left: 20px;
+    left: 50%;
     background: #fff;
+    transform: translateX(-50%);
 }
 
 #shopify-section-template--14532934697043__16539999234cb01da9 .stjr-reviews-carousel-review-border .stjr-reviews-carousel-review {
