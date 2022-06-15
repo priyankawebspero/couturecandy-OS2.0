@@ -1141,4 +1141,12 @@ p.newstext {
     border-radius: 5px;
 }
   
+.menu_inner_block .menu_title {
+    padding: 0 11px;
+    text-transform: uppercase;
+    color: #000;
+    font-family: 'google_sansregular';
+    font-size: 15px;
+}
+  
 }
