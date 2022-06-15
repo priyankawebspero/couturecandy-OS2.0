@@ -1238,6 +1238,10 @@ p.newstext {
     border-left: 1px solid #ccc;
 }
   
+.mobile-nav .sub-menu-dropdown ul {
+    background-color: #fff;
+}
+  
 }
 
 
