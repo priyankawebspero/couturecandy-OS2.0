@@ -1244,6 +1244,13 @@ p.newstext {
   
   .mobile-nav .sub-menu-dropdown ul:before{display:none;}
   
+.mobile-nav ul li a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 15px;
+    line-height: 24px;
+}
+  
 }
 
 
