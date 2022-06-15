@@ -1234,8 +1234,8 @@ p.newstext {
   
 .menu-mobile-nav-container {
     background: #fff;
+    border-right: 1px solid #ccc;
 }
-  
   
 .mobile-nav .sub-menu-dropdown ul {
     background-color: #fff;
