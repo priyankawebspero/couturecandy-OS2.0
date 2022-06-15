@@ -1234,6 +1234,10 @@ p.newstext {
     background: #fff;
 }
   
+.mobile-nav .icon-sub-menu {
+    border-left: 1px solid #ccc;
+}
+  
 }
 
 
