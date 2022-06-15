@@ -1138,6 +1138,7 @@ p.newstext {
     justify-content: space-between;
     background-color: #ddd;
     margin: 0 5px 10px 5px;
+    border-radius: 5px;
 }
   
 }
