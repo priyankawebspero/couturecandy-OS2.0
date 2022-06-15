@@ -1220,3 +1220,15 @@ p.newstext {
 }
   
 }
+
+
+@media only screen and (max-width:479px){
+
+.menu-mobile-nav-container {
+    width: -moz-calc(100vw - 40px);
+    width: -webkit-calc(100vw - 40px);
+    width: -ms-calc(100vw - 40px);
+    width: calc(100vw - 40px);
+}
+  
+}
