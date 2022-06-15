@@ -1112,4 +1112,8 @@ p.newstext {
     display: none;
 }
   
+.mobile-nav {
+    width: 95%;
+}
+  
 }
