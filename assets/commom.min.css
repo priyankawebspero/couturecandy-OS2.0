@@ -1098,4 +1098,10 @@ p.newstext {
     float: left;
 }
   
+ /*-------------menu-css-new----------------*/ 
+ .right-column .mobile-nav-icon {
+    position: relative;
+    z-index: 1;
+}
+  
 }
