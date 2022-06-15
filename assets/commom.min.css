@@ -1149,4 +1149,35 @@ p.newstext {
     font-size: 15px;
 }
   
+ .menu-mobile-nav-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding-bottom: 100px;
+    height: 100vh;
+    overflow-y: scroll;
+    z-index: 100;
+    -webkit-transition: transform .4s ease;
+    -moz-transition: transform .4s ease;
+    -ms-transition: transform .4s ease;
+    -o-transition: transform .4s ease;
+    transition: transform .4s ease;
+    -moz-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translate(-100%);
+    overflow-x: hidden;
+   width:337px;
+}
+  
+.menu_block.active .menu-mobile-nav-container{
+  -moz-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
+    transform: none;
+  }
+  
 }
