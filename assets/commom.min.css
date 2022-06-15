@@ -1252,6 +1252,10 @@ p.newstext {
   border-left: 1px solid #ccc;
 }
   
+.mobile-nav .sub-menu-dropdown li ul {
+    background-color: #fff;
+}
+  
 }
 
 
