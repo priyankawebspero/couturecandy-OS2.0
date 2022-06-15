@@ -1140,6 +1140,7 @@ p.newstext {
     background-color: #ddd;
     margin: 0 5px 10px 5px;
     border-radius: 5px;
+    border: 1px solid #ccc;
 }
   
 .menu_inner_block .menu_title {
