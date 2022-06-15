@@ -1228,15 +1228,16 @@ p.newstext {
 .mobile-nav ul li a {
     color: #000;
     border-bottom: 1px solid #ccc;
+   padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 15px;
+    line-height: 24px;
 }
   
 .menu-mobile-nav-container {
     background: #fff;
 }
   
-.mobile-nav .icon-sub-menu {
-    border-left: 1px solid #ccc;
-}
   
 .mobile-nav .sub-menu-dropdown ul {
     background-color: #fff;
@@ -1244,11 +1245,11 @@ p.newstext {
   
   .mobile-nav .sub-menu-dropdown ul:before{display:none;}
   
-.mobile-nav ul li a {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    font-size: 15px;
-    line-height: 24px;
+  
+.mobile-nav .icon-sub-menu {
+    height: 41px;
+    width: 45px;
+  border-left: 1px solid #ccc;
 }
   
 }
