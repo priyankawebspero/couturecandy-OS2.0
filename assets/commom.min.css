@@ -1120,4 +1120,24 @@ p.newstext {
     -sand-transform: translate3d(-100%,0,0);
 }
   
+.menu_inner_block img {
+    display: inline-block;
+    width: 150px;
+    height: 77px;
+    float: right;
+    object-fit: cover;
+    border-radius: 0 5px 5px 0;
+}
+  
+.menu_inner_block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: space-between;
+    background-color: #ddd;
+    margin: 0 5px 10px 5px;
+}
+  
 }
