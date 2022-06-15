@@ -1104,4 +1104,12 @@ p.newstext {
     z-index: 99;
 }
   
+.main-header .right-column .wishlist-info-widget {
+    display: none;
+}
+  
+  .main-header .right-column .shopping-cart {
+    display: none;
+}
+  
 }
