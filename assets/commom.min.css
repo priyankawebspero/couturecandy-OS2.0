@@ -1169,7 +1169,9 @@ p.newstext {
     -webkit-transform: translateX(-100%);
     transform: translate(-100%);
     overflow-x: hidden;
-   width:337px;
+    width: 337px;
+    background: #000;
+    z-index: 99;
 }
   
 .menu_block.active .menu-mobile-nav-container{
