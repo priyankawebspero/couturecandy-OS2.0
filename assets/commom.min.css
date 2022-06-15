@@ -1230,6 +1230,10 @@ p.newstext {
     border-bottom: 1pxsolid #ccc;
 }
   
+.menu-mobile-nav-container {
+    background: #fff;
+}
+  
 }
 
 
