@@ -1220,6 +1220,16 @@ p.newstext {
     color: #000;
 }
   
+.mobile-nav .icon-sub-menu:after, .mobile-nav .icon-sub-menu:before {
+    background-color: #000;
+   
+}
+  
+.mobile-nav ul li a {
+    color: #000;
+    border-bottom: 1pxsolid #ccc;
+}
+  
 }
 
 
