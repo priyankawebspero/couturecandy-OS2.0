@@ -1287,7 +1287,7 @@ p.newstext {
 @media only screen and (max-width:767px){
   
   div#reviewCarouselWidget .headline {
-    font-size: 30px !important;
+    font-size: 35px !important;
     margin-bottom: 40px !important;
   }
   
@@ -1297,7 +1297,7 @@ p.newstext {
 }
   
 .title-wrapper .title, .brands-banner-section .title {
-    font-size: 30px !important;
+    font-size: 35px !important;
     margin-bottom: 40px !important;
 }
 
@@ -1308,7 +1308,7 @@ p.newstext {
 }
   
 .title {
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 40px;
 }
   
@@ -1325,7 +1325,7 @@ div#reviewCarouselWidget .headline:before {
 }
   
 section.sub-page-banner-section .title {
-    font-size: 30px;
+    font-size: 35px;
 }
   
 .text-with-read-more section.sub-page-banner-section {
@@ -1408,6 +1408,10 @@ a.btn {
     padding: 11px 15px;
     letter-spacing: 0px;
     /* width: 93%; */
+}
+  
+div#shopify-section-template--14532934697043__165390901603cb214c {
+    padding: 40px 0 20px;
 }
   
 }
