@@ -1442,6 +1442,12 @@ section.brands-banner-section .row {
     padding-bottom: 20px !important;
 }
   
+div#reviewCarouselWidget .stjr-reviews-carousel .stjr-reviews-carousel-pagination {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+  
 }
 
 @media only screen and (max-width:479px){
