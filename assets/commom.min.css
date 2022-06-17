@@ -1343,6 +1343,30 @@ section.sub-page-banner-section p {
     font-size: 16px;
 }
   
+div#shopify-section-template--14532934697043__1655293959d5ab1c6c .title:after {
+    width: 30px;
+    height: 30px;
+    top: 28px;
+}
+  
+div#shopify-section-template--14532934697043__1655293959d5ab1c6c .title {
+    margin-bottom: 10px !important;
+    padding-left: 40px;
+    position: relative;
+}
+  
+div#shopify-section-template--14532934697043__1655293959d5ab1c6c {
+    padding-top: 50px;
+}
+  
+span.moreless-button.btn {
+    margin-top: 20px;
+    font-size: 15px;
+    min-width: 165px;
+    padding: 0 15px;
+    line-height: 50px;
+}
+  
 }
 
 @media only screen and (max-width:479px){
