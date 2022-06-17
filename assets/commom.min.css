@@ -1412,7 +1412,10 @@ div#reviewCarouselWidget .stjr-reviews-carousel .stjr-reviews-carousel-paginatio
     align-items: center;
 }
   
-  
+ .brands-banner-section .title {
+    padding-left: 15px;
+    padding-right: 15px;
+} 
 
   
 .swatches-on-grid .swatch-on-grid {
