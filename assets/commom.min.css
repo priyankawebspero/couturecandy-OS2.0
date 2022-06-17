@@ -1394,6 +1394,14 @@ a.btn {
     line-height: 50px;
 }
   
+#shopify-section-template--14532934697043__1653916013b1f6c860 .product-category.product {
+    margin-bottom: 50px;
+}
+  
+#shopify-section-template--14532934697043__1653916013b1f6c860 .spb__column.gl_column_container.gl_col-sm-12>.gl_column-inner {
+    padding-bottom: 0px !important;
+}
+  
 }
 
 @media only screen and (max-width:479px){
