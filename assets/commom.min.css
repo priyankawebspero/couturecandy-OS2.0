@@ -1459,6 +1459,10 @@ div#reviewCarouselWidget .stjr-reviews-carousel .stjr-reviews-carousel-paginatio
     margin-bottom: 12px;
 }
   
+.basel-products-element {
+    margin-bottom: 10px;
+}
+  
 }
 
 @media only screen and (max-width:479px){
