@@ -1371,6 +1371,14 @@ div#reviewCarouselWidget {
     padding: 20px 15px 50px 15px;
 }
   
+div#reviewCarouselWidget .stjr-reviews-carousel-pagination .stjr-reviews-carousel-pagination__dot {
+    width: 10px;
+    height: 10px;
+}
+div#reviewCarouselWidget .stjr-reviews-carousel-pagination .stjr-reviews-carousel-pagination__dot.stjr-reviews-carousel-pagination__dot--active {
+    width: 15px;
+}
+  
 }
 
 @media only screen and (max-width:479px){
