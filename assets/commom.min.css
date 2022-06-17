@@ -886,6 +886,10 @@ div#shopify-section-template--14532934697043__1655293959d5ab1c6c .title:after {
     top: 48px;
 }
 
+.main-header .doubly-nice-select.right .list li {
+    font-family: 'google_sansregular' !important;
+}
+
 @media only screen and (max-width:1550px){
 
 .main-header .wrapp-header {
