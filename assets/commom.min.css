@@ -1284,6 +1284,30 @@ p.newstext {
   
 }
 
+@media only screen and (max-width:767px){
+  
+  div#reviewCarouselWidget .headline {
+    font-size: 30px !important;
+    margin-bottom: 40px !important;
+  }
+  
+.spb__column.gl_column_container.gl_col-sm-12>.gl_column-inner {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+  
+.title-wrapper .title, .brands-banner-section .title {
+    font-size: 30px !important;
+    margin-bottom: 40px !important;
+}
+
+  .title-wrapper .title:before, .brands-banner-section .title:before {
+    width: 75px;
+    height: 3px;
+    margin: 0 auto 15px auto;
+}
+  
+}
 
 @media only screen and (max-width:479px){
 
