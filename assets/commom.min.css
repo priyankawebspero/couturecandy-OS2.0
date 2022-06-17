@@ -1402,6 +1402,13 @@ a.btn {
     padding-bottom: 0px !important;
 }
   
+#shopify-section-template--14532934697043__1653916013b1f6c860 .category-content .cs_category_pop a {
+    font-size: 13px;
+    padding: 11px 15px;
+    letter-spacing: 0px;
+    /* width: 93%; */
+}
+  
 }
 
 @media only screen and (max-width:479px){
