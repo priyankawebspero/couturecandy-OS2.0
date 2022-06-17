@@ -1287,7 +1287,7 @@ p.newstext {
 @media only screen and (max-width:767px){
   
   div#reviewCarouselWidget .headline {
-    font-size: 35px !important;
+    font-size: 30px !important;
     margin-bottom: 40px !important;
   }
   
@@ -1297,7 +1297,7 @@ p.newstext {
 }
   
 .title-wrapper .title, .brands-banner-section .title {
-    font-size: 35px !important;
+    font-size: 30px !important;
     margin-bottom: 40px !important;
 }
 
@@ -1308,7 +1308,7 @@ p.newstext {
 }
   
 .title {
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 40px;
 }
   
@@ -1325,7 +1325,7 @@ div#reviewCarouselWidget .headline:before {
 }
   
 section.sub-page-banner-section .title {
-    font-size: 35px;
+    font-size: 30px;
 }
   
 .text-with-read-more section.sub-page-banner-section {
