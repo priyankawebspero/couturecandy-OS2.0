@@ -1367,6 +1367,10 @@ span.moreless-button.btn {
     line-height: 50px;
 }
   
+div#reviewCarouselWidget {
+    padding: 20px 15px 50px 15px;
+}
+  
 }
 
 @media only screen and (max-width:479px){
