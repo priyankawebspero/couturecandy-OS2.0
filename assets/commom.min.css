@@ -1428,6 +1428,15 @@ section.brands-banner-section .row {
     margin: 0 -10px;
 }
   
+.product-grid-item .price {
+    font-size: 15px;
+    /* margin-top: 10px; */
+}
+  
+.brands-banner-section .col-md-2.brand_block a {
+    margin-bottom: 17px;
+}
+  
 }
 
 @media only screen and (max-width:479px){
