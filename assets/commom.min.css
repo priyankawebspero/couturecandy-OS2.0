@@ -1318,6 +1318,26 @@ p.newstext {
     margin: 0 auto 15px auto;
 }
   
+div#reviewCarouselWidget .headline:before {
+    width: 75px;
+    height: 3px;
+    margin: 0 auto 15px auto;
+}
+  
+section.sub-page-banner-section .title {
+    font-size: 30px;
+}
+  
+.text-with-read-more section.sub-page-banner-section {
+    padding: 70px 15px;
+}
+  
+section.sub-page-banner-section .title:before {
+    width: 75px;
+    height: 3px;
+    margin: 0 auto 15px auto;
+}
+  
 }
 
 @media only screen and (max-width:479px){
