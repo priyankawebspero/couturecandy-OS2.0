@@ -1455,6 +1455,10 @@ div#reviewCarouselWidget .stjr-reviews-carousel .stjr-reviews-carousel-paginatio
     margin-top: 20px;
 }
   
+.swatches-on-grid .swatch-on-grid {
+    margin-bottom: 12px;
+}
+  
 }
 
 @media only screen and (max-width:479px){
