@@ -33,11 +33,11 @@
                 <h1 class="category-title">{{collection.title}}</h1>
         </div>
 	   	{%- include 'BreadcrumbMenu', page_handle:collection.handle -%}
-        <aside class="sidebar-container col-sm-3 sidebar-2" role="complementary">
+        {%- comment -%}<aside class="sidebar-container col-sm-3 sidebar-2" role="complementary">
               <div class="sidebar-inner">
                 {%- include 'snippet_sidebar_for_brands' -%}
               </div><!-- .sidebar-inner -->
-        </aside><!-- .sidebar-container -->
+        </aside><!-- .sidebar-container -->{%- endcomment -%}
          <div class="site-content col-sm-9" role="main">
             {%- if collection.description != blank and settings.show_des_collection -%}
                 <div class="term-description promo-banner CategoryDescription" id="des_{{collection.id}}">
