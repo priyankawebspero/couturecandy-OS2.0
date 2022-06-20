@@ -31,11 +31,11 @@
    <div class="container">
       <div class="row">
          {%- include 'BreadcrumbMenu', page_handle:collection.handle -%}
-        <aside class="sidebar-container col-sm-3 sidebar-2" role="complementary">
+        {%- comment -%} <aside class="sidebar-container col-sm-3 sidebar-2" role="complementary">
               <div class="sidebar-inner">
                   {%- include 'snippet_sidebar_pages' -%}
               </div><!-- .sidebar-inner -->
-           </aside><!-- .sidebar-container -->
+           </aside><!-- .sidebar-container -->{%- endcomment -%}
          <div class="site-content col-sm-9" role="main">
             {% section 'collection-template-bc-sf-filter' %}
          </div>
