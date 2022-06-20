@@ -188,7 +188,7 @@
                	{% endif %}
         </div>
         	{%- include 'BreadcrumbMenu', page_handle:collection.handle -%}
-        {%- if settings.shop_sidebar != '1' -%}
+        {%- comment -%}{%- if settings.shop_sidebar != '1' -%}
          <aside class="sidebar-container {{class_sidebar}} sidebar-{{settings.shop_size_sidebar}}" role="complementary">
             <div class="sidebar-inner">
 				{%- include 'snippet_sidebar_for_dresses' -%}
@@ -199,7 +199,7 @@
            {%- if collection.description != blank and settings.show_des_collection -%}
                 <div class="term-description promo-banner CategoryDescription" id="des_{{collection.id}}">
                      {{collection.description}}</div>
-            {%- endif -%}
+            {%- endif -%}{%- endcomment -%}
            {% section 'collection-template-bc-sf-filter' %}
        </div>
    </div><!-- end container -->
