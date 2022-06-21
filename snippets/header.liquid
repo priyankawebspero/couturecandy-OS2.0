@@ -16,16 +16,22 @@
         </div>
       </div>
      <div class="topbar-content mobile">
-        <div class="top_bar_left col-4">
+       <div class="top_bar_right col-6">
+         <div id="freeshipping_top">
+           <div class="container">
+           </div>	
+         </div>
+         <div id="currency_switcher">
+           <div class="doubly-wrapper"></div>
+         </div>
+       </div>
+       <div class="top_bar_left col-6">
          {%- if settings.top_bar_text != blank -%}
          <div class="socials">{%- if settings.top_bar_text contains '[social_buttons' -%}{{settings.top_bar_text | split:'[social_buttons' | first }} {% if settings.top_bar_text contains 'social_buttons_share' -%}{%- assign gl_follow_social = false -%}{%- else -%}{%- assign gl_follow_social = true -%}{%- endif -%}{%- include 'social-sharing', gl_design:'icons-design-colored', gl_size:'icons-size-small', follow_social:gl_follow_social -%}{%-else-%}{{settings.top_bar_text}}{%- endif -%}</div>
          {%- endif -%}
-          {%- if settings.top_bar_email != blank -%}<div class="top_bar_email"><a href="mailto:{{settings.top_bar_email}}"><i class="fa fa-envelope" aria-hidden="true"></i></a></div>{%- endif -%}
-        </div>
-        <div class="top_bar_right col-4">
-          {%- if settings.top_bar_mobile != blank -%}<div class="top_bar_text_middle"><a href="tel:{{settings.top_bar_mobile}}"><i class="fa fa-phone" aria-hidden="true"></i></a></div>{%- endif -%}
-        </div>
-      </div>
+         {%- if settings.top_bar_email != blank -%}<div class="top_bar_email"><a href="mailto:{{settings.top_bar_email}}"><i class="fa fa-envelope" aria-hidden="true"></i></a></div>{%- endif -%}
+       </div>
+     </div>
    </div>
 </div>
 <!--END TOP HEADER-->
