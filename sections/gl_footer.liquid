@@ -211,7 +211,7 @@
             {%- when 'newsletter' -%}
                <div class="footer-column footer-column-{{forloop.index}} {{class_col}}" {{ block.shopify_attributes }}>
                   <div id="text-{{block.id}}" class="footer-widget widget_text">
-                     {%- if block.settings.title != blank -%}<h5 class="widget-title">{{block.settings.title}}</h5>{%- endif -%}
+                     {%- if block.settings.title != blank -%}<h5 class="widget-title">{{block.settings.title}}</h5><i class="fa fa-arrow-down"></i>{%- endif -%}
                      <div class="textwidget">
                         {%- include 'gl_form_newlester' -%}
                         {%- if block.settings.ns_text != blank -%}<p class="newstext">{{block.settings.ns_text}}</p>{%- endif -%}
@@ -227,12 +227,12 @@
             {%- when 'html' -%}
                <div class="footer-column footer-column-{{forloop.index}} {{class_col}}" {{ block.shopify_attributes }}>
                   <div id="text-{{block.id}}" class="footer-widget widget_text">
-                     {%- if block.settings.title != blank -%}<h5 class="widget-title">{{block.settings.title}}</h5>{%- endif -%}
+                     {%- if block.settings.title != blank -%}<h5 class="widget-title">{{block.settings.title}}</h5><i class="fa fa-arrow-down"></i>{%- endif -%}
                      <div class="textwidget">
                         {%- if block.settings.address != blank -%}<p class="address"><i class="fa fa-home"></i> {{block.settings.address}}</p>{%- endif -%}
                         {%- if block.settings.email != blank -%}<p class="email"><a href="mailto:{{block.settings.email}}"><i class="fa fa-envelope" aria-hidden="true"></i> {{block.settings.email}}</a></p>{%- endif -%}
                         {%- if block.settings.phone != blank -%}<p class="tel"><a href="tel:{{block.settings.phone}}"><i class="fa fa-phone" aria-hidden="true"></i> {{block.settings.phone}}</a></p>{%- endif -%}
-                        {%- if block.settings.heading_second != blank -%}<h5 class="widget-title">{{block.settings.heading_second}}</h5>{%- endif -%}
+                        {%- if block.settings.heading_second != blank -%}<h5 class="widget-title">{{block.settings.heading_second}}</h5><i class="fa fa-arrow-down"></i>{%- endif -%}
                         {%- if block.settings.social_icon -%}
                         {%- include 'social-sharing', gl_design:'icons-design-colored', gl_size:'icons-size-small', follow_social:gl_follow_social -%}
                         {%- endif -%}
