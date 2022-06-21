@@ -26,7 +26,10 @@
       $(this).text("Read Less");
     }
   });
+    $('#shopify-section-gl_footer .widget-title').on('click', function(){
+      $(this).parent().closest('.footer-column').toggleClass('active');
 
+    })
   });
 </script>
   
