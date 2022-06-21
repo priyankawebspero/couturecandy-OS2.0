@@ -653,6 +653,12 @@
       },
       {
         "type": "image_picker",
+        "id": "body_logo_image_mob",
+        "label": "___ Logo image Mobile",
+        "info": "Upload image: png, jpg or gif file"
+      },
+      {
+        "type": "image_picker",
         "id": "body_logo_image",
         "label": "___ Logo image",
         "info": "Upload image: png, jpg or gif file"
