@@ -30,54 +30,49 @@ window.criteo_q.push(
 <input type="hidden" name="collection" id="collectionhandle" value="{{ collection.handle }}">
 {% assign products_per_page = section.settings.products_per_page %}
 {% paginate collection.products by products_per_page %}
-<div class="page-width container bc-sf-filter-wrapper-page">
-  {% comment %} TOOLBAR {% endcomment %}
+<div id="bc-sf-filter-wrapper" class="{% if allproductin_a_cat > 0 %}have-product{% else %}zero-product{%- endif -%}{% if collection_name ==  'final-clearance-sale' %} {{ collection.handle }}{%- endif -%} ">
+  <div id="collectionfilter">
+  <div class="closeapply"><button class="btn">Apply</button></div> 
+    <div id="bc-sf-filter-tree-h"></div>
+  </div>
+    {% comment %} TOOLBAR {% endcomment %}
   <div id="bc-sf-filter-default-toolbar">
-      <div class="bc-sf-filter-default-toolbar-inner">
-        <div class="bc-sf-filter-toolbar-item">
-          <div id="bc-sf-filter-top-display-type">{% include 'bc-sf-filter-skeleton', width: 2 %}</div>
-        </div>
-        <div class="bc-sf-filter-toolbar-item bc-sf-filter-toolbar-count">
-          <span id="bc-sf-filter-total-product">{% include 'bc-sf-filter-skeleton', width: 1 %}</span>
-        </div>
-        <div class="bc-sf-filter-toolbar-item text-right bc-sf-filter-custom-sorting" id="bc-sf-filter-top-sorting">{% include 'bc-sf-filter-skeleton', width: 1 %}</div>
+    <div class="bc-sf-filter-default-toolbar-inner">
+      <div class="bc-sf-filter-toolbar-item bc-sf-filter-toolbar-count">
+        <span id="bc-sf-filter-total-product"></span>
       </div>
-  </div>
-  {% comment %} END TOOLBAR {% endcomment %}
-  <div id="bc-sf-filter-wrapper">
-    <div id="bc-sf-filter-tree-mobile">{% include 'bc-sf-filter-skeleton', type: 'button' %}</div>
-    <div id="bc-sf-filter-top-sorting-mobile" class="bc-sf-filter-custom-sorting">{% include 'bc-sf-filter-skeleton', type: 'button' %}</div>
-    <div class="bc-sf-filter-left-col">
-      <div id="bc-sf-filter-tree">{% include 'bc-sf-filter-tree-placeholder' %}</div>
-    </div>
-    <div class="bc-sf-filter-right-col">
-      <div id="bc-sf-filter-products" data-bc-sort="{{ collection.default_sort_by }}">
-        {% for product in collection.products %}
-          {% include 'bc-sf-filter-product-item', product: product %}
-        {% endfor %}
+      <div id="bc-sf-filter-top-sorting"></div>
+      <div class="bc-sf-filter-toolbar-item">
+      <!--<div id="bc-sf-filter-top-display-type"></div>-->
+         <div id="bc-sf-filter-bottom-pagination" class="bc-sf-filter-top-pagination-default"></div>
       </div>
-      <div id="bc-sf-filter-bottom-pagination" class="bc-sf-filter-bottom-pagination-default">
-        {% if paginate.pages > 1 %}
-          {% include 'bc-sf-filter-pagination' %}
-        {% endif %}
-      </div>
-      <div id="bc-sf-filter-load-more"></div>
     </div>
-  </div>
-
-  {% comment %} start-bc-most-popular-template {% endcomment %}
-    <div class="bc-sf-most-popular-products-wrapper bc-sf-widget-slider-wrapper">
-      <div class="bc-sf-most-popular-products bc-sf-widget-products owl-carousel"></div>
-    </div>
-  {% comment %} end-bc-most-popular-template {% endcomment %}
-
-  {% comment %} start-bc-recently-viewed-template {% endcomment %}
-    <div class="bc-sf-recent-products-wrapper bc-sf-widget-slider-wrapper">
-      <div class="bc-sf-recent-products bc-sf-widget-products owl-carousel"></div>
-    </div>
-  {% comment %} end-bc-recently-viewed-template {% endcomment %}
 </div>
-{% endpaginate %
+{% comment %} END TOOLBAR {% endcomment %}
+  {% if collection.handle == 'clearance-dresses' or collection.handle == 'sale' or collection.handle == 'sale-closeouts' or collection.handle == 'sale-swimwear' or   collection.handle == 'sale-apparel' %}<!-- .check-sale --> 
+  <div class="salebanner">
+        <img src="https://cdn.shopify.com/s/files/1/0144/7018/5017/files/couture-candy-extra25-sale.jpg?14008861864602121706">
+  </div>
+  {% endif %}
+  <div class="background_mobile"></div>  
+  <div id="bc-sf-filter-tree-mobile" {% if collection_name ==  'final-clearance-sale' %} class="{{ collection.handle }}"{%- endif -%}></div>
+  <div id="mobile_sort_by">Shop By</div>
+</div>
+  <div id="bc-sf-filter-tree" {% if collection_name ==  'final-clearance-sale' %} class="{{ collection.handle }}"{%- endif -%}></div>
+  <div id="bc-sf-filter-products" data-bc-sort="{{ collection.default_sort_by }}">
+      {% for product in collection.products %}
+         {% include 'bc-sf-filter-product-item', product: product %}
+        {% endfor %}
+  </div>
+  <div id="bc-sf-filter-bottom-pagination" class="bc-sf-filter-bottom-pagination-default"></div>
+  
+  {%- if collection.metafields.Bottomdescription.Bottomdescription != blank -%}
+  <div id="collectionbottomdescription">
+        {{ collection.metafields.Bottomdescription.Bottomdescription }}
+  </div>
+{%- endif -%}
+  <div id="bc-sf-filter-load-more"></div>
+{% endpaginate %}
 
 <script>
   var template_suffix = "{{ collection.template_suffix | downcase }}";
