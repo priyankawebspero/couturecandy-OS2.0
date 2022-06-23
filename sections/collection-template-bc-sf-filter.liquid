@@ -25,19 +25,18 @@ window.criteo_q.push(
 	}
 );
 </script>
-<div class="filter">
-<div class="bc-sf-filter-left-col">
-      <div id="bc-sf-filter-tree">{% include 'bc-sf-filter-tree-placeholder' %}</div>
-    </div>
-</div>
+
 {%- assign allproductin_a_cat = collection.all_products_count -%}
 <input type="hidden" name="collection" id="collectionhandle" value="{{ collection.handle }}">
 {% assign products_per_page = section.settings.products_per_page %}
 {% paginate collection.products by products_per_page %}
 <div id="bc-sf-filter-wrapper" class="{% if allproductin_a_cat > 0 %}have-product{% else %}zero-product{%- endif -%}{% if collection_name ==  'final-clearance-sale' %} {{ collection.handle }}{%- endif -%} ">
   <div id="collectionfilter">
-  <div class="closeapply"><button class="btn">Apply</button></div> 
-    <div id="bc-sf-filter-tree-h"></div>
+  <div class="filter">
+<div class="bc-sf-filter-left-col">
+      <div id="bc-sf-filter-tree">{% include 'bc-sf-filter-tree-placeholder' %}</div>
+    </div>
+</div>
   </div>
     {% comment %} TOOLBAR {% endcomment %}
   <div id="bc-sf-filter-default-toolbar">
