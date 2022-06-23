@@ -25,7 +25,11 @@ window.criteo_q.push(
 	}
 );
 </script>
-
+<div class="filter">
+<div class="bc-sf-filter-left-col">
+      <div id="bc-sf-filter-tree">{% include 'bc-sf-filter-tree-placeholder' %}</div>
+    </div>
+</div>
 {%- assign allproductin_a_cat = collection.all_products_count -%}
 <input type="hidden" name="collection" id="collectionhandle" value="{{ collection.handle }}">
 {% assign products_per_page = section.settings.products_per_page %}
