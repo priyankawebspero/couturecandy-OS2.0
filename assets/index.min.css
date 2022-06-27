@@ -531,6 +531,9 @@ div#shopify-section-template--14532934697043__1654005036571929f8 {
   #shopify-section-template--14532934697043__1654005036571929f8 .spb_column.gl_column_container.gl_col-md-6.gl_col-lg-6:last-child .gl_column-inner .spb_wrapper .gl_col-md-12.gl_col-lg-12:nth-of-type(2) {
     padding-right: 0;
 }
+  div#shopify-section-template--14532934697043__1654005036571929f8 .featured-collection>.gl_col-md-6.gl_col-lg-6:first-child>.gl_column-inner {
+    padding-right: 15px;
+}
 }
 
 @media only screen and (max-width:767px){
