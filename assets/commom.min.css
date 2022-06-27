@@ -4,6 +4,7 @@
          url('//cdn.shopify.com/s/files/1/0144/7018/5017/t/48/assets/googlesans-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 
 }
 
@@ -1453,4 +1454,28 @@ div#shopify-section-template--14532934697043__1655293959d5ab1c6c {
     width: calc(100vw - 40px);
 }
   
+}
+
+/* == added on 27 june dev ===*/
+@media only screen and (max-width:768px){
+.topbar-content {
+    display: none;
+}
+.topbar-content.mobile {
+    display: block !important;
+}
+.header_middle_block {
+    display: none !important;
+}
+header.main-header.header-has-no-bg.header-simple.icons-design-fontawesome.color-scheme-dark {
+    padding-top: 0;
+}
+.main-header .right-column .shopping-cart {
+    display: inline-block;
+}
+.main-header .right-column .wishlist-info-widget {
+    display: inline-block !important;
+}.right-column .header-links {
+    display: inline-block !important;
+}
 }
