@@ -32,7 +32,7 @@
                {%- when 2 -%}
                   {%- assign class_col = 'col-md-3 col-sm-6' -%}
                   {%- assign visible_sm = true -%}
-               {%- when 4 -%}
+               {%- when 5 -%}
                   {%- assign class_col = 'col-md-3 col-sm-6' -%}
                   {%- assign break = true -%}
                {%- else -%}
@@ -245,7 +245,8 @@
                      </div>
                   </div>
                </div>
-                             {%- if visible_sm -%}<div class="clearfix visible-sm-block"></div>{%- endif -%}
+               {%- if break -%}{%- break -%}{%- endif -%}
+               {%- if visible_sm -%}<div class="clearfix visible-sm-block"></div>{%- endif -%}
                {%- if visible_lg -%}<div class="clearfix visible-lg-block"></div>{%- endif -%}
          {%- endcase -%}
       {%- endfor -%}
