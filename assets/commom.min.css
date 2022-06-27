@@ -1478,4 +1478,7 @@ header.main-header.header-has-no-bg.header-simple.icons-design-fontawesome.color
 }.right-column .header-links {
     display: inline-block !important;
 }
+.right-column .search-button {
+    display: inline-block !important;
+}
 }
