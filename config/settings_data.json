@@ -1248,13 +1248,25 @@
               "ns_text": "Subscribe to receive updates, exclusive deals, and more.",
               "use_mailchimp": true
             }
+          },
+          "02a0e2eb-b8a0-4e3a-8ffa-cdbe595dfba7": {
+            "type": "html",
+            "settings": {
+              "title": "Follow Us",
+              "address": "",
+              "email": "",
+              "phone": "",
+              "heading_second": "",
+              "social_icon": true
+            }
           }
         },
         "block_order": [
           "1501138697288",
           "1531996084475",
           "1531996949960",
-          "1576045451429"
+          "1576045451429",
+          "02a0e2eb-b8a0-4e3a-8ffa-cdbe595dfba7"
         ],
         "settings": {
         }
