@@ -200,5 +200,9 @@
    });
    $('.close_inner_block').on('click', function () {
       $(this).closest('.menu_block').toggleClass('active');
-   })
+   });
+   body.on("click", "#close_menu_main", function() {
+     body.removeClass("act-mobile-menu");
+    $('.website-wrapper').removeClass("left-wrapp");
+  });
 </script>
