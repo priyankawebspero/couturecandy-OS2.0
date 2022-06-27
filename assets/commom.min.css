@@ -1456,7 +1456,14 @@ div#shopify-section-template--14532934697043__1655293959d5ab1c6c {
   
 }
 
+
+
 /* == added on 27 june dev ===*/
+.topbar-content.mobile {
+    display: none;
+}
+
+
 @media only screen and (max-width:768px){
 .topbar-content {
     display: none;
@@ -1480,5 +1487,11 @@ header.main-header.header-has-no-bg.header-simple.icons-design-fontawesome.color
 }
 .right-column .search-button {
     display: inline-block !important;
+}
+.footer-column.active .textwidget {
+    display: block !important;
+}
+.footer-column .textwidget {
+    display: none;
 }
 }
