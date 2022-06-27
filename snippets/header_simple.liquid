@@ -37,6 +37,12 @@
       <div class="main-nav site-navigation basel-navigation menu-{{settings.basel_menu_align}}" role="navigation">{%- section 'gl_mega_menu' -%}</div>
       <!--END MAIN-NAV-->
       <div class="right-column">
+        <div class="mobile-nav-icon">
+          <span class="basel-burger"></span>
+       </div>
+       <div class="mobile_log"><img src="{{ settings.body_logo_image_mob | imge_url:'master'}}" class="mobile logo"></div>
+       <!--END MOBILE-NAV-ICON-->
+       {%- include 'header_search' -%}
         {%- include 'header_account' -%} 
         {%- include 'header_wishlist' -%}         
          {%- unless settings.cart_design == 'disable' or settings.catalog_mode or template contains 'cart' -%}
@@ -96,10 +102,6 @@
             {%- endif -%}
          </div>
          {%- endunless -%}
-         <div class="mobile-nav-icon">
-            <span class="basel-burger"></span>
-         </div>
-         <!--END MOBILE-NAV-ICON-->
       </div>
    </div>
 </div>
