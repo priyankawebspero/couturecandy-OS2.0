@@ -1511,6 +1511,8 @@ div#shopify-section-template--14532934697043__1655293959d5ab1c6c {
 }
 .breadcrumbs ol li:last-child::after {
     display: none;
+}.breadcrumbs ol li:last-child a {
+    color: #f13b4d;
 }
 @media only screen and (max-width:768px){
 .topbar-content {
