@@ -604,3 +604,7 @@ background:none !important;}
 a.text-m {
     display: none !important;
 }
+
+.boost-pfs-filter-wrapper {
+    margin-bottom: 0;
+}
