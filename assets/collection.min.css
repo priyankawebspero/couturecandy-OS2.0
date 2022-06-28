@@ -356,7 +356,7 @@ background:none !important;}
 }
 
 .boost-pfs-filter-left-col .boost-pfs-filter-option .boost-pfs-filter-option-title .boost-pfs-filter-option-title-heading .boost-pfs-filter-option-title-text:after {
-    content: "\e606";
+    content: "\e604";
   display: inline-block;
     font-size: 14px;
     /* line-height: 42px; */
@@ -368,7 +368,7 @@ background:none !important;}
 }
 
 .boost-pfs-filter-left-col .boost-pfs-filter-option.boost-pfs-filter-option-collapsed .boost-pfs-filter-option-title .boost-pfs-filter-option-title-heading .boost-pfs-filter-option-title-text:after {
-    content: "\e604";
+    content: "\e607";
     display: inline-block;
     font-size: 14px;
     /* line-height: 42px; */
