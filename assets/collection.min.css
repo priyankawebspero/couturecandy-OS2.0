@@ -39,5 +39,7 @@
     text-shadow: none !important;
 }
 
-.boost-pfs-filter-bottom-pagination-default>ul>li .boost-pfs-filter-pagination-active{border-color:#e94949;
+.boost-pfs-filter-bottom-pagination-default>ul>li .boost-pfs-filter-pagination-active{
+  border-color:#e94949;
+ color:#e94949;
 background:#fff;}
