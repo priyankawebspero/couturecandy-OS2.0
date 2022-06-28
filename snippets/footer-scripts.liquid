@@ -128,7 +128,39 @@ setTimeout(function(){
     }
  }
  sessionStorage.setItem('pages_view',value);
-}, 1000); 
+}, 1000);
+  
+  $(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar = 300;  // How many characters are shown by default
+    var ellipsestext = "...";
+    var moretext = "Show more";
+    var lesstext = "Show less";
+
+    $('#collectionbottomdescription').each(function() {
+        var content = $(this).html();
+        if(content.length > showChar) {
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+            var html = c + '<div class="morecontent" style="display: none;">' + h + '</div>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a>';
+            $(this).html(html);
+        }
+
+    });
+
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).prev().toggleClass('showed');
+        return false;
+    });
+});
+  
 </script>
 
 <!--Gorgias Chat Widget Start-->
