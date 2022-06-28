@@ -160,37 +160,6 @@ setTimeout(function(){
         return false;
     });
 });
-   
-  $(document).ready(function() {
-    // Configure/customize these variables.
-    var showChar = 700;  // How many characters are shown by default
-    var ellipsestext = "...";
-    var moretext = "Read more";
-    var lesstext = "Read less";
-
-    $('.Block.BlockContent.banner_category_page_top').each(function() {
-        var content = $(this).html();
-        if(content.length > showChar) {
-            var c = content.substr(0, showChar);
-            var h = content.substr(showChar, content.length - showChar);
-            var html = c + '<div class="morecontent" style="display: none;">' + h + '</div>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a>';
-            $(this).html(html);
-        }
-
-    });
-
-    $(".morelink").click(function(){
-        if($(this).hasClass("less")) {
-            $(this).removeClass("less");
-            $(this).html(moretext);
-        } else {
-            $(this).addClass("less");
-            $(this).html(lesstext);
-        }
-        $(this).prev().toggleClass('showed');
-        return false;
-    });
-}); 
 </script>
 
 <!--Gorgias Chat Widget Start-->
