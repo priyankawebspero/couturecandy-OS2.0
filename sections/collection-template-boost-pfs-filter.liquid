@@ -453,7 +453,7 @@ window.criteo_q.push(
             <div class="toolbar_count">
             {%- if show_product_count == true or show_product_count_m == true -%}
             <div class="boost-pfs-filter-toolbar-item boost-pfs-filter-toolbar-count {% if show_product_count %} boost-pfs-filter-toolbar-count-d {% endif %} {% if show_product_count_m %} boost-pfs-filter-toolbar-count-m {% endif %}">
-              <span class="boost-pfs-filter-total-product">{%- render 'boost-pfs-filter-skeleton', width: 1 -%}</span>
+              Results(<span class="boost-pfs-filter-total-product">{%- render 'boost-pfs-filter-skeleton', width: 1 -%}</span>)
             </div>
             {%- endif -%}
             {%- if show_sort_by -%}
