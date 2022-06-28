@@ -587,3 +587,8 @@ background:none !important;}
     position: relative;
     z-index: 9;
 }
+
+.boost-pfs-filter-refine-by-wrapper .boost-pfs-filter-refine-by {
+    padding: 15px;
+    padding-top: 0;
+}
