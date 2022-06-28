@@ -90,7 +90,7 @@ div#collectionbottomdescription {
 }
 
 
-.boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li a, .boost-pfs-filter-bottom-pagination-default>ul>li span {
+.boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li a, .boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li span {
     display: block;
     margin: 0;
     border: 1px solid #d7d7d7;
