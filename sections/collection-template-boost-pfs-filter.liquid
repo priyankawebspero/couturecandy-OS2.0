@@ -421,9 +421,9 @@ window.criteo_q.push(
       {%- include 'BreadcrumbMenu', page_handle:collection.handle -%}
 		{%- if switch_layout_filter != 'switch_layout_filter_horizontal' -%}
       <div class="boost-pfs-filter-left-col">
+        <span>FILTERS</span>
         <div class="boost-pfs-filter-left-col-inner">
-          <div class="boost-pfs-filter-tree boost-pfs-filter-tree-v" data-is-desktop id="boost-pfs-filter-tree2">
-            <span>FILTERS</span>
+          <div class="boost-pfs-filter-tree boost-pfs-filter-tree-v" data-is-desktop id="boost-pfs-filter-tree2">            
             {%- unless enable_filter_tree_button_desktop -%}
               {% render 'boost-pfs-filter-skeleton', type: 'filter-tree' %}
             {%- endunless -%}
