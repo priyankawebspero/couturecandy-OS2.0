@@ -493,3 +493,10 @@ background:none !important;}
     font-size: 14px;
     color: #585858;
 }
+
+.boost-pfs-filter-right-col .boost-pfs-section-header .boost-pfs-filter-bottom-pagination li .boost-pfs-filter-pagination-active {
+    color: #000;
+    font-weight: normal !important;
+    text-shadow: none;
+    text-decoration: underline;
+}
