@@ -487,6 +487,7 @@ background:none !important;}
 .boost-pfs-filter-right-col .boost-pfs-section-header .boost-pfs-filter-bottom-pagination li {
     width: auto;
     height: auto;
+    line-height: normal;
 }
 
 .boost-pfs-filter-right-col .boost-pfs-section-header .boost-pfs-filter-bottom-pagination li * {
