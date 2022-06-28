@@ -139,10 +139,10 @@ setTimeout(function(){
 
     $('#collectionbottomdescription').each(function() {
         var content1 = $(this).html();
-        if(content.length > showChar1) {
-            var c1 = content.substr(0, showChar1);
-            var h1 = content.substr(showChar1, content.length - showChar1);
-            var html1 = c + '<div class="morecontent" style="display: none;">' + h1 + '</div>&nbsp;&nbsp;<a href="" class="morelink">' + moretext1 + '</a>';
+        if(content1.length > showChar1) {
+            var c1 = content1.substr(0, showChar1);
+            var h1 = content1.substr(showChar1, content1.length - showChar1);
+            var html1 = c1 + '<div class="morecontent" style="display: none;">' + h1 + '</div>&nbsp;&nbsp;<a href="" class="morelink">' + moretext1 + '</a>';
             $(this).html(html1);
         }
 

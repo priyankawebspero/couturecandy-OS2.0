@@ -34,6 +34,15 @@
     margin: 0 auto 25px auto;
 }
 
+#collectionbottomdescription .morecontent h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+#collectionbottomdescription .morecontent h2:before {
+   display: none;
+}
+
 
 div#collectionbottomdescription {
     color: #000000;
