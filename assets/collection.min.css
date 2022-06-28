@@ -179,3 +179,24 @@ background:#fff;}
 .boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li:first-child a svg path {
     fill: #fff !important;
 }
+
+.boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li:last-child{
+opacity:1 !important;border:none !important;
+background:none !important;}
+
+.boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li:last-child span {
+    background: #bebebe;
+    opacity: 1 !important;
+    border-radius: 0;
+    border-color: #bebebe;
+}
+
+.boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li:last-child span:before {
+     content: "NEXT";
+    margin-right: 10px;
+}
+
+.boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li:last-child span svg path {
+    fill: #fff !important;
+    opacity: 1;
+}
