@@ -158,6 +158,9 @@ background:#fff;}
     fill: #fff !important;
 }
 
+.boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default {
+    margin: 50px 0 30px;
+}
 
 .boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li:first-child a {
     background: #e94949;
