@@ -335,3 +335,9 @@ background:none !important;}
     font-size: 15px;
     margin-bottom: 12px;
 }
+
+.boost-pfs-filter-left-col .boost-pfs-filter-option {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-color: #b4b4b4;
+}
