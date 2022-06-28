@@ -218,7 +218,7 @@
       },
       "items_with_count": {
         "one": "{{ count }} product",
-        "other": "{{ count }} products"
+        "other": "{{ count }}"
       }
     },
     "sorting": {
