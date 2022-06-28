@@ -395,3 +395,7 @@ background:none !important;}
 .breadcrumbs {
     padding-bottom: 7px;
 }
+
+.boost-pfs-filter-default-toolbar {
+    margin-bottom: 0;
+}
