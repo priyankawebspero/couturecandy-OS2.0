@@ -248,3 +248,11 @@ background:none !important;}
     color: #000;
     text-transform: uppercase;
 }
+
+.boost-pfs-filter-products {
+    margin: 0 -15px;
+}
+
+.boost-pfs-filter-products .boost-pfs-filter-product-item {
+    padding: 0 15px;
+}
