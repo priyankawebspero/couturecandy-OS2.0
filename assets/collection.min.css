@@ -114,6 +114,7 @@ background:#fff;}
 .boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li:first-child {
     border: none;
     opacity: 1;
+  background: none !important;
 }
 
 .boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li:first-child span {
@@ -139,6 +140,7 @@ background:#fff;}
 .boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li:last-child {
     border: none;
     border-radius: 0 !important;
+  background: none !important;
 }
 
 .boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li:last-child a {
