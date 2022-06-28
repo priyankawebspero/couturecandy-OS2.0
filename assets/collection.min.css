@@ -459,6 +459,10 @@ background:none !important;}
     /* transform-origin: left bottom; */
 }
 
+.boost-pfs-filter-wrapper.boost-pfs-filter-tree-h-sticky-filter .boost-pfs-container-default-fullwidth {
+    margin-top: 20px;
+}
+
 .boost-pfs-filter-default-toolbar {
     border: none;
 }
