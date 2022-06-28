@@ -34,6 +34,15 @@
     margin: 0 auto 25px auto;
 }
 
+
+div#collectionbottomdescription {
+    color: #000000;
+    line-height: 2;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+}
+
 #collectionbottomdescription a.morelink {
     display: block;
     width: 100%;
