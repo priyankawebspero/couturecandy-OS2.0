@@ -396,6 +396,20 @@ background:none !important;}
     padding-bottom: 7px;
 }
 
+/*------sticky-filter----------*/
+
 .boost-pfs-filter-default-toolbar {
     margin-bottom: 0;
+}
+
+
+.boost-pfs-filter-default-toolbar .boost-pfs-filter-tree-desktop-button {
+    position: fixed;
+    left: 0;
+    /* transform: rotate(90deg); */
+    z-index: 9;
+    top: 150px;
+    background: #fff;
+    margin: 0;
+    line-height: normal;
 }
