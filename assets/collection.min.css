@@ -562,3 +562,10 @@ background:none !important;}
 .boost-pfs-filter-right-col {
     margin-top: -30px;
 }
+
+.breadcrumbs {
+    float: left;
+    margin-top: 10px;
+    position: relative;
+    z-index: 9;
+}
