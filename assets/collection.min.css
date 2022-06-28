@@ -43,6 +43,9 @@
    display: none;
 }
 
+div#collectionbottomdescription .morecontent.showed {
+    display: block !important;
+}
 
 div#collectionbottomdescription {
     color: #000000;
