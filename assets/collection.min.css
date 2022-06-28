@@ -413,3 +413,20 @@ background:none !important;}
     margin: 0;
     line-height: normal;
 }
+
+.boost-pfs-filter-default-toolbar .boost-pfs-filter-tree-desktop-button>button {
+    font-size: 0;
+    position: relative;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform-origin: left bottom;
+    float: left;
+    border-radius: 7px 7px 0 0!important;
+    padding-left: 0;
+    min-height: 45px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #e94949;
+    padding: 18px 30px 12px 30px;
+}
