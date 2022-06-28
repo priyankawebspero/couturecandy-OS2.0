@@ -325,3 +325,13 @@ background:none !important;}
 .boost-pfs-filter-left-col {
     border: 1px solid #b4b4b4;
 }
+
+.boost-pfs-filter-left-col>span {
+    background: #000;
+    display: block;
+    padding: 15px;
+    color: #fff;
+    padding: 18px 20px;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
