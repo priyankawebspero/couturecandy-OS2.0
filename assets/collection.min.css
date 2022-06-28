@@ -340,6 +340,8 @@ background:none !important;}
     padding-left: 15px;
     padding-right: 15px;
     border-color: #b4b4b4;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .boost-pfs-filter-left-col .boost-pfs-filter-option .boost-pfs-filter-option-title .boost-pfs-filter-option-title-heading {
@@ -372,4 +374,8 @@ background:none !important;}
 .boost-pfs-filter-left-col .boost-pfs-filter-option .boost-pfs-filter-option-title .boost-pfs-filter-option-title-heading .boost-pfs-filter-option-title-text:before
 {
    display: none !important;
+}
+
+.boost-pfs-filter-left-col .boost-pfs-filter-option .boost-pfs-filter-option-title .boost-pfs-filter-option-title-heading {
+    outline: none !important;
 }
