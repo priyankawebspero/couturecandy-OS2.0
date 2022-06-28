@@ -435,21 +435,16 @@ window.criteo_q.push(
 		{%- if switch_layout_filter != 'switch_layout_filter_horizontal' -%}
 		  <div class="boost-pfs-filter-right-col">
             <div class="boost-pfs-section-header">
-              <h1 class="boost-pfs-filter-collection-header">
-                <span>
-                  {{ collection.title }}
-                </span>
-                <div class="boost-pfs-filter-bottom-pagination boost-pfs-filter-bottom-pagination-default">
-				{%- if paginate.pages > 1 -%}
-				{%- render 'boost-pfs-filter-pagination' -%}
-				{%- endif -%}
-			</div>
-              </h1>
               {%- if show_collection_des == true and collection.description != blank -%}
               <div class="boost-pfs-filter-collection-description rte">
                 {{ collection.description }}
               </div>
               {%- endif -%}
+            <div class="boost-pfs-filter-bottom-pagination boost-pfs-filter-bottom-pagination-default">
+				{%- if paginate.pages > 1 -%}
+				{%- render 'boost-pfs-filter-pagination' -%}
+				{%- endif -%}
+			</div>
             </div>
 		{%- endif -%}
             <div class="toolbar_count">
