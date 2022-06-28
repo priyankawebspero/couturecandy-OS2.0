@@ -241,3 +241,10 @@ background:none !important;}
     margin-left: 0px;
     text-transform: initial;
 }
+
+.toolbar_count .boost-pfs-filter-custom-sorting button {
+    padding-bottom: 0;
+    font-size: 16px;
+    color: #000;
+    text-transform: uppercase;
+}
