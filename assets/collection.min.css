@@ -16,3 +16,12 @@
 .boost-pfs-container-default-fullwidth {
     padding: 0 50px;
 }
+
+.boost-pfs-filter-bottom-pagination-default>ul>li a {
+    display: block;
+    margin: 0;
+    border: 1px solid #d7d7d7;
+    font-size: 16px;
+    padding: 0 15px;
+    background: #fafafa;
+}
