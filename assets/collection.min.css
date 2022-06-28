@@ -43,3 +43,8 @@
   border-color:#e94949;
  color:#e94949;
 background:#fff;}
+
+
+.boost-pfs-filter-bottom-pagination-default>ul>li:first-child {
+    border: none;
+}
