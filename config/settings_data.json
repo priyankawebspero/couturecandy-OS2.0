@@ -148,7 +148,7 @@
     "collection_title_color": "dark",
     "shop_sidebar": "left",
     "shop_size_sidebar": "2",
-    "products_per_page": "88",
+    "products_per_page": "16",
     "use_pagination": "gl_default",
     "view_default": "grid",
     "products_columns": "4",
