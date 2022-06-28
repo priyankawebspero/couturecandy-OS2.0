@@ -308,3 +308,11 @@ background:none !important;}
 .boost-pfs-filter-right-col {
     width: calc(100% - 294px);
 }
+
+.boost-pfs-filter-product-item-grid .boost-pfs-filter-product-bottom ul.boost-pfs-filter-item-swatch li span {
+    width: 20px;
+    height: 20px;
+    -webkit-box-shadow: 0 0 0 1px #ccc;
+    -moz-box-shadow: 0 0 0 1px #ccc;
+    box-shadow: 0 0 0 1px #ccc;
+}
