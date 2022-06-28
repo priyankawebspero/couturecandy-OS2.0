@@ -471,3 +471,15 @@ background:none !important;}
     min-height: inherit;
     border: none;
 }
+
+
+.boost-pfs-filter-right-col .boost-pfs-section-header {
+    position: relative;
+}
+
+.boost-pfs-filter-right-col .boost-pfs-section-header .boost-pfs-filter-bottom-pagination {
+    position: absolute;
+    padding-top: 0;
+    padding-bottom: 0;
+    right: 0;
+}
