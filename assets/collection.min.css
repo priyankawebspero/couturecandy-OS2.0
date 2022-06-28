@@ -568,4 +568,10 @@ background:none !important;}
     margin-top: 10px;
     position: relative;
     z-index: 9;
+    width: 100%;
+    max-width: 500px;
+}
+
+.boost-pfs-filter-left-col {
+    clear: left;
 }
