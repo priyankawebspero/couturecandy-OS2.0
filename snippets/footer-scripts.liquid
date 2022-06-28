@@ -132,18 +132,18 @@ setTimeout(function(){
   
   $(document).ready(function() {
     // Configure/customize these variables.
-    var showChar = 500;  // How many characters are shown by default
-    var ellipsestext = "...";
-    var moretext = "Show more";
-    var lesstext = "Show less";
+    var showChar1 = 500;  // How many characters are shown by default
+    var ellipsestext1 = "...";
+    var moretext1 = "Read more";
+    var lesstext1 = "Read less";
 
     $('#collectionbottomdescription').each(function() {
-        var content = $(this).html();
-        if(content.length > showChar) {
-            var c = content.substr(0, showChar);
-            var h = content.substr(showChar, content.length - showChar);
-            var html = c + '<div class="morecontent" style="display: none;">' + h + '</div>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a>';
-            $(this).html(html);
+        var content1 = $(this).html();
+        if(content.length > showChar1) {
+            var c1 = content.substr(0, showChar1);
+            var h1 = content.substr(showChar1, content.length - showChar1);
+            var html1 = c + '<div class="morecontent" style="display: none;">' + h1 + '</div>&nbsp;&nbsp;<a href="" class="morelink">' + moretext1 + '</a>';
+            $(this).html(html1);
         }
 
     });
@@ -151,10 +151,10 @@ setTimeout(function(){
     $(".morelink").click(function(){
         if($(this).hasClass("less")) {
             $(this).removeClass("less");
-            $(this).html(moretext);
+            $(this).html(moretext1);
         } else {
             $(this).addClass("less");
-            $(this).html(lesstext);
+            $(this).html(lesstext1);
         }
         $(this).prev().toggleClass('showed');
         return false;
@@ -165,8 +165,8 @@ setTimeout(function(){
     // Configure/customize these variables.
     var showChar = 700;  // How many characters are shown by default
     var ellipsestext = "...";
-    var moretext = "Show more";
-    var lesstext = "Show less";
+    var moretext = "Read more";
+    var lesstext = "Read less";
 
     $('.Block.BlockContent.banner_category_page_top').each(function() {
         var content = $(this).html();
