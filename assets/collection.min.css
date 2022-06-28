@@ -201,3 +201,17 @@ background:none !important;}
     fill: #fff !important;
     opacity: 1;
 }
+
+
+.boost-pfs-section-header .boost-pfs-filter-collection-description {
+    text-align: center;
+}
+
+.boost-pfs-section-header .boost-pfs-filter-collection-description h2.banner_category_page_top {
+    font-size: 35px;
+}
+
+.boost-pfs-section-header .boost-pfs-filter-collection-description .banner_category_page_top p {
+    font-size: 18px;
+    color: #000;
+}
