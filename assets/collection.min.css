@@ -287,3 +287,15 @@ background:none !important;}
     max-height: 50px;
     min-height: 50px;
 }
+
+.boost-pfs-filter-products .boost-pfs-filter-product-item .boost-pfs-filter-product-bottom-inner .boost-pfs-filter-product-item-price {
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 16px;
+    padding-bottom: 0;
+}
+
+.boost-pfs-filter-products .boost-pfs-filter-product-item .boost-pfs-filter-product-bottom-inner .boost-pfs-filter-product-item-price .boost-pfs-filter-product-item-sale-price {
+    padding-right: 5px;
+}
