@@ -902,6 +902,18 @@ div#shopify-section-template--14532934697043__1655293959d5ab1c6c .title:after {
 }
 
 
+@media only screen and (min-width:769px){
+  
+.footer-container .footer-column.footer-column-4 {
+    display: none;
+}
+ 
+.footer-container .footer-column h5.widget-title i {
+    display: none;
+}
+  
+}
+
 
 @media only screen and (max-width:1550px){
 
