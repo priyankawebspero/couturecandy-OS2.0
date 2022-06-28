@@ -458,3 +458,12 @@ background:none !important;}
     left: 0px;
     /* transform-origin: left bottom; */
 }
+
+.boost-pfs-filter-default-toolbar {
+    border: none;
+}
+
+.boost-pfs-filter-default-toolbar .boost-pfs-container-default-fullwidth.boost-pfs-filter-default-toolbar-inner {
+    min-height: inherit;
+    border: none;
+}
