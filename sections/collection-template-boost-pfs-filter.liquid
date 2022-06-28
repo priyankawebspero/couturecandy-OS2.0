@@ -437,6 +437,11 @@ window.criteo_q.push(
                 <span>
                   {{ collection.title }}
                 </span>
+                <div class="boost-pfs-filter-bottom-pagination boost-pfs-filter-bottom-pagination-default">
+				{%- if paginate.pages > 1 -%}
+				{%- render 'boost-pfs-filter-pagination' -%}
+				{%- endif -%}
+			</div>
               </h1>
               {%- if show_collection_des == true and collection.description != blank -%}
               <div class="boost-pfs-filter-collection-description rte">
