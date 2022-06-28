@@ -483,3 +483,13 @@ background:none !important;}
     padding-bottom: 0;
     right: 0;
 }
+
+.boost-pfs-filter-right-col .boost-pfs-section-header .boost-pfs-filter-bottom-pagination li {
+    width: auto;
+    height: auto;
+}
+
+.boost-pfs-filter-right-col .boost-pfs-section-header .boost-pfs-filter-bottom-pagination li * {
+    font-size: 14px;
+    color: #585858;
+}
