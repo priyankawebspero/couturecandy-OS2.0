@@ -1,6 +1,3 @@
-.enable-sticky-header.basel-header-overlap.basel-top-bar-on .main-header {
-    display: none;
-}
 
 .boost-pfs-filter-tree-desktop-button-sticky-wrapper .boost-pfs-filter-toolbar-count-d.boost-pfs-filter-toolbar-count-m {
     display: none;
@@ -434,4 +431,31 @@ background:none !important;}
 .boost-pfs-filter-default-toolbar .boost-pfs-filter-tree-desktop-button span.boost-pfs-filter-tree-desktop-button-label::after {
     font-size: 16px !important;
     color: #000;
+}
+
+.boost-pfs-filter-default-toolbar .boost-pfs-filter-tree-desktop-button>button svg {
+    display: none !important;
+}
+
+.boost-pfs-filter-default-toolbar .boost-pfs-filter-tree-desktop-button>button .boost-pfs-filter-tree-desktop-button-label {
+    position: relative;
+    padding-left: 37px;
+    /* transform: inherit; */
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.boost-pfs-filter-default-toolbar .boost-pfs-filter-tree-desktop-button>button .boost-pfs-filter-tree-desktop-button-label:before {
+    content: "";
+    background: url('https://cdn.shopify.com/s/files/1/0144/7018/5017/files/filter_icon_desktop.png');
+    width: 25px;
+    height: 27px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: -6px;
+    left: 0px;
+    /* transform-origin: left bottom; */
 }
