@@ -357,6 +357,14 @@ background:none !important;}
 
 .boost-pfs-filter-left-col .boost-pfs-filter-option .boost-pfs-filter-option-title .boost-pfs-filter-option-title-heading .boost-pfs-filter-option-title-text:after {
     content: "\e606";
+  display: inline-block;
+    font-size: 14px;
+    /* line-height: 42px; */
+    font-family: simple-line-icons;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: 600;
 }
 
 .boost-pfs-filter-left-col .boost-pfs-filter-option.boost-pfs-filter-option-collapsed .boost-pfs-filter-option-title .boost-pfs-filter-option-title-heading .boost-pfs-filter-option-title-text:after {
