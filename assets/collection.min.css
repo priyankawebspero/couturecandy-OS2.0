@@ -114,3 +114,23 @@ background:#fff;}
 .boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li:first-child {
     border: none;
 }
+
+.boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li:last-child {
+    border: none;
+    border-radius: 0 !important;
+}
+
+.boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li:last-child a {
+    background: #e94949;
+    border-color: #e94949;
+    color: #fff !important;
+}
+
+.boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li:last-child a:before {
+    content: "NEXT";
+    margin-right: 10px;
+}
+
+.boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li:last-child a svg path {
+    fill: #fff !important;
+}
