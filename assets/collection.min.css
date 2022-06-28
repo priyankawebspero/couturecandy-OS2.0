@@ -592,3 +592,15 @@ background:none !important;}
     padding: 15px;
     padding-top: 0;
 }
+
+.yotpo .standalone-bottomline.star-clickable, .yotpo .standalone-bottomline .star-clickable {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+a.text-m {
+    display: none !important;
+}
