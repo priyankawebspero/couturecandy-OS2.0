@@ -270,3 +270,12 @@ background:none !important;}
     position: relative;
     border: 1px solid #b4b4b4;
 }
+
+.boost-pfs-filter-products .boost-pfs-filter-product-item .boost-pfs-filter-product-bottom-inner .boost-pfs-filter-product-item-title {
+    font-family: 'google_sansregular';
+    color: #000;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
