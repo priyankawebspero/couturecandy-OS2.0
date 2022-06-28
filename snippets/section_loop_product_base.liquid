@@ -16,7 +16,7 @@
 {%- include 'check_label_gl' -%}
 {%- include 'check_color' -%}
 {%- unless collection -%}
-{%- assign collection = product.collections.last -%}
+{%- assign collection = product.collections.last | default:collections['all'] -%}
 {%- endunless -%}
 {%- if template contains 'collection' and current_tags.size > 0 and product.has_only_default_variant == false -%}
    {%- assign url_nt = current_variant.url -%}
@@ -28,22 +28,27 @@
 <div class="product-grid-item product basel-hover-base{{gl_colum_mobile}}{{ gl_colum_width }} purchasable {% if sold_out %} outofstock{%- endif -%}">
    <div class="product-element-top">
       {%- include 'product_element_image' -%}
-      {%- if settings.use_wishlist and pages['wishlist'].empty? != true -%} {%- include 'gl-wishlist-product' -%}{%- endif -%}
-
+      <div class="hover-mask">
+         <div class="basel-add-btn">{%- include 'gl_btn_add' -%}</div>
+         {%- if settings.use_quickview -%}<div class="quick-view"><a rel="nofollow" href="{{ url_nt | within: collection }}" data-get="{{ url_nt | within: collection }}{%- if url_nt_bl -%}&{%- else %}/?{%- endif -%}view=quick_view" class="open-quick-view basel-tooltip"><span class="basel-tooltip-label">{{ 'sections.basel_tooltip.quick_view' | t }}</span>{{ 'sections.basel_tooltip.quick_view' | t }}</a></div>{%- endif -%}
+         {%- if settings.use_wishlist and pages['wishlist'].empty? != true -%} {%- include 'gl-wishlist-product' -%}{%- endif -%}
+         {%- if settings.use_compare and pages['compare'].empty? != true -%}<div class="product-compare-button"><a rel="nofollow" href="#compare_popup" data-pid="{{product.handle}}_sp_{{product.id}}" class="compare button basel-tooltip" rel="nofollow"><span class="basel-tooltip-label">{{ 'sections.basel_tooltip.compare' | t }}</span>{{ 'sections.basel_tooltip.compare' | t }}</a></div>{%- endif -%}
+         <div class="clear"></div>
+      </div>
    </div>
-  <div class="product-element-bottom">
-   <h3 class="product-title"><a href="{{ url_nt }}">{{ product.vendor }}{{ product.title }}</a></h3>
-    <div class="yotpo bottomLine" data-product-id="{{ product.id }}"  data-url="{{ product.url }}"></div>          
-      <span class="price">
-       {%- if product.price_varies -%}
-		<span class="Bold-theme-hook-DO-NOT-DELETE bold_product_price" data-override-value-set="1" data-override-value="{{ product.price_max }}" style="display:none !important;"></span>{{ product.price_max | money }}
-       {%- elsif on_sale -%}<del><span class="Bold-theme-hook-DO-NOT-DELETE bold_product_compare_price" data-override-value-set="1" data-override-value="{{ current_variant.compare_at_price }}" style="display:none !important;"></span>{{ current_variant.compare_at_price  | money }}</del> <ins><span class="Bold-theme-hook-DO-NOT-DELETE bold_product_price_2" data-override-value-set="1" data-override-value="{{ current_variant.price }}" style="display:none !important;"></span>{{ current_variant.price | money }}</ins>
-       {%- else -%}
-       <span class="Bold-theme-hook-DO-NOT-DELETE bold_product_price_3" data-override-value-set="1" data-override-value="{{ current_variant.price }}" style="display:none !important;"></span>{{ current_variant.price | money }}
-       {%- endif -%}
-    </span>
-       {%- if settings.show_product_color and colour_count > 1 -%}
+   {%- if settings.show_product_color and colour_count > 1 -%}
       {%- include 'swatches_on_grid' -%}
     {%- endif -%}
-  </div>
+   <h3 class="product-title"><a href="{{ url_nt | within: collection }}">{{ product.title }}</a></h3>
+   {%- if product.vendor.size > 0 -%}{%- if settings.show_vendor -%}<div class="product-brand"><a href="{{ product.vendor | url_for_vendor }}">{{ product.vendor }}</a></div>{%- endif -%}{%- endif -%}
+   {%- if settings.show_product_rating -%}{%- include 'rating' -%}{%- endif -%}
+   <span class="price">
+       {%- if product.price_varies -%}
+       {{ product.price_min | money }} – {{ product.price_max | money }}
+       {%- elsif on_sale -%}<del>{{ current_variant.compare_at_price  | money }}</del> <ins>{{ current_variant.price | money }}</ins>
+       {%- else -%}
+       {{ current_variant.price | money }}
+       {%- endif -%}
+    </span>
+    {%- include 'basel_count_down' -%}
 </div>
