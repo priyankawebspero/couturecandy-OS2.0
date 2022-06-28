@@ -215,3 +215,22 @@ background:none !important;}
     font-size: 18px;
     color: #000;
 }
+
+.toolbar_count {
+    display: flex;
+    justify-content: space-between;
+}
+
+.toolbar_count .boost-pfs-filter-toolbar-count span.boost-pfs-filter-total-product {
+    line-height: normal;
+    display: inline;
+    /* padding-left: 5px; */
+}
+
+.toolbar_count .boost-pfs-filter-toolbar-count {
+    color: #000;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 1;
+    padding-right: 15px;
+}
