@@ -1,3 +1,7 @@
+.enable-sticky-header.basel-header-overlap.basel-top-bar-on .main-header {
+    display: none;
+}
+
 .boost-pfs-filter-tree-desktop-button-sticky-wrapper .boost-pfs-filter-toolbar-count-d.boost-pfs-filter-toolbar-count-m {
     display: none;
 }
