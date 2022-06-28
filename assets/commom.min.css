@@ -896,6 +896,10 @@ div#shopify-section-template--14532934697043__1655293959d5ab1c6c .title:after {
   animation: smoothScroll .5s forwards;
 }
 
+.product-grid-item .product-element-top>a img {
+    object-position: top;
+}
+
 @keyframes smoothScroll {
 	0% {
 		transform: translateY(-40px);
