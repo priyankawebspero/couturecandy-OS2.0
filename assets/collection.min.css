@@ -3,4 +3,7 @@
 }
 .boost-pfs-filter-tree-desktop-button-sticky-wrapper .boost-pfs-filter-toolbar-item.boost-pfs-filter-custom-sorting.boost-pfs-filter-top-sorting {
     display: none;
+}span.boost-pfs-filter-tree-desktop-button-label::after {
+    content: 'Show Filter';
+    font-size: 15px !important;
 }
