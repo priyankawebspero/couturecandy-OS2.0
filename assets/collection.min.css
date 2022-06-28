@@ -194,6 +194,7 @@ background:none !important;}
 .boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li:last-child span:before {
      content: "NEXT";
     margin-right: 10px;
+  color:#fff;
 }
 
 .boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li:last-child span svg path {
