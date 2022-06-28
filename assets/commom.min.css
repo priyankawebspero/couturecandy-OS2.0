@@ -891,6 +891,20 @@ div#shopify-section-template--14532934697043__1655293959d5ab1c6c .title:after {
     font-family: 'google_sansregular' !important;
 }
 
+.enable-sticky-header.basel-header-overlap.basel-top-bar-on .main-header.act-scroll {
+     z-index: 99999;
+  animation: smoothScroll .5s forwards;
+}
+
+@keyframes smoothScroll {
+	0% {
+		transform: translateY(-40px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
 
 @media only screen and (min-width:992px){
   
