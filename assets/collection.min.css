@@ -17,6 +17,14 @@
     padding: 0 50px;
 }
 
+.boost-pfs-filter-bottom-pagination-default>ul>li {
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    border-radius: 0%;
+    min-width: 40px;
+    width: auto;
+}
+
 .boost-pfs-filter-bottom-pagination-default>ul>li a {
     display: block;
     margin: 0;
