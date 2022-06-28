@@ -341,3 +341,10 @@ background:none !important;}
     padding-right: 15px;
     border-color: #b4b4b4;
 }
+
+.boost-pfs-filter-left-col .boost-pfs-filter-option .boost-pfs-filter-option-title .boost-pfs-filter-option-title-heading {
+    font-weight: 500;
+    font-size: 15px;
+    color: #060606;
+    width: 100%;
+}
