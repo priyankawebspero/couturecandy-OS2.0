@@ -912,6 +912,10 @@ div#shopify-section-template--14532934697043__1655293959d5ab1c6c .title:after {
     display: none !important;
 }
   
+.main-header .right-column .search-button {
+    display: none;
+}
+  
   
 }
 
