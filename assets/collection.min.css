@@ -501,3 +501,30 @@ background:none !important;}
     text-shadow: none;
     text-decoration: underline;
 }
+
+.boost-pfs-filter-right-col .boost-pfs-section-header .boost-pfs-filter-bottom-pagination>ul>li:first-child {
+    border: none;
+    line-height: normal;
+}
+
+.boost-pfs-filter-right-col .boost-pfs-section-header .boost-pfs-filter-bottom-pagination>ul>li:last-child {
+    border: none;
+    line-height: normal;
+}
+
+.boost-pfs-filter-right-col .boost-pfs-section-header .boost-pfs-filter-bottom-pagination>ul>li:first-child:before {
+    content: "";
+    content: "\e605";
+    display: inline-block;
+    font-size: 14px;
+    font-family: simple-line-icons;
+    font-weight: 600;
+}
+
+.boost-pfs-filter-right-col .boost-pfs-section-header .boost-pfs-filter-bottom-pagination>ul>li:last-child:before {
+    content: "\e606";
+    display: inline-block;
+    font-size: 14px;
+    font-family: simple-line-icons;
+    font-weight: 600;
+}
