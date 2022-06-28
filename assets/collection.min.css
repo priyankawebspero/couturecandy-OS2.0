@@ -348,3 +348,28 @@ background:none !important;}
     color: #060606;
     width: 100%;
 }
+
+.boost-pfs-filter-left-col .boost-pfs-filter-option .boost-pfs-filter-option-title .boost-pfs-filter-option-title-heading .boost-pfs-filter-option-title-text {
+    display: block;
+}
+
+.boost-pfs-filter-left-col .boost-pfs-filter-option .boost-pfs-filter-option-title .boost-pfs-filter-option-title-heading .boost-pfs-filter-option-title-text:after {
+    content: "\e604";
+    display: inline-block;
+    font-size: 14px;
+    /* line-height: 42px; */
+    font-family: simple-line-icons;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: 600;
+}
+
+.boost-pfs-filter-left-col .boost-pfs-filter-option .boost-pfs-filter-option-title .boost-pfs-filter-option-title-heading .boost-pfs-filter-option-title-text {
+    padding-right: 25px;
+}
+
+.boost-pfs-filter-left-col .boost-pfs-filter-option .boost-pfs-filter-option-title .boost-pfs-filter-option-title-heading .boost-pfs-filter-option-title-text:before
+{
+   display: none !important;
+}
