@@ -512,7 +512,7 @@ background:none !important;}
     line-height: normal;
 }
 
-.boost-pfs-filter-right-col .boost-pfs-section-header .boost-pfs-filter-bottom-pagination>ul>li:first-child:before {
+.boost-pfs-filter-right-col .boost-pfs-section-header .boost-pfs-filter-bottom-pagination>ul>li:first-child a:before {
     content: "";
     content: "\e605";
     display: inline-block;
@@ -521,10 +521,18 @@ background:none !important;}
     font-weight: 600;
 }
 
-.boost-pfs-filter-right-col .boost-pfs-section-header .boost-pfs-filter-bottom-pagination>ul>li:last-child:before {
+.boost-pfs-filter-right-col .boost-pfs-section-header .boost-pfs-filter-bottom-pagination>ul>li:last-child a:before {
     content: "\e606";
     display: inline-block;
     font-size: 14px;
     font-family: simple-line-icons;
     font-weight: 600;
+}
+
+.boost-pfs-filter-right-col .boost-pfs-section-header .boost-pfs-filter-bottom-pagination>ul>li:first-child a svg {
+    display: none;
+}
+
+.boost-pfs-filter-right-col .boost-pfs-section-header .boost-pfs-filter-bottom-pagination>ul>li:last-child a svg {
+    display: none;
 }
