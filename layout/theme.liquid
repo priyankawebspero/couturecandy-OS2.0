@@ -56,6 +56,12 @@
   
   <!--end-bc-sf-filter-css-->
   {%- include 'head-script-after-content' -%}
+
+ <!--begin-boost-pfs-filter-css-->
+   {% render 'boost-pfs-style' %}
+ <!--end-boost-pfs-filter-css-->
+
+ 
 </head>
 
 
@@ -164,6 +170,10 @@
 
  {% include 'revy-bundle-script' %}
 
+
+ <!--begin-boost-pfs-js-->
+   {% render 'boost-pfs' %}
+ <!--end-boost-pfs-js-->
 </body>
 
   {% if template != "index" %} 
