@@ -219,6 +219,8 @@ background:none !important;}
 .toolbar_count {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: center;
 }
 
 .toolbar_count .boost-pfs-filter-toolbar-count span.boost-pfs-filter-total-product {
