@@ -35,6 +35,8 @@
     padding: 0 15px;
     background: #fafafa;
     border-radius: 5px;
+  font-weight: normal !important;
+    text-shadow: none !important;
 }
 
 .boost-pfs-filter-bottom-pagination-default>ul>li .boost-pfs-filter-pagination-active{border-color:#e94949;
