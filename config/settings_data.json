@@ -151,7 +151,7 @@
     "products_per_page": "88",
     "use_pagination": "gl_default",
     "view_default": "grid",
-    "products_columns": "3",
+    "products_columns": "4",
     "products_hover": "base",
     "sale_countdown": true,
     "loop_sale_countdown": false,
