@@ -391,3 +391,7 @@ background:none !important;}
 .boost-pfs-filter-left-col .boost-pfs-filter-option .boost-pfs-filter-option-title .boost-pfs-filter-option-title-heading {
     outline: none !important;
 }
+
+.breadcrumbs {
+    padding-bottom: 7px;
+}
