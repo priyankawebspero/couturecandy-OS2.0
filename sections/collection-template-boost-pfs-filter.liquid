@@ -534,7 +534,11 @@ window.criteo_q.push(
 
 </div>
 {%- endpaginate -%}
-
+  {%- if collection.metafields.Bottomdescription.Bottomdescription != blank -%}
+  <div id="collectionbottomdescription">
+        {{ collection.metafields.Bottomdescription.Bottomdescription }}
+  </div>
+{%- endif -%}
 {%- render 'boost-pfs-theme-config',
 	layout_type: layout_type,
 	enable_filter_sticky_d: enable_filter_sticky_d,
