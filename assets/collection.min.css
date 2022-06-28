@@ -234,3 +234,10 @@ background:none !important;}
     line-height: 1;
     padding-right: 15px;
 }
+
+.toolbar_count .boost-pfs-filter-toolbar-count span.boost-pfs-filter-total-product span {
+    /* display: none; */
+    padding-left: 0;
+    margin-left: 0px;
+    text-transform: initial;
+}
