@@ -1,6 +1,10 @@
 
 .append-content-custom{display:none;}
 
+.sub-page-banner-section img {
+    width: 100%;
+}
+
 section.sub-page-banner-section .row {
     margin: 0;
 }
