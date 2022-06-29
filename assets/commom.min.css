@@ -1494,8 +1494,8 @@ footer .widget-title i {
 }
 
   .title-wrapper .title:before, .brands-banner-section .title:before {
-    width: 75px;
-    height: 3px;
+    width: 65px;
+    height: 4px;
     margin: 0 auto 15px auto;
 }
   
@@ -1505,14 +1505,14 @@ footer .widget-title i {
 }
   
 .title:before {
-    width: 75px;
-    height: 3px;
+    width: 65px;
+    height: 4px;
     margin: 0 auto 15px auto;
 }
   
 div#reviewCarouselWidget .headline:before {
-    width: 75px;
-    height: 3px;
+    width: 65px;
+    height: 4px;
     margin: 0 auto 15px auto;
 }
   
