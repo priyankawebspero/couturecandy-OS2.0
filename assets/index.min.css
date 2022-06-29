@@ -518,6 +518,32 @@ div#shopify-section-template--14532934697043__1654005036571929f8 {
 }
   
 }
+
+@media only screen and (max-width:1023px){
+  
+  
+#shopify-section-template--14532934697043__16541439641d011f7d .Wrap_button_cs {
+    padding-left: 18px;
+}
+  
+#shopify-section-template--14532934697043__16541439641d011f7d .Wrap_button_cs .content {
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+  
+#shopify-section-template--14532934697043__16541439641d011f7d .Wrap_button_cs h2 {
+    margin-bottom: 10px;
+}
+  
+#shopify-section-template--14532934697043__16541439641d011f7d .Wrap_button_cs a.category-link-button {
+    margin-top: 10px;
+    padding: 8px 13px;
+    font-size: 11px;
+}
+  
+}
+
+
 @media only screen and (max-width:991px){
  div#shopify-section-template--14532934697043__1654005036571929f8 {
     padding: 15px 20px 10px 20px;
