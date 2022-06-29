@@ -1390,6 +1390,20 @@ p.newstext {
     padding-bottom: 7px;
 }
   
+.mobile-nav-icon .basel-burger, .mobile-nav-icon .basel-burger::after, .mobile-nav-icon .basel-burger::before {
+    width: 28px;
+    height: 3px;
+    background-color: #000;
+}
+  
+.mobile-nav-icon .basel-burger::before {
+    top: -7px;
+}
+  
+.mobile-nav-icon .basel-burger::after {
+    top: 7px;
+}
+  
 }
 
 
