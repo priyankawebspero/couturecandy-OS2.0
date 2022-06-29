@@ -1417,6 +1417,20 @@ header.main-header.header-has-no-bg.header-simple.icons-design-fontawesome.color
 
 @media only screen and (max-width:767px){
   
+  #shopify-section-template--14532934697043__16541439641d011f7d .Wrap_button_cs a.category-link-button {
+    margin-top: 20px;
+    padding: 11px 22px;
+    font-size: 15px;
+}
+  
+  #shopify-section-template--14532934697043__16541439641d011f7d .Wrap_button_cs .hover-mask {
+    width: 100%;
+}
+  
+#shopify-section-template--14532934697043__16541439641d011f7d .Wrap_button_cs {
+    padding-left: 38px;
+}
+  
   div#reviewCarouselWidget .headline {
     font-size: 30px !important;
     margin-bottom: 40px !important;
