@@ -1421,6 +1421,20 @@ p.newstext {
     font-weight: 600;
 }
   
+.basel-search-dropdown .basel-search-wrapper .basel-search-inner {
+    padding: 15px 20px;
+    width: 100%;
+}
+  
+.basel-search-dropdown .basel-search-wrapper {
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 100% !important;
+    padding-top: 0;
+    max-width: 100%;
+}
+  
 }
 
 
