@@ -1385,6 +1385,14 @@ header.main-header.header-has-no-bg.header-simple.icons-design-fontawesome.color
 }
 }
 
+@media only screen and (max-width:1023px){
+  
+ .main-header .wrapp-header ul#menu-main-navigation>li>a {
+    font-size: 12px;
+}
+  
+}
+
 
 @media only screen and (max-width:767px){
   
