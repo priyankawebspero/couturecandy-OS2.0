@@ -1564,6 +1564,12 @@ footer .widget-title i {
     line-height: 22px;
 }
   
+.topbar-content.mobile .top_bar_right.col-6 .doubly-wrapper .doubly-nice-select .notranslate {
+    color: #000;
+    font-family: 'google_sansregular';
+    font-size: 15px;
+}
+  
 .topbar-content.mobile .top_bar_right.col-6 .doubly-wrapper .doubly-nice-select .flags {
     margin-top: 0 !important;
 }
