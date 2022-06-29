@@ -1372,6 +1372,7 @@ p.newstext {
 .main-header .right-column .mobile_log {
     flex: 1 1 auto;
     text-align: left;
+    margin-left: 15px;
 }
   
 .main-header .right-column {
