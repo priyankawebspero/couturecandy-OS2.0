@@ -1644,6 +1644,10 @@ footer .widget-title i {
     top: 2px;
 }
   
+.footer-column .textwidget {
+    padding-bottom: 15px;
+}
+  
 }
 
 @media only screen and (max-width:479px){
