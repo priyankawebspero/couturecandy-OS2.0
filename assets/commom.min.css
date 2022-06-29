@@ -1590,6 +1590,11 @@ footer .widget-title i {
     margin-left: 10px;
 }
   
+.topbar-content.mobile .top_bar_right.col-6 {
+    flex: 1 1 auto;
+    padding: 0 15px;
+}
+  
  .topbar-content {
     display: none;
 }
