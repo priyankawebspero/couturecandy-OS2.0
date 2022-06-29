@@ -1164,6 +1164,19 @@ p.newstext {
 }
 
 
+@media only screen and (max-width:1023px){
+  
+ .main-header .wrapp-header ul#menu-main-navigation>li>a {
+    font-size: 12px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+ 
+  
+}
+
+
+
 @media only screen and (max-width:991px){
   
   
@@ -1202,13 +1215,6 @@ p.newstext {
     z-index: 99;
 }
   
-.main-header .right-column .wishlist-info-widget {
-    display: none;
-}
-  
-  .main-header .right-column .shopping-cart {
-    display: none;
-}
   
 .mobile-nav {
     width: 92%;
@@ -1385,16 +1391,6 @@ header.main-header.header-has-no-bg.header-simple.icons-design-fontawesome.color
 }
 }
 
-@media only screen and (max-width:1023px){
-  
- .main-header .wrapp-header ul#menu-main-navigation>li>a {
-    font-size: 12px;
-    padding-left: 7px;
-    padding-right: 7px;
-}
- 
-  
-}
 
 
 @media only screen and (max-width:768px){
