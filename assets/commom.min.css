@@ -1356,6 +1356,10 @@ p.newstext {
     background-color: #fff;
 }
   
+.main-header .right-column .search-button {
+    display: inline-block !important;
+}
+  
 }
 
 
