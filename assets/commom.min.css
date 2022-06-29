@@ -1615,6 +1615,11 @@ div#reviewCarouselWidget {
     padding: 0px 15px 30px 15px;
 }
   
+  
+.footer-container .container {
+    padding: 0 15px;
+}
+  
 }
 
 @media only screen and (max-width:479px){
