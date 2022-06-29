@@ -1448,6 +1448,11 @@ footer .widget-title i {
   
 .footer-column .textwidget {
     padding-bottom: 15px;
+    padding-top: 12px;
+}
+ 
+.mc4wp-form div {
+    margin: 0;
 }
 
 }
