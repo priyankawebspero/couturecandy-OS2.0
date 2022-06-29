@@ -1604,6 +1604,13 @@ section.brands-banner-section .col-md-2.brand_block:nth-of-type(16), section.bra
     display: none;
 }
   
+a.btn {
+    font-size: 15px;
+    min-width: 145px;
+    height: 45px;
+    line-height: 45px;
+}
+  
 }
 
 @media only screen and (max-width:479px){
