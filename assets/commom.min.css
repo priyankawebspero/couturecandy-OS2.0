@@ -1577,6 +1577,7 @@ footer .widget-title i {
     border-right: 2px solid #000;
     height: 6px;
     width: 6px;
+  top: 6px;
 }
   
 .topbar-content.mobile .top_bar_right.col-6 .doubly-wrapper .doubly-nice-select .flags {
