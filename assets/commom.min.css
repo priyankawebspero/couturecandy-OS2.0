@@ -1417,6 +1417,10 @@ header.main-header.header-has-no-bg.header-simple.icons-design-fontawesome.color
 
 @media only screen and (max-width:768px){
   
+  .footer-container .widget-area {
+    padding: 40px 0 30px 0 !important;
+}
+  
   .footer-container .footer-column {
     margin-bottom: 0;
     width: 100%;
