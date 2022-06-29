@@ -1408,7 +1408,7 @@ p.newstext {
 }
   
 .main-header .right-column .search-button {
-    position: relative;
+    position: static;
     margin-top: -4px;
 }
   
