@@ -1568,6 +1568,28 @@ footer .widget-title i {
     justify-content: flex-end;
 }
   
+.topbar-content .top_bar_email a i {
+    font-size: 20px;
+    margin-right: 5px;
+    color: #000;
+}
+  
+.topbar-content .top_bar_email a {
+    color: #000;
+    font-size: 20px;
+}
+  
+.topbar-content.mobile .top_bar_left.col-6 .top_bar_text_middle {
+    color: #000;
+    font-size: 22px;
+}
+  
+.topbar-content.mobile .top_bar_left.col-6 .top_bar_text_middle a {
+    color: #000;
+    font-size: 22px;
+    margin-left: 10px;
+}
+  
  .topbar-content {
     display: none;
 }
