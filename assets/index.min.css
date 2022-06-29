@@ -599,6 +599,10 @@ div#shopify-section-template--14532934697043__1654005036571929f8 {
 
 @media only screen and (max-width:479px){
   
+  #shopify-section-template--14532934697043__16541439641d011f7d .Wrap_button_cs {
+    padding-left: 28px;
+}
+  
 #shopify-section-template--14532934697043__16541439641d011f7d .Wrap_button_cs {
     padding-left: 20px;
 }
