@@ -1570,6 +1570,10 @@ footer .widget-title i {
     font-size: 15px;
 }
   
+.topbar-content.mobile .top_bar_right.col-6 .doubly-wrapper .doubly-nice-select ul.list li {
+    font-family: 'google_sansregular' !important;
+    font-weight: normal;
+}
   
 .topbar-content.mobile .top_bar_right.col-6 .doubly-wrapper .doubly-nice-select.right:after {
     content: "";
