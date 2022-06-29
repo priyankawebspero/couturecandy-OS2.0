@@ -1554,9 +1554,17 @@ footer .widget-title i {
   
   .topbar-content.mobile {
     display: block !important;
-    background: #f00;
     display: flex !important;
     padding: 8px 0px;
+}
+  
+  
+  .topbar-wrapp {
+    background: #f00;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    padding: 0;
 }
   
   .topbar-content.mobile .top_bar_left.col-6 {
