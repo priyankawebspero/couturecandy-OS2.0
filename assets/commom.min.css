@@ -1611,6 +1611,10 @@ a.btn {
     line-height: 45px;
 }
   
+div#reviewCarouselWidget {
+    padding: 0px 15px 50px 15px;
+}
+  
 }
 
 @media only screen and (max-width:479px){
