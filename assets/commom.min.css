@@ -1551,6 +1551,22 @@ footer .widget-title i {
 
 @media only screen and (max-width:767px){
   
+.topbar-content.mobile .top_bar_right.col-6 .doubly-wrapper .doubly-nice-select {
+    float: none;
+    width: auto;
+    border: none;
+    padding-left: 0;
+    margin-right: 15px;
+    height: 22px;
+    background: no-repeat;
+    padding-top: 0 !important;
+    padding-bottom: 0;
+    line-height: 22px;
+}
+  
+.topbar-content.mobile .top_bar_right.col-6 .doubly-wrapper .doubly-nice-select .flags {
+    margin-top: 0 !important;
+}
   
   .topbar-content.mobile {
     display: block !important;
