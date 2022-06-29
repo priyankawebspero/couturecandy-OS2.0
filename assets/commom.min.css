@@ -1389,6 +1389,8 @@ header.main-header.header-has-no-bg.header-simple.icons-design-fontawesome.color
   
  .main-header .wrapp-header ul#menu-main-navigation>li>a {
     font-size: 12px;
+    padding-left: 7px;
+    padding-right: 7px;
 }
   
 }
