@@ -1592,6 +1592,18 @@ div#reviewCarouselWidget .headline {
     text-transform: uppercase;
 }
   
+section.brands-banner-section .col-md-2.brand_block:nth-of-type(9), section.brands-banner-section .col-md-2.brand_block:nth-of-type(10), 
+  section.brands-banner-section .col-md-2.brand_block:nth-of-type(11), section.brands-banner-section .col-md-2.brand_block:nth-of-type(12), 
+  section.brands-banner-section .col-md-2.brand_block:nth-of-type(13), section.brands-banner-section .col-md-2.brand_block:nth-of-type(14){
+    display: none;
+}
+  
+section.brands-banner-section .col-md-2.brand_block:nth-of-type(15), section.brands-banner-section .col-md-2.brand_block:nth-of-type(16), 
+  section.brands-banner-section .col-md-2.brand_block:nth-of-type(17), section.brands-banner-section .col-md-2.brand_block:nth-of-type(18), 
+  section.brands-banner-section .col-md-2.brand_block:nth-of-type(19), section.brands-banner-section .col-md-2.brand_block:nth-of-type(20){
+    display: none;
+}
+  
 }
 
 @media only screen and (max-width:479px){
