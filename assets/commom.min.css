@@ -1595,6 +1595,19 @@ footer .widget-title i {
     padding: 0 15px;
 }
   
+.topbar-content.mobile .top_bar_right.col-6 div#currency_switcher {
+    display: inline-block;
+}
+  
+.topbar-content.mobile .top_bar_right.col-6 .doubly-wrapper {
+    float: none;
+}
+  
+.topbar-content.mobile .top_bar_right.col-6 .doubly-wrapper .doubly-nice-select.right {
+    float: none;
+    width: auto;
+}
+  
  .topbar-content {
     display: none;
 }
