@@ -1584,6 +1584,11 @@ footer .widget-title i {
   top: 6px;
 }
   
+  .topbar-content.mobile .top_bar_right.col-6 .doubly-wrapper .doubly-nice-select.right .list {
+    left: 0;
+    right: auto;
+}
+  
 .topbar-content.mobile .top_bar_right.col-6 .doubly-wrapper .doubly-nice-select span.notranslate .flags {
     margin-top: 0 !important;
 }
