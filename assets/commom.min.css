@@ -1551,11 +1551,16 @@ footer .widget-title i {
 
 @media only screen and (max-width:767px){
   
+  
+  .topbar-content.mobile {
+    display: block !important;
+    background: #f00;
+    display: flex !important;
+    padding: 8px 15px;
+}
+  
  .topbar-content {
     display: none;
-}
-.topbar-content.mobile {
-    display: block !important;
 }
   
  #shopify-section-template--14532934697043__16541439641d011f7d .Wrap_button_cs a.category-link-button {
