@@ -1373,6 +1373,18 @@ p.newstext {
     padding-bottom: 10px;
 }
   
+.main-header .right-column .mobile_log {
+    flex: 1 1 auto;
+    text-align: left;
+}
+  
+.main-header .right-column {
+    width: 100%;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+}
+  
 }
 
 
