@@ -1407,6 +1407,20 @@ p.newstext {
     top: 7px;
 }
   
+.main-header .right-column .search-button {
+    position: relative;
+    margin-top: -4px;
+}
+  
+.main-header .right-column .search-button a>i {
+    font-family: 'simple-line-icons';
+}
+ 
+.main-header .right-column .search-button a>i:before {
+    content: "\e090";
+    font-weight: 600;
+}
+  
 }
 
 
