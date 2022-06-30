@@ -638,6 +638,14 @@ div#shopify-section-template--14532934697043__1654005036571929f8 {
     padding-bottom: 0;
 }
   
+div#shopify-section-template--14532934697043__1654005036571929f8 .featured-collection>.gl_col-md-6.gl_col-lg-6:first-child .spb_wrapper .wrapper-content-baner.gl_col-md-6.gl_col-lg-6 {
+    max-width: 225px;
+}
+  
+div#shopify-section-template--14532934697043__1654005036571929f8 .featured-collection>.gl_col-md-6.gl_col-lg-6:first-child .promo-banner .banner-inner h5 {
+    font-size: 41px;
+}
+  
 }
 
 
