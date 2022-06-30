@@ -1,0 +1,166 @@
+{% if section.blocks.size > 0 %}
+<div class="home-list-collections{% unless section.settings.display_padding %} no-padding{% endunless %}" id="list-coll-{{section.id}}">
+  <div class="container">
+    <div class="row list-collumn-2">
+      {% for block in section.blocks %}
+      {% assign collection = collections[block.settings.collection] %}
+      <div class="grid-item col-3">
+        {% capture collection_title %}{{ collection.title | escape }}{% endcapture %}
+        <div class="collection-item">
+          <div class="img-box banner-item">
+            <a href="{{ collection.url }}" title="{{ collection_title }}">
+              {% if block.settings.image != blank %}
+              {%- assign img_url = block.settings.image | img_url: 'orignal' -%}
+              <img data-src="{{ img_url }}"
+                   src="{{ img_url }}" alt="{{ block.settings.image.alt | default: shop.name }}" itemprop="logo"
+                   class="lazyautosizes lazyloaded" data-sizes="auto">
+              {% endif %}
+            </a>
+            <p class="title-collection">
+              <a href="{{ collection.url }}" title="{{ 'collections.general.link_title' | t: title: collection_title }}" {% if settings.enable_multilang %}data-translate="collections.general.link_title|title:{{collection_title}}" translate-item="title"{% endif %} style="{% if block.settings.color != blank %}color: {{ block.settings.color }};{% endif %}">
+                {% include 'multilang' with block.settings.title %}
+              </a>
+            </p>
+          </div>
+        </div>  
+      </div>
+      {% endfor %}
+    </div>
+
+    {% if section.settings.block_des != blank %}
+    <div class="row justify-content-center">
+      <div class="col-12">
+        {% if settings.enable_multilang and des contains '[lang2]' %}
+        <div class="des text-center">
+          <div class="lang1">
+            {{ section.settings.block_des }}
+          </div>
+          <div class="lang2">
+            {{ section.settings.block_des }}
+          </div>
+        </div>
+        {% else %}
+        <div class="des text-center">
+          {{ section.settings.block_des }}
+        </div>
+        {% endif %}               
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+  {% assign font_size_title =  section.settings.list_collection_title_size %}
+  {% assign margin_bottom =  section.settings.margin_bottom %}
+  .home-list-collections{display:none;}
+  @media (max-width: 767px) {
+    .home-list-collections{display:block;}
+    #list-coll-{{section.id}} {
+      margin-top: {{ section.settings.margin_bottom_mb }}px;
+      margin-bottom: {{ section.settings.margin_bottom_mb }}px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    #list-coll-{{section.id}} {
+      margin-bottom: {{ section.settings.margin_bottom_tab }}px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    #list-coll-{{section.id}} .collection-title {
+      font-size: {{ font_size_title }}px;
+    }
+  }
+
+  @media (min-width: 1200px) { 
+    #list-coll-{{section.id}} {
+      margin-bottom: {{ margin_bottom }}px;
+    }
+
+    {% if section.settings.display_absolute %}
+    #list-coll-{{section.id}} {
+      margin-top: -{{ section.settings.position_absolute }};
+    }
+    {% endif %}
+  }	
+</style>
+{% endif %}
+
+
+{% schema %}
+    {
+        "name": "Home List Collections",
+        "class": "home-list-collections-sections",
+        "max_blocks": 8,
+        "settings": [
+            {
+                "type": "checkbox",
+                "id": "display_padding",
+                "label": "Display padding between banner blocks",
+                "default": true
+            },
+            {
+                "type": "header",
+                "content": "Margin Bottom:"
+            },
+            {
+                "type": "range",
+                "id": "margin_bottom_mb",
+                "label": "Mobile",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "default": 0
+            },
+            {
+                "type": "range",
+                "id": "margin_bottom_tab",
+                "label": "Tablet",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "default": 0
+            },
+            {
+                "type": "range",
+                "id": "margin_bottom",
+                "label": "Margin Bottom",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "default": 0
+            }                 	
+        ],
+        "blocks": [
+            {
+                "type": "collection",
+                "name": "Collection",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "Image"
+                    },
+                    {
+                        "label": "Collection",
+                        "id": "collection",
+                        "type": "collection"
+                    },
+                    {
+                        "label": "Title",
+                        "id": "title",
+                        "type": "text"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "Home List Collections",
+                "category": "List Collections"             
+            }
+        ]
+    }
+{% endschema %}
