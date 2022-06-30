@@ -1223,6 +1223,10 @@ p.newstext {
     -ms-transform: translate3d(-100%,0,0);
     -sand-transform: translate3d(-100%,0,0);
     background: #fff;
+  -webkit-transition: transform .5s ease;
+    -moz-transition: transform .5s ease;
+    -o-transition: transform .5s ease;
+    transition: transform .5s ease;
 }
   
 .menu_inner_block img {
