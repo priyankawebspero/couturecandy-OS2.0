@@ -1355,7 +1355,10 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:after {
     -webkit-transform: translateX(-100%);
     transform: translate(-100%);
     overflow-x: hidden;
-    width: 337px;
+    width: -moz-calc(100vw - 40px);
+    width: -webkit-calc(100vw - 40px);
+    width: -ms-calc(100vw - 40px);
+    width: calc(100vw - 40px);
     background: #000;
     z-index: 99;
 }
