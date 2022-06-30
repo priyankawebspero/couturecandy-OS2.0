@@ -1261,6 +1261,27 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:after {
     left: 22px;
 }
   
+  .menu-mobile-nav-container .close_inner_block {
+    background: #f8f8f8;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+  
+  .menu-mobile-nav-container .close_inner_block i {
+    font-family: 'simple-line-icons';
+}
+  
+.menu-mobile-nav-container .close_inner_block i:before {
+    content: "\e605";
+}
+  
+.menu-mobile-nav-container .close_inner_block i {
+    font-family: 'simple-line-icons';
+    color: #000;
+    font-weight: 600;
+}
+  
 .mobile-nav {
     width: 100%;
     transform: translate3d(-100%,0,0);
