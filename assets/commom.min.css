@@ -1223,6 +1223,43 @@ p.newstext {
     padding: 5px;
 }
   
+  div#shopify-section-gl_mobile_menu div#close_menu_main {
+    width: 48px;
+    height: 48px;
+    line-height: 38px;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+  
+div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
+    content: "";
+    width: 2px;
+    height: 26px;
+    display: block;
+    background: #000;
+    transform: rotate(45deg);
+    transform-origin: bottom;
+    position: absolute;
+    top: 7px;
+    left: 12px;
+}
+  
+  
+div#shopify-section-gl_mobile_menu div#close_menu_main i:after {
+    content: "";
+    width: 2px;
+    height: 26px;
+    display: block;
+    background: #000;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    position: absolute;
+    top: 11px;
+    left: 22px;
+}
   
 .mobile-nav {
     width: 100%;
