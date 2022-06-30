@@ -1401,6 +1401,10 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:after {
   color: #000;
 }
   
+  .mobile-nav .searchform>div {
+    position: relative;
+}
+  
 .mobile-nav .searchform button {
     color: #fff;
     background: #000;
