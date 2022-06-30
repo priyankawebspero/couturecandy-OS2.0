@@ -1402,7 +1402,17 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:after {
 }
   
 .mobile-nav .searchform button {
-    color: #000;
+    color: #fff;
+    background: #000;
+    height: 40px;
+    top: 0;
+    right: 0;
+}
+  
+ .mobile-nav .searchform button:before {
+    line-height: 40px;
+    font-size: 18px;
+    font-family: simple-line-icons;
 }
   
 .mobile-nav .icon-sub-menu:after, .mobile-nav .icon-sub-menu:before {
@@ -1469,6 +1479,8 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:after {
     padding: 0 18px 0 15px;
     border-bottom: none !important;
 }
+  
+ 
   
   
 .enable-sticky-header.basel-header-overlap.basel-top-bar-on .main-header {
