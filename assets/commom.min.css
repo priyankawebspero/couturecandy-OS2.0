@@ -1300,6 +1300,11 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:after {
     transition: transform .5s ease;
 }
   
+  .mobile-nav ul li a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+  
 .menu_inner_block img {
     display: inline-block;
     width: 150px;
