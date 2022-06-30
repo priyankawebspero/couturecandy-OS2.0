@@ -667,6 +667,49 @@ div#shopify-section-template--14532934697043__1654005036571929f8 .featured-colle
     margin-top: 15px;
 }
   
+#shopify-section-template--14532934697043__1654005036571929f8 .spb_column.gl_column_container.gl_col-md-6.gl_col-lg-6:last-child .gl_column-inner .spb_wrapper .gl_col-md-12.gl_col-lg-12:first-child .wrapper-content-baner .banner-inner {
+    max-width: 225px;
+    margin-left: auto;
+    text-align: center;
+}
+  
+#shopify-section-template--14532934697043__1654005036571929f8 .spb_column.gl_column_container.gl_col-md-6.gl_col-lg-6:last-child .gl_column-inner .spb_wrapper .gl_col-md-12.gl_col-lg-12:first-child .wrapper-content-baner .banner-inner h5 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+  
+#shopify-section-template--14532934697043__1654005036571929f8 .spb_column.gl_column_container.gl_col-md-6.gl_col-lg-6:last-child .gl_column-inner .spb_wrapper .gl_col-md-12.gl_col-lg-12:first-child .wrapper-content-baner .banner-inner h5 + div {
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+  
+#shopify-section-template--14532934697043__1654005036571929f8 .spb_column.gl_column_container.gl_col-md-6.gl_col-lg-6:last-child .gl_column-inner .spb_wrapper .gl_col-md-12.gl_col-lg-12:first-child .wrapper-content-baner .btn {
+    width: auto;
+    min-width: inherit;
+    padding: 8px 15px;
+    font-size: 11px;
+    /* margin-top: 15px; */
+}
+  
+#shopify-section-template--14532934697043__1654005036571929f8 .spb_column.gl_column_container.gl_col-md-6.gl_col-lg-6:last-child .gl_column-inner .spb_wrapper .gl_col-md-12.gl_col-lg-12 .wrapper-content-baner .banner-inner {
+    max-width: 195px;
+}
+  
+#shopify-section-template--14532934697043__1654005036571929f8 .spb_column.gl_column_container.gl_col-md-6.gl_col-lg-6:last-child .gl_column-inner .spb_wrapper .gl_col-md-12.gl_col-lg-12 .wrapper-content-baner .banner-inner h5 + div {
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+  
+#shopify-section-template--14532934697043__1654005036571929f8 .spb_column.gl_column_container.gl_col-md-6.gl_col-lg-6:last-child .gl_column-inner .spb_wrapper .gl_col-md-12.gl_col-lg-12 .wrapper-content-baner .btn {
+    width: auto;
+    margin-top: 10px;
+    min-width: inherit;
+    padding: 8px 15px;
+    font-size: 11px;
+}
+  
 }
 
 
