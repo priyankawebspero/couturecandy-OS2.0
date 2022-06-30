@@ -1215,6 +1215,14 @@ p.newstext {
     z-index: 99;
 }
   
+  div#shopify-section-gl_mobile_menu div#close_menu_main {
+    width: 48px;
+    height: 48px;
+    line-height: 38px;
+    text-align: center;
+    padding: 5px;
+}
+  
   
 .mobile-nav {
     width: 100%;
