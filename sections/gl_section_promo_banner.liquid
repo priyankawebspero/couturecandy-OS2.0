@@ -43,7 +43,7 @@
           {%- assign button_style_color = block.settings.button_style_color -%}
           <div class="{%- if button_style_color == 'btn-style-flowers' -%}banner-1 {% endif -%}promo-banner text-{{ block.settings.banner_alignment }} vertical-alignment-{{ block.settings.banner_vertical_alignment }} banner-{{ block.settings.banner_content_style }} hover-{{ block.settings.banner_effect }} color-scheme-{{ block.settings.banner_color }} {%- if block.settings.enable_increase %} increased-padding{%- endif %}{%- if block.settings.banner_link != blank %} cursor-pointer{%- endif -%}" onclick="window.location.href='{{ block.settings.banner_link }}'"{%- if block.settings.block_margin_bottom != blank %} style="margin-bottom: {{block.settings.block_margin_bottom}}"{%- endif -%}>
              <div class="main-wrapp-img">
-                <div class="banner-image 123">
+                <div class="banner-image">
                    {%- if block.settings.image == blank -%}
                    <img class="promo-banner-image image-1" src="//cdn.shopify.com/s/files/1/1933/6253/files/portfolio-placeholder_600x400_crop_center.jpg?12790048884060573015" width="600" height="420" alt="market-banner-sport" title="market-banner-sport">                                                     
                    {%- else -%}
