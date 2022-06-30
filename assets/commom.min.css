@@ -1283,6 +1283,10 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:after {
   font-size: 14px;
 }
   
+  .mobile-nav ul li a {
+    text-transform: inherit;
+}
+  
 .mobile-nav {
     width: 100%;
     transform: translate3d(-100%,0,0);
