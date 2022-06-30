@@ -1217,7 +1217,7 @@ p.newstext {
   
   
 .mobile-nav {
-    width: 92%;
+    width: 100%;
     transform: translate3d(-100%,0,0);
     -webkit-transform: translate3d(-100%,0,0);
     -ms-transform: translate3d(-100%,0,0);
