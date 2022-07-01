@@ -474,11 +474,12 @@ html[lang="es"] #shopify-section-template--14532934697043__1654005036571929f8 .s
 }
 
 html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation>li>a {
-    font-family: 'google_sansregular';
     font-size: 14px;
-    font-weight: 500;
-    color: #000;
-    /* padding-left: 2px; */
+}
+  
+html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation li {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 }
