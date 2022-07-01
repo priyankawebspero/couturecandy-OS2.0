@@ -79,11 +79,11 @@
         {%- include 'product_breadcrumb' -%}
      </div>
   </div>
-  <div class="container"></div>
+  <div class="container-fluid"></div>
   <div id="product-{{product.id}}" class="product-nathan-{{product.id}} nathan_style_{{settings.button_art_to_cart_style}} single-product-page single-product-content {{design_products_page}}{%- if product.metafields.meta.video contains 'youtube' or product.metafields.meta.video contains 'vimeo' %} product-with-attachments{%- endif %}{%- if linklists[product.handle].links.size > 0 %} product-type-grouped{%- endif %}{%- if settings.show_grouped_variant_image and product.images.size > 1 and product.has_only_default_variant == false and not_group == false %} gl_group_variant_images{%- endif -%}">
    {%- assign product_image_zoom_size = 'master' -%}
   {%- assign product_image_scale = '1' -%}
-     <div class="{%- if design_products_page != 'product-design-sticky' -%}container{%- else -%}container-fluid{%-endif-%}">
+     <div class="container-fluid">
         <div class="row">
            <div class="product-image-summary {{class_gl}}">
               <div class="row">
