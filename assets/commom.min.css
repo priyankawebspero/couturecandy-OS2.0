@@ -940,6 +940,10 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
     text-align: center;
 }
 
+ html[lang="pt"] .main-header .wrapp-header ul#menu-main-navigation>li>a {
+    letter-spacing: 0;
+}
+
 @media only screen and (min-width:992px){
   
 .mobile_log {
