@@ -1103,6 +1103,12 @@ html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation>li>a {
     letter-spacing: 0;
 }
   
+.main-header .container .header_middle_block .search form input[type=text] {
+    padding: 10px 100px 10px 10px;
+    font-size: 14px;
+    color: #000;
+}
+  
 }
 
 
