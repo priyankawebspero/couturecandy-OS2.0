@@ -17,8 +17,8 @@
               {% endif %}
             </a>
             <p class="title-collection">
-              <a href="{{ collection.url }}" title="{{ 'collections.general.link_title' | t: title: collection_title }}" {% if settings.enable_multilang %}data-translate="collections.general.link_title|title:{{collection_title}}" translate-item="title"{% endif %} style="{% if block.settings.color != blank %}color: {{ block.settings.color }};{% endif %}">
-                {% include 'multilang' with block.settings.title %}
+              <a href="{{ collection.url }}" title="{{ 'collections.general.link_title' | t: title: collection_title }}"  style="{% if block.settings.color != blank %}color: {{ block.settings.color }};{% endif %}">
+               {{block.settings.title}}
               </a>
             </p>
           </div>
@@ -30,20 +30,9 @@
     {% if section.settings.block_des != blank %}
     <div class="row justify-content-center">
       <div class="col-12">
-        {% if settings.enable_multilang and des contains '[lang2]' %}
-        <div class="des text-center">
-          <div class="lang1">
-            {{ section.settings.block_des }}
-          </div>
-          <div class="lang2">
-            {{ section.settings.block_des }}
-          </div>
-        </div>
-        {% else %}
         <div class="des text-center">
           {{ section.settings.block_des }}
-        </div>
-        {% endif %}               
+        </div>              
       </div>
     </div>
     {% endif %}
