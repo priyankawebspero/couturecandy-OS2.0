@@ -2,6 +2,24 @@
   "sections": {
     "product-main": {
       "type": "product-main",
+      "blocks": {
+        "719ed6ac-975a-4123-8dfa-675d70cefc57": {
+          "type": "description",
+          "settings": {
+            "title": "Description"
+          }
+        },
+        "ad14a8cc-9be8-47a1-822c-0923c34bff78": {
+          "type": "additional",
+          "settings": {
+            "title": "Size Guide"
+          }
+        }
+      },
+      "block_order": [
+        "719ed6ac-975a-4123-8dfa-675d70cefc57",
+        "ad14a8cc-9be8-47a1-822c-0923c34bff78"
+      ],
       "settings": {
       }
     },
