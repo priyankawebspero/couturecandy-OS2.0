@@ -943,6 +943,15 @@ div#shopify-section-template--14532934697043__1655293959d5ab1c6c .title:after {
     display: none;
 }
   
+html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation>li>a {
+    font-size: 14px;
+}
+  
+html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+  
   
 }
 
@@ -966,6 +975,11 @@ div#shopify-section-template--14532934697043__1655293959d5ab1c6c .title:after {
     /* display: block; */
     padding: 0 30px;
 }
+  
+html[lang="es"] .main-header .wrapp-header {
+    padding: 0 15px;
+}
+ 
   
 .spb__column.gl_column_container.gl_col-sm-12>.gl_column-inner {
     padding-left: 30px;
