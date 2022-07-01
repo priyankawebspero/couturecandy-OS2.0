@@ -1597,6 +1597,10 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     font-size: 16px;
     font-weight: 500;
 }
+  
+.main-header .wrapp-header {
+    border-top: none !important;
+}
 
   
 }
