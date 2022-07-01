@@ -916,4 +916,12 @@ div#shopify-block-a41a6449-6d18-49a8-8ff1-11479d23387a a.btn {
     max-width: 175px;
 }
   
+html[lang="es"] #shopify-section-template--14532934697043__1654005036571929f8 .spb_column.gl_column_container.gl_col-md-6.gl_col-lg-6:last-child .gl_column-inner .spb_wrapper .gl_col-md-12.gl_col-lg-12:first-child .banner-inner {
+    max-width: 153px !important;
+}
+  
+html[lang="es"] #shopify-section-template--14532934697043__1654005036571929f8 .spb_column.gl_column_container.gl_col-md-6.gl_col-lg-6:last-child .gl_column-inner .spb_wrapper .gl_col-md-12.gl_col-lg-12 .wrapper-content-baner .banner-inner {
+    max-width: 195px;
+}
+  
 }
