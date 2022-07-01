@@ -766,6 +766,44 @@ div#shopify-section-template--14532934697043__1654005036571929f8 .featured-colle
     font-size: 35px;
 }
   
+.home-list-collections .container {
+    padding: 0;
+}
+  
+ .home-list-collections .row {
+   display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: inherit;
+    flex-wrap: inherit;
+    margin-left: 5px;
+    margin-right: 5px;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    scrollbar-color: #d5ac68 #f1db9d;
+    scrollbar-width: thin;
+    -ms-overflow-style: none;
+}
+  
+.home-list-collections .row .grid-item {
+    padding: 0 5px;
+}
+  
+.home-list-collections .row .grid-item {
+    padding: 0 5px;
+}
+  
+.home-list-collections .row .grid-item .collection-item p {
+    margin-bottom: 0;
+    margin-top: 5px;
+    white-space: nowrap;
+}
+  
+.home-list-collections .row .grid-item .collection-item p a {
+    font-size: 13px;
+    color: #000;
+}
+  
 }
 
 
