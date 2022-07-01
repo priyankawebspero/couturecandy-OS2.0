@@ -1033,6 +1033,22 @@ section.brands-banner-section {
 
 }
 
+@media only screen and (max-width:1400px) and (min-width:992px){
+  
+  .main-header .container .header_middle_block .logo.col-4 {
+    -ms-flex: 0 0 0 0 33.33%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+  
+.main-header .container .header_middle_block .col-4 {
+    -ms-flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+  
+}
+
 
 @media only screen and (max-width:1275px){
   
