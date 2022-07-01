@@ -1724,6 +1724,10 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
 .topbar-wrapp {
     border-bottom: 1px solid #ccc !important;
 }
+  
+  .mobile-nav {
+    z-index: 999;
+}
 
   
 }
