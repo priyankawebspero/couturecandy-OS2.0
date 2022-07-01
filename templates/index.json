@@ -476,7 +476,7 @@
           "settings": {
             "heading_size": 20,
             "feed_width": 100,
-            "html_area": ""
+            "html_area": "<a href=\"https:\/\/www.instagram.com\/shopcouturecandy\/\" class=\"btn btn-color-primary btn-style-default btn-size-default text-center mobile\">VIEW MORE<\/a>"
           }
         }
       },
