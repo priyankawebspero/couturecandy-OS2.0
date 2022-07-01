@@ -510,6 +510,10 @@ html[lang="es"] #shopify-section-template--14532934697043__1654005036571929f8 .s
     max-width: 25vw !important;
 }
   
+html[lang="es"] .main-header .wrapp-header {
+    padding: 0 15px;
+}
+  
 }
 
 @media only screen and (max-width:1199px){
