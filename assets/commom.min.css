@@ -1057,6 +1057,8 @@ section.brands-banner-section {
     margin-left: 8px;
     margin-right: 8px;
 }
+  
+
 
 }
 
@@ -1091,6 +1093,16 @@ html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation>li>a {
  html[lang="fr"] .main-header .wrapp-header ul#menu-main-navigation>li>a {
     font-size: 14px;
     letter-spacing: 0;
+}
+  
+   html[lang="pt"] .main-header .wrapp-header {
+    /* display: block; */
+    padding: 0 15px;
+}
+  
+html[lang="pt"] .main-header .wrapp-header ul#menu-main-navigation>li>a {
+    letter-spacing: 0;
+    font-size: 14px;
 }
   
 }
