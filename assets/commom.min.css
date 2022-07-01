@@ -942,6 +942,12 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
 
  html[lang="pt"] .main-header .wrapp-header ul#menu-main-navigation>li>a {
     letter-spacing: 0;
+    font-size: 15px;
+}
+
+ html[lang="pt"] .main-header .wrapp-header ul#menu-main-navigation li {
+    margin-left: 13px;
+    margin-right: 13px;
 }
 
 @media only screen and (min-width:992px){
