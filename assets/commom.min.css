@@ -2134,6 +2134,18 @@ div#reviewCarouselWidget {
     padding-left: 28px;
 }
   
+.footer-container .footer-column.footer-column-5 h5.widget-title {
+    border: none !important;
+    padding-right: 0 !important;
+}
+  
+  .footer-container .footer-column.footer-column-5 h5.widget-title{display:none !important;}
+  
+.footer-container .footer-column.footer-column-5 .textwidget {
+    display: block !important;
+    padding-top: 0;
+}
+  
 }
 
 
