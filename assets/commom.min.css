@@ -1052,6 +1052,11 @@ section.brands-banner-section {
   .text-with-read-more section.sub-page-banner-section {
     padding: 70px 30px;
 }
+  
+   html[lang="pt"] .main-header .wrapp-header ul#menu-main-navigation li {
+    margin-left: 8px;
+    margin-right: 8px;
+}
 
 }
 
