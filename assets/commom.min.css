@@ -2363,6 +2363,10 @@ header.main-header .wg-drop.country-selector .wgcurrent a {
     right: -4px;
 }
   
+header.main-header .wg-drop.country-selector .wgcurrent a {
+    padding-right: 30px;
+}
+  
 }
 
 
