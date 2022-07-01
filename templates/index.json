@@ -82,6 +82,7 @@
           "type": "banner-1",
           "settings": {
             "image": "shopify:\/\/shop_images\/Prom-dresses_36a3e9ca-73c8-40af-a453-3a209a822459.jpg",
+            "image_mob": "shopify:\/\/shop_images\/mobile_prom_dress_pic.jpg",
             "category_heading": "Prom Dresses",
             "category_content": "Shop our latest selection",
             "banner_btn_title": "SHOP NOW",
@@ -92,11 +93,13 @@
           "type": "banner-2",
           "settings": {
             "image": "shopify:\/\/shop_images\/Occasion_196d11cc-08ca-41a0-b692-00a032c5809f.jpg",
+            "image_mob": "shopify:\/\/shop_images\/mobile-occasion-dress-pic.jpg",
             "category_heading": "Occasion",
             "category_content": "Dresses for every occasion",
             "banner_btn_title": "SHOP NOW",
             "banner_link": "#",
             "image1": "shopify:\/\/shop_images\/Cocktail-dresses.jpg",
+            "image1_mob": "shopify:\/\/shop_images\/mobile-cocktail-dress-pic.jpg",
             "category_heading1": "COCKTAIL DRESSES",
             "category_content1": "Looks that stay warm in style",
             "banner_btn_title1": "SHOP NOW",
