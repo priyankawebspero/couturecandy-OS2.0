@@ -1169,6 +1169,11 @@ p.newstext {
     padding: 0 15px;
 }
   
+.product-grid-item .product-title a {
+    max-height: 44px;
+    min-height: 44px;
+}
+  
 }
 
 @media only screen and (max-width:1199px) and (min-width:992px){
