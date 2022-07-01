@@ -829,6 +829,10 @@ div#shopify-section-template--14532934697043__1654005036571929f8 .featured-colle
     margin-right: 10vw;
 }
   
+div#shopify-section-template--14532934697043__1654005036571929f8 .banner-image img.promo-banner-image.desk {
+    display: none !important;
+}
+  
 }
 
 
