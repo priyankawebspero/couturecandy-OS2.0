@@ -1601,6 +1601,10 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
 .main-header .wrapp-header {
     border-top: none !important;
 }
+  
+.topbar-wrapp {
+    border-bottom: 1px solid #ccc !important;
+}
 
   
 }
