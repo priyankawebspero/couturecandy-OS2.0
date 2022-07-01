@@ -1323,7 +1323,10 @@ p.newstext {
     float: none;
     width: auto;
 }
-  
+ 
+.topbar-content {
+    display: none;
+}
   
 .topbar-content .socials {
     display: none;
