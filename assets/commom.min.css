@@ -1099,7 +1099,6 @@ html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation>li>a {
 }
   
 html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation>li>a {
-    font-size: 11.5px;
     letter-spacing: 0;
 }
   
@@ -1112,6 +1111,14 @@ html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation>li>a {
 html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation>li {
     margin-left: 4px;
     margin-right: 4px;
+}
+  
+}
+
+@media only screen and (max-width:1023px) and (min-width:992px){
+  
+  html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation>li>a {
+    font-size: 11.5px;
 }
   
 }
