@@ -577,12 +577,12 @@
                                     <h4 itemprop="name" class="BrandName"><a href="/collections/{{ vendortitle_handle }}">{%- if vendortitle == 'ccsale' -%} {% else %} {{ vendortitle }} {%- endif -%} </a></h4>
 
                              </div>
+                             {%- if settings.show_product_page_rating -%}
+                             <a href="#ReviewSection" class="shopify-product-rating">
+                               <div class="yotpo bottomLine" data-product-id="{{ product.id }}"  data-url="{{ product.url }}"></div>          
+                              </a>
+                             {%- endif -%}
                         </div>
-                         {%- if settings.show_product_page_rating -%}
-                          <a href="#ReviewSection" class="shopify-product-rating">
-                            <div class="yotpo bottomLine" data-product-id="{{ product.id }}"  data-url="{{ product.url }}"></div>          
-                           </a>
-                          {%- endif -%}
                           <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
                             <input type="hidden" name="Product_Price" id="tracking_price" value="{{ product.price | money_without_currency }}">
                              <p class="price" id="productPrice">
@@ -627,11 +627,6 @@
                                    
                              </p>
                              <span id="save_percentage"></span>
-                                {%- if settings.show_share_btn and design_products_page != 'product-design-alt' -%}
-                             <div class="product-share">
-                                {%- include 'social-sharing', follow_social:gl_follow_social -%}
-                             </div>
-                             {%- endif -%}
                              <div class="Value" style="color: #ff6666;font-size: 17px;font-weight: bold;margin-bottom: 15px;">
                                    {% if product.type contains 'CCSALE' or product.tags contains 'Clearance Dresses' %}                             
                                    100% Authenticity Guarantee
@@ -639,11 +634,6 @@
                                   {%- else -%}
                                   100% Authenticity Guarantee
                                    {% endif %}
-                                 {% comment %}
-                                   {% if  product.vendor == 'Jarin K Jewelry' or product.vendor == 'Dancing Queen' or product.vendor == 'May Queen' or product.vendor == 'Cinderella Divine' or product.vendor == 'Nox Anabel' or product.vendor == 'Poly USA' or product.vendor == 'Lenovia' or product.vendor == 'Eureka Fashion' or product.vendor == 'Eureka Fashion Bridal' or product.vendor == 'Adrianna Papell' %}
-                                       <span style="display: inline-block;color:black;font-size: 13px;margin: 10px 10px 0px 0;"> Enjoy additional 5% off use code: </span><span style="font-size: 13px;">LOVE5</span>
-                                   {% endif %}
-                                 {% endcomment %} 
                                   {% if  product.vendor == 'Montce Swim' %}
                                        <span style="color: #ff6666;display:block;font-size: 16px;margin: 10px 0px 0px;font-weight: bold;margin-bottom: 15px;">Use Code MONTCE5 for 5% OFF</span>
                                   {% elsif product.vendor == 'Voda Swim' %}
@@ -662,7 +652,11 @@
                                   {% elsif product.vendor == 'Logan Hollowell' %}
                                       <span style="color: #ff6666;font-size: 16px;display:block;margin: 10px 0px 0px;font-weight: bold;margin-bottom: 15px;">Use Code LH5 for 5% OFF</span>
                                   {%- endif -%}
-                               
+                                  {%- if settings.show_share_btn and design_products_page != 'product-design-alt' -%}
+                                  <div class="product-share">
+                                     {%- include 'social-sharing', follow_social:gl_follow_social -%}
+                                  </div>
+                                  {%- endif -%}
                           </div>
                             <p style="font-size: 13px;"><strong>FREE SHIPPING ON US ORDERS OVER $250!</strong></p>
                            
@@ -886,48 +880,7 @@
                               <span style="color: #f85364;font-weight: bold;text-transform: uppercase;display: block;margin-bottom: 10px;">This Bridesmaid Dress Ships within 48 hours</span>
                              {%- endif -%}
                              
-                             <div class="Info" id="ProdDetailInfomobile">
-                                    <div class="Details shipping">
-                                            <div class="Image">
-                                                <div class="image shipping_image"></div>
-                                                <span>Free Shipping</span>
-                                            </div>
-                                            <div class="Cnt">
-                                                <span>Free shipping for orders over $250</span><br>
-                                                <a href="https://www.couturecandy.com/shipping-returns-exchanges/" target="_blank">See Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                                            </div>
-                                       </div>
-                                       <div class="Details Exchange">
-                                        <div class="Image">
-                                                <div class="image exchange_image"></div>
-                                                <span>Exchanges &amp; Returns</span>
-                                            </div>
-                                            <div class="Cnt">
-                                                <span>Easy returns &amp; exchanges within 5 days on eligible items</span>
-                                                <a href="https://www.couturecandy.com/shipping-returns-exchanges/" target="_blank">See Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                                            </div>
-                                       </div>
-                                       <div class="Details Price-match">
-                                            <div class="Image">
-                                               <div class="image price_image"></div>
-                                                <span>Price Match</span>
-                                            </div>
-                                            <div class="Cnt">
-                                                <span>Find a lower price? We'll match it. Exclusions may apply.</span>
-                                                <a href="https://www.couturecandy.com/shipping-returns-exchanges/" target="_blank">See Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                                            </div>
-                                       </div>
-                                       <div class="Details No Tax">
-                                            <div class="Image">
-                                               <div class="image no_tax_image"></div>
-                                                <span>No Tax</span>
-                                            </div>
-                                            <div class="Cnt">
-                                                <span>No Sales Tax if shipped outside Nevada. Save 10%.</span>
-                                                <a href="https://www.couturecandy.com/shipping-returns-exchanges/" target="_blank">See Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                                            </div> 
-                                     </div>                                                                           
-                                  </div><!--ProdDetailInfo Mobile main-->
+                  
                               {%- if product.variants.size == 1 -%}<div class="clear"></div>{%- endif -%}
                              {%- if product.variants.size > 1 and settings.product_img_trust_seal == false -%}<div class="clear"></div>{%- endif -%}
                              {%- if settings.use_compare or settings.size_chart  -%}
