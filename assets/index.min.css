@@ -815,6 +815,11 @@ div#shopify-section-template--14532934697043__1654005036571929f8 .featured-colle
     background: #f1f1f1;
 }
   
+header.main-header{
+    padding-top: 0;
+    box-shadow: 0 8px 10px rgba(0,0,0,0.15);
+}
+  
 }
 
 
