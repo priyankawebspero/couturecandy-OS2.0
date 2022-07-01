@@ -931,7 +931,10 @@ div#shopify-section-template--14532934697043__1655293959d5ab1c6c .title:after {
     color: #f13b4d;
 }
 
-
+header.main-header .wg-drop.country-selector .wgcurrent a {
+    position: relative;
+    z-index: 1;
+}
 
 @media only screen and (min-width:992px){
   
