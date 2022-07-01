@@ -1195,6 +1195,11 @@ html[lang="fr"] .main-header .wrapp-header ul#menu-main-navigation>li>a {
     padding-right: 6px;
 }
   
+html[lang="pt"] .main-header .wrapp-header ul#menu-main-navigation li {
+    margin-left: 4px;
+    margin-right: 3px;
+}
+  
 }
 
 
