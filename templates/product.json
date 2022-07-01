@@ -25,11 +25,13 @@
     },
     "product_360_section": {
       "type": "product_360_section",
+      "disabled": true,
       "settings": {
       }
     },
     "gl-product-page-description": {
       "type": "gl-product-page-description",
+      "disabled": true,
       "settings": {
       }
     }
