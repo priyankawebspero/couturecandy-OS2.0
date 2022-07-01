@@ -1047,6 +1047,10 @@ section.brands-banner-section {
     max-width: 33.33%;
 }
   
+.main-header .container .header_middle_block .search form {
+    max-width: 362px;
+}
+  
 }
 
 
