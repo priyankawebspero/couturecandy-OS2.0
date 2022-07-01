@@ -11,9 +11,13 @@
                    <img class="promo-banner-image image-1" src="//cdn.shopify.com/s/files/1/1933/6253/files/portfolio-placeholder_600x400_crop_center.jpg?12790048884060573015" width="600" height="420" alt="market-banner-sport" title="market-banner-sport">                                                     
                    {%- else -%}
                    {%- assign image = block.settings.image -%}
+                  {%- assign img_mobile = block.settings.image_mob -%}
                    {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                               <img src="{{ image | img_url: '50x50' }}" data-src="{{ img_url }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 promo-banner-image image-1" alt="{{image.alt}}" >
-                               <div class="jas-wrap-lazy"></div>
+                  {%- assign img_url_mobile = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                  
+                   <img src="{{ image | img_url: '50x50' }}" data-src="{{ img_url }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 promo-banner-image image-1" alt="{{image.alt}}" >
+                   <img src="{{ img_mobile | img_url: '50x50' }}" data-src="{{ img_url_mobile }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ img_mobile.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 promo-banner-image image-1" alt="{{img_mobile.alt}}" >
+                  <div class="jas-wrap-lazy"></div>
                   {%- endif -%}
                 </div>
              </div>
@@ -44,13 +48,17 @@
            <div class="main-wrapp-img gl_col-md-6 gl_col-lg-6">
               <div class="banner-image">
                  {%- if block.settings.image == blank -%}
-                 <img class="promo-banner-image image-1" src="//cdn.shopify.com/s/files/1/1933/6253/files/portfolio-placeholder_600x400_crop_center.jpg?12790048884060573015" width="600" height="420" alt="market-banner-sport" title="market-banner-sport">                                                     
-                 {%- else -%}
-                 {%- assign image = block.settings.image -%}
-                 {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                             <img src="{{ image | img_url: '50x50' }}" data-src="{{ img_url }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 promo-banner-image image-1" alt="{{image.alt}}" >
-                             <div class="jas-wrap-lazy"></div>
-                {%- endif -%}
+                   <img class="promo-banner-image image-1" src="//cdn.shopify.com/s/files/1/1933/6253/files/portfolio-placeholder_600x400_crop_center.jpg?12790048884060573015" width="600" height="420" alt="market-banner-sport" title="market-banner-sport">                                                     
+                   {%- else -%}
+                   {%- assign image = block.settings.image -%}
+                  {%- assign img_mobile = block.settings.image_mob -%}
+                   {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                  {%- assign img_url_mobile = img_mobile | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                
+                   <img src="{{ image | img_url: '50x50' }}" data-src="{{ img_url }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 promo-banner-image image-1" alt="{{image.alt}}" >
+                   <img src="{{ img_mobile | img_url: '50x50' }}" data-src="{{ img_url_mobile }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ img_mobile.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 promo-banner-image image-1" alt="{{img_mobile.alt}}" >
+                  <div class="jas-wrap-lazy"></div>
+                  {%- endif -%}
               </div>
            </div>
            <div class="wrapper-content-baner gl_col-md-6 gl_col-lg-6">
@@ -76,9 +84,13 @@
                 <img class="promo-banner-image image-1" src="//cdn.shopify.com/s/files/1/1933/6253/files/portfolio-placeholder_600x400_crop_center.jpg?12790048884060573015" width="600" height="420" alt="market-banner-sport" title="market-banner-sport">                                                     
                 {%- else -%}
                 {%- assign image = block.settings.image1 -%}
+               {%- assign image_mob = block.settings.image1_mob -%}
                 {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+               {%- assign img_url_mobile = image_mob | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                             <img src="{{ image | img_url: '50x50' }}" data-src="{{ img_url }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 promo-banner-image image-1" alt="{{image.alt}}" >
-                            <div class="jas-wrap-lazy"></div>
+                            <img src="{{ image_mob | img_url: '50x50' }}" data-src="{{ img_url_mobile }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image_mob.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 promo-banner-image image-1" alt="{{image_mob.alt}}" >
+             
+               <div class="jas-wrap-lazy"></div>
                {%- endif -%}
              </div>
           </div>
@@ -105,9 +117,14 @@
                 <img class="promo-banner-image image-1" src="//cdn.shopify.com/s/files/1/1933/6253/files/portfolio-placeholder_600x400_crop_center.jpg?12790048884060573015" width="600" height="420" alt="market-banner-sport" title="market-banner-sport">                                                     
                 {%- else -%}
                 {%- assign image = block.settings.image2 -%}
+               {%- assign image_mob = block.settings.image2_mob -%}
                 {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                {%- assign img_url_mob = image_mob | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+               
                             <img src="{{ image | img_url: '50x50' }}" data-src="{{ img_url }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 promo-banner-image image-1" alt="{{image.alt}}" >
-                            <div class="jas-wrap-lazy"></div>
+                            <img src="{{ image_mob | img_url: '50x50' }}" data-src="{{ img_url_mob }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image_mob.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 promo-banner-image image-1" alt="{{image_mob.alt}}" >
+   
+                         <div class="jas-wrap-lazy"></div>
                {%- endif -%}
              </div>
           </div>
