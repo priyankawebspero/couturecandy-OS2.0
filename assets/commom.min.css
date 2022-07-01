@@ -1745,6 +1745,16 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
 .main-header .container .header_middle_block .col-4.search {
     display: none;
 }
+  
+.main-header .container .header_middle_block .col-4 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: absolute;
+    top: -40px;
+    padding-left: 0;
+    width: 50%;
+}
 
   
 }
