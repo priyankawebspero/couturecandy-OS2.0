@@ -1146,6 +1146,18 @@ html[lang="fr"] .main-header .wrapp-header ul#menu-main-navigation>li>a {
     padding-right: 7px;
 }
   
+html[lang="pt"] .main-header .wrapp-header ul#menu-main-navigation>li>a {
+    letter-spacing: 0;
+    font-size: 12px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+  
+html[lang="pt"] .main-header .wrapp-header ul#menu-main-navigation li {
+    margin-left: 5px;
+    margin-right: 4px;
+}
+  
 }
 
 
