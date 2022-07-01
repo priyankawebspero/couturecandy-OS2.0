@@ -2139,7 +2139,7 @@ div#reviewCarouselWidget {
     padding-right: 0 !important;
 }
   
-  .footer-container .footer-column.footer-column-5 .widget-title{display:none !important;}
+  .footer-container .footer-column.footer-column-5 .widget-title i{display:none !important;}
   
 .footer-container .footer-column.footer-column-5 .textwidget {
     display: block !important;
