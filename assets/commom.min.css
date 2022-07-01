@@ -1729,19 +1729,7 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
 }
 
 
-@media only screen and (max-width:991px) and (min-width:575px){
-  
-.right-column .header-links {
-    margin-left: 25px;
-    margin-right: 20px;
-}
-  
-.right-column .wishlist-info-widget {
-    margin-left: 5px;
-    margin-right: 20px;
-}
-  
-}
+
 
 
 @media only screen and (max-width:768px){
@@ -2140,6 +2128,21 @@ div#reviewCarouselWidget {
   
 #shopify-section-template--14532934697043__16541439641d011f7d .Wrap_button_cs {
     padding-left: 28px;
+}
+  
+}
+
+
+@media only screen and (max-width:991px) and (min-width:575px){
+  
+.right-column .header-links {
+    margin-left: 25px;
+    margin-right: 20px;
+}
+  
+.right-column .wishlist-info-widget {
+    margin-left: 5px;
+    margin-right: 20px;
 }
   
 }
