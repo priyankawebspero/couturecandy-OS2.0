@@ -2137,6 +2137,7 @@ div#reviewCarouselWidget {
 .footer-container .footer-column.footer-column-5 .widget-title {
     border: none !important;
     padding-right: 0 !important;
+    margin-bottom: 0;
 }
   
   .footer-container .footer-column.footer-column-5 .widget-title i{display:none !important;}
@@ -2144,6 +2145,10 @@ div#reviewCarouselWidget {
 .footer-container .footer-column.footer-column-5 .textwidget {
     display: block !important;
     padding-top: 0;
+}
+  
+.footer-container .footer-column.footer-column-5 {
+    padding-top: 30px;
 }
   
 }
