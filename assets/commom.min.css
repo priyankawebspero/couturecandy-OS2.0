@@ -1092,6 +1092,20 @@ html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation>li>a {
 }
 
 
+@media only screen and (max-width:1099px) and (min-width:992px){
+  
+.main-header .right-column {
+    padding-left: 7px;
+}
+  
+html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation>li>a {
+    font-size: 12px;
+    letter-spacing: 0;
+}
+  
+}
+
+
 @media only screen and (max-width:1275px){
   
   .top_bar_text_middle {
