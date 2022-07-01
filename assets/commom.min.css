@@ -1063,6 +1063,16 @@ section.brands-banner-section {
     max-width: 362px;
 }
   
+html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation>li {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+  
+html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation>li>a {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+  
 }
 
 
