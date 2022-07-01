@@ -571,6 +571,9 @@ div#shopify-section-template--14532934697043__1654005036571929f8 {
 
 @media only screen and (max-width:767px){
   
+  #shopify-section-template--14532934697043__16539111747fa4ce03 img.banner-image.desktop-xs {
+    display: none;
+}
   
   #shopify-section-template--14532934697043__16541439641d011f7d .col-xs-6.col-sm-4.col-md-4 {
     width: 100%;
