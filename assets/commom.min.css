@@ -2201,6 +2201,18 @@ div#reviewCarouselWidget {
     width: calc(100vw - 40px);
 }
   
+header.main-header .wg-drop.country-selector .wgcurrent a {
+    padding-left: 5px;
+}
+  
+.main-header .container .header_middle_block .switchers div#currency_switcher .doubly-nice-select.right {
+    margin-right: 10px;
+}
+  
+.main-header .container .header_middle_block .switchers div#currency_switcher .doubly-nice-select.right:before {
+    right: -4px;
+}
+  
 }
 
 
