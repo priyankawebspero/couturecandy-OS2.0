@@ -785,6 +785,11 @@ div#shopify-section-template--14532934697043__1654005036571929f8 .featured-colle
     -ms-overflow-style: none;
 }
   
+  .home-list-collections .row::-webkit-scrollbar{height:5px}
+.home-list-collections .row::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 0px rgba(0,0,0,0)}
+.home-list-collections .row::-webkit-scrollbar-thumb{height:5px;background-color:#fff}
+.home-list-collections .row::-webkit-scrollbar:vertical{display:none}
+  
 .home-list-collections .row .grid-item {
     padding: 0 10px;
 }
