@@ -1328,6 +1328,10 @@ p.newstext {
     display: none;
 }
   
+.right-column .header-links {
+    display: inline-block !important;
+}
+  
 .topbar-content .socials {
     display: none;
 }
