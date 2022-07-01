@@ -1094,6 +1094,13 @@ html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation>li>a {
     font-size: 12px;
 }
   
+html[lang="fr"] .main-header .wrapp-header ul#menu-main-navigation>li>a {
+    font-size: 13px;
+    letter-spacing: 0;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+  
 }
 
 
