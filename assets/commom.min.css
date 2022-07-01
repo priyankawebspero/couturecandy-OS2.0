@@ -1732,6 +1732,19 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
   .mobile-nav {
     z-index: 999;
 }
+  
+.main-header .container .header_middle_block {
+    display: block;
+    padding-bottom: 0;
+} 
+  
+.main-header .container .header_middle_block .logo.col-4 {
+    display: none;
+}
+  
+.main-header .container .header_middle_block .col-4.search {
+    display: none;
+}
 
   
 }
