@@ -801,6 +801,10 @@ div#shopify-section-template--14532934697043__1654005036571929f8 .featured-colle
   text-align:center;
 }
   
+  .home-list-collections .row .grid-item .collection-item {
+    width: 70px;
+}
+  
 .home-list-collections .row .grid-item .collection-item p a {
     font-size: 13px;
     color: #000;
