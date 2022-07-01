@@ -494,6 +494,11 @@ html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation li {
 div#shopify-section-template--14532934697043__1654005036571929f8 {
     padding: 70px 20px 20px 20px;
 }
+  
+div#shopify-section-template--14532934697043__1654005036571929f8 .promo-banner .banner-inner .btn {
+    font-size: 14px;
+    padding: 10px 15px;
+}
 
   
 }
