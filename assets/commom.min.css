@@ -1729,6 +1729,16 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
 }
 
 
+@media only screen and (max-width:991px) and (min-width:768px){
+  
+.right-column .header-links {
+    margin-left: 25px;
+    margin-right: 20px;
+}
+  
+}
+
+
 @media only screen and (max-width:768px){
   
   .header_middle_block {
