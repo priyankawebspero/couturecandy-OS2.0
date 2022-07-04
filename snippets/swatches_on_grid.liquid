@@ -38,7 +38,7 @@
       {%- for variant in product.variants -%}
       {%- assign option_value = variant.options[option_index] -%}
       {%- unless displayed_option_values contains option_value -%}
-      {{displayed_option_values}}
+      {%if forloop.last %}{{displayed_option_values}}{%endif%}
         {%- unless variant.featured_image.src == blank -%}
         {%- assign image = variant.featured_image -%}
         {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_540x.' -%}
