@@ -1101,6 +1101,7 @@ section.brands-banner-section {
   
 .main-header .container .header_middle_block .search form {
     max-width: 362px;
+    margin-left: auto;
 }
   
 html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation>li {
