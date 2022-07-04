@@ -950,7 +950,17 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
     margin-right: 13px;
 }
 
+ html[lang="ga"] .main-header .container .header_middle_block .search form button#searchsubmit:after {
+    content: "\e090";
+    display: inline-block !important;
+    line-height: 30px;
+    font-size: 18px;
+    font-family: simple-line-icons;
+}
 
+ html[lang="ga"] .main-header .container .header_middle_block .search form button#searchsubmit {
+    font-size: 0;
+}
 
 
 @media only screen and (min-width:768px){
