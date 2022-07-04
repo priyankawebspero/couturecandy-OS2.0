@@ -52,6 +52,9 @@
             {%- assign displayed_option_values = displayed_option_values | split: ',' -%}
         {%- endunless -%}
       {%- endunless -%}
+     {%- if option_index == 5-%}
+      {% unless forloop.last %}LAST<br>{% endunless %}
+     {%- endif -%}
       {%- endfor -%}
       {%- endif -%}
       {%- endfor -%}
