@@ -29,6 +29,7 @@
    </div>
 {%- else -%}
    <div class="swatches-on-grid">
+     {%- assign option_value_index = 0 | plus:1 -%}
       {%- for option in product.options -%}
       {%- assign downcased_option = option | downcase -%}
       {%- assign downcased_option_check = downcased_option | prepend: '"' | append: '"' | strip -%} 
@@ -37,7 +38,9 @@
       {%- assign displayed_option_values = '' -%}
       {%- for variant in product.variants -%}
       {%- assign option_value = variant.options[option_index] -%}
-      {%- assign option_value_index = 1 | plus:1 -%}
+     
+      {%- assign option_value_index = option_value_index | plus:1 -%}
+     
       {%- unless displayed_option_values contains option_value -%}
      {{option_value}} : {{option_value_index}}
         {%- unless variant.featured_image.src == blank -%}
