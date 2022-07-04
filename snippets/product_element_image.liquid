@@ -25,7 +25,7 @@
      {%- endif -%} 
   {%- elsif images_size > 0 -%}
      <a class="jas-product-img-element jas-pr-image-link" href="{{ url_nt }}">
-        {%- assign img_url = product.images[position_img_1] | img_url: '1x1' | replace: '_1x1.', '_660x.' -%}
+        {%- assign img_url = product.images[position_img_1] | img_url: '1x1' | replace: '_1x1.', '_540x.' -%}
         <img src="{{ product.images[position_img_1] | img_url: '50x50' }}" data-chksrc="{{ product.images[position_img_1] | img_url: '50x50' }}" data-src="{{ img_url }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ product.images[position_img_1].aspect_ratio }}" data-sizes="auto" class="lazyload attachment-shop_catalog size-shop_catalog" alt="{{product.images[position_img_1].alt}}">
         <div class="jas-wrap-lazy"></div>
         {%- include 'product_labels' -%}
