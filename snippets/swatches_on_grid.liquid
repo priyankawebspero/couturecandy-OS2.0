@@ -53,7 +53,7 @@
         {%- endunless -%}
       {%- endunless -%}
      {%- if downcased_option == 'color' or downcased_option == 'colour' or gl_color_name contains downcased_option_check -%}
-     {%- assign color_index = 0 | plus: 1 -%}    
+     {%- assign color_index = 1 | plus: 1 -%}    
        {%- if forloop.last -%}
          
        + {{color_index}}
