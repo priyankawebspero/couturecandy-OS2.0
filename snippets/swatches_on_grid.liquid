@@ -36,6 +36,7 @@
       {%- assign option_index = forloop.index0 -%}
       {%- assign displayed_option_values = '' -%}
       {%- for variant in product.variants -%}
+     {% if variant.available %}
       {%- assign option_value = variant.options[option_index] -%}
       {%- unless displayed_option_values contains option_value -%}
       {{displayed_option_values}}
@@ -53,6 +54,7 @@
             {%- assign displayed_option_values = displayed_option_values | split: ',' -%}
         {%- endunless -%}
       {%- endunless -%}
+     {%- endif -%}
       {%- endfor -%}
       {%- endif -%}
       {%- endfor -%}
