@@ -133,7 +133,7 @@
         "sale_countdown": false,
         "loop_sale_countdown": false,
         "countdown_style": "dark",
-        "use_eq_height": true,
+        "use_eq_height": false,
         "image_size": "jas_cover",
         "section_bg_color": "",
         "section_border_color": "",
