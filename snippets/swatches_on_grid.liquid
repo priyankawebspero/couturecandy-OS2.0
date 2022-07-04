@@ -38,13 +38,6 @@
       {%- for variant in product.variants -%}
       {%- assign option_value = variant.options[option_index] -%}
       {%- unless displayed_option_values contains option_value -%}
-          {%- if downcased_option == 'color' or downcased_option == 'colour' or gl_color_name contains downcased_option_check -%}
-     {%- assign color_index = 1 | plus: 1 -%}    
-       {%- if forloop.last -%}
-         
-       + {{color_index}}
-       {%- endif -%}
-     {%- endif -%}
         {%- unless variant.featured_image.src == blank -%}
                   {%- assign image = variant.featured_image -%}
                   {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_540x.' -%}
@@ -58,6 +51,13 @@
             {%- assign displayed_option_values = displayed_option_values | append: ',' | append: option_value -%}
             {%- assign displayed_option_values = displayed_option_values | split: ',' -%}
         {%- endunless -%}
+          {%- if downcased_option == 'color' or downcased_option == 'colour' or gl_color_name contains downcased_option_check -%}
+     {%- assign color_index = 1 | plus: 1 -%}    
+       {%- if forloop.last -%}
+         
+       + {{color_index}}
+       {%- endif -%}
+     {%- endif -%}
       {%- endunless -%}
       {%- endfor -%}
       {%- endif -%}
