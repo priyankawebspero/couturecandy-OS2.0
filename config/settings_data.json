@@ -221,7 +221,7 @@
     "title_pr_related": "Related products",
     "related_products_use": "use_collection",
     "many_related_products": 20,
-    "related_products_hover": "quick",
+    "related_products_hover": "base",
     "related_sale_countdown": false,
     "loop_related_countdown": false,
     "related_countdown_style": "light",
