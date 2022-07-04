@@ -53,7 +53,7 @@
         {%- endunless -%}
       {%- endunless -%}
      {%- if forloop.last -%}
-     LAST<br>
+       {%- assign forloop.last = forloop.last | minus: 4 -%}
      {%- endif -%}
       {%- endfor -%}
       {%- endif -%}
