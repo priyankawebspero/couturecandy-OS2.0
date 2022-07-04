@@ -37,6 +37,7 @@
       {%- assign displayed_option_values = '' -%}
       {%- for variant in product.variants -%}
       {%- assign option_value = variant.options[option_index] -%}
+      {%- assign option_value_index = 1 | plus:1 -%}
       {%- unless displayed_option_values contains option_value -%}
      {{option_value}}
         {%- unless variant.featured_image.src == blank -%}
