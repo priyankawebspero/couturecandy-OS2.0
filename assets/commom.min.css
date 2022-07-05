@@ -2330,20 +2330,20 @@ div#reviewCarouselWidget {
     padding-left: 28px;
 }
   
-.footer-container .footer-column.footer-column-5 .widget-title {
+.footer-container .footer-column.footer-column-4 .widget-title {
     border: none !important;
     padding-right: 0 !important;
     margin-bottom: 0;
 }
   
-  .footer-container .footer-column.footer-column-5 .widget-title i{display:none !important;}
+  .footer-container .footer-column.footer-column-4 .widget-title i{display:none !important;}
   
-.footer-container .footer-column.footer-column-5 .textwidget {
+.footer-container .footer-column.footer-column-4 .textwidget {
     display: block !important;
     padding-top: 0;
 }
   
-.footer-container .footer-column.footer-column-5 {
+.footer-container .footer-column.footer-column-4 {
     padding-top: 30px;
 }
   
