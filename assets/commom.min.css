@@ -972,7 +972,7 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
 }
 
 @media only screen and (min-width:769px){
-.footer-column.footer-column-4.col-md-3.col-sm-6 ul.social-icons.text-center {
+.footer-column.footer-column-3.col-md-3.col-sm-6 ul.social-icons.text-center {
     display: none;
 }
 .footer-container .footer-column h5.widget-title i {
@@ -2344,7 +2344,7 @@ div#reviewCarouselWidget {
 }
   
 .footer-container .footer-column.footer-column-4 {
-    padding-top: 30px;
+    padding-top: 20px;
 }
   
 }
