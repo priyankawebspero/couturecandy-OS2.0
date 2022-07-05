@@ -537,10 +537,10 @@ window.criteo_q.push(
       {{  collection.description }}
     {%- endif -%}
     {%- if collection.metafields.Bottomdescription.Bottomdescription != blank -%}
-    <div id="collectionbottomdescription" class="append-content-custom">    
+    <div id="collectionbottomdescription" class="append-content-custom" style="display: none;">    
         {{ collection.metafields.Bottomdescription.Bottomdescription }}
     </div>
-    
+
   {%- endif -%}
    <span class="moreless-button btn">Read more</span>
   </div>
