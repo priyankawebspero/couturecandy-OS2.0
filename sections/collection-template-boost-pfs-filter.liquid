@@ -543,6 +543,22 @@ window.criteo_q.push(
   {%- endif -%}
    <span class="moreless-button btn">Read more</span>
   </div>
+  {%- if collection.metafields.BottomLink1.BottomLink1 != blank or collection.metafields.BottomLink2.BottomLink2 != blank or collection.metafields.BottomLink3.BottomLink3 != blank or collection.metafields.BottomLink4.BottomLink4 != blank-%}
+    <div class="bottom buttons">
+    {%- if collection.metafields.BottomLink1.BottomLink1 != blank %}
+      <div class="btn"> {{ collection.metafields.BottomLink1.BottomLink1 }}</div>
+    {%- endif -%}
+    {%- if collection.metafields.BottomLink2.BottomLink2 != blank %}
+    <div class="btn"> {{ collection.metafields.BottomLink2.BottomLink2 }}</div>
+    {%- endif -%}
+    {%- if collection.metafields.BottomLink3.BottomLink3 != blank %}
+    <div class="btn"> {{ collection.metafields.BottomLink3.BottomLink3 }}</div>
+    {%- endif -%}
+    {%- if collection.metafields.BottomLink4.BottomLink4 != blank %}
+    <div class="btn"> {{ collection.metafields.BottomLink4.BottomLink4 }}</div>
+    {%- endif -%}
+  </div> 
+  {%- endif -%}
 {%- render 'boost-pfs-theme-config',
 	layout_type: layout_type,
 	enable_filter_sticky_d: enable_filter_sticky_d,
