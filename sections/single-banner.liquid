@@ -3,10 +3,14 @@
         <div class="col-md-12">
             <a href="{{ section.settings.link }}" class="">
             {% if section.settings.image_desktop != blank %}
-                <img src="{{ section.settings.image_desktop | img_url: 'master' }}" data-chksrc="{{ section.settings.image_desktop | img_url: 'master' }}" data-src="{{ section.settings.image_desktop | img_url: 'master' }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="}" data-sizes="auto" class="lazyload banner-image desktop-xs" alt="{{ section.settings.image_desktop.alt }}">
+            {%- assign image = section.settings.image_desktop -%}
+            {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}           
+                <img src="{{ image | img_url: 'master' }}" data-chksrc="{{ img_url }}" data-src="{{ img_url }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}" data-sizes="auto" class="lazyload banner-image desktop-xs" alt="{{ image.alt }}">
             {% endif %}
             {% if section.settings.image_desktop != blank %}
-                <img src="{{ section.settings.image_mobile | img_url: 'master' }}" data-chksrc="{{ section.settings.image_mobile | img_url: 'master' }}" data-src="{{ section.settings.image_mobile | img_url: 'master' }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="}" data-sizes="auto" class="lazyload banner-image mobile-xs" alt="{{ section.settings.image_mobile.alt }}" style="display:none;"> 
+            {%- assign image = section.settings.image_mobile -%}
+            {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}  
+                <img src="{{ image | img_url: 'master' }}" data-chksrc="{{ img_url }}" data-src="{{ img_url }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}" data-sizes="auto" class="lazyload banner-image mobile-xs" alt="{{ image.alt }}" style="display:none;"> 
             {% endif %}
           </a>
         </div>
