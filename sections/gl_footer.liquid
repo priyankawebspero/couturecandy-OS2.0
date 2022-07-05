@@ -216,7 +216,8 @@
                         {%- include 'gl_form_newlester' -%}
                         {%- if block.settings.ns_text != blank -%}<p class="newstext">{{block.settings.ns_text}}</p>{%- endif -%}
                         <div class="bbb">
-                          <img src="https://cdn.shopify.com/s/files/1/0144/7018/5017/files/bbb-footer.png" alt="bbb-footer">
+                           {%- include 'social-sharing', gl_design:settings.footer_social_design, gl_size:settings.footer_social_size, follow_social:gl_follow_social -%}
+                          <img src="https://cdn.shopify.com/s/files/1/0144/7018/5017/files/bbb-footer.png" alt="bbb-footer lazyload">
                         </div>
                      </div>
                   </div>
