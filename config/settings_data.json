@@ -1016,6 +1016,7 @@
           "18484e8c-02cd-42dc-98e1-1bf9b6499dd9": {
             "type": "menu_block",
             "settings": {
+              "menu_image": "shopify:\/\/shop_images\/mobile_prom_dress_pic.jpg",
               "menu_text": "PROM",
               "menu": "main-menu"
             }
@@ -1242,17 +1243,6 @@
               "social_icon": true
             }
           },
-          "02a0e2eb-b8a0-4e3a-8ffa-cdbe595dfba7": {
-            "type": "html",
-            "settings": {
-              "title": "Follow Us",
-              "address": "",
-              "email": "",
-              "phone": "",
-              "heading_second": "",
-              "social_icon": true
-            }
-          },
           "1576045451429": {
             "type": "newsletter",
             "settings": {
@@ -1266,7 +1256,6 @@
           "1501138697288",
           "1531996084475",
           "1531996949960",
-          "02a0e2eb-b8a0-4e3a-8ffa-cdbe595dfba7",
           "1576045451429"
         ],
         "settings": {
