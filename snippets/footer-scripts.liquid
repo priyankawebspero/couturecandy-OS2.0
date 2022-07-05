@@ -129,38 +129,7 @@ setTimeout(function(){
  }
  sessionStorage.setItem('pages_view',value);
 }, 1000);
-  
-  $(document).ready(function() {
-    // Configure/customize these variables.
-    var showChar1 = 500;  // How many characters are shown by default
-    var ellipsestext1 = "...";
-    var moretext1 = "Read more";
-    var lesstext1 = "Read less";
-
-    $('#collectionbottomdescription').each(function() {
-        var content1 = $(this).html();
-        if(content1.length > showChar1) {
-            var c1 = content1.substr(0, showChar1);
-            var h1 = content1.substr(showChar1, content1.length - showChar1);
-            var html1 = c1 + '<div class="morecontent" style="display: none;">' + h1 + '</div>&nbsp;&nbsp;<a href="" class="morelink">' + moretext1 + '</a>';
-            $(this).html(html1);
-        }
-
-    });
-
-    $(".morelink").click(function(){
-        if($(this).hasClass("less")) {
-            $(this).removeClass("less");
-            $(this).html(moretext1);
-        } else {
-            $(this).addClass("less");
-            $(this).html(lesstext1);
-        }
-        $(this).prev().toggleClass('showed');
-        return false;
-    });
-});
-</script>
+  </script>
 
 <!--Gorgias Chat Widget Start-->
 <script>!function(_){_.GORGIAS_CHAT_APP_ID="550",_.GORGIAS_CHAT_BASE_URL="us-east1-898b.production.gorgias.chat",_.GORGIAS_API_BASE_URL="config.gorgias.chat";var e=new XMLHttpRequest;e.open("GET","https://config.gorgias.chat/applications/550",!0),e.onload=function(n){if(4===e.readyState)if(200===e.status){var t=JSON.parse(e.responseText);if(!t.application||!t.bundleVersion)throw new Error("Missing fields in the response body - https://config.gorgias.chat/applications/550");if(_.GORGIAS_CHAT_APP=t.application,_.GORGIAS_CHAT_BUNDLE_VERSION=t.bundleVersion,t&&t.texts&&(_.GORGIAS_CHAT_TEXTS=t.texts),!document.getElementById("gorgias-chat-container")){var o=document.createElement("div");o.id="gorgias-chat-container",document.body.appendChild(o);var r=document.createElement("script");r.setAttribute("defer",!0),r.src="https://storage.googleapis.com/gorgias-chat-production-client-builds/{bundleVersion}/static/js/main.js".replace("{bundleVersion}",t.bundleVersion),document.body.appendChild(r)}}else console.error("Failed request GET - https://config.gorgias.chat/applications/550")},e.onerror=function(_){console.error(_)},e.send()}(window||{});</script>
