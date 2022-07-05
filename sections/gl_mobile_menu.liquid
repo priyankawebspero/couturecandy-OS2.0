@@ -159,7 +159,7 @@
 
 
 {%- endfor -%}
-
+<div class="mobile_bottom_icons">
 {%- include 'header_account' -%}
 {%- include 'header_wishlist' -%}
 {%- unless settings.cart_design == 'disable' or settings.catalog_mode or template contains 'cart' -%}
@@ -219,6 +219,7 @@
             {%- endif -%}
          </div>
          {%- endunless -%}
+   </div>
 {%- schema -%}
 {
 "name": "Mobile Side Menu",
