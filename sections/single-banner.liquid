@@ -10,7 +10,7 @@
             {% if section.settings.image_desktop != blank %}
                {%- assign image_mob = section.settings.image_mobile -%}
                {%- assign img_url_mob = image_mob | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                <img src="{{ section.settings.image_mobile | img_url: 'master' }}" data-chksrc="{{ img_url_mob }}" data-src="{{ img_url_mob' }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}" data-sizes="auto" class="lazyload banner-image mobile-xs" alt="{{ section.settings.image_mobile.alt }}" style="display:none;"> 
+                <img src="{{ section.settings.image_mobile | img_url: 'master' }}" data-chksrc="{{ img_url_mob }}" data-src="{{ img_url_mob }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}" data-sizes="auto" class="lazyload banner-image mobile-xs" alt="{{ section.settings.image_mobile.alt }}" style="display:none;"> 
             {% endif %}
           </a>
         </div>
