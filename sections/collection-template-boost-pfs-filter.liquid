@@ -439,14 +439,7 @@ window.criteo_q.push(
 				{%- if paginate.pages > 1 -%}
 				{%- render 'boost-pfs-filter-pagination' -%}
 				{%- endif -%}
-			</div>{%- comment -%}
-              {%- if show_collection_des == true and collection.description != blank -%}
-              <div class="boost-pfs-filter-collection-description rte">
-              {% assign descriptions = collection.description | split: "</h2>" %}
-                {{ descriptions[0] }}
-              </div>
-              {%- endif -%}
-              {%- endcomment -%} 
+			</div> 
               <div class="boost-pfs-filter-collection-description rte">
                 <h1 class="heading collection">{{ collection.title }}</h1>
               </div>
@@ -543,13 +536,12 @@ window.criteo_q.push(
     {%- if show_collection_des == true and collection.description != blank -%}
       {{  collection.description }}
     {%- endif -%}
-    <a href="" class="morelink">Read more</a>
     {%- if collection.metafields.Bottomdescription.Bottomdescription != blank -%}
-    <div id="collectionbottomdescription">    
-          {{ collection.metafields.Bottomdescription.Bottomdescription }}
-          <a href="" class="morelink less">Read less</a>
+    <div id="collectionbottomdescription" class="append-content-custom">    
+        {{ collection.metafields.Bottomdescription.Bottomdescription }}
     </div>
   {%- endif -%}
+   <span class="moreless-button btn">Read more</span>
   </div>
 {%- render 'boost-pfs-theme-config',
 	layout_type: layout_type,
