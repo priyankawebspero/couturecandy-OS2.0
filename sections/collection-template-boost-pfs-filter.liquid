@@ -442,7 +442,10 @@ window.criteo_q.push(
 			</div>
               {%- if show_collection_des == true and collection.description != blank -%}
               <div class="boost-pfs-filter-collection-description rte">
-                {{ collection.description }}
+              {% assign descriptions = collection.description | split: "</h2>" %}
+                  {% assign short_desc = descriptions[0] %}
+                  {% assign long_desc = descriptions[1] %}
+                {{ descriptions[0] }}
               </div>
               {%- endif -%}
             </div>
