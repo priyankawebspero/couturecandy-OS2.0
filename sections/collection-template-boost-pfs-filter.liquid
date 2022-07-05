@@ -443,8 +443,6 @@ window.criteo_q.push(
               {%- if show_collection_des == true and collection.description != blank -%}
               <div class="boost-pfs-filter-collection-description rte">
               {% assign descriptions = collection.description | split: "</h2>" %}
-                  {% assign short_desc = descriptions[0] %}
-                  {% assign long_desc = descriptions[1] %}
                 {{ descriptions[0] }}
               </div>
               {%- endif -%}
@@ -537,11 +535,14 @@ window.criteo_q.push(
 
 </div>
 {%- endpaginate -%}
-  {%- if collection.metafields.Bottomdescription.Bottomdescription != blank -%}
-  <div id="collectionbottomdescription">
-        {{ collection.metafields.Bottomdescription.Bottomdescription }}
+  <div class="bottom description collection">
+    {{descriptions[1]}}
+    {%- if collection.metafields.Bottomdescription.Bottomdescription != blank -%}
+    <div id="collectionbottomdescription">    
+          {{ collection.metafields.Bottomdescription.Bottomdescription }}
+    </div>
+  {%- endif -%}
   </div>
-{%- endif -%}
 {%- render 'boost-pfs-theme-config',
 	layout_type: layout_type,
 	enable_filter_sticky_d: enable_filter_sticky_d,
