@@ -2439,6 +2439,13 @@ div#reviewCarouselWidget .stjr-reviews-carousel-nav.stjr-reviews-carousel-nav--l
    transform: translateY(-50%);
    -webkit-transform: translateY(-50%);
    -moz-transform: translateY(-50%);
+  opacity: 1 !important;
+    width: 30px;
+    height: 30px;
+}
+  
+  div#reviewCarouselWidget .stjr-reviews-carousel-nav.stjr-reviews-carousel-nav--left span.stjr-icon.stjr-icon__arrow-left {
+    filter: invert(1);
 }
   
 div#reviewCarouselWidget .stjr-reviews-carousel-nav.stjr-reviews-carousel-nav--right {
@@ -2448,6 +2455,9 @@ div#reviewCarouselWidget .stjr-reviews-carousel-nav.stjr-reviews-carousel-nav--r
    transform: translateY(-50%);
    -webkit-transform: translateY(-50%);
    -moz-transform: translateY(-50%);
+  opacity: 1 !important;
+    width: 30px;
+    height: 30px;
 }
   
 div#reviewCarouselWidget  .stjr-reviews-carousel {
