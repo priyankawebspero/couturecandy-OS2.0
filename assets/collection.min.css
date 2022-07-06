@@ -82,11 +82,10 @@ span.moreless-button.btn {
 div#collectionbottomdescription .morecontent.showed {
     display: block !important;
 }
-
 div#collectionbottomdescription {
     color: #000000;
-    line-height: 2;
-    font-size: 18px;
+    line-height: 1.5;
+    font-size: 16px;
     width: 100%;
     text-align: center;
 }
