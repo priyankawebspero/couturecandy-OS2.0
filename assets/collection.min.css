@@ -264,12 +264,15 @@ background:none !important;}
 
 .boost-pfs-filter-products .boost-pfs-filter-product-item a.boost-pfs-filter-product-item-image-link img {
     height: 100%;
-    object-fit: cover;
-    object-position: top;
+  width:100%;
+    object-fit: contain;
+  position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .boost-pfs-filter-products .boost-pfs-filter-product-item a.boost-pfs-filter-product-item-image-link {
-    padding-top: 135% !important;
+    padding-top: 112% !important;
     position: relative;
     border: 1px solid #b4b4b4;
 }
