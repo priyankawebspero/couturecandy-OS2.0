@@ -1,0 +1,13 @@
+{
+    "sections": {
+      "designers-page": {
+        "type": "designers-page",        
+        "settings": {
+        }
+      }
+    },
+    "order": [
+      "designers-page"
+    ]
+  }
+  
