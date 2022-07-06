@@ -24,6 +24,7 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
 .main-header .container .header_middle_block .logo .site-logo h1.basel-logo-wrap a {
     text-decoration: none !important;
     display: inline-block;
+  vertical-align: top;
 }
 
 .main-header .doubly-nice-select.right .list {
