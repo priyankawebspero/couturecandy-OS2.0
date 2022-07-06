@@ -2036,6 +2036,27 @@ footer .widget-title i {
   .right-column .wishlist-info-widget {
     margin-left: 10px;
 }
+  
+.footer-container .footer-column.footer-column-4 {
+    padding-top: 20px;
+}
+  
+.footer-container .footer-column.footer-column-4 .widget-title {
+    border: none !important;
+    padding-right: 0 !important;
+    margin-bottom: 0;
+}
+  
+  .footer-container .footer-column.footer-column-4 .widget-title i{display:none !important;}
+  
+.footer-container .footer-column.footer-column-4 .textwidget {
+    display: block !important;
+    padding-top: 0;
+}
+  
+.footer-container .footer-column.footer-column-4 {
+    padding-top: 20px;
+}
 
 }
 
@@ -2363,22 +2384,7 @@ div#reviewCarouselWidget {
     padding-left: 28px;
 }
   
-.footer-container .footer-column.footer-column-4 .widget-title {
-    border: none !important;
-    padding-right: 0 !important;
-    margin-bottom: 0;
-}
-  
-  .footer-container .footer-column.footer-column-4 .widget-title i{display:none !important;}
-  
-.footer-container .footer-column.footer-column-4 .textwidget {
-    display: block !important;
-    padding-top: 0;
-}
-  
-.footer-container .footer-column.footer-column-4 {
-    padding-top: 20px;
-}
+
   
 }
 
