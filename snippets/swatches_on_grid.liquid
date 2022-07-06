@@ -59,7 +59,7 @@
       {%- endfor -%}
       {%- endif -%}
       {%- endfor -%}
-     <a href="{{product.url}}">+{{displayed_option_values.size }}</a>
+     <a href="{{product.url}}">+{{displayed_option_values.size | minus:4}}</a>
    </div>
 {%- endif -%}
 
