@@ -656,6 +656,10 @@ div#shopify-section-template--14532934697043__1654005036571929f8 {
 
 
 @media only screen and (max-width:991px){
+  section.sub-page-banner-section .title {
+    font-size: 35px;
+}
+  
  div#shopify-section-template--14532934697043__1654005036571929f8 {
     padding: 15px 20px 10px 20px;
 }
