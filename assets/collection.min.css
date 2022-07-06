@@ -701,3 +701,15 @@ a.text-m {
     font-family: 'product_sans_mediumregular';
     font-size: 14px;
 }
+
+.boost-pfs-filter-option-item-list.boost-pfs-filter-option-item-list-swatch.circle-grid li {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.boost-pfs-filter-option-item-list.boost-pfs-filter-option-item-list-swatch.circle-grid li .boost-pfs-filter-option-swatch-image {
+    border: 1px solid #ccc;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.15); */
+}
