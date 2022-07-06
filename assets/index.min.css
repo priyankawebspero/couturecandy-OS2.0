@@ -423,20 +423,7 @@ div#shopify-section-template--14532934697043__1654005036571929f8 .featured-colle
     padding-left: 23px;
 }
 
-.product-grid-item .product-element-top>a img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
-.product-grid-item .product-element-top>a {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 150%;
-}
 
 .product-grid-item .product-element-top {
     height: auto !important;
