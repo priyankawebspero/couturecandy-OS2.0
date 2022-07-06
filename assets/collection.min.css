@@ -682,3 +682,8 @@ a.text-m {
     margin-left: -4px;
     margin-right: -4px;
 }
+
+.boost-pfs-filter-tree-v .boost-pfs-filter-option.boost-pfs-filter-option-size .boost-pfs-filter-option-item-list-box .boost-pfs-filter-option-item:last-child {
+    width: auto !important;
+    display: none;
+}
