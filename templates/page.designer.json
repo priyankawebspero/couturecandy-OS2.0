@@ -1,13 +1,12 @@
 {
-    "sections": {
-      "designers-page": {
-        "type": "designers-page",        
-        "settings": {
-        }
+  "sections": {
+    "designers-page": {
+      "type": "designers-page",
+      "settings": {
       }
-    },
-    "order": [
-      "designers-page"
-    ]
-  }
-  
+    }
+  },
+  "order": [
+    "designers-page"
+  ]
+}
