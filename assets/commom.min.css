@@ -2274,7 +2274,13 @@ section.brands-banner-section {
     padding: 50px 15px 30px 15px;
 }
   
-
+span.moreless-button.btn {
+    font-size: 12px;
+    min-width: 108px;
+    padding: 0 15px;
+    line-height: 35px;
+    border-radius: 5px;
+}
   
 a.btn {
     font-size: 16px;
