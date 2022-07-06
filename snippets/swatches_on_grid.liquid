@@ -40,6 +40,7 @@
       {%- for variant in product.variants -%}
       {%- assign option_value = variant.options[option_index] -%}    
       {%- unless displayed_option_values contains option_value -%}
+     option values :{{displayed_option_values}}<br/>
      {%- if displayed_option_values.size < 5-%}
         {%- unless variant.featured_image.src == blank -%}
         {%- assign image = variant.featured_image -%}
