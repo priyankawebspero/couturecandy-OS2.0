@@ -1361,6 +1361,10 @@ p.newstext {
     min-height: 44px;
 }
   
+  .main-header .container .header_middle_block .logo .site-logo h1.basel-logo-wrap {
+    font-size: 3.5vw;
+}
+  
 }
 
 @media only screen and (max-width:1199px) and (min-width:992px){
