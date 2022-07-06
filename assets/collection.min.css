@@ -677,3 +677,8 @@ a.text-m {
     margin: 0 4px;
     width: calc(100% - 10px);
 }
+
+.boost-pfs-filter-tree-v .boost-pfs-filter-option.boost-pfs-filter-option-size .boost-pfs-filter-option-item-list-box {
+    margin-left: -4px;
+    margin-right: -4px;
+}
