@@ -640,6 +640,14 @@ div#shopify-section-template--14532934697043__1654005036571929f8 {
   
 }
 
+@media only screen and (min-width:768px) and (max-width:991px){
+  
+ div#shopify-section-template--14532934697043__1653916013b1f6c860 .col-xs-6.col-sm-4.col-md-3.category-grid-item.cat-design-default.product-category.product {
+    width: 25%;
+}
+  
+}
+
 
 @media only screen and (max-width:991px){
  div#shopify-section-template--14532934697043__1654005036571929f8 {
