@@ -609,3 +609,7 @@ a.text-m {
 .boost-pfs-filter-wrapper {
     margin-bottom: 0;
 }
+
+.boost-pfs-section-header .boost-pfs-filter-collection-description h1.heading.collection {
+    margin-bottom: 7px;
+}
