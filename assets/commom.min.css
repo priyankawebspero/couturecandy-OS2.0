@@ -2432,6 +2432,28 @@ div#reviewCarouselWidget .stjr-reviews-carousel .stjr-reviews-carousel-paginatio
     display: none !important;
 }
   
+div#reviewCarouselWidget .stjr-reviews-carousel-nav.stjr-reviews-carousel-nav--left {
+    position: absolute;
+    left: 0;
+    top: 50% !important;
+   transform: translateY(-50%);
+   -webkit-transform: translateY(-50%);
+   -moz-transform: translateY(-50%);
+}
+  
+div#reviewCarouselWidget .stjr-reviews-carousel-nav.stjr-reviews-carousel-nav--right {
+    position: absolute;
+    right: 0 !important;
+    top: 50% !important;
+   transform: translateY(-50%);
+   -webkit-transform: translateY(-50%);
+   -moz-transform: translateY(-50%);
+}
+  
+div#reviewCarouselWidget  .stjr-reviews-carousel {
+    position: relative;
+}
+  
 }
 
 
