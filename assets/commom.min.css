@@ -2042,6 +2042,11 @@ footer .widget-title i {
 
 @media only screen and (max-width:767px){
   
+  .footer-column .textwidget ul.social-icons {
+    text-align: left;
+    margin-bottom: 10px;
+}
+  
 .topbar-content.mobile .top_bar_right.col-6 .doubly-wrapper .doubly-nice-select {
     float: none;
     width: auto;
