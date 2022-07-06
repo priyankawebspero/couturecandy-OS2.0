@@ -692,3 +692,7 @@ a.text-m {
 .boost-pfs-filter-tree-v .boost-pfs-filter-option.boost-pfs-filter-option-size .boost-pfs-filter-option-item-list-box .boost-pfs-filter-option-item button.boost-pfs-filter-button:hover .boost-pfs-filter-option-value {
     color: #000 !important;
 }
+
+.boost-pfs-filter-tree-v .boost-pfs-filter-option.boost-pfs-filter-option-size .boost-pfs-filter-option-item-list-box .boost-pfs-filter-option-item.selected button.boost-pfs-filter-button .boost-pfs-filter-option-value {
+    color: #000 !important;
+}
