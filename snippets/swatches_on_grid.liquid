@@ -55,7 +55,7 @@
             {%- assign displayed_option_values = displayed_option_values | split: ',' -%}
         {%- endunless -%} 
      {%- endif -%}
-       {{displayed_option_values.size}}
+       {{displayed_option_values.size | mius:5}}
       {%- endunless -%}
       {%- endfor -%}
       {%- endif -%}
