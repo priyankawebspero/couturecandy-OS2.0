@@ -39,11 +39,8 @@
    
       {%- for variant in product.variants -%}
       {%- assign option_value = variant.options[option_index] -%}    
-      {%- unless displayed_option_values contains option_value -%}
-     
-     option values :{{displayed_option_values.size}}<br/>
-     
-     {%- if displayed_option_values.size < 5-%}
+      {%- unless displayed_option_values contains option_value -%}   
+      {%- if displayed_option_values.size < 5-%}
         {%- unless variant.featured_image.src == blank -%}
         {%- assign image = variant.featured_image -%}
         {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_540x.' -%}
@@ -62,6 +59,7 @@
       {%- endfor -%}
       {%- endif -%}
       {%- endfor -%}
+     {{displayed_option_values}}
      {%- if displayed_option_values.size > 4-%}<a href="{{product.url}}"> +{{displayed_option_values.size | minus:4}}</a>{%- endif -%}
    </div>
 {%- endif -%}

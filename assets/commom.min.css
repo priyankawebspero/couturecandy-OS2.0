@@ -2057,16 +2057,20 @@ footer .widget-title i {
 .footer-container .footer-column.footer-column-4 {
     padding-top: 20px;
 }
+  
+.footer-container.color-scheme-light p.newstext {
+    margin-bottom: 15px;
+}
+  
+.footer-column .textwidget ul.social-icons {
+    text-align: left;
+    margin-bottom: 10px;
+}
 
 }
 
 
 @media only screen and (max-width:767px){
-  
-  .footer-column .textwidget ul.social-icons {
-    text-align: left;
-    margin-bottom: 10px;
-}
   
 .topbar-content.mobile .top_bar_right.col-6 .doubly-wrapper .doubly-nice-select {
     float: none;
