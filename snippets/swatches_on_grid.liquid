@@ -38,7 +38,6 @@
       {%- assign displayed_option_values = '' -%}
       {%- for variant in product.variants -%}
       {%- assign option_value = variant.options[option_index] -%} 
-      {{option_value}} : {{option_value_index}}   
       {%- unless displayed_option_values contains option_value -%}
      {%- assign option_value_index = option_value_index | plus:1 -%}
      ({{option_value}} : {{option_value_index}})
