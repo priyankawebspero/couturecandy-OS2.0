@@ -1,4 +1,6 @@
 
+
+
 .boost-pfs-filter-tree-desktop-button-sticky-wrapper .boost-pfs-filter-toolbar-count-d.boost-pfs-filter-toolbar-count-m {
     display: none;
 }
@@ -243,9 +245,13 @@ background:none !important;}
 
 .toolbar_count .boost-pfs-filter-custom-sorting button {
     padding-bottom: 0;
-    font-size: 16px;
+    font-size: 15px;
     color: #000;
     text-transform: uppercase;
+}
+
+.toolbar_count .boost-pfs-filter-custom-sorting button span {
+    font-weight: 600;
 }
 
 .boost-pfs-filter-products {
@@ -271,7 +277,7 @@ background:none !important;}
 .boost-pfs-filter-products .boost-pfs-filter-product-item .boost-pfs-filter-product-bottom-inner .boost-pfs-filter-product-item-title {
     font-family: 'google_sansregular';
     color: #000;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.5;
     font-weight: normal;
     margin-bottom: 15px;
@@ -321,6 +327,8 @@ background:none !important;}
 
 .boost-pfs-filter-left-col {
     border: 1px solid #b4b4b4;
+  position: sticky;
+    top: 120px;
 }
 
 .boost-pfs-filter-left-col>span {
@@ -378,6 +386,9 @@ background:none !important;}
 
 .boost-pfs-filter-left-col .boost-pfs-filter-option .boost-pfs-filter-option-title .boost-pfs-filter-option-title-heading .boost-pfs-filter-option-title-text {
     padding-right: 25px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #000;
 }
 
 .boost-pfs-filter-left-col .boost-pfs-filter-option .boost-pfs-filter-option-title .boost-pfs-filter-option-title-heading .boost-pfs-filter-option-title-text:before

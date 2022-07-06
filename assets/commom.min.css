@@ -15,6 +15,18 @@ body, p, btn, input, button{ font-family: 'google_sansregular';}
    font-family: 'Playfair Display', serif;
 }
 
+.main-header .container .header_middle_block .logo .site-logo h1.basel-logo-wrap {
+    font-size: 2.5vw;
+    line-height: .9;
+    font-size: 48px;
+}
+
+.main-header .container .header_middle_block .logo .site-logo h1.basel-logo-wrap a {
+    text-decoration: none !important;
+    display: inline-block;
+  vertical-align: top;
+}
+
 .main-header .doubly-nice-select.right .list {
     left: 0 !important;
     right: auto !important;
@@ -1258,6 +1270,10 @@ html[lang="pt"] .main-header .wrapp-header ul#menu-main-navigation li {
     padding-left: 0;
 }
   
+.main-header .container .header_middle_block .logo .site-logo h1.basel-logo-wrap {
+    font-size: 43px;
+}
+  
 }
 
 @media only screen and (max-width:1199px){
@@ -1347,6 +1363,10 @@ p.newstext {
 .product-grid-item .product-title a {
     max-height: 44px;
     min-height: 44px;
+}
+  
+  .main-header .container .header_middle_block .logo .site-logo h1.basel-logo-wrap {
+    font-size: 3.5vw;
 }
   
 }
