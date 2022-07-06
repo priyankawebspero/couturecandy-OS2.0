@@ -36,13 +36,11 @@
       {%- if downcased_option == 'color' or downcased_option == 'colour' or gl_color_name contains downcased_option_check -%}
       {%- assign option_index = forloop.index0 -%}
       {%- assign displayed_option_values = '' -%}
-     
-      {%- assign option_value_index = 0 -%}
-     
+   
       {%- for variant in product.variants -%}
       {%- assign option_value = variant.options[option_index] -%}    
       {%- unless displayed_option_values contains option_value -%}
-      {%- assign option_value_index = option_value_index | plus:1 -%}  
+     {%- if displayed_option_values.size < 5-%}
         {%- unless variant.featured_image.src == blank -%}
         {%- assign image = variant.featured_image -%}
         {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_540x.' -%}
@@ -55,8 +53,9 @@
            {%- assign displayed_option_values = displayed_option_values | join: ',' -%}
             {%- assign displayed_option_values = displayed_option_values | append: ',' | append: option_value -%}
             {%- assign displayed_option_values = displayed_option_values | split: ',' -%}
-        {%- endunless -%}          
-       {{displayed_option_values.size}}<br/>
+        {%- endunless -%} 
+     {%- endif -%}
+       {{displayed_option_values.size}}
       {%- endunless -%}
       {%- endfor -%}
       {%- endif -%}
