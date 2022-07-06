@@ -370,11 +370,11 @@ background:none !important;}
 .boost-pfs-filter-left-col>span {
     background: #000;
     display: block;
-    padding: 15px;
     color: #fff;
-    padding: 18px 20px;
-    font-size: 15px;
+    padding: 15px 15px;
+    font-size: 18px;
     margin-bottom: 15px;
+    font-family: 'product_sans_mediumregular';
 }
 
 .boost-pfs-filter-left-col .boost-pfs-filter-option {
