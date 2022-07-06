@@ -668,4 +668,12 @@ a.text-m {
     min-width: inherit;
     max-width: 100%;
     width: 25% !important;
+    margin: 4px 0;
+}
+
+.boost-pfs-filter-tree-v .boost-pfs-filter-option.boost-pfs-filter-option-size .boost-pfs-filter-option-item-list-box .boost-pfs-filter-option-item button.boost-pfs-filter-button {
+    border: 1px solid #000;
+    color: #000 !important;
+    margin: 0 4px;
+    width: calc(100% - 10px);
 }
