@@ -362,8 +362,8 @@ background:none !important;}
 
 .boost-pfs-filter-left-col {
     border: 1px solid #b4b4b4;
-  position: sticky;
-    top: 120px;
+  /*position: sticky;
+    top: 120px;*/
 }
 
 .boost-pfs-filter-left-col>span {
