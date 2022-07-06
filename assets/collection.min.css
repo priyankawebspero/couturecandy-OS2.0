@@ -684,10 +684,6 @@ a.text-m {
     margin-right: -4px;
 }
 
-.boost-pfs-filter-tree-v .boost-pfs-filter-option.boost-pfs-filter-option-size .boost-pfs-filter-option-item-list-box .boost-pfs-filter-option-item:last-child {
-    width: auto !important;
-    display: none;
-}
 
 .boost-pfs-filter-tree-v .boost-pfs-filter-option.boost-pfs-filter-option-size .boost-pfs-filter-option-item-list-box .boost-pfs-filter-option-item button.boost-pfs-filter-button:hover .boost-pfs-filter-option-value {
     color: #000 !important;
@@ -699,4 +695,9 @@ a.text-m {
 
 .boost-pfs-filter-tree-v .boost-pfs-filter-option-title .boost-pfs-filter-clear {
     background: none !important;
+}
+
+.boost-pfs-filter-button span {
+    font-family: 'product_sans_mediumregular';
+    font-size: 14px;
 }
