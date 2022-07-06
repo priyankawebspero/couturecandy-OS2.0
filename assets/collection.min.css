@@ -243,9 +243,13 @@ background:none !important;}
 
 .toolbar_count .boost-pfs-filter-custom-sorting button {
     padding-bottom: 0;
-    font-size: 16px;
+    font-size: 15px;
     color: #000;
     text-transform: uppercase;
+}
+
+.toolbar_count .boost-pfs-filter-custom-sorting button span {
+    font-weight: 600;
 }
 
 .boost-pfs-filter-products {
