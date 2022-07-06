@@ -2445,10 +2445,7 @@ div#reviewCarouselWidget .stjr-reviews-carousel-nav.stjr-reviews-carousel-nav--l
   z-index: 99;
 }
   
-  div#reviewCarouselWidget .stjr-reviews-carousel-nav.stjr-reviews-carousel-nav--left span.stjr-icon.stjr-icon__arrow-left {
-    filter: invert(1);
-}
-  
+
 div#reviewCarouselWidget .stjr-reviews-carousel-nav.stjr-reviews-carousel-nav--right {
     position: absolute;
     right: 0 !important;
