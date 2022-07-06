@@ -2072,13 +2072,7 @@ footer .widget-title i {
 
 @media only screen and (max-width:767px){
   
-  .template-index a.btn {
-    font-size: 12px;
-    min-width: 105px;
-    height: 35px;
-    line-height: 35px;
-    text-align: center;
-}
+  
   
 .topbar-content.mobile .top_bar_right.col-6 .doubly-wrapper .doubly-nice-select {
     float: none;
