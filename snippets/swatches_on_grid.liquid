@@ -43,7 +43,7 @@
       {%- assign option_value = variant.options[option_index] -%}    
       {%- unless displayed_option_values contains option_value -%}
       {%- assign option_value_index = option_value_index | plus:1 -%}   
-      {%- if option_value_index > 4 -%}
+      {%- if option_value_index < 4 -%}
      
         {%- unless variant.featured_image.src == blank -%}
         {%- assign image = variant.featured_image -%}
