@@ -44,7 +44,7 @@
       {%- unless displayed_option_values contains option_value -%}
       {%- assign option_value_index = option_value_index | plus:1 -%}   
       {%- if option_value_index <= 4 -%} 
-     {{option_value_index}}
+     
         {%- unless variant.featured_image.src == blank -%}
         {%- assign image = variant.featured_image -%}
         {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_540x.' -%}
@@ -58,8 +58,8 @@
             {%- assign displayed_option_values = displayed_option_values | append: ',' | append: option_value -%}
             {%- assign displayed_option_values = displayed_option_values | split: ',' -%}
         {%- endunless -%}          
-     {%- endif -%}
-
+         {%- endif -%}
+      {{option_value_index}}
       {%- endunless -%}
       {%- endfor -%}
       {%- endif -%}
