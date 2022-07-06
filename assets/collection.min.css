@@ -46,6 +46,26 @@
    color: #000;
 }
 
+div.Block.BlockContent.banner_category_page_top {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+span.moreless-button.btn {
+    display: inline-block;
+    margin-top: 10px;
+    background: #e94949;
+    color: #fff;
+    font-size: 16px;
+    min-width: 175px;
+    padding: 0 15px;
+    border-radius: 5px;
+    line-height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
 .bottom.description.collection p {
     font-size: 16px;
     margin-bottom: 13px;
