@@ -262,11 +262,12 @@ background:none !important;}
 
 .toolbar_count .boost-pfs-filter-toolbar-count {
     color: #000;
-    font-size: 15px;
+    font-size: 17px;
     text-transform: uppercase;
     line-height: 1;
     padding-right: 15px;
-    font-weight: 600;
+    /* font-weight: 600; */
+    font-family: 'product_sans_mediumregular';
 }
 .toolbar_count .boost-pfs-filter-toolbar-count span.boost-pfs-filter-total-product span {
     /* display: none; */
