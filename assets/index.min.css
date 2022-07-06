@@ -462,13 +462,13 @@ div#shopify-block-a41a6449-6d18-49a8-8ff1-11479d23387a a.btn {
     order: 2;
 }
 
-.product-grid-item .product-element-top>a, .product-grid-item .product-element-top .hover-img a{
+.product-grid-item .product-element-top>a{
     position: relative;
     overflow: hidden;
     padding-bottom: 112%;
 }
 
-.product-grid-item .product-element-top>a img, .product-grid-item .product-element-top .hover-img a img{
+.product-grid-item .product-element-top>a img {
        height: 100%;
   	width:100%;
     object-fit: contain;
