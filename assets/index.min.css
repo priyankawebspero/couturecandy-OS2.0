@@ -896,6 +896,10 @@ div#shopify-block-a41a6449-6d18-49a8-8ff1-11479d23387a a.btn {
 
 @media only screen and (max-width:479px){
   
+  .product-grid-item .product-element-top>a {
+    padding-bottom: 150%;
+}
+  
   div#shopify-section-template--14532934697043__1654005036571929f8 .featured-collection>.gl_col-md-6.gl_col-lg-6:first-child .spb_wrapper .wrapper-content-baner.gl_col-md-6.gl_col-lg-6 {
     padding-right: 0;
 }
