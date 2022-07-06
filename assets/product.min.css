@@ -1,0 +1,7 @@
+div#popup {
+    display: none;
+}
+.basel-product-design-default .product-images {
+    position: sticky;
+    top: 125px;
+}
