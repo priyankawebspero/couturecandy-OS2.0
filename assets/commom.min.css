@@ -2442,6 +2442,7 @@ div#reviewCarouselWidget .stjr-reviews-carousel-nav.stjr-reviews-carousel-nav--l
   opacity: 1 !important;
     width: 30px;
     height: 30px;
+  z-index: 99;
 }
   
   div#reviewCarouselWidget .stjr-reviews-carousel-nav.stjr-reviews-carousel-nav--left span.stjr-icon.stjr-icon__arrow-left {
@@ -2458,6 +2459,7 @@ div#reviewCarouselWidget .stjr-reviews-carousel-nav.stjr-reviews-carousel-nav--r
   opacity: 1 !important;
     width: 30px;
     height: 30px;
+  z-index: 99;
 }
   
 div#reviewCarouselWidget  .stjr-reviews-carousel {
