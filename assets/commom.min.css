@@ -2428,7 +2428,9 @@ div#reviewCarouselWidget {
     padding-left: 28px;
 }
   
-
+div#reviewCarouselWidget .stjr-reviews-carousel .stjr-reviews-carousel-pagination {
+    display: none !important;
+}
   
 }
 
