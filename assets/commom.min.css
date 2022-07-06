@@ -1270,6 +1270,10 @@ html[lang="pt"] .main-header .wrapp-header ul#menu-main-navigation li {
     padding-left: 0;
 }
   
+.main-header .container .header_middle_block .logo .site-logo h1.basel-logo-wrap {
+    font-size: 43px;
+}
+  
 }
 
 @media only screen and (max-width:1199px){
