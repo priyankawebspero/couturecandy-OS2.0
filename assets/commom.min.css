@@ -718,9 +718,7 @@ div#reviewCarouselWidget .headline:before {
     margin: 0 auto 25px auto;
 }
 
-div#reviewCarouselWidget .stjr-reviews-carousel-nav {
-    display: none !important;
-}
+
 
 div#reviewCarouselWidget  .stjr-reviews-carousel {
     margin: 0;
