@@ -1246,6 +1246,18 @@ html[lang="pt"] .main-header .wrapp-header ul#menu-main-navigation li {
   
 }
 
+@media only screen and (min-width:768px) and (max-width:991px){
+  
+ div#reviewCarouselWidget .headline {
+    font-size: 40px !important;
+ }
+  
+ .title-wrapper .title, .brands-banner-section .title {
+    font-size: 40px !important;
+}
+  
+}
+
 
 @media only screen and (max-width:1275px){
   
