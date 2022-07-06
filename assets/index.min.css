@@ -490,6 +490,15 @@ div#shopify-block-a41a6449-6d18-49a8-8ff1-11479d23387a a.btn {
     border: none !important;
 }
 
+.product-grid-item.product .swatches-on-grid a {
+    font-size: 17px;
+    color: #636363;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-top: 0;
+    display: inline-block;
+}
+
 @media only screen and (min-width:992px){
 
 html[lang="es"] div#shopify-section-template--14532934697043__1654005036571929f8 .featured-collection>.gl_col-md-6.gl_col-lg-6:first-child .promo-banner .banner-inner h5 {
