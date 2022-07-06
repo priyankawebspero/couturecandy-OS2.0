@@ -27,14 +27,6 @@
   color:#000;
 }
 
-#collectionbottomdescription h2:before {
-    content: "";
-    display: block;
-    width: 85px;
-    height: 5px;
-    background: #000;
-    margin: 0 auto 25px auto;
-}
 
 .bottom.description.collection h2.banner_category_page_top {
     font-size: 40px;
