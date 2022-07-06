@@ -56,7 +56,7 @@
             {%- assign displayed_option_values = displayed_option_values | append: ',' | append: option_value -%}
             {%- assign displayed_option_values = displayed_option_values | split: ',' -%}
         {%- endunless -%}          
-      {{option_value_index}} {{displayed_option_values}}<br/>
+       {{displayed_option_values.size}}<br/>
       {%- endunless -%}
       {%- endfor -%}
       {%- endif -%}
