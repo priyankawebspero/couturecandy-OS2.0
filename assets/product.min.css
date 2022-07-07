@@ -35,6 +35,10 @@ div#popup {
     font-size: 14px;
 }
 
+.single-breadcrumbs-wrapper .shopify-breadcrumb li:first-child {
+    margin-left: 0;
+}
+
 .single-breadcrumbs-wrapper .shopify-breadcrumb li:after {
     content: "";
     content: "›";
