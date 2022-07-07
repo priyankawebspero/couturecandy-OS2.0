@@ -61,6 +61,7 @@ div#popup {
 
 .col-sm-5.summary.entry-summary {
     width: 55%;
+    padding-left: 40px;
 }
 
 .product-images .col-md-9.col-md-push-2 {
