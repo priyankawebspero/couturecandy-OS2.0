@@ -510,6 +510,11 @@ background: #000;
     font-weight: normal;
 }
 
+.single-product-content .product_meta, .single-product-content .product_meta.product_meta_external {
+    border: none;
+    padding-top: 6px;
+}
+
 @media only screen and (min-width:1200px){
 
   .basel-product-design-default .product-images {
