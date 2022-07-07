@@ -443,10 +443,21 @@ background: #000;
     border-bottom: 1px solid #b4b4b4;
 }
 
-.single-product-content .product-tabs-wrapper .shopify-tabs .tabs li.description_tab {
+.single-product-content .product-tabs-wrapper .shopify-tabs .tabs li {
     border-bottom: none;
     margin-bottom: 0;
     margin-right: 0;
+}
+
+.single-product-content .product-tabs-wrapper .shopify-tabs .tabs li a {
+    color: #808080;
+    padding: 17px 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-family: 'product_sans_mediumregular';
+    font-size: 16px;
+    line-height: 1;
+    position: relative;
 }
 
 @media only screen and (min-width:1200px){
