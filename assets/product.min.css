@@ -53,3 +53,7 @@ div#popup {
     color: #f13b4d;
     font-size: 14px;
 }
+
+.basel-product-design-default .product-images {
+    width: 45%;
+}
