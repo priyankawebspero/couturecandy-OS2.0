@@ -715,3 +715,7 @@ a.text-m {
     border: 1px solid #ccc;
     /* box-shadow: 0 0 10px rgba(0,0,0,0.15); */
 }
+
+.boost-pfs-filter-option-item-list.boost-pfs-filter-option-item-list-multiple-list li .boost-pfs-check-box {
+    border: 1px solid #000;
+}
