@@ -150,6 +150,10 @@ div#popup {
     font-family: 'product_sans_mediumregular';
 }
 
+.single-product-content .product-share {
+    margin-left: 20px;
+}
+
 .single-product-content .product-share ul.social-icons li a {
     width: 36px;
     display: block;
