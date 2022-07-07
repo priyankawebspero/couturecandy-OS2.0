@@ -398,6 +398,24 @@ background: #000;
     top: -2px;
 }
 
+.single-product-content .cart.variations_form {
+    margin-bottom: 0;
+}
+
+.single-product-content div#variant-inventory {
+    color: #000;
+    font-size: 17px;
+}
+
+.single-product-content span.onlyjovani {
+    font-size: 17px;
+    letter-spacing: .5px;
+    padding: 10px 0 9px 0;
+    font-family: 'product_sans_mediumregular';
+    color: #000 !important;
+    font-weight: normal !important;
+}
+
 @media only screen and (min-width:1200px){
 
   .basel-product-design-default .product-images {
