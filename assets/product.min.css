@@ -369,7 +369,7 @@ background: #000;
     background: #e94949;
     border-color: #e94949;
     border-radius: 5px;
-    padding: 16px 15px;
+    padding: 19px 15px;
     min-width: 255px;
     text-align: center;
     cursor: pointer;
@@ -393,9 +393,8 @@ background: #000;
     height: 49px;
     /* vertical-align: top; */
     text-align: center;
-    line-height: 49px;
-    /* font-size: 24px; */
-    width: 50px;
+    line-height: 52px;
+    width: 52px;
     border-radius: 5px;
     position: relative;
     top: -2px;
