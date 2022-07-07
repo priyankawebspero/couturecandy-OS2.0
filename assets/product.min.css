@@ -490,6 +490,26 @@ background: #000;
 
 .single-product-content .shopify-Tabs-panel p{ padding: 0 20px;}
 
+.single-product-content .shopify-Tabs-panel .table td {
+    text-align: left;
+    padding: 10px 20px;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.single-product-content .shopify-Tabs-panel p strong {
+    font-weight: normal;
+}
+
+.single-product-content .shopify-Tabs-panel .table td:first-child {
+    font-family: 'product_sans_mediumregular';
+    font-size: 17px;
+}
+
+.single-product-content .shopify-Tabs-panel .table td strong {
+    font-weight: normal;
+}
+
 @media only screen and (min-width:1200px){
 
   .basel-product-design-default .product-images {
