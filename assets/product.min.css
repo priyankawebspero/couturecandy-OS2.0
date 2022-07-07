@@ -294,18 +294,8 @@ div#popup {
 .single-product-content .thumbnails .slick-track img.slick-slide.active-thumb {
     opacity: 1;
 }
-
-.product-images .shopify-product-gallery {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.single-product-content .thumbnails {
-    height: 100%;
-}
-
-.single-product-content .thumbnails .slick-list.draggable {
-    height: 100% !important;
+.product-images .col-md-9.col-md-push-2 .shopify-product-gallery__wrapper {
+    padding-right: 0;
 }
 
 @media only screen and (min-width:1200px){
