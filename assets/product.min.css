@@ -295,6 +295,15 @@ div#popup {
     opacity: 1;
 }
 
+.product-images .shopify-product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.single-product-content .thumbnails {
+    height: 100%;
+}
+
 @media only screen and (min-width:1200px){
 
   .basel-product-design-default .product-images {
