@@ -151,7 +151,12 @@ div#popup {
 }
 
 .single-product-content .product-share {
-    margin-left: 20px;
+    margin-left: 17px;
+}
+
+.single-product-content .product-share ul.social-icons li {
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 .single-product-content .product-share ul.social-icons li a {
