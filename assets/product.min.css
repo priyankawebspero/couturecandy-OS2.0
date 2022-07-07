@@ -285,6 +285,16 @@ div#popup {
     font-size: 15px;
 }
 
+.single-product-content .thumbnails .slick-track img.slick-slide {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    opacity: 0.5;
+}
+
+.single-product-content .thumbnails .slick-track img.slick-slide.active-thumb {
+    opacity: 1;
+}
+
 @media only screen and (min-width:1200px){
 
   .basel-product-design-default .product-images {
