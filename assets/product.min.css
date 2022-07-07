@@ -547,6 +547,10 @@ background: #000;
    border-left: none;
 }
 
+.single-product-content .shopify-Tabs-panel .table td {
+    border-color: #b4b4b4;
+}
+
 @media only screen and (min-width:1200px){
 
   .basel-product-design-default .product-images {
