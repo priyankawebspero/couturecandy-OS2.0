@@ -5,3 +5,16 @@ div#popup {
     position: sticky;
     top: 125px;
 }
+
+.single-breadcrumbs-wrapper {
+    background: none;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+}
+
+.single-breadcrumbs-wrapper .shopify-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+}
