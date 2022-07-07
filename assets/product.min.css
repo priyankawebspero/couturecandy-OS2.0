@@ -520,6 +520,10 @@ background: #000;
   border-bottom: none;
 }
 
+.single-product-content .table {
+    margin-bottom: 10px;
+}
+
 .single-product-content .product_meta span {
     font-size: 16px;
   font-family: 'google_sansregular';
