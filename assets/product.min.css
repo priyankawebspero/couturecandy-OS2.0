@@ -551,6 +551,17 @@ background: #000;
     border-color: #b4b4b4;
 }
 
+.container-fluid.related-and-upsells {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.related-and-upsells .title:before {
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+
 @media only screen and (min-width:1200px){
 
   .basel-product-design-default .product-images {
