@@ -224,6 +224,10 @@ div#popup {
     padding-bottom: 20px;
 }
 
+.single-product-content .selector-wrapper {
+    display: none;
+}
+
 @media only screen and (min-width:1200px){
 
   .basel-product-design-default .product-images {
