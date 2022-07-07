@@ -234,7 +234,7 @@
     "show_recently_products": false,
     "title_pr_recently": "Customers also viewed",
     "many_recently_products": 20,
-    "recently_products_hover": "alt",
+    "recently_products_hover": "base",
     "recently_sale_countdown": false,
     "loop_recently_countdown": false,
     "recently_countdown_style": "dark",
