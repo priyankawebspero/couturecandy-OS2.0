@@ -140,6 +140,56 @@ div#popup {
     padding-top: 5px;
 }
 
+.single-product-content .Value {
+    display: flex;
+    align-items: center;
+    font-family: 'google_sansregular';
+    font-weight: normal !important;
+    color: #000 !important;
+    text-transform: uppercase;
+    font-family: 'product_sans_mediumregular';
+}
+
+.single-product-content .product-share ul.social-icons li a {
+    width: 36px;
+    display: block;
+    height: 36px;
+    line-height: 36px;
+   color: #fff !important;
+    border-radius: 30px;
+}
+
+.single-product-content .product-share ul.social-icons li.social-facebook a {
+    background: #0f3e89;
+   
+}
+
+.single-product-content .product-share ul.social-icons li.social-facebook a {
+    background: #50abf1;
+   
+}
+
+.single-product-content .product-share ul.social-icons li.social-facebook a {
+    background: #e90d17;
+   
+}
+
+.single-product-content .product-share ul.social-icons li.social-facebook a {
+    background: #d51f1f;
+   
+}
+.single-product-content .product-share ul.social-icons li.social-facebook a {
+    background: #f1635a;
+   
+}
+
+
+
+.single-product-content .product-share ul.social-icons li a i {
+    font-size: 22px;
+    line-height: 36px;
+}
+
 @media only screen and (min-width:1200px){
 
   .basel-product-design-default .product-images {
