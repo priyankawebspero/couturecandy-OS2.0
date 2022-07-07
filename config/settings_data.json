@@ -1008,6 +1008,7 @@
           "18b00088-c6b1-48d1-812e-958d2c3d200d": {
             "type": "menu_block",
             "settings": {
+              "menu_image": "shopify:\/\/shop_images\/Formal-Dresses_ee80d835-2a76-4b2d-aa21-5a1ac9c1026e.jpg",
               "menu_text": "DRESSES",
               "menu": "customer-care"
             }
@@ -1015,6 +1016,7 @@
           "e764391b-b8bb-4bab-b5bb-be579f7f42ba": {
             "type": "menu_block",
             "settings": {
+              "menu_image": "shopify:\/\/shop_images\/mother-of-bride_8883bea4-a452-445a-b75f-f4f1320e13a3.jpg",
               "menu_text": "WEDDING",
               "menu": "main-menu"
             }
@@ -1022,6 +1024,7 @@
           "31315696-888b-45cf-9a0d-d6a1db969115": {
             "type": "menu_block",
             "settings": {
+              "menu_image": "shopify:\/\/shop_images\/mother-of-bride_e7dee5b0-306f-4c49-b64e-90bab398889f.jpg",
               "menu_text": "MOB",
               "menu": "main-menu"
             }
@@ -1029,6 +1032,7 @@
           "1550db37-ff1d-4512-9ea0-55e188460520": {
             "type": "menu_block",
             "settings": {
+              "menu_image": "shopify:\/\/shop_images\/Homecoming.jpg",
               "menu_text": "BRIDESMAID",
               "menu": "main-menu"
             }
@@ -1036,6 +1040,7 @@
           "85973de1-1aba-474e-bd2d-f854c8710048": {
             "type": "menu_block",
             "settings": {
+              "menu_image": "shopify:\/\/shop_images\/Plus-Size.jpg",
               "menu_text": "PLUS SIZE",
               "menu": "main-menu"
             }
