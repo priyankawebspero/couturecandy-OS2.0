@@ -248,6 +248,13 @@ div#popup {
     font-family: 'product_sans_mediumregular';
     font-weight: normal;
     font-size: 17px;
+    color: #000;
+}
+
+.single-product-content .variations .swatches-select .swatch-size-small.active-swatch {
+    border-color: #000;
+    color: #fff;
+    background: #000;
 }
 
 @media only screen and (min-width:1200px){
