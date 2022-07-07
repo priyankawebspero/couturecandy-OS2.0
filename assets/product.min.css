@@ -443,6 +443,12 @@ background: #000;
     border-bottom: 1px solid #b4b4b4;
 }
 
+.single-product-content .product-tabs-wrapper .shopify-tabs .tabs li.description_tab {
+    border-bottom: none;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
 @media only screen and (min-width:1200px){
 
   .basel-product-design-default .product-images {
