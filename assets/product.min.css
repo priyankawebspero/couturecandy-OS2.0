@@ -297,6 +297,35 @@ div#popup {
 .product-images .col-md-9.col-md-push-2 .shopify-product-gallery__wrapper {
     padding-right: 0;
 }
+.single-product-content .thumbnails button.slick-prev {
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    background: none;
+    color: #000;
+    height: 40px;
+    position: relative;
+    width: calc(50% - 6px);
+    margin-right: 4px;
+}
+
+.single-product-content .thumbnails button.slick-next {
+    margin-top: 30px;
+  border: 1px solid #ccc;
+    background: none;
+    color: #000;
+    height: 40px;
+    position: relative;
+    width: calc(50% - 6px);
+    margin-left: 4px;
+}
+
+.single-product-content .slick-vertical>button:before {
+    line-height: 26px;
+    font-size: 24px;
+    position: relative;
+    font-family: FontAwesome;
+    vertical-align: top;
+}
 
 @media only screen and (min-width:1200px){
 
