@@ -210,7 +210,7 @@ div#popup {
     font-weight: normal;
 }
 
-div#SizeChart .popupsizebutton a {
+.single-product-content div#SizeChart .popupsizebutton a {
     font-weight: normal;
     font-size: 18px;
     color: #e94949;
@@ -218,6 +218,10 @@ div#SizeChart .popupsizebutton a {
     letter-spacing: .5px;
     border-bottom: 1px solid #e94949;
     line-height: 16px;
+}
+
+.single-product-content div#SizeChart {
+    padding-bottom: 20px;
 }
 
 @media only screen and (min-width:1200px){
