@@ -85,6 +85,31 @@ div#popup {
     text-transform: uppercase;
 }
 
+.single-product-content .product_title + .Value {
+    display: flex;
+    align-items: center;
+}
+
+.single-product-content .Value .brand .BrandName {
+    margin-bottom: 0;
+    font-family: 'google_sansregular';
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-right: 15px;
+}
+
+.single-product-content .shopify-product-rating {
+    margin: 0;
+}
+.single-product-content .shopify-product-rating .text-m {
+    display: none;
+}
+
+.single-product-content .shopify-product-rating .yotpo-stars .rating-star {
+    color: #e94949 !important;
+    font-size: 19.5px !important;
+  text-shadow: none !important;
+}
 
 @media only screen and (min-width:1200px){
 
