@@ -288,11 +288,11 @@ div#popup {
 .single-product-content .thumbnails .slick-track img.slick-slide {
     margin-bottom: 15px;
     border: 1px solid #ccc;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .single-product-content .thumbnails .slick-track img.slick-slide.active-thumb {
-    opacity: 1;
+   border-color: #000;
 }
 .product-images .col-md-9.col-md-push-2 .shopify-product-gallery__wrapper {
     padding-right: 0;
