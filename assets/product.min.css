@@ -515,6 +515,16 @@ background: #000;
     padding-top: 6px;
 }
 
+.single-product-content .product_meta span {
+    font-size: 16px;
+  font-family: 'google_sansregular';
+}
+
+.single-product-content .product_meta span.sku_wrapper {
+    font-family: 'product_sans_mediumregular';
+    font-weight: normal;
+}
+
 @media only screen and (min-width:1200px){
 
   .basel-product-design-default .product-images {
