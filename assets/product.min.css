@@ -512,8 +512,7 @@ background: #000;
 
 .single-product-content .product_meta, .single-product-content .product_meta.product_meta_external {
     border: none;
-    padding-top: 6px;
-    margin-top: 0;
+  margin: 0;
     border: 1px solid #b4b4b4;
     border-top: none;
     padding: 15px 20px;
