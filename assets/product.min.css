@@ -269,6 +269,22 @@ div#popup {
     margin-right: 7px;
 }
 
+.single-product-content .quantity_test {
+    margin-top: 20px !important;
+    font-size: 17px;
+    color: #000 !important;
+    font-family: 'google_sansregular';
+}
+
+.single-product-content .quantity_test #number_counter {
+    background: #e94949;
+    margin: 0 5px;
+    padding: 3px 12px;
+    color: #fff !important;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
 @media only screen and (min-width:1200px){
 
   .basel-product-design-default .product-images {
