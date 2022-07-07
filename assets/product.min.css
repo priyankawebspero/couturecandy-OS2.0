@@ -57,13 +57,13 @@ div#popup {
 }
 
 .basel-product-design-default .product-images {
-    width: 41%;
-    padding-right: 30px;
+    width: 45%;
+    padding-right: 20px;
 }
 
 .col-sm-5.summary.entry-summary {
-    width: 59%;
-    padding-left: 40px;
+    width: 55%;
+    padding-left: 20px;
 }
 
 .product-images .col-md-9.col-md-push-2 {
@@ -83,4 +83,20 @@ div#popup {
 .single-product-content .product_title {
     font-family: 'product_sans_mediumregular';
     text-transform: uppercase;
+}
+
+
+@media only screen and (min-width:1200px){
+
+  .basel-product-design-default .product-images {
+    width: 41%;
+    padding-right: 30px;
+}
+
+.col-sm-5.summary.entry-summary {
+    width: 59%;
+    padding-left: 40px;
+}
+
+
 }
