@@ -476,8 +476,10 @@ background: #000;
 .single-product-content .product-tabs-wrapper .shopify-tabs .tabs li a:hover:after {width:100%;}
 
 .single-product-content .product-tabs-wrapper .shopify-tabs .tabs li.gl_active a:after {width:100%;}
+.single-product-content .product-tabs-wrapper .shopify-tabs .tabs li.active a:after {width:100%;}
 
 .single-product-content .product-tabs-wrapper .shopify-tabs .tabs li.gl_active a{color:#000;}
+.single-product-content .product-tabs-wrapper .shopify-tabs .tabs li.active a{color:#000;}
 
 @media only screen and (min-width:1200px){
 
