@@ -700,20 +700,6 @@
           "hidden_section": false
         }
       },
-      "collection-template-bc-sf-filter": {
-        "type": "collection-template-bc-sf-filter",
-        "settings": {
-          "products_per_page": 48,
-          "products_per_row": 4,
-          "products_per_row_mobile": 2,
-          "show_vendor": false,
-          "show_price": true,
-          "show_sale_label": true,
-          "show_sold_out_label": true,
-          "active_image_swap": true,
-          "show_sorting": true
-        }
-      },
       "1532069848939": {
         "type": "gl_section_categories_furniture",
         "blocks": {
@@ -1014,7 +1000,7 @@
           "18484e8c-02cd-42dc-98e1-1bf9b6499dd9": {
             "type": "menu_block",
             "settings": {
-              "menu_image": "shopify:\/\/shop_images\/mobile_prom_dress_pic.jpg",
+              "menu_image": "shopify:\/\/shop_images\/prom_17f855f6-8013-4e81-a3e9-ce40147848f1.jpg",
               "menu_text": "PROM",
               "menu": "main-menu"
             }
