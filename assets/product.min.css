@@ -460,6 +460,23 @@ background: #000;
     position: relative;
 }
 
+.single-product-content .product-tabs-wrapper .shopify-tabs .tabs li a:after {
+    content: "";
+    display: block;
+    /* border-bottom: 1px solid; */
+    position: absolute;
+    bottom: -1px;
+    width: 0;
+    height: 3px;
+    background: #e94949;
+    left: 0;
+    transition: all .2s ease-in-out;
+}
+
+.single-product-content .product-tabs-wrapper .shopify-tabs .tabs li a:hover:after {width:100%;}
+
+.single-product-content .product-tabs-wrapper .shopify-tabs .tabs li.gl_active a:after {width:100%;}
+
 @media only screen and (min-width:1200px){
 
   .basel-product-design-default .product-images {
