@@ -79,3 +79,8 @@ div#popup {
     padding-left: 15px;
     padding-right: 15px;
 }
+
+.single-product-content .product_title {
+    font-family: 'product_sans_mediumregular';
+    text-transform: uppercase;
+}
