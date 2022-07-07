@@ -17,12 +17,39 @@ div#popup {
 .single-breadcrumbs-wrapper .shopify-breadcrumb {
     display: flex;
     flex-wrap: wrap;
-}
-
-.single-breadcrumbs-wrapper .shopify-breadcrumb li {
-    list-style: none;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .single-breadcrumbs-wrapper .shopify-breadcrumb li:first-child a:before {
     display: none;
+}
+
+.single-breadcrumbs-wrapper .shopify-breadcrumb li a:after {
+    display: none;
+}
+
+.single-breadcrumbs-wrapper .shopify-breadcrumb li {
+    list-style: none;
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+}
+
+.single-breadcrumbs-wrapper .shopify-breadcrumb li:after {
+    content: "";
+    content: "›";
+    position: relative;
+    top: 0;
+    margin-left: 2px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #000;
+}
+
+.single-breadcrumbs-wrapper .shopify-breadcrumb .breadcrumb-last {
+    margin-left: 5px;
+    color: #f13b4d;
+    font-size: 14px;
 }
