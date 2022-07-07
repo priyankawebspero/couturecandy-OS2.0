@@ -240,6 +240,8 @@ div#popup {
     font-size: 15px;
 }
 
+.single-product-content .variations .swatches-select .swatch-size-small:after{display:none !important;}
+
 .single-product-content .variations td {
     padding-bottom: 10px;
 }
@@ -255,6 +257,16 @@ div#popup {
     border-color: #000;
     color: #fff;
     background: #000;
+}
+
+.single-product-content .variations .swatches-select .swatch-size-small.bg_color {
+    width: auto;
+    border-radius: 18px;
+    min-width: 75px;
+    padding-left: 20px;
+    padding-right: 19px;
+    max-width: 100%;
+    margin-right: 7px;
 }
 
 @media only screen and (min-width:1200px){
