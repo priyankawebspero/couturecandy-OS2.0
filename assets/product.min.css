@@ -583,6 +583,10 @@ background: #000;
     color: #000;
 }
 
+.shopify-breadcrumb {
+    padding-top: 10px;
+}
+
 @media only screen and (min-width:1200px){
 
   .basel-product-design-default .product-images {
