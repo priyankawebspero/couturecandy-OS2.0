@@ -532,16 +532,17 @@ background: #000;
 
 .single-product-content .shop_attributes th {
     text-align: left;
-    border: 1px solid #b4b4b4;
+    border-color: #b4b4b4;
     border-left: none;
     font-family: 'product_sans_mediumregular';
     font-size: 17px;
     font-weight: normal;
+    border-right: none;
 }
 
 .single-product-content .shop_attributes td {
     text-align: left;
-    border: 1px solid #b4b4b4;
+    border-color: #b4b4b4;
     border-right: none;
     font-size: 16px;
    border-left: none;
