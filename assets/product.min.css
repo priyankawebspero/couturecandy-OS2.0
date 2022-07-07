@@ -517,6 +517,7 @@ background: #000;
     border: 1px solid #b4b4b4;
     border-top: none;
     padding: 15px 20px;
+  border-bottom: none;
 }
 
 .single-product-content .product_meta span {
