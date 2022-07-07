@@ -70,3 +70,8 @@ div#popup {
 .product-images .col-md-2.col-md-pull-9 {
     right: 83.33%;
 }
+
+.single-product-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
