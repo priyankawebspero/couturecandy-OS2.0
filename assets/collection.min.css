@@ -720,3 +720,35 @@ a.text-m {
 .boost-pfs-filter-option-item-list.boost-pfs-filter-option-item-list-multiple-list li .boost-pfs-check-box {
     border: 1px solid #000;
 }
+
+.bottom.buttons {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.bottom.buttons .btn {
+    padding: 0;
+    background: none;
+    border: none;
+    margin: 0 7px;
+}
+
+.bottom.buttons .btn p {
+    margin-bottom: 0;
+}
+
+.bottom.buttons .btn a {
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+.bottom.buttons .btn a:hover {
+    border: 1px solid #e94949;
+    background: #e94949;
+}
