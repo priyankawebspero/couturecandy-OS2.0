@@ -482,11 +482,13 @@ background: #000;
 .single-product-content .product-tabs-wrapper .shopify-tabs .tabs li.active a{color:#000;}
 
 .single-product-content .shopify-Tabs-panel {
-    padding: 0 20px;
+   
     font-size: 16px;
     color: #474747;
     font-family: 'google_sansregular';
 }
+
+.single-product-content .shopify-Tabs-panel p{ padding: 0 20px;}
 
 @media only screen and (min-width:1200px){
 
