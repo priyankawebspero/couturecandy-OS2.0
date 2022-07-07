@@ -319,6 +319,18 @@ div#popup {
     margin-left: 4px;
 }
 
+.single-product-content .thumbnails button.slick-prev:hover, .single-product-content .thumbnails button.slick-prev:focus{
+background: #000;
+    color: #fff;
+
+}
+
+.single-product-content .thumbnails button.slick-next:hover, .single-product-content .thumbnails button.slick-next:focus{
+background: #000;
+    color: #fff;
+
+}
+
 .single-product-content .slick-vertical>button:before {
     line-height: 26px;
     font-size: 24px;
