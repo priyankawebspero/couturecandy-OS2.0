@@ -57,3 +57,7 @@ div#popup {
 .basel-product-design-default .product-images {
     width: 45%;
 }
+
+.col-sm-5.summary.entry-summary {
+    width: 55%;
+}
