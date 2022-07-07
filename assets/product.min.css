@@ -363,6 +363,22 @@ background: #000;
     width: 60px;
 }
 
+.single-product-content .cart .button {
+    font-size: 18px;
+    background: #e94949;
+    border-color: #e94949;
+    border-radius: 5px;
+    padding: 16px 15px;
+    min-width: 255px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.single-product-content .cart .button:hover {
+    background: #000;
+    border-color: #000;
+}
+
 @media only screen and (min-width:1200px){
 
   .basel-product-design-default .product-images {
