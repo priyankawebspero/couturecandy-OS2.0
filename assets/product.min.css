@@ -17,8 +17,6 @@ div#popup {
 .single-breadcrumbs-wrapper .shopify-breadcrumb {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 0;
-    padding-right: 0;
 }
 
 .single-breadcrumbs-wrapper .shopify-breadcrumb li:first-child a:before {
