@@ -380,6 +380,27 @@ background: #000;
     border-color: #000;
 }
 
+.single-product-content .entry-summary .yith-wcwl-add-to-wishlist a::before {
+    /* color: #000 !important; */
+    font-size: 26px;
+    width: 100%;
+    vertical-align: top;
+}
+
+.single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
+    border: 1px solid #000;
+    margin-left: 18px;
+    height: 49px;
+    /* vertical-align: top; */
+    text-align: center;
+    line-height: 49px;
+    /* font-size: 24px; */
+    width: 50px;
+    border-radius: 5px;
+    position: relative;
+    top: -2px;
+}
+
 @media only screen and (min-width:1200px){
 
   .basel-product-design-default .product-images {
