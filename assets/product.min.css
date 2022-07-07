@@ -18,3 +18,11 @@ div#popup {
     display: flex;
     flex-wrap: wrap;
 }
+
+.single-breadcrumbs-wrapper .shopify-breadcrumb li {
+    list-style: none;
+}
+
+.single-breadcrumbs-wrapper .shopify-breadcrumb li:first-child a:before {
+    display: none;
+}
