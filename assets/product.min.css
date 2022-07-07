@@ -381,10 +381,8 @@ background: #000;
 }
 
 .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a::before {
-    /* color: #000 !important; */
     font-size: 26px;
     width: 100%;
-    vertical-align: top;
 }
 
 .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
