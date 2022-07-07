@@ -243,7 +243,7 @@ div#popup {
 .single-product-content .variations .swatches-select .swatch-size-small:after{display:none !important;}
 
 .single-product-content .variations td {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .single-product-content .variations td.label label {
