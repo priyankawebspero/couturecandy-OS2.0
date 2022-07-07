@@ -120,6 +120,22 @@ div#popup {
     width: 100%;
 }
 
+.single-product-content .sezzle-shopify-info-button .sezzle-checkout-button-wrapper.sezzle-left {
+    text-transform: inherit;
+}
+
+.single-product-content .price .sezzle-button-text {
+    font-size: 17px;
+    text-transform: inherit !important;
+    line-height: normal;
+}
+
+.single-product-content .price .sezzle-button-text span.sezzle-payment-amount {
+    font-size: 20px;
+    font-family: 'product_sans_mediumregular';
+    font-weight: normal;
+}
+
 @media only screen and (min-width:1200px){
 
   .basel-product-design-default .product-images {
