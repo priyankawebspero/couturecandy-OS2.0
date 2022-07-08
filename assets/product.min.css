@@ -783,6 +783,19 @@ div#cover {
     font-size: 27px;
     font-weight: 500;
 }
+.template-product div#ReviewSection form .write-review-wrapper .yotpo-regular-box .yotpo-mandatory-explain {
+    font-family: 'google_sansregular';
+    color: #000;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.template-product div#ReviewSection form .write-review-wrapper .yotpo-regular-box span.y-label {
+    font-family: 'google_sansregular';
+    color: #000;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
 
 @media only screen and (min-width:1200px){
 
