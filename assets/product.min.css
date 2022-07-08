@@ -896,4 +896,9 @@ div#cover {
     margin: 0 30px;
 }
   
+.single-product-content {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+  
 }
