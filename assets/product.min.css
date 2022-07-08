@@ -620,6 +620,10 @@ background: #000;
     font-size: 15px;
 }
 
+.single-product-content div#SizeChart .popupsizebutton a {
+    text-decoration: none !important;
+}
+
 
 @media only screen and (min-width:1200px){
 
