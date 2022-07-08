@@ -1098,6 +1098,34 @@ div#cover {
   
 }
 
+@media only screen and (max-width: 1199px){
+  .single-product-content .product_title {
+    font-size: 25px;
+}
+  
+.single-product-content .Value .brand .BrandName {
+    font-size: 17px;
+    margin-right: 11px;
+}
+
+.single-product-content .price {
+    font-size: 26px;
+}
+  
+.single-product-content .price .sezzle-button-text {
+    font-size: 14px;
+}
+  
+.single-product-content .price .sezzle-button-text span.sezzle-payment-amount {
+    font-size: 16px;
+}
+  
+.single-product-content .sezzle-shopify-info-button {
+    padding-top: 0;
+}
+  
+}
+
 
 @media only screen and (max-width: 991px){
   
