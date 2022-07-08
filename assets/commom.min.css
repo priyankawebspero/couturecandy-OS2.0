@@ -488,6 +488,30 @@ section.brands-banner-section {
     display: block;
 }
 
+.product-grid-item .product-element-top>a img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.product-grid-item .product-element-top .hover-img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-grid-item .product-element-top .hover-img a {
+    display: block;
+    height: 100%;
+}
+.product-grid-item .product-element-top .hover-img a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 .basel-hover-base .product-element-top .yith-wcwl-add-to-wishlist>div>a:before {
     font-size: 24px;
     margin-right: 20px;
