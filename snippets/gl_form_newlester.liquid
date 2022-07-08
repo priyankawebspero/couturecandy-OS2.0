@@ -22,7 +22,7 @@
     <p class="mailchimp-input-icon">
       <input type="hidden" name="contact[tags]" value="newsletter">
       <label>Email address: </label>
-      <input type="email" name="contact[email]" placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}" value="{%- if customer -%}{{ customer.email }}{%- endif -%}" required="">
+      <input type="email" name="contact[email]" placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}" value="" required="">
     </p>
     <p>
       <input type="submit" value="{{ 'general.newsletter_form.submit' | t }}">
