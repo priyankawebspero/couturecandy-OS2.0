@@ -1044,6 +1044,14 @@
               "menu_text": "PLUS SIZE",
               "menu": "plus-size"
             }
+          },
+          "2aee7e5b-9d17-44e4-845d-c3f0867c9d98": {
+            "type": "menu_block",
+            "settings": {
+              "menu_image": "shopify:\/\/shop_images\/Cocktail_7ad01e54-d32a-4d76-bbdb-4819b36dc585.jpg",
+              "menu_text": "COCKTAIL",
+              "menu": ""
+            }
           }
         },
         "block_order": [
@@ -1052,7 +1060,8 @@
           "e764391b-b8bb-4bab-b5bb-be579f7f42ba",
           "31315696-888b-45cf-9a0d-d6a1db969115",
           "1550db37-ff1d-4512-9ea0-55e188460520",
-          "85973de1-1aba-474e-bd2d-f854c8710048"
+          "85973de1-1aba-474e-bd2d-f854c8710048",
+          "2aee7e5b-9d17-44e4-845d-c3f0867c9d98"
         ],
         "settings": {
         }
