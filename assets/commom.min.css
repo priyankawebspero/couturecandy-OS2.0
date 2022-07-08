@@ -204,7 +204,7 @@ header.main-header .wg-drop.country-selector .wgcurrent:after {
     margin: 0;
 }
 
-.enable-sticky-header.basel-header-overlap.basel-top-bar-on .main-header {
+.enable-sticky-header .main-header {
     position: relative;
     top: 0;
     padding-top: 20px;
