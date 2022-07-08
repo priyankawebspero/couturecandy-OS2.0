@@ -677,10 +677,9 @@ div#cover {
     font-family: 'product_sans_mediumregular';
     font-size: 15px;
     padding: 10px;
-    border: 1px solid #999;
 }
 .single-product-content .product-image-summary .modal .modal-content .right-side .SizeChart .SizeCharttable tr td {
-    padding: 10px;
+    padding: 7px;
     color: #000;
     border: 1px solid #999;
 }
