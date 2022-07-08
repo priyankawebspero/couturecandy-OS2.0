@@ -2050,6 +2050,11 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     padding-left: 0;
     width: auto;
 }
+  
+  .enable-sticky-header .main-header {
+    padding-top: 0;
+    padding-bottom: 7px;
+}
 
   
 }
