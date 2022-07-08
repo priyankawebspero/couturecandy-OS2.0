@@ -16,31 +16,38 @@
   <link rel="preload" href="{{ 'boost-pfs-core.js' | asset_url }}" as="script">
   <link rel="preload" href="{{ 'boost-pfs-filter.js' | asset_url }}" as="script">
   <link rel="preload" href="{{ 'boost-pfs-init.js' | asset_url }}" as="script">
-{% assign emailCust =  '' %}
-{% assign setHashedEmail = 'setEmail' %}
-{% if customer %}
-    {% assign emailCust = customer.email | remove: ' ' | strip_newlines | downcase | md5 %}
-    {% assign setHashedEmail = 'setHashedEmail' %}
+  {%- include 'head-style' -%}
+  {%- include 'head-script-before-content' -%}
+
+  {{ content_for_header }}
+  {% assign emailCust =  '' %}
+  {% assign setHashedEmail = 'setEmail' %}
+  {% if customer %}
+  {% assign emailCust = customer.email | remove: ' ' | strip_newlines | downcase | md5 %}
+  {% assign setHashedEmail = 'setHashedEmail' %}
   {% else %}
   {% assign emailCust = emailCust | remove: ' ' | strip_newlines | downcase | md5 %}
-{% assign setHashedEmail = 'setEmail' %}
-{% endif %}
-  
+  {% assign setHashedEmail = 'setEmail' %}
+  {% endif %}  
   {%- capture check_admin -%}{{ content_for_header }}{%- endcapture -%}
   {%- capture check_tab -%}{{ content_for_layout  }}{%- endcapture -%}
-
   {%- if check_tab contains 'gl_has_youtube' or check_tab contains 'has_section_gl_js' or check_tab contains 'animated_counter' -%}
   {%- assign section_js_enable = true -%}
   {%- endif -%}
   {%- if check_tab contains 'gl_has_google_map' -%}
   {%- assign section_js_googlem_enable = true -%}
   {%- endif -%}
+  {% render 'weglot_hreftags' %}
+  {% render 'weglot_switcher' %}
 
-  {%- include 'head-style' -%}
-  {%- include 'head-script-before-content' -%}
+  <!--begin-bc-sf-filter-css-->
+  
+  <!--end-bc-sf-filter-css-->
+  {%- include 'head-script-after-content' -%}
 
-  {{ content_for_header }}
-
+ <!--begin-boost-pfs-filter-css-->
+   {% render 'boost-pfs-style' %}
+ <!--end-boost-pfs-filter-css-->
   <!-- Abandoned Cart Information -->
   <div id="care-cart-customer-information" style="display:none">
     {"id":"{{customer.id}}", "email":"{{ customer.email }}","default_address":{{ customer.default_address | json }},"first_name":"{{ customer.first_name }}","last_name":"{{ customer.last_name }}","name":"{{ customer.name }}" }
@@ -53,18 +60,6 @@
   </div>
   <!--  ShopInformation -->  
   <!--EndCareCartCustomCode-->
-
-  {% render 'weglot_hreftags' %}
-  {% render 'weglot_switcher' %}
-
-  <!--begin-bc-sf-filter-css-->
-  
-  <!--end-bc-sf-filter-css-->
-  {%- include 'head-script-after-content' -%}
-
- <!--begin-boost-pfs-filter-css-->
-   {% render 'boost-pfs-style' %}
- <!--end-boost-pfs-filter-css-->
 
  
 </head>
