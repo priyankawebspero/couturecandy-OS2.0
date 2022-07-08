@@ -903,6 +903,17 @@ div#cover {
     margin-top: 1.2em;
 }
 
+.PreOrder__popup-shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .8;
+    cursor: pointer;
+}
+
 @media only screen and (min-width:992px){
 
   .basel-product-design-default .product-images {
