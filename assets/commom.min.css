@@ -211,6 +211,10 @@ header.main-header .wg-drop.country-selector .wgcurrent:after {
     background: #fff;
 }
 
+.enable-sticky-header .header-spacing {
+    display: none;
+}
+
 .main-header .wrapp-header {
     /* display: block; */
     padding: 0 50px;
