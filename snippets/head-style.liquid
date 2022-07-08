@@ -1,3 +1,4 @@
+{%- include 'load-css' -%}
 {% if template contains "index" %}
 <link rel="preload" href="{{ 'tab_shopify.min.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="{{ 'index.min.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
@@ -6,8 +7,7 @@
 <noscript><link rel="stylesheet" href="{{ 'gl_linecons_icons.min.css' | asset_url }}"></noscript>
 <link rel="preload" href="{{ 'gl_vendor.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="{{ 'main.min.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
-{%- include 'load-css' -%}
-<!-- Logo CSS -->
+
 <link rel="preload stylesheet" type="text/css" href="{{ 'commom.min.css' | asset_url }}" /> 
 {%- if template contains 'product' -%}
 {%- include 'space_check_variant' -%}         
