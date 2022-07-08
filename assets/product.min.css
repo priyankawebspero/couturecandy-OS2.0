@@ -1084,6 +1084,18 @@ div#cover {
 }
 
 
+@media only screen and (max-width: 991px){
+  
+  .basel-product-design-default .product-images {
+    width: 100%;
+}
+  
+.col-sm-5.summary.entry-summary {
+    width: 100%;
+    padding-left: 15px;
+}
+  
+}
 
 
 @media only screen and (max-width: 767px){
