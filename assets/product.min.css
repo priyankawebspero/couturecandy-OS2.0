@@ -684,6 +684,18 @@ div#cover {
     margin: 0 50px;
 }
 
+.template-product div#ReviewSection .yotpo-label.yotpo-small-box {
+    display: none;
+}
+
+.template-product div#ReviewSection .review-heading {
+    font-size: 32px;
+    color: #000;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
 @media only screen and (min-width:1200px){
 
   .basel-product-design-default .product-images {
