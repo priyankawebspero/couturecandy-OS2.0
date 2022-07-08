@@ -13,7 +13,7 @@
               {%- assign img_url = block.settings.image | img_url: 'orignal' -%}
               <img data-src="{{ img_url }}"
                    src="{{ img_url }}" alt="{{ block.settings.image.alt | default: shop.name }}" itemprop="logo"
-                   class="lazyautosizes lazyload" data-sizes="auto">
+                   class="lazyautosizes lazyload" data-sizes="auto" width="80" height="80">
               {% endif %}
             </a>
             <p class="title-collection">
