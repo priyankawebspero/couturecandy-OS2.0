@@ -797,6 +797,29 @@ div#cover {
     padding-bottom: 5px;
 }
 
+.template-product div#ReviewSection form .write-review-wrapper .yotpo-regular-box .form-group .y-label {
+    font-family: 'google_sansregular';
+    color: #000;
+    font-size: 15px;
+}
+
+.template-product div#ReviewSection form .write-review-wrapper .yotpo-regular-box .form-group .form-element input.y-input {
+    border: 1px solid #b4b4b4;
+    margin-top: 8px;
+    height: 45px;
+    color: #000;
+    font-size: 15px;
+    font-family: 'google_sansregular';
+}
+
+.template-product div#ReviewSection form .write-review-wrapper .yotpo-regular-box .form-group .form-element textarea {
+    border: 1px solid #b4b4b4;
+    margin-top: 8px;
+    color: #000;
+    font-size: 15px;
+    font-family: 'google_sansregular';
+}
+
 @media only screen and (min-width:1200px){
 
   .basel-product-design-default .product-images {
