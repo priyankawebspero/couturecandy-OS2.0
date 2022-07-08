@@ -840,6 +840,7 @@ div#cover {
     margin: -186px 0 0 -281px;
     background: #fff;
     padding: 20px;
+    z-index: 99;
 }
 
 .PreOrder__popup-close {
@@ -923,6 +924,7 @@ div#cover {
     background: #000;
     opacity: .8;
     cursor: pointer;
+    z-index: 9;
 }
 .PreOrder__popup-content {
     text-align: center;
