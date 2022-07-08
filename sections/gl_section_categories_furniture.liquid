@@ -71,16 +71,16 @@
                     <div class="product-category-thumbnail">
                       {%- if block_image != blank -%}
                                {%- assign img_url = block_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                               <img src="{{ block_image | img_url: '180' }}" data-src="{{ img_url }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ block_image.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 attachment-shop_catalog size-shop_catalog" alt="{{block_image.alt}}" >
+                               <img src="{{ block_image | img_url: '180' }}" data-src="{{ img_url }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720]" data-aspectratio="{{ block_image.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 attachment-shop_catalog size-shop_catalog" alt="{{block_image.alt}}"  width="720" height="auto">
                                <div class="jas-wrap-lazy"></div>
                       {%- elsif collection.image != blank -%}
                                {%- assign img_url = collection.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                               <img src="{{ collection.image | img_url: '50x50' }}" data-src="{{ img_url }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ collection.image.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 attachment-shop_catalog size-shop_catalog" alt="{{collection.image.alt}}" >
+                               <img src="{{ collection.image | img_url: '50x50' }}" data-src="{{ img_url }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720]" data-aspectratio="{{ collection.image.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 attachment-shop_catalog size-shop_catalog" alt="{{collection.image.alt}}"  width="720" height="auto">
                                <div class="jas-wrap-lazy"></div>
                           {%- elsif collection != blank and collection.products.first.featured_image != empty -%}
                                {%- assign image = collection.products.first.featured_image -%}
                                {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                               <img src="{{ image | img_url: '50x50' }}" data-src="{{ img_url }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 attachment-shop_catalog size-shop_catalog" alt="{{image.alt}}" >
+                               <img src="{{ image | img_url: '50x50' }}" data-src="{{ img_url }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720]" data-aspectratio="{{ image.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 attachment-shop_catalog size-shop_catalog" alt="{{image.alt}}"  width="720" height="auto">
                                <div class="jas-wrap-lazy"></div>
                          {%- else -%}
                         <img src="//cdn.shopify.com/s/files/1/1933/6253/files/portfolio-placeholder.jpg" alt="{{ shop.name }} category">
