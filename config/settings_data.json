@@ -1065,8 +1065,8 @@
             "settings": {
               "menu_image": "shopify:\/\/shop_images\/Formal_b572ca72-b60b-4e71-ab13-b5b7ad1ad95f.jpg",
               "menu_text": "FORMAL",
-              "menu_link_1": "",
-              "menu": "main-menu"
+              "menu_link_1": "https:\/\/www.couturecandy.com\/collections\/formal-gowns",
+              "menu": ""
             }
           },
           "dcb9abd5-d75b-451a-918c-7d34c393126f": {
@@ -1074,7 +1074,7 @@
             "settings": {
               "menu_image": "shopify:\/\/shop_images\/Quinceanera.jpg",
               "menu_text": "QUINCEANERA",
-              "menu_link_1": "",
+              "menu_link_1": "https:\/\/www.couturecandy.com\/collections\/quinceanera-dresses",
               "menu": ""
             }
           },
