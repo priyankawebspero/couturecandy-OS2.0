@@ -699,13 +699,13 @@ div#cover {
 
 .template-product div#ReviewSection .yotpo .yotpo-regular-box {
     border-top: none;
-    border-bottom: 1px solid #b4b4b4;
+    border-bottom: none;
     margin: 0;
     text-align: left;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
 }
 
 .template-product div#ReviewSection .yotpo .yotpo-regular-box .yotpo-default-button {
@@ -732,6 +732,10 @@ div#cover {
 
 .template-product div#ReviewSection .yotpo .yotpo-regular-box .yotpo-stars-and-sum-reviews {
     order: 3;
+}
+
+.template-product .yotpo .yotpo-first-review {
+    border-top: 1px solid #b4b4b4;
 }
 
 @media only screen and (min-width:1200px){
