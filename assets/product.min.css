@@ -819,6 +819,28 @@ div#cover {
     font-size: 15px;
     font-family: 'google_sansregular';
 }
+.template-product div#ReviewSection form .write-review-wrapper .yotpo-regular-box .yotpo-footer .connect-wrapper {
+    padding-left: 0;
+}
+
+.template-product div#ReviewSection form .write-review-wrapper .yotpo-regular-box .yotpo-footer .connect-wrapper .y-label {
+    font-family: 'google_sansregular';
+    color: #000;
+    font-size: 15px;
+    /* padding-bottom: 5px; */
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.template-product div#ReviewSection form .write-review-wrapper .yotpo-regular-box .yotpo-footer .connect-wrapper .form-element .y-input {
+    border: 1px solid #b4b4b4;
+    margin-top: 8px;
+    height: 45px;
+    color: #000;
+    font-size: 15px;
+    font-family: 'google_sansregular';
+}
+
 
 @media only screen and (min-width:1200px){
 
