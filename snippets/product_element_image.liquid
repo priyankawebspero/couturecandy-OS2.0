@@ -16,7 +16,7 @@
   {%- if settings_pr_img_size and images_size > 0 -%}
      <a data-chksrc="{{ product.images[position_img_1] | img_url: '50x50' }}" class="jas_bg  jas-product-img-element jas-pr-image-link lazyload" href="{{ url_nt | within: collection }}" data-bgset="{%- include 'bgset', image: product.images[position_img_1] -%}" data-sizes="auto" data-parent-fit="cover" style="background-image: url('{{ product.images[position_img_1] | img_url: '50x50' }});">
         {%- assign img_url = product.images[position_img_1] | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-        <img src="{{ product.images[position_img_1] | img_url: '50x50' }}" data-chksrc="{{ product.images[position_img_1] | img_url: '50x50' }}" data-src="{{ img_url }}" data-widths="[180, 360, 540]" data-aspectratio="{{ product.images[position_img_1].aspect_ratio }}" data-sizes="auto" class="lazyload attachment-shop_catalog size-shop_catalog op_0" alt="{{product.images[position_img_1].alt}}">
+        <img src="{{ product.images[position_img_1] | img_url: '50x50' }}" data-chksrc="{{ product.images[position_img_1] | img_url: '50x50' }}" data-src="{{ img_url }}" data-widths="[180, 360, 540]" data-aspectratio="{{ product.images[position_img_1].aspect_ratio }}" data-sizes="auto" class="lazyload attachment-shop_catalog size-shop_catalog op_0" alt="{{product.images[position_img_1].alt}}"  width="420" height="auto">
         {%- include 'product_labels' -%}
 </a>
      <div class="jas-wrap-lazy"></div>
@@ -26,7 +26,7 @@
   {%- elsif images_size > 0 -%}
      <a class="jas-product-img-element jas-pr-image-link" href="{{ url_nt }}">
         {%- assign img_url = product.images[position_img_1] | img_url: '1x1' | replace: '_1x1.', '_540x.' -%}
-        <img src="{{ product.images[position_img_1] | img_url: '50x50' }}" data-chksrc="{{ product.images[position_img_1] | img_url: '50x50' }}" data-src="{{ img_url }}" data-widths="[180, 360, 540]" data-aspectratio="{{ product.images[position_img_1].aspect_ratio }}" data-sizes="auto" class="lazyload attachment-shop_catalog size-shop_catalog" alt="{{product.images[position_img_1].alt}}">
+        <img src="{{ product.images[position_img_1] | img_url: '50x50' }}" data-chksrc="{{ product.images[position_img_1] | img_url: '50x50' }}" data-src="{{ img_url }}" data-widths="[180, 360, 540]" data-aspectratio="{{ product.images[position_img_1].aspect_ratio }}" data-sizes="auto" class="lazyload attachment-shop_catalog size-shop_catalog" alt="{{product.images[position_img_1].alt}}"  width="420" height="auto">
         <div class="jas-wrap-lazy"></div>
         {%- include 'product_labels' -%}
      </a>
@@ -34,7 +34,7 @@
      <div class="hover-img jas-product-img-element jas-hover-img pacursor-pointer {%- if hide_img_2 %} hide{%- endif -%}" onclick="window.location.href='{{ url_nt | within: collection }}'">
         <a href="{{ url_nt }}">
            {%- assign img_url = product.images[position_img_2] | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-           <img src="{{ product.images[position_img_2] | img_url: '50x50' }}" data-src="{{ img_url }}" data-widths="[180, 360, 540]" data-aspectratio="{{ product.images[position_img_2].aspect_ratio }}"  data-sizes="auto" class="lazyload attachment-shop_catalog size-shop_catalog" alt="{{product.images[position_img_2].alt}}">       
+           <img src="{{ product.images[position_img_2] | img_url: '50x50' }}" data-src="{{ img_url }}" data-widths="[180, 360, 540]" data-aspectratio="{{ product.images[position_img_2].aspect_ratio }}"  data-sizes="auto" class="lazyload attachment-shop_catalog size-shop_catalog" alt="{{product.images[position_img_2].alt}}" width="420" height="auto">       
            <div class="jas-wrap-lazy"></div>
         </a>
      </div>
