@@ -210,10 +210,9 @@ header.main-header .wg-drop.country-selector .wgcurrent:after {
 
 .enable-sticky-header .main-header {
     position: relative !important;
-    top: 0;
+    top: 0 !important;
     padding-top: 20px;
     background: #fff;
- 
 }
 
 .enable-sticky-header .main-header.act-scroll {
