@@ -871,7 +871,7 @@ div#cover {
     font-size: 40px;
     line-height: 1em;
     margin: 0;
-    color: #f66;
+    color: #e94949;
     padding: 0;
     margin: 10px 0;
 }
@@ -881,7 +881,7 @@ div#cover {
     font-size: 19px;
     text-align: center;
     margin: 0 auto;
-    color: #f66;
+    color: #e94949;
     padding: 9px;
     width: 100%;
     /* font-style: italic; */
@@ -893,15 +893,22 @@ div#cover {
 }
 
 .PreOrder__popup #shopify_add_to_cart {
-    background: #f66;
+    background: #e94949;
     border-radius: 0;
-    padding: 10px 40px;
-    font-size: 14px;
+    padding: 13px 15px;
+    font-size: 18px;
     border: none;
     box-shadow: none;
-    width: 50%!important;
-    margin-bottom: 20px!important;
+    width: 100% !important;
+    margin-bottom: 10px!important;
+    font-family: 'product_sans_mediumregular';
+    min-width: inherit;
+    max-width: 270px;
+    height: auto;
+    display: inline-block;
 }
+
+.PreOrder__popup #shopify_add_to_cart:hover{ background: #000;}
 
 .PreOrder__popup p:first-of-type {
     margin-top: 1.2em;
