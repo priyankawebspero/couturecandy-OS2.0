@@ -1088,6 +1088,11 @@ div#cover {
   
   .product-image-summary .Info .Details {
     width: 50%;
+    margin-top: 20px;
+}
+  
+.product-image-summary .Info {
+    margin-top: 20px;
 }
   
   
