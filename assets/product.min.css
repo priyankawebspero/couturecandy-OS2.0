@@ -704,7 +704,8 @@ div#cover {
     text-align: left;
     display: flex;
     flex-wrap: wrap;
-  align-items: center;
+    align-items: center;
+    padding-bottom: 40px;
 }
 
 .template-product div#ReviewSection .yotpo .yotpo-regular-box .yotpo-default-button {
