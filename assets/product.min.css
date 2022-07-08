@@ -982,6 +982,10 @@ div#cover {
     font-size: 18px;
 }
 
+.single-product-content .Value {
+    flex-wrap: wrap;
+}
+
 @media only screen and (min-width:992px){
 
   .basel-product-design-default .product-images {
