@@ -1050,6 +1050,10 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
     top: 0;
 }
 
+.header-links ul li a:after {
+    display: none !important;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
