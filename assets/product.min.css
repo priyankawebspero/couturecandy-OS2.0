@@ -740,6 +740,7 @@ div#cover {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+  margin-top: 40px;
 }
 
 .template-product .yotpo .yotpo-first-review .yotpo-first-review-stars {
