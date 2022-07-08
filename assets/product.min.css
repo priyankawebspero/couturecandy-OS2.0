@@ -657,6 +657,19 @@ div#cover {
     width: 50%;
 }
 
+.single-product-content .product-image-summary .modal .modal-content .right-side {
+    text-align: center;
+}
+
+.single-product-content .product-image-summary .modal .modal-content .right-side .SizeChart img.brandimage {
+    max-width: 200px;
+    margin-bottom: 30px;
+}
+
+.single-product-content .product-image-summary .modal .modal-content .right-side .SizeChart .SizeCharttable {
+    background: #f5f5f5;
+}
+
 .template-product div#ReviewSection {
     border: 1px solid #b4b4b4;
     margin: 0 auto;
