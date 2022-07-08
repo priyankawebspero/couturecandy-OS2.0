@@ -696,6 +696,11 @@ div#cover {
     text-transform: uppercase;
 }
 
+.template-product div#ReviewSection .yotpo .yotpo-regular-box {
+    border-top: none;
+    border-bottom: 1px solid #b4b4b4;
+}
+
 @media only screen and (min-width:1200px){
 
   .basel-product-design-default .product-images {
