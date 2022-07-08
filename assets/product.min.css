@@ -1191,3 +1191,7 @@ div#cover {
 }
   
 }
+
+div#ProdDetailInfomobile {
+    display: none;
+}
