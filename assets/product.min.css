@@ -928,6 +928,10 @@ div#cover {
     text-align: center;
 }
 
+.PreOrder__popup #shopify_add_to_cart + p {
+    font-size: 18px;
+}
+
 @media only screen and (min-width:992px){
 
   .basel-product-design-default .product-images {
