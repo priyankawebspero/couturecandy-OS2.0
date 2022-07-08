@@ -1000,31 +1000,31 @@
           "18484e8c-02cd-42dc-98e1-1bf9b6499dd9": {
             "type": "menu_block",
             "settings": {
-              "menu_image": "shopify:\/\/shop_images\/prom_17f855f6-8013-4e81-a3e9-ce40147848f1.jpg",
+              "menu_image": "shopify:\/\/shop_images\/Prom_0452e3c8-a7e4-4796-861e-82ef5a1a4dbc.jpg",
               "menu_text": "PROM",
-              "menu": "main-menu"
+              "menu": "prom"
             }
           },
           "18b00088-c6b1-48d1-812e-958d2c3d200d": {
             "type": "menu_block",
             "settings": {
-              "menu_image": "shopify:\/\/shop_images\/Formal-Dresses_ee80d835-2a76-4b2d-aa21-5a1ac9c1026e.jpg",
+              "menu_image": "shopify:\/\/shop_images\/Dresses.jpg",
               "menu_text": "DRESSES",
-              "menu": "customer-care"
+              "menu": "dresses"
             }
           },
           "e764391b-b8bb-4bab-b5bb-be579f7f42ba": {
             "type": "menu_block",
             "settings": {
-              "menu_image": "shopify:\/\/shop_images\/mother-of-bride_8883bea4-a452-445a-b75f-f4f1320e13a3.jpg",
+              "menu_image": "shopify:\/\/shop_images\/Wedding.jpg",
               "menu_text": "WEDDING",
-              "menu": "main-menu"
+              "menu": "wedding"
             }
           },
           "31315696-888b-45cf-9a0d-d6a1db969115": {
             "type": "menu_block",
             "settings": {
-              "menu_image": "shopify:\/\/shop_images\/Sale-img.jpg",
+              "menu_image": "shopify:\/\/shop_images\/Mob.jpg",
               "menu_text": "MOB",
               "menu": "main-menu"
             }
@@ -1032,17 +1032,17 @@
           "1550db37-ff1d-4512-9ea0-55e188460520": {
             "type": "menu_block",
             "settings": {
-              "menu_image": "shopify:\/\/shop_images\/Homecoming.jpg",
+              "menu_image": "shopify:\/\/shop_images\/Bridesmaid_f98d888d-b320-47d9-8003-88f4938c33e7.jpg",
               "menu_text": "BRIDESMAID",
-              "menu": "main-menu"
+              "menu": "bridesmaid"
             }
           },
           "85973de1-1aba-474e-bd2d-f854c8710048": {
             "type": "menu_block",
             "settings": {
-              "menu_image": "shopify:\/\/shop_images\/Plus-Size.jpg",
+              "menu_image": "shopify:\/\/shop_images\/Plus-Size_5c7d31ec-10c5-4c93-9d2a-6c0e8e50ec65.jpg",
               "menu_text": "PLUS SIZE",
-              "menu": "main-menu"
+              "menu": "plus-size"
             }
           }
         },
