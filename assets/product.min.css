@@ -758,6 +758,11 @@ div#cover {
     letter-spacing: 1px;
 }
 
+.template-product .yotpo .yotpo-first-review .yotpo-first-review-stars span.stars-wrapper span.yotpo-icon:before {
+    color: #e94949;
+    font-size: 23px;
+}
+
 @media only screen and (min-width:1200px){
 
   .basel-product-design-default .product-images {
