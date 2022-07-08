@@ -637,6 +637,43 @@ div#cover {
 }
 
 
+.single-product-content .product-image-summary .modal {
+    max-width: 85%;
+    margin: 0 auto;
+    top: 5%;
+    z-index: 999;
+    border: 1px solid #c5c5c5;
+    left: 10%;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    position: absolute;
+    background: #fff;
+    display: none;
+}
+
+.single-product-content .product-image-summary .modal .modal-content {
+    margin: auto;
+    padding: 20px;
+    display: inline-block;
+}
+
+.single-product-content .product-image-summary .modal .close {
+    position: relative;
+    top: -20px;
+    right: -10px;
+    float: right;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.single-product-content .product-image-summary #popup .modal-content .left-side, .single-product-content .product-image-summary #popup .modal-content .right-side {
+    float: left;
+    max-width: 50%;
+    padding: 1% 15px;
+}
+
+
 @media only screen and (min-width:1200px){
 
   .basel-product-design-default .product-images {
