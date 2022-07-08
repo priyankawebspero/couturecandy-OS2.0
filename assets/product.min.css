@@ -674,6 +674,13 @@ div#cover {
     padding: 1% 15px;
 }
 
+div#ReviewSection {
+    border: 1px solid #b4b4b4;
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 40px;
+}
 
 @media only screen and (min-width:1200px){
 
