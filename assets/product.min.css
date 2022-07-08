@@ -294,9 +294,7 @@ div#popup {
 .single-product-content .thumbnails .slick-track img.slick-slide.active-thumb {
    border-color: #000;
 }
-.product-images .col-md-9.col-md-push-2 .shopify-product-gallery__wrapper {
-    padding-right: 0;
-}
+
 .single-product-content .thumbnails button.slick-prev {
     margin-top: 30px;
     border: 1px solid #ccc;
