@@ -697,15 +697,15 @@ div#cover {
     margin-bottom: 5px;
 }
 
-.template-product div#ReviewSection .yotpo .yotpo-regular-box {
+.template-product div#ReviewSection .yotpo .yotpo-regular-box.yotpo-bottomline {
     border-top: none;
-    border-bottom: none;
+      border-top: 1px solid #b4b4b4;
     margin: 0;
     text-align: left;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding-bottom: 0px;
+    padding-bottom: 40px;
 }
 
 .template-product div#ReviewSection .yotpo .yotpo-regular-box .yotpo-default-button {
@@ -735,8 +735,8 @@ div#cover {
 }
 
 .template-product .yotpo .yotpo-first-review {
-    border-top: 1px solid #b4b4b4;
-    padding-top: 30px;
+  
+    padding-top: 0px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
