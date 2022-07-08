@@ -684,6 +684,17 @@ div#cover {
     border: 1px solid #999;
 }
 
+.single-product-content .product-image-summary #popup .modal-content .left-side h4 {
+    font-family: 'product_sans_mediumregular';
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.single-product-content .product-image-summary #popup .modal-content .sizechart-left-des {
+    margin: 10px 0;
+    color: #000;
+}
+
 .template-product div#ReviewSection {
     border: 1px solid #b4b4b4;
     margin: 0 auto;
