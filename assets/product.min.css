@@ -619,18 +619,20 @@ div#cover {
 
 
 .single-product-content .product-image-summary .modal {
-    max-width: 85%;
+    max-width: 1133px;
     margin: 0 auto;
     top: 5%;
     z-index: 999;
     border: 1px solid #c5c5c5;
-    left: 10%;
+    left: 0;
     width: 100%;
     height: auto;
     overflow: auto;
     position: absolute;
     background: #fff;
     display: none;
+    margin: auto;
+    right: 0;
 }
 
 .single-product-content .product-image-summary .modal .modal-content {
