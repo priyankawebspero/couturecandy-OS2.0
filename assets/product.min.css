@@ -679,7 +679,7 @@ div#ReviewSection {
     width: 100%;
     max-width: 95%;
     margin: 0 auto;
-    padding: 40px;
+    padding: 35px 40px;
 }
 
 @media only screen and (min-width:1200px){
