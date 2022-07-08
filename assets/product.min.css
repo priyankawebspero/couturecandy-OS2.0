@@ -676,12 +676,11 @@ div#cover {
 
 .template-product div#ReviewSection {
     border: 1px solid #b4b4b4;
-    /* width: 100%; */
-    /* max-width: 95%; */
     margin: 0 auto;
     padding: 35px 40px;
     clear: both;
     margin: 0 50px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
 }
 
 .template-product div#ReviewSection .yotpo-label.yotpo-small-box {
