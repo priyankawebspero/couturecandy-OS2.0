@@ -832,6 +832,77 @@ div#cover {
     letter-spacing: 1px;
 }
 
+.PreOrder__popup-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 562px;
+    margin: -186px 0 0 -281px;
+    background: #fff;
+    padding: 20px;
+}
+
+.PreOrder__popup-close {
+    cursor: pointer;
+    position: absolute;
+    top: 32px;
+    right: 30px;
+    font-size: 2em;
+    line-height: .3em;
+    font-weight: 700;
+}
+
+.PreOrder__popup-content {
+    border: 2px solid #222;
+    padding: 10px;
+    border-radius: 10px 0;
+}
+
+.PreOrder__popup p {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.7em;
+    font-family: 'Circular-medium',Arial,Helvetica,sans-serif;
+    padding: 10px;
+    color: #000;
+}
+
+.PreOrder__popup .large {
+    font-size: 40px;
+    line-height: 1em;
+    margin: 0;
+    color: #f66;
+    padding: 0;
+}
+
+#futureDDays {
+    display: block;
+    font-size: 17px;
+    text-align: center;
+    margin: 0 auto;
+    color: #f66;
+    padding: 5px;
+    width: 50%;
+    font-style: italic;
+    font-weight: 700;
+    border: 2px solid #000;
+}
+
+.PreOrder__popup #shopify_add_to_cart {
+    background: #f66;
+    border-radius: 0;
+    padding: 10px 40px;
+    font-size: 14px;
+    border: none;
+    box-shadow: none;
+    width: 50%!important;
+    margin-bottom: 20px!important;
+}
+
+.PreOrder__popup p:first-of-type {
+    margin-top: 1.2em;
+}
+
 @media only screen and (min-width:992px){
 
   .basel-product-design-default .product-images {
