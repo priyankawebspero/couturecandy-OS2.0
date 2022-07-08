@@ -15,8 +15,8 @@
                    {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                   {%- assign img_url_mobile = img_mobile | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                   
-                   <img src="{{ image | img_url: '50x50' }}" data-src="{{ img_url }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 promo-banner-image image-1 desk" alt="{{image.alt}}" >
-                   <img src="{{ img_mobile | img_url: '50x50' }}" data-src="{{ img_url_mobile }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ img_mobile.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 promo-banner-image image-1 mobile" alt="{{img_mobile.alt}}" >
+                   <img src="{{ image | img_url: '50x50' }}" data-src="{{ img_url }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 850]" data-aspectratio="{{ image.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 promo-banner-image image-1 desk" alt="{{image.alt}}" >
+                   <img src="{{ img_mobile | img_url: '50x50' }}" data-src="{{ img_url_mobile }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 850]" data-aspectratio="{{ img_mobile.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 promo-banner-image image-1 mobile" alt="{{img_mobile.alt}}" >
                   <div class="jas-wrap-lazy"></div>
                   {%- endif -%}
                 </div>
@@ -55,8 +55,8 @@
                    {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                   {%- assign img_url_mobile = img_mobile | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                 
-                   <img src="{{ image | img_url: '50x50' }}" data-src="{{ img_url }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 promo-banner-image image-1 desk" alt="{{image.alt}}" >
-                   <img src="{{ img_mobile | img_url: '50x50' }}" data-src="{{ img_url_mobile }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ img_mobile.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 promo-banner-image image-1 mobile" alt="{{img_mobile.alt}}" >
+                   <img src="{{ image | img_url: '50x50' }}" data-src="{{ img_url }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 850]" data-aspectratio="{{ image.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 promo-banner-image image-1 desk" alt="{{image.alt}}" >
+                   <img src="{{ img_mobile | img_url: '50x50' }}" data-src="{{ img_url_mobile }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 850]" data-aspectratio="{{ img_mobile.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 promo-banner-image image-1 mobile" alt="{{img_mobile.alt}}" >
                   <div class="jas-wrap-lazy"></div>
                   {%- endif -%}
               </div>
@@ -121,8 +121,8 @@
                 {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                 {%- assign img_url_mob = image_mob | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                
-                            <img src="{{ image | img_url: '50x50' }}" data-src="{{ img_url }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 promo-banner-image image-1 desk" alt="{{image.alt}}" >
-                            <img src="{{ image_mob | img_url: '50x50' }}" data-src="{{ img_url_mob }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image_mob.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 promo-banner-image image-1 mobile" alt="{{image_mob.alt}}" >
+                            <img src="{{ image | img_url: '50x50' }}" data-src="{{ img_url }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 850]" data-aspectratio="{{ image.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 promo-banner-image image-1 desk" alt="{{image.alt}}" >
+                            <img src="{{ image_mob | img_url: '50x50' }}" data-src="{{ img_url_mob }}" data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 850]" data-aspectratio="{{ image_mob.aspect_ratio }}"  data-sizes="auto" class="lazyload w__100 promo-banner-image image-1 mobile" alt="{{image_mob.alt}}" >
    
                          <div class="jas-wrap-lazy"></div>
                {%- endif -%}
