@@ -2057,6 +2057,8 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     padding-bottom: 7px;
     border-bottom: 1px solid #ccc;
 }
+  
+  .template-index .enable-sticky-header .main-header{ border-bottom:inherit;}
 
   
 }
