@@ -1008,13 +1008,8 @@ div#cover {
     position: sticky;
     top: 125px;
 }
-
-}
-
-
-@media only screen and (min-width:1200px){
   
-  .product-images .col-md-9.col-md-push-2 {
+.product-images .col-md-9.col-md-push-2 {
     width: 83.33333%;
     padding-left: 5px;
 }
@@ -1022,6 +1017,13 @@ div#cover {
 .product-images .col-md-2.col-md-pull-9 {
     right: 83.33%;
 }
+
+}
+
+
+@media only screen and (min-width:1200px){
+  
+  
 
   .basel-product-design-default .product-images {
     width: 41%;
