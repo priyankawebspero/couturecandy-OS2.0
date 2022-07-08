@@ -736,6 +736,16 @@ div#cover {
 
 .template-product .yotpo .yotpo-first-review {
     border-top: 1px solid #b4b4b4;
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.template-product .yotpo .yotpo-first-review .yotpo-first-review-stars {
+    margin: 0;
+    order: 2;
+    margin-left: 25px;
 }
 
 @media only screen and (min-width:1200px){
