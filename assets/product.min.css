@@ -1095,6 +1095,10 @@ div#cover {
     padding-left: 15px;
 }
   
+.single-product-content .container .row .product-image-summary .shopify-product-gallery .col-md-pull-9 #gl_thumbnails {
+    display: none;
+}
+  
 }
 
 
