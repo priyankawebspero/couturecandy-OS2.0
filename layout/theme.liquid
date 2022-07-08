@@ -37,9 +37,6 @@
   {%- if check_tab contains 'gl_has_google_map' -%}
   {%- assign section_js_googlem_enable = true -%}
   {%- endif -%}
-  {% render 'weglot_hreftags' %}
-  {% render 'weglot_switcher' %}
-
   <!--begin-bc-sf-filter-css-->
   
   <!--end-bc-sf-filter-css-->
@@ -136,34 +133,10 @@
 
   {%- include 'last_catelog_mod',var_last:true -%}
 
-
   <!-- CRITEO START -->
   {% include 'criteo-tracking' %}
   <!-- CRITEO END -->
-
-  <!--begin-bc-sf-filter-js-->
-    
-  <!--end-bc-sf-filter-js-->
-
-  
-  <!--start-bc-al-init-->
-  
-  <!--end-bc-al-init (Init Recently Viewed Products)-->
-
-  {% comment %}
-  <!-- start-bc-recently-viewed-product-init -->
-  
-  <!-- end-bc-recently-viewed-product-init -->
-  {% endcomment %}
-
-  
-
-  {% comment %}
-  <!--start-bc-most-popular-product-init-->
-    
-  <!--end-bc-most-popular-product-init-->
-  {% endcomment %}
-  
+ 
 <!-- **BEGIN** Hextom SPM Integration // Main Include - DO NOT MODIFY -->
         {% render 'hextom_spm_main', product: product, customer: customer %}
         <!-- **END** Hextom SPM Integration // Main Include - DO NOT MODIFY -->
@@ -174,6 +147,8 @@
  <!--begin-boost-pfs-js-->
    {% render 'boost-pfs' %}
  <!--end-boost-pfs-js-->
+    {% render 'weglot_hreftags' %}
+  {% render 'weglot_switcher' %}
 </body>
 
   {% if template != "index" %} 
