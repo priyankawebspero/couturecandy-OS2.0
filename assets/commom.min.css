@@ -476,13 +476,15 @@ section.brands-banner-section {
 }
 
 .product-grid-item .product-element-top {
-    margin-bottom: 0px;
+    margin-bottom: 10px !important;
+    border: 1px solid #b4b4b4 !important;
 }
 
+
 .product-grid-item .product-element-top>a {
-    /* margin-bottom: 10px; */
-    border: 1px solid #b4b4b4;
-    margin-bottom: 10px;
+  position: relative;
+    overflow: hidden;
+    padding-bottom: 112%;
     display: block;
 }
 
