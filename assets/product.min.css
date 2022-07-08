@@ -748,6 +748,16 @@ div#cover {
     margin-left: 25px;
 }
 
+.template-product .yotpo .yotpo-first-review .yotpo-first-review-content button[type="button"] {
+    background: #e94949;
+    padding: 17px 25px;
+    border-radius: 5px;
+    margin-bottom: 0;
+    font-size: 17px;
+    font-family: 'google_sansregular';
+    letter-spacing: 1px;
+}
+
 @media only screen and (min-width:1200px){
 
   .basel-product-design-default .product-images {
