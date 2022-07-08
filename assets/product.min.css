@@ -1073,6 +1073,10 @@ div#cover {
     padding-right: 0;
 }
   
+.product-images .col-md-2.col-md-pull-9 {
+    padding-right: 7px;
+}
+  
 }
 
 
