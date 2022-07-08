@@ -866,3 +866,11 @@ div#cover {
 
 
 }
+
+@media only screen and (max-width: 1550px){
+  
+.container-fluid.related-and-upsells {
+    padding: 50px 30px;
+}
+  
+}
