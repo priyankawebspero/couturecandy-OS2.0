@@ -981,7 +981,48 @@
                              {%- if vendortitle == 'alfred sung' or vendortitle == 'dessy collection' or vendortitle == 'social bridesmaids by dessy' or vendortitle == 'jy - jenny yoo' or vendortitle == 'lela rose' or vendortitle == '57 grand' -%}
                               <span style="color: #f85364;font-weight: bold;text-transform: uppercase;display: block;margin-bottom: 10px;">This Bridesmaid Dress Ships within 48 hours</span>
                              {%- endif -%}
-                                               
+                               <div class="Info" id="ProdDetailInfomobile">
+                                    <div class="Details shipping">
+                                            <div class="Image">
+                                                <div class="image shipping_image"></div>
+                                                <span>Free Shipping</span>
+                                            </div>
+                                            <div class="Cnt">
+                                                <span>Free shipping for orders over $299</span><br>
+                                                <a href="https://www.couturecandy.com/shipping-returns-exchanges/" target="_blank">See Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                            </div>
+                                       </div>
+                                       <div class="Details Exchange">
+                                        <div class="Image">
+                                                <div class="image exchange_image"></div>
+                                                <span>Exchanges &amp; Returns</span>
+                                            </div>
+                                            <div class="Cnt">
+                                                <span>Easy returns &amp; exchanges within 5 days on eligible items</span>
+                                                <a href="https://www.couturecandy.com/shipping-returns-exchanges/" target="_blank">See Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                            </div>
+                                       </div>
+                                       <div class="Details Price-match">
+                                            <div class="Image">
+                                               <div class="image price_image"></div>
+                                                <span>Price Match</span>
+                                            </div>
+                                            <div class="Cnt">
+                                                <span>Find a lower price? We'll match it. Exclusions may apply.</span>
+                                                <a href="https://www.couturecandy.com/shipping-returns-exchanges/" target="_blank">See Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                            </div>
+                                       </div>
+                                       <div class="Details No Tax">
+                                            <div class="Image">
+                                               <div class="image no_tax_image"></div>
+                                                <span>No Tax</span>
+                                            </div>
+                                            <div class="Cnt">
+                                                <span>No Sales Tax if shipped outside Nevada. Save 10%.</span>
+                                                <a href="https://www.couturecandy.com/shipping-returns-exchanges/" target="_blank">See Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                            </div> 
+                                     </div>                                                                           
+                                  </div><!--ProdDetailInfo Mobile main-->                 
                               {%- if product.variants.size == 1 -%}<div class="clear"></div>{%- endif -%}
                              {%- if product.variants.size > 1 and settings.product_img_trust_seal == false -%}<div class="clear"></div>{%- endif -%}
                              {%- if settings.use_compare or settings.size_chart  -%}
