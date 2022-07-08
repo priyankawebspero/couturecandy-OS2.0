@@ -1052,6 +1052,22 @@
               "menu_text": "COCKTAIL",
               "menu": ""
             }
+          },
+          "77683a01-ea24-457e-9fed-83304f4ca04e": {
+            "type": "menu_block",
+            "settings": {
+              "menu_image": "shopify:\/\/shop_images\/Formal_b572ca72-b60b-4e71-ab13-b5b7ad1ad95f.jpg",
+              "menu_text": "FORMAL",
+              "menu": "main-menu"
+            }
+          },
+          "dcb9abd5-d75b-451a-918c-7d34c393126f": {
+            "type": "menu_block",
+            "settings": {
+              "menu_image": "shopify:\/\/shop_images\/Quinceanera.jpg",
+              "menu_text": "QUINCEANERA",
+              "menu": ""
+            }
           }
         },
         "block_order": [
@@ -1061,7 +1077,9 @@
           "31315696-888b-45cf-9a0d-d6a1db969115",
           "1550db37-ff1d-4512-9ea0-55e188460520",
           "85973de1-1aba-474e-bd2d-f854c8710048",
-          "2aee7e5b-9d17-44e4-845d-c3f0867c9d98"
+          "2aee7e5b-9d17-44e4-845d-c3f0867c9d98",
+          "77683a01-ea24-457e-9fed-83304f4ca04e",
+          "dcb9abd5-d75b-451a-918c-7d34c393126f"
         ],
         "settings": {
         }
