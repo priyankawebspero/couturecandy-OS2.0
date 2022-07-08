@@ -695,6 +695,10 @@ div#cover {
     color: #000;
 }
 
+.single-product-content .product-image-summary .modal .close {
+    cursor: pointer;
+}
+
 .template-product div#ReviewSection {
     border: 1px solid #b4b4b4;
     margin: 0 auto;
