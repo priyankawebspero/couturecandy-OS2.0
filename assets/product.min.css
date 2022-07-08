@@ -704,6 +704,7 @@ div#cover {
     text-align: left;
     display: flex;
     flex-wrap: wrap;
+  align-items: center;
 }
 
 .template-product div#ReviewSection .yotpo .yotpo-regular-box .yotpo-default-button {
@@ -714,8 +715,19 @@ div#cover {
     text-align: left !important;
     order: 1;
     margin-right: 25px;
+    background: #e94949;
+    padding: 17px 25px;
+    border-radius: 5px;
+    margin-bottom: 0;
 }
 
+.template-product div#ReviewSection .yotpo .yotpo-regular-box .yotpo-default-button .yotpo-icon-button-text {
+    font-family: 'product_sans_mediumregular';
+    font-size: 17px;
+    font-family: 'google_sansregular';
+    padding-left: 7px;
+    letter-spacing: 1px;
+}
 
 .template-product div#ReviewSection .yotpo .yotpo-regular-box .yotpo-stars-and-sum-reviews {
     order: 3;
