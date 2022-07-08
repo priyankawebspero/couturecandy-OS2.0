@@ -209,15 +209,15 @@ header.main-header .wg-drop.country-selector .wgcurrent:after {
 }
 
 .enable-sticky-header .main-header {
-    position: relative;
+    position: relative !important;
     top: 0;
     padding-top: 20px;
     background: #fff;
   left:0;
 }
 
-.enable-sticky-header .main-header {
-   position: fixed;
+.enable-sticky-header .main-header.act-scroll {
+   position: fixed !important;
     top: 0;
     z-index: 9;
   animation: smoothScroll .5s forwards;
