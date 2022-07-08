@@ -864,6 +864,7 @@ div#cover {
     line-height: 1.7em;
     padding: 10px;
     color: #000;
+    font-family: 'product_sans_mediumregular';
 }
 
 .PreOrder__popup .large {
@@ -872,6 +873,7 @@ div#cover {
     margin: 0;
     color: #f66;
     padding: 0;
+    margin: 10px 0;
 }
 
 #futureDDays {
