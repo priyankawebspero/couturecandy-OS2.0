@@ -2051,9 +2051,11 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     width: auto;
 }
   
-  .enable-sticky-header .main-header {
+.enable-sticky-header .main-header {
     padding-top: 0;
+    background: #fff;
     padding-bottom: 7px;
+    border-bottom: 1px solid #ccc;
 }
 
   
