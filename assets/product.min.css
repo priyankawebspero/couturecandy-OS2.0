@@ -699,7 +699,7 @@ div#cover {
 
 .template-product div#ReviewSection .yotpo .yotpo-regular-box.yotpo-bottomline {
     border-top: none;
-      border-top: 1px solid #b4b4b4;
+    border-bottom: 1px solid #b4b4b4;
     margin: 0;
     text-align: left;
     display: flex;
