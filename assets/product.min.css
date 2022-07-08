@@ -841,6 +841,17 @@ div#cover {
     font-family: 'google_sansregular';
 }
 
+.template-product div#ReviewSection form .write-review-wrapper .yotpo-regular-box .submit-button {
+    float: none;
+    margin-top: 15px;
+}
+
+.template-product div#ReviewSection form .write-review-wrapper .yotpo-regular-box .submit-button input.yotpo-default-button {
+    text-align: center !important;
+    font-family: 'google_sansregular';
+    font-size: 17px;
+    letter-spacing: 1px;
+}
 
 @media only screen and (min-width:1200px){
 
