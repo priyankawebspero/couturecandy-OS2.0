@@ -200,6 +200,10 @@ header.main-header .wg-drop.country-selector .wgcurrent:after {
     max-width: 50%;
 }
 
+.product-grid-item .product-element-top>a img {
+    object-position: top;
+}
+
 .main-header .container .header_middle_block .logo .basel-logo-wrap {
     margin: 0;
 }
@@ -209,7 +213,26 @@ header.main-header .wg-drop.country-selector .wgcurrent:after {
     top: 0;
     padding-top: 20px;
     background: #fff;
+  left:0;
 }
+
+.enable-sticky-header .main-header {
+   position: fixed;
+    top: 0;
+    z-index: 9;
+  animation: smoothScroll .5s forwards;
+}
+
+
+@keyframes smoothScroll {
+	0% {
+		transform: translateY(-40px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
 
 .enable-sticky-header .header-spacing {
     display: none;
@@ -941,23 +964,6 @@ div#shopify-section-template--14532934697043__1655293959d5ab1c6c .title:after {
     font-family: 'google_sansregular' !important;
 }
 
-.enable-sticky-header.basel-header-overlap.basel-top-bar-on .main-header.act-scroll {
-     z-index: 99999;
-  animation: smoothScroll .5s forwards;
-}
-
-.product-grid-item .product-element-top>a img {
-    object-position: top;
-}
-
-@keyframes smoothScroll {
-	0% {
-		transform: translateY(-40px);
-	}
-	100% {
-		transform: translateY(0px);
-	}
-}
 
 
 /* == added on 27 june dev ===*/
