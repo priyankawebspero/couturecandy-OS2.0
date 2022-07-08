@@ -873,4 +873,8 @@ div#cover {
     padding: 50px 30px;
 }
   
+.template-product div#ReviewSection {
+    margin: 0 30px;
+}
+  
 }
