@@ -1002,6 +1002,7 @@
             "settings": {
               "menu_image": "shopify:\/\/shop_images\/Prom_0452e3c8-a7e4-4796-861e-82ef5a1a4dbc.jpg",
               "menu_text": "PROM",
+              "menu_link_1": "",
               "menu": "prom"
             }
           },
@@ -1010,6 +1011,7 @@
             "settings": {
               "menu_image": "shopify:\/\/shop_images\/Dresses.jpg",
               "menu_text": "DRESSES",
+              "menu_link_1": "",
               "menu": "dresses"
             }
           },
@@ -1018,6 +1020,7 @@
             "settings": {
               "menu_image": "shopify:\/\/shop_images\/Wedding.jpg",
               "menu_text": "WEDDING",
+              "menu_link_1": "",
               "menu": "wedding"
             }
           },
@@ -1026,6 +1029,7 @@
             "settings": {
               "menu_image": "shopify:\/\/shop_images\/Mob.jpg",
               "menu_text": "MOB",
+              "menu_link_1": "https:\/\/www.couturecandy.com\/collections\/mother-of-the-bride-dresses",
               "menu": "main-menu"
             }
           },
@@ -1034,6 +1038,7 @@
             "settings": {
               "menu_image": "shopify:\/\/shop_images\/Bridesmaid_f98d888d-b320-47d9-8003-88f4938c33e7.jpg",
               "menu_text": "BRIDESMAID",
+              "menu_link_1": "",
               "menu": "bridesmaid"
             }
           },
@@ -1042,6 +1047,7 @@
             "settings": {
               "menu_image": "shopify:\/\/shop_images\/Plus-Size_5c7d31ec-10c5-4c93-9d2a-6c0e8e50ec65.jpg",
               "menu_text": "PLUS SIZE",
+              "menu_link_1": "",
               "menu": "plus-size"
             }
           },
@@ -1050,6 +1056,7 @@
             "settings": {
               "menu_image": "shopify:\/\/shop_images\/Cocktail_7ad01e54-d32a-4d76-bbdb-4819b36dc585.jpg",
               "menu_text": "COCKTAIL",
+              "menu_link_1": "",
               "menu": ""
             }
           },
@@ -1058,6 +1065,7 @@
             "settings": {
               "menu_image": "shopify:\/\/shop_images\/Formal_b572ca72-b60b-4e71-ab13-b5b7ad1ad95f.jpg",
               "menu_text": "FORMAL",
+              "menu_link_1": "",
               "menu": "main-menu"
             }
           },
@@ -1066,6 +1074,7 @@
             "settings": {
               "menu_image": "shopify:\/\/shop_images\/Quinceanera.jpg",
               "menu_text": "QUINCEANERA",
+              "menu_link_1": "",
               "menu": ""
             }
           },
@@ -1074,6 +1083,7 @@
             "settings": {
               "menu_image": "shopify:\/\/shop_images\/Sale-img.jpg",
               "menu_text": "SALE",
+              "menu_link_1": "",
               "menu": ""
             }
           }
