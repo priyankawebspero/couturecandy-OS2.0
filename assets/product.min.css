@@ -768,6 +768,22 @@ div#cover {
     background: none !important;
 }
 
+.template-product div#ReviewSection form .write-review-wrapper .yotpo-regular-box {
+    border: none;
+    background: #f8f8f8;
+    margin: 0;
+    padding: 35px;
+    width: 100%;
+    max-width: 650px;
+}
+
+.template-product div#ReviewSection form .write-review-wrapper .yotpo-regular-box .yotpo-header-title {
+    color: #000;
+    margin-bottom: 0;
+    font-size: 27px;
+    font-weight: 500;
+}
+
 @media only screen and (min-width:1200px){
 
   .basel-product-design-default .product-images {
