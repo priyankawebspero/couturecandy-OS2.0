@@ -763,6 +763,10 @@ div#cover {
     font-size: 23px;
 }
 
+.template-product .yotpo .yotpo-first-review .yotpo-first-review-stars span.stars-wrapper span.yotpo-icon {
+    background: none !important;
+}
+
 @media only screen and (min-width:1200px){
 
   .basel-product-design-default .product-images {
