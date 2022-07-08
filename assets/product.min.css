@@ -1087,11 +1087,11 @@ div#cover {
 @media only screen and (max-width: 991px){
   
   .basel-product-design-default .product-images {
-    width: 100%;
+    width: 50%;
 }
   
 .col-sm-5.summary.entry-summary {
-    width: 100%;
+    width: 50%;
     padding-left: 15px;
 }
   
@@ -1099,6 +1099,14 @@ div#cover {
 
 
 @media only screen and (max-width: 767px){
+  
+   .basel-product-design-default .product-images {
+    width: 100%;
+}
+  
+.col-sm-5.summary.entry-summary {
+    width: 100%;
+}
 
 .single-product-content .product-image-summary #popup .modal-content .left-side, .single-product-content .product-image-summary #popup .modal-content .right-side {
     max-width: 100%;
