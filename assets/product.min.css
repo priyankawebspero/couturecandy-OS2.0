@@ -585,6 +585,42 @@ background: #000;
     padding-top: 10px;
 }
 
+.product-image-summary .Info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px -15px 0 -15px;
+}
+
+.product-image-summary .Info .Details {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 0 7px;
+}
+.product-image-summary .Info .Details .Image span {
+    font-family: 'product_sans_mediumregular';
+    font-size: 17px;
+    color: #000;
+    display: block;
+    margin: 7px 0;
+}
+
+.product-image-summary .Info .Details .Cnt span {
+    font-size: 15px;
+    color: #000;
+    line-height: 1.5;
+    display: block;
+}
+
+.product-image-summary .Info .Details .Cnt a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #e94949;
+    font-size: 15px;
+}
+
+
 @media only screen and (min-width:1200px){
 
   .basel-product-design-default .product-images {
