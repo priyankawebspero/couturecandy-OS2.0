@@ -709,7 +709,11 @@ div#cover {
 .template-product div#ReviewSection .yotpo .yotpo-regular-box .yotpo-default-button {
     position: relative;
     top: 0;
+    /* display: inline-block; */
+    float: none !important;
+    text-align: left !important;
     order: 1;
+    margin-right: 25px;
 }
 
 
