@@ -674,12 +674,14 @@ div#cover {
     padding: 1% 15px;
 }
 
-div#ReviewSection {
+.template-product div#ReviewSection {
     border: 1px solid #b4b4b4;
-    width: 100%;
-    max-width: 95%;
+    /* width: 100%; */
+    /* max-width: 95%; */
     margin: 0 auto;
     padding: 35px 40px;
+    clear: both;
+    margin: 0 50px;
 }
 
 @media only screen and (min-width:1200px){
