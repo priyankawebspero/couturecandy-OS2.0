@@ -1,10 +1,7 @@
 div#popup {
     display: none;
 }
-.basel-product-design-default .product-images {
-    position: sticky;
-    top: 125px;
-}
+
 
 .single-breadcrumbs-wrapper {
     background: none;
@@ -857,7 +854,10 @@ div#cover {
     padding-left: 20px;
 }
 
-
+.basel-product-design-default .product-images {
+    position: sticky;
+    top: 125px;
+}
 
 }
 
