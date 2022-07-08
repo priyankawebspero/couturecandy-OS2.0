@@ -1080,4 +1080,9 @@ div#cover {
     color: #000;
 }
   
+  .single-product-content .product-image-summary .modal .modal-content .right-side .SizeChart .SizeCharttable {
+
+    margin-bottom: 10px;
+}
+  
 }
