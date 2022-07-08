@@ -1068,6 +1068,14 @@
               "menu_text": "QUINCEANERA",
               "menu": ""
             }
+          },
+          "57c386b2-831c-4850-a645-8dae860b7969": {
+            "type": "menu_block",
+            "settings": {
+              "menu_image": "shopify:\/\/shop_images\/Sale-img.jpg",
+              "menu_text": "SALE",
+              "menu": "main-menu"
+            }
           }
         },
         "block_order": [
@@ -1079,7 +1087,8 @@
           "85973de1-1aba-474e-bd2d-f854c8710048",
           "2aee7e5b-9d17-44e4-845d-c3f0867c9d98",
           "77683a01-ea24-457e-9fed-83304f4ca04e",
-          "dcb9abd5-d75b-451a-918c-7d34c393126f"
+          "dcb9abd5-d75b-451a-918c-7d34c393126f",
+          "57c386b2-831c-4850-a645-8dae860b7969"
         ],
         "settings": {
         }
