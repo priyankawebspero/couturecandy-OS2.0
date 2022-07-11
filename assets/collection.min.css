@@ -1104,12 +1104,19 @@ a.text-m {
 }
 
 .boost-pfs-filter-button span.boost-pfs-filter-option-title-text {
-    font-size: 16px;
+    font-size: 15px;
     color: #000;
 }
   
 .boost-pfs-filter-tree-mobile-style2.boost-pfs-filter-tree-v .boost-pfs-filter-option .boost-pfs-filter-option-title {
     border-color: #ccc;
+}
+  
+.boost-pfs-filter-tree-mobile-style2 .boost-pfs-filter-mobile-toolbar .boost-pfs-filter-mobile-toolbar-items .boost-pfs-filter-mobile-toolbar-middle {
+    font-size: 18px;
+    font-family: 'product_sans_mediumregular';
+    font-weight: normal;
+    color: #000;
 }
   
 }
