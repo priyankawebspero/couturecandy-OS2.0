@@ -1013,4 +1013,9 @@ a.text-m {
     margin-left: 0;
 }
   
+.boost-pfs-filter-products .boost-pfs-filter-product-item a.boost-pfs-filter-product-item-image-link img {
+    object-fit: cover;
+    object-position: top;
+}
+  
 }
