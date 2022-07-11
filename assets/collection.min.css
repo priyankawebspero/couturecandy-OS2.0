@@ -894,5 +894,9 @@ a.text-m {
     padding-left: 27px;
 }
 
+  .toolbar_count .boost-pfs-filter-toolbar-count {
+    font-size: 15px;
+    margin-top: 8px;
+  }
   
 }
