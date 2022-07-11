@@ -930,6 +930,14 @@ a.text-m {
 
 @media only screen and (max-width:767px){
   
+  span.moreless-button.btn {
+    font-size: 13px;
+    min-width: 135px;
+    padding: 0 12px;
+    line-height: 39px;
+    max-width: 135px;
+}
+  
 .bottom.buttons .btn {
     padding: 0;
     background: none;
@@ -940,6 +948,11 @@ a.text-m {
 .bottom.buttons {
     text-align: center;
     padding: 25px 15px;
+}
+  
+.bottom.buttons .btn a {
+    padding: 7px 12px;
+    font-size: 12px;
 }
   
  .boost-pfs-filter-right-col {
