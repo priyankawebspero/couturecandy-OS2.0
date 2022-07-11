@@ -1331,4 +1331,8 @@ a.text-m {
     border-color: #ccc;
 }
   
+.boost-pfs-filter-tree-mobile-sticky.boost-pfs-filter-tree-v .boost-pfs-filter-option {
+    padding: 20px 20px;
+}
+  
 }
