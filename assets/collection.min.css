@@ -1044,6 +1044,8 @@ a.text-m {
     text-transform: uppercase;
     color: #000;
     line-height: 1.5;
+    position: relative;
+    top: 1px;
 }
   
 .boost-pfs-filter-custom-sorting button>span:after {
