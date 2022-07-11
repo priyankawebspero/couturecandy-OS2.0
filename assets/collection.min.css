@@ -1210,4 +1210,8 @@ a.text-m {
     margin: 0;
 }
   
+.boost-pfs-filter-option-item-list.boost-pfs-filter-option-item-list-box .boost-pfs-filter-option-item.selected>button {
+    font-weight: normal;
+}
+  
 }
