@@ -1482,5 +1482,16 @@ body.template-product  {
     padding-bottom: 50px;
 }
   
+  .product-image-summary .Info .Details .Image span {
+    font-size: 15px;
+    margin: 5px 0;
+    /* text-transform: uppercase; */
+}
+  
+.product-image-summary .Info .Details .Cnt span {
+    font-size: 13px;
+    line-height: 1.2;
+}
+  
 }
 
