@@ -832,6 +832,10 @@ a.text-m {
     padding: 50px 20px;
 }
   
+.bottom.description.collection h2 {
+    font-size: 31px;
+}
+  
 }
 
 @media only screen and (max-width:991px){
