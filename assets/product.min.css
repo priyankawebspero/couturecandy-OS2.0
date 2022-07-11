@@ -1394,5 +1394,12 @@ div#ProdDetailInfo {
     border-radius: 30px;
 }
   
+.single-product-content .Value + p {
+    font-size: 14px !important;
+    letter-spacing: 0;
+    margin-bottom: 6px;
+    margin-top: -10px;
+}
+  
 }
 
