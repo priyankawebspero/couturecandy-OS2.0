@@ -784,6 +784,12 @@ a.text-m {
     padding: 0;
 }
 
+.boost-pfs-filter-tree-v .boost-pfs-filter-option-title-heading {
+    font-family: 'product_sans_mediumregular';
+    color: #000;
+    font-weight: normal;
+}
+
 @media only screen and (max-width:1550px){
   
   .boost-pfs-container-default-fullwidth {
