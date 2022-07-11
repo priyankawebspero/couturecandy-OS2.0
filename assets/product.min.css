@@ -1128,6 +1128,21 @@ div#cover {
     padding-top: 0;
 }
   
+.single-product-content div#SizeChart .popupsizebutton a {
+    font-size: 15px;
+    letter-spacing: 0;
+}
+  
+.single-product-content div#variant-inventory {
+
+    font-size: 14px;
+}
+.single-product-content span.onlyjovani {
+    font-size: 14px;
+    letter-spacing: 0;
+    padding: 10px 0 0px 0;
+}
+  
 }
 
 
