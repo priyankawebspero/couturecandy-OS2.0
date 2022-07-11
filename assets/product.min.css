@@ -1515,5 +1515,20 @@ body.template-product  {
     height: 42px;
 }
   
+.single-product-content .variations td.value {
+    padding-bottom: 10px;
+}
+  
+.single-product-content .entry-content p {
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-size: 14px;
+}
+  
+.single-product-content .shopify-Tabs-panel p {
+    padding: 0 15px;
+    text-align: left;
+}
+  
 }
 
