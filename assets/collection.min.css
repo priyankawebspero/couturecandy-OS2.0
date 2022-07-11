@@ -752,3 +752,16 @@ a.text-m {
     border: 1px solid #e94949;
     background: #e94949;
 }
+
+
+@media only screen and (max-width:1550px){
+  
+  .boost-pfs-container-default-fullwidth {
+    padding: 0 30px;
+}
+  
+.bottom.description.collection {
+    padding: 50px 30px;
+}
+  
+}
