@@ -1102,5 +1102,9 @@ a.text-m {
     width: calc(100% - 60px);
     right: 0;
 }
+
+.boost-pfs-filter-button span.boost-pfs-filter-option-title-text {
+    font-size: 16px;
+}
   
 }
