@@ -1361,5 +1361,10 @@ div#ProdDetailInfo {
     display: block;
 }
   
+.single-product-content .sezzle-shopify-info-button .sezzle-checkout-button-wrapper .sezzle-button-text.sezzle-left {
+    text-align: center;
+    margin: 0;
+}
+  
 }
 
