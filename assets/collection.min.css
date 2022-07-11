@@ -1145,4 +1145,9 @@ a.text-m {
     padding-left: 13px;
 }
   
+.boost-pfs-filter-tree-mobile-style2 .boost-pfs-filter-mobile-toolbar .boost-pfs-filter-mobile-toolbar-top {
+    position: absolute;
+    height: auto;
+}
+  
 }
