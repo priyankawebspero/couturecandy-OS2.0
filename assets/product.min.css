@@ -1176,6 +1176,11 @@ div#cover {
     padding-right: 0;
 }
   
+.template-product .site-content {
+    padding-left: 0;
+    padding-right: 0;
+}
+  
 }
 
 
