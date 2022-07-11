@@ -1066,4 +1066,15 @@ a.text-m {
     top: 2px;
 }
   
+.boost-pfs-filter-toolbar-top-mobile-inner.boost-pfs-filter-toolbar-show-sort-by-mobile .boost-pfs-filter-tree-mobile-button button:before {
+    content: "";
+    background: url(https://cdn.shopify.com/s/files/1/0144/7018/5017/files/filter_icon_desktop.png);
+    width: 18px;
+    height: 18px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -9px;
+}
+  
 }
