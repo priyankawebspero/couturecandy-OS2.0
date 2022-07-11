@@ -1146,8 +1146,26 @@ a.text-m {
 }
   
 .boost-pfs-filter-tree-mobile-style2 .boost-pfs-filter-mobile-toolbar .boost-pfs-filter-mobile-toolbar-top {
-    position: absolute;
+    position: relative;
+    width: 40px;
     height: auto;
+  order: 2;
+}
+  
+.boost-pfs-filter-tree-mobile-style2 .boost-pfs-filter-mobile-toolbar .boost-pfs-filter-mobile-toolbar-top span {
+    margin-left: 0;
+}
+  
+.boost-pfs-filter-tree-mobile-style2 .boost-pfs-filter-mobile-toolbar {
+    background: #000;
+    display: flex;
+    min-height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+  
+.boost-pfs-filter-tree-mobile-style2 .boost-pfs-filter-mobile-toolbar .boost-pfs-filter-mobile-toolbar-items {
+    background: none;
+    border: none;
 }
   
 }
