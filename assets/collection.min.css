@@ -1183,4 +1183,13 @@ a.text-m {
   -moz-transform: translateX(-100%);
 }
   
+  
+.boost-pfs-filter-tree-mobile-style2.boost-pfs-filter-tree-v.boost-pfs-filter-tree-mobile-open {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(-100%);
+    opacity: 1;
+    visibility: visible;
+}
+  
 }
