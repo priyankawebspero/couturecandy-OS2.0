@@ -986,6 +986,14 @@ div#cover {
     flex-wrap: wrap;
 }
 
+@media only screen and (min-width:768px){
+
+div#ProdDetailInfomobile {
+    display: none;
+}
+  
+}
+
 @media only screen and (min-width:992px){
 
   .basel-product-design-default .product-images {
@@ -1297,8 +1305,10 @@ div#cover {
     margin-bottom: 10px;
 }
   
+.single-product-content .product-image-summary .product-images {
+    padding-left: 0;
+    padding-right: 0;
+}
+  
 }
 
-div#ProdDetailInfomobile {
-    display: none;
-}
