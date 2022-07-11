@@ -1551,5 +1551,10 @@ body.template-product  {
     text-align: left;
 }
   
+.product_img_trust_seal {
+    padding: 0 0px 10px 0;
+    text-align: left;
+}
+  
 }
 
