@@ -1478,5 +1478,9 @@ div#ProdDetailInfo {
     font-family: 'google_sansregular';
 }
   
+.template-product body {
+    padding-bottom: 70px;
+}
+  
 }
 
