@@ -1446,12 +1446,21 @@ div#ProdDetailInfo {
 .single-product-content .entry-summary .yith-wcwl-add-to-wishlist {
     position: fixed;
     bottom: 0;
-    background: #000;
     width: 50%;
     right: 0;
     bottom: 0;
     margin: 0;
     z-index: 99;
+}
+  
+.single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
+    top: 0;
+    margin-left: 0;
+    border: none;
+    width: 100%;
+    background: #000;
+    border-radius: 0;
+    padding: 0 12px 0 26px;
 }
   
 }
