@@ -929,11 +929,7 @@ a.text-m {
 }
   
 .breadcrumbs {
-    float: none;
-    width: 100%;
-    margin-top: 0;
-    padding-left: 15px;
-    padding-right: 15px;
+    display: none;
 }
  
 .boost-pfs-section-header .boost-pfs-filter-collection-description h1.heading.collection {
