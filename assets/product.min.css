@@ -1237,6 +1237,14 @@ div#ProdDetailInfomobile {
     padding-right: 0;
 }
   
+.template-product div#ReviewSection {
+    margin: 0 15px;
+}
+  
+.template-product .site-content {
+    margin-bottom: 0;
+}
+  
 }
 
 @media only screen and (max-width: 991px) and (min-width:768px){
