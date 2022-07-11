@@ -828,6 +828,10 @@ a.text-m {
     padding: 0 20px;
 }
   
+.bottom.description.collection {
+    padding: 50px 20px;
+}
+  
 }
 
 @media only screen and (max-width:991px){
