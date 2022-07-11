@@ -934,6 +934,10 @@ a.text-m {
 
 @media only screen and (max-width:767px){
   
+  .boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default {
+    padding-top: 0;
+}
+  
   .bottom.description.collection {
     font-size: 14px;
 }
