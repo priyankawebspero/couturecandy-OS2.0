@@ -1242,4 +1242,8 @@ a.text-m {
     font-size: 12px;
 }
   
+.boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default {
+    margin: 0px 0 0px;
+}
+  
 }
