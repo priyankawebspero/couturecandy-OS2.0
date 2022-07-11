@@ -1018,4 +1018,8 @@ a.text-m {
     object-position: top;
 }
   
+.boost-pfs-filter-products .boost-pfs-filter-product-item .boost-pfs-filter-product-item-inner {
+    margin-bottom: 15px;
+}
+  
 }
