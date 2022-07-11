@@ -829,3 +829,16 @@ a.text-m {
 }
   
 }
+
+@media only screen and (max-width:991px){
+  
+  .boost-pfs-filter-right-col {
+    margin-top: 0;
+}
+  
+.breadcrumbs {
+    max-width: 100%;
+}
+  
+  
+}
