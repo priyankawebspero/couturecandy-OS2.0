@@ -949,4 +949,8 @@ a.text-m {
     display: none;
 }
   
+.boost-pfs-container-default-fullwidth {
+    padding: 0;
+}
+  
 }
