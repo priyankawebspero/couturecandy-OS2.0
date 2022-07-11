@@ -1192,4 +1192,12 @@ a.text-m {
     visibility: visible;
 }
   
+.boost-pfs-filter-tree-mobile-style2 .boost-pfs-filter-mobile-footer {
+    width: 100%;
+}
+  
+.boost-pfs-filter-tree-v .boost-pfs-filter-show-result, .boost-pfs-filter-tree-v .boost-pfs-filter-apply-all-button {
+    background: #000;
+}
+  
 }
