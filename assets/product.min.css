@@ -1249,6 +1249,16 @@ div#ProdDetailInfomobile {
 .template-product div#ReviewSection .review-heading {
     font-size: 22px;
 }
+  
+.template-product div#ReviewSection .yotpo .yotpo-regular-box .yotpo-default-button .yotpo-icon-button-text {
+    font-size: 15px;
+    padding-left: 3px;
+}
+  
+.template-product div#ReviewSection .yotpo .yotpo-regular-box .yotpo-default-button {
+    margin-right: 14px;
+    padding: 13px 14px;
+}
 
   
 }
