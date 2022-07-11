@@ -1320,4 +1320,15 @@ a.text-m {
     width: 100%;
 }
   
+.boost-pfs-filter-tree-mobile-style3.boost-pfs-filter-tree-mobile-full-width-style .boost-pfs-filter-options-wrapper {
+    width: 100%;
+    background: #f5f5f5;
+    right: 0;
+    left: 0;
+}
+  
+.boost-pfs-filter-tree-v .boost-pfs-filter-option {
+    border-color: #ccc;
+}
+  
 }
