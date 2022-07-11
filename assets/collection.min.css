@@ -833,7 +833,11 @@ a.text-m {
 }
   
 .bottom.description.collection h2 {
-    font-size: 31px;
+    font-size: 30px;
+}
+  
+.bottom.description.collection h2.banner_category_page_top {
+    font-size: 30px;
 }
   
 }
@@ -929,6 +933,28 @@ a.text-m {
 }
 
 @media only screen and (max-width:767px){
+  
+  .bottom.description.collection {
+    font-size: 14px;
+}
+  
+  div#collectionbottomdescription {
+    font-size: 14px;
+}
+  
+.bottom.description.collection p {
+    font-size: 14px;
+}
+  
+  #collectionbottomdescription h2 {
+    font-size: 23px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+  
+  .bottom.description.collection {
+    padding: 30px 15px;
+}
   
   span.moreless-button.btn {
     font-size: 13px;
