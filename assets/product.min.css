@@ -1556,5 +1556,9 @@ body.template-product  {
     text-align: left;
 }
   
+.single-product-content .Value {
+    font-size: 14px !important;
+}
+  
 }
 
