@@ -1054,11 +1054,12 @@ a.text-m {
     
 }
   
-.boost-pfs-filter-toolbar-top-mobile-inner.boost-pfs-filter-toolbar-show-sort-by-mobile .boost-pfs-filter-tree-mobile-button button {
+  .boost-pfs-filter-toolbar-top-mobile-inner.boost-pfs-filter-toolbar-show-sort-by-mobile .boost-pfs-filter-tree-mobile-button button {
     font-family: 'product_sans_mediumregular';
     font-size: 14px;
     text-transform: uppercase;
     color: #000;
+    background: #f5f5f5;
 }
   
 .boost-pfs-filter-toolbar-top-mobile-inner.boost-pfs-filter-toolbar-show-sort-by-mobile .boost-pfs-filter-tree-mobile-button button span.boost-pfs-filter-tree-mobile-button-label {
@@ -1088,6 +1089,10 @@ a.text-m {
   
 .enable-sticky-header .main-header {
     border-bottom: none !important;
+}
+  
+.boost-pfs-filter-top-sorting-mobile .boost-pfs-filter-top-sorting-wrapper {
+    background: #f5f5f5;
 }
   
 }
