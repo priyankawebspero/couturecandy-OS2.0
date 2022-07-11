@@ -1315,4 +1315,9 @@ a.text-m {
     margin: 0px 0 0px;
 }
   
+.boost-pfs-filter-tree-v .boost-pfs-filter-option.boost-pfs-filter-option-size .boost-pfs-filter-option-item-list-box .boost-pfs-filter-option-item button.boost-pfs-filter-button {
+    margin: 0;
+    width: 100%;
+}
+  
 }
