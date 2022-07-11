@@ -1335,4 +1335,10 @@ a.text-m {
     padding: 20px 20px;
 }
   
+  .boost-pfs-filter-tree-mobile-style3 .boost-pfs-filter-mobile-toolbar .boost-pfs-filter-mobile-toolbar-header {
+    background: #000;
+    color: #fff;
+    padding: 15px 0;
+}
+  
 }
