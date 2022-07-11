@@ -1038,4 +1038,18 @@ a.text-m {
     color: #fff;
 }
   
+.boost-pfs-filter-top-sorting-mobile .boost-pfs-filter-top-sorting-wrapper span {
+    font-family: 'product_sans_mediumregular';
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000;
+    line-height: 1.5;
+}
+  
+.boost-pfs-filter-custom-sorting button>span:after {
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    
+}
+  
 }
