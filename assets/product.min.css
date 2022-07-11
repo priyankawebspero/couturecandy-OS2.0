@@ -1612,5 +1612,14 @@ body.template-product  {
     letter-spacing: 0;
 }
   
+.template-product div#ReviewSection form .write-review-wrapper .yotpo-regular-box {
+    padding: 17px 15px;
+}
+  
+.template-product div#ReviewSection form .write-review-wrapper .yotpo-regular-box .yotpo-header-title {
+  
+    font-size: 20px;
+}
+  
 }
 
