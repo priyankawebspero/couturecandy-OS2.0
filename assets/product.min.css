@@ -1660,5 +1660,9 @@ body.template-product  {
     margin-top: 0;
 }
   
+.related-and-upsells .product-items.owl-carousel .owl-nav {
+    display: block;
+}
+  
 }
 
