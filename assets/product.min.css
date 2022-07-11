@@ -1155,6 +1155,10 @@ div#cover {
     font-size: 13px;
 }
   
+.single-product-content .single_variation_wrap {
+    padding-bottom: 10px;
+}
+  
 }
 
 
