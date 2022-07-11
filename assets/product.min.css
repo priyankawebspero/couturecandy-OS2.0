@@ -1634,5 +1634,15 @@ body.template-product  {
     padding-right: 0;
 }
   
+.related-and-upsells>section .owl-carousel-item-inner {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+  
+.related-and-upsells>section .gl_carousel_container {
+    margin-left: -3px;
+    margin-right: -3px;
+}
+  
 }
 
