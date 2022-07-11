@@ -1333,5 +1333,18 @@ div#ProdDetailInfo {
     font-size: 14px;
 }
   
+.single-product-content .product-tabs-wrapper .shopify-tabs .tabs li a {
+    padding: 17px 15px;
+    font-size: 15px;
+}
+  
+.single-product-content .product-tabs-wrapper .shopify-tabs .tabs {
+    margin-bottom: 10px;
+}
+  
+.single-product-content .col-sm-5.summary.entry-summary {
+    text-align: center;
+}
+  
 }
 
