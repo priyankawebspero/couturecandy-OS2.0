@@ -1100,6 +1100,7 @@ a.text-m {
   
 .boost-pfs-filter-tree-mobile-style2.boost-pfs-filter-tree-v .boost-pfs-filter-options-wrapper {
     width: calc(100% - 60px);
+    right: 0;
 }
   
 }
