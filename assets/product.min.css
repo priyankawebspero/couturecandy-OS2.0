@@ -1239,11 +1239,13 @@ div#ProdDetailInfomobile {
   
 .template-product div#ReviewSection {
     margin: 0 15px;
+  padding: 25px 20px;
 }
   
 .template-product .site-content {
     margin-bottom: 0;
 }
+
   
 }
 
