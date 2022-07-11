@@ -1443,5 +1443,16 @@ div#ProdDetailInfo {
     font-size: 15px;
 }
   
+.single-product-content .entry-summary .yith-wcwl-add-to-wishlist {
+    position: fixed;
+    bottom: 0;
+    background: #000;
+    width: 50%;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    z-index: 99;
+}
+  
 }
 
