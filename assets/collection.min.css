@@ -1022,4 +1022,11 @@ a.text-m {
     margin-bottom: 15px;
 }
   
+.boost-pfs-filter-top-sorting-mobile .boost-pfs-filter-filter-dropdown {
+    margin-top: 0;
+    left: 8px;
+    width: calc(200% - 15px);
+    background: #000;
+}
+  
 }
