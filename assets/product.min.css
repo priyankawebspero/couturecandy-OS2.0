@@ -1648,5 +1648,17 @@ body.template-product  {
     padding: 30px 15px 0 15px;
 }
   
+.basel-hover-base .yith-wcwl-add-to-wishlist>div>a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 0;
+}
+.basel-hover-base .product-element-top .yith-wcwl-add-to-wishlist>div>a:before {
+    font-size: 18px;
+    margin-right: 0;
+    margin-top: 0;
+}
+  
 }
 
