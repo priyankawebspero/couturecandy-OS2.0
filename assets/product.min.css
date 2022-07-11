@@ -1407,5 +1407,20 @@ div#ProdDetailInfo {
     text-decoration: underline !important;
 }
   
+.single-product-content .variations td {
+    display: block;
+    text-align: center;
+}
+  
+.single-product-content .variations td.label {
+    font-size: 14px;
+    padding-bottom: 7px !important;
+}
+  
+.single-product-content .variations td.label label {
+    font-size: 15px;
+    margin-right: 0;
+}
+  
 }
 
