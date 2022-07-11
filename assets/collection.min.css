@@ -1229,5 +1229,17 @@ a.text-m {
     width: auto;
     margin: 4px 2px;
 }
+   
+.boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li:first-child span:after {
+    margin-left: 5px;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+}
+  
+.boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li:last-child a:before {
+    margin-right: 4px;
+    letter-spacing: 0;
+    font-size: 12px;
+}
   
 }
