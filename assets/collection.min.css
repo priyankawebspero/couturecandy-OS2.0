@@ -1003,4 +1003,8 @@ a.text-m {
     border: 1px solid #fff;
 }
   
+.boost-pfs-filter-products .boost-pfs-filter-product-item a.boost-pfs-filter-product-item-image-link {
+    padding-top: 148% !important;
+}
+  
 }
