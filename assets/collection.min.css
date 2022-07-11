@@ -864,6 +864,7 @@ a.text-m {
     width: 21px;
     height: 21px;
     top: 0;
+  transform: inherit;
 }
   
 .boost-pfs-filter-default-toolbar .boost-pfs-filter-tree-desktop-button>button {
@@ -888,5 +889,6 @@ a.text-m {
   .boost-pfs-filter-option-item-list.boost-pfs-filter-option-item-list-box .boost-pfs-filter-option-item {
     margin-bottom: 5px;
 }
+
   
 }
