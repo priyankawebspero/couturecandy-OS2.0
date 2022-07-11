@@ -1268,6 +1268,14 @@ div#ProdDetailInfomobile {
     margin-left: 15px;
 }
   
+.template-product div#ReviewSection .yotpo .yotpo-regular-box.yotpo-bottomline {
+    padding-bottom: 25px;
+}
+  
+.template-product .yotpo .yotpo-first-review {
+    margin-top: 25px;
+}
+  
 }
 
 @media only screen and (max-width: 991px) and (min-width:768px){
