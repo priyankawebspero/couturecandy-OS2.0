@@ -1029,4 +1029,13 @@ a.text-m {
     background: #000;
 }
   
+.boost-pfs-filter-custom-sorting .boost-pfs-filter-filter-dropdown li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+}
+  
+.boost-pfs-filter-custom-sorting .boost-pfs-filter-filter-dropdown li a {
+    color: #fff;
+}
+  
 }
