@@ -990,6 +990,10 @@ div#cover {
     margin-bottom: 20px;
 }
 
+.template-product div#ReviewSection form .write-review-wrapper .yotpo-regular-box .submit-button {
+    margin-top: 0;
+}
+
 @media only screen and (min-width:768px){
 
 div#ProdDetailInfomobile {
