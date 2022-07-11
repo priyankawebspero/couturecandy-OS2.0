@@ -985,4 +985,8 @@ a.text-m {
     padding-bottom: 0;
 }
   
+.boost-pfs-filter-product-item-equal-height-auto .boost-pfs-filter-product-item-grid .boost-pfs-filter-product-item-image {
+    height: auto;
+}
+  
 }
