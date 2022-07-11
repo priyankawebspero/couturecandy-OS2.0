@@ -678,6 +678,8 @@ a.text-m {
 
 .boost-pfs-section-header .boost-pfs-filter-collection-description h1.heading.collection {
     margin-bottom: 7px;
+    margin-left: 180px;
+    margin-right: 180px;
 }
 
 .boost-pfs-filter-tree-v .boost-pfs-filter-refine-by .boost-pfs-filter-refine-by-items .refine-by-item .refine-by-type .refine-by-value, .boost-pfs-filter-refine-by-wrapper-v .boost-pfs-filter-refine-by .boost-pfs-filter-refine-by-items .refine-by-item .refine-by-type .refine-by-value {
