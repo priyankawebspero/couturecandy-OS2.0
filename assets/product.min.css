@@ -1629,5 +1629,10 @@ body.template-product  {
     font-size: 20px;
 }
   
+  .products .product-grid-item {
+    padding-left: 0;
+    padding-right: 0;
+}
+  
 }
 
