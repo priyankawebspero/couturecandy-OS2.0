@@ -1320,5 +1320,9 @@ div#ProdDetailInfo {
     display: none;
 }
   
+.single-breadcrumbs-wrapper {
+    display: none;
+}
+  
 }
 
