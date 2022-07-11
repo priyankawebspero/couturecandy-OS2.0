@@ -772,6 +772,9 @@ a.text-m {
     background: #e94949;
 }
 
+.boost-pfs-filter-products .boost-pfs-filter-product-item {
+    margin-bottom: 30px;
+}
 
 @media only screen and (max-width:1550px){
   
