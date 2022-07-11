@@ -1498,5 +1498,15 @@ body.template-product  {
     font-size: 13px;
 }
   
+ .fake_counter_real_time {
+    font-size: 14px;
+}
+  
+.single-product-content .quantity_test #number_counter {
+    margin: 0 2px;
+    padding: 3px 9px;
+    font-size: 14px;
+}
+  
 }
 
