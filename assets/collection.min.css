@@ -989,4 +989,18 @@ a.text-m {
     height: auto;
 }
   
+.boost-pfs-filter-product-item-grid .boost-pfs-filter-product-bottom ul.boost-pfs-filter-item-swatch li span {
+    width: 16px;
+    height: 16px;
+}
+.boost-pfs-filter-product-item .boost-pfs-filter-item-swatch li {
+    display: inline-block;
+    margin: 4px 3px;
+   
+}
+  
+.boost-pfs-filter-product-item .boost-pfs-filter-item-swatch li span {
+    border: 1px solid #fff;
+}
+  
 }
