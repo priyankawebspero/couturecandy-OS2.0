@@ -1346,5 +1346,10 @@ div#ProdDetailInfo {
     text-align: center;
 }
   
+.single-product-content .product_title + .Value {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  
 }
 
