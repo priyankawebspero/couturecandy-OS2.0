@@ -1310,5 +1310,9 @@ div#ProdDetailInfomobile {
     padding-right: 0;
 }
   
+div#ProdDetailInfo {
+    display: none;
+}
+  
 }
 
