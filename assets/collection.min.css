@@ -1218,4 +1218,16 @@ a.text-m {
     font-weight: normal;
 }
   
+.boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li a, .boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li span {
+    font-size: 13px;
+    padding: 0 10px;
+
+}
+  
+.boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li {
+    min-width: 32px;
+    width: auto;
+    margin: 4px 2px;
+}
+  
 }
