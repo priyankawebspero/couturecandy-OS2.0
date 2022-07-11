@@ -1644,5 +1644,9 @@ body.template-product  {
     margin-right: -3px;
 }
   
+.container-fluid.related-and-upsells {
+    padding: 30px 15px 0 15px;
+}
+  
 }
 
