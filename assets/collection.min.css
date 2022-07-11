@@ -1086,4 +1086,8 @@ a.text-m {
     border-bottom: 1px solid #ccc;
 }
   
+.enable-sticky-header .main-header {
+    border-bottom: none !important;
+}
+  
 }
