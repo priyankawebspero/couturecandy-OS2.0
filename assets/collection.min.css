@@ -1097,11 +1097,7 @@ a.text-m {
 .boost-pfs-filter-tree-mobile-style2.boost-pfs-filter-tree-v {
     background: #f5f5f5;
 }
-  
-.boost-pfs-filter-tree-mobile-style2.boost-pfs-filter-tree-v .boost-pfs-filter-options-wrapper {
-    width: calc(100% - 60px);
-    right: 0;
-}
+ 
 
 .boost-pfs-filter-button span.boost-pfs-filter-option-title-text {
     font-size: 15px;
@@ -1166,6 +1162,15 @@ a.text-m {
 .boost-pfs-filter-tree-mobile-style2 .boost-pfs-filter-mobile-toolbar .boost-pfs-filter-mobile-toolbar-items {
     background: none;
     border: none;
+}
+  
+.boost-pfs-filter-tree-mobile-style2.boost-pfs-filter-tree-v {
+    width: 100% !important;
+}
+  
+.boost-pfs-filter-tree-mobile-style2.boost-pfs-filter-tree-v .boost-pfs-filter-options-wrapper {
+    width: 100%;
+    right: 0;
 }
   
 }
