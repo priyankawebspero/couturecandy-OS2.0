@@ -1245,6 +1245,10 @@ div#ProdDetailInfomobile {
 .template-product .site-content {
     margin-bottom: 0;
 }
+  
+.template-product div#ReviewSection .review-heading {
+    font-size: 22px;
+}
 
   
 }
