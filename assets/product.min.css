@@ -1243,6 +1243,11 @@ div#cover {
     min-width: 170px;
 }
   
+.single-product-content .variations td {
+    display: block;
+    text-align: center;
+}
+  
 }
 
 
