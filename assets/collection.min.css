@@ -1335,10 +1335,13 @@ a.text-m {
     padding: 20px 20px;
 }
   
-  .boost-pfs-filter-tree-mobile-style3 .boost-pfs-filter-mobile-toolbar .boost-pfs-filter-mobile-toolbar-header {
+ .boost-pfs-filter-tree-mobile-style3 .boost-pfs-filter-mobile-toolbar .boost-pfs-filter-mobile-toolbar-header {
     background: #000;
     color: #fff;
     padding: 15px 0;
+    font-family: 'product_sans_mediumregular';
+    font-size: 16px;
+    font-weight: normal;
 }
   
 }
