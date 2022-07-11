@@ -1178,7 +1178,9 @@ a.text-m {
     transition: all .5s cubic-bezier(.175,.885,.32,1.275);
     opacity: 0;
     visibility: hidden;
-    z-index: 0;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
 }
   
 }
