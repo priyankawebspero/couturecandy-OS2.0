@@ -919,3 +919,22 @@ a.text-m {
 }
   
 }
+
+@media only screen and (max-width:767px){
+  
+ .boost-pfs-filter-right-col {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+  
+.breadcrumbs {
+    float: none;
+    width: 100%;
+    margin-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+  
+  
+}
