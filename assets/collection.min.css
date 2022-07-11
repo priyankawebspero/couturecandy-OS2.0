@@ -889,6 +889,10 @@ a.text-m {
   .boost-pfs-filter-option-item-list.boost-pfs-filter-option-item-list-box .boost-pfs-filter-option-item {
     margin-bottom: 5px;
 }
+  
+.boost-pfs-filter-default-toolbar .boost-pfs-filter-tree-desktop-button>button .boost-pfs-filter-tree-desktop-button-label {
+    padding-left: 27px;
+}
 
   
 }
