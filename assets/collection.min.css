@@ -981,4 +981,8 @@ a.text-m {
     margin-top: 10px;
 }
   
+.yotpo .standalone-bottomline.star-clickable, .yotpo .standalone-bottomline .star-clickable {
+    padding-bottom: 0;
+}
+  
 }
