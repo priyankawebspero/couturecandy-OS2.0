@@ -1324,5 +1324,14 @@ div#ProdDetailInfo {
     display: none;
 }
   
+.single-product-content .product_title {
+    font-size: 20px;
+    text-transform: inherit;
+}
+  
+.single-product-content .Value .brand .BrandName {
+    font-size: 14px;
+}
+  
 }
 
