@@ -1140,4 +1140,9 @@ a.text-m {
     color: #fff;
 }
   
+.boost-pfs-filter-tree-mobile-style2.boost-pfs-filter-tree-v .boost-pfs-filter-option .boost-pfs-filter-option-title {
+	padding-right: 13px;
+    padding-left: 13px;
+}
+  
 }
