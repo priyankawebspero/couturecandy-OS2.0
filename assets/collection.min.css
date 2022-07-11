@@ -932,10 +932,6 @@ a.text-m {
     display: none;
 }
  
-.boost-pfs-section-header .boost-pfs-filter-collection-description h1.heading.collection {
-    font-size: 24px;
-    margin-right: 0;
-}
   
 .boost-pfs-filter-right-col .boost-pfs-section-header .boost-pfs-filter-bottom-pagination {
     display: none !important;
@@ -955,6 +951,9 @@ a.text-m {
   
 .boost-pfs-section-header .boost-pfs-filter-collection-description h1.heading.collection {
     text-align: center;
+    font-weight: 500;
+  font-size: 24px;
+    margin-right: 0;
 }
   
 .toolbar_count {
