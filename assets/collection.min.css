@@ -1112,4 +1112,8 @@ a.text-m {
     border-bottom: 2px solid #000;
 }
   
+.boost-pfs-filter-tree-mobile-style2.boost-pfs-filter-tree-v .boost-pfs-filter-option .boost-pfs-filter-option-title {
+    border-color: #ccc;
+}
+  
 }
