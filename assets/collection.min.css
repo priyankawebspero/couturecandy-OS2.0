@@ -1200,4 +1200,14 @@ a.text-m {
     background: #000;
 }
   
+.boost-pfs-filter-tree-v .boost-pfs-filter-option.boost-pfs-filter-option-size .boost-pfs-filter-option-item-list-box .boost-pfs-filter-option-item {
+    width: auto !important;
+    margin: 4px 5px;
+    min-width: 35px;
+}
+  
+.boost-pfs-filter-tree-v .boost-pfs-filter-option.boost-pfs-filter-option-size .boost-pfs-filter-option-item-list-box .boost-pfs-filter-option-item button.boost-pfs-filter-button {
+    margin: 0;
+}
+  
 }
