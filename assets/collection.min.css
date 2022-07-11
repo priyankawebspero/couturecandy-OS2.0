@@ -1077,4 +1077,13 @@ a.text-m {
     margin-top: -9px;
 }
   
+.boost-pfs-filter-top-sorting-mobile+.boost-pfs-filter-tree-mobile-button {
+    border-color: #ccc;
+}
+  
+.boost-pfs-filter-toolbar-top-mobile {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+  
 }
