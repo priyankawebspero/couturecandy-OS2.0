@@ -1441,6 +1441,8 @@ div#ProdDetailInfo {
     padding: 14px 10px;
     border-radius: 0;
     font-size: 15px;
+    height: 49px;
+    border: none;
 }
   
 .single-product-content .entry-summary .yith-wcwl-add-to-wishlist {
