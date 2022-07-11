@@ -1132,4 +1132,8 @@ a.text-m {
   border-width: 0 2px 2px 0;
 }
   
+.boost-pfs-filter-tree-mobile-style2 .boost-pfs-filter-mobile-toolbar .boost-pfs-filter-mobile-toolbar-items .boost-pfs-filter-mobile-toolbar-right button.boost-pfs-filter-clear {
+    color: #fff;
+}
+  
 }
