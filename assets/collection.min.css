@@ -935,6 +935,18 @@ a.text-m {
     padding-left: 15px;
     padding-right: 15px;
 }
+ 
+.boost-pfs-section-header .boost-pfs-filter-collection-description h1.heading.collection {
+    font-size: 24px;
+    margin-right: 0;
+}
   
+.boost-pfs-filter-right-col .boost-pfs-section-header .boost-pfs-filter-bottom-pagination {
+    display: none !important;
+}
+  
+.toolbar_count .boost-pfs-filter-toolbar-item.boost-pfs-filter-custom-sorting.boost-pfs-filter-top-sorting {
+    display: none;
+}
   
 }
