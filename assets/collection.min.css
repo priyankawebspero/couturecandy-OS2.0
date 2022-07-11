@@ -1173,4 +1173,12 @@ a.text-m {
     right: 0;
 }
   
+.boost-pfs-filter-tree-mobile-style2.boost-pfs-filter-tree-v {
+    display: block !important;
+    transition: all .5s cubic-bezier(.175,.885,.32,1.275);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 0;
+}
+  
 }
