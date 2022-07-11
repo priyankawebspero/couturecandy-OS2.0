@@ -1262,7 +1262,12 @@ div#ProdDetailInfomobile {
 .template-product .yotpo .yotpo-first-review .yotpo-first-review-content button[type="button"] {
     padding: 13px 14px;
     font-size: 15px;
-}  
+} 
+  
+.template-product .yotpo .yotpo-first-review .yotpo-first-review-stars {
+    margin-left: 15px;
+}
+  
 }
 
 @media only screen and (max-width: 991px) and (min-width:768px){
