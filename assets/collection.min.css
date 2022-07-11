@@ -800,6 +800,15 @@ a.text-m {
   
 }
 
+@media only screen and (max-width:1300px){
+  
+  .breadcrumbs {
+    max-width: 320px;
+}
+  
+  
+}
+
 
 @media only screen and (max-width:1199px){
   
