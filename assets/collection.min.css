@@ -1007,4 +1007,10 @@ a.text-m {
     padding-top: 148% !important;
 }
   
+  .boost-pfs-filter-product-item-grid .boost-pfs-filter-product-bottom ul.boost-pfs-filter-item-swatch li.boost-pfs-filter-item-swatch-more a {
+    font-size: 15px;
+    color: #000;
+    margin-left: 0;
+}
+  
 }
