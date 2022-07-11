@@ -899,4 +899,11 @@ a.text-m {
     margin-top: 8px;
   }
   
+.breadcrumbs {
+    max-width: 100%;
+    float: right;
+    width: auto;
+    margin-top: -36px;
+}
+  
 }
