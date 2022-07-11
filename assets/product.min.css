@@ -1564,5 +1564,10 @@ body.template-product  {
     font-size: 12px;
 }
   
+.single-product-content .shop_attributes th {
+    font-size: 15px;
+    letter-spacing: 0;
+}
+  
 }
 
