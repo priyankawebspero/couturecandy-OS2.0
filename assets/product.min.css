@@ -1260,12 +1260,18 @@ div#ProdDetailInfomobile {
     text-align: center;
 }
   
+.single-product-content .product-tabs-wrapper .shopify-tabs .tabs li {
+    display: inline-block;
+}
+  
 }
 
 
 @media only screen and (max-width: 767px){
   
-
+.single-product-content .product-tabs-wrapper .shopify-tabs .tabs li {
+    display: inline-block;
+}
   
    .basel-product-design-default .product-images {
     width: 100%;
