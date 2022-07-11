@@ -840,5 +840,10 @@ a.text-m {
     max-width: 100%;
 }
   
+.boost-pfs-section-header .boost-pfs-filter-collection-description h1.heading.collection {
+    margin-left: 0;
+    text-align: left;
+}
+  
   
 }
