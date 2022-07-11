@@ -1348,4 +1348,10 @@ a.text-m {
     color: #fff;
 }
   
+.boost-pfs-filter-tree-mobile-style3.boost-pfs-filter-tree-mobile-full-width-style .boost-pfs-filter-mobile-toolbar .boost-pfs-filter-mobile-toolbar-top .boost-pfs-filter-close span:before {
+    background: none;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+}
+  
 }
