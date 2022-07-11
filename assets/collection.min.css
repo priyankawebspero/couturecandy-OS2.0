@@ -953,4 +953,20 @@ a.text-m {
     width: auto;
 }
   
+.boost-pfs-section-header .boost-pfs-filter-collection-description h1.heading.collection {
+    text-align: center;
+}
+  
+.toolbar_count {
+    justify-content: center;
+}
+  
+.boost-pfs-filter-products {
+    margin: 0 -6px;
+}
+  
+.boost-pfs-filter-products .boost-pfs-filter-product-item {
+    padding: 0 4px;
+}
+  
 }
