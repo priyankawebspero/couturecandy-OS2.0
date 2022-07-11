@@ -854,5 +854,29 @@ a.text-m {
     top: 0;
 }
   
+.boost-pfs-filter-default-toolbar .boost-pfs-filter-tree-desktop-button span.boost-pfs-filter-tree-desktop-button-label::after {
+    font-size: 14px !important;
+    position: relative;
+    top: 3px;
+}
+  
+.boost-pfs-filter-default-toolbar .boost-pfs-filter-tree-desktop-button>button .boost-pfs-filter-tree-desktop-button-label:before {
+    width: 21px;
+    height: 21px;
+    top: 0;
+}
+  
+.boost-pfs-filter-default-toolbar .boost-pfs-filter-tree-desktop-button>button {
+    font-size: 0;
+    position: relative;
+    transform: inherit;
+    -webkit-transform: inherit;
+    -moz-transform: inherit;
+    transform-origin: inherit;
+    min-height: 38px;
+    padding: 8px 20px 8px 20px;
+    border-radius: 5px !important;
+    margin-top: 10px;
+}
   
 }
