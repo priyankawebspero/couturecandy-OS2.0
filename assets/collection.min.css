@@ -772,7 +772,7 @@ a.text-m {
     background: #e94949;
 }
 
-.boost-pfs-filter-products .boost-pfs-filter-product-item {
+.boost-pfs-filter-products .boost-pfs-filter-product-item .boost-pfs-filter-product-item-inner {
     margin-bottom: 30px;
 }
 
