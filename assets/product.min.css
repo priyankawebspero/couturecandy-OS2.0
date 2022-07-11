@@ -1366,5 +1366,21 @@ div#ProdDetailInfo {
     margin: 0;
 }
   
+.single-product-content .Value {
+    justify-content: center;
+}
+  
+.single-product-content .product-share ul.social-icons li a i {
+    font-size: 14px;
+    line-height: 30px;
+}
+  
+.single-product-content .product-share ul.social-icons li a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 30px;
+}
+  
 }
 
