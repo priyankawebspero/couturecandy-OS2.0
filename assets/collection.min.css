@@ -1061,4 +1061,9 @@ a.text-m {
     color: #000;
 }
   
+.boost-pfs-filter-toolbar-top-mobile-inner.boost-pfs-filter-toolbar-show-sort-by-mobile .boost-pfs-filter-tree-mobile-button button span.boost-pfs-filter-tree-mobile-button-label {
+    position: relative;
+    top: 2px;
+}
+  
 }
