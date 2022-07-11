@@ -885,4 +885,8 @@ a.text-m {
     line-height: normal;
 }
   
+  .boost-pfs-filter-option-item-list.boost-pfs-filter-option-item-list-box .boost-pfs-filter-option-item {
+    margin-bottom: 5px;
+}
+  
 }
