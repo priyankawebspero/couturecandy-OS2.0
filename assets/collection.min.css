@@ -790,4 +790,12 @@ a.text-m {
     padding: 50px 30px;
 }
   
+.boost-pfs-filter-right-col {
+    width: calc(100% - 260px);
+}
+  
+.boost-pfs-filter-left-col {
+    width: 260px;
+}
+  
 }
