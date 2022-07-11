@@ -1507,6 +1507,13 @@ body.template-product  {
     padding: 3px 9px;
     font-size: 14px;
 }
+  .single-product-content .cart .quantity {
+    margin-bottom: 7px;
+}
+  
+.single-product-content .cart .quantity input[type=number] {
+    height: 42px;
+}
   
 }
 
