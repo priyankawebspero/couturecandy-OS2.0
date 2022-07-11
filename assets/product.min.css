@@ -1172,6 +1172,10 @@ div#cover {
     color: #fff !important;
 }
   
+.single-product-content:not(.product-quick-view) .shopify-product-gallery__wrapper {
+    padding-right: 0;
+}
+  
 }
 
 
