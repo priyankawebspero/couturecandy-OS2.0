@@ -1493,5 +1493,10 @@ body.template-product  {
     line-height: 1.2;
 }
   
+.product-image-summary .Info .Details .Cnt a {
+    margin-top: 5px;
+    font-size: 13px;
+}
+  
 }
 
