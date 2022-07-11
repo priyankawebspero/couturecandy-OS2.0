@@ -1530,5 +1530,26 @@ body.template-product  {
     text-align: left;
 }
   
+.single-product-content .shopify-Tabs-panel .table td:first-child {
+    font-size: 14px;
+    /* text-transform: uppercase; */
+}
+  
+.single-product-content .shopify-Tabs-panel .table td {
+    padding: 7px 12px;
+    font-size: 13px;
+}
+  
+.single-product-content .product_meta span {
+    font-size: 14px;
+}
+  
+.single-product-content .product_meta, .single-product-content .product_meta.product_meta_external {
+ 
+    border-top: none;
+    padding: 8px 15px 5px 15px;
+    text-align: left;
+}
+  
 }
 
