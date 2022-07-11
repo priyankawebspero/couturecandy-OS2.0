@@ -1147,10 +1147,37 @@ div#cover {
     display: none;
 }
   
+  .single-product-content .product-images .owl-nav {
+    display: block !important;
+    position: static !important;
+    background: none !important;
+    box-shadow: none !important;
+}
+  
+.single-product-content .product-images .owl-nav .owl-prev {
+    position: absolute !important;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) !important;
+    background: #000;
+    color: #fff !important;
+}
+  
+.single-product-content .product-images .owl-nav .owl-next {
+    position: absolute !important;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) !important;
+    background: #000;
+    color: #fff !important;
+}
+  
 }
 
 
 @media only screen and (max-width: 767px){
+  
+
   
    .basel-product-design-default .product-images {
     width: 100%;
