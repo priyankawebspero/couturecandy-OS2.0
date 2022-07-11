@@ -930,6 +930,18 @@ a.text-m {
 
 @media only screen and (max-width:767px){
   
+.bottom.buttons .btn {
+    padding: 0;
+    background: none;
+    border: none;
+    margin: 5px 3px;
+}
+  
+.bottom.buttons {
+    text-align: center;
+    padding: 25px 15px;
+}
+  
  .boost-pfs-filter-right-col {
     width: 100%;
     padding-left: 15px;
