@@ -1107,4 +1107,9 @@ a.text-m {
     font-size: 16px;
 }
   
+.boost-pfs-filter-tree-mobile-style2.boost-pfs-filter-tree-v .boost-pfs-filter-option .boost-pfs-filter-option-title .boost-pfs-filter-option-title-heading:after {
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+  
 }
