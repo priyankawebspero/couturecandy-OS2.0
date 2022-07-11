@@ -1460,7 +1460,7 @@ div#ProdDetailInfo {
     margin-left: 0;
     border: none;
     width: 100%;
-    background: #000;
+    background: #333;
     border-radius: 0;
     padding: 0 15px;
 }
@@ -1479,7 +1479,7 @@ div#ProdDetailInfo {
 }
   
 body.template-product  {
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 }
   
 }
