@@ -71,6 +71,11 @@ span.moreless-button.btn {
     line-height: 50px;
     border: none;
     cursor: pointer;
+    clear: both;
+    display: block;
+    max-width: 175px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .bottom.description.collection p {
