@@ -986,6 +986,10 @@ div#cover {
     flex-wrap: wrap;
 }
 
+.template-product div#ReviewSection form .write-review-wrapper .yotpo-regular-box .yotpo-footer .connect-wrapper .form-element .y-input {
+    margin-bottom: 20px;
+}
+
 @media only screen and (min-width:768px){
 
 div#ProdDetailInfomobile {
