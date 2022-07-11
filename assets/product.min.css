@@ -1146,8 +1146,12 @@ div#cover {
 .single-product-content .variations .swatches-select .swatch-size-small.bg_color {
     padding-left: 10px;
     padding-right: 10px;
-    max-width: 100%;
     margin-right: 2px;
+    font-size: 13px;
+}
+  
+.single-product-content .variations .swatches-select .swatch-size-small {
+    margin-right: 6px;
     font-size: 13px;
 }
   
