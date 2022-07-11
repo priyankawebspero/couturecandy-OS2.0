@@ -1215,6 +1215,36 @@ div#cover {
   
 }
 
+@media only screen and (max-width: 991px) and (min-width:768px){
+  
+  .single-product-content .cart .quantity {
+    margin-right: 7px;
+}
+  
+.single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
+    margin-left: 10px;
+    height: 43px;
+    line-height: 42px;
+    width: 42px;
+    position: relative;
+}
+  
+.single-product-content .entry-summary .yith-wcwl-add-to-wishlist a::before {
+    font-size: 20px;
+}
+.single-product-content .cart .quantity input[type=number] {
+    width: 50px;
+    height: 46px;
+}
+  
+.single-product-content .cart .button {
+    font-size: 16px;
+    padding: 14px 11px;
+    min-width: 170px;
+}
+  
+}
+
 
 @media only screen and (max-width: 767px){
   
