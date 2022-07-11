@@ -1422,5 +1422,26 @@ div#ProdDetailInfo {
     margin-right: 0;
 }
   
+.single-product-content div#SizeChart {
+    padding-bottom: 10px;
+}
+  
+.single-product-content .cart .quantity {
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+  
+.single-product-content .cart .button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    min-width: inherit;
+    z-index: 99;
+    padding: 14px 10px;
+    border-radius: 0;
+    font-size: 15px;
+}
+  
 }
 
