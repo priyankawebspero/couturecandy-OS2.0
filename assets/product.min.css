@@ -1460,7 +1460,20 @@ div#ProdDetailInfo {
     width: 100%;
     background: #000;
     border-radius: 0;
-    padding: 0 12px 0 26px;
+    padding: 0 15px;
+}
+  
+.single-product-content .entry-summary .yith-wcwl-add-to-wishlist a::before {
+    font-size: 15px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    color: #fff;
+    top: 0;
+    content: "Add to Wishlist";
+    text-transform: uppercase;
+    margin: 0;
+    font-family: 'google_sansregular';
 }
   
 }
