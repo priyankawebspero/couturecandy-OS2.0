@@ -43,7 +43,7 @@
       {% for tag in product.tags %}
       {%- unless product.handle == current_product.handle -%}
           {%- if current_product.handle == tag -%}
-             <div class="product-item owl-carousel-item"><div class="owl-carousel-item-inner">{%- include gl_include -%}</div></div>
+             <div class="product-item"><div class="owl-carousel-item-inner">{%- include gl_include -%}</div></div>
              {%- assign counter = counter | plus: 1 -%}
              {%- if counter == break_at -%}
                {%- break -%}
