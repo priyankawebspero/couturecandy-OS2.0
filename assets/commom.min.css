@@ -2227,6 +2227,11 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     vertical-align: middle;
 }
   
+.mobile-nav .mobile_bottom_icons .header-links ul li a {
+    border: none;
+    padding: 8px 15px;
+}
+  
 }
 
 
