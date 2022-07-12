@@ -1159,6 +1159,24 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
     border-color: #e94949 !important;
 }
 
+.col-reset_password input#RecoverEmail {
+    height: 50px;
+    border: 1px solid #ccc;
+    color: #000;
+    font-size: 15px;
+}
+
+.col-reset_password button.shopify-Button.button {
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.col-reset_password button.shopify-Button.button:hover {
+     background: #000;
+    border-color: #000;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
