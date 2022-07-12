@@ -934,8 +934,12 @@ div#reviewCarouselWidget .stjr-review__content .stjr-review__read_more_link {
 }
 
 .main-nav .menu>li.menu-item-design-sized .sub-menu-dropdown .top_nav_main .top_section .top_section_heading {
-    font-size: 22px;
+    font-size: 16px;
     text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    font-family: 'product_sans_mediumregular';
+    font-family: 'google_sansregular';
 }
 
 .main-nav .menu>li.menu-item-design-sized .sub-menu-dropdown .top_nav_main .top_section .top_section_heading:before {
