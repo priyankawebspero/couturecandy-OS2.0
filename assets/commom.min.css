@@ -2266,6 +2266,11 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     margin-left: 5px;
 }
   
+.mobile-nav .mobile_bottom_icons .shopping-cart a svg {
+    width: 24px !important;
+    height: 24px !important;
+}
+  
 }
 
 
