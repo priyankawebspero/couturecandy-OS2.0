@@ -1901,6 +1901,10 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
 }
   
 .menu_inner_block {
+    margin: 0 5px 10px 5px;
+}
+  
+  .menu_inner_block {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -1908,7 +1912,6 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     align-content: stretch;
     justify-content: space-between;
     background-color: #ddd;
-    margin: 0 5px 10px 5px;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
