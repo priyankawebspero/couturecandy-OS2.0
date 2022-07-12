@@ -2221,6 +2221,7 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     width: 100%;
     padding-top: 10px;
     border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
 }
   
   .mobile-nav .mobile_bottom_icons .header-links {
