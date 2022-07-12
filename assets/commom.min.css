@@ -1140,6 +1140,19 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
     /* text-decoration: underline; */
 }
 
+.basel-register-tabs .registration-info {
+    font-size: 16px;
+    color: #000;
+}
+
+.basel-register-tabs .btn {
+    border-radius: 5px;
+}
+
+.basel-register-tabs .btn:hover, .basel-register-tabs .btn:focus {
+     background: #e94949 ;
+    border-color: #e94949;
+}
 
 @media only screen and (min-width:768px){
   
