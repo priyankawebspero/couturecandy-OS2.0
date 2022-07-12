@@ -1703,5 +1703,19 @@ body.template-product  {
     margin-bottom: 0;
 }
   
+.related.products .owl-carousel .owl-nav>div.owl-next:before {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+}
+  
+.related.products .owl-carousel .owl-nav>div.owl-prev:before {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+}
+  
 }
 
