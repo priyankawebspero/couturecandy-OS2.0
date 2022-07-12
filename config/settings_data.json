@@ -1066,7 +1066,7 @@
               "menu_image": "shopify:\/\/shop_images\/Formal_b572ca72-b60b-4e71-ab13-b5b7ad1ad95f.jpg",
               "menu_text": "FORMAL",
               "menu_link_1": "https:\/\/www.couturecandy.com\/collections\/formal-gowns",
-              "menu": ""
+              "menu": "staing-menu"
             }
           },
           "dcb9abd5-d75b-451a-918c-7d34c393126f": {
@@ -1084,7 +1084,7 @@
               "menu_image": "shopify:\/\/shop_images\/Sale-img.jpg",
               "menu_text": "SALE",
               "menu_link_1": "https:\/\/www.couturecandy.com\/collections\/dresses-on-sale",
-              "menu": ""
+              "menu": "popular-categories"
             }
           }
         },
