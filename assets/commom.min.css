@@ -1149,7 +1149,12 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
     border-radius: 5px;
 }
 
-.basel-register-tabs .btn:hover, .basel-register-tabs .btn:focus {
+.basel-register-tabs .btn:hover {
+     background: #e94949 ;
+    border-color: #e94949;
+}
+
+.basel-register-tabs .btn:focus {
      background: #e94949 ;
     border-color: #e94949;
 }
