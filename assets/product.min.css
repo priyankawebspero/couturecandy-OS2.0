@@ -1672,5 +1672,12 @@ body.template-product  {
     margin-top: 15px;
 }
   
+.template-product div#ReviewSection .yotpo .yotpo-regular-box.yotpo-bottomline {
+    padding-bottom: 10px;
+    padding-top: 20px;
+    display: block;
+    height: auto;
+}
+  
 }
 
