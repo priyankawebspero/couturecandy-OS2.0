@@ -1717,5 +1717,12 @@ body.template-product  {
     font-size: 13px;
 }
   
+.template-product div#ReviewSection form .write-review-wrapper .yotpo-regular-box .submit-button input.yotpo-default-button {
+    font-size: 14px;
+    min-width: 100px;
+    padding: 10px;
+    margin-top: 0 !important;
+}
+  
 }
 
