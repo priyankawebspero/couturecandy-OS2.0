@@ -32,7 +32,7 @@
    </div>
 
    <div class="menu-mobile-nav-container">
-      <div class="close_inner_block"><i class='fas fa-angle-left'></i></div>
+      <div class="close_inner_block"><i class='fas fa-angle-left'></i></div><div class="title">{{block.settings.menu_text}}</div>
       {%- if block.settings.menu != blank -%}
       <ul id="menu-mobile-nav" class="site-mobile-menu">
          {%- for link in linklists[block.settings.menu].links -%}
