@@ -1083,6 +1083,13 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
     top: 100% !important;
 }
 
+/*---empty-cart-design----------*/
+
+.shopify .basel-empty-cart-text {
+    color: #000;
+    font-size: 16px;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
