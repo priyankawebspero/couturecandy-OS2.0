@@ -2213,7 +2213,7 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
   
   .template-index .enable-sticky-header .main-header{ border-bottom:inherit !important;}
   
-.mobile_bottom_icons {
+.mobile-nav .mobile_bottom_icons {
     display: flex;
     align-items: center;
     justify-content: center;
