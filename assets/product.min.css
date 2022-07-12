@@ -1726,3 +1726,11 @@ body.template-product  {
   
 }
 
+@media only screen and (max-width:479px){
+
+.template-product .yotpo .yotpo-first-review .yotpo-first-review-content button[type="button"] {
+    padding: 13px 14px;
+    font-size: 14px;
+}
+
+}
