@@ -1053,7 +1053,7 @@ a.text-m {
   
 .boost-pfs-filter-products .boost-pfs-filter-product-item .boost-pfs-filter-product-bottom-inner .boost-pfs-filter-product-item-price {
     margin-bottom: 7px;
-    font-size: 15px;
+    font-size: 14px;
     margin-top: 10px;
 }
   
@@ -1383,6 +1383,10 @@ a.text-m {
   
 .boost-pfs-filter-wrapper.boost-pfs-filter-tree-h-sticky-filter .boost-pfs-container-default-fullwidth {
     margin-top: 0;
+}
+  
+.boost-pfs-filter-tree-mobile-style3 .boost-pfs-filter-mobile-toolbar .boost-pfs-filter-mobile-toolbar-bottom {
+    top: 11px;
 }
   
 }
