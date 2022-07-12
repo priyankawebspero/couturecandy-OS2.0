@@ -1724,6 +1724,10 @@ body.template-product  {
     margin-top: 0 !important;
 }
   
+.related-and-upsells>section {
+    margin-bottom: 10px;
+}
+  
 }
 
 @media only screen and (max-width:479px){
