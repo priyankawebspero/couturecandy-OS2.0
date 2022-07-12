@@ -1135,6 +1135,11 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
     border-color: #e94949;
 }
 
+.basel-register-tabs form .lost_password a:hover {
+    color: #e94949;
+    /* text-decoration: underline; */
+}
+
 
 @media only screen and (min-width:768px){
   
