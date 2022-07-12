@@ -2176,8 +2176,9 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     border-bottom: 1px solid #ccc !important;
 }
   
-  .mobile-nav {
+ .mobile-nav {
     z-index: 999;
+    padding-bottom: 100px;
 }
   
 .main-header .container .header_middle_block {
