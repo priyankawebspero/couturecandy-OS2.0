@@ -2234,7 +2234,28 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
   
 .mobile-nav .mobile_bottom_icons .wishlist-info-widget {
     display: inline-block;
-  vertical-align: middle;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+  
+.mobile-nav .mobile_bottom_icons .wishlist-info-widget a:before {
+   content: "\f08a";
+    font-family: FontAwesome;
+    vertical-align: middle;
+    display: inline-block;
+   
+    font-size: 27px;
+    vertical-align: middle;
+}
+  
+.mobile-nav .mobile_bottom_icons .wishlist-info-widget a {
+    font-size: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    vertical-align: top;
+    margin-top: -7px;
+    position: relative;
 }
   
 }
