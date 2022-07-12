@@ -24,9 +24,11 @@
 <div class="menu_block">
   
    <div class="menu_inner_block">
-      {% if block.settings.menu_text != 'blank' %}<div class="menu_title">{{block.settings.menu_text}}</div>{%-endif-%}
+   {% if block.settings.menu_link_1 != 'blank' %} <a href="{{block.settings.menu_link_1}}">{%-else-%}{%-endif-%}
+     {% if block.settings.menu_text != 'blank' %}<div class="menu_title">{{block.settings.menu_text}}</div>{%-endif-%}
       {% if block.settings.menu_text != 'blank' %}<div class="menu_image"><img
             src="{{block.settings.menu_image | img_url:'200x'}}" alt="{{block.settings.menu_text}}"></div>{%-endif-%}
+     {% if block.settings.menu_link_1 != 'blank' %} </a>{%-else-%}{%-endif-%}
    </div>
    <div class="menu-mobile-nav-container">
       <div class="close_inner_block"><i class='fas fa-angle-left'></i></div>
@@ -175,37 +177,7 @@
                   <g>
                     <path d="M255.735,0c-70.576,0-128,57.44-128,128.032v63.776c0,8.832,7.168,16,16,16c8.832,0,16-7.168,16-16v-63.776    c0-52.96,43.056-96.032,96-96.032c52.944,0,96,43.072,96,96.032v63.776c0,8.832,7.168,16,16,16c8.832,0,16-7.168,16-16v-63.776    C383.735,57.44,326.311,0,255.735,0z"/>
                   </g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
+                </g>                
                 </svg>
                <span>Cart (<span class="cartCount">{{ cart.item_count }}</span>)</span>
                <span class="basel-cart-totals">
@@ -240,6 +212,10 @@
 "type": "text",
 "id": "menu_text",
 "label": "Add Menu title"
+},{
+"type": "url",
+"id": "menu_link_1",
+"label": "Add Menu Link"
 },
 {
 "type": "link_list",

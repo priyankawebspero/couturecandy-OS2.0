@@ -8,6 +8,15 @@
 
 }
 
+@font-face {
+    font-family: 'product_sans_mediumregular';
+    src: url('//cdn.shopify.com/s/files/1/0144/7018/5017/t/48/assets/productsans-medium-webfont.woff2') format('woff2'),
+         url('//cdn.shopify.com/s/files/1/0144/7018/5017/t/48/assets/productsans-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body, p, btn, input, button{ font-family: 'google_sansregular';}
 
 
@@ -191,15 +200,43 @@ header.main-header .wg-drop.country-selector .wgcurrent:after {
     max-width: 50%;
 }
 
+.product-grid-item .product-element-top>a img {
+    object-position: top;
+}
+
 .main-header .container .header_middle_block .logo .basel-logo-wrap {
     margin: 0;
 }
 
-.enable-sticky-header.basel-header-overlap.basel-top-bar-on .main-header {
-    position: relative;
-    top: 0;
+.enable-sticky-header .main-header {
+    position: relative !important;
+    top: 0 !important;
     padding-top: 20px;
     background: #fff;
+}
+
+.enable-sticky-header .main-header.act-scroll {
+   position: fixed !important;
+    top: 0;
+    z-index: 99;
+   left:0;
+  animation: smoothScroll .5s forwards;
+  
+}
+
+
+@keyframes smoothScroll {
+	0% {
+		transform: translateY(-40px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+
+.enable-sticky-header .header-spacing {
+    display: none;
 }
 
 .main-header .wrapp-header {
@@ -451,7 +488,7 @@ section.brands-banner-section {
 .product-grid-item .product-title a {
     font-family: 'google_sansregular';
     color: #000;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -467,14 +504,40 @@ section.brands-banner-section {
 }
 
 .product-grid-item .product-element-top {
-    margin-bottom: 0px;
+    margin-bottom: 10px !important;
+    border: 1px solid #b4b4b4 !important;
 }
 
+
 .product-grid-item .product-element-top>a {
-    /* margin-bottom: 10px; */
-    border: 1px solid #b4b4b4;
-    margin-bottom: 10px;
+  position: relative;
+    overflow: hidden;
+    padding-bottom: 112%;
     display: block;
+}
+
+.product-grid-item .product-element-top>a img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.product-grid-item .product-element-top .hover-img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-grid-item .product-element-top .hover-img a {
+    display: block;
+    height: 100%;
+}
+.product-grid-item .product-element-top .hover-img a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .basel-hover-base .product-element-top .yith-wcwl-add-to-wishlist>div>a:before {
@@ -530,10 +593,11 @@ a.btn:hover {
 
 .product-grid-item .price {
     color: #000;
-    font-weight: 600;
+    font-weight: normal;
     margin-bottom: 20px;
     font-size: 18px;
     /* margin-top: 10px; */
+    font-family: 'product_sans_mediumregular';
 }
 
 
@@ -901,23 +965,6 @@ div#shopify-section-template--14532934697043__1655293959d5ab1c6c .title:after {
     font-family: 'google_sansregular' !important;
 }
 
-.enable-sticky-header.basel-header-overlap.basel-top-bar-on .main-header.act-scroll {
-     z-index: 99999;
-  animation: smoothScroll .5s forwards;
-}
-
-.product-grid-item .product-element-top>a img {
-    object-position: top;
-}
-
-@keyframes smoothScroll {
-	0% {
-		transform: translateY(-40px);
-	}
-	100% {
-		transform: translateY(0px);
-	}
-}
 
 
 /* == added on 27 june dev ===*/
@@ -995,6 +1042,17 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
     display: inline-block;
 }
 
+.main-header .wrapp-header ul#menu-main-navigation li:first-child {
+    margin-left: 6px;
+}
+
+.breadcrumbs ol li::after {
+    top: 0;
+}
+
+.header-links ul li a:after {
+    display: none !important;
+}
 
 @media only screen and (min-width:768px){
   
@@ -1992,6 +2050,15 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     padding-left: 0;
     width: auto;
 }
+  
+.enable-sticky-header .main-header {
+    padding-top: 0;
+    background: #fff;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #ccc !important;
+}
+  
+  .template-index .enable-sticky-header .main-header{ border-bottom:inherit !important;}
 
   
 }

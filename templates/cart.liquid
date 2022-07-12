@@ -1,3 +1,10 @@
+<style>
+  .template-cart div#reviewCarouselWidgetInner { display: none;}
+  .template-cart div#reviewCarouselWidget div#reviewCarouselWidgetInner { display: block !important;}
+  div#reviewCarouselWidget {
+    padding-bottom: 30px !important;
+}
+  </style>
 {%- assign cart_title = 'cart.general.title' | t -%}
 <div class="main-page-wrapper">
 {%- include 'page_heading', page_title:cart_title -%}
