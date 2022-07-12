@@ -1108,6 +1108,17 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
     max-width: 100% !important;
 }
 
+.basel-register-tabs form label {
+    font-size: 16px;
+}
+
+.basel-register-tabs form .form-row-wide input {
+    height: 50px;
+    border: 1px solid #ccc;
+    color: #000;
+    font-size: 15px;
+}
+
 
 @media only screen and (min-width:768px){
   
