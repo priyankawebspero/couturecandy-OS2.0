@@ -914,13 +914,16 @@ div#reviewCarouselWidget .stjr-review__content .stjr-review__read_more_link {
 }
 
 .main-nav .menu>li.menu-item-design-sized .sub-menu-dropdown .top_nav_main .top_section .top_section_menu_ul li a {
-    color: #000;
+    color: #333;
     font-family: 'google_sansregular';
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     text-align: left;
-  line-height: 1.2;
+    line-height: 1.2;
+    /* font-family: 'product_sans_mediumregular'; */
 }
+
+
 .main-nav .menu>li.menu-item-design-sized .sub-menu-dropdown .top_nav_main .top_section .top_section_menu_ul li a:hover {
     color: #e94949;
     text-decoration: none !important;
