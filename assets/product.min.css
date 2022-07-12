@@ -1301,6 +1301,14 @@ div#ProdDetailInfomobile {
     padding: 30px 15px;
 }
   
+.main-header .container .header_middle_block .switchers div#currency_switcher .doubly-nice-select.right {
+    background: none;
+}
+  
+.main-header .container .header_middle_block .wg-drop.country-selector {
+    background-color: inherit;
+}
+  
 }
 
 @media only screen and (max-width: 991px) and (min-width:768px){
