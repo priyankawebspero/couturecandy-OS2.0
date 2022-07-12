@@ -1090,13 +1090,18 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
     font-size: 16px;
 }
 
-.shopify .return-to-shop a.button {
+.shopify .return-to-shop .button {
     background: #000 !important;
     border-color: #000 !important;
     border-radius: 5px;
     font-size: 18px;
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.shopify .return-to-shop .button:hover {
+    background: #e94949 !important;
+    border-color: #e94949 !important;
 }
 
 .template-cart .main-page-wrapper .container {
