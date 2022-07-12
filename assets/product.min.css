@@ -1657,5 +1657,20 @@ body.template-product  {
     display: block;
 }
   
+.template-product .yotpo .yotpo-first-review .yotpo-first-review-stars {
+    margin-left: 0;
+    order: 0;
+    text-align: left;
+}
+
+.template-product .yotpo .yotpo-first-review {
+    display: block;
+}
+  
+.yotpo .yotpo-first-review .yotpo-first-review-content {
+    text-align: left;
+    margin-top: 15px;
+}
+  
 }
 
