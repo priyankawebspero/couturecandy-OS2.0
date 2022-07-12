@@ -1732,5 +1732,10 @@ body.template-product  {
     padding: 13px 14px;
     font-size: 14px;
 }
+  
+.template-product div#ReviewSection .review-heading {
+    font-size: 22px;
+    text-transform: inherit;
+}
 
 }
