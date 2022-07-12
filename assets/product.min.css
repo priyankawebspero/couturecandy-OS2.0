@@ -783,14 +783,7 @@ div#cover {
     letter-spacing: 1px;
 }
 
-.template-product .yotpo .yotpo-first-review .yotpo-first-review-stars span.stars-wrapper span.yotpo-icon:before {
-    color: #e94949;
-    font-size: 23px;
-}
 
-.template-product .yotpo .yotpo-first-review .yotpo-first-review-stars span.stars-wrapper span.yotpo-icon {
-    background: none !important;
-}
 
 .template-product div#ReviewSection form .write-review-wrapper .yotpo-regular-box {
     border: none;
