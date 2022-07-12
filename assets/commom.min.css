@@ -1177,6 +1177,13 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
     border-color: #000;
 }
 
+.col-reset_password p.gl_first {
+    border: none !important;
+    font-size: 18px;
+    color: #000;
+    line-height: 1.5;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
