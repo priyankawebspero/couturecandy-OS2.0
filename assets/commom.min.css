@@ -1150,8 +1150,8 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
 }
 
 .basel-register-tabs .btn:hover {
-     background: #e94949 ;
-    border-color: #e94949;
+     background: #e94949 !important;
+    border-color: #e94949 !important;
 }
 
 .basel-register-tabs .btn:focus {
