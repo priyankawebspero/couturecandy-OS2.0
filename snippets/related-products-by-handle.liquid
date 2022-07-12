@@ -59,7 +59,7 @@
   {%- unless related_items == blank -%}
     <section class="related products">
       <h2 class="title slider-title">{{settings.title_pr_related}}</h2>
-      <div id="carousel-{{product.id}}" class="gl_carousel_container">
+      <div id="carousel-{{product.id}}" class="">
         <div class="{%- if settings_pr_img_size -%}equal-columns {% endif -%}{{settings.related_image_size}} product-items owl-carousel gl_carousel_data" data-time='{{ settings.related_silder_speed | plus: 0 }}' data-nav='{%- if settings.related_hide_button -%}false{%- else -%}true{%- endif -%}' data-items='{{ related_number }}' data-dots='{%- if settings.related_hide_pagination -%}false{%- else -%}true{%- endif -%}' data-autoplay='{%- if settings.related_autoplay -%}true{%- else -%}false{%- endif -%}' data-loop='{%- if settings.related_slider_loop -%}true{%- else -%}false{%- endif -%}' data-medium='{%- if related_number > 2 -%}{{ related_number | minus: 1 }}{%- else -%}2{%- endif -%}'>
           {{ related_items }}
         </div><!-- end product-items -->
