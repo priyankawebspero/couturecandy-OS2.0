@@ -2283,7 +2283,7 @@
               "icon": "",
               "button_link": "shopify:\/\/collections\/formal-gowns",
               "label": "",
-              "menu": "",
+              "menu": "staing-menu",
               "color": "#ffffff",
               "menu_width": ""
             }
@@ -2305,7 +2305,7 @@
               "icon": "",
               "button_link": "shopify:\/\/collections\/dresses-on-sale",
               "label": "",
-              "menu": "",
+              "menu": "popular-categories",
               "color": "#ffffff",
               "menu_width": "270"
             }
