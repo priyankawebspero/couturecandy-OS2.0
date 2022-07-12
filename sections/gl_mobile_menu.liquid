@@ -231,7 +231,8 @@
 }
 {% endschema %}
 <script>
-   $('.menu_inner_block.onclick_eve').on('click', function () {
+   $('.menu_inner_block.basel-pop').on('click', function (e) {
+      e.preventDefault();
       $(this).closest('.menu_block').toggleClass('active');
    });
    $('.close_inner_block').on('click', function () {
