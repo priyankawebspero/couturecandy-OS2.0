@@ -2258,6 +2258,10 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     position: relative;
 }
   
+.mobile-nav .mobile_bottom_icons .shopping-cart a:before {
+    display: none !important;
+}
+  
 }
 
 
