@@ -1184,6 +1184,11 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
     line-height: 1.5;
 }
 
+.page-title {
+    margin-top: 0;
+    padding: 30px 0;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
