@@ -2262,6 +2262,10 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     display: none !important;
 }
   
+.mobile-nav .mobile_bottom_icons .shopping-cart {
+    margin-left: 5px;
+}
+  
 }
 
 
