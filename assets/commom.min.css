@@ -1054,7 +1054,9 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
     display: none !important;
 }
 
-
+.main-header:not(.header-split) .main-nav .menu>li:not(.callto-btn)>.sub-menu-dropdown {
+    top: 120%;
+}
 
 @media only screen and (min-width:768px){
   
