@@ -2232,6 +2232,11 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     padding: 8px 15px;
 }
   
+.mobile-nav .mobile_bottom_icons .wishlist-info-widget {
+    display: inline-block;
+  vertical-align: middle;
+}
+  
 }
 
 
