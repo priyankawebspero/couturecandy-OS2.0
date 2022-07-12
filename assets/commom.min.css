@@ -1900,6 +1900,16 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     border-radius: 0 5px 5px 0;
 }
   
+  ..menu-mobile-nav-container .titles {
+    position: absolute;
+    top: 17px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    font-family: 'product_sans_mediumregular';
+    color: #000;
+}
+  
 .menu_inner_block {
     margin: 0 5px 10px 5px;
 }
