@@ -878,12 +878,27 @@ div#reviewCarouselWidget .stjr-review__content .stjr-review__read_more_link {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    justify-content: space-between;
 }
 
+
 .main-nav .menu>li.menu-item-design-sized .sub-menu-dropdown .top_nav_main .top_section {
-    width: 16.66%;
+    /* width: 16.66%; */
     padding: 0 15px;
     float: left;
+    flex: 1 1 auto;
+}
+
+.main-nav .menu>li.menu-item-design-sized .sub-menu-dropdown .top_nav_main .left_side {
+    /* width: 80.33%; */
+    flex: 1 1 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-nav .menu>li.menu-item-design-sized .sub-menu-dropdown .top_nav_main .right_side {
+    /* width: 19.66%; */
+    flex: 0 0 auto;
 }
 
 
