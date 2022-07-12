@@ -1900,7 +1900,7 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     border-radius: 0 5px 5px 0;
 }
   
-  ..menu-mobile-nav-container .titles {
+  .menu-mobile-nav-container .titles {
     position: absolute;
     top: 17px;
     left: 50%;
@@ -1908,6 +1908,10 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     font-size: 15px;
     font-family: 'product_sans_mediumregular';
     color: #000;
+}
+  
+  .menu-mobile-nav-container .shopping-cart .dropdown-wrap-cat {
+    display: none !important;
 }
   
 .menu_inner_block {
