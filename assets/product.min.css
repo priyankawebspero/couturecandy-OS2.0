@@ -987,6 +987,26 @@ div#cover {
     margin-top: 0;
 }
 
+.related.products .owl-carousel .owl-nav>div.owl-next {
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+    margin-top: -70px;
+    right: 0 !important;
+    box-shadow: none;
+    background: #000;
+    color: #fff;
+}
+
+.related.products .owl-carousel .owl-nav>div.owl-prev {
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+    margin-top: -70px;
+    left: 0 !important;
+    box-shadow: none;
+    background: #000;
+    color: #fff;
+}
+
 @media only screen and (min-width:768px){
 
 div#ProdDetailInfomobile {
