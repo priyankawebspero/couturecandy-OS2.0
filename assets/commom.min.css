@@ -2213,7 +2213,8 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
   
   .template-index .enable-sticky-header .main-header{ border-bottom:inherit !important;}
   
-.mobile-nav .mobile_bottom_icons {
+
+  .mobile-nav .mobile_bottom_icons {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -2221,6 +2222,7 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     padding-top: 10px;
     border-bottom: 1px solid #ccc;
 }
+  
   .mobile-nav .mobile_bottom_icons .header-links {
     display: inline-block;
     vertical-align: middle;
