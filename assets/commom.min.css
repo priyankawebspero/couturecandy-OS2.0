@@ -2216,12 +2216,11 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
 .mobile-nav .mobile_bottom_icons {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
-    padding-top: 30px;
+    padding-top: 10px;
     border-bottom: 1px solid #ccc;
 }
-
   .mobile-nav .mobile_bottom_icons .header-links {
     display: inline-block;
     vertical-align: middle;
