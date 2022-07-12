@@ -1699,5 +1699,9 @@ body.template-product  {
     height: auto;
 }
   
+.related-and-upsells>section .products .product-grid-item {
+    margin-bottom: 0;
+}
+  
 }
 
