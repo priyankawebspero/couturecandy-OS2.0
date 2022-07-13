@@ -10,23 +10,25 @@ if(typeof lazySizes !== 'function' && typeof lazySizes !== 'object' || typeof la
 if (typeof theme !== 'undefined' && theme.hasOwnProperty('settings')) theme.settings.predictiveSearchEnabled = false;
 // Override Settings
 var boostPFSFilterConfig = {
-general: {
-  limit: boostPFSThemeConfig.custom.products_per_page,
-  /* Optional */
-  loadProductFirst: true,
-  // Placeholder  
-  showPlaceholderProductList: true,
-  placeholderProductPerRow: 3,
-  placeholderProductGridItemClass: 'boost-pfs-filter-product-item boost-pfs-filter-product-item-grid boost-pfs-filter-grid-width-3 boost-pfs-filter-grid-width-mb-2',
-  enableOTP: true,
-  aspect_ratio: boostPFSThemeConfig.custom.aspect_ratio,
-  cropImagePossitionEqualHeight: boostPFSThemeConfig.custom.product_img_crop,
-  defaultDisplay: boostPFSThemeConfig.custom.product_item_type,
-  selectOptionContainer: '.boost-pfs-filter-product-item-image',  // CSS selector to append the product option, if left empty it will append to the product item
-},
-selector: {
-  otpButtons: '.boost-pfs-filter-product-item-image',
-}
+    general: {
+        limit: boostPFSThemeConfig.custom.products_per_page,
+        /* Optional */
+        loadProductFirst: true,
+        // Placeholder  
+        showPlaceholderProductList: true,
+        placeholderProductPerRow: 3,
+        placeholderProductGridItemClass: 'boost-pfs-filter-product-item boost-pfs-filter-product-item-grid boost-pfs-filter-grid-width-3 boost-pfs-filter-grid-width-mb-2',
+        enableOTP: true,
+        aspect_ratio: boostPFSThemeConfig.custom.aspect_ratio,
+        cropImagePossitionEqualHeight: boostPFSThemeConfig.custom.product_img_crop,
+        defaultDisplay: boostPFSThemeConfig.custom.product_item_type,
+        selectOptionContainer: '.boost-pfs-filter-product-item-image', // CSS selector to append the product option, if left empty it will append to the product item
+        changeDesktopButtonLabel: true,
+        changeDesktopButtonIcon: true,
+    },
+    selector: {
+        otpButtons: '.boost-pfs-filter-product-item-image',
+    }
 };
 
 (function() {
