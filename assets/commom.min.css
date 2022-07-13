@@ -2733,6 +2733,10 @@ footer .widget-title i {
 
 @media only screen and (max-width:767px){
   
+  .template-cart  .site-content {
+    padding: 0 15px;
+}
+  
   .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-name:before {
     float: none;
     display: block;
