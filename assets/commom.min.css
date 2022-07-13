@@ -2733,6 +2733,10 @@ footer .widget-title i {
 
 @media only screen and (max-width:767px){
   
+  .shopify-cart-form .cart-collaterals .cart_totals table.shop_table tr th {
+    padding-left: 0;
+}
+  
   .template-cart  .site-content {
     padding: 0 15px;
 }
@@ -2744,7 +2748,7 @@ footer .widget-title i {
 .shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table tr th {
     font-size: 14px;
     text-transform: uppercase;
-    padding-left: 10px;
+    padding-left: 0px;
 }
  
   
