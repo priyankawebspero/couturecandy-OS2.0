@@ -1551,6 +1551,19 @@ aside.sidebar-container .sidebar-inner ul {
     margin-bottom: 30px;
 }
 
+.template-page p {
+    color: #000;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.PageContent p strong {
+    font-family: 'product_sans_mediumregular';
+    font-weight: normal;
+    font-size: 17px;
+}
+
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
