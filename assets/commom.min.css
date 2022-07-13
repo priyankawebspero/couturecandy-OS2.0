@@ -1412,6 +1412,31 @@ form.shopify-cart-form {
     padding:30px;
 }
 
+.shopify-cart-form .cart-collaterals .cart_totals h2 {
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 28px;
+}
+
+.shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table tr th {
+    font-size: 17px;
+    font-family: 'product_sans_mediumregular';
+    font-weight: normal;
+    letter-spacing: .5px;
+    text-transform: capitalize;
+    border-color: #000;
+    padding-left: 0;
+}
+
+.shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table tr td {
+    font-size: 16px;
+    border-color: #000;
+}
+
+.shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table tr td .amount {
+    font-size: 17px;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
