@@ -743,7 +743,7 @@ a.text-m {
 .bottom.buttons {
     display: flex;
     flex-direction: row;
-   padding:30px 20px;
+   padding:40px 20px;
     text-align: center;
     justify-content: center;
 }
@@ -755,6 +755,8 @@ a.text-m {
     display: flex;
     list-style: none;
     padding: 0 5px;
+    background: none;
+    border: none;
 }
 
 .bottom.buttons .btn p {
