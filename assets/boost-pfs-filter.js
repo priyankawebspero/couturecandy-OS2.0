@@ -24,7 +24,7 @@ var boostPFSFilterConfig = {
         selectOptionContainer: '.boost-pfs-filter-product-item-image', // CSS selector to append the product option, if left empty it will append to the product item
         changeDesktopButtonLabel: true,
         changeDesktopButtonIcon: true,
-      	avoidStickyHeader: '.wrapp-header, .enable-sticky-header .main-header.act-scroll, #shopify-section-announcement-bar, #shopify-section-header,.site-header--opening, .js-navigation, .js-mobile-header-wrapper, .mobile-nav-bar-wrapper, mobile_nav-fixed--true, .site-header--sticky, .site-header-wrapper .action-bar-wrapper',
+      	avoidStickyHeader: '.wrapp-header, .header_middle_block, .enable-sticky-header .main-header.act-scroll, #shopify-section-announcement-bar, #shopify-section-header,.site-header--opening, .js-navigation, .js-mobile-header-wrapper, .mobile-nav-bar-wrapper, mobile_nav-fixed--true, .site-header--sticky, .site-header-wrapper .action-bar-wrapper',
     },
     selector: {
         otpButtons: '.boost-pfs-filter-product-item-image',
