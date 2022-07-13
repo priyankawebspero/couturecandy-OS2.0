@@ -1447,7 +1447,10 @@ form.shopify-cart-form {
 .shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table .sezzle-shopify-info-button {
     white-space: nowrap;
     padding-top: 15px;
+    overflow: visible;
 }
+
+
 .shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table .sezzle-shopify-info-button button {
     color: #000;
 }
