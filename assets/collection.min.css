@@ -741,15 +741,20 @@ a.text-m {
 }
 
 .bottom.buttons {
+    display: flex;
+    flex-direction: row;
+    /* padding-top: 10px; */
     text-align: center;
-    padding: 50px 20px;
+    justify-content: center;
 }
 
 .bottom.buttons .btn {
-    padding: 0;
-    background: none;
-    border: none;
-    margin: 0 7px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    padding: 0 5px;
 }
 
 .bottom.buttons .btn p {
@@ -757,19 +762,19 @@ a.text-m {
 }
 
 .bottom.buttons .btn a {
-    display: inline-block;
+    width: 100%;
+    max-width: 340px;
     border: 1px solid #000;
-    padding: 8px 15px;
+    color: #000;
+    background: none;
+    padding: 13px 15px;
     border-radius: 5px;
-    background: #000;
-    color: #fff;
-    text-decoration: none;
-  transition: all .2s ease-in-out;
 }
 
 .bottom.buttons .btn a:hover {
-    border: 1px solid #e94949;
-    background: #e94949;
+    border: 1px solid #000;
+    background: #000;
+  color:#000;
 }
 
 .boost-pfs-filter-products .boost-pfs-filter-product-item {
