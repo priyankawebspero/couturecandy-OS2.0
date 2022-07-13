@@ -1119,7 +1119,7 @@ var boostPFSFilterConfig = {
             if (Settings.getSettingValue('general.changeDesktopButtonIcon')) {
                 this.icon = Settings.getSettingValue('general.filterTreeIcon');
             }
-          console.log(this.label);
+          console.log(this.label, this.$element);
             this.$element.html(this.icon + '<span class="boost-pfs-filter-tree-desktop-button-label">' + this.label + '</span>');
         }
         this.afterToggleFilterTree();
