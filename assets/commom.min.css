@@ -1543,7 +1543,13 @@ aside.sidebar-container .sidebar-inner ul li h3 {
     font-size: 16px;
     margin-bottom: 0;
 }
+aside.sidebar-container .sidebar-inner ul li {
+    margin-bottom: 10px;
+}
 
+aside.sidebar-container .sidebar-inner ul {
+    margin-bottom: 30px;
+}
 
 @media only screen and (min-width:768px){
   
