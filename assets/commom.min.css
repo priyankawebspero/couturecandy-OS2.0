@@ -1325,6 +1325,12 @@ background:none;
     font-family: 'product_sans_mediumregular';
 }
 
+.template-cart form.shopify-cart-form .shop_table tr td.product-subtotal .amount {
+    font-family: 'product_sans_mediumregular';
+    font-weight: normal;
+    font-size: 20px;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
