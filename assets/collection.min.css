@@ -790,6 +790,11 @@ a.text-m {
     font-weight: normal;
 }
 
+.boost-pfs-filter-default-toolbar .boost-pfs-filter-tree-desktop-button span.boost-pfs-filter-tree-desktop-button-label::after{
+display:none;
+
+}
+
 @media only screen and (max-width:1550px){
   
   .boost-pfs-container-default-fullwidth {
