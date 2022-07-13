@@ -5,12 +5,12 @@
             {% if section.settings.image_desktop != blank %}
             {%- assign image = section.settings.image_desktop -%}
             {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}           
-                <img src="{{ image | img_url: 'master' }}" data-chksrc="{{  image | img_url: 'master' }}" data-src="{{ img_url }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}" data-sizes="auto" class="lazyload banner-image desktop-xs" alt="{{ image.alt }}">
+                <img src="{{ image | img_url: 'master' }}" data-chksrc="{{  image | img_url: 'master' }}" data-src="{{ img_url }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}" data-sizes="auto" class="lazyload banner-image desktop-xs" alt="{{ image.alt }}" width="1920" height="800">
             {% endif %}
             {% if section.settings.image_desktop != blank %}
             {%- assign image = section.settings.image_mobile -%}
             {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}  
-                <img src="{{ image | img_url: 'master' }}" data-chksrc="{{  image | img_url: 'master' }}" data-src="{{ img_url }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}" data-sizes="auto" class="lazyload banner-image mobile-xs" alt="{{ image.alt }}" style="display:none;"> 
+                <img src="{{ image | img_url: 'master' }}" data-chksrc="{{  image | img_url: 'master' }}" data-src="{{ img_url }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}" data-sizes="auto" class="lazyload banner-image mobile-xs" alt="{{ image.alt }}" style="display:none;" width="768" height="768"> 
             {% endif %}
           </a>
         </div>
