@@ -1121,7 +1121,7 @@ var boostPFSFilterConfig = {
             }
           console.log(this.label, this.$element);
           console.log(this.icon + '<span class="boost-pfs-filter-tree-desktop-button-label">' + this.label + '</span>');
-            this.$element.html(this.icon + '<span class="boost-pfs-filter-tree-desktop-button-label">' + this.label + '</span>');
+            this.$element.html(this.icon + '<span class="123 boost-pfs-filter-tree-desktop-button-label">' + this.label + '</span>');
         }
         this.afterToggleFilterTree();
     }
