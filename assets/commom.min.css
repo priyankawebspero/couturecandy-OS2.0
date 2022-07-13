@@ -2737,6 +2737,11 @@ footer .widget-title i {
     padding: 0 15px;
 }
   
+.shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table tr th {
+    font-size: 15px;
+    padding-left: 10px;
+}
+  
   .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-name:before {
     float: none;
     display: block;
