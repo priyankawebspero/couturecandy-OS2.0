@@ -1339,6 +1339,7 @@ background:none;
 
 .template-cart form.shopify-cart-form .shop_table tr {
     border: 1px solid #000;
+    border-top: none;
 }
 
 .template-cart form.shopify-cart-form .shop_table tr td.product-thumbnail img {
