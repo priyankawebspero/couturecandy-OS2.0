@@ -1460,6 +1460,11 @@ form.shopify-cart-form {
     font-size: 13px;
 }
 
+.shopify-cart-form .cart-collaterals .cart_totals table.shop_table tr.shipping {
+    background: #fff;
+    /* border-bottom: 1px solid #000; */
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
