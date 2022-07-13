@@ -743,7 +743,7 @@ a.text-m {
 .bottom.buttons {
     display: flex;
     flex-direction: row;
-    /* padding-top: 10px; */
+   padding:30px 0;
     text-align: center;
     justify-content: center;
 }
