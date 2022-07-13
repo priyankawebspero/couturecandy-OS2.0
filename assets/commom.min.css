@@ -2730,6 +2730,13 @@ footer .widget-title i {
 .shopify .shop_table.cart.shop_table_responsive tbody td {
     padding: 15px;
 }
+  
+.shopify .shop_table.cart.shop_table_responsive tbody td:before {
+    font-weight: normal;
+    color: #000;
+    font-size: 14px;
+    font-family: 'product_sans_mediumregular';
+}
 
 }
 
