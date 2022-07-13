@@ -2737,6 +2737,14 @@ footer .widget-title i {
     font-size: 14px;
     font-family: 'product_sans_mediumregular';
 }
+  
+ .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr:first-child {
+    border-top: 1px solid #000;
+}
+  
+  .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-remove {
+    height: auto;
+}
 
 }
 
@@ -2801,13 +2809,7 @@ footer .widget-title i {
     padding: 15px 15px 30px 15px;
 }
   
-  .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr:first-child {
-    border-top: 1px solid #000;
-}
-  
-  .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-remove {
-    height: auto;
-}
+ 
   
 .topbar-content.mobile .top_bar_right.col-6 .doubly-wrapper .doubly-nice-select {
     float: none;
