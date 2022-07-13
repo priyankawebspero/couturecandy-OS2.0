@@ -1400,6 +1400,10 @@ background:none;
     margin-bottom: 50px;
 }
 
+form.shopify-cart-form {
+    margin-bottom: 30px;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
