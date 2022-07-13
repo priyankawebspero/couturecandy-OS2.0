@@ -1261,6 +1261,21 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
     margin-top: 20px;
 }
 
+
+.widget_shopping_cart .total strong {
+    color: #000;
+    font-family: 'product_sans_mediumregular';
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.widget_shopping_cart .total .amount {
+    font-family: 'product_sans_mediumregular';
+    color: #e94949;
+    font-weight: normal;
+    font-size: 18px;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
