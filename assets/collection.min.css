@@ -965,6 +965,10 @@ display:none;
     font-size: 22px;
 }
   
+.bottom.buttons {
+    padding: 40px 15px;
+}
+  
 }
 
 @media only screen and (max-width:767px){
