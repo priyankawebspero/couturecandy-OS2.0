@@ -1515,6 +1515,7 @@ form.shopify-cart-form {
 
 body.template-page .main-page-wrapper {
     margin-top: 0;
+    margin-bottom: 50px;
 }
 
 body.template-page .main-page-wrapper .container {
