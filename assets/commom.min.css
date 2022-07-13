@@ -1276,6 +1276,25 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
     font-size: 18px;
 }
 
+.widget_shopping_cart .buttons a.button {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+    border-radius: 5px;
+}
+
+.widget_shopping_cart .buttons a.button.checkout {
+   color: #fff;
+    background: #e94949;
+    border-color: #e94949;
+}
+
+.widget_shopping_cart .buttons a.button.checkout:hover {
+   color: #fff;
+    background: #000;
+    border-color: #000;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
