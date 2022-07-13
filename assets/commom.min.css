@@ -1518,6 +1518,13 @@ body.template-page .main-page-wrapper {
     margin-bottom: 50px;
 }
 
+.template-page .page-title {
+    margin-top: 0;
+    padding: 30px 0;
+    border-color: #000;
+}
+
+
 body.template-page .main-page-wrapper .container {
     width: 100%;
     max-width: 100%;
