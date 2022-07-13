@@ -30,1041 +30,1091 @@ selector: {
 };
 
 (function() {
-var onSale = false,
-  soldOut = false,
-  priceVaries = false,
-  images = [],
-  firstVariant = {},
-  boostPFSImgDefaultSrc = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==',
-  boostPFSRangeWidths = [180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048];
+    var onSale = false,
+        soldOut = false,
+        priceVaries = false,
+        images = [],
+        firstVariant = {},
+        boostPFSImgDefaultSrc = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==',
+        boostPFSRangeWidths = [180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048];
 
-BoostPFS.inject(this);
-boostPFSFilterConfig.general.separateRefineByFromFilter = (jQ('.boost-pfs-filter-tree-h').length && !Utils.isMobile() > 0 && boostPFSThemeConfig.custom.filter_tree_horizontal_style != 'style-expand') ? true : false;
-Selector.stickyElementDesktop = jQ('.boost-pfs-filter-tree-v').length > 0 && !Utils.isMobile() ?  '.boost-pfs-filter-left-col' : '.boost-pfs-filter-tree';
+    BoostPFS.inject(this);
+    boostPFSFilterConfig.general.separateRefineByFromFilter = (jQ('.boost-pfs-filter-tree-h').length && !Utils.isMobile() > 0 && boostPFSThemeConfig.custom.filter_tree_horizontal_style != 'style-expand') ? true : false;
+    Selector.stickyElementDesktop = jQ('.boost-pfs-filter-tree-v').length > 0 && !Utils.isMobile() ? '.boost-pfs-filter-left-col' : '.boost-pfs-filter-tree';
 
-/************************** CUSTOMIZE DATA BEFORE BUILDING PRODUCT ITEM **************************/
-function prepareShopifyData(data) {
-  // Displaying price base on the policy of Shopify, have to multiple by 100
-  soldOut = !data.available; // Check a product is out of stock
-  onSale = data.compare_at_price_min > data.price_min; // Check a product is on sale
-  priceVaries = data.price_min != data.price_max; // Check a product has many prices
-  // Convert images to array
-  images = data.images_info;
-  // Get First Variant (selected_or_first_available_variant)
-  firstVariant = data['variants'][0];
-  if (Utils.getParam('variant') !== null && Utils.getParam('variant') != '') {
-    var paramVariant = data.variants.filter(function(e) {
-      return e.id == Utils.getParam('variant');
-    });
-    if (typeof paramVariant[0] !== 'undefined') firstVariant = paramVariant[0];
-  } else {
-    for (var i = 0; i < data['variants'].length; i++) {
-      if (data['variants'][i].available) {
-        firstVariant = data['variants'][i];
-        break;
-      }
-    }
-  }
-  return data;
-}
-
-/************************** END CUSTOMIZE DATA BEFORE BUILDING PRODUCT ITEM **************************/
-/************************** BUILD PRODUCT LIST **************************/
-// Build Product Grid Item
-ProductGridItem.prototype.compileTemplate = function(data) {
-  if (!data) data = this.data;
-  // Customize API data to get the Shopify data
-  data = prepareShopifyData(data);
-
-  // Get Template
-  var itemHtml = boostPFSTemplate.productGridItemHtml;
-  // Add Custom class
-  var soldOutClass = soldOut ? boostPFSTemplate.soldOutClass : '';
-  var saleClass = onSale ? boostPFSTemplate.saleClass : '';
-
-  itemHtml = itemHtml.replace(/{{soldOutClass}}/g, soldOutClass);
-  itemHtml = itemHtml.replace(/{{saleClass}}/g, saleClass);
-  // Add Grid Width class
-  itemHtml = itemHtml.replace(/{{gridWidthClass}}/g, buildGridWidthClass(data));
-  // Add Label
-  itemHtml = itemHtml.replace(/{{itemLabels}}/g, buildLabels(data));
-  // Add TAG Label
-  itemHtml = itemHtml.replace(/{{itemTagLabels}}/g, buildTagLabels(data, false));
-  // Add Images
-  itemHtml = itemHtml.replace(/{{itemImages}}/g, buildImages(data));
-  // Add Price
-  itemHtml = itemHtml.replace(/{{itemPrice}}/g, buildPrice(data));
-
-  // Add Review
-  if (typeof Integration === 'undefined' ||
-    (typeof Integration != 'undefined' &&
-      typeof Integration.hascompileTemplate == 'function' &&
-      !Integration.hascompileTemplate('reviews'))) {
-    itemHtml = itemHtml.replace(/{{itemReviews}}/g, buildReview(data));
-  }
-
-  // Add Vendor
-  itemHtml = itemHtml.replace(/{{itemVendor}}/g, buildVendor(data));
-
-  // itemActiveSwapClass
-  itemHtml = itemHtml.replace(/{{itemActiveSwapClass}}/g, buildActiveSwapClass(data));
-
-  // Add Color Swatches
-  itemHtml = itemHtml.replace(/{{itemSwatches}}/g, buildProductOptionSwatches(data));
-
-  // Add main attribute (Always put at the end of this function)
-  itemHtml = itemHtml.replace(/{{itemId}}/g, data.id);
-  itemHtml = itemHtml.replace(/{{itemTitle}}/g, data.title);
-  itemHtml = itemHtml.replace(/{{itemHandle}}/g, data.handle);
-  itemHtml = itemHtml.replace(/{{itemVendorLabel}}/g, data.vendor);
-  itemHtml = itemHtml.replace(/{{itemUrl}}/g, Utils.buildProductItemUrlWithVariant(data));
-  return itemHtml;
-};
-// Build Product List Item
-ProductListItem.prototype.compileTemplate = function(data) {
-  if (!data) data = this.data;
-  // Customize API data to get the Shopify data
-  data = prepareShopifyData(data);
-
-  // For List View
-  // Get Template
-  var itemHtml = boostPFSTemplate.productListItemHtml;
-
-  // Add Custom class
-  var soldOutClass = soldOut ? boostPFSTemplate.soldOutClass : '';
-  var saleClass = onSale ? boostPFSTemplate.saleClass : '';
-
-  itemHtml = itemHtml.replace(/{{soldOutClass}}/g, soldOutClass);
-  itemHtml = itemHtml.replace(/{{saleClass}}/g, saleClass);
-  // Add Label
-  itemHtml = itemHtml.replace(/{{itemLabels}}/g, buildLabels(data));
-  // Add TAG Label
-  itemHtml = itemHtml.replace(/{{itemTagLabels}}/g, buildTagLabels(data, false));
-  // Add Images
-  itemHtml = itemHtml.replace(/{{itemImages}}/g, buildImages(data));
-
-  // Add Review
-  if (typeof Integration === 'undefined' ||
-    (typeof Integration != 'undefined' &&
-      typeof Integration.hascompileTemplate == 'function' &&
-      !Integration.hascompileTemplate('reviews'))) {
-    itemHtml = itemHtml.replace(/{{itemReviews}}/g, buildReview(data));
-  }
-
-  // Add Vendor
-  itemHtml = itemHtml.replace(/{{itemVendor}}/g, buildVendor(data));
-
-  // Add Price
-  var itemPriceHtml = buildPrice(data, onSale, priceVaries);
-  itemHtml = itemHtml.replace(/{{itemPrice}}/g, itemPriceHtml);
-
-  // Description
-  var itemDescription = "";
-  if (data.body_html != null){
-    var itemDescription = jQ('<p>' + data.body_html + '</p>').text();
-    itemDescription = (itemDescription.split(" ")).length > 35 ? itemDescription.split(" ").splice(0, 35).join(" ") + '...' : itemDescription.split(" ").splice(0, 35).join(" ");
-  }
-  itemHtml = itemHtml.replace(/{{itemDescription}}/g, itemDescription);
-
-  // itemActiveSwapClass
-  itemHtml = itemHtml.replace(/{{itemActiveSwapClass}}/g, buildActiveSwapClass(data));
-
-  // Add Color Swatches
-  itemHtml = itemHtml.replace(/{{itemSwatches}}/g, buildProductOptionSwatches(data));
-
-  // Add main attribute
-  itemHtml = itemHtml.replace(/{{itemTitle}}/g, data.title);
-  itemHtml = itemHtml.replace(/{{itemVendorLabel}}/g, data.vendor);
-  itemHtml = itemHtml.replace(/{{itemUrl}}/g, Utils.buildProductItemUrlWithVariant(data));
-  itemHtml = itemHtml.replace(/{{itemId}}/g, data.id);
-
-  return itemHtml;
-  // End For List View
-};
-
-/************************** END BUILD PRODUCT LIST **************************/
-/************************** BUILD PRODUCT ITEM ELEMENTS **************************/
-function buildGridWidthClass() {
-  var gridWidthClass = '';
-  // On PC
-  switch (boostPFSThemeConfig.custom.products_per_row) {
-    case 2:
-      gridWidthClass = 'boost-pfs-filter-grid-width-2';
-      break;
-    case 3:
-      gridWidthClass = 'boost-pfs-filter-grid-width-3';
-      break;
-    case 5:
-      gridWidthClass = 'boost-pfs-filter-grid-width-5';
-      break;
-    case 6:
-      gridWidthClass = 'boost-pfs-filter-grid-width-6';
-      break;
-    default:
-      gridWidthClass = 'boost-pfs-filter-grid-width-4';
-      break;
-  }
-  // On Mobile
-  switch (boostPFSThemeConfig.custom.products_per_row_m) {
-    case 1:
-      gridWidthClass += ' boost-pfs-filter-grid-width-mb-1';
-      break;
-    case 3:
-      gridWidthClass += ' boost-pfs-filter-grid-width-mb-3';
-      break;
-    default:
-      gridWidthClass += ' boost-pfs-filter-grid-width-mb-2';
-      break;
-  }
-  return gridWidthClass;
-}
-
-function buildImages(data) {
-  var html = '',
-    aspectRatio = '',
-    rangeWidths = boostPFSRangeWidths,
-    paddingTop = 100;
-
-  var dataSrcSet = '',
-    dataWidths = '',
-    dataSizes = 'auto',
-    imgAlt = data.title,
-    flipImageSrcSet = '';
-
-  var activeSwapImage = !Utils.isMobile() && images.length > 1 &&
-    boostPFSThemeConfig.custom.hasOwnProperty('active_image_swap') &&
-    boostPFSThemeConfig.custom.active_image_swap == true;
-
-  for (var i = 0; i < rangeWidths.length; i++) {
-    dataSrcSet += Utils.getFeaturedImage(images, rangeWidths[i] + 'x') + ' ' + rangeWidths[i] + 'w';
-    dataWidths += rangeWidths[i];
-
-    if (activeSwapImage) {
-      flipImageSrcSet += Utils.optimizeImage(images[1]['src'], rangeWidths[i] + 'x') + ' ' + rangeWidths[i] + 'w';
-    }
-
-    if (i < rangeWidths.length - 1) {
-      dataSrcSet += ', ';
-      dataWidths += ', ';
-
-      if (activeSwapImage) {
-        flipImageSrcSet += ', ';
-      }
-    }
-  }
-
-  if (images.length > 0) {
-    aspectRatio = images[0]['width'] / images[0]['height'];
-    paddingTop = 1 / aspectRatio * 100;
-  }
-
-  html += '<a href="{{itemUrl}}" class="boost-pfs-filter-product-item-image-link" ';
-  html += 'style="padding-top:' + paddingTop + '%;">';
-  html += '<img class="boost-pfs-filter-product-item-main-image lazyload Image--lazyLoad"' +
-    'data-srcset="' + dataSrcSet + '" ' +
-    'data-src="' + Utils.getFeaturedImage(images, rangeWidths[2] + 'x') + '" ' +
-    'data-widths="[' + dataWidths + ']" ' +
-    'data-sizes="' + dataSizes + '" ' +
-    'src="' + boostPFSImgDefaultSrc + '" ' +
-    'alt="' + imgAlt + '"  ';
-
-  if (activeSwapImage) {
-    html += ' data-img-flip-src="' + Utils.optimizeImage(images[1]['src'], rangeWidths[2] + 'x') + '" ' +
-      'data-img-flip-srcset="' + flipImageSrcSet + '" ';
-  }
-  html += '/></a>';
-
-  return html;
-}
-
-function buildVendor(data) {
-  var html = '';
-  if (boostPFSThemeConfig.custom.hasOwnProperty('show_vendor') &&
-    boostPFSThemeConfig.custom.show_vendor == true) {
-    html = boostPFSTemplate.vendorHtml;
-  }
-  return html;
-}
-
-function buildPrice(data) {
-  var html = '';
-  if (boostPFSThemeConfig.custom.hasOwnProperty('show_price') &&
-    boostPFSThemeConfig.custom.show_price) {
-    html = '<p class="boost-pfs-filter-product-item-price">';
-    if (onSale) {
-
-      html += '<span class="boost-pfs-filter-product-item-sale-price">' + Utils.formatMoney(data.price_min) + '</span>';
-      html += '<s>' + Utils.formatMoney(data.compare_at_price_min) + '</s> ';
-    } else {
-      if (priceVaries) {
-        html += '<span class="boost-pfs-filter-product-item-price-from-text">' + (boostPFSThemeConfig.label_basic.from) + ' ' + '</span>';
-      }
-      html += '<span class="boost-pfs-filter-product-item-regular-price">' + Utils.formatMoney(data.price_min) + '</span>';
-    }
-    html += '</p>';
-  }
-  return html;
-}
-
-function buildLabels(data) {
-  // Build Sold out label
-  var soldOutLabel = '';
-  if (boostPFSThemeConfig.custom.hasOwnProperty('sold_out_enable') &&
-    boostPFSThemeConfig.custom.sold_out_enable && soldOut) {
-    soldOutLabel = boostPFSTemplate.soldOutLabelHtml.replace(/{{style}}/g, '');
-  }
-  // Build Sale label
-  var saleLabel = '';
-  var salePercent = '';
-  if (boostPFSThemeConfig.custom.sale_label_enable && onSale && !soldOut) {
-    if (boostPFSThemeConfig.custom.sale_label_display == 'sale_percent'){
-      salePercent = Math.round((data.compare_at_price_min - data.price_min) * 100 / data.compare_at_price_max);
-    }
-    saleLabel = boostPFSTemplate.saleLabelHtml.replace(/{{style}}/g, '');
-    saleLabel = boostPFSTemplate.saleLabelHtml.replace(/percent/g, '-' + salePercent + '%');
-  }
-  // Build Labels
-  return soldOutLabel + saleLabel;
-}
-
-// BUILD LABEL PRODUCT WITH TAGS
-function buildTagLabels(data, showall) {
-  if (boostPFSThemeConfig.custom.tag_label_enable) {
-    if (showall) {
-      var tagLabel = '';
-      if (data.tags) {
-        for (var i = 0; i < data.tags.length; i++) {
-          var tag = data.tags[i];
-          if (tag.indexOf("pfs:label") !== -1) {
-            var preTagLabel = boostPFSTemplate.tagLabelHtml.replace(/{{labelTag}}/g, tag.split('pfs:label-')[1]);
-            tagLabel += preTagLabel;
-          }
-        }
-      }
-    } else {
-      var tagLabel = '';
-      if (data.tags) {
-        for (var i = data.tags.length - 1; i >= 0; i--) {
-          tag = data.tags[i];
-          if (tag.indexOf("pfs:label") !== -1) {
-            var preTagLabel = boostPFSTemplate.tagLabelHtml.replace(/{{labelTag}}/g, tag.split('pfs:label-')[1]);
-            tagLabel += preTagLabel;
-            break;
-          }
-        }
-      }
-    }
-    return tagLabel;
-  } else {
-    return "";
-  }
-}
-function onlyUnique(value, index, self) {
-  return self.indexOf(value) === index;
-}
-// Build Color Swatches
-function buildProductOptionSwatches(data) {
-  var swatchesProductOptionHtml = '';
-  if (boostPFSThemeConfig.custom.swatch_enable) {
-    var swatchApplyFor = ['color', 'img', 'pro_img', 'text'];
-    for(var i = 0; i < swatchApplyFor.length; i++){
-      var optionNames = boostPFSThemeConfig.custom["swatch_by_" + swatchApplyFor[i] + "_apply"].split(',').filter(onlyUnique);
-      var swatchShape = boostPFSThemeConfig.custom["swatch_by_" + swatchApplyFor[i] + "_shape"];
-      var swatchType = swatchApplyFor[i];
-      for(var j=0; j < optionNames.length; j++){
-        var optionName = optionNames[j].trim();
-        var filterSwatchTitle = optionName,
-        swatchArr = [],
-        countSwatch = 0,
-        swatchValues = [],
-        swatchLimit = 4;
-    
-        var dataImgSize = '360',
-          bgSize = '50x',
-          dataImgSrc = Utils.getFeaturedImage(data.images_info, dataImgSize + 'x'),
-          swatchName = '#ffffff',
-          bgImageSrc = '',
-          viewMoreLabel = 'More ' + filterSwatchTitle;
-
-        if (typeof data.options_with_values != 'undefined' && data.options_with_values.length > 0) {
-          swatchArr = data.options_with_values.filter(function(option) {
-            return option.name == optionName;
-          });
-          if (swatchArr.length > 0) {
-            countSwatch = swatchArr[0].values.length;
-
-            if (swatchLimit > countSwatch) {
-              swatchLimit = countSwatch;
-            }
-            swatchValues = swatchArr[0].values;
-
-            swatchesProductOptionHtml += '<ul class="boost-pfs-filter-item-swatch boost-pfs-filter-item-swatch-option' + optionName + ' boost-pfs-filter-item-swatch-shape-' + swatchShape + ' boost-pfs-filter-item-swatch-type-' + swatchType + '">';
-
-            for (var sIndex = 0; sIndex < swatchLimit; sIndex++) {
-              swatchName = swatchValues[sIndex].title;
-              swatchVariant = data['variants'][sIndex];
-              sImageIndex = swatchValues[sIndex].image || '';
-              if (sImageIndex != '') {
-                dataImgSrc = Utils.optimizeImage(swatchVariant.image, dataImgSize + 'x') + ' ' + dataImgSize + 'w';
-              }
-              
-              if (swatchType) {
-                switch (swatchType) {
-                  case 'img':
-                    bgImageSrc = boostPFSAppConfig.general.file_url.replace(/\?/, Utils.slugify(filterSwatchTitle).replace(/\-/g, '_') + '-' + Utils.slugify(swatchName) + '.png?v=');
+    /************************** CUSTOMIZE DATA BEFORE BUILDING PRODUCT ITEM **************************/
+    function prepareShopifyData(data) {
+        // Displaying price base on the policy of Shopify, have to multiple by 100
+        soldOut = !data.available; // Check a product is out of stock
+        onSale = data.compare_at_price_min > data.price_min; // Check a product is on sale
+        priceVaries = data.price_min != data.price_max; // Check a product has many prices
+        // Convert images to array
+        images = data.images_info;
+        // Get First Variant (selected_or_first_available_variant)
+        firstVariant = data['variants'][0];
+        if (Utils.getParam('variant') !== null && Utils.getParam('variant') != '') {
+            var paramVariant = data.variants.filter(function(e) {
+                return e.id == Utils.getParam('variant');
+            });
+            if (typeof paramVariant[0] !== 'undefined') firstVariant = paramVariant[0];
+        } else {
+            for (var i = 0; i < data['variants'].length; i++) {
+                if (data['variants'][i].available) {
+                    firstVariant = data['variants'][i];
                     break;
-                  case 'pro_img':
-                    bgImageSrc = Utils.getFeaturedImage(data.images_info, bgSize);
-                    if (sImageIndex != '') {
-                      bgImageSrc = Utils.optimizeImage(data.images[sImageIndex], bgSize);
-                    }
-                    if (bgImageSrc && bgImageSrc.includes('boost-pfs-no-image')) bgImageSrc = '';
-                    break;
-                  default:
-                    bgImageSrc = '';
                 }
-              }
-              swatchesProductOptionHtml += '<li>';
-                if(swatchType == 'text'){
-                  swatchesProductOptionHtml += '<a aria-label="' + optionName + ': ' + swatchName + '" title="' + swatchName + '" href="' + Utils.buildProductItemUrl(data) + '?variant=' + swatchVariant.id + '">' + swatchName + '</a>';
-                } else {
-                  if(boostPFSThemeConfig.custom.show_swatch_tooltip){
-                    swatchesProductOptionHtml += '<div class="boost-pfs-product-item-tooltip">' + swatchName + '</div>';
-                  }
-                  swatchesProductOptionHtml += '<span tabindex="0" aria-label="' + optionName + ': ' + swatchName + '" ' + 'style="background-color: ' + swatchName + '; ';
-                  if (bgImageSrc != '') {
-                      swatchesProductOptionHtml += 'background-image: url(' + bgImageSrc + ');" ';
-                  } else {
-                      swatchesProductOptionHtml += '" ';
-                  }
-                  if (dataImgSrc != '') {
-                      swatchesProductOptionHtml += 'data-img="' + dataImgSrc + '" ';
-                  }
+            }
+        }
+        return data;
+    }
 
-                  swatchesProductOptionHtml += '></span>';
-                }
-              swatchesProductOptionHtml += '</li>';
+    /************************** END CUSTOMIZE DATA BEFORE BUILDING PRODUCT ITEM **************************/
+    /************************** BUILD PRODUCT LIST **************************/
+    // Build Product Grid Item
+    ProductGridItem.prototype.compileTemplate = function(data) {
+        if (!data) data = this.data;
+        // Customize API data to get the Shopify data
+        data = prepareShopifyData(data);
+
+        // Get Template
+        var itemHtml = boostPFSTemplate.productGridItemHtml;
+        // Add Custom class
+        var soldOutClass = soldOut ? boostPFSTemplate.soldOutClass : '';
+        var saleClass = onSale ? boostPFSTemplate.saleClass : '';
+
+        itemHtml = itemHtml.replace(/{{soldOutClass}}/g, soldOutClass);
+        itemHtml = itemHtml.replace(/{{saleClass}}/g, saleClass);
+        // Add Grid Width class
+        itemHtml = itemHtml.replace(/{{gridWidthClass}}/g, buildGridWidthClass(data));
+        // Add Label
+        itemHtml = itemHtml.replace(/{{itemLabels}}/g, buildLabels(data));
+        // Add TAG Label
+        itemHtml = itemHtml.replace(/{{itemTagLabels}}/g, buildTagLabels(data, false));
+        // Add Images
+        itemHtml = itemHtml.replace(/{{itemImages}}/g, buildImages(data));
+        // Add Price
+        itemHtml = itemHtml.replace(/{{itemPrice}}/g, buildPrice(data));
+
+        // Add Review
+        if (typeof Integration === 'undefined' ||
+            (typeof Integration != 'undefined' &&
+                typeof Integration.hascompileTemplate == 'function' &&
+                !Integration.hascompileTemplate('reviews'))) {
+            itemHtml = itemHtml.replace(/{{itemReviews}}/g, buildReview(data));
+        }
+
+        // Add Vendor
+        itemHtml = itemHtml.replace(/{{itemVendor}}/g, buildVendor(data));
+
+        // itemActiveSwapClass
+        itemHtml = itemHtml.replace(/{{itemActiveSwapClass}}/g, buildActiveSwapClass(data));
+
+        // Add Color Swatches
+        itemHtml = itemHtml.replace(/{{itemSwatches}}/g, buildProductOptionSwatches(data));
+
+        // Add main attribute (Always put at the end of this function)
+        itemHtml = itemHtml.replace(/{{itemId}}/g, data.id);
+        itemHtml = itemHtml.replace(/{{itemTitle}}/g, data.title);
+        itemHtml = itemHtml.replace(/{{itemHandle}}/g, data.handle);
+        itemHtml = itemHtml.replace(/{{itemVendorLabel}}/g, data.vendor);
+        itemHtml = itemHtml.replace(/{{itemUrl}}/g, Utils.buildProductItemUrlWithVariant(data));
+        return itemHtml;
+    };
+    // Build Product List Item
+    ProductListItem.prototype.compileTemplate = function(data) {
+        if (!data) data = this.data;
+        // Customize API data to get the Shopify data
+        data = prepareShopifyData(data);
+
+        // For List View
+        // Get Template
+        var itemHtml = boostPFSTemplate.productListItemHtml;
+
+        // Add Custom class
+        var soldOutClass = soldOut ? boostPFSTemplate.soldOutClass : '';
+        var saleClass = onSale ? boostPFSTemplate.saleClass : '';
+
+        itemHtml = itemHtml.replace(/{{soldOutClass}}/g, soldOutClass);
+        itemHtml = itemHtml.replace(/{{saleClass}}/g, saleClass);
+        // Add Label
+        itemHtml = itemHtml.replace(/{{itemLabels}}/g, buildLabels(data));
+        // Add TAG Label
+        itemHtml = itemHtml.replace(/{{itemTagLabels}}/g, buildTagLabels(data, false));
+        // Add Images
+        itemHtml = itemHtml.replace(/{{itemImages}}/g, buildImages(data));
+
+        // Add Review
+        if (typeof Integration === 'undefined' ||
+            (typeof Integration != 'undefined' &&
+                typeof Integration.hascompileTemplate == 'function' &&
+                !Integration.hascompileTemplate('reviews'))) {
+            itemHtml = itemHtml.replace(/{{itemReviews}}/g, buildReview(data));
+        }
+
+        // Add Vendor
+        itemHtml = itemHtml.replace(/{{itemVendor}}/g, buildVendor(data));
+
+        // Add Price
+        var itemPriceHtml = buildPrice(data, onSale, priceVaries);
+        itemHtml = itemHtml.replace(/{{itemPrice}}/g, itemPriceHtml);
+
+        // Description
+        var itemDescription = "";
+        if (data.body_html != null) {
+            var itemDescription = jQ('<p>' + data.body_html + '</p>').text();
+            itemDescription = (itemDescription.split(" ")).length > 35 ? itemDescription.split(" ").splice(0, 35).join(" ") + '...' : itemDescription.split(" ").splice(0, 35).join(" ");
+        }
+        itemHtml = itemHtml.replace(/{{itemDescription}}/g, itemDescription);
+
+        // itemActiveSwapClass
+        itemHtml = itemHtml.replace(/{{itemActiveSwapClass}}/g, buildActiveSwapClass(data));
+
+        // Add Color Swatches
+        itemHtml = itemHtml.replace(/{{itemSwatches}}/g, buildProductOptionSwatches(data));
+
+        // Add main attribute
+        itemHtml = itemHtml.replace(/{{itemTitle}}/g, data.title);
+        itemHtml = itemHtml.replace(/{{itemVendorLabel}}/g, data.vendor);
+        itemHtml = itemHtml.replace(/{{itemUrl}}/g, Utils.buildProductItemUrlWithVariant(data));
+        itemHtml = itemHtml.replace(/{{itemId}}/g, data.id);
+
+        return itemHtml;
+        // End For List View
+    };
+
+    /************************** END BUILD PRODUCT LIST **************************/
+    /************************** BUILD PRODUCT ITEM ELEMENTS **************************/
+    function buildGridWidthClass() {
+        var gridWidthClass = '';
+        // On PC
+        switch (boostPFSThemeConfig.custom.products_per_row) {
+            case 2:
+                gridWidthClass = 'boost-pfs-filter-grid-width-2';
+                break;
+            case 3:
+                gridWidthClass = 'boost-pfs-filter-grid-width-3';
+                break;
+            case 5:
+                gridWidthClass = 'boost-pfs-filter-grid-width-5';
+                break;
+            case 6:
+                gridWidthClass = 'boost-pfs-filter-grid-width-6';
+                break;
+            default:
+                gridWidthClass = 'boost-pfs-filter-grid-width-4';
+                break;
+        }
+        // On Mobile
+        switch (boostPFSThemeConfig.custom.products_per_row_m) {
+            case 1:
+                gridWidthClass += ' boost-pfs-filter-grid-width-mb-1';
+                break;
+            case 3:
+                gridWidthClass += ' boost-pfs-filter-grid-width-mb-3';
+                break;
+            default:
+                gridWidthClass += ' boost-pfs-filter-grid-width-mb-2';
+                break;
+        }
+        return gridWidthClass;
+    }
+
+    function buildImages(data) {
+        var html = '',
+            aspectRatio = '',
+            rangeWidths = boostPFSRangeWidths,
+            paddingTop = 100;
+
+        var dataSrcSet = '',
+            dataWidths = '',
+            dataSizes = 'auto',
+            imgAlt = data.title,
+            flipImageSrcSet = '';
+
+        var activeSwapImage = !Utils.isMobile() && images.length > 1 &&
+            boostPFSThemeConfig.custom.hasOwnProperty('active_image_swap') &&
+            boostPFSThemeConfig.custom.active_image_swap == true;
+
+        for (var i = 0; i < rangeWidths.length; i++) {
+            dataSrcSet += Utils.getFeaturedImage(images, rangeWidths[i] + 'x') + ' ' + rangeWidths[i] + 'w';
+            dataWidths += rangeWidths[i];
+
+            if (activeSwapImage) {
+                flipImageSrcSet += Utils.optimizeImage(images[1]['src'], rangeWidths[i] + 'x') + ' ' + rangeWidths[i] + 'w';
             }
 
-            if (countSwatch > swatchLimit) {
-              swatchesProductOptionHtml += '<li class="boost-pfs-filter-item-swatch-more">';
-              swatchesProductOptionHtml += '<a href="{{itemUrl}}" aria-label="' + viewMoreLabel + '" title="' + viewMoreLabel + '">+' + (countSwatch - swatchLimit) + '</a>';
-              swatchesProductOptionHtml += '</li>';
-            }
+            if (i < rangeWidths.length - 1) {
+                dataSrcSet += ', ';
+                dataWidths += ', ';
 
-            swatchesProductOptionHtml += '</ul>';
-          }
-        }
-      }
-      
-    }
-  }
-  return swatchesProductOptionHtml;
-}
-
-// Build Color Swatches
-function eventColorSwatches(event) {
-  jQ('.boost-pfs-filter-item-swatch li span').each(function() {
-    var img = jQ(this).parents('.boost-pfs-filter-product-item-inner').find('.boost-pfs-filter-product-item-main-image');
-    if (event == 'hover') {
-      jQ(this).hover(function() {
-        var newImage = jQ(this).data('img');
-        img.attr('srcset', newImage);
-      });
-    }
-    if (event == 'click') {
-      jQ(this).click(function() {
-        var newImage = jQ(this).data('img');
-        img.attr('srcset', newImage);
-      });
-    }
-    jQ(this).focus(function() {
-      if (jQ('body').hasClass('boost-pfs-ada')) {
-        var newImage = jQ(this).data('img');
-        img.attr('srcset', newImage);
-      }
-    });
-  });
-}
-
-function buildReview(data) {
-  var html = '';
-  if (boostPFSThemeConfig.custom.hasOwnProperty('show_product_review') &&
-    boostPFSThemeConfig.custom.show_product_review == true) {
-    html = '<span class="shopify-product-reviews-badge" data-id="{{itemId}}"></span>';
-  }
-  return html;
-}
-
-function buildActiveSwapClass(data) {
-  if (!Utils.isMobile() && images.length > 1 &&
-    boostPFSThemeConfig.custom.hasOwnProperty('active_image_swap') &&
-    boostPFSThemeConfig.custom.active_image_swap == true) {
-    return 'has-bc-swap-image';
-  }
-  return '';
-}
-
-
-
-/************************** END BUILD PRODUCT ITEM ELEMENTS **************************/
-/************************** BUILD TOOLBAR **************************/
-// Build Pagination
-ProductPaginationDefault.prototype.compileTemplate = function(totalProduct) {
-  if (!totalProduct) totalProduct = this.totalProduct;
-  // Get page info
-  var currentPage = parseInt(Utils.stripHtml(Globals.queryParams.page));
-  var totalPage = Math.ceil(totalProduct / Utils.stripHtml(Globals.queryParams.limit));
-  if (!currentPage || isNaN(currentPage)) {
-    currentPage = 1;
-  }
-  // If it has only one page, clear Pagination
-  if (totalPage <= 1) {
-    return '';
-  }
-
-  var paginationHtml = boostPFSTemplate.paginateHtml;
-  // Build Previous
-  var previousHtml = (currentPage > 1) ? boostPFSTemplate.previousActiveHtml : boostPFSTemplate.previousDisabledHtml;
-  previousHtml = previousHtml.replace(/{{itemUrl}}/g, Utils.buildToolbarLink('page', currentPage, currentPage - 1));
-  paginationHtml = paginationHtml.replace(/{{previous}}/g, previousHtml);
-  // Build Next
-  var nextHtml = (currentPage < totalPage) ? boostPFSTemplate.nextActiveHtml : boostPFSTemplate.nextDisabledHtml;
-  nextHtml = nextHtml.replace(/{{itemUrl}}/g, Utils.buildToolbarLink('page', currentPage, currentPage + 1));
-  paginationHtml = paginationHtml.replace(/{{next}}/g, nextHtml);
-  // Create page items array
-  var beforeCurrentPageArr = [];
-  for (var iBefore = currentPage - 1; iBefore > currentPage - 3 && iBefore > 0; iBefore--) {
-    beforeCurrentPageArr.unshift(iBefore);
-  }
-  if (currentPage - 4 > 0) {
-    beforeCurrentPageArr.unshift('...');
-  }
-  if (currentPage - 4 >= 0) {
-    beforeCurrentPageArr.unshift(1);
-  }
-  beforeCurrentPageArr.push(currentPage);
-  var afterCurrentPageArr = [];
-  for (var iAfter = currentPage + 1; iAfter < currentPage + 3 && iAfter <= totalPage; iAfter++) {
-    afterCurrentPageArr.push(iAfter);
-  }
-  if (currentPage + 3 < totalPage) {
-    afterCurrentPageArr.push('...');
-  }
-  if (currentPage + 3 <= totalPage) {
-    afterCurrentPageArr.push(totalPage);
-  }
-  // Build page items
-  var pageItemsHtml = '';
-  var pageArr = beforeCurrentPageArr.concat(afterCurrentPageArr);
-  for (var iPage = 0; iPage < pageArr.length; iPage++) {
-    if (pageArr[iPage] == '...') {
-      pageItemsHtml += boostPFSTemplate.pageItemRemainHtml;
-    } else {
-      pageItemsHtml += (pageArr[iPage] == currentPage) ? boostPFSTemplate.pageItemSelectedHtml : boostPFSTemplate.pageItemHtml;
-    }
-    pageItemsHtml = pageItemsHtml.replace(/{{itemTitle}}/g, pageArr[iPage]);
-    pageItemsHtml = pageItemsHtml.replace(/{{itemUrl}}/g, Utils.buildToolbarLink('page', currentPage, pageArr[iPage]));
-  }
-  paginationHtml = paginationHtml.replace(/{{pageItems}}/g, pageItemsHtml);
-  return paginationHtml;
-};
-
-// Build Sorting
-ProductSorting.prototype.compileTemplate = function() {
-  var html = '';
-  if (boostPFSThemeConfig.custom.show_sort_by && boostPFSTemplate.hasOwnProperty('sortingHtml')) {
-    var sortingArr = Utils.getSortingList();
-    if (sortingArr) {
-      var paramSort = Utils.stripHtml(Globals.queryParams.sort) || '';
-      // Build content
-      var sortingItemsHtml = '';
-      for (var k in sortingArr) {
-        activeClass = '';
-        if (paramSort == k) {
-          activeClass = 'boost-pfs-filter-sort-item-active';
-        }
-        sortingItemsHtml += '<li aria-label="' + sortingArr[k] + '"><a href="#" data-sort="' + k + '" class="' + activeClass + '"  title="' + sortingArr[k] + '" aria-label="' + sortingArr[k] + '">' + sortingArr[k] + '</a></li>';
-      }
-      html = boostPFSTemplate.sortingHtml.replace(/{{sortingItems}}/g, sortingItemsHtml);
-    }
-  }
-  return html;
-};
-
-ProductSorting.prototype.render = function() {
-  jQ(Selector.topSorting).html(this.compileTemplate());
-
-  if (jQ('.boost-pfs-filter-custom-sorting').hasClass('boost-pfs-filter-sort-active')) {
-    jQ('.boost-pfs-filter-custom-sorting').toggleClass('boost-pfs-filter-sort-active');
-  }
-
-  var labelSort = '';
-  var paramSort = Utils.stripHtml(Globals.queryParams.sort) || '';
-  var sortingList = Utils.getSortingList();
-  if (paramSort.length > 0 && sortingList && sortingList[paramSort]) {
-    labelSort = sortingList[paramSort];
-  } else {
-    labelSort = Labels.sorting_heading;
-  }
-
-  jQ('.boost-pfs-filter-custom-sorting button span span').text(labelSort);
-}
-
-// Build Sorting event
-ProductSorting.prototype.bindEvents = function() {
-  var _this = this;
-  jQ('.boost-pfs-filter-filter-dropdown a').click(function(e) {
-    e.preventDefault();
-    FilterApi.setParam('sort', jQ(this).data('sort'));
-    FilterApi.setParam('page', 1);
-    FilterApi.applyFilter('sort');
-  });
-
-  jQ(".boost-pfs-filter-custom-sorting > button").click(function() {
-    jQ('.boost-pfs-filter-filter-dropdown').toggle().parent().toggleClass('boost-pfs-filter-sort-active');
-  });
-
-  jQ(Selector.filterTreeMobileButton).click(function() {
-    jQ('.boost-pfs-filter-top-sorting-mobile .boost-pfs-filter-filter-dropdown').hide();
-  });
-
-  jQ(document).on('click', function (e) {
-    if (jQ(e.target).parents('.boost-pfs-filter-top-sorting').find(".boost-pfs-filter-filter-dropdown").length === 0) {
-      jQ('.boost-pfs-filter-filter-dropdown').hide().parent().removeClass('boost-pfs-filter-sort-active');
-    }
-  });
-};
-// For Toolbar - Build Display type
-ProductDisplayType.prototype.compileTemplate = function() {
-  
-  var itemHtml = '<span>' + boostPFSThemeConfig.label.toolbar_viewas + '</span>';
-  if (boostPFSThemeConfig.custom.product_item_type == 'grid') {
-    if (boostPFSThemeConfig.custom.view_as_type == 'view_as_type_list_grid_multi_col' && !Utils.isMobile()) {
-        itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'grid', 'list') + '" title="' + buildDisplayTitle('list') + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-list" data-view="list"><span class="icon-fallback-text"></span></a>';
-        itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'list', 'grid') + '" title="' + buildDisplayTitle('grid', 2) + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-grid {{class.productDisplayType}}-grid-2" data-view="grid-2"><span class="icon-fallback-text"></span></a>';
-        itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'list', 'grid') + '" title="' + buildDisplayTitle('grid', 3) + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-grid {{class.productDisplayType}}-grid-3" data-view="grid-3"><span class="icon-fallback-text"></span></a>';
-        itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'list', 'grid') + '" title="' + buildDisplayTitle('grid', 4) + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-grid {{class.productDisplayType}}-grid-4" data-view="grid-4"><span class="icon-fallback-text"></span></a>';
-        itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'list', 'grid') + '" title="' + buildDisplayTitle('grid', 5) + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-grid {{class.productDisplayType}}-grid-5" data-view="grid-5"><span class="icon-fallback-text"></span></a>';
-        itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'list', 'grid') + '" title="' + buildDisplayTitle('grid', 6) + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-grid {{class.productDisplayType}}-grid-6" data-view="grid-6"><span class="icon-fallback-text"></span></a>';
-    } else {
-        itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'list', 'grid') + '" title="' + buildDisplayTitle('grid') + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-grid" data-view="grid"><span class="icon-fallback-text"></span></a>';
-        itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'grid', 'list') + '" title="' + buildDisplayTitle('list') + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-list" data-view="list"><span class="icon-fallback-text"></span></a>';
-    }
-  } else {
-    if (boostPFSThemeConfig.custom.view_as_type == 'view_as_type_list_grid_multi_col' && !Utils.isMobile()) {
-      itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'grid', 'list') + '" title="' + buildDisplayTitle('list') + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-list" data-view="list"><span class="icon-fallback-text"></span></a>';
-      itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'list', 'grid') + '" title="' + buildDisplayTitle('grid', 2) + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-grid {{class.productDisplayType}}-grid-2" data-view="grid-2"><span class="icon-fallback-text"></span></a>';
-      itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'list', 'grid') + '" title="' + buildDisplayTitle('grid', 3) + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-grid {{class.productDisplayType}}-grid-3" data-view="grid-3"><span class="icon-fallback-text"></span></a>';
-      itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'list', 'grid') + '" title="' + buildDisplayTitle('grid', 4) + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-grid {{class.productDisplayType}}-grid-4" data-view="grid-4"><span class="icon-fallback-text"></span></a>';
-      itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'list', 'grid') + '" title="' + buildDisplayTitle('grid', 5) + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-grid {{class.productDisplayType}}-grid-5" data-view="grid-5"><span class="icon-fallback-text"></span></a>';
-      itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'list', 'grid') + '" title="' + buildDisplayTitle('grid', 6) + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-grid {{class.productDisplayType}}-grid-6" data-view="grid-6"><span class="icon-fallback-text"></span></a>';
-    } else {
-      itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'grid', 'list') + '" title="' + buildDisplayTitle('list') + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-list" data-view="list"><span class="icon-fallback-text"></span></a>';
-      itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'list', 'grid') + '" title="' + buildDisplayTitle('grid') + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-grid" data-view="grid"><span class="icon-fallback-text"></span></a>';
-    }
-  }
-
-  itemHtml = itemHtml.replace(/{{class.productDisplayType}}/g, Class.productDisplayType);
-
-  return itemHtml;
-};
-
-function buildDisplayTitle(type, count) {
-  if(type === '') return type;
-  // Build title for list view
-  if(type === 'list') {
-    return Labels.listView || 'List view';
-  } 
-  // Build title for grid view
-  if(typeof count === 'undefined' || count === 0) return Labels.gridView || 'Grid view';
-  return (Labels.gridViewColumns || 'Grid view {{ count }} Columns').replace(/{{ count }}/g, count);
-}
-
-var originalRenderProductDisplayType = ProductDisplayType.prototype.render;
-ProductDisplayType.prototype.render = function() {
-  // Call the original function in our app lib.
-  // We don't have to copy a very big function out here to modify.
-  // function.call(this, param1, param2) binds the "this" pointer and params to the original function.
-  originalRenderProductDisplayType.call(this);
-
-  // Do your custom code after the original function has run
-  // Active current display type
-  if (this.$element.length) {
-    this.$element.find(this.selector.productDisplayTypeList).removeClass('active');
-    this.$element.find(this.selector.productDisplayTypeGrid).removeClass('active');
-    if (Utils.stripHtml(Globals.queryParams.display) == 'list') {
-      this.$element.find(this.selector.productDisplayTypeList).addClass('active');
-    } else if (Utils.stripHtml(Globals.queryParams.display) == 'grid') {
-      if (boostPFSThemeConfig.custom.view_as_type == 'view_as_type_list_grid_multi_col' && !Utils.isMobile()) {
-        var curentGridColumn = boostPFSThemeConfig.custom.products_per_row;
-        this.$element.find(this.selector.productDisplayTypeGrid).each(function(){
-        var $parent = jQ(this).parent();
-        var $cssNames = jQ('.boost-pfs-filter-top-display-type').attr('class').split(' ');
-        var $activeClass = $cssNames[$cssNames.length - 1];
-        var indexCurrentColumn = $activeClass.split('-')[$activeClass.split('-').length - 1];
-        
-        if($parent.hasClass('boost-pfs-filter-view-as-click') && jQ(this).data('view') == $activeClass){
-            jQ(this).addClass('active');
-
-            // jQ('.boost-pfs-filter-product-item').removeClass(function(index, css) {
-            // return (css.match (/(^|\s)boost-pfs-filter-grid-width-\S+/g) || []).join(' ');
-            // }).addClass('boost-pfs-filter-grid-width-' + indexCurrentColumn);
-            if(jQ('.boost-pfs-filter-product-item').length > 0) {
-              var arrClass = jQ('.boost-pfs-filter-product-item').attr('class').split(' ');
-              var prevClass = '';
-              for (var i = 0; i < arrClass.length; i++) {     
-                if(arrClass[i].match (/(^|\s)boost-pfs-filter-grid-width-\S+/g)) {
-                  prevClass = arrClass[i];
-                  break;
+                if (activeSwapImage) {
+                    flipImageSrcSet += ', ';
                 }
-              }
-              jQ('.boost-pfs-filter-product-item').removeClass(prevClass);
-              jQ('.boost-pfs-filter-product-item').addClass('boost-pfs-filter-grid-width-' + indexCurrentColumn);
-
-              // jQ('.boost-pfs-filter-product-item').className = jQ('.boost-pfs-filter-product-item').className.replace(/(^|\s)boost-pfs-filter-grid-width-\S+/g , '');
-              // jQ('.boost-pfs-filter-product-item').addClass('boost-pfs-filter-grid-width-' + indexCurrentColumn);
             }
-
-        } else if(!$parent.hasClass('boost-pfs-filter-view-as-click') && jQ(this).data('view').split('-')[1] == curentGridColumn) {    
-            jQ(this).addClass('active');
         }
-      });
 
-      } else {
-        this.$element.find(this.selector.productDisplayTypeGrid).addClass('active');
-      }
-    }
-  }
-};
-
-// Build Show Limit
-ProductLimit.prototype.compileTemplate = function() {
-  var html = '';
-  if (boostPFSThemeConfig.custom.show_limit && boostPFSTemplate.hasOwnProperty('showLimitHtml')) {
-
-    var numberList = Settings.getSettingValue('general.showLimitList');
-    if (numberList != '') {
-      // Build content
-      var showLimitItemsHtml = '';
-      var arr = numberList.split(',');
-      for (var k in sortingArr) {
-        showLimitItemsHtml += '<option value="' + arr[k].trim() + '">' + arr[k].trim() + '</option>';
-      }
-      html = boostPFSTemplate.showLimitHtml.replace(/{{showLimitItems}}/g, showLimitItemsHtml);
-    }
-  }
-  return html;
-};
-// Build Breadcrumb
-Breadcrumb.prototype.compileTemplate = function(colData) {
-  if (!colData) colData = this.collectionData;
-  var breadcrumbItemsHtml = '';
-  if (boostPFSTemplate.hasOwnProperty('breadcrumbHtml')) {
-    if (typeof colData !== 'undefined' && colData.hasOwnProperty('collection')) {
-      var colInfo = colData.collection;
-      if (typeof this.collectionTags !== 'undefined' && this.collectionTags !== null) {
-        breadcrumbItemsHtml += boostPFSTemplate.breadcrumbItemLink.replace(/{{itemLink}}/g, '/collections/' + colInfo.handle).replace(/{{itemTitle}}/g, colInfo.title);
-        breadcrumbItemsHtml += " {{breadcrumbDivider}} ";
-        breadcrumbItemsHtml += boostPFSTemplate.breadcrumbItemSelected.replace(/{{itemTitle}}/g, this.collectionTags[0]);
-      } else {
-        breadcrumbItemsHtml += boostPFSTemplate.breadcrumbItemSelected.replace(/{{itemTitle}}/g, colInfo.title);
-      }
-    } else {
-      breadcrumbItemsHtml += boostPFSTemplate.breadcrumbItemSelected.replace(/{{itemTitle}}/g, Settings.getSettingValue('label.defaultCollectionHeader'));
-    }
-  }
-  return breadcrumbItemsHtml
-};
-
-/************************** END BUILD TOOLBAR **************************/
-
-// Add additional feature for product list, used commonly in customizing product list
-ProductList.prototype.afterRender = function(data) {
-  if (!data) data = this.data;
-
-  // Intergrate Review Shopify
-  if (window.SPR &&
-    typeof window.SPR.initDomEls == 'function' &&
-    typeof window.SPR.loadBadges == 'function' &&
-    boostPFSThemeConfig.custom.show_product_review) {
-    window.SPR.initDomEls();
-    window.SPR.loadBadges();
-  }
-};
-
-// Build additional elements
-Filter.prototype.afterRender = function(data) {
-  if (!data) data = this.data;
-  var totalProduct = data.total_product + '<span> ' + boostPFSThemeConfig.label.items_with_count_other + '</span>';
-  if (data.total_product == 1) {
-    totalProduct = data.total_product + '<span> ' + boostPFSThemeConfig.label.items_with_count_one + '</span>';
-  }
-  if (data.total_product == 0) {
-    jQ(".boost-pfs-filter-default-toolbar-inner").addClass('boost-pfs-filter-toolbar-product-0');
-  } else {
-    jQ(".boost-pfs-filter-default-toolbar-inner").removeClass('boost-pfs-filter-toolbar-product-0');
-  }
-  jQ('.boost-pfs-filter-total-product').html(totalProduct);
-
-  jQ('body').find('.boost-pfs-filter-skeleton-button').remove();
-
-  // Prevent double tap on iOS
-  var isiOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-  if (isiOS) {
-    Utils.isMobile() && jQ(".boost-pfs-filter-product-item").find("a").on("touchstart", function() {
-      isScrolling = !1
-    }).on("touchmove", function() {
-      isScrolling = !0
-    }).on("touchend", function() {
-      isScrolling || (window.location = jQ(this).attr("href"))
-    });
-  }
-
-  // Build Image Swap. Put this function here to impprove the pagespeed.
-  swapImage(data);
-
-  // Build Equal Height
-  if (Utils.stripHtml(Globals.queryParams.display) !== 'list') {
-    setTimeout(function(){
-      equalHeight(data);
-    }, 700);
-  };
-
-  jQ(window).resize(function() {
-    if (Utils.stripHtml(Globals.queryParams.display) !== 'list') {
-      setTimeout(function(){
-        equalHeight(data);
-      }, 700);
-    }
-  });
-
-  // Build Event Color Swatch
-  if (boostPFSThemeConfig.custom.swatch_change_img != 'none') {
-    eventColorSwatches(boostPFSThemeConfig.custom.swatch_change_img);
-  }
-
-  if (typeof boostRemoveImageLoadingAnimation == 'function') {
-    boostRemoveImageLoadingAnimation(jQ(Selector.products).find('[data-boost-image-loading-animation]'));
-  }
-
-	// Layout Fullwidth Page
-  if (boostPFSThemeConfig.custom.hasOwnProperty('layout_type') && boostPFSThemeConfig.custom.layout_type == 'fullwidth' && !Utils.isMobile()) {
-    jQ('body').addClass('boost-pfs-filter-fullwidth-page');
-  }
-  document.addEventListener('scroll', function() {
-    if(jQ('.boost-pfs-filter-tree-h.boost-pfs-filter-stick').length > 0 && jQ(window).width() > 767){
-      jQ('.boost-pfs-filter-custom-sorting .boost-pfs-filter-filter-dropdown').hide().parent().removeClass('boost-pfs-filter-sort-active');
-    }
-  });
-
-  // Fix confict Sticky Mobile theme Streamline
-  if(jQ('.site-nav__thumb-menu').length > 0 && Utils.isMobile()){
-    var heightHeaderThemeStick = jQ('.site-nav__thumb-menu').height() + 40;
-    jQ('.boost-pfs-filter-tree-mobile-button-stick-wrapper').css('bottom',heightHeaderThemeStick).addClass('boost-pfs-filter-sticky-bottom');
-    jQ('.boost-pfs-filter-mobile-style1').addClass('boost-pfs-filter-mobile-style1-sticky-bottom');
-  }
-};
-
-function removeClassByPrefix(node, prefix) {
-  var regx = new RegExp('\\b' + prefix + '[^ ]*[ ]?\\b', 'g');
-  node.className = node.className.replace(regx, '');
-  return node;
-}
-
-var original_onClickEventProductDisplayType = ProductDisplayType.prototype._onClickEvent;
-ProductDisplayType.prototype._onClickEvent = function(event) {
-  // Call the original function in our app lib.
-  // We don't have to copy a very big function out here to modify.
-  // function.call(this, param1, param2) binds the "this" pointer and params to the original function.
-  original_onClickEventProductDisplayType.call(this, event);
-
-  // Do your custom code after the original function has run
-  /*  View As Type 2/3/4/5/6 */
-  
-  if (boostPFSThemeConfig.custom.view_as_type == 'view_as_type_list_grid_multi_col' && !Utils.isMobile()) {
-      jQ('.boost-pfs-filter-top-display-type').addClass('boost-pfs-filter-view-as-click');
-      var currentClass = jQ(event.target).data('view');
-      jQ('.boost-pfs-filter-top-display-type')[0].className = jQ('.boost-pfs-filter-top-display-type')[0].className.replace(/(^|\s)grid-\S+/g , '');
-      jQ('.boost-pfs-filter-top-display-type').addClass(currentClass);
-  }
-}
-
-ProductListPlaceholder.prototype.render = function() {
-  // Set limit number for product skeleton
-  var placeholderLimit = this.settings.productsPerRow || this.settings.placeholderProductPerRow;
-  // Build placeholder items
-  var placeholderItem = this.compileTemplate();
-  this.$element = [];
-  for (var i = 0; i < placeholderLimit; i++) {
-    this.$element.push(jQ(placeholderItem));
-  }
-  // Show placeholder before send filter request OR hide it after get filter data
-  if (!this.isFetchedProductData) {
-    this.setShow();
-  } else {
-    this.setHide();
-  }
-}
-
-ProductListPlaceholder.prototype.compileTemplateExtra = function() {
-  //Todo: Build placeholder for List mode
-  var template = boostPFSTemplate.productListPlaceholderHtml;
-  var imgRatioSetting = parseFloat(this.settings.placeholderImageRatio);
-  var imgRatio = imgRatioSetting > 0 ? imgRatioSetting : 1.4; // It mean w1:h1.4
-  /**
-   * Set product class for product skeleton (to set column, style, etc.)
-   * - If had defined product_grid_class in boostPFSThemeConfig => use this config ELSE use our setting
-   */
-  return template
-    .replace(/{{class.filterProductSkeleton}}/g, Class.filterProductSkeleton)
-    .replace(/{{class.filterSkeleton}}/g, Class.filterSkeleton)
-    .replace(/{{class.filterSkeletonText}}/g, Class.filterSkeletonText)
-    .replace(/{{paddingTop}}/g, imgRatio * 100)
-}
-
-/* Prevent conflict with theme vendor js */
-Array.prototype.insert = function(a, b) {}
-
-/* Math qual Height */
-function equalHeight(data) {
-  var equal_i = -1;
-  var equal_els = [];
-  var equal_element = null;
-
-  // Equal Height Title
-  jQ('.boost-pfs-filter-product-item').each(function(i, element) {
-
-    var offsetTop = jQ(element).offset().top;
-    if (!equal_element || equal_element.offset().top !== offsetTop) {
-      equal_element = jQ(element);
-      equal_i++;
-    }
-
-    if (!equal_els[equal_i]) {
-      equal_els[equal_i] = [];
-    }
-    equal_els[equal_i].push(element);
-  });
-
-  for (var i = 0; i < equal_els.length; i++) {
-    var max = 0;
-    var maxRatio = 0;
-    var iLength = equal_els[i].length;
-
-    for (var j = 0; j < equal_els[i].length; j++) {
-      var item = equal_els[i][j];
-      var height = jQ(item).find('.boost-pfs-filter-product-bottom-inner').height();
-      max = Math.max(max, height);
-    }
-    jQ(equal_els[i]).find('.boost-pfs-filter-product-bottom-inner').css({ 'min-height': max });
-  }
-
-  var aspect_ratio = boostPFSFilterConfig.general.aspect_ratio;
-
-  if (aspect_ratio != 'false') {
-    var cropImagePosition = boostPFSFilterConfig.general.cropImagePossitionEqualHeight;
-
-    var widthImage = jQ('.boost-pfs-filter-product-item').width();
-    var indexData = 0;
-
-    // For Ratio
-    if (aspect_ratio != 'false' && aspect_ratio != 'auto') {
-      var heightImage = 0;
-      var widthImage = jQ('.boost-pfs-filter-product-item').width();
-      if (aspect_ratio != 'false' && aspect_ratio != 'auto' && aspect_ratio != 'other') {
-        var ratioWidthHeight = boostPFSThemeConfig.custom.aspect_ratio;
-      } else {
-        var ratioWidthHeight = '';
-      }
-
-      var ratioWidthHeightOther = boostPFSThemeConfig.custom.aspect_ratio_other;
-      if (ratioWidthHeightOther == '' && ratioWidthHeight == '') {
-        return null;
-      } else {
-        if (aspect_ratio != 'other') {
-          ratioWidthHeight = ratioWidthHeight.split(':');
-          ratioWidthHeight = parseInt(ratioWidthHeight[1]) / parseInt(ratioWidthHeight[0]);
-          heightImage = widthImage * ratioWidthHeight;
-        } else if (ratioWidthHeightOther != '' && aspect_ratio == 'other') {
-          ratioWidthHeightOther = ratioWidthHeightOther.split(':');
-          ratioWidthHeightOther = parseInt(ratioWidthHeightOther[1]) / parseInt(ratioWidthHeightOther[0]);
-          heightImage = widthImage * ratioWidthHeightOther;
+        if (images.length > 0) {
+            aspectRatio = images[0]['width'] / images[0]['height'];
+            paddingTop = 1 / aspectRatio * 100;
         }
-      }
-      jQ('.boost-pfs-filter-product-item-image-link').css({ 'padding-top': heightImage + 'px' }).addClass('boost-pfs-filter-crop-image-position-' + cropImagePosition);
 
-    }
-  }
-}
-
-// Swap Image
-function swapImage(data) {
-  if (!Utils.isMobile()) {
-    if (boostPFSThemeConfig.custom.hasOwnProperty('active_image_swap') &&
-      boostPFSThemeConfig.custom.active_image_swap == true) {
-      var dataSrcSetFlipImg = '',
-        dataSrcFlipImg = '',
-        flipImageAlt = '',
-        dataSizes = 'auto',
-        dataWidths = '',
-        html = '';
-
-      jQ(".boost-pfs-filter-product-item").each(function() {
-        var productItemSelector = jQ(this);
-        var imgSelector = productItemSelector.find('.boost-pfs-filter-product-item-main-image');
-
-        if (typeof imgSelector.data('img-flip-src') != 'undefined' &&
-          imgSelector.data('img-flip-src') != '') {
-          dataSrcFlipImg = imgSelector.data('img-flip-src');
-          dataSrcSetFlipImg = imgSelector.data('img-flip-srcset');
-          flipImageAlt = imgSelector.attr('alt');
-          dataWidths = imgSelector.data('widths');
-          html = '<img class="boost-pfs-filter-product-item-flip-image lazyload Image--lazyLoad"' +
-            'data-srcset="' + dataSrcSetFlipImg + '" ' +
-            'data-src="' + dataSrcFlipImg + '" ' +
+        html += '<a href="{{itemUrl}}" class="boost-pfs-filter-product-item-image-link" ';
+        html += 'style="padding-top:' + paddingTop + '%;">';
+        html += '<img class="boost-pfs-filter-product-item-main-image lazyload Image--lazyLoad"' +
+            'data-srcset="' + dataSrcSet + '" ' +
+            'data-src="' + Utils.getFeaturedImage(images, rangeWidths[2] + 'x') + '" ' +
             'data-widths="[' + dataWidths + ']" ' +
             'data-sizes="' + dataSizes + '" ' +
             'src="' + boostPFSImgDefaultSrc + '" ' +
-            'alt="' + flipImageAlt + '" />';
+            'alt="' + imgAlt + '"  ';
 
-          productItemSelector.find('.boost-pfs-filter-product-item-image-link').append(html);
+        if (activeSwapImage) {
+            html += ' data-img-flip-src="' + Utils.optimizeImage(images[1]['src'], rangeWidths[2] + 'x') + '" ' +
+                'data-img-flip-srcset="' + flipImageSrcSet + '" ';
+        }
+        html += '/></a>';
+
+        return html;
+    }
+
+    function buildVendor(data) {
+        var html = '';
+        if (boostPFSThemeConfig.custom.hasOwnProperty('show_vendor') &&
+            boostPFSThemeConfig.custom.show_vendor == true) {
+            html = boostPFSTemplate.vendorHtml;
+        }
+        return html;
+    }
+
+    function buildPrice(data) {
+        var html = '';
+        if (boostPFSThemeConfig.custom.hasOwnProperty('show_price') &&
+            boostPFSThemeConfig.custom.show_price) {
+            html = '<p class="boost-pfs-filter-product-item-price">';
+            if (onSale) {
+
+                html += '<span class="boost-pfs-filter-product-item-sale-price">' + Utils.formatMoney(data.price_min) + '</span>';
+                html += '<s>' + Utils.formatMoney(data.compare_at_price_min) + '</s> ';
+            } else {
+                if (priceVaries) {
+                    html += '<span class="boost-pfs-filter-product-item-price-from-text">' + (boostPFSThemeConfig.label_basic.from) + ' ' + '</span>';
+                }
+                html += '<span class="boost-pfs-filter-product-item-regular-price">' + Utils.formatMoney(data.price_min) + '</span>';
+            }
+            html += '</p>';
+        }
+        return html;
+    }
+
+    function buildLabels(data) {
+        // Build Sold out label
+        var soldOutLabel = '';
+        if (boostPFSThemeConfig.custom.hasOwnProperty('sold_out_enable') &&
+            boostPFSThemeConfig.custom.sold_out_enable && soldOut) {
+            soldOutLabel = boostPFSTemplate.soldOutLabelHtml.replace(/{{style}}/g, '');
+        }
+        // Build Sale label
+        var saleLabel = '';
+        var salePercent = '';
+        if (boostPFSThemeConfig.custom.sale_label_enable && onSale && !soldOut) {
+            if (boostPFSThemeConfig.custom.sale_label_display == 'sale_percent') {
+                salePercent = Math.round((data.compare_at_price_min - data.price_min) * 100 / data.compare_at_price_max);
+            }
+            saleLabel = boostPFSTemplate.saleLabelHtml.replace(/{{style}}/g, '');
+            saleLabel = boostPFSTemplate.saleLabelHtml.replace(/percent/g, '-' + salePercent + '%');
+        }
+        // Build Labels
+        return soldOutLabel + saleLabel;
+    }
+
+    // BUILD LABEL PRODUCT WITH TAGS
+    function buildTagLabels(data, showall) {
+        if (boostPFSThemeConfig.custom.tag_label_enable) {
+            if (showall) {
+                var tagLabel = '';
+                if (data.tags) {
+                    for (var i = 0; i < data.tags.length; i++) {
+                        var tag = data.tags[i];
+                        if (tag.indexOf("pfs:label") !== -1) {
+                            var preTagLabel = boostPFSTemplate.tagLabelHtml.replace(/{{labelTag}}/g, tag.split('pfs:label-')[1]);
+                            tagLabel += preTagLabel;
+                        }
+                    }
+                }
+            } else {
+                var tagLabel = '';
+                if (data.tags) {
+                    for (var i = data.tags.length - 1; i >= 0; i--) {
+                        tag = data.tags[i];
+                        if (tag.indexOf("pfs:label") !== -1) {
+                            var preTagLabel = boostPFSTemplate.tagLabelHtml.replace(/{{labelTag}}/g, tag.split('pfs:label-')[1]);
+                            tagLabel += preTagLabel;
+                            break;
+                        }
+                    }
+                }
+            }
+            return tagLabel;
+        } else {
+            return "";
+        }
+    }
+
+    function onlyUnique(value, index, self) {
+        return self.indexOf(value) === index;
+    }
+    // Build Color Swatches
+    function buildProductOptionSwatches(data) {
+        var swatchesProductOptionHtml = '';
+        if (boostPFSThemeConfig.custom.swatch_enable) {
+            var swatchApplyFor = ['color', 'img', 'pro_img', 'text'];
+            for (var i = 0; i < swatchApplyFor.length; i++) {
+                var optionNames = boostPFSThemeConfig.custom["swatch_by_" + swatchApplyFor[i] + "_apply"].split(',').filter(onlyUnique);
+                var swatchShape = boostPFSThemeConfig.custom["swatch_by_" + swatchApplyFor[i] + "_shape"];
+                var swatchType = swatchApplyFor[i];
+                for (var j = 0; j < optionNames.length; j++) {
+                    var optionName = optionNames[j].trim();
+                    var filterSwatchTitle = optionName,
+                        swatchArr = [],
+                        countSwatch = 0,
+                        swatchValues = [],
+                        swatchLimit = 4;
+
+                    var dataImgSize = '360',
+                        bgSize = '50x',
+                        dataImgSrc = Utils.getFeaturedImage(data.images_info, dataImgSize + 'x'),
+                        swatchName = '#ffffff',
+                        bgImageSrc = '',
+                        viewMoreLabel = 'More ' + filterSwatchTitle;
+
+                    if (typeof data.options_with_values != 'undefined' && data.options_with_values.length > 0) {
+                        swatchArr = data.options_with_values.filter(function(option) {
+                            return option.name == optionName;
+                        });
+                        if (swatchArr.length > 0) {
+                            countSwatch = swatchArr[0].values.length;
+
+                            if (swatchLimit > countSwatch) {
+                                swatchLimit = countSwatch;
+                            }
+                            swatchValues = swatchArr[0].values;
+
+                            swatchesProductOptionHtml += '<ul class="boost-pfs-filter-item-swatch boost-pfs-filter-item-swatch-option' + optionName + ' boost-pfs-filter-item-swatch-shape-' + swatchShape + ' boost-pfs-filter-item-swatch-type-' + swatchType + '">';
+
+                            for (var sIndex = 0; sIndex < swatchLimit; sIndex++) {
+                                swatchName = swatchValues[sIndex].title;
+                                swatchVariant = data['variants'][sIndex];
+                                sImageIndex = swatchValues[sIndex].image || '';
+                                if (sImageIndex != '') {
+                                    dataImgSrc = Utils.optimizeImage(swatchVariant.image, dataImgSize + 'x') + ' ' + dataImgSize + 'w';
+                                }
+
+                                if (swatchType) {
+                                    switch (swatchType) {
+                                        case 'img':
+                                            bgImageSrc = boostPFSAppConfig.general.file_url.replace(/\?/, Utils.slugify(filterSwatchTitle).replace(/\-/g, '_') + '-' + Utils.slugify(swatchName) + '.png?v=');
+                                            break;
+                                        case 'pro_img':
+                                            bgImageSrc = Utils.getFeaturedImage(data.images_info, bgSize);
+                                            if (sImageIndex != '') {
+                                                bgImageSrc = Utils.optimizeImage(data.images[sImageIndex], bgSize);
+                                            }
+                                            if (bgImageSrc && bgImageSrc.includes('boost-pfs-no-image')) bgImageSrc = '';
+                                            break;
+                                        default:
+                                            bgImageSrc = '';
+                                    }
+                                }
+                                swatchesProductOptionHtml += '<li>';
+                                if (swatchType == 'text') {
+                                    swatchesProductOptionHtml += '<a aria-label="' + optionName + ': ' + swatchName + '" title="' + swatchName + '" href="' + Utils.buildProductItemUrl(data) + '?variant=' + swatchVariant.id + '">' + swatchName + '</a>';
+                                } else {
+                                    if (boostPFSThemeConfig.custom.show_swatch_tooltip) {
+                                        swatchesProductOptionHtml += '<div class="boost-pfs-product-item-tooltip">' + swatchName + '</div>';
+                                    }
+                                    swatchesProductOptionHtml += '<span tabindex="0" aria-label="' + optionName + ': ' + swatchName + '" ' + 'style="background-color: ' + swatchName + '; ';
+                                    if (bgImageSrc != '') {
+                                        swatchesProductOptionHtml += 'background-image: url(' + bgImageSrc + ');" ';
+                                    } else {
+                                        swatchesProductOptionHtml += '" ';
+                                    }
+                                    if (dataImgSrc != '') {
+                                        swatchesProductOptionHtml += 'data-img="' + dataImgSrc + '" ';
+                                    }
+
+                                    swatchesProductOptionHtml += '></span>';
+                                }
+                                swatchesProductOptionHtml += '</li>';
+                            }
+
+                            if (countSwatch > swatchLimit) {
+                                swatchesProductOptionHtml += '<li class="boost-pfs-filter-item-swatch-more">';
+                                swatchesProductOptionHtml += '<a href="{{itemUrl}}" aria-label="' + viewMoreLabel + '" title="' + viewMoreLabel + '">+' + (countSwatch - swatchLimit) + '</a>';
+                                swatchesProductOptionHtml += '</li>';
+                            }
+
+                            swatchesProductOptionHtml += '</ul>';
+                        }
+                    }
+                }
+
+            }
+        }
+        return swatchesProductOptionHtml;
+    }
+
+    // Build Color Swatches
+    function eventColorSwatches(event) {
+        jQ('.boost-pfs-filter-item-swatch li span').each(function() {
+            var img = jQ(this).parents('.boost-pfs-filter-product-item-inner').find('.boost-pfs-filter-product-item-main-image');
+            if (event == 'hover') {
+                jQ(this).hover(function() {
+                    var newImage = jQ(this).data('img');
+                    img.attr('srcset', newImage);
+                });
+            }
+            if (event == 'click') {
+                jQ(this).click(function() {
+                    var newImage = jQ(this).data('img');
+                    img.attr('srcset', newImage);
+                });
+            }
+            jQ(this).focus(function() {
+                if (jQ('body').hasClass('boost-pfs-ada')) {
+                    var newImage = jQ(this).data('img');
+                    img.attr('srcset', newImage);
+                }
+            });
+        });
+    }
+
+    function buildReview(data) {
+        var html = '';
+        if (boostPFSThemeConfig.custom.hasOwnProperty('show_product_review') &&
+            boostPFSThemeConfig.custom.show_product_review == true) {
+            html = '<span class="shopify-product-reviews-badge" data-id="{{itemId}}"></span>';
+        }
+        return html;
+    }
+
+    function buildActiveSwapClass(data) {
+        if (!Utils.isMobile() && images.length > 1 &&
+            boostPFSThemeConfig.custom.hasOwnProperty('active_image_swap') &&
+            boostPFSThemeConfig.custom.active_image_swap == true) {
+            return 'has-bc-swap-image';
+        }
+        return '';
+    }
+
+
+
+    /************************** END BUILD PRODUCT ITEM ELEMENTS **************************/
+    /************************** BUILD TOOLBAR **************************/
+    // Build Pagination
+    ProductPaginationDefault.prototype.compileTemplate = function(totalProduct) {
+        if (!totalProduct) totalProduct = this.totalProduct;
+        // Get page info
+        var currentPage = parseInt(Utils.stripHtml(Globals.queryParams.page));
+        var totalPage = Math.ceil(totalProduct / Utils.stripHtml(Globals.queryParams.limit));
+        if (!currentPage || isNaN(currentPage)) {
+            currentPage = 1;
+        }
+        // If it has only one page, clear Pagination
+        if (totalPage <= 1) {
+            return '';
         }
 
-      });
+        var paginationHtml = boostPFSTemplate.paginateHtml;
+        // Build Previous
+        var previousHtml = (currentPage > 1) ? boostPFSTemplate.previousActiveHtml : boostPFSTemplate.previousDisabledHtml;
+        previousHtml = previousHtml.replace(/{{itemUrl}}/g, Utils.buildToolbarLink('page', currentPage, currentPage - 1));
+        paginationHtml = paginationHtml.replace(/{{previous}}/g, previousHtml);
+        // Build Next
+        var nextHtml = (currentPage < totalPage) ? boostPFSTemplate.nextActiveHtml : boostPFSTemplate.nextDisabledHtml;
+        nextHtml = nextHtml.replace(/{{itemUrl}}/g, Utils.buildToolbarLink('page', currentPage, currentPage + 1));
+        paginationHtml = paginationHtml.replace(/{{next}}/g, nextHtml);
+        // Create page items array
+        var beforeCurrentPageArr = [];
+        for (var iBefore = currentPage - 1; iBefore > currentPage - 3 && iBefore > 0; iBefore--) {
+            beforeCurrentPageArr.unshift(iBefore);
+        }
+        if (currentPage - 4 > 0) {
+            beforeCurrentPageArr.unshift('...');
+        }
+        if (currentPage - 4 >= 0) {
+            beforeCurrentPageArr.unshift(1);
+        }
+        beforeCurrentPageArr.push(currentPage);
+        var afterCurrentPageArr = [];
+        for (var iAfter = currentPage + 1; iAfter < currentPage + 3 && iAfter <= totalPage; iAfter++) {
+            afterCurrentPageArr.push(iAfter);
+        }
+        if (currentPage + 3 < totalPage) {
+            afterCurrentPageArr.push('...');
+        }
+        if (currentPage + 3 <= totalPage) {
+            afterCurrentPageArr.push(totalPage);
+        }
+        // Build page items
+        var pageItemsHtml = '';
+        var pageArr = beforeCurrentPageArr.concat(afterCurrentPageArr);
+        for (var iPage = 0; iPage < pageArr.length; iPage++) {
+            if (pageArr[iPage] == '...') {
+                pageItemsHtml += boostPFSTemplate.pageItemRemainHtml;
+            } else {
+                pageItemsHtml += (pageArr[iPage] == currentPage) ? boostPFSTemplate.pageItemSelectedHtml : boostPFSTemplate.pageItemHtml;
+            }
+            pageItemsHtml = pageItemsHtml.replace(/{{itemTitle}}/g, pageArr[iPage]);
+            pageItemsHtml = pageItemsHtml.replace(/{{itemUrl}}/g, Utils.buildToolbarLink('page', currentPage, pageArr[iPage]));
+        }
+        paginationHtml = paginationHtml.replace(/{{pageItems}}/g, pageItemsHtml);
+        return paginationHtml;
+    };
+
+    // Build Sorting
+    ProductSorting.prototype.compileTemplate = function() {
+        var html = '';
+        if (boostPFSThemeConfig.custom.show_sort_by && boostPFSTemplate.hasOwnProperty('sortingHtml')) {
+            var sortingArr = Utils.getSortingList();
+            if (sortingArr) {
+                var paramSort = Utils.stripHtml(Globals.queryParams.sort) || '';
+                // Build content
+                var sortingItemsHtml = '';
+                for (var k in sortingArr) {
+                    activeClass = '';
+                    if (paramSort == k) {
+                        activeClass = 'boost-pfs-filter-sort-item-active';
+                    }
+                    sortingItemsHtml += '<li aria-label="' + sortingArr[k] + '"><a href="#" data-sort="' + k + '" class="' + activeClass + '"  title="' + sortingArr[k] + '" aria-label="' + sortingArr[k] + '">' + sortingArr[k] + '</a></li>';
+                }
+                html = boostPFSTemplate.sortingHtml.replace(/{{sortingItems}}/g, sortingItemsHtml);
+            }
+        }
+        return html;
+    };
+
+    ProductSorting.prototype.render = function() {
+        jQ(Selector.topSorting).html(this.compileTemplate());
+
+        if (jQ('.boost-pfs-filter-custom-sorting').hasClass('boost-pfs-filter-sort-active')) {
+            jQ('.boost-pfs-filter-custom-sorting').toggleClass('boost-pfs-filter-sort-active');
+        }
+
+        var labelSort = '';
+        var paramSort = Utils.stripHtml(Globals.queryParams.sort) || '';
+        var sortingList = Utils.getSortingList();
+        if (paramSort.length > 0 && sortingList && sortingList[paramSort]) {
+            labelSort = sortingList[paramSort];
+        } else {
+            labelSort = Labels.sorting_heading;
+        }
+
+        jQ('.boost-pfs-filter-custom-sorting button span span').text(labelSort);
     }
-  }
-}
 
-// Build Placeholder for the first load
-function boostRemoveImageLoadingAnimation($selector) {
-  if ($selector.length) {
-    $selector.removeAttr('data-boost-image-loading-animation');
-  }
-}
-/* Expand Filter */
-jQ(document).ready(function() {
-    jQ('.boost-pfs-filter-custom-filter-button').on('click', function(){
-        jQ('body').toggleClass('boost-pfs-filter-custom-drawer-open');
-    });
-    jQ('.boost-pfs-filter-custom-drawer-close').click(function(){
-        jQ('body').removeClass('boost-pfs-filter-custom-drawer-open');
-    });
-    jQ('.boost-pfs-filter-custom-drawer-overlay').click(function(){
-        jQ('body').removeClass('boost-pfs-filter-custom-drawer-open');
-    });
+    // Build Sorting event
+    ProductSorting.prototype.bindEvents = function() {
+        var _this = this;
+        jQ('.boost-pfs-filter-filter-dropdown a').click(function(e) {
+            e.preventDefault();
+            FilterApi.setParam('sort', jQ(this).data('sort'));
+            FilterApi.setParam('page', 1);
+            FilterApi.applyFilter('sort');
+        });
 
-    // Bind changing options with enter/space key for ADA
-    jQ('.boost-pfs-filter-custom-drawer-close, .boost-pfs-filter-custom-drawer-overlay').on('keydown', (event) => {
-      if (event.target && (event.keyCode == 13 || event.keyCode == 32)) {
-        jQ(event.target).click();
-      }
-    });
+        jQ(".boost-pfs-filter-custom-sorting > button").click(function() {
+            jQ('.boost-pfs-filter-filter-dropdown').toggle().parent().toggleClass('boost-pfs-filter-sort-active');
+        });
 
-    // Fix issue header fix on the Parallax theme
-    if(jQ('.mm-fixed-top').length > 0){
-      var headerFixedHeight = jQ('.mm-fixed-top').height();
-      jQ('.boost-pfs-filter-collection-header-wrapper').css('margin-top', headerFixedHeight);
+        jQ(Selector.filterTreeMobileButton).click(function() {
+            jQ('.boost-pfs-filter-top-sorting-mobile .boost-pfs-filter-filter-dropdown').hide();
+        });
+
+        jQ(document).on('click', function(e) {
+            if (jQ(e.target).parents('.boost-pfs-filter-top-sorting').find(".boost-pfs-filter-filter-dropdown").length === 0) {
+                jQ('.boost-pfs-filter-filter-dropdown').hide().parent().removeClass('boost-pfs-filter-sort-active');
+            }
+        });
+    };
+    // For Toolbar - Build Display type
+    ProductDisplayType.prototype.compileTemplate = function() {
+
+        var itemHtml = '<span>' + boostPFSThemeConfig.label.toolbar_viewas + '</span>';
+        if (boostPFSThemeConfig.custom.product_item_type == 'grid') {
+            if (boostPFSThemeConfig.custom.view_as_type == 'view_as_type_list_grid_multi_col' && !Utils.isMobile()) {
+                itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'grid', 'list') + '" title="' + buildDisplayTitle('list') + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-list" data-view="list"><span class="icon-fallback-text"></span></a>';
+                itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'list', 'grid') + '" title="' + buildDisplayTitle('grid', 2) + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-grid {{class.productDisplayType}}-grid-2" data-view="grid-2"><span class="icon-fallback-text"></span></a>';
+                itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'list', 'grid') + '" title="' + buildDisplayTitle('grid', 3) + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-grid {{class.productDisplayType}}-grid-3" data-view="grid-3"><span class="icon-fallback-text"></span></a>';
+                itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'list', 'grid') + '" title="' + buildDisplayTitle('grid', 4) + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-grid {{class.productDisplayType}}-grid-4" data-view="grid-4"><span class="icon-fallback-text"></span></a>';
+                itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'list', 'grid') + '" title="' + buildDisplayTitle('grid', 5) + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-grid {{class.productDisplayType}}-grid-5" data-view="grid-5"><span class="icon-fallback-text"></span></a>';
+                itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'list', 'grid') + '" title="' + buildDisplayTitle('grid', 6) + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-grid {{class.productDisplayType}}-grid-6" data-view="grid-6"><span class="icon-fallback-text"></span></a>';
+            } else {
+                itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'list', 'grid') + '" title="' + buildDisplayTitle('grid') + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-grid" data-view="grid"><span class="icon-fallback-text"></span></a>';
+                itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'grid', 'list') + '" title="' + buildDisplayTitle('list') + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-list" data-view="list"><span class="icon-fallback-text"></span></a>';
+            }
+        } else {
+            if (boostPFSThemeConfig.custom.view_as_type == 'view_as_type_list_grid_multi_col' && !Utils.isMobile()) {
+                itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'grid', 'list') + '" title="' + buildDisplayTitle('list') + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-list" data-view="list"><span class="icon-fallback-text"></span></a>';
+                itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'list', 'grid') + '" title="' + buildDisplayTitle('grid', 2) + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-grid {{class.productDisplayType}}-grid-2" data-view="grid-2"><span class="icon-fallback-text"></span></a>';
+                itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'list', 'grid') + '" title="' + buildDisplayTitle('grid', 3) + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-grid {{class.productDisplayType}}-grid-3" data-view="grid-3"><span class="icon-fallback-text"></span></a>';
+                itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'list', 'grid') + '" title="' + buildDisplayTitle('grid', 4) + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-grid {{class.productDisplayType}}-grid-4" data-view="grid-4"><span class="icon-fallback-text"></span></a>';
+                itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'list', 'grid') + '" title="' + buildDisplayTitle('grid', 5) + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-grid {{class.productDisplayType}}-grid-5" data-view="grid-5"><span class="icon-fallback-text"></span></a>';
+                itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'list', 'grid') + '" title="' + buildDisplayTitle('grid', 6) + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-grid {{class.productDisplayType}}-grid-6" data-view="grid-6"><span class="icon-fallback-text"></span></a>';
+            } else {
+                itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'grid', 'list') + '" title="' + buildDisplayTitle('list') + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-list" data-view="list"><span class="icon-fallback-text"></span></a>';
+                itemHtml += '<a href="' + Utils.buildToolbarLink('display', 'list', 'grid') + '" title="' + buildDisplayTitle('grid') + '" class="{{class.productDisplayType}}-item {{class.productDisplayType}}-grid" data-view="grid"><span class="icon-fallback-text"></span></a>';
+            }
+        }
+
+        itemHtml = itemHtml.replace(/{{class.productDisplayType}}/g, Class.productDisplayType);
+
+        return itemHtml;
+    };
+
+    function buildDisplayTitle(type, count) {
+        if (type === '') return type;
+        // Build title for list view
+        if (type === 'list') {
+            return Labels.listView || 'List view';
+        }
+        // Build title for grid view
+        if (typeof count === 'undefined' || count === 0) return Labels.gridView || 'Grid view';
+        return (Labels.gridViewColumns || 'Grid view {{ count }} Columns').replace(/{{ count }}/g, count);
     }
-});
+
+    var originalRenderProductDisplayType = ProductDisplayType.prototype.render;
+    ProductDisplayType.prototype.render = function() {
+        // Call the original function in our app lib.
+        // We don't have to copy a very big function out here to modify.
+        // function.call(this, param1, param2) binds the "this" pointer and params to the original function.
+        originalRenderProductDisplayType.call(this);
+
+        // Do your custom code after the original function has run
+        // Active current display type
+        if (this.$element.length) {
+            this.$element.find(this.selector.productDisplayTypeList).removeClass('active');
+            this.$element.find(this.selector.productDisplayTypeGrid).removeClass('active');
+            if (Utils.stripHtml(Globals.queryParams.display) == 'list') {
+                this.$element.find(this.selector.productDisplayTypeList).addClass('active');
+            } else if (Utils.stripHtml(Globals.queryParams.display) == 'grid') {
+                if (boostPFSThemeConfig.custom.view_as_type == 'view_as_type_list_grid_multi_col' && !Utils.isMobile()) {
+                    var curentGridColumn = boostPFSThemeConfig.custom.products_per_row;
+                    this.$element.find(this.selector.productDisplayTypeGrid).each(function() {
+                        var $parent = jQ(this).parent();
+                        var $cssNames = jQ('.boost-pfs-filter-top-display-type').attr('class').split(' ');
+                        var $activeClass = $cssNames[$cssNames.length - 1];
+                        var indexCurrentColumn = $activeClass.split('-')[$activeClass.split('-').length - 1];
+
+                        if ($parent.hasClass('boost-pfs-filter-view-as-click') && jQ(this).data('view') == $activeClass) {
+                            jQ(this).addClass('active');
+
+                            // jQ('.boost-pfs-filter-product-item').removeClass(function(index, css) {
+                            // return (css.match (/(^|\s)boost-pfs-filter-grid-width-\S+/g) || []).join(' ');
+                            // }).addClass('boost-pfs-filter-grid-width-' + indexCurrentColumn);
+                            if (jQ('.boost-pfs-filter-product-item').length > 0) {
+                                var arrClass = jQ('.boost-pfs-filter-product-item').attr('class').split(' ');
+                                var prevClass = '';
+                                for (var i = 0; i < arrClass.length; i++) {
+                                    if (arrClass[i].match(/(^|\s)boost-pfs-filter-grid-width-\S+/g)) {
+                                        prevClass = arrClass[i];
+                                        break;
+                                    }
+                                }
+                                jQ('.boost-pfs-filter-product-item').removeClass(prevClass);
+                                jQ('.boost-pfs-filter-product-item').addClass('boost-pfs-filter-grid-width-' + indexCurrentColumn);
+
+                                // jQ('.boost-pfs-filter-product-item').className = jQ('.boost-pfs-filter-product-item').className.replace(/(^|\s)boost-pfs-filter-grid-width-\S+/g , '');
+                                // jQ('.boost-pfs-filter-product-item').addClass('boost-pfs-filter-grid-width-' + indexCurrentColumn);
+                            }
+
+                        } else if (!$parent.hasClass('boost-pfs-filter-view-as-click') && jQ(this).data('view').split('-')[1] == curentGridColumn) {
+                            jQ(this).addClass('active');
+                        }
+                    });
+
+                } else {
+                    this.$element.find(this.selector.productDisplayTypeGrid).addClass('active');
+                }
+            }
+        }
+    };
+
+    // Build Show Limit
+    ProductLimit.prototype.compileTemplate = function() {
+        var html = '';
+        if (boostPFSThemeConfig.custom.show_limit && boostPFSTemplate.hasOwnProperty('showLimitHtml')) {
+
+            var numberList = Settings.getSettingValue('general.showLimitList');
+            if (numberList != '') {
+                // Build content
+                var showLimitItemsHtml = '';
+                var arr = numberList.split(',');
+                for (var k in sortingArr) {
+                    showLimitItemsHtml += '<option value="' + arr[k].trim() + '">' + arr[k].trim() + '</option>';
+                }
+                html = boostPFSTemplate.showLimitHtml.replace(/{{showLimitItems}}/g, showLimitItemsHtml);
+            }
+        }
+        return html;
+    };
+    // Build Breadcrumb
+    Breadcrumb.prototype.compileTemplate = function(colData) {
+        if (!colData) colData = this.collectionData;
+        var breadcrumbItemsHtml = '';
+        if (boostPFSTemplate.hasOwnProperty('breadcrumbHtml')) {
+            if (typeof colData !== 'undefined' && colData.hasOwnProperty('collection')) {
+                var colInfo = colData.collection;
+                if (typeof this.collectionTags !== 'undefined' && this.collectionTags !== null) {
+                    breadcrumbItemsHtml += boostPFSTemplate.breadcrumbItemLink.replace(/{{itemLink}}/g, '/collections/' + colInfo.handle).replace(/{{itemTitle}}/g, colInfo.title);
+                    breadcrumbItemsHtml += " {{breadcrumbDivider}} ";
+                    breadcrumbItemsHtml += boostPFSTemplate.breadcrumbItemSelected.replace(/{{itemTitle}}/g, this.collectionTags[0]);
+                } else {
+                    breadcrumbItemsHtml += boostPFSTemplate.breadcrumbItemSelected.replace(/{{itemTitle}}/g, colInfo.title);
+                }
+            } else {
+                breadcrumbItemsHtml += boostPFSTemplate.breadcrumbItemSelected.replace(/{{itemTitle}}/g, Settings.getSettingValue('label.defaultCollectionHeader'));
+            }
+        }
+        return breadcrumbItemsHtml
+    };
+
+    /************************** END BUILD TOOLBAR **************************/
+
+    // Add additional feature for product list, used commonly in customizing product list
+    ProductList.prototype.afterRender = function(data) {
+        if (!data) data = this.data;
+
+        // Intergrate Review Shopify
+        if (window.SPR &&
+            typeof window.SPR.initDomEls == 'function' &&
+            typeof window.SPR.loadBadges == 'function' &&
+            boostPFSThemeConfig.custom.show_product_review) {
+            window.SPR.initDomEls();
+            window.SPR.loadBadges();
+        }
+    };
+
+    // Build additional elements
+    Filter.prototype.afterRender = function(data) {
+        if (!data) data = this.data;
+        var totalProduct = data.total_product + '<span> ' + boostPFSThemeConfig.label.items_with_count_other + '</span>';
+        if (data.total_product == 1) {
+            totalProduct = data.total_product + '<span> ' + boostPFSThemeConfig.label.items_with_count_one + '</span>';
+        }
+        if (data.total_product == 0) {
+            jQ(".boost-pfs-filter-default-toolbar-inner").addClass('boost-pfs-filter-toolbar-product-0');
+        } else {
+            jQ(".boost-pfs-filter-default-toolbar-inner").removeClass('boost-pfs-filter-toolbar-product-0');
+        }
+        jQ('.boost-pfs-filter-total-product').html(totalProduct);
+
+        jQ('body').find('.boost-pfs-filter-skeleton-button').remove();
+
+        // Prevent double tap on iOS
+        var isiOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+        if (isiOS) {
+            Utils.isMobile() && jQ(".boost-pfs-filter-product-item").find("a").on("touchstart", function() {
+                isScrolling = !1
+            }).on("touchmove", function() {
+                isScrolling = !0
+            }).on("touchend", function() {
+                isScrolling || (window.location = jQ(this).attr("href"))
+            });
+        }
+
+        // Build Image Swap. Put this function here to impprove the pagespeed.
+        swapImage(data);
+
+        // Build Equal Height
+        if (Utils.stripHtml(Globals.queryParams.display) !== 'list') {
+            setTimeout(function() {
+                equalHeight(data);
+            }, 700);
+        };
+
+        jQ(window).resize(function() {
+            if (Utils.stripHtml(Globals.queryParams.display) !== 'list') {
+                setTimeout(function() {
+                    equalHeight(data);
+                }, 700);
+            }
+        });
+
+        // Build Event Color Swatch
+        if (boostPFSThemeConfig.custom.swatch_change_img != 'none') {
+            eventColorSwatches(boostPFSThemeConfig.custom.swatch_change_img);
+        }
+
+        if (typeof boostRemoveImageLoadingAnimation == 'function') {
+            boostRemoveImageLoadingAnimation(jQ(Selector.products).find('[data-boost-image-loading-animation]'));
+        }
+
+        // Layout Fullwidth Page
+        if (boostPFSThemeConfig.custom.hasOwnProperty('layout_type') && boostPFSThemeConfig.custom.layout_type == 'fullwidth' && !Utils.isMobile()) {
+            jQ('body').addClass('boost-pfs-filter-fullwidth-page');
+        }
+        document.addEventListener('scroll', function() {
+            if (jQ('.boost-pfs-filter-tree-h.boost-pfs-filter-stick').length > 0 && jQ(window).width() > 767) {
+                jQ('.boost-pfs-filter-custom-sorting .boost-pfs-filter-filter-dropdown').hide().parent().removeClass('boost-pfs-filter-sort-active');
+            }
+        });
+
+        // Fix confict Sticky Mobile theme Streamline
+        if (jQ('.site-nav__thumb-menu').length > 0 && Utils.isMobile()) {
+            var heightHeaderThemeStick = jQ('.site-nav__thumb-menu').height() + 40;
+            jQ('.boost-pfs-filter-tree-mobile-button-stick-wrapper').css('bottom', heightHeaderThemeStick).addClass('boost-pfs-filter-sticky-bottom');
+            jQ('.boost-pfs-filter-mobile-style1').addClass('boost-pfs-filter-mobile-style1-sticky-bottom');
+        }
+    };
+
+    function removeClassByPrefix(node, prefix) {
+        var regx = new RegExp('\\b' + prefix + '[^ ]*[ ]?\\b', 'g');
+        node.className = node.className.replace(regx, '');
+        return node;
+    }
+
+    var original_onClickEventProductDisplayType = ProductDisplayType.prototype._onClickEvent;
+    ProductDisplayType.prototype._onClickEvent = function(event) {
+        // Call the original function in our app lib.
+        // We don't have to copy a very big function out here to modify.
+        // function.call(this, param1, param2) binds the "this" pointer and params to the original function.
+        original_onClickEventProductDisplayType.call(this, event);
+
+        // Do your custom code after the original function has run
+        /*  View As Type 2/3/4/5/6 */
+
+        if (boostPFSThemeConfig.custom.view_as_type == 'view_as_type_list_grid_multi_col' && !Utils.isMobile()) {
+            jQ('.boost-pfs-filter-top-display-type').addClass('boost-pfs-filter-view-as-click');
+            var currentClass = jQ(event.target).data('view');
+            jQ('.boost-pfs-filter-top-display-type')[0].className = jQ('.boost-pfs-filter-top-display-type')[0].className.replace(/(^|\s)grid-\S+/g, '');
+            jQ('.boost-pfs-filter-top-display-type').addClass(currentClass);
+        }
+    }
+
+    ProductListPlaceholder.prototype.render = function() {
+        // Set limit number for product skeleton
+        var placeholderLimit = this.settings.productsPerRow || this.settings.placeholderProductPerRow;
+        // Build placeholder items
+        var placeholderItem = this.compileTemplate();
+        this.$element = [];
+        for (var i = 0; i < placeholderLimit; i++) {
+            this.$element.push(jQ(placeholderItem));
+        }
+        // Show placeholder before send filter request OR hide it after get filter data
+        if (!this.isFetchedProductData) {
+            this.setShow();
+        } else {
+            this.setHide();
+        }
+    }
+
+    ProductListPlaceholder.prototype.compileTemplateExtra = function() {
+        //Todo: Build placeholder for List mode
+        var template = boostPFSTemplate.productListPlaceholderHtml;
+        var imgRatioSetting = parseFloat(this.settings.placeholderImageRatio);
+        var imgRatio = imgRatioSetting > 0 ? imgRatioSetting : 1.4; // It mean w1:h1.4
+        /**
+         * Set product class for product skeleton (to set column, style, etc.)
+         * - If had defined product_grid_class in boostPFSThemeConfig => use this config ELSE use our setting
+         */
+        return template
+            .replace(/{{class.filterProductSkeleton}}/g, Class.filterProductSkeleton)
+            .replace(/{{class.filterSkeleton}}/g, Class.filterSkeleton)
+            .replace(/{{class.filterSkeletonText}}/g, Class.filterSkeletonText)
+            .replace(/{{paddingTop}}/g, imgRatio * 100)
+    }
+
+    /* Prevent conflict with theme vendor js */
+    Array.prototype.insert = function(a, b) {}
+
+    /* Math qual Height */
+    function equalHeight(data) {
+        var equal_i = -1;
+        var equal_els = [];
+        var equal_element = null;
+
+        // Equal Height Title
+        jQ('.boost-pfs-filter-product-item').each(function(i, element) {
+
+            var offsetTop = jQ(element).offset().top;
+            if (!equal_element || equal_element.offset().top !== offsetTop) {
+                equal_element = jQ(element);
+                equal_i++;
+            }
+
+            if (!equal_els[equal_i]) {
+                equal_els[equal_i] = [];
+            }
+            equal_els[equal_i].push(element);
+        });
+
+        for (var i = 0; i < equal_els.length; i++) {
+            var max = 0;
+            var maxRatio = 0;
+            var iLength = equal_els[i].length;
+
+            for (var j = 0; j < equal_els[i].length; j++) {
+                var item = equal_els[i][j];
+                var height = jQ(item).find('.boost-pfs-filter-product-bottom-inner').height();
+                max = Math.max(max, height);
+            }
+            jQ(equal_els[i]).find('.boost-pfs-filter-product-bottom-inner').css({
+                'min-height': max
+            });
+        }
+
+        var aspect_ratio = boostPFSFilterConfig.general.aspect_ratio;
+
+        if (aspect_ratio != 'false') {
+            var cropImagePosition = boostPFSFilterConfig.general.cropImagePossitionEqualHeight;
+
+            var widthImage = jQ('.boost-pfs-filter-product-item').width();
+            var indexData = 0;
+
+            // For Ratio
+            if (aspect_ratio != 'false' && aspect_ratio != 'auto') {
+                var heightImage = 0;
+                var widthImage = jQ('.boost-pfs-filter-product-item').width();
+                if (aspect_ratio != 'false' && aspect_ratio != 'auto' && aspect_ratio != 'other') {
+                    var ratioWidthHeight = boostPFSThemeConfig.custom.aspect_ratio;
+                } else {
+                    var ratioWidthHeight = '';
+                }
+
+                var ratioWidthHeightOther = boostPFSThemeConfig.custom.aspect_ratio_other;
+                if (ratioWidthHeightOther == '' && ratioWidthHeight == '') {
+                    return null;
+                } else {
+                    if (aspect_ratio != 'other') {
+                        ratioWidthHeight = ratioWidthHeight.split(':');
+                        ratioWidthHeight = parseInt(ratioWidthHeight[1]) / parseInt(ratioWidthHeight[0]);
+                        heightImage = widthImage * ratioWidthHeight;
+                    } else if (ratioWidthHeightOther != '' && aspect_ratio == 'other') {
+                        ratioWidthHeightOther = ratioWidthHeightOther.split(':');
+                        ratioWidthHeightOther = parseInt(ratioWidthHeightOther[1]) / parseInt(ratioWidthHeightOther[0]);
+                        heightImage = widthImage * ratioWidthHeightOther;
+                    }
+                }
+                jQ('.boost-pfs-filter-product-item-image-link').css({
+                    'padding-top': heightImage + 'px'
+                }).addClass('boost-pfs-filter-crop-image-position-' + cropImagePosition);
+
+            }
+        }
+    }
+
+    // Swap Image
+    function swapImage(data) {
+        if (!Utils.isMobile()) {
+            if (boostPFSThemeConfig.custom.hasOwnProperty('active_image_swap') &&
+                boostPFSThemeConfig.custom.active_image_swap == true) {
+                var dataSrcSetFlipImg = '',
+                    dataSrcFlipImg = '',
+                    flipImageAlt = '',
+                    dataSizes = 'auto',
+                    dataWidths = '',
+                    html = '';
+
+                jQ(".boost-pfs-filter-product-item").each(function() {
+                    var productItemSelector = jQ(this);
+                    var imgSelector = productItemSelector.find('.boost-pfs-filter-product-item-main-image');
+
+                    if (typeof imgSelector.data('img-flip-src') != 'undefined' &&
+                        imgSelector.data('img-flip-src') != '') {
+                        dataSrcFlipImg = imgSelector.data('img-flip-src');
+                        dataSrcSetFlipImg = imgSelector.data('img-flip-srcset');
+                        flipImageAlt = imgSelector.attr('alt');
+                        dataWidths = imgSelector.data('widths');
+                        html = '<img class="boost-pfs-filter-product-item-flip-image lazyload Image--lazyLoad"' +
+                            'data-srcset="' + dataSrcSetFlipImg + '" ' +
+                            'data-src="' + dataSrcFlipImg + '" ' +
+                            'data-widths="[' + dataWidths + ']" ' +
+                            'data-sizes="' + dataSizes + '" ' +
+                            'src="' + boostPFSImgDefaultSrc + '" ' +
+                            'alt="' + flipImageAlt + '" />';
+
+                        productItemSelector.find('.boost-pfs-filter-product-item-image-link').append(html);
+                    }
+
+                });
+            }
+        }
+    }
+
+    // Build Placeholder for the first load
+    function boostRemoveImageLoadingAnimation($selector) {
+        if ($selector.length) {
+            $selector.removeAttr('data-boost-image-loading-animation');
+        }
+    }
+    /* Expand Filter */
+    jQ(document).ready(function() {
+        jQ('.boost-pfs-filter-custom-filter-button').on('click', function() {
+            jQ('body').toggleClass('boost-pfs-filter-custom-drawer-open');
+        });
+        jQ('.boost-pfs-filter-custom-drawer-close').click(function() {
+            jQ('body').removeClass('boost-pfs-filter-custom-drawer-open');
+        });
+        jQ('.boost-pfs-filter-custom-drawer-overlay').click(function() {
+            jQ('body').removeClass('boost-pfs-filter-custom-drawer-open');
+        });
+
+        // Bind changing options with enter/space key for ADA
+        jQ('.boost-pfs-filter-custom-drawer-close, .boost-pfs-filter-custom-drawer-overlay').on('keydown', (event) => {
+            if (event.target && (event.keyCode == 13 || event.keyCode == 32)) {
+                jQ(event.target).click();
+            }
+        });
+
+        // Fix issue header fix on the Parallax theme
+        if (jQ('.mm-fixed-top').length > 0) {
+            var headerFixedHeight = jQ('.mm-fixed-top').height();
+            jQ('.boost-pfs-filter-collection-header-wrapper').css('margin-top', headerFixedHeight);
+        }
+    });
+  
+    FilterMobileButton.prototype.afterRender = function() {
+        var count = 0;
+
+        this.filterTree.filterOptions.forEach(function(filterOption) {
+            // FilterOption has numberAppliedFilterItems field. We add those up.
+            if (filterOption.status != 'disabled') count += filterOption.numberAppliedFilterItems;
+        })
+
+        // We prepend the count number above the filter tree
+        if (this.$element.find('.applied-filter-items').length == 0) {
+            this.$element.append('<span class="applied-filter-items"></span>');
+        }
+        this.$element.find('.applied-filter-items').text(' (' + count + ')');
+    }
+
+    FilterTree.prototype.renderExtraElements = function() {
+        if (this.$element.find(this.selector.clearAllButton).length == 0) {
+            this.$element.find(this.selector.applyAllButtonContainer).append(this.clearAllButton.$element);
+        }
+        //     if (this.$element.find(this.selector.applyAllButton).length == 0) {
+        //       this.$element.find(this.selector.applyAllButtonContainer).append(this.applyAllButton.$element);
+        //     }
+        if (!Utils.isMobile() && Settings.getSettingValue('general.filterTreeHorizontalStyle') == 'style-expand') {
+            this.$element.find(this.selector.filterFooter).append(this.clearAllButton.$element);
+        }
+    }
+
+    FilterDesktopButton.prototype.toggleFilterTree = function() {
+        var $toggleFilterTreeElement = jQ('#' + this.filterTree.id);
+        if (!$toggleFilterTreeElement || $toggleFilterTreeElement.hasClass('toggling')) {
+            return;
+        }
+
+        this.isCollapsed = !this.isCollapsed;
+
+        if (Settings.getSettingValue('general.changeDesktopButtonLabel')) {
+            this.label = this.isCollapsed ? Labels.refineDesktop : Labels.refineDesktopCollapse;
+            if (Settings.getSettingValue('general.changeDesktopButtonIcon')) {
+                this.icon = Settings.getSettingValue('general.filterTreeIcon');
+            }
+            this.$element.html(this.icon + '<span class="boost-pfs-filter-tree-desktop-button-label">' + this.label + '</span>');
+        }
+        this.afterToggleFilterTree();
+    }
 })();
