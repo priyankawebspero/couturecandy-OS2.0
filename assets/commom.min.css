@@ -1500,7 +1500,7 @@ form.shopify-cart-form {
     border-color: #000;
 }
 
-.shopify-cart-form .cart-collaterals .cart_totals .wc-proceed-to-checkout .checkout-button {
+.shopify-cart-form .cart-collaterals .cart_totals .wc-proceed-to-checkout .checkout-button:hover {
     background: #e94949;
     color: #fff;
     border-color: #e94949;
