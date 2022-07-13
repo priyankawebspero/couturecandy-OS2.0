@@ -408,7 +408,8 @@ var boostPFSFilterConfig = {
                                 swatchVariant = data['variants'][sIndex];
                                 sImageIndex = swatchValues[sIndex].image || '';
                                 if (sImageIndex != '') {
-                                    dataImgSrc = Utils.optimizeImage(swatchVariant.image, dataImgSize + 'x') + ' ' + dataImgSize + 'w';
+                                    //                   dataImgSrc = Utils.optimizeImage(swatchVariant.image, dataImgSize + 'x') + ' ' + dataImgSize + 'w';
+                                    dataImgSrc = Utils.optimizeImage(data.images[sImageIndex], dataImgSize + 'x') + ' ' + dataImgSize + 'w';
                                 }
 
                                 if (swatchType) {
