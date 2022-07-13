@@ -1447,6 +1447,15 @@ form.shopify-cart-form {
     white-space: nowrap;
 }
 
+.shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table .sezzle-shopify-info-button button {
+    color: #000;
+}
+
+.shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table .sezzle-shopify-info-button button span.sezzle-payment-amount {
+    font-family: 'product_sans_mediumregular';
+    font-weight: normal;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
