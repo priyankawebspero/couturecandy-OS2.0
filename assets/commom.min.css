@@ -1321,6 +1321,10 @@ background:none;
     font-size: 13px;
 }
 
+.template-cart form.shopify-cart-form .shop_table tr td.product-price .amount {
+    font-family: 'product_sans_mediumregular';
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
