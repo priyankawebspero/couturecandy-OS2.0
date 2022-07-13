@@ -867,6 +867,9 @@ var boostPFSFilterConfig = {
             jQ('.boost-pfs-filter-tree-mobile-button-stick-wrapper').css('bottom', heightHeaderThemeStick).addClass('boost-pfs-filter-sticky-bottom');
             jQ('.boost-pfs-filter-mobile-style1').addClass('boost-pfs-filter-mobile-style1-sticky-bottom');
         }
+      
+      	if (!Utils.isMobile() && boostPFSConfig.settings.general.filterTreeVerticalStyle == 'style-expand' && !jQ('body').hasClass(Class.filterTreeOpenBody)) jQ('.boost-pfs-filter-tree-desktop-button button').trigger('click');
+
     };
 
     function removeClassByPrefix(node, prefix) {
