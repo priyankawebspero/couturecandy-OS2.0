@@ -771,12 +771,13 @@ a.text-m {
     background: none;
     padding: 13px 15px;
     border-radius: 5px;
+  text-decoration:none !important;
 }
 
 .bottom.buttons .btn a:hover {
     border: 1px solid #000;
     background: #000;
-  color:#000;
+  color:#fff;
 }
 
 .boost-pfs-filter-products .boost-pfs-filter-product-item {
