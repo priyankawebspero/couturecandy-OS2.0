@@ -2737,6 +2737,10 @@ footer .widget-title i {
     border-top: 1px solid #000;
 }
   
+  .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-remove {
+    height: auto;
+}
+  
 .topbar-content.mobile .top_bar_right.col-6 .doubly-wrapper .doubly-nice-select {
     float: none;
     width: auto;
