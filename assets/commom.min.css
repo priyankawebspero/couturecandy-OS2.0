@@ -2737,13 +2737,15 @@ footer .widget-title i {
     padding-left: 0;
 }
   
+.shopify .cart-collaterals .cart_totals .responsive-table {
+    background-color: #fff;
+    padding: 10px 10px;
+}
+  
   .template-cart  .site-content {
     padding: 0 15px;
 }
-  
-.shopify-cart-form .cart-collaterals .cart_totals table.shop_table tr.shipping {
-    background: none;
-}
+ 
   
 .shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table tr th {
     font-size: 14px;
