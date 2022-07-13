@@ -1345,6 +1345,27 @@ background:none;
     border: 1px solid #ccc;
 }
 
+.template-cart form.shopify-cart-form .shop_table tr td .quantity input.minus, .template-cart form.shopify-cart-form .shop_table tr td .quantity input.plus {
+    color: #000 !important;
+    opacity: 1;
+    font-family: 'product_sans_mediumregular';
+    font-size: 20px;
+    min-width: 30px;
+    border-color: #000;
+    background: #fff;
+}
+
+.template-cart form.shopify-cart-form .shop_table tr td input[type="number"] {
+    width: 50px;
+    font-family: 'product_sans_mediumregular';
+    font-size: 16px;
+    font-weight: normal;
+    color: #000;
+    border-color: #000;
+    max-width: 50px;
+}
+
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
