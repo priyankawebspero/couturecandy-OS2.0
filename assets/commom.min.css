@@ -1301,6 +1301,26 @@ background:none;
     border-color: #000;
 }
 
+.template-cart form.shopify-cart-form .shop_table th {
+    background: #000;
+    color: #fff;
+    font-weight: normal;
+}
+
+.template-cart form.shopify-cart-form .shop_table tr td {
+    /* border: 1px solid #b4b4b4; */
+    font-size: 16px;
+}
+
+.template-cart form.shopify-cart-form .shop_table tr td.product-name a {
+    color: #000;
+}
+
+.template-cart form.shopify-cart-form .shop_table tr .variation * {
+    color: #000;
+    font-size: 13px;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
