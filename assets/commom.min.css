@@ -2733,6 +2733,13 @@ footer .widget-title i {
 
 @media only screen and (max-width:767px){
   
+  .shopify .shop_table.cart.shop_table_responsive tbody td:before {
+    font-weight: normal;
+    color: #000;
+    font-size: 14px;
+    font-family: 'product_sans_mediumregular';
+}
+  
   .shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table .sezzle-shopify-info-button button * {
     float: none;
     text-align: left;
