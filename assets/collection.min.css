@@ -1017,6 +1017,7 @@ display:none;
 .bottom.buttons {
     text-align: center;
     padding: 25px 15px;
+    flex-wrap: wrap;
 }
 
   
