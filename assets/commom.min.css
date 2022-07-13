@@ -224,6 +224,8 @@ header.main-header .wg-drop.country-selector .wgcurrent:after {
   
 }
 
+.boost-pfs-filter-stick.boost-pfs-filter-tree-desktop-button-sticky-wrapper:before{border:none !important;}
+
 .enable-sticky-header .main-header {
     position: sticky !important;
     top: 0 !important;
