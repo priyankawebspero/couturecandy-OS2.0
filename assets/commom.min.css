@@ -1283,7 +1283,7 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
     border-radius: 5px;
 }
 
-.widget_shopping_cart .buttons a.button:hover{
+.widget_shopping_cart .buttons a.button:hover, .widget_shopping_cart .buttons a.button:focus{
 background:none;
   color:#000;
 }
@@ -1294,7 +1294,7 @@ background:none;
     border-color: #e94949;
 }
 
-.widget_shopping_cart .buttons a.button.checkout:hover {
+.widget_shopping_cart .buttons a.button.checkout:hover, .widget_shopping_cart .buttons a.button.checkout:focus {
    color: #fff;
     background: #000;
     border-color: #000;
