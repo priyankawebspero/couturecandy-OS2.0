@@ -1207,7 +1207,7 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
   color: #000;
 }
 
-.right-column .shopping-cart .dropdown-cat .product_list_widget li .remove {
+.shopping-cart .dropdown-cat .product_list_widget li .remove {
     color: #000;
     font-size: 20px;
     font-weight: 600;
@@ -1216,9 +1216,15 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
     text-align: center;
 }
 
-.right-column .shopping-cart .dropdown-cat .product_list_widget li img {
+.shopping-cart .dropdown-cat .product_list_widget li img {
     border: 1px solid #b4b4b4;
    
+}
+
+.shopping-cart .dropdown-cat .widget_shopping_cart .product_list_widget li>a {
+    color: #000 !important;
+    font-size: 13px;
+    text-transform: inherit;
 }
 
 @media only screen and (min-width:768px){
