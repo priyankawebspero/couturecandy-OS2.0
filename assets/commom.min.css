@@ -1486,6 +1486,26 @@ form.shopify-cart-form {
  color: #000;
 }
 
+.shopify-cart-form .cart-collaterals .cart_totals .wc-proceed-to-checkout {
+    margin-top: 25px;
+}
+
+.shopify-cart-form .cart-collaterals .cart_totals .wc-proceed-to-checkout .checkout-button {
+    background: #000;
+    color: #fff;
+    width: 100%;
+    padding: 18px 15px;
+    font-size: 17px;
+    border-radius: 7px;
+    border-color: #000;
+}
+
+.shopify-cart-form .cart-collaterals .cart_totals .wc-proceed-to-checkout .checkout-button {
+    background: #e94949;
+    color: #fff;
+    border-color: #e94949;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
