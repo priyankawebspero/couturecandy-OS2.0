@@ -1465,6 +1465,14 @@ form.shopify-cart-form {
     /* border-bottom: 1px solid #000; */
 }
 
+.shopify-cart-form .cart-collaterals .cart_totals table.shop_table tr input#coupon_code {
+    border: 1px solid #000;
+    font-size: 14px;
+    height: 44px;
+    /* max-width: 300px; */
+    color: #000;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
