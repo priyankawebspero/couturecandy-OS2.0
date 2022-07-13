@@ -2600,6 +2600,10 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     height: 24px !important;
 }
   
+.template-cart form.shopify-cart-form .shop_table tr td.product-subtotal .amount {
+    font-size: 18px;
+}
+  
 }
 
 
