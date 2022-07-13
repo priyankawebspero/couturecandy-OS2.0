@@ -1281,6 +1281,7 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
     color: #fff;
     border: 1px solid #000;
     border-radius: 5px;
+  opacity:1 !important;
 }
 
 .widget_shopping_cart .buttons a.button:hover, .widget_shopping_cart .buttons a.button:focus{
