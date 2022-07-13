@@ -216,7 +216,7 @@ header.main-header .wg-drop.country-selector .wgcurrent:after {
 }
 
 .enable-sticky-header .main-header.act-scroll {
-   position: fixed !important;
+   position: sticky !important;
     top: 0;
     z-index: 99;
    left:0;
