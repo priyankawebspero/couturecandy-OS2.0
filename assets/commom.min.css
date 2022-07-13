@@ -2608,6 +2608,10 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     font-size: 15px;
 }
   
+.template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents th {
+    font-size: 16px;
+}
+  
 }
 
 
