@@ -1366,6 +1366,10 @@ background:none;
     max-width: 50px;
 }
 
+.template-cart form.shopify-cart-form .shop_table tbody tr:nth-of-type(odd) {
+    background: #f8f8f8;
+}
+
 
 @media only screen and (min-width:768px){
   
