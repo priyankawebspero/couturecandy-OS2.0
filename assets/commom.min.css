@@ -2727,6 +2727,9 @@ footer .widget-title i {
     text-align: left;
     margin-bottom: 10px;
 }
+.shopify .shop_table.cart.shop_table_responsive tbody td {
+    padding: 15px;
+}
 
 }
 
