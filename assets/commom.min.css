@@ -1919,6 +1919,10 @@ p.newstext {
     font-size: 3.5vw;
 }
   
+.template-cart  .site-content {
+    padding: 0 20px;
+}
+  
 }
 
 @media only screen and (max-width:1199px) and (min-width:992px){
