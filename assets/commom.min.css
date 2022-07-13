@@ -1279,8 +1279,13 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
 .widget_shopping_cart .buttons a.button {
     background: #000;
     color: #fff;
-    border-color: #000;
+    border: 1px solid #000;
     border-radius: 5px;
+}
+
+.widget_shopping_cart .buttons a.button:hover{
+background:none;
+  color:#000;
 }
 
 .widget_shopping_cart .buttons a.button.checkout {
