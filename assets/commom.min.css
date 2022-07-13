@@ -1244,6 +1244,17 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
     /* max-width: 40px; */
 }
 
+.shopping-cart .dropdown-cat .widget_shopping_cart .product_list_widget li .quantity .amount {
+    color: #000;
+    font-family: 'product_sans_mediumregular';
+    font-size: 14px;
+}
+
+.shopping-cart .dropdown-cat .widget_shopping_cart .product_list_widget li .quantity {
+    color: #000;
+    font-size: 0;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
