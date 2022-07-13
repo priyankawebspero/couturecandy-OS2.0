@@ -1114,10 +1114,12 @@ var boostPFSFilterConfig = {
         this.isCollapsed = !this.isCollapsed;
 
         if (Settings.getSettingValue('general.changeDesktopButtonLabel')) {
+          console.log('1');
             this.label = this.isCollapsed ? Labels.refineDesktop : Labels.refineDesktopCollapse;
             if (Settings.getSettingValue('general.changeDesktopButtonIcon')) {
                 this.icon = Settings.getSettingValue('general.filterTreeIcon');
             }
+          console.log(this.label);
             this.$element.html(this.icon + '<span class="boost-pfs-filter-tree-desktop-button-label">' + this.label + '</span>');
         }
         this.afterToggleFilterTree();
