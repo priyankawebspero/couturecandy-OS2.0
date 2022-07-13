@@ -1217,7 +1217,7 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
 }
 
 .shopping-cart .dropdown-cat .product_list_widget li img {
-    border: 1px solid #b4b4b4;
+    border: 1px solid #ccc;
    
 }
 
@@ -1254,6 +1254,11 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
 .shopping-cart .dropdown-cat .widget_shopping_cart .product_list_widget li .quantity {
     color: #000;
     font-size: 0;
+}
+
+.widget_shopping_cart .total {
+    border-color: #b4b4b4;
+    margin-top: 20px;
 }
 
 @media only screen and (min-width:768px){
