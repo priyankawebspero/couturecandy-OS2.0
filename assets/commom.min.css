@@ -1813,6 +1813,22 @@ aside.sidebar-container .sidebar-inner ul {
     font-size: 16px;
 }
 
+/*-----pages-table-layout------------*/
+
+.tble table tr th {
+    border: 1px solid #ccc;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: 'product_sans_mediumregular';
+    line-height: 1;
+    padding: 10px;
+}
+.tble table tr td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #000;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
