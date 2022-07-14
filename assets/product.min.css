@@ -1011,6 +1011,10 @@ div#cover {
     margin-bottom: 10px;
 }
 
+.single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
+    font-size: 0;
+}
+
 @media only screen and (min-width:768px){
 
 div#ProdDetailInfomobile {
