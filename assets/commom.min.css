@@ -1568,6 +1568,10 @@ aside.sidebar-container .sidebar-inner ul {
     margin-bottom: 30px;
 }
 
+.template-page .breadcrumbs {
+    padding-bottom: 15px;
+}
+
 .template-page p {
     color: #000;
     line-height: 1.7;
