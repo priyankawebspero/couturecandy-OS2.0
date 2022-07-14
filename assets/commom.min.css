@@ -2855,6 +2855,11 @@ body.template-page .main-page-wrapper .container {
     padding: 0 20px;
 }
   
+.blg-layout_all article.blog-post-loop {
+    width: calc(50% - 22px);
+    margin: 11px 10px;
+}
+  
 }
 
 
