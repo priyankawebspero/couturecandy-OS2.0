@@ -1727,6 +1727,10 @@ aside.sidebar-container .sidebar-inner ul {
     margin-bottom: 10px;
 }
 
+.template-page .site-content ul {
+    margin-bottom: 20px;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
