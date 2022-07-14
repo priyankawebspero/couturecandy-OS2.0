@@ -1880,6 +1880,7 @@ aside.sidebar-container .sidebar-inner ul {
     background: #000;
     color: #fff;
     border: none !important;
+  font-weight: normal;
 }
 
 .container.wishlist_page_cs .wishlist_table tbody tr {
