@@ -1015,6 +1015,10 @@ div#cover {
     font-size: 0;
 }
 
+.single-product-content .cart .quantity {
+    display: none !important;
+}
+
 @media only screen and (min-width:768px){
 
 div#ProdDetailInfomobile {
