@@ -838,6 +838,10 @@ display:none;
     line-height: 55px;
 }
 
+.boost-pfs-search-container form.boost-pfs-search-form button.boost-pfs-search-btn {
+    background: #e94949;
+}
+
 @media only screen and (max-width:1550px){
   
   .boost-pfs-container-default-fullwidth {
