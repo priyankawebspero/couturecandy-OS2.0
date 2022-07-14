@@ -1018,7 +1018,20 @@ html[lang="es"] #shopify-section-template--14532934697043__1654005036571929f8 .s
     padding-left: 0;
     padding-right: 0;
 }
-@media only screen and (min-width:1200px){  
+
+@media only screen and (max-width:1200px){  
+.gl_col-lg-1, .gl_col-lg-10, .gl_col-lg-11, .gl_col-lg-12, .gl_col-lg-2, .gl_col-lg-3, .gl_col-lg-4, .gl_col-lg-5, .gl_col-lg-6, .gl_col-lg-7, .gl_col-lg-8, .gl_col-lg-9, .gl_col-md-1, .gl_col-md-10, .gl_col-md-11, .gl_col-md-12, .gl_col-md-2, .gl_col-md-3, .gl_col-md-4, .gl_col-md-5, .gl_col-md-6, .gl_col-md-7, .gl_col-md-8, .gl_col-md-9, .gl_col-sm-1, .gl_col-sm-10, .gl_col-sm-11, .gl_col-sm-12, .gl_col-sm-2, .gl_col-sm-3, .gl_col-sm-4, .gl_col-sm-5, .gl_col-sm-6, .gl_col-sm-7, .gl_col-sm-8, .gl_col-sm-9, .gl_col-xs-1, .gl_col-xs-10, .gl_col-xs-11, .gl_col-xs-12, .gl_col-xs-2, .gl_col-xs-3, .gl_col-xs-4, .gl_col-xs-5, .gl_col-xs-6, .gl_col-xs-7, .gl_col-xs-8, .gl_col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+}
+@media only screen and (min-width:1200px){
+  
 .gl_col-lg-1, .gl_col-lg-10, .gl_col-lg-11, .gl_col-lg-12, .gl_col-lg-2, .gl_col-lg-3, .gl_col-lg-4, .gl_col-lg-5, .gl_col-lg-6, .gl_col-lg-7, .gl_col-lg-8, .gl_col-lg-9 {
     float: left;
 }
