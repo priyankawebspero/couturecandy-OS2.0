@@ -1855,6 +1855,12 @@ section.brands-banner-section {
 body.template-page .main-page-wrapper .container {
     padding: 0 30px;
 }
+  
+.container.all_blogs_inner {
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+}
 
 }
 
