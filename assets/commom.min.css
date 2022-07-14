@@ -2020,6 +2020,10 @@ html[lang="pt"] .main-header .wrapp-header ul#menu-main-navigation li {
 
 @media only screen and (max-width:1275px){
   
+  .container.all_blogs_inner {
+    padding-top: 0 !important;
+}
+  
   .top_bar_text_middle {
     font-size: 14px;
 }
