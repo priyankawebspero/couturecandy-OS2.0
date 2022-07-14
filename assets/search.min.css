@@ -816,6 +816,10 @@ display:none;
     top: 2px;
 }
 
+.boost-pfs-filter-tree-open-body header.main-header {
+    z-index: 1 !important;
+}
+
 @media only screen and (max-width:1550px){
   
   .boost-pfs-container-default-fullwidth {
