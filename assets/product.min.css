@@ -1060,6 +1060,38 @@ background-color: #e94949;
 border-color: #000;
 }
 
+.product-image-summary .row #popup .modal-content .right-side #defaultSizeChart .ChartSizeBlock #Tabs_New {
+    list-style: none;
+    margin: 0 0 20px;
+    padding: 0;
+    width: 100%;
+    display: table;
+    background: #333;
+}
+
+.product-image-summary .row #popup .modal-content .right-side #defaultSizeChart .ChartSizeBlock #Tabs_New li {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 15px 5px;
+    float: left;
+    background: #333;
+}
+
+.product-image-summary .row #popup .modal-content .right-side #defaultSizeChart .ChartSizeBlock #Tabs_New li a {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    padding: 2px 3px;
+    border-bottom: none;
+    margin: 0;
+    position: relative;
+    background: transparent;
+    text-decoration: none;
+    outline: none;
+}
+
 @media only screen and (min-width:768px){
   
  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
