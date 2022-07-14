@@ -2863,6 +2863,10 @@ footer .widget-title i {
     display: none;
 }
   
+.template-page .page-title {
+    margin-bottom: 15px;
+}
+  
   body.template-page .main-page-wrapper .container {
     padding: 0 15px;
 }
