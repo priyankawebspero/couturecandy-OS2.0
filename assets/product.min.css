@@ -1015,7 +1015,10 @@ div#cover {
     font-size: 0;
 }
 
-
+.single-product-content .entry-summary .yith-wcwl-add-to-wishlist a:hover:before, 
+  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a:focus:before{
+    color: #fff;
+}
 
 .single-product-content .cart .quantity {
     display: none !important;
@@ -1036,7 +1039,8 @@ div#ProdDetailInfomobile {
     background: #000;
 }
 
-.single-product-content .entry-summary .yith-wcwl-add-to-wishlist a:hover:before {
+.single-product-content .entry-summary .yith-wcwl-add-to-wishlist a:hover:before, 
+  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a:focus:before{
     color: #fff;
 }
   
