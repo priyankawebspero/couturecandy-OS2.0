@@ -1049,6 +1049,17 @@ div#cover {
     width: 100%;
 }
 
+#login-wishlist.popup-added_to_cart a.btn.close-popup:hover, #login-wishlist.popup-added_to_cart a.btn.close-popup:focus{
+background-color: #e94949;
+    color: #fff;
+}
+
+#login-wishlist.popup-added_to_cart a.btn.view-cart:hover, #login-wishlist.popup-added_to_cart a.btn.view-cart:focus
+
+{background:#000;color:#fff;
+border-color: #000;
+}
+
 @media only screen and (min-width:768px){
   
  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
