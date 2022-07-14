@@ -1546,7 +1546,7 @@ div#ProdDetailInfo {
     padding: 0 15px;
 }
   
-.single-product-content .entry-summary .yith-wcwl-add-to-wishlist a::before {
+/*.single-product-content .entry-summary .yith-wcwl-add-to-wishlist a::before {
     font-size: 15px;
     width: 100%;
     position: relative;
@@ -1557,7 +1557,7 @@ div#ProdDetailInfo {
     text-transform: uppercase;
     margin: 0;
     font-family: 'google_sansregular';
-}
+}*/
   
 body.template-product  {
     padding-bottom: 50px;
