@@ -1651,6 +1651,14 @@ aside.sidebar-container .sidebar-inner ul {
     padding: 15px 20px 20px 20px;
 }
 
+.blg-layout_all article.blog-post-loop .entry-content h3.entry-title a {
+    color: #000;
+}
+
+.blg-layout_all article.blog-post-loop .entry-content h3.entry-title a:hover {
+    color: #e94949;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
