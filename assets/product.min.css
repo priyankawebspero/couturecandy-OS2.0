@@ -1070,8 +1070,12 @@ border-color: #000;
     justify-content: space-around;
 }
 
-.product-image-summary .row #popup .modal-content .right-side #defaultSizeChart .ChartSizeBlock #Tabs_New li a.current {
-    background: #e94949;
+.product-image-summary .row #popup .modal-content .right-side #defaultSizeChart .ChartSizeBlock #Tabs_New li {
+    display: block;
+    list-style: none;
+    margin: 0;
+    float: left;
+  
 }
 
 .product-image-summary .row #popup .modal-content .right-side #defaultSizeChart .ChartSizeBlock #Tabs_New li a {
@@ -1086,7 +1090,11 @@ border-color: #000;
     background: transparent;
     text-decoration: none;
     outline: none;
-  display:block;
+    display: block;
+}
+
+.product-image-summary .row #popup .modal-content .right-side #defaultSizeChart .ChartSizeBlock #Tabs_New li a.current {
+    background: #e94949;
 }
 
 .product-image-summary .row #popup .modal-content .right-side #defaultSizeChart .SizeCharttable {
