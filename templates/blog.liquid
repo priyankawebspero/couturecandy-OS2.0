@@ -101,12 +101,13 @@
 	{%- endcase -%}
 	<div class="main-page-wrapper all_blogs">
 		<!-- MAIN CONTENT AREA -->
-		
-		{%- paginate blog.articles by number_articles_per_grid_page -%}
-		<div class="container">
-          <div class="blogs-banner">
+		 <div class="blogs-banner">
 					<img src="https://cdn.shopify.com/s/files/1/0144/7018/5017/files/celeb-style-banner.jpg?3283284221892371241" alt="Blogs Banner">
 				</div><!--Blog-banner-->
+      
+		{%- paginate blog.articles by number_articles_per_grid_page -%}
+		<div class="container">
+         
           
 			<div class="row">
 				
