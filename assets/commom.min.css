@@ -1572,13 +1572,13 @@ aside.sidebar-container .sidebar-inner ul {
     padding-bottom: 15px;
 }
 
-.template-page p {
+.template-page .site-content p {
     color: #000;
     line-height: 1.7;
     font-size: 16px;
 }
 
-.PageContent p strong {
+.PageContent .site-content p strong {
     font-family: 'product_sans_mediumregular';
     font-weight: normal;
     font-size: 17px;
