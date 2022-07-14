@@ -882,7 +882,7 @@ display:none;
   
 }
 
-@media only screen and (max-width:1199px) and (min-width:992px){
+@media only screen and (max-width:1199px) and (min-width:1000px){
   
 .bottom.buttons .btn a {
     padding: 13px 10px;
@@ -896,6 +896,23 @@ display:none;
   
 }
   
+
+@media only screen and (max-width:999px) and (min-width:768px){
+  
+.bottom.buttons .btn {
+    width: 50%;
+    margin: 5px 0;
+}
+  
+.bottom.buttons {
+    flex-wrap: wrap;
+}
+  
+  
+}
+
+
+
 
 @media only screen and (max-width:991px){
   
