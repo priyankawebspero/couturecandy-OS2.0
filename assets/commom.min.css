@@ -1771,24 +1771,28 @@ aside.sidebar-container .sidebar-inner ul {
     color: #000;
 }
 
-.main-header .wrapp-header ul#menu-main-navigation li.menu-item-sale {
+.main-header .wrapp-header ul#menu-main-navigation li.menu-item-sale, .main-header .wrapp-header ul#menu-main-navigation li.menu-item-formal {
     position: relative;
 }
 
-.main-header .wrapp-header ul#menu-main-navigation li.menu-item-sale .sub-menu-dropdown {
+.main-header .wrapp-header ul#menu-main-navigation li.menu-item-sale .sub-menu-dropdown, 
+.main-header .wrapp-header ul#menu-main-navigation li.menu-item-formal .sub-menu-dropdown{
     width: 280px !important;
 }
 
-.main-header .wrapp-header ul#menu-main-navigation li.menu-item-sale .sub-menu-dropdown li {
+.main-header .wrapp-header ul#menu-main-navigation li.menu-item-sale .sub-menu-dropdown li, 
+.main-header .wrapp-header ul#menu-main-navigation li.menu-item-formal .sub-menu-dropdown li{
     margin: 0;
 }
-.main-header .wrapp-header ul#menu-main-navigation li.menu-item-sale .sub-menu-dropdown li a {
+.main-header .wrapp-header ul#menu-main-navigation li.menu-item-sale .sub-menu-dropdown li a, 
+.main-header .wrapp-header ul#menu-main-navigation li.menu-item-formal .sub-menu-dropdown li a{
     display: block !important;
     color: #000 !important;
     font-size: 13px;
 }
 
-.main-header .wrapp-header ul#menu-main-navigation li.menu-item-sale .sub-menu-dropdown li a:hover {
+.main-header .wrapp-header ul#menu-main-navigation li.menu-item-sale .sub-menu-dropdown li a:hover, 
+.main-header .wrapp-header ul#menu-main-navigation li.menu-item-formal .sub-menu-dropdown li a:hover{
     display: block !important;
     color: #e94949 !important;
     font-size: 13px;
