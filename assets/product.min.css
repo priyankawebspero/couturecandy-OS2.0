@@ -1117,6 +1117,10 @@ border-color: #000;
     /* white-space: nowrap; */
 }
 
+.product-image-summary .row #popup .modal-content .right-side #defaultSizeChart .ChartSizeBlock #Tabs_New li a.current {
+    background: #e94949;
+}
+
 @media only screen and (min-width:768px){
   
  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
