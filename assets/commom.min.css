@@ -1877,9 +1877,11 @@ aside.sidebar-container .sidebar-inner ul {
 
 .container.wishlist_page_cs .wishlist_table tr th {
     border-top: none;
-  background:#000;
-  color:#fff;
+    background: #000;
+    color: #fff;
+    border: none !important;
 }
+
 .container.wishlist_page_cs .wishlist_table tbody tr {
     border: 1px solid #000;
     border-top: none;
