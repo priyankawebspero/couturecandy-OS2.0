@@ -1652,8 +1652,10 @@ aside.sidebar-container .sidebar-inner ul {
 
 .blg-layout_all article.blog-post-loop .entry-content h3.entry-title {
     font-family: 'product_sans_mediumregular';
-    font-size: 21px;
+    font-size: 22px;
     margin-top: 0;
+    margin-bottom: 20px;
+    font-family: 'google_sansregular';
 }
 
 .blg-layout_all article.blog-post-loop .entry-content .entry-meta {
