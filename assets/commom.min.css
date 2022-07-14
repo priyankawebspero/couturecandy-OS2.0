@@ -1710,6 +1710,23 @@ aside.sidebar-container .sidebar-inner ul {
     border: none;
 }
 
+.template-page h5 {
+    font-family: 'product_sans_mediumregular';
+    font-size: 20px;
+}
+
+.template-page h4 {
+    font-size: 24px;
+    font-family: 'google_sansregular';
+}
+
+.template-page li {
+    color: #000;
+    line-height: 1.5;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
