@@ -110,6 +110,7 @@
 				</div><!--Blog-banner-->
 				<div class="row site-content {{class_gl}}" role="main">
 					<div class="inner-title"><span>The Latest</span></div>
+                  <div class="blg-layout_all">
 					{%- if settings.blog_design == '4' or settings.blog_design == '5' -%}<div class="masonry-container">{%- endif -%}
 						{%- for article in blog.articles -%}
 							{%- include  gl_include -%}
@@ -134,6 +135,7 @@
                       {%- include 'pagination',blog_ajax:true -%}
                   </div>
 					{%- endif -%}
+                  </div>
 				</div><!-- .site-content -->
 			</div>
 		</div>
