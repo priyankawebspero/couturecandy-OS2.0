@@ -2180,6 +2180,15 @@ html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation>li {
     margin-right: 4px;
 }
   
+.container.wishlist_page_cs .wishlist_table tbody tr td .button.add_to_cart.button {
+    white-space: nowrap;
+}
+  
+.container.wishlist_page_cs .wishlist_table tr th {
+    white-space: nowrap;
+    font-size: 16px;
+}
+  
 }
 
 @media only screen and (max-width:1023px) and (min-width:992px){
@@ -2201,6 +2210,15 @@ html[lang="pt"] .main-header .wrapp-header ul#menu-main-navigation li {
 }
 
 @media only screen and (min-width:768px) and (max-width:991px){
+  
+  .container.wishlist_page_cs .wishlist_table tbody tr td .button.add_to_cart.button {
+    white-space: nowrap;
+}
+  
+.container.wishlist_page_cs .wishlist_table tr th {
+    white-space: nowrap;
+    font-size: 16px;
+}
   
  div#reviewCarouselWidget .headline {
     font-size: 40px !important;
