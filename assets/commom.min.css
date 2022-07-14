@@ -1883,6 +1883,20 @@ aside.sidebar-container .sidebar-inner ul {
     border-top: none;
 }
 
+.container.wishlist_page_cs .wishlist_table tbody tr td {
+    border-color: #000;
+    border-top: none !important;
+}
+
+.container.wishlist_page_cs .wishlist_table tbody tr td img {
+    border: 1px solid #ccc;
+}
+
+.container.wishlist_page_cs .wishlist_table tbody tr td.product-name a {
+    color: #000;
+    font-size: 15px;
+}
+
 
 @media only screen and (min-width:768px){
   
