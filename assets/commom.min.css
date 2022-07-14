@@ -1771,6 +1771,15 @@ aside.sidebar-container .sidebar-inner ul {
     color: #000;
 }
 
+.main-header .wrapp-header ul#menu-main-navigation li.menu-item-sale {
+    position: relative;
+}
+
+.main-header .wrapp-header ul#menu-main-navigation li.menu-item-sale .sub-menu-dropdown {
+    width: 280px !important;
+}
+
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
