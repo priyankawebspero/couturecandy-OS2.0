@@ -1624,6 +1624,25 @@ aside.sidebar-container .sidebar-inner ul {
     line-height: 1;
 }
 
+.blg-layout_all {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.blg-layout_all article.blog-post-loop {
+    width: 33.33%;
+}
+
+.blg-layout_all article.blog-post-loop .entry-header .entry-thumbnail {
+    margin-bottom: 0;
+}
+
+.blg-layout_all article.blog-post-loop .entry-header .entry-thumbnail .post-img-wrapp {
+    width: 100%;
+}
+
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
