@@ -1869,6 +1869,14 @@ aside.sidebar-container .sidebar-inner ul {
   width:100%;
 }
 
+/*----wishlist-page-design-----------*/
+
+.container.wishlist_page_cs .wishlist-title {
+    display: none;
+}
+
+
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
