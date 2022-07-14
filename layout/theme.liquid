@@ -5,7 +5,6 @@
  <!-- yett control the execution of (third party) scripts -->
 {%- include 'meta' -%}
 {%- include 'social-meta-tags' -%}
-  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600;1,800&display=swap" rel="stylesheet">
@@ -17,10 +16,7 @@
   <link rel="preload" href="{{ 'boost-pfs-filter.js' | asset_url }}" as="script">
   <link rel="preload" href="{{ 'boost-pfs-init.js' | asset_url }}" as="script">
   {%- include 'head-style' -%}
-  {%- include 'head-script-before-content' -%}
-
-  {{ content_for_header }}
-  {% assign emailCust =  '' %}
+    {% assign emailCust =  '' %}
   {% assign setHashedEmail = 'setEmail' %}
   {% if customer %}
   {% assign emailCust = customer.email | remove: ' ' | strip_newlines | downcase | md5 %}
@@ -28,7 +24,10 @@
   {% else %}
   {% assign emailCust = emailCust | remove: ' ' | strip_newlines | downcase | md5 %}
   {% assign setHashedEmail = 'setEmail' %}
-  {% endif %}  
+  {% endif %} 
+  {%- include 'head-script-before-content' -%}
+
+  {{ content_for_header }}
   {%- capture check_admin -%}{{ content_for_header }}{%- endcapture -%}
   {%- capture check_tab -%}{{ content_for_layout  }}{%- endcapture -%}
   {%- if check_tab contains 'gl_has_youtube' or check_tab contains 'has_section_gl_js' or check_tab contains 'animated_counter' -%}
