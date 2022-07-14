@@ -1065,8 +1065,9 @@ border-color: #000;
     margin: 0 0 20px;
     padding: 0;
     width: 100%;
-    display: table;
-    background: #333;
+    display: flex;
+    background: #000;
+    justify-content: space-between;
 }
 
 .product-image-summary .row #popup .modal-content .right-side #defaultSizeChart .ChartSizeBlock #Tabs_New li {
