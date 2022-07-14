@@ -1632,6 +1632,7 @@ aside.sidebar-container .sidebar-inner ul {
 
 .blg-layout_all article.blog-post-loop {
     width: 33.33%;
+    margin: 20px 0;
 }
 
 .blg-layout_all article.blog-post-loop .entry-header .entry-thumbnail {
