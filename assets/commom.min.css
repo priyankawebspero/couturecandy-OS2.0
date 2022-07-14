@@ -1829,6 +1829,17 @@ aside.sidebar-container .sidebar-inner ul {
     color: #000;
 }
 
+.shopify-challenge__container input.shopify-challenge__button.btn {
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    min-width: 127px;
+    border-radius: 5px;
+    padding: 12px 10px;
+    border: none !important;
+}
+
 /*-----pages-table-layout------------*/
 
 .tble table tr th {
