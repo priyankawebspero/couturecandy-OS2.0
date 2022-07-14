@@ -1017,6 +1017,8 @@ div#cover {
     line-height: 56px;
 }
 
+
+
 .single-product-content .cart .quantity {
     display: none !important;
 }
@@ -1025,6 +1027,14 @@ div#cover {
 
 div#ProdDetailInfomobile {
     display: none;
+}
+  
+.single-product-content .entry-summary .yith-wcwl-add-to-wishlist a:hover {
+    background: #000;
+}
+
+.single-product-content .entry-summary .yith-wcwl-add-to-wishlist a:hover:before {
+    color: #fff;
 }
   
 }
