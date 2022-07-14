@@ -1782,6 +1782,22 @@ aside.sidebar-container .sidebar-inner ul {
 .main-header .wrapp-header ul#menu-main-navigation li.menu-item-sale .sub-menu-dropdown li {
     margin: 0;
 }
+.main-header .wrapp-header ul#menu-main-navigation li.menu-item-sale .sub-menu-dropdown li a {
+    display: block !important;
+    color: #000 !important;
+    font-size: 13px;
+}
+
+.main-header .wrapp-header ul#menu-main-navigation li.menu-item-sale .sub-menu-dropdown li a:hover {
+    display: block !important;
+    color: #e94949 !important;
+    font-size: 13px;
+}
+
+.basel-navigation .menu li .sub-menu-dropdown {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
 
 @media only screen and (min-width:768px){
   
