@@ -3492,6 +3492,10 @@ div#shopify-section-template--14532934697043__16539999234cb01da9 {
     padding: 8px 10px;
 }
   
+.blg-layout_all article.blog-post-loop .entry-content {
+    padding: 15px 15px 20px 15px;
+}
+  
 }
 
 @media only screen and (max-width:479px){
