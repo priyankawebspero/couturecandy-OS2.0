@@ -2718,8 +2718,19 @@ body.template-page .main-page-wrapper .container {
 }
 
 
+@media only screen and (max-width:1023px) and (min-width:768px){
 
-
+  .sidebar-container + .site-content.col-sm-9 {
+    width: 66.66%;
+    padding-left: 0;
+}
+  
+.sidebar-container {
+    width: 33.33%;
+}
+  
+}
+  
 
 @media only screen and (max-width:768px){
   
