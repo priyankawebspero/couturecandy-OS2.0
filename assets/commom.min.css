@@ -1584,6 +1584,13 @@ aside.sidebar-container .sidebar-inner ul {
     font-size: 17px;
 }
 
+/*---blog-page-design-----*/
+
+.template-blog .main-page-wrapper .container {
+    max-width: 100%;
+    padding: 0 50px;
+}
+
 
 @media only screen and (min-width:768px){
   
