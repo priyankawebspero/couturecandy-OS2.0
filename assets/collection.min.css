@@ -882,6 +882,21 @@ display:none;
   
 }
 
+@media only screen and (max-width:1199px) and (min-width:992px){
+  
+.bottom.buttons .btn a {
+    padding: 13px 10px;
+    font-size: 13px;
+}
+  
+.bottom.buttons {
+    padding: 40px 10px;
+}
+  
+  
+}
+  
+
 @media only screen and (max-width:991px){
   
   .boost-pfs-filter-right-col {
