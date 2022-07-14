@@ -903,6 +903,11 @@ display:none;
     padding-left: 29px;
 }
   
+.boost-pfs-filter-default-toolbar .boost-pfs-filter-tree-desktop-button>button .boost-pfs-filter-tree-desktop-button-label:before {
+    width: 21px;
+    height: 20px;
+    top: -4px;
+}
   
 }
   
