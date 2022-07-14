@@ -27,15 +27,6 @@
 {%- endif -%}
 <div class="main-page-wrapper search-template ghfg">
    <!-- MAIN CONTENT AREA -->
-    <div class="bc-sf-search-container">
-    <h1 class="bc-sf-search-result-header"></h1>
-    <form class="bc-sf-search-form" action="/search" method="get" role="search">
-      <input class="bc-sf-search-box" type="search" name="q" value="{{ search.terms | escape }}">
-      <button type="submit" class="bc-sf-search-btn"></button>
-    </form>
-    <p class="bc-sf-search-result-number"></p>
-  </div>
-  
    <div class="container">
       <div class="row">
         {%- if show_breadcrums -%}<div class="breadcrumbs col-sm-12" xmlns:v="http://rdf.data-vocabulary.org/#"><a href="/" rel="v:url" property="v:title">{{ 'general.breadcrumbs.home' | t }}</a> » <span class="current">{{ page_title }}</span></div><!-- .breadcrumbs -->{%- endif -%}
