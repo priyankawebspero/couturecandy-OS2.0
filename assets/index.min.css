@@ -929,6 +929,11 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
     padding-bottom: 40px;
 }
   
+.spb__column.gl_column_container.gl_col-sm-12>.gl_column-inner {
+    padding-left: 0;
+    padding-right: 0;
+}
+  
 }
 
 
