@@ -2456,6 +2456,7 @@ aside.sidebar-container .sidebar-inner ul li h3 {
  .right-column .mobile-nav-icon {
     position: relative;
     z-index: 99;
+    margin-top: 7px;
 }
   
   div#shopify-section-gl_mobile_menu div#close_menu_main {
@@ -2760,11 +2761,11 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
 }
   
 .mobile-nav-icon .basel-burger::before {
-    top: -7px;
+    top: -9px;
 }
   
 .mobile-nav-icon .basel-burger::after {
-    top: 7px;
+    top: 9px;
 }
   
 .main-header .right-column .search-button {
