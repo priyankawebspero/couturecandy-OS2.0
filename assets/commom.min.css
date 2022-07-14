@@ -1656,6 +1656,10 @@ aside.sidebar-container .sidebar-inner ul {
     margin-top: 0;
 }
 
+.blg-layout_all article.blog-post-loop .entry-content .entry-meta {
+    display: none;
+}
+
 .blg-layout_all article.blog-post-loop .entry-content h3.entry-title a {
     color: #000;
 }
