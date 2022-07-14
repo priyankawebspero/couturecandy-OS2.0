@@ -1,4 +1,6 @@
-{{ 'product.min.css' | asset_url | stylesheet_tag }}
+<link rel="preload" href="{{ 'product.min.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
+{%- include 'space_check_variant' -%}         
+<link rel="preload stylesheet" type="text/css" href="{{ 'cloudzoom.css' | asset_url }}" />
 {% capture hidden_page_unless_authorized %}
 <!-- spurit_po-added -->
 {% include 'spurit_po-product-snippet' %}
