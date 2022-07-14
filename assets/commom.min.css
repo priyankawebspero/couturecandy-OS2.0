@@ -1641,8 +1641,15 @@ aside.sidebar-container .sidebar-inner ul {
 
 .blg-layout_all article.blog-post-loop .entry-header .entry-thumbnail .post-img-wrapp {
     width: 100%;
+    border: 1px solid #ccc;
+    border-bottom: none;
 }
 
+.blg-layout_all article.blog-post-loop .entry-content {
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 15px 20px 20px 20px;
+}
 
 @media only screen and (min-width:768px){
   
