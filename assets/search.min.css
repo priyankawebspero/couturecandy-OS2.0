@@ -815,7 +815,9 @@ display:none;
     position: relative;
     top: 2px;
 }
-
+.boost-pfs-search-result-toolbar {
+    border: none !important;
+}
 
 
 @media only screen and (max-width:1550px){
