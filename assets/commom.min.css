@@ -1693,6 +1693,10 @@ aside.sidebar-container .sidebar-inner ul {
 
 }
 
+.blog_gl_pagination {
+    margin-top: 20px;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
