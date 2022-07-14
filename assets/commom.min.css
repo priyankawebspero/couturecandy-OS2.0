@@ -3689,6 +3689,14 @@ div#shopify-section-template--14532934697043__16539999234cb01da9 {
     width: 750px;
 }
   
+.container.wishlist_page_cs .wishlist_table tbody tr td.product-price {
+    white-space: nowrap;
+}
+  
+.container.wishlist_page_cs .wishlist_table tbody tr td.product-add-to-cart a {
+    white-space: nowrap;
+}
+  
 }
 
 
