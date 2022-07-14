@@ -882,7 +882,7 @@ display:none;
   
 }
 
-@media only screen and (max-width:1199px) and (min-width:1000px){
+@media only screen and (max-width:1199px) and (min-width:992px){
   
 .bottom.buttons .btn a {
     padding: 13px 10px;
@@ -891,6 +891,16 @@ display:none;
   
 .bottom.buttons {
     padding: 40px 10px;
+}
+  
+.boost-pfs-filter-default-toolbar .boost-pfs-filter-tree-desktop-button>button {
+    min-height: 35px;
+    padding: 8px 15px 8px 15px;
+  font-size: 14px !important;
+}
+  
+.boost-pfs-filter-default-toolbar .boost-pfs-filter-tree-desktop-button>button .boost-pfs-filter-tree-desktop-button-label {
+    padding-left: 29px;
 }
   
   
