@@ -2859,6 +2859,10 @@ body.template-page .main-page-wrapper .container {
     width: calc(50% - 22px);
     margin: 11px 10px;
 }
+.container.all_blogs_inner {
+    padding-right: 20px;
+    padding-left: 20px;
+}
   
 }
 
