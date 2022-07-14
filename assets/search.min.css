@@ -816,9 +816,7 @@ display:none;
     top: 2px;
 }
 
-.boost-pfs-filter-tree-open-body header.main-header {
-    z-index: 1 !important;
-}
+
 
 @media only screen and (max-width:1550px){
   
@@ -1028,6 +1026,10 @@ display:none;
 }
 
 @media only screen and (max-width:767px){
+  
+  .boost-pfs-filter-tree-open-body header.main-header {
+    z-index: 1 !important;
+}
   
   .boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default {
     padding-top: 0;
