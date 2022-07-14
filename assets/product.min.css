@@ -1007,6 +1007,10 @@ div#cover {
     color: #fff;
 }
 
+.summary-inner .callback {
+    margin-bottom: 10px;
+}
+
 @media only screen and (min-width:768px){
 
 div#ProdDetailInfomobile {
