@@ -1017,8 +1017,7 @@ div#shopify-section-template--14532934697043__1655293959d5ab1c6c .title:after {
     display: none;
 }
 .breadcrumbs ol li:last-child a {
-   font-family: 'product_sans_mediumregular';
-    color: #000;
+    color: #4c4c4c;
 }
 
 header.main-header .wg-drop.country-selector .wgcurrent a {
