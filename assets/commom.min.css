@@ -1804,6 +1804,7 @@ aside.sidebar-container .sidebar-inner ul {
 
 .footer-column .textwidget form input[type="submit"] {
     border-radius: 0 5px 5px 0px;
+    font-family: 'product_sans_mediumregular';
 }
 
 @media only screen and (min-width:768px){
