@@ -1013,6 +1013,8 @@ div#cover {
 
 .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
     font-size: 0;
+    height: 56px;
+    line-height: 56px;
 }
 
 .single-product-content .cart .quantity {
