@@ -1831,11 +1831,12 @@ aside.sidebar-container .sidebar-inner ul {
 
 .tble {
     display: block;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
 .tble table {
     margin-bottom: 0;
+  width:100%;
 }
 
 @media only screen and (min-width:768px){
