@@ -1794,7 +1794,7 @@ aside.sidebar-container .sidebar-inner ul {
     font-size: 13px;
 }
 
-.basel-navigation .menu>li.menu-item-design-default .sub-menu-dropdown {
+.basel-navigation .menu li .sub-menu-dropdown {
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
 }
 
