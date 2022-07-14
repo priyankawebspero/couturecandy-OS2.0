@@ -1523,6 +1523,10 @@ form.shopify-cart-form {
 
 /*---------------page-css-start------------*/
 
+.template-page .site-content strong {
+    font-weight: 500;
+}
+
 body.template-page .main-page-wrapper {
     margin-top: 0;
     margin-bottom: 50px;
