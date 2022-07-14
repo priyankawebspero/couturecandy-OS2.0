@@ -1018,8 +1018,7 @@ html[lang="es"] #shopify-section-template--14532934697043__1654005036571929f8 .s
     padding-left: 0;
     padding-right: 0;
 }
-@media only screen and (min-width:1200px){
-  
+@media only screen and (min-width:1200px){  
 .gl_col-lg-1, .gl_col-lg-10, .gl_col-lg-11, .gl_col-lg-12, .gl_col-lg-2, .gl_col-lg-3, .gl_col-lg-4, .gl_col-lg-5, .gl_col-lg-6, .gl_col-lg-7, .gl_col-lg-8, .gl_col-lg-9 {
     float: left;
 }
