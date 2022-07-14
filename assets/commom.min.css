@@ -1905,6 +1905,12 @@ aside.sidebar-container .sidebar-inner ul {
     font-family: 'product_sans_mediumregular';
 }
 
+.scrollToTop:focus, .scrollToTop:hover {
+    background:#e94949;
+    border-color: #e94949;
+  
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
