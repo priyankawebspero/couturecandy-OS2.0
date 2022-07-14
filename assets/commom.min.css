@@ -1813,6 +1813,22 @@ aside.sidebar-container .sidebar-inner ul {
     font-size: 16px;
 }
 
+
+.shopify-challenge__container {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    width: 100%;
+}
+
+.shopify-challenge__container .shopify-challenge__message {
+    font-size: 18px;
+    color: #000;
+}
+
 /*-----pages-table-layout------------*/
 
 .tble table tr th {
