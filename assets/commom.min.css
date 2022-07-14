@@ -1822,7 +1822,10 @@ aside.sidebar-container .sidebar-inner ul {
     font-family: 'product_sans_mediumregular';
     line-height: 1;
     padding: 10px;
+    background: #f5f5f5;
 }
+
+
 .tble table tr td {
     border: 1px solid #ccc;
     padding: 10px;
