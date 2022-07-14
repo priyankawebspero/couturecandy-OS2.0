@@ -1533,6 +1533,14 @@ form.shopify-cart-form {
     font-weight: 500;
 }
 
+.template-page .site-content h1 strong {
+    font-weight: 500;
+}
+.template-page .site-content h2 strong {
+    font-weight: 500;
+}
+
+
 body.template-page .main-page-wrapper {
     margin-top: 0;
     margin-bottom: 50px;
