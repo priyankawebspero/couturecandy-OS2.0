@@ -1522,7 +1522,16 @@ form.shopify-cart-form {
 
 
 /*---------------page-css-start------------*/
+.template-page .site-content h4 strong {
+    font-weight: 500;
+}
 
+.template-page .site-content h5 strong {
+    font-weight: 500;
+}
+.template-page .site-content h3 strong {
+    font-weight: 500;
+}
 
 body.template-page .main-page-wrapper {
     margin-top: 0;
