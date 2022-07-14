@@ -1734,6 +1734,19 @@ aside.sidebar-container .sidebar-inner ul {
   list-style:none;
 }
 
+.template-page .site-content li:before {
+    content: "";
+    width: 15px;
+    height: 2px;
+    background: #000;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 0;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
