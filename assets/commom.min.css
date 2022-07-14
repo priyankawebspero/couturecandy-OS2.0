@@ -1747,6 +1747,11 @@ aside.sidebar-container .sidebar-inner ul {
     left: 0;
 }
 
+.template-page .site-content h3 {
+    font-size: 26px;
+    color: #000;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
