@@ -1924,6 +1924,42 @@ aside.sidebar-container .sidebar-inner ul {
     color: #e94949;
 }
 
+#login-wishlist.popup-added_to_cart p {
+    font-family: 'product_sans_mediumregular';
+    font-weight: normal;
+}
+
+#login-wishlist.popup-added_to_cart a.btn.close-popup {
+    background: #000;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    padding: 0 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    max-width: 250px;
+    width: 100%;
+}
+
+#login-wishlist.popup-added_to_cart a.btn.view-cart {
+    padding: 0 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    max-width: 250px;
+    width: 100%;
+}
+
+#login-wishlist.popup-added_to_cart a.btn.close-popup:hover, #login-wishlist.popup-added_to_cart a.btn.close-popup:focus{
+background-color: #e94949;
+    color: #fff;
+}
+
+#login-wishlist.popup-added_to_cart a.btn.view-cart:hover, #login-wishlist.popup-added_to_cart a.btn.view-cart:focus
+
+{background:#000;color:#fff;
+border-color: #000;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
