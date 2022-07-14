@@ -1013,8 +1013,6 @@ div#cover {
 
 .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
     font-size: 0;
-    height: 56px;
-    line-height: 56px;
 }
 
 
@@ -1024,6 +1022,11 @@ div#cover {
 }
 
 @media only screen and (min-width:768px){
+  
+ .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
+    height: 56px;
+    line-height: 56px;
+}
 
 div#ProdDetailInfomobile {
     display: none;
