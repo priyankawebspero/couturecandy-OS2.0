@@ -1875,6 +1875,10 @@ aside.sidebar-container .sidebar-inner ul {
     display: none;
 }
 
+.wishlist_page_cs .shopify table.wishlist_table thead th {
+    border-top: none;
+}
+
 
 
 @media only screen and (min-width:768px){
