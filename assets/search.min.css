@@ -819,6 +819,11 @@ display:none;
     border: none !important;
 }
 
+.boost-pfs-search-container h1.boost-pfs-search-result-header {
+    font-size: 35px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
 
 @media only screen and (max-width:1550px){
   
