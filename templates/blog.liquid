@@ -129,13 +129,14 @@
 	                 {%- endif -%}
 						{%- endfor -%}
 					{%- if settings.blog_design == '4' or settings.blog_design == '5' -%}</div>{%- endif -%}
+                    </div>
 					{%- if paginate.pages > 1 -%}
 						{%- if settings.blog_design != '4' or settings.blog_design != '5' -%}<div class="clear"></div>{%- endif -%}
 						<div class="basel-pagination blog_gl_pagination ">
                       {%- include 'pagination',blog_ajax:true -%}
                   </div>
 					{%- endif -%}
-                  </div>
+                  
 				</div><!-- .site-content -->
 			</div>
 		</div>
