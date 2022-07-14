@@ -1075,7 +1075,7 @@ border-color: #000;
     list-style: none;
     margin: 0;
     float: left;
-  
+    flex: 1 1 auto;
 }
 
 .product-image-summary .row #popup .modal-content .right-side #defaultSizeChart .ChartSizeBlock #Tabs_New li a {
