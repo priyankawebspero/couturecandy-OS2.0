@@ -1035,7 +1035,8 @@ div#ProdDetailInfomobile {
     display: none;
 }
   
-.single-product-content .entry-summary .yith-wcwl-add-to-wishlist a:hover {
+.single-product-content .entry-summary .yith-wcwl-add-to-wishlist a:hover, 
+  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a:focus{
     background: #000;
 }
 
