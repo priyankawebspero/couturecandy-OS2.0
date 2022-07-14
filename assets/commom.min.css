@@ -3436,6 +3436,24 @@ div#shopify-section-template--14532934697043__16539999234cb01da9 {
     padding-bottom: 20px;
 }
   
+.container.all_blogs_inner {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+  
+  
+.all_blogs_inner .inner-title span {
+    font-size: 30px;
+}
+  
+.blg-layout_all article.blog-post-loop .entry-content p {
+    font-size: 14px;
+}
+  
+.blg-layout_all article.blog-post-loop .entry-content h3.entry-title {
+    margin-bottom: 15px;
+}
+  
 }
 
 
@@ -3449,6 +3467,25 @@ div#shopify-section-template--14532934697043__16539999234cb01da9 {
 .right-column .wishlist-info-widget {
     margin-left: 5px;
     margin-right: 20px;
+}
+  
+}
+
+@media only screen and (max-width:575px){
+  
+.blg-layout_all article.blog-post-loop {
+    width: 100%;
+    margin: 11px 0px;
+}
+  
+.blg-layout_all {
+    margin: 0;
+}
+ 
+.blg-layout_all article.blog-post-loop .entry-content .read-more-section .btn {
+    min-width: 100px;
+    font-size: 14px;
+    padding: 8px 10px;
 }
   
 }
