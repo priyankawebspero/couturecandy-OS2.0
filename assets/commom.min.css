@@ -1586,10 +1586,17 @@ aside.sidebar-container .sidebar-inner ul {
 
 /*---blog-page-design-----*/
 
-.template-blog .main-page-wrapper .container {
+.container.all_blogs_inner {
     max-width: 100%;
-    padding: 0 50px;
+    padding-left:50px;
+  padding-left:50px;
+  padding-top: 30px !important;
 }
+
+.blogs-banner img {
+    width: 100%;
+}
+
 
 
 @media only screen and (min-width:768px){
