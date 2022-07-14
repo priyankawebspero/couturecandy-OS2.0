@@ -1877,6 +1877,8 @@ aside.sidebar-container .sidebar-inner ul {
 
 .wishlist_page_cs .shopify table.wishlist_table thead th {
     border-top: none;
+  background:#000;
+  color:#fff;
 }
 .container.wishlist_page_cs .wishlist_table tbody tr {
     border: 1px solid #000;
