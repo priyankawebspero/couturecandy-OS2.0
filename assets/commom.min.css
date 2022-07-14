@@ -1613,6 +1613,16 @@ aside.sidebar-container .sidebar-inner ul {
     top: 50%;
 }
 
+.all_blogs_inner .inner-title span {
+    position: relative;
+    z-index: 2;
+    padding: 5px 10px;
+    background: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color: #000;
+    line-height: 1;
+}
 
 @media only screen and (min-width:768px){
   
