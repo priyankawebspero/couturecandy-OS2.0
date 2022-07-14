@@ -1829,6 +1829,11 @@ aside.sidebar-container .sidebar-inner ul {
     color: #000;
 }
 
+.tble {
+    display: block;
+    overflow-x: scroll;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
@@ -3576,6 +3581,10 @@ div#shopify-section-template--14532934697043__16539999234cb01da9 {
   
 .container.all_blogs_inner {
     padding-bottom: 0 !important;
+}
+  
+.tble table {
+    width: 767px;
 }
   
 }
