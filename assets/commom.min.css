@@ -1726,6 +1726,10 @@ section.brands-banner-section {
 .template-cart  .site-content {
     padding: 0 30px;
 }
+  
+body.template-page .main-page-wrapper .container {
+    padding: 0 30px;
+}
 
 }
 
@@ -2009,6 +2013,10 @@ p.newstext {
   
 .template-cart  .site-content {
     padding: 0 20px;
+}
+  
+aside.sidebar-container .sidebar-inner ul li h3 {
+    font-size: 14px;
 }
   
 }
