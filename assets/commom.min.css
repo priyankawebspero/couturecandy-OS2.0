@@ -1802,6 +1802,9 @@ aside.sidebar-container .sidebar-inner ul {
     box-shadow: 0 5px 10px rgba(0,0,0,0.15);
 }
 
+.footer-column .textwidget form input[type="submit"] {
+    border-radius: 0 5px 5px 0px;
+}
 
 @media only screen and (min-width:768px){
   
