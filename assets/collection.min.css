@@ -811,6 +811,11 @@ display:none;
     font-family: 'product_sans_mediumregular';
 }
 
+.boost-pfs-filter-toolbar-top-mobile-inner.boost-pfs-filter-toolbar-show-sort-by-mobile .boost-pfs-filter-tree-mobile-button button .applied-filter-items {
+    position: relative;
+    top: 2px;
+}
+
 @media only screen and (max-width:1550px){
   
   .boost-pfs-container-default-fullwidth {
