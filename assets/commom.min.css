@@ -2024,6 +2024,11 @@ html[lang="pt"] .main-header .wrapp-header ul#menu-main-navigation li {
     padding-top: 0 !important;
 }
   
+.blg-layout_all article.blog-post-loop {
+    width: calc(33.33% - 22px);
+    margin: 20px 10px;
+}
+  
   .top_bar_text_middle {
     font-size: 14px;
 }
