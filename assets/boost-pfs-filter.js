@@ -1130,6 +1130,7 @@ var boostPFSFilterConfig = {
     }
     
     Utils.sticky = function ($stickyElement, endElement, avoidElement) {
+      console.log($stickyElement, endElement, avoidElement);
         if ($stickyElement.attr('data-offset-top') == undefined) {
             var startPosData = $stickyElement.offset().top;
             $stickyElement.attr('data-offset-top', startPosData);
