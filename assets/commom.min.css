@@ -1555,15 +1555,6 @@ body.template-page .main-page-wrapper {
     margin-bottom: 50px;
 }
 
-.template-page .page-title {
-    margin-top: 0;
-    padding: 20px 0;
-    border-color: #000;
-}
-.template-page .page-title h1.entry-title {
-    font-size: 35px;
-}
-
 body.template-page .main-page-wrapper .container {
     width: 100%;
     max-width: 100%;
