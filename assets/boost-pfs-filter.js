@@ -1136,12 +1136,12 @@ var boostPFSFilterConfig = {
             $stickyElement.attr('data-offset-top', startPosData);
         }
 
+      	var startPos = $stickyElement.attr('data-offset-top');
         var setPosition = () => {
             var isVertical = $stickyElement.hasClass(Class.filterTreeVertical) || $stickyElement.find(Selector.filterTreeVertical).length > 0 ? true : false;
             var stickWidth = $stickyElement.outerWidth();
             var stickHeight = isVertical ? $stickyElement[0].scrollHeight : $stickyElement.outerHeight();
             var windowHeight = window.innerHeight;
-            var startPos = $stickyElement.attr('data-offset-top');
             var endPos = jQ(endElement).offset().top + jQ(endElement).outerHeight();
             var stickElementClass = ($stickyElement[0].classList[0] == 'boost-pfs-filter-tree' || $stickyElement[0].classList[0] == 'boost-pfs-filter-tree-h-wrapper') ? $stickyElement[0].classList[0] + '-stick-body' : 'boost-pfs-filter-tree-button-stick-wrapper-body';
             var productListTooShort = jQ(endElement).height() <= windowHeight + 100;
