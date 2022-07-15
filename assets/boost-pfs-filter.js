@@ -27,7 +27,7 @@ var boostPFSFilterConfig = {
     },
     selector: {
         otpButtons: '.boost-pfs-filter-product-item-image',
-      	endStickyDesktop: '.boost-pfs-filter-right-col',
+//       	endStickyDesktop: '.boost-pfs-filter-right-col',
       	avoidStickyHeader: '.wrapp-header, .header_middle_block, #shopify-section-announcement-bar, #shopify-section-header,.site-header--opening, .js-navigation, .js-mobile-header-wrapper, .mobile-nav-bar-wrapper, mobile_nav-fixed--true, .site-header--sticky, .site-header-wrapper .action-bar-wrapper',
     },
     label: {
