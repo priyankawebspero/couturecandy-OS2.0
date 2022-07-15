@@ -1205,6 +1205,10 @@ header.entry-header .entry-title {
     font-size: 35px;
 }
 
+.page-title {
+    border-bottom: 1px solid #000;
+}
+
 /*----cart-css-start------------*/
 
 
