@@ -374,7 +374,7 @@ window.criteo_q.push(
   <div class="boost-pfs-filter-tree boost-pfs-filter-tree-v" data-is-mobile id="boost-pfs-filter-tree"></div>
 
 {%- comment -%} TOOLBAR {%- endcomment -%}
-<div class="boost-pfs-filter-default-toolbar {% if enable_filter_tree_button_desktop and enable_filter_sticky_d  %} boost-pfs-filter-tree-desktop-button-sticky-wrapper {% endif %} {% if show_view_as_m == false %} boost-pfs-filter-toolbar-top-mobile-hide-view-as {% endif %} {% if show_product_count_m == false %} boost-pfs-filter-toolbar-top-mobile-hide-product-count {% endif %}">
+<div class="boost-pfs-filter-default-toolbar {% if show_view_as_m == false %} boost-pfs-filter-toolbar-top-mobile-hide-view-as {% endif %} {% if show_product_count_m == false %} boost-pfs-filter-toolbar-top-mobile-hide-product-count {% endif %}">
   {% if show_view_as == true or show_product_count == true or show_sort_by == true or show_view_as_m == true or show_product_count_m == true %}
     <div class="boost-pfs-container-default-{{ layout_type }} boost-pfs-filter-default-toolbar-inner">
       {% if show_view_as == true or show_view_as_m == true or enable_filter_tree_button_desktop == true %}
