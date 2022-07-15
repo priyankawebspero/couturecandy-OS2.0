@@ -173,7 +173,7 @@
                 "option2": {{ variant.option2 | json }},
                 "option3": {{ variant.option3 | json }},
                 "available": {{ variant.available | json }},
-                "image": {{ variant | image_url | json }}
+                "image": {{ variant | img_url | json }}
               }{%- if forloop.last != true -%},{%- endif -%}
             {% endfor %}
             ]
