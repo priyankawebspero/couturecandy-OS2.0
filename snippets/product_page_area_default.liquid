@@ -87,6 +87,23 @@
         <div class="row">
            <div class="product-image-summary {{class_gl}}">
               <div class="row">
+                 <div id="popup" class="modal">
+                          <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <div class="Mobileposition"></div>
+                            <div class="left-side">
+                              <h4 style="text-align: left;">How to measure your size? Watch Below:</h4>                                          
+                              <div class="youtube-player" data-id="VdTUuVeGERk"></div>
+                              <div class="sizechart-left-des">
+                                <p>Measuring your correct and current dress size for a dress purchase is the single most important step in finding and keeping the perfect dress.</p><p>If after watching our tutorial you have any question regarding your size or the fit of a dress, please contact us at 855-700-4239.</p><p>After determining your unique measurements, refer to the dress designer's size chart. Sizes are often different between designers. Size 2 in Jovani, can easily be a size 0 in Alyce! It is extremely important to utilize each designer's size chart, when purchasing multiple dresses!</p><p>If you are between sizes ALWAYS go a size up as a dress can be altered smaller, but not larger.</p>
+                                <img src="https://cdn.shopify.com/s/files/1/0144/7018/5017/files/size-silhoutte.png" alt="image">                                      
+                              </div>
+                            </div>
+                            <div class="right-side">
+                              {%- include 'product_size_chart' -%}
+                            </div>
+                          </div><!--modal-contentCLOSE-->  
+                        </div><!--SizeChartPopupCLOSE-->
                  {%- if product.images.size > 0 -%}
                 <div class="{{class_images}} product-images">
                     {%- include 'product_labels' -%}
@@ -1292,24 +1309,7 @@
                              </div>
                              {%- if settings.product_img_trust_seal and settings.img_trust_seal != blank -%}{%- include 'product_img_trust_seal',padding_class:'gl_mb_20' -%}{%- endif -%}
                           {%- if product.has_only_default_variant == false or linklists[product.handle].links.size == 0 -%}</div>{%- endif-%}      
-                       </div>
-                        <div id="popup" class="modal">
-                          <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <div class="Mobileposition"></div>
-                            <div class="left-side">
-                              <h4 style="text-align: left;">How to measure your size? Watch Below:</h4>                                          
-                              <div class="youtube-player" data-id="VdTUuVeGERk"></div>
-                              <div class="sizechart-left-des">
-                                <p>Measuring your correct and current dress size for a dress purchase is the single most important step in finding and keeping the perfect dress.</p><p>If after watching our tutorial you have any question regarding your size or the fit of a dress, please contact us at 855-700-4239.</p><p>After determining your unique measurements, refer to the dress designer's size chart. Sizes are often different between designers. Size 2 in Jovani, can easily be a size 0 in Alyce! It is extremely important to utilize each designer's size chart, when purchasing multiple dresses!</p><p>If you are between sizes ALWAYS go a size up as a dress can be altered smaller, but not larger.</p>
-                                <img src="https://cdn.shopify.com/s/files/1/0144/7018/5017/files/size-silhoutte.png" alt="image">                                      
-                              </div>
-                            </div>
-                            <div class="right-side">
-                              {%- include 'product_size_chart' -%}
-                            </div>
-                          </div><!--modal-contentCLOSE-->  
-                        </div><!--SizeChartPopupCLOSE-->
+                       </div>                       
                     </div>
                  </div><!-- .summary --> 
               </div>  
