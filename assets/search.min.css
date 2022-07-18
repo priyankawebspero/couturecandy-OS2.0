@@ -1560,4 +1560,9 @@ display:none;
     text-align: center;
 }
   
+  .boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default {
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+  
 }
