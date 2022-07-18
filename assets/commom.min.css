@@ -2030,7 +2030,24 @@ border-color: #000 !important;opacity: 1;
 #contact-us .gl_row.spb_row.col-sm-9 form .field.submit {
     margin-bottom: 0;
 }
+#contact-us .gl_row.spb_row.col-sm-9 .gl_column-inner .hours {
+    background: #f8f8f8;
+    text-align: center;
+    padding: 25px;
+    border-radius: 7px;
+}
 
+#contact-us .gl_row.spb_row.col-sm-9 .gl_column-inner .hours span {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px !important;
+    color: #000;
+    font-weight: 600;
+}
+
+#contact-us .gl_row.spb_row.col-sm-9 .gl_column-inner .hours p strong {
+    font-weight: normal;
+    line-height: 1 !important;
+}
 
 @media only screen and (min-width:768px){
   
