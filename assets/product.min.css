@@ -1209,6 +1209,14 @@ border-color: #000;
     text-decoration: none !important;
 }
 
+.summary-inner .callback {
+    display: none;
+}
+
+.single-product-content .quantity_test .fake_counter_real_time {
+    margin-bottom: 20px;
+}
+
 @media only screen and (min-width:768px){
   
  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
