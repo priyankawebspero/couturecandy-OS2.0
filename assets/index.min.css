@@ -568,6 +568,15 @@ html[lang="es"] #shopify-section-template--14532934697043__1654005036571929f8 .s
  
 }
 
+@media only screen and (max-width:1440px) and (min-width:992px){
+  
+ div#shopify-section-template--14532934697043__1654005036571929f8 {
+    padding: 40px 20px 0px 20px;
+}
+  
+  
+}
+
 @media only screen and (max-width:1199px){
   
   .product-grid-item .product-element-top>a{
