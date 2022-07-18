@@ -1173,7 +1173,7 @@ var boostPFSFilterConfig = {
             console.log(jQ(endElement).position().top, 'jQ(endElement).position().top');
 
             // Initial Position
-            if (window.scrollY < startPos || endPos - startPos <= stickHeight || productListTooShort) {
+            if (window.scrollY < startPos || endPos - startPos <= stickHeight) {
                 $stickyElement.removeClass('boost-pfs-filter-stick');
                 $stickyElement.removeClass('boost-pfs-filter-absolute');
                 jQ('body').removeClass('boost-pfs-filter-stick-body');
