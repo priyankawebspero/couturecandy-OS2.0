@@ -100,9 +100,12 @@ div#popup {
 .single-product-content .price {
     color: #000;
     font-size: 32px;
-    margin: 12px 0 20px !important;
+    margin: 12px 0 0px !important;
     display: inline-block;
     width: 100%;
+}
+.single-product-content .price del {
+    font-size: 22px;
 }
 
 .single-product-content .sezzle-shopify-info-button .sezzle-checkout-button-wrapper.sezzle-left {
