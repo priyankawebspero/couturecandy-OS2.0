@@ -2066,6 +2066,7 @@ border-color: #000 !important;opacity: 1;
 #contact-us .gl_row.spb_row.col-sm-9 .gl_column-inner .addrs-ct-new {
     background: #f8f8f8;
     padding: 25px;
+    margin-bottom: 25px;
 }
 
 #contact-us .gl_row.spb_row.col-sm-9 .gl_column-inner .addrs-ct-new p {
