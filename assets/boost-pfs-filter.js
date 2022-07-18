@@ -1130,13 +1130,14 @@ var boostPFSFilterConfig = {
     }
     
     Utils.sticky = function ($stickyElement, endElement, avoidElement) {
-      console.log($stickyElement, endElement, avoidElement);
         if ($stickyElement.attr('data-offset-top') == undefined) {
             var startPosData = $stickyElement.offset().top;
             $stickyElement.attr('data-offset-top', startPosData);
         }
 
         var startPos = $stickyElement.attr('data-offset-top');
+        console.log(window.scrollY + stickHeight, 'window.scrollY + stickHeight');
+        console.log(endPos, 'endPos');
         var setPosition = () => {
             var isVertical = $stickyElement.hasClass(Class.filterTreeVertical) || $stickyElement.find(Selector.filterTreeVertical).length > 0 ? true : false;
             var stickWidth = $stickyElement.outerWidth();
