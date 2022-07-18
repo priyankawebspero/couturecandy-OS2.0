@@ -1176,8 +1176,9 @@ border-color: #000;
     text-transform: capitalize;
     font-family: 'product_sans_mediumregular';
     font-size: 15px;
-    padding: 10px;
+    padding: 7px;
     font-weight: normal;
+    border: 1px solid #998;
 }
 
 @media only screen and (min-width:768px){
