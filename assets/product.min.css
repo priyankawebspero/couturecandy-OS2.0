@@ -1901,5 +1901,9 @@ body.template-product  {
     font-size: 22px;
     text-transform: inherit;
 }
+  
+.product-grid-item .product-element-top>a {
+    padding-bottom: 112%;
+}
 
 }
