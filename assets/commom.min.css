@@ -3846,6 +3846,11 @@ header.main-header .wg-drop.country-selector .wgcurrent a {
     padding-right: 30px;
 }
   
+  
+.product-grid-item .product-element-top>a {
+    padding-bottom: 150%;
+}
+  
 }
 
 
