@@ -1182,9 +1182,9 @@ border-color: #000;
 }
 
 .SizeCharttable.sct2 tbody:first-child tr:first-child > td {
-    background-color: #fff;
+    background-color: #fff !important;
     color: #000!important;
-   font-family: 'google_sansregular';
+    font-family: 'google_sansregular' !important;
 }
 
 @media only screen and (min-width:768px){
