@@ -2049,6 +2049,13 @@ border-color: #000 !important;opacity: 1;
     line-height: 1 !important;
 }
 
+#contact-us .gl_row.spb_row.col-sm-9 .gl_column-inner .hours p {
+    margin-bottom: 0;
+    line-height: 1.5 !important;
+    /* font-family: 'product_sans_mediumregular'; */
+    font-size: 17px !important;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
