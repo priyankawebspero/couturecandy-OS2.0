@@ -124,6 +124,10 @@ div#popup {
     font-weight: normal;
 }
 
+.single-product-content .Value>span {
+    display: none !important;
+}
+
 span#save_percentage span {
     color: #000;
 }
