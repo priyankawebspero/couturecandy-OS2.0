@@ -2082,6 +2082,12 @@ border-color: #000 !important;opacity: 1;
     display: block;
 }
 
+.addrs-ct-new p {
+    margin-bottom: 10px !important;
+    position: relative;
+    padding-left: 35px;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
