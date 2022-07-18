@@ -2056,6 +2056,18 @@ border-color: #000 !important;opacity: 1;
     font-size: 17px !important;
 }
 
+#contact-us .gl_row.spb_row.col-sm-9 .gl_column-inner .hours + .gl_row .gl_column-inner {
+    padding: 0;
+}
+
+#contact-us .gl_row.spb_row.col-sm-9 .spb_column.gl_column_container.gl_col-sm-6:last-child {
+    padding-left: 35px;
+}
+#contact-us .gl_row.spb_row.col-sm-9 .gl_column-inner .hours + .gl_row .spb_wrapper h3 {
+    background: #f8f8f8;
+    padding: 25px;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
