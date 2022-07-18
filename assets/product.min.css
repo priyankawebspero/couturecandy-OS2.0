@@ -1147,6 +1147,10 @@ border-color: #000;
     padding-top: 0;
 }
 
+.boost-pfs-filter-default-toolbar .boost-pfs-container-default-fullwidth.boost-pfs-filter-default-toolbar-inner .boost-pfs-filter-toolbar-item.boost-pfs-filter-toolbar-count.boost-pfs-filter-toolbar-count-d {
+    display: none !important;
+}
+
 @media only screen and (min-width:768px){
   
  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
