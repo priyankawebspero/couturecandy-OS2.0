@@ -27,11 +27,11 @@ var boostPFSFilterConfig = {
     },
     selector: {
         otpButtons: '.boost-pfs-filter-product-item-image',
-      	endStickyDesktop: '.boost-pfs-filter-right-col .toolbar_count',
-      	avoidStickyHeader: '.wrapp-header, .header_middle_block, #shopify-section-announcement-bar, #shopify-section-header,.site-header--opening, .js-navigation, .js-mobile-header-wrapper, .mobile-nav-bar-wrapper, mobile_nav-fixed--true, .site-header--sticky, .site-header-wrapper .action-bar-wrapper',
+        endStickyDesktop: '.boost-pfs-filter-right-col .toolbar_count',
+        avoidStickyHeader: '.wrapp-header, .header_middle_block, #shopify-section-announcement-bar, #shopify-section-header,.site-header--opening, .js-navigation, .js-mobile-header-wrapper, .mobile-nav-bar-wrapper, mobile_nav-fixed--true, .site-header--sticky, .site-header-wrapper .action-bar-wrapper',
     },
     label: {
-      	refineDesktop: 'Show filter'
+        refineDesktop: 'Show filter'
     }
 };
 
@@ -378,7 +378,7 @@ var boostPFSFilterConfig = {
                 var optionNames = boostPFSThemeConfig.custom["swatch_by_" + swatchApplyFor[i] + "_apply"].split(',').filter(onlyUnique);
                 var swatchShape = boostPFSThemeConfig.custom["swatch_by_" + swatchApplyFor[i] + "_shape"];
                 // var swatchType = swatchApplyFor[i];
-              	var swatchType = 'img';
+                var swatchType = 'img';
                 for (var j = 0; j < optionNames.length; j++) {
                     var optionName = optionNames[j].trim();
                     var filterSwatchTitle = optionName,
@@ -874,7 +874,7 @@ var boostPFSFilterConfig = {
             jQ('.boost-pfs-filter-mobile-style1').addClass('boost-pfs-filter-mobile-style1-sticky-bottom');
         }
       
-      	if (!Utils.isMobile() && boostPFSConfig.settings.general.filterTreeVerticalStyle == 'style-expand' && !jQ('body').hasClass(Class.filterTreeOpenBody)) jQ('.boost-pfs-filter-tree-desktop-button button').trigger('click');
+        if (!Utils.isMobile() && boostPFSConfig.settings.general.filterTreeVerticalStyle == 'style-expand' && !jQ('body').hasClass(Class.filterTreeOpenBody)) jQ('.boost-pfs-filter-tree-desktop-button button').trigger('click');
 
     };
 
@@ -1136,13 +1136,13 @@ var boostPFSFilterConfig = {
             $stickyElement.attr('data-offset-top', startPosData);
         }
 
-      	var startPos = $stickyElement.attr('data-offset-top');
+        var startPos = $stickyElement.attr('data-offset-top');
         var setPosition = () => {
             var isVertical = $stickyElement.hasClass(Class.filterTreeVertical) || $stickyElement.find(Selector.filterTreeVertical).length > 0 ? true : false;
             var stickWidth = $stickyElement.outerWidth();
             var stickHeight = isVertical ? $stickyElement[0].scrollHeight : $stickyElement.outerHeight();
             var windowHeight = window.innerHeight;
-            var endPos = jQ(endElement).offset().top + jQ(endElement).outerHeight();
+            var endPos = jQ(endElement).position().top + jQ(endElement).outerHeight();
             var stickElementClass = ($stickyElement[0].classList[0] == 'boost-pfs-filter-tree' || $stickyElement[0].classList[0] == 'boost-pfs-filter-tree-h-wrapper') ? $stickyElement[0].classList[0] + '-stick-body' : 'boost-pfs-filter-tree-button-stick-wrapper-body';
             var productListTooShort = jQ(endElement).height() <= windowHeight + 100;
 
@@ -1167,7 +1167,6 @@ var boostPFSFilterConfig = {
                 })
             }
             // Initial Position
-          console.log(window.scrollY, startPos, endPos, stickHeight);
             if (window.scrollY < startPos || endPos - startPos <= stickHeight || productListTooShort) {
                 $stickyElement.removeClass('boost-pfs-filter-stick');
                 $stickyElement.removeClass('boost-pfs-filter-absolute');
