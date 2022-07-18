@@ -520,6 +520,14 @@ html[lang="es"] #shopify-section-template--14532934697043__1654005036571929f8 .s
 html[lang="es"] #shopify-section-template--14532934697043__1654005036571929f8 .spb_column.gl_column_container.gl_col-md-6.gl_col-lg-6:last-child .gl_column-inner .spb_wrapper .gl_col-md-12.gl_col-lg-12 .wrapper-content-baner .banner-inner h5 {
     font-size: 1.5vw;
 }
+  
+#shopify-section-template--14532934697043__1654005036571929f8 .spb_column.gl_column_container.gl_col-md-6.gl_col-lg-6:first-child {
+    padding-right: 0;
+}
+  
+#shopify-section-template--14532934697043__1654005036571929f8 .spb_column.gl_column_container.gl_col-md-6.gl_col-lg-6:last-child {
+    padding-left: 0;
+}
 
 }
 
