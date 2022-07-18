@@ -843,6 +843,31 @@ display:none;
 
 
 
+
+
+
+.boost-pfs-filter-tree-vertical-style-expand:not(.boost-pfs-filter-tree-horizontal-style-expand).boost-pfs-filter-tree-open-body .boost-pfs-filter-left-col::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #e5e5e5;
+}
+
+.boost-pfs-filter-tree-vertical-style-expand:not(.boost-pfs-filter-tree-horizontal-style-expand).boost-pfs-filter-tree-open-body .boost-pfs-filter-left-col::-webkit-scrollbar
+{   border-radius: 10px;
+	width: 8px;
+	background-color: #e5e5e5;
+}
+
+.boost-pfs-filter-tree-vertical-style-expand:not(.boost-pfs-filter-tree-horizontal-style-expand).boost-pfs-filter-tree-open-body .boost-pfs-filter-left-col::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	background-color: #e94949;
+}
+
+
+
+
+
 @media only screen and (max-width:1550px){
   
   .boost-pfs-container-default-fullwidth {
