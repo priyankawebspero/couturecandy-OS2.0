@@ -27,7 +27,7 @@ var boostPFSFilterConfig = {
     },
     selector: {
         otpButtons: '.boost-pfs-filter-product-item-image',
-        endStickyDesktop: '.boost-pfs-filter-right-col .toolbar_count',
+        //endStickyDesktop: '.boost-pfs-filter-right-col .toolbar_count',
         avoidStickyHeader: '.wrapp-header, .header_middle_block, #shopify-section-announcement-bar, #shopify-section-header,.site-header--opening, .js-navigation, .js-mobile-header-wrapper, .mobile-nav-bar-wrapper, mobile_nav-fixed--true, .site-header--sticky, .site-header-wrapper .action-bar-wrapper',
     },
     label: {
@@ -1169,6 +1169,8 @@ var boostPFSFilterConfig = {
             console.log($stickyElement[0].scrollHeight, '$stickyElement[0].scrollHeight');
             console.log(window.scrollY + stickHeight, 'window.scrollY + stickHeight');
             console.log(endPos, 'endPos');
+            console.log(jQ(endElement).position().top, 'jQ(endElement).position().top');
+            console.log(jQ(endElement).position().top, 'jQ(endElement).position().top');
 
             // Initial Position
             if (window.scrollY < startPos || endPos - startPos <= stickHeight || productListTooShort) {
