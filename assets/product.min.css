@@ -1152,6 +1152,17 @@ border-color: #000;
     font-size: 16px;
 }
 
+.single-product-content .product-image-summary .modal .modal-content .right-side .SizeChart .SizeCharttable {
+    margin-bottom: 30px;
+}
+
+.single-product-content .product-image-summary .modal .modal-content .right-side .SizeChart h3.SizeCharttable {
+    background: none;
+    font-family: 'google_sansregular';
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
 @media only screen and (min-width:768px){
   
  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
