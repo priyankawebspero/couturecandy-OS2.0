@@ -1204,6 +1204,8 @@ border-color: #000;
     /* font-family: 'google_sansregular' !important; */
 }
 
+
+
 @media only screen and (min-width:768px){
   
  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
@@ -1984,6 +1986,10 @@ body.template-product  {
   
 .main-page-wrapper {
     overflow-x: hidden;
+}
+  
+  .single-product-content .product-image-summary .modal .modal-content {
+    width: 100%;
 }
   
 }
