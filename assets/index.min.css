@@ -696,6 +696,16 @@ div#shopify-section-template--14532934697043__1654005036571929f8 .featured-colle
     padding-left: 0;
 }
   
+#shopify-section-template--14532934697043__1653916013b1f6c860 .spb__column.gl_column_container.gl_col-sm-12>.gl_column-inner {
+    padding-left: 0;
+    padding-right: 0;
+}
+  
+#shopify-section-template--14532934697043__16541439641d011f7d .spb__column.gl_column_container.gl_col-sm-12>.gl_column-inner {
+    padding-left: 0;
+    padding-right: 0;
+}
+  
 }
 
 @media only screen and (max-width:767px){
