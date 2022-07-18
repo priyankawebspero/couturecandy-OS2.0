@@ -2080,6 +2080,7 @@ border-color: #000 !important;opacity: 1;
     font-weight: normal;
     font-size: 17px;
     display: block;
+    line-height: 1.4;
 }
 
 .addrs-ct-new p {
@@ -2096,6 +2097,19 @@ border-color: #000 !important;opacity: 1;
     top: 0;
     font-size: 22px;
     line-height: 1.5;
+}
+
+.addrs-ct-new p.ct-ph-nbr:before {
+    content: "\e048";
+    font-family: 'simple-line-icons';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 22px;
+    line-height: 1.5;
+    transform: rotate(-90deg);
+   -webkit-transform: rotate(-90deg);
+   -moz-transform: rotate(-90deg);
 }
 
 @media only screen and (min-width:768px){
