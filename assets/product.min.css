@@ -1187,6 +1187,23 @@ border-color: #000;
     font-family: 'google_sansregular' !important;
 }
 
+.single-product-content .product-image-summary .modal .modal-content .right-side .SizeChart .SizeCharttable thead tr th {
+    background-color: #000!important;
+    color: #fff!important;
+    text-transform: capitalize;
+    font-family: 'product_sans_mediumregular';
+    font-size: 15px;
+    padding: 7px;
+    font-weight: normal;
+    border: 1px solid #998;
+}
+
+.single-product-content .product-image-summary .modal .modal-content .right-side .SizeChart .SizeCharttable thead + tbody tr:first-child td {
+    background: #fff !important;
+    color: #000 !important;
+    /* font-family: 'google_sansregular' !important; */
+}
+
 @media only screen and (min-width:768px){
   
  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
