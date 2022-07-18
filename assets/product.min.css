@@ -1204,7 +1204,10 @@ border-color: #000;
     /* font-family: 'google_sansregular' !important; */
 }
 
-
+.single-product-content .cart .button a {
+    color: #fff !important;
+    text-decoration: none !important;
+}
 
 @media only screen and (min-width:768px){
   
