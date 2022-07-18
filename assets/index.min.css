@@ -718,6 +718,12 @@ div#shopify-section-template--14532934697043__1654005036571929f8 .featured-colle
     font-size: 2.3vw;
 }
   
+#shopify-section-template--14532934697043__1654005036571929f8 .spb_column.gl_column_container.gl_col-md-6.gl_col-lg-6 {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+  
 }
 
 
