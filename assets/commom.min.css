@@ -2088,6 +2088,16 @@ border-color: #000 !important;opacity: 1;
     padding-left: 35px;
 }
 
+.addrs-ct-new p.ct-adds-nbr:before {
+    content: "\e096";
+    font-family: 'simple-line-icons';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
