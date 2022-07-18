@@ -2063,14 +2063,13 @@ border-color: #000 !important;opacity: 1;
 #contact-us .gl_row.spb_row.col-sm-9 .spb_column.gl_column_container.gl_col-sm-6:last-child {
     padding-left: 35px;
 }
-#contact-us .gl_row.spb_row.col-sm-9 .gl_column-inner .hours + .gl_row .spb_wrapper .addrs-ct-new {
+#contact-us .gl_row.spb_row.col-sm-9 .gl_column-inner .addrs-ct-new {
     background: #f8f8f8;
     padding: 25px;
 }
 
-#contact-us .gl_row.spb_row.col-sm-9 .gl_column-inner .hours + .gl_row .spb_wrapper .addrs-ct-new p {
-    background: #f8f8f8;
-    padding: 25px;
+#contact-us .gl_row.spb_row.col-sm-9 .gl_column-inner .addrs-ct-new p {
+   
     font-family: 'google_sansregular';
     font-size: 16px;
 }
