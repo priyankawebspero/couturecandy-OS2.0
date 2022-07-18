@@ -1,14 +1,4 @@
 @font-face {
-    font-family: 'google_sansregular';
-    src: url('//cdn.shopify.com/s/files/1/0144/7018/5017/t/48/assets/googlesans-regular.woff2') format('woff2'),
-         url('//cdn.shopify.com/s/files/1/0144/7018/5017/t/48/assets/googlesans-regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-
-}
-
-@font-face {
     font-family: 'product_sans_mediumregular';
     src: url('//cdn.shopify.com/s/files/1/0144/7018/5017/t/48/assets/productsans-medium-webfont.woff2') format('woff2'),
          url('//cdn.shopify.com/s/files/1/0144/7018/5017/t/48/assets/productsans-medium-webfont.woff') format('woff');
