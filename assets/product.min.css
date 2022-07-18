@@ -1139,7 +1139,13 @@ border-color: #000;
     /* white-space: nowrap; */
 }
 
+.single-product-content .summary .out-of-stock {
+    display: none !important;
+}
 
+.single-product-content .single_variation_wrap {
+    padding-top: 0;
+}
 
 @media only screen and (min-width:768px){
   
