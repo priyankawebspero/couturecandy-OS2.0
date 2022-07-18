@@ -824,7 +824,7 @@ display:none;
 
 .boost-pfs-filter-option.boost-pfs-filter-has-scrollbar .boost-pfs-filter-option-content .boost-pfs-filter-option-content-inner::-webkit-scrollbar-track
 {
-	border-radius: 5px;
+	border-radius: 10px;
 	background-color: #e5e5e5;
 }
 
