@@ -2136,6 +2136,10 @@ border-color: #000 !important;opacity: 1;
     margin-bottom: 0 !important;
 }
 
+.product-label.onsale {
+    background-color: #e94949;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
