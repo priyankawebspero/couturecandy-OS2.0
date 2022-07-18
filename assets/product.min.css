@@ -54,6 +54,10 @@ div#popup {
     font-size: 15px;
     text-transform: uppercase;
 }
+.shopify-breadcrumb a {
+    color: #000;
+    font-size: 15px;
+}
 
 
 .single-product-content {
