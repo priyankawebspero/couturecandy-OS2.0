@@ -740,6 +740,7 @@ p.newstext {
     font-size: 16px;
     color: #fff;
     border-radius: 5px;
+    padding-right: 130px;
 }
 
 .footer-column .textwidget form .mailchimp-input-icon {
