@@ -1166,7 +1166,7 @@ var boostPFSFilterConfig = {
                     }
                 })
             }
-
+            console.log($stickyElement[0].scrollHeight, '$stickyElement[0].scrollHeight');
             console.log(window.scrollY + stickHeight, 'window.scrollY + stickHeight');
             console.log(endPos, 'endPos');
 
