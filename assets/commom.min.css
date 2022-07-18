@@ -2083,11 +2083,6 @@ border-color: #000 !important;opacity: 1;
     line-height: 1.4;
 }
 
-.addrs-ct-new p {
-    margin-bottom: 10px !important;
-    position: relative;
-    padding-left: 35px;
-}
 
 .addrs-ct-new p.ct-adds-nbr:before {
     content: "\e096";
@@ -2110,6 +2105,21 @@ border-color: #000 !important;opacity: 1;
     transform: rotate(-90deg);
    -webkit-transform: rotate(-90deg);
    -moz-transform: rotate(-90deg);
+}
+
+.addrs-ct-new p.ct-em-nbr:before {
+    content: "\e01e";
+    font-family: 'simple-line-icons';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 22px;
+    line-height: 1.5;
+}
+.addrs-ct-new p {
+    margin-bottom: 20px !important;
+    position: relative;
+    padding-left: 35px;
 }
 
 @media only screen and (min-width:768px){
