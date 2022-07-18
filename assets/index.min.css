@@ -577,6 +577,16 @@ html[lang="es"] #shopify-section-template--14532934697043__1654005036571929f8 .s
   
 }
 
+@media only screen and (max-width:1199px) and (min-width:992px){
+  
+#shopify-section-template--14532934697043__1654005036571929f8 .spb_column.gl_column_container.gl_col-md-6.gl_col-lg-6 {
+    width: 50%;
+    float: left;
+}
+  
+  
+}
+
 @media only screen and (max-width:1199px){
   
   .product-grid-item .product-element-top>a{
