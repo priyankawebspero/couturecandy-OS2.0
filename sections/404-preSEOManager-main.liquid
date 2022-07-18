@@ -1,3 +1,89 @@
+<div class="main-page-wrapper">
+   <!-- MAIN CONTENT AREA -->
+      <div class="row">
+         <div class="site-content col-md-12" role="main">
+            <header class="page-header">
+              <div class="container" style="text-align: center;"> 
+               <h1 class="page-title">It's Not You. It's Us!</h1>
+              <p>Sorry, but this link is either outdated or inaccurate, <br> or the server is just not having it today. Please try your search again!</p>
+              <div class="col-md-12 col-sm-12 padding-left padding-right">
+                     <form role="search" method="get" id="searchform_404" class="searchform" action="/search">
+                           <div>
+                              <label class="screen-reader-text" for="q"></label>
+                              <input type="text" placeholder="{{ 'general.search.placeholder' | t }}" value="" name="q" id="q">
+                              <button type="submit" id="searchsubmit">{{ 'general.search.search_submit' | t }}</button>
+                           </div>
+                     </form>
+               </div>
+               </div>
+            </header>
+            <div class="page-wrapper">
+               <div class="page-content">
+                   <div class="container"> 
+                     <div class="row">
+                        <div class="col-md-3 col-sm-12 mobi">
+                           <div class="error-page-menu">
+                              <h4>New Arrivals</h4>
+                               <ul class="menu-ul">
+                                   {% for link in linklists.error-page-arrivals-menu.links %}
+                                          <li class=""><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></li>
+                                   {% endfor %} 
+                               </ul>  
+                           </div>
+                           <div class="error-page-menu">
+                              <h4 class="sale">Shop Sale</h4>
+                               <ul class="menu-ul sale">
+                                   {% for link in linklists.error-page-shop-sale-menu.links %}
+                                          <li class=""><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></li>
+                                   {% endfor %} 
+                               </ul>  
+                           </div>
+                        </div> 
+                        <div class="col-md-3 col-sm-12 mobi">
+                           <div class="error-page-menu">
+                                 <h4>Popular Designers</h4>
+                                  <ul class="menu-ul">
+                                      {% for link in linklists.error-page-popular-designers.links %}
+                                             <li class=""><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></li>
+                                      {% endfor %} 
+                                  </ul>  
+                           </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 mobi">
+                            <div class="error-page-menu">
+                                 <h4>Popular Categories</h4>
+                                  <ul class="menu-ul">
+                                      {% for link in linklists.error-page-popular-categories.links %}
+                                             <li class=""><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }} </a></li>
+                                      {% endfor %} 
+                                  </ul>  
+                           </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 mobi">
+                           <div class="error-page-menu">
+                                 <h4>Customer Care</h4>
+                                    <p><strong>Phone:</strong><a href="tel:8555313811">  (855) 531-3811</a></p>
+                                    <p><strong>Email:</strong><a href="mailto:cs@couturecandy.com?Subject=Hello%20again" target="_top">  cs@couturecandy.com</a></p>
+                                    <br>
+                                  <h4>Hours:</h4>   
+                                  <p>MON-FRI<span class="time">7AM-7PM PST</span></p>
+                                  <p>SAT-SUN<span class="time">8AM-5PM PST</span></p>
+                           </div>
+                        </div>  
+                  </div>
+               </div>
+               <!-- .page-content -->
+            </div>
+            <!-- .page-wrapper -->
+         </div>
+         <!-- .site-content -->
+      </div>
+      <!-- end row -->
+</div>
+
+<!-- Begin Transportr -->
+{% include 'transportr' %}
+<!-- End Transportr -->
 {% schema %}
   {
     "name": "Section name",

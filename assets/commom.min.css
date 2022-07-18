@@ -2645,6 +2645,14 @@ aside.sidebar-container .sidebar-inner ul li h3 {
     font-size: 14px;
 }
   
+  .footer-column .textwidget form input[type="submit"] {
+    border-radius: 5px;
+}
+  
+ .footer-column .textwidget form .mailchimp-input-icon input[type="email"] {
+    padding-right: 15px;
+}
+  
 }
 
 @media only screen and (max-width:1199px) and (min-width:992px){
