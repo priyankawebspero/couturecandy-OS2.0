@@ -2042,6 +2042,9 @@ border-color: #000 !important;opacity: 1;
     font-size: 25px !important;
     color: #000;
     font-weight: 600;
+    line-height: 1.2 !important;
+    display: block;
+    padding-bottom: 10px;
 }
 
 #contact-us .gl_row.spb_row.col-sm-9 .gl_column-inner .hours p strong {
