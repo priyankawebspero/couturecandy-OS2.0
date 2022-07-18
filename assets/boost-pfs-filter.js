@@ -1136,8 +1136,7 @@ var boostPFSFilterConfig = {
         }
 
         var startPos = $stickyElement.attr('data-offset-top');
-        console.log(window.scrollY + stickHeight, 'window.scrollY + stickHeight');
-        console.log(endPos, 'endPos');
+
         var setPosition = () => {
             var isVertical = $stickyElement.hasClass(Class.filterTreeVertical) || $stickyElement.find(Selector.filterTreeVertical).length > 0 ? true : false;
             var stickWidth = $stickyElement.outerWidth();
@@ -1167,6 +1166,10 @@ var boostPFSFilterConfig = {
                     }
                 })
             }
+
+            console.log(window.scrollY + stickHeight, 'window.scrollY + stickHeight');
+            console.log(endPos, 'endPos');
+
             // Initial Position
             if (window.scrollY < startPos || endPos - startPos <= stickHeight || productListTooShort) {
                 $stickyElement.removeClass('boost-pfs-filter-stick');
