@@ -1210,7 +1210,7 @@ border-color: #000;
 }
 
 .summary-inner .callback {
-    display: none;
+    display: none !important;
 }
 
 .single-product-content .quantity_test .fake_counter_real_time {
