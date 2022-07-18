@@ -750,6 +750,10 @@ html[lang="es"] #shopify-section-template--14532934697043__1654005036571929f8 .s
     padding: 0 0px;
 }
   
+section.brands-banner-section {
+    padding: 60px 20px 30px 20px !important;
+}
+  
 }
 
 
