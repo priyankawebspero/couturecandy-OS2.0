@@ -1899,6 +1899,21 @@ body.template-product  {
     margin-bottom: 10px;
 }
   
+  .single-product-content .price del {
+    font-size: 18px;
+}
+.single-product-content .price {
+    margin: 6px 0 0px !important;
+}
+  
+.single-product-content .Value {
+    padding-top: 10px;
+}
+  
+.single-product-content .product_title + .Value {
+    padding-top: 0;
+}
+  
 }
 
 @media only screen and (max-width:479px){
