@@ -1163,6 +1163,13 @@ border-color: #000;
     margin-bottom: 20px;
 }
 
+.single-product-content .product-image-summary #popup .modal-content .right-side .SizeCharttable.sct2 {
+    position: relative;
+    overflow-x: scroll;
+    display: block;
+    width: 500px;
+}
+
 @media only screen and (min-width:768px){
   
  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
