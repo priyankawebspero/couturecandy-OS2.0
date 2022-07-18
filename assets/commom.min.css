@@ -2075,6 +2075,13 @@ border-color: #000 !important;opacity: 1;
     font-size: 16px;
 }
 
+.addrs-ct-new p strong {
+    font-family: 'product_sans_mediumregular';
+    font-weight: normal;
+    font-size: 17px;
+    display: block;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
