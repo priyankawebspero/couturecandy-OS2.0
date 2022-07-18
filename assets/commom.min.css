@@ -2426,6 +2426,8 @@ html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation>li {
   
 }
 
+
+
 @media only screen and (max-width:1023px) and (min-width:992px){
   
   html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation>li>a {
@@ -2456,9 +2458,24 @@ html[lang="pt"] .main-header .wrapp-header ul#menu-main-navigation li {
     padding-left: 15px;
 }
   
+  
 }
 
 @media only screen and (min-width:768px) and (max-width:991px){
+  
+  #contact-us .page_contc .gl_row.spb_row.col-sm-9 {
+    width: 66.66%;
+    padding-left: 0;
+}
+  
+#contact-us .gl_row.spb_row.col-sm-9 .spb_column.gl_column_container.gl_col-sm-6 {
+    width: 100%;
+    padding-right: 0;
+}
+  
+#contact-us .gl_row.spb_row.col-sm-9 .spb_column.gl_column_container.gl_col-sm-6:last-child {
+    padding-left: 15px;
+}
   
   .container.wishlist_page_cs .wishlist_table tbody tr td .button.add_to_cart.button {
     white-space: nowrap;
