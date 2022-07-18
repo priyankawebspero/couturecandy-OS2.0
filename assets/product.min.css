@@ -51,9 +51,9 @@ div#popup {
 .single-breadcrumbs-wrapper .shopify-breadcrumb .breadcrumb-last {
     margin-left: 5px;
     color: #4e4e4e;
-    font-size: 14px;
+    font-size: 15px;
+    text-transform: uppercase;
 }
-
 
 
 .single-product-content {
