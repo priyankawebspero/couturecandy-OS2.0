@@ -3981,6 +3981,17 @@ div#shopify-section-template--14532934697043__165390901603cb214c .gl_column_cont
     padding: 0;
 }
   
+#contact-us .gl_row.spb_row.col-sm-9 .spb_column.gl_column_container.gl_col-sm-6 {
+    width: 100%;
+    margin-top: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
+}
+  
+#contact-us .gl_row.spb_row.col-sm-9 .spb_column.gl_column_container.gl_col-sm-6:last-child {
+    padding-left: 0;
+}
+  
 }
 
 
