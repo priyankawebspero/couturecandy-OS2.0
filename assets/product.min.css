@@ -1925,8 +1925,8 @@ body.template-product  {
     margin: 0;
 }
   
-.website-wrapper {
-    overflow-y: hidden;
+.main-page-wrapper {
+    overflow-x: hidden;
 }
   
 }
