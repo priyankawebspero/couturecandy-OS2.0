@@ -124,6 +124,10 @@ div#popup {
     font-weight: normal;
 }
 
+span#save_percentage span {
+    color: #000;
+}
+
 .single-product-content .sezzle-shopify-info-button {
     padding-top: 5px;
 }
