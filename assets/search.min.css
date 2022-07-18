@@ -1554,4 +1554,10 @@ display:none;
     font-size: 28px;
 }
   
+  .boost-pfs-search-result-toolbar {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+  
 }
