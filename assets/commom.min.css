@@ -2284,6 +2284,10 @@ body.template-page .main-page-wrapper .container {
     padding-right: 30px;
     padding-left: 30px;
 }
+  
+#contact-us .gl_row.spb_row.col-sm-9 .spb_column.gl_column_container.gl_col-sm-6:last-child {
+    padding-left: 30px;
+}
 
 }
 
