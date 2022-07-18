@@ -1166,14 +1166,9 @@ var boostPFSFilterConfig = {
                     }
                 })
             }
-            console.log($stickyElement[0].scrollHeight, '$stickyElement[0].scrollHeight');
-            console.log(window.scrollY + stickHeight, 'window.scrollY + stickHeight');
-            console.log(endPos, 'endPos');
-            console.log(jQ(endElement).position().top, 'jQ(endElement).position().top');
-            console.log(jQ(endElement).position().top, 'jQ(endElement).position().top');
 
             // Initial Position
-            if (window.scrollY < startPos || endPos - startPos <= stickHeight) {
+            if (window.scrollY < startPos || endPos - startPos <= stickHeight || productListTooShort) {
                 $stickyElement.removeClass('boost-pfs-filter-stick');
                 $stickyElement.removeClass('boost-pfs-filter-absolute');
                 jQ('body').removeClass('boost-pfs-filter-stick-body');
@@ -1205,9 +1200,10 @@ var boostPFSFilterConfig = {
                 // Fix issue with top sometimes not set with animated header show/hide
                 var timeOutValue = Settings.getSettingValue('general.stickyChangeTopTimeout');
                 if (typeof timeOutValue != 'number') timeOutValue = 0;
-                setTimeout(() => {
-                    $stickyElement.css({top: offsetTop + 'px'});
-                }, timeOutValue);
+                $stickyElement.css({top: offsetTop + 'px'});
+                // setTimeout(() => {
+                //     $stickyElement.css({top: offsetTop + 'px'});
+                // }, timeOutValue);
             // End Position
             } else {
                 $stickyElement.removeClass('boost-pfs-filter-stick');
