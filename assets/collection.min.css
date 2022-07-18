@@ -813,7 +813,13 @@ display:none;
     top: 2px;
 }
 
+.boost-pfs-filter-default-toolbar .boost-pfs-container-default-fullwidth.boost-pfs-filter-default-toolbar-inner .boost-pfs-filter-toolbar-item.boost-pfs-filter-toolbar-count.boost-pfs-filter-toolbar-count-d {
+    display: none !important;
+}
 
+.boost-pfs-filter-default-toolbar .boost-pfs-container-default-fullwidth.boost-pfs-filter-default-toolbar-inner .boost-pfs-filter-toolbar-item.boost-pfs-filter-custom-sorting.boost-pfs-filter-top-sorting {
+    display: none !important;
+}
 
 @media only screen and (max-width:1550px){
   
