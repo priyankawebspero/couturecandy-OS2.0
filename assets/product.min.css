@@ -1170,6 +1170,12 @@ border-color: #000;
     width: 100%;
 }
 
+.single-product-content .product-image-summary #popup .modal-content .right-side .SizeCharttable.sct2 tbody tr th {
+    background-color: #000!important;
+    color: #fff!important;
+    text-transform: capitalize;
+}
+
 @media only screen and (min-width:768px){
   
  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
