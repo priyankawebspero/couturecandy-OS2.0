@@ -1919,6 +1919,10 @@ body.template-product  {
     margin: 0;
 }
   
+.website-wrapper {
+    overflow-y: hidden;
+}
+  
 }
 
 @media only screen and (max-width:479px){
