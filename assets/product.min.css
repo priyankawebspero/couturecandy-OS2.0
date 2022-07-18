@@ -1,7 +1,8 @@
 div#popup {
     display: none;
 }
-
+.owl-item {height: 0;}    
+.owl-item.active {height: auto;}
 
 .single-breadcrumbs-wrapper {
     background: none;
