@@ -1174,6 +1174,10 @@ border-color: #000;
     background-color: #000!important;
     color: #fff!important;
     text-transform: capitalize;
+    font-family: 'product_sans_mediumregular';
+    font-size: 15px;
+    padding: 10px;
+    font-weight: normal;
 }
 
 @media only screen and (min-width:768px){
