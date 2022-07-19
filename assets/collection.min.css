@@ -869,7 +869,14 @@ display:none;
     margin: 0 auto 15px auto;
 }
 
-
+.bottom.description.collection>h2:before {
+    content: "";
+	display: block;
+    width: 80px;
+    height: 4px;
+    background: #000;
+    margin: 0 auto 15px auto;
+}
 
 @media only screen and (max-width:1550px){
   
