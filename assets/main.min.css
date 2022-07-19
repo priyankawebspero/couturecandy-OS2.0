@@ -46,6 +46,10 @@ font-weight: bold;font-size: 12px;color: #fff;text-decoration: none;overflow: hi
     border-color: #ccc;
 }
 
+#couture-candy-reviews-couture-candy .stjr-review-page-widget-review__inner-container i.star {
+    font-size: 18px !important;
+}
+
 @media only screen and (max-width:1550px) and (min-width:768px){
 
   .main-page-wrapper.page_contc .site-content.col-sm-12 {
