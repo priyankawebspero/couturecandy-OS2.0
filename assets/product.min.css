@@ -1220,9 +1220,6 @@ border-color: #000;
 .product-images .owl-carousel div.owl-item img {
     display: block;
 }
-.single-product-content:not(.product-quick-view) .shopify-product-gallery__wrapper {
-    padding-right: 7px;
-}
 
 @media only screen and (min-width:768px){
   
