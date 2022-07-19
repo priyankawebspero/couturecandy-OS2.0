@@ -228,6 +228,7 @@ div#designer .DesignerList .Listtitle .title {
 div#designer .DesignerList .Listtitle {
     border: none;
     margin: 0;
+  padding-bottom: 0;
 }
   
 }
