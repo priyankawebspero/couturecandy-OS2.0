@@ -220,4 +220,14 @@ header.entry-header .entry-title {
     font-size: 29px;
 }
   
+  
+div#designer .DesignerList .Listtitle .title {
+    display: none;
+}
+  
+div#designer .DesignerList .Listtitle {
+    border: none;
+    margin: 0;
+}
+  
 }
