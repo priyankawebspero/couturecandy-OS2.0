@@ -210,6 +210,10 @@ form.shopify-cart-form {
 
 @media only screen and (max-width: 1025px){
   
+  .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-subtotal {
+    white-space: nowrap;
+}
+  
   .template-cart form.shopify-cart-form .shop_table tr td.product-price .amount {
     font-size: 15px;
     white-space: nowrap;
