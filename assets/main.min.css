@@ -78,6 +78,12 @@ font-weight: bold;font-size: 12px;color: #fff;text-decoration: none;overflow: hi
     max-width: 100%;
 }
 
+#couture-candy-reviews-couture-candy .stjr-review-page-pagination .stjr-review-page-pagination__link--current {
+    border: 1px solid #e94949 !important;
+    color: #e94949 !important;
+    background: #fff !important;
+}
+
 @media only screen and (max-width:1550px) and (min-width:768px){
 
   .main-page-wrapper.page_contc .site-content.col-sm-12 {
