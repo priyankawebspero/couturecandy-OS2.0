@@ -204,4 +204,10 @@ form.shopify-cart-form {
     border-color: #e94949;
 }
 
+@media only screen and (max-width: 1550px){
 
+.template-cart  .site-content {
+    padding: 0 30px;
+}
+
+}
