@@ -246,6 +246,7 @@ div#designer .DesignerList .Listtitle ul li {
 div#designer .DesignerList .Listtitle ul li a {
     display: block;
     padding: 15px 35px 15px 0;
+    position: relative;
 }
   
 }
