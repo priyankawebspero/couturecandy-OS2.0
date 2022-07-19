@@ -53,7 +53,7 @@ div#reviewCarouselWidget {
 }
 
 .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr {
-    border: 1px solid #000;
+    border: 1px solid #0f0f0f;
     border-top: none;
 }
 
@@ -67,7 +67,7 @@ div#reviewCarouselWidget {
     font-family: 'product_sans_mediumregular';
     font-size: 20px;
     min-width: 30px;
-    border-color: #000;
+    border-color: #0f0f0f;
     background: #fff;
 }
 
@@ -77,7 +77,7 @@ div#reviewCarouselWidget {
     font-size: 16px;
     font-weight: normal;
     color: #000;
-    border-color: #000;
+    border-color: #0f0f0f;
     max-width: 50px;
 }
 
@@ -97,7 +97,7 @@ div#reviewCarouselWidget {
 }
 
 .shopify-cart-form .cart-actions .button.update-cart {
-    background: #000;
+    background: #0f0f0f;
     color: #ffff;
     padding: 16px 40px;
     font-size: 18px;
