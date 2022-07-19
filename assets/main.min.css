@@ -249,4 +249,18 @@ div#designer .DesignerList .Listtitle ul li a {
     position: relative;
 }
   
+div#designer .DesignerList .Listtitle ul li a:after {
+     content: "\e606";
+    font-family: simple-line-icons;
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    position: absolute;
+    right: 3px;
+    z-index: 1;
+    top: 16px;
+   
+}
+  
 }
