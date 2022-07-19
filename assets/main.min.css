@@ -122,6 +122,11 @@ font-weight: bold;font-size: 12px;color: #fff;text-decoration: none;overflow: hi
 
 @media only screen and (max-width:767px){
   
+  #couture-candy-reviews-couture-candy .stjr-container.stjr-review-page-widget {
+    padding-left: 0;
+    padding-right: 0;
+}
+  
   .main-page-wrapper.page_contc .container .gl_row.spb_row.col-sm-9 {
     padding-left: 3px;
     padding-right: 3px;
