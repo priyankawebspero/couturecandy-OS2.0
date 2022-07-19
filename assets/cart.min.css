@@ -281,5 +281,42 @@ form.shopify-cart-form {
  .template-cart  .site-content {
     padding: 0 15px;
 }
+  
+ .shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table tr.order-total td .amount {
+    font-size: 20px;
+    white-space: nowrap;
+}
+  
+.shopify .cart-collaterals .cart_totals .responsive-table {
+    background-color: #fff;
+    padding: 10px 10px;
+}
+  
+
+.shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table tr th {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 0px;
+}
+ 
+   
+  .shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table .sezzle-shopify-info-button button * {
+    float: none;
+    text-align: left;
+}
+.shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table .sezzle-shopify-info-button button {
+    float: none;
+    text-align: left;
+}
+  
+.shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table .sezzle-shopify-info-button {
+    white-space: normal;
+    text-align: left;
+}
+  
+  .shopify-cart-form .cart-collaterals .cart_totals {
+    padding: 15px 15px 30px 15px;
+}
+  
 
 }
