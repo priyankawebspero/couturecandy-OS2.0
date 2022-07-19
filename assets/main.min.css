@@ -62,6 +62,7 @@ font-weight: bold;font-size: 12px;color: #fff;text-decoration: none;overflow: hi
 
 #couture-candy-reviews-couture-candy .stjr-review-page-widget-review__inner-container .stjr-review-helpful .helpful_container {
     margin-top: 10px !important;
+    margin-bottom: 0 !important;
 }
 
 #couture-candy-reviews-couture-candy .stjr-review-page-widget-review-info__name {
