@@ -121,8 +121,7 @@ div#shopify-section-template--14590947426387__designers-page .page-title {
 }
 
 div#designer .DesignerList .Listtitle {
-    /* display: flex; */
-    /* flex-wrap: wrap; */
+    padding-bottom: 10px;
     width: 100%;
     float: left;
     border-bottom: 1px solid #ccc;
