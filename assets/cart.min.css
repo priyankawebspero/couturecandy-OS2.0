@@ -258,8 +258,8 @@ form.shopify-cart-form {
     border-top: 1px solid #000;
 }
   
-  .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-remove {
-    height: auto;
+ .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-remove {
+    height: auto !important;
 }
   
   
