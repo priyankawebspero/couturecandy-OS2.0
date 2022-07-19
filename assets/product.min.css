@@ -360,7 +360,7 @@ background: #000;
     height: 52px;
 }
 
-.single-product-content .cart .button {
+.single-product-content .cart button.button, .single-product-content .cart span.button a {
     font-size: 18px;
     background: #e94949;
     border-color: #e94949;
@@ -371,7 +371,7 @@ background: #000;
     cursor: pointer;
 }
 
-.single-product-content .cart .button:hover {
+.single-product-content .cart button.button:hover, .single-product-content .cart span.button a:hover {
     background: #000;
     border-color: #000;
 }
