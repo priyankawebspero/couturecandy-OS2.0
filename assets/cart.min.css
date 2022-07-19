@@ -230,8 +230,28 @@ form.shopify-cart-form {
 }
 
 @media only screen and (max-width: 767px){
+
+  
+.template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-name:before {
+    float: none;
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+}
+  
 .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-name {
     text-align: left;
+}
+  
+  .shopify .shop_table.cart.shop_table_responsive tbody td:before {
+    font-weight: normal;
+    color: #000;
+    font-size: 14px;
+    font-family: 'product_sans_mediumregular';
+}
+  
+ .template-cart  .site-content {
+    padding: 0 15px;
 }
 
 }
