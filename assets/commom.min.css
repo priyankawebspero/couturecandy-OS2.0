@@ -3497,24 +3497,7 @@ footer .widget-title i {
     text-align: left;
     margin-bottom: 10px;
 }
-.shopify .shop_table.cart.shop_table_responsive tbody td {
-    padding: 15px;
-}
-  
-.shopify .shop_table.cart.shop_table_responsive tbody td:before {
-    font-weight: normal;
-    color: #000;
-    font-size: 14px;
-    font-family: 'product_sans_mediumregular';
-}
-  
- .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr:first-child {
-    border-top: 1px solid #000;
-}
-  
-  .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-remove {
-    height: auto;
-}
+
 
 }
 
