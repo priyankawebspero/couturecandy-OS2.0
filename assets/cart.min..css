@@ -1,0 +1,7 @@
+div#reviewCarouselWidget {
+    margin-left: -15px;
+    margin-right: -15px;
+    background: #f8f8f8;
+    padding-top: 50px;
+    padding-bottom: 50px !important;
+}
