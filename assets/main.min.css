@@ -116,6 +116,10 @@ font-weight: bold;font-size: 12px;color: #fff;text-decoration: none;overflow: hi
     font-size: 15px !important;
 }
 
+div#shopify-section-template--14590947426387__designers-page .page-title {
+    margin-bottom: 18px;
+}
+
 @media only screen and (max-width:1550px) and (min-width:768px){
 
   .main-page-wrapper.page_contc .site-content.col-sm-12 {
