@@ -369,6 +369,13 @@ background: #000;
     min-width: 255px;
     text-align: center;
     cursor: pointer;
+  display: inline-block;
+}
+
+.single-product-content .cart span.button {
+    background: none !important;
+    border: none !important;
+    padding: 0;
 }
 
 .single-product-content .cart button.button:hover, .single-product-content .cart span.button a:hover {
@@ -1204,11 +1211,7 @@ border-color: #000;
     /* font-family: 'google_sansregular' !important; */
 }
 
-.single-product-content .cart span.button {
-    background: none !important;
-    border: none !important;
-    padding: 0;
-}
+
 
 .single-product-content .cart .button a {
     color: #fff !important;
