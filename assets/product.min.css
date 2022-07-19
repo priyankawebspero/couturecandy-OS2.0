@@ -1217,8 +1217,8 @@ border-color: #000;
     margin-bottom: 20px;
 }
 
-.single-product-content:not(.product-quick-view) .shopify-product-gallery__wrapper {
-    padding-right: 0;
+.product-images .owl-carousel div.owl-item img {
+    display: block;
 }
 
 @media only screen and (min-width:768px){
