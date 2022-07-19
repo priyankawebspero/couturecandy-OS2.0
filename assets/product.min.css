@@ -2061,4 +2061,8 @@ body.template-product  {
     font-size: 13px;
 }
   
+ .single-product-content .cart span.button a {
+    line-height: 2;
+}
+  
 }
