@@ -1339,7 +1339,7 @@ form.shopify-cart-form {
     width: 100%;
     max-width: 750px;
     background-image: inherit;
-    border: 1px solid #000;
+    border: 1px solid #0f0f0f;
     padding:30px;
 }
 
@@ -1355,13 +1355,13 @@ form.shopify-cart-form {
     font-weight: normal;
     letter-spacing: .5px;
     text-transform: capitalize;
-    border-color: #000;
+    border-color: #0f0f0f;
     padding-left: 0;
 }
 
 .shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table tr td {
     font-size: 16px;
-    border-color: #000;
+    border-color: #0f0f0f;
 }
 
 .shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table tr td .amount {
@@ -1382,7 +1382,7 @@ form.shopify-cart-form {
 
 
 .shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table .sezzle-shopify-info-button button {
-    color: #000;
+    color: #0f0f0f;
 }
 
 .shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table .sezzle-shopify-info-button button span.sezzle-payment-amount {
@@ -1400,20 +1400,18 @@ form.shopify-cart-form {
 }
 
 
-
-
 .shopify-cart-form .cart-collaterals .cart_totals .wc-proceed-to-checkout {
     margin-top: 25px;
 }
 
 .shopify-cart-form .cart-collaterals .cart_totals .wc-proceed-to-checkout .checkout-button {
-    background: #000;
+    background: #0f0f0f;
     color: #fff;
     width: 100%;
     padding: 18px 15px;
     font-size: 17px;
     border-radius: 7px;
-    border-color: #000;
+    border-color: #0f0f0f;
 }
 
 .shopify-cart-form .cart-collaterals .cart_totals .wc-proceed-to-checkout .checkout-button:hover {
