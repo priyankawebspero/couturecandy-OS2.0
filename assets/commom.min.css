@@ -2313,6 +2313,49 @@ div#designer .DesignerList .Listtitle:last-child {
     margin-top: 3px;
 }
 
+.main-nav .menu>li.menu-item-design-sized .sub-menu-dropdown .top_nav_main.wedding_dresses .top_section {
+    width: 100%;
+    float: left;
+    flex: inherit;
+    padding-bottom: 15px;
+}
+
+.main-nav .menu>li.menu-item-design-sized .sub-menu-dropdown .top_nav_main.wedding_dresses {
+    display: grid;
+    grid-template-areas: 'w1 w2 w3 w4 w5'
+        'w1 w2b w3b w4b w5b';
+    width: auto;
+}
+
+.w1 {
+    grid-area: w1;
+}
+
+.w2 {
+    grid-area: w2;
+}
+.w2b {
+    grid-area: w2b;
+}
+.w3 {
+    grid-area: w3;
+}
+.w3b {
+    grid-area: w3b;
+}
+.w4 {
+    grid-area: w4;
+}
+.w4b {
+    grid-area: w4b;
+}
+.w5 {
+    grid-area: w5;
+}
+.w5b {
+    grid-area: w5b;
+}
+
 
 @media only screen and (min-width:768px){
   
