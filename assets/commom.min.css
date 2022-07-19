@@ -3338,22 +3338,7 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
 }
   
   
-.template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td {
-    font-size: 15px;
-}
-  
-.template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents th {
-    font-size: 16px;
-}
-  
-.template-cart form.shopify-cart-form .shop_table tr td.product-price .amount {
-    font-size: 15px;
-    white-space: nowrap;
-}
-  
-.template-cart form.shopify-cart-form .shop_table tr td.product-subtotal .amount {
-    font-size: 18px;
-}
+
   
 body.template-page .main-page-wrapper .container {
     padding: 0 20px;
