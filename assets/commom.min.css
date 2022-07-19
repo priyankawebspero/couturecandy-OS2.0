@@ -4167,6 +4167,100 @@ div#shopify-section-template--14532934697043__165390901603cb214c .gl_column_cont
     padding-left: 0;
 }
   
+#couture-candy-reviews-couture-candy .stjr-review-page-widget-header {
+    padding-bottom: 20px !important;
+    padding-left: 0;
+    padding-right: 0 !important;
+}
+  
+  #couture-candy-reviews-couture-candy .stjr-container.stjr-review-page-widget {
+    padding-left: 0;
+    padding-right: 0;
+}
+  
+  .main-page-wrapper.page_contc .container .gl_row.spb_row.col-sm-9 {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+  
+.main-page-wrapper.page_contc .breadcrumbs.col-sm-12 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+  
+#couture-candy-reviews-couture-candy .stjr-review-page-widget-review-container {
+    padding: 20px 0;
+}
+  
+#couture-candy-reviews-couture-candy .main-page-wrapper {
+    margin-bottom: 0;
+}
+  
+#couture-candy-reviews-couture-candy .main-page-wrapper .site-content {
+    margin-bottom: 20px;
+}
+  #couture-candy-reviews-couture-candy .stjr-review-page-pagination .stjr-review-page-pagination__previous .stjr-review-page-pagination__link {
+    margin-right: 0;
+    min-width: 125px;
+}
+  
+#couture-candy-reviews-couture-candy .stjr-review-page-pagination .stjr-review-page-pagination__next .stjr-review-page-pagination__link {
+    margin-right: 0;
+    min-width: 125px;
+}
+  
+#couture-candy-reviews-couture-candy .stjr-review-page-pagination {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+  
+header.entry-header .entry-title {
+    font-size: 29px;
+}
+  
+  
+div#designer .DesignerList .Listtitle .title {
+    display: none;
+}
+  
+div#designer .DesignerList .Listtitle {
+    border: none;
+    margin: 0;
+  padding-bottom: 0;
+}
+  
+div#designer .DesignerList .Listtitle ul {
+    display: block;
+    margin: 0;
+}
+  
+div#designer .DesignerList .Listtitle ul li {
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+}
+  
+div#designer .DesignerList .Listtitle ul li a {
+    display: block;
+    padding: 15px 35px 15px 0;
+    position: relative;
+}
+  
+div#designer .DesignerList .Listtitle ul li a:after {
+     content: "\e606";
+    font-family: simple-line-icons;
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    position: absolute;
+    right: 3px;
+    z-index: 1;
+    top: 16px;
+   
+}
+  
 }
 
 
