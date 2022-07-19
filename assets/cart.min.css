@@ -206,3 +206,12 @@ form.shopify-cart-form {
 }
 
 }
+
+
+@media only screen and (max-width: 991px){
+  
+.template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td {
+    font-size: 15px;
+}
+
+}
