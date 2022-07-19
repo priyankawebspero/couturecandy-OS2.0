@@ -1764,6 +1764,10 @@ div#ProdDetailInfo {
     border: none;
 }
   
+  .single-product-content .cart span.button a {
+    line-height: 1.6;
+}
+  
 .single-product-content .entry-summary .yith-wcwl-add-to-wishlist {
     position: fixed;
     bottom: 0;
