@@ -1322,11 +1322,7 @@ background:none;
     border-color: #000;
 }
 
-.template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents th {
-    background: #000;
-    color: #fff;
-    font-weight: normal;
-}
+
 
 .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td {
     /* border: 1px solid #b4b4b4; */
