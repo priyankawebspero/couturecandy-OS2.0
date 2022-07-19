@@ -134,7 +134,9 @@ div#designer .DesignerList .Listtitle .title {
     display: block;
     text-align: left;
     margin-bottom: 15px;
+    line-height: 1;
 }
+
 
 div#designer .DesignerList .Listtitle .title:before {
     display: none !important;
