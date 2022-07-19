@@ -228,3 +228,10 @@ form.shopify-cart-form {
 }
 
 }
+
+@media only screen and (max-width: 767px){
+.template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-name {
+    text-align: left;
+}
+
+}
