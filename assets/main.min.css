@@ -231,4 +231,21 @@ div#designer .DesignerList .Listtitle {
   padding-bottom: 0;
 }
   
+div#designer .DesignerList .Listtitle ul {
+    display: block;
+    margin: 0;
+}
+  
+div#designer .DesignerList .Listtitle ul li {
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+}
+  
+div#designer .DesignerList .Listtitle ul li a {
+    display: block;
+    padding: 15px 35px 15px 0;
+}
+  
 }
