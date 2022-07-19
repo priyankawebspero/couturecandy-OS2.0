@@ -6,6 +6,15 @@ font-weight: bold;font-size: 12px;color: #fff;text-decoration: none;overflow: hi
 .added_to_cart.btn-color-primary, .btn.btn-color-primary, .button.btn-color-primary, button.btn-color-primary, input[type=submit].btn-color-primary { background-color: #e94949; color: #fff; border-color: #e94949; border-radius:5px;}
 
 
+@media only screen and (max-width:1550px) and (min-width:768px){
+
+  .main-page-wrapper.page_contc .site-content.col-sm-12 {
+    padding: 0;
+}
+
+}
+
+
 @media only screen and (max-width:767px){
   
   .main-page-wrapper.page_contc .container .gl_row.spb_row.col-sm-9 {
