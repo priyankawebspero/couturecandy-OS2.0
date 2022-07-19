@@ -134,6 +134,7 @@ div#designer .DesignerList .Listtitle .title {
     text-align: left;
     margin-bottom: 20px;
     line-height: 1;
+    text-decoration: none !important;
 }
 
 
