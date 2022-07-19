@@ -375,7 +375,7 @@ background: #000;
 .single-product-content .cart span.button {
     background: none !important;
     border: none !important;
-    padding: 0;
+    padding: 0 !important;
 }
 
 .single-product-content .cart button.button:hover, .single-product-content .cart span.button a:hover {
