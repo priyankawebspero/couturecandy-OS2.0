@@ -269,6 +269,10 @@ form.shopify-cart-form {
     height: auto !important;
 }
   
+.shopify-cart-form .cart-actions {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
   
 }
 
