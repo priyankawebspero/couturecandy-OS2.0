@@ -39,7 +39,7 @@ font-weight: bold;font-size: 12px;color: #fff;text-decoration: none;overflow: hi
 
 #couture-candy-reviews-couture-candy .stjr-review-page-widget-review-container {
     border-bottom: 1px solid #ccc;
-    padding: 20px 0;
+    padding: 20px;
 }
 
 #couture-candy-reviews-couture-candy .stjr-review-page-widget__reviews {
@@ -63,6 +63,10 @@ font-weight: bold;font-size: 12px;color: #fff;text-decoration: none;overflow: hi
 #couture-candy-reviews-couture-candy .stjr-review-page-widget-review-info__name {
     font-family: 'product_sans_mediumregular';
     font-size: 17px;
+}
+
+#couture-candy-reviews-couture-candy .stjr-review-page-widget-header__container {
+    max-width: 100%;
 }
 
 @media only screen and (max-width:1550px) and (min-width:768px){
