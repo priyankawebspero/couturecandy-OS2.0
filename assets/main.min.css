@@ -154,5 +154,19 @@ font-weight: bold;font-size: 12px;color: #fff;text-decoration: none;overflow: hi
 #couture-candy-reviews-couture-candy .main-page-wrapper .site-content {
     margin-bottom: 20px;
 }
+  #couture-candy-reviews-couture-candy .stjr-review-page-pagination .stjr-review-page-pagination__previous .stjr-review-page-pagination__link {
+    margin-right: 0;
+    min-width: 125px;
+}
+  
+#couture-candy-reviews-couture-candy .stjr-review-page-pagination .stjr-review-page-pagination__next .stjr-review-page-pagination__link {
+    margin-right: 0;
+    min-width: 125px;
+}
+  
+#couture-candy-reviews-couture-candy .stjr-review-page-pagination {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
   
 }
