@@ -6,6 +6,33 @@ font-weight: bold;font-size: 12px;color: #fff;text-decoration: none;overflow: hi
 .added_to_cart.btn-color-primary, .btn.btn-color-primary, .button.btn-color-primary, button.btn-color-primary, input[type=submit].btn-color-primary { background-color: #e94949; color: #fff; border-color: #e94949; border-radius:5px;}
 
 
+
+#couture-candy-reviews-couture-candy .stjr-review-page-widget-header {
+    padding-top: 30px;
+    min-height: inherit;
+}
+
+#couture-candy-reviews-couture-candy .stjr-review-page-widget-header .stjr-review-page-widget-header__text {
+    font-weight: normal;
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+#couture-candy-reviews-couture-candy .stjr-review-page-widget-header .stjr-review-page-widget-header__rating .stjr-review-page-widget-header__rating__title {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+#couture-candy-reviews-couture-candy .stjr-review-page-widget-header .stjr-review-page-widget-header__rating .stars.stars--widgets i.star {
+    font-size: 24px !important;
+}
+
+#couture-candy-reviews-couture-candy .stjr-review-page-widget-header .stjr-review-page-widget-header__rating .stars.stars--widgets {
+    font-size: 24px !important;
+    margin-top: 4px;
+}
+
 @media only screen and (max-width:1550px) and (min-width:768px){
 
   .main-page-wrapper.page_contc .site-content.col-sm-12 {
