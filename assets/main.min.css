@@ -169,4 +169,8 @@ font-weight: bold;font-size: 12px;color: #fff;text-decoration: none;overflow: hi
     padding-bottom: 30px;
 }
   
+header.entry-header .entry-title {
+    font-size: 29px;
+}
+  
 }
