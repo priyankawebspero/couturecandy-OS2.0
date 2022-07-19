@@ -1221,9 +1221,6 @@ border-color: #000;
     display: block;
 }
 
-.product-images .owl-carousel .owl-item {
-    margin-right: 1px;
-}
 
 @media only screen and (min-width:768px){
   
