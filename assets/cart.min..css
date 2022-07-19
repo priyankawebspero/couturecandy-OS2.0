@@ -15,6 +15,10 @@ div#reviewCarouselWidget {
 }
 
 
-
+.template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents th {
+    background: #0f0f0f;
+    color: #fff;
+    font-weight: normal;
+}
 
 
