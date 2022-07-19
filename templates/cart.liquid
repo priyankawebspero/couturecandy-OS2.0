@@ -6,6 +6,7 @@
     padding-bottom: 30px !important;
 }
   </style>
+<link rel="preload" href="{{ 'cart.min.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
 {%- assign cart_title = 'cart.general.title' | t -%}
 <div class="main-page-wrapper">
 {%- include 'page_heading', page_title:cart_title -%}
