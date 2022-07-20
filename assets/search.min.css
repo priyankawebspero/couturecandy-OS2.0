@@ -18,7 +18,9 @@
     text-align: center;
 }
 
-
+.boost-pfs-search-result-toolbar {
+    border: none;
+}
 
 #collectionbottomdescription h2 {
     font-size: 32px;
