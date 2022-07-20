@@ -1780,6 +1780,19 @@ div#ProdDetailInfo {
     height: 49px;
     border: none;
 }
+    .shopify-variation-add-to-cart.variations_button.shopify-variation-add-to-cart-enabled .futureDDays-popup-button {
+     position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    min-width: inherit;
+    z-index: 99;
+    padding: 14px 10px;
+    border-radius: 0;
+    font-size: 15px;
+    height: 49px;
+    border: none;
+}
   
   .single-product-content .cart span.button a {
     line-height: 1.6;
