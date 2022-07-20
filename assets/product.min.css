@@ -1254,6 +1254,10 @@ div#ProdDetailInfomobile {
     display: none;
 }
   
+  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a::before {
+   color: #4e4e4e !important;
+}
+  
 .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a:hover, 
   .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a:focus{
     background: #000;
@@ -1261,7 +1265,7 @@ div#ProdDetailInfomobile {
 
 .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a:hover:before, 
   .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a:focus:before{
-    color: #fff;
+    color: #fff !important;
 }
   
 }
