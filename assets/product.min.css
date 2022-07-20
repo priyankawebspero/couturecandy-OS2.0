@@ -1594,7 +1594,7 @@ div#ProdDetailInfomobile {
   
 .single-product-content .cart button.button, .single-product-content .cart span.button a {
     font-size: 15px;
-    padding: 14px 10px !important
+    padding: 14px 11px;
     min-width: 170px;
 }
   .shopify-variation-add-to-cart.variations_button.shopify-variation-add-to-cart-enabled .futureDDays-popup-button {
