@@ -218,6 +218,11 @@ div#shopify-section-template--14532934697043__165390901603cb214c {
     color: #fff !important;
 }
 
+#shopify-section-template--14532934697043__16541439641d011f7d .category-grid-item:last-child .Wrap_button_cs a.category-link-button:hover{
+ background: #fff;
+    color: #000 !important;
+}
+
 div#shopify-section-template--14532934697043__1654005036571929f8 {
     padding: 70px 50px 20px 50px;
     display: inline-block;
