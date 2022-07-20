@@ -1218,9 +1218,9 @@ border-color: #000;
     text-decoration: none !important;
 }
 
-.summary-inner .callback {
+/*.summary-inner .callback {
     display: none !important;
-}
+}*/
 
 .single-product-content .quantity_test .fake_counter_real_time {
     margin-bottom: 20px;
