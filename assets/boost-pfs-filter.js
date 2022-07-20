@@ -1166,8 +1166,8 @@ var boostPFSFilterConfig = {
                     }
                 })
             }
-console.log(window.scrollY, stickHeight, startPos, endPos, window.scrollY + stickHeight - 500 <= endPos);
-            // Initial Position
+
+          	// Initial Position
             if (window.scrollY < startPos || endPos - startPos <= stickHeight || productListTooShort) {
                 $stickyElement.removeClass('boost-pfs-filter-stick');
                 $stickyElement.removeClass('boost-pfs-filter-absolute');
