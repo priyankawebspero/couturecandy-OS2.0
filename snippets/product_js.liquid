@@ -20,7 +20,7 @@
             observer.disconnect();
           }
           var config = { childList: true, subtree: true };
-          var observer = new MutationObserver(function() { 
+          observer = new MutationObserver(function() { 
             {% for variant in product.variants %}
               {% if variant.available == false %}
                  {%- if settings.remove_sold_out -%}
@@ -166,7 +166,7 @@ Shopify.linkOptionSelectors = function(product) {
       observer.disconnect();
     }
     var config = { childList: true, subtree: true };
-    var observer = new MutationObserver(function() {      
+      observer = new MutationObserver(function() {      
       Shopify.linkOptionSelectors(product);
       observer.disconnect();
     });  
