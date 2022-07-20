@@ -1164,8 +1164,9 @@ html[lang="pt"] div#shopify-section-template--14532934697043__1654005036571929f8
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
-  div#insta-feed {padding: 0 !important;}
+div#shopify-block-a41a6449-6d18-49a8-8ff1-11479d23387a div#insta-feed {
+    padding: 0 !important;
+}
 }
 @media only screen and (min-width:1200px){
   
