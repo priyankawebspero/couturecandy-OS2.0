@@ -1191,6 +1191,11 @@ display:none;
     margin: 0 2px;
 }
   
+.boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li a, .boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li span {
+    font-size: 14px;
+    padding: 0 8px;
+}
+  
 }
 
 @media only screen and (max-width:767px){
