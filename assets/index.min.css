@@ -194,6 +194,11 @@ div#shopify-section-template--14532934697043__165390901603cb214c {
     order: 2;
 }
 
+#shopify-section-template--14532934697043__16541439641d011f7d .category-grid-item:last-child .Wrap_button_cs a.category-link-button{
+ background: #e94949;
+    color: #fff !important;
+}
+
 #shopify-section-template--14532934697043__16541439641d011f7d .Wrap_button_cs a.category-link-button {
     background: #fff;
     display: inline-block;
