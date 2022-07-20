@@ -3524,6 +3524,13 @@ footer .widget-title i {
     margin-bottom: 10px;
 }
 
+  footer .active .widget-title i {
+    position: absolute;
+    right: 5px;
+    font-size: 19px;
+    top: 2px;
+    transform: rotate(180deg);
+}
 
 }
 
