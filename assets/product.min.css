@@ -1248,6 +1248,7 @@ border-color: #000;
  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
     height: 56px;
     line-height: 56px;
+    color: #4e4e4e !important;
 }
 
 div#ProdDetailInfomobile {
@@ -1261,6 +1262,7 @@ div#ProdDetailInfomobile {
 .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a:hover, 
   .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a:focus{
     background: #000;
+     color: #fff !important;
 }
 
 .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a:hover:before, 
