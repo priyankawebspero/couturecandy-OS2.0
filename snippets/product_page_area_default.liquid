@@ -1,4 +1,5 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.cookie/1.3/jquery.cookie.js"></script>
+ <script src="https://widget.sezzle.com/v1/javascript/price-widget?uuid=bd0b31d4-a0b6-4036-868a-27a0e13ed47a"></script>
   {%- if settings.first_available_variant or settings.remove_sold_out -%}
    {%- assign current_variant = product.selected_or_first_available_variant -%}
   {%- elsif product.selected_variant != blank  -%}
@@ -75,39 +76,39 @@
   {%- include 'check_not_feature_img' -%}
   {%- if settings.show_grouped_variant_image and product.has_only_default_variant == false and product.images.size > 1 and not_group == false -%}{%- include 'check_position_feature_img' -%}{%-endif-%}
   <div class="single-breadcrumbs-wrapper">
-     <div class="container">
+     <div class="container-fluid">
         {%- include 'product_breadcrumb' -%}
      </div>
   </div>
-  <div class="container"></div>
+  <div class="container-fluid"></div>
   <div id="product-{{product.id}}" class="product-nathan-{{product.id}} nathan_style_{{settings.button_art_to_cart_style}} single-product-page single-product-content {{design_products_page}}{%- if product.metafields.meta.video contains 'youtube' or product.metafields.meta.video contains 'vimeo' %} product-with-attachments{%- endif %}{%- if linklists[product.handle].links.size > 0 %} product-type-grouped{%- endif %}{%- if settings.show_grouped_variant_image and product.images.size > 1 and product.has_only_default_variant == false and not_group == false %} gl_group_variant_images{%- endif -%}">
    {%- assign product_image_zoom_size = 'master' -%}
   {%- assign product_image_scale = '1' -%}
-     <div class="{%- if design_products_page != 'product-design-sticky' -%}container{%- else -%}container-fluid{%-endif-%}">
+     <div class="container-fluid">
         <div class="row">
            <div class="product-image-summary {{class_gl}}">
               <div class="row">
-                <div id="popup" class="modal">
-                  <div class="modal-content">
-                      <span class="close">&times;</span>
-                      <div class="Mobileposition"></div>
-                       <div class="left-side">
-                            <h4 style="text-align: left;">How to measure your size? Watch Below:</h4>                                          
-                                  <div class="youtube-player" data-id="VdTUuVeGERk"></div>
+                 <div id="popup" class="modal">
+                          <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <div class="Mobileposition"></div>
+                            <div class="left-side">
+                              <h4 style="text-align: left;">How to measure your size? Watch Below:</h4>                                          
+                              <div class="youtube-player" data-id="VdTUuVeGERk"></div>
                               <div class="sizechart-left-des">
                                 <p>Measuring your correct and current dress size for a dress purchase is the single most important step in finding and keeping the perfect dress.</p><p>If after watching our tutorial you have any question regarding your size or the fit of a dress, please contact us at 855-700-4239.</p><p>After determining your unique measurements, refer to the dress designer's size chart. Sizes are often different between designers. Size 2 in Jovani, can easily be a size 0 in Alyce! It is extremely important to utilize each designer's size chart, when purchasing multiple dresses!</p><p>If you are between sizes ALWAYS go a size up as a dress can be altered smaller, but not larger.</p>
-                                  <img src="https://cdn.shopify.com/s/files/1/0144/7018/5017/files/size-silhoutte.png" alt="image">                                      
+                                <img src="https://cdn.shopify.com/s/files/1/0144/7018/5017/files/size-silhoutte.png" alt="image">                                      
                               </div>
-                          </div>
-                              <div class="right-side">
-                                  {%- include 'product_size_chart' -%}
-                              </div>
-                  </div><!--modal-contentCLOSE-->  
-             </div><!--SizeChartPopupCLOSE-->
+                            </div>
+                            <div class="right-side">
+                              {%- include 'product_size_chart' -%}
+                            </div>
+                          </div><!--modal-contentCLOSE-->  
+                        </div><!--SizeChartPopupCLOSE-->
                  {%- if product.images.size > 0 -%}
                 <div class="{{class_images}} product-images">
                     {%- include 'product_labels' -%}
-                    <div class="shopify-product-gallery shopify-product-gallery--with-images shopify-product-gallery--columns-4 images row thumbs-position-{{settings.thumbnails_position}} image-action-{{settings.main_click}}" style="min-height:782px;">
+                    <div class="shopify-product-gallery shopify-product-gallery--with-images shopify-product-gallery--columns-4 images row thumbs-position-{{settings.thumbnails_position}} image-action-{{settings.main_click}}">
                        <div class="{%- if product.images.size > 1 and settings.thumbnails_position == 'left' and design_products_page != 'product-design-sticky' -%}col-md-9 col-md-push-2{%- else -%}col-sm-11{%- endif -%}">
                           <figure id="gl_thum" class="shopify-product-gallery__wrapper{%- if design_products_page != 'product-design-sticky' %} owl-carousel{%- endif %}{%- if settings.main_click == 'popup' %} shopify-main-image{%- endif -%}">
                           {%- if settings.show_grouped_variant_image and product.has_only_default_variant == false and product.images.size > 1 and not_group == false -%}
@@ -510,7 +511,6 @@
                        {%- if product.images.size > 1 and design_products_page != 'product-design-sticky' -%}<div class="{%- if settings.thumbnails_position == 'left' -%}col-md-2 col-md-pull-9{%- else -%}col-sm-12{%- endif -%}"><div id="gl_thumbnails" class="thumbnails"></div></div>{%- endif -%}
                     </div>
                     {%- if settings.use_view_360 -%}
-                       {%- section 'product_360_section' -%}
                     {%- elsif product.metafields.meta.video contains 'youtube' or product.metafields.meta.video contains 'vimeo' -%}
                        <div class="product-additional-galleries">
                           <div class="product-video-button">
@@ -521,17 +521,70 @@
                     <div class="Info" id="ProdDetailInfo">
                          <div class="Details shipping">
                               <div class="Image">
-                                  <div class="image shipping_image"></div>
+                                  <div class="image shipping_image">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;width: 50px;height: 50px;" xml:space="preserve">
+                                      <style type="text/css">
+                                        .st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+                                      </style>
+                                      <g id="_x31_">
+                                        <path id="XMLID_24_" class="st0" d="M19.1,40.6l-1,0c-0.7,0-1.3-0.6-1.3-1.3v-1.1"/>
+                                        <path id="XMLID_23_" class="st0" d="M16.7,23.5v-5c0-0.7,0.6-1.3,1.3-1.3l18.2,0c0.7,0,1.3,0.6,1.3,1.3v22.1l-7.2,0"/>
+                                        <path id="XMLID_13_" class="st0" d="M39.3,40.6h-1.7V21.2h6.8c0.6,0,1.1,0.2,1.5,0.6l5.3,5.1c0.4,0.4,0.6,1,0.6,1.5v10.7   c0,0.7-0.6,1.3-1.3,1.3h-0.2"/>
+                                        <g id="XMLID_12_">
+                                          <path id="XMLID_34_" d="M43.3,27l2.6,2.6v2.3h-3.6V27H43.3 M43.6,25h-2.6c-0.4,0-0.6,0.3-0.6,0.6v7.6c0,0.4,0.3,0.6,0.6,0.6h6.3    c0.4,0,0.6-0.3,0.6-0.6v-4c0-0.4-0.2-0.7-0.5-1l-3-3C44.2,25.1,43.9,25,43.6,25L43.6,25z"/>
+                                        </g>
+                                        <line id="XMLID_8_" class="st0" x1="16.4" y1="26.5" x2="26" y2="26.5"/>
+                                        <line id="XMLID_9_" class="st0" x1="14.3" y1="30.8" x2="24.8" y2="30.8"/>
+                                        <line id="XMLID_10_" class="st0" x1="12.1" y1="35.1" x2="22.7" y2="35.1"/>
+                                        <g id="XMLID_7_">
+                                          <path id="XMLID_30_" d="M24.8,41.2c1,0,1.8,0.8,1.8,1.8s-0.8,1.8-1.8,1.8S23,44,23,43S23.8,41.2,24.8,41.2 M24.8,39.2    c-2.1,0-3.8,1.7-3.8,3.8s1.7,3.8,3.8,3.8s3.8-1.7,3.8-3.8S26.9,39.2,24.8,39.2L24.8,39.2z"/>
+                                        </g>
+                                        <g id="XMLID_14_">
+                                          <path id="XMLID_26_" d="M44.8,41.2c1,0,1.8,0.8,1.8,1.8s-0.8,1.8-1.8,1.8S43,44,43,43S43.8,41.2,44.8,41.2 M44.8,39.2    c-2.1,0-3.8,1.7-3.8,3.8s1.7,3.8,3.8,3.8s3.8-1.7,3.8-3.8S46.9,39.2,44.8,39.2L44.8,39.2z"/>
+                                        </g>
+                                      </g>
+                                      <g id="XMLID_244_">
+                                        <path id="XMLID_20_" d="M32,2c16.5,0,30,13.5,30,30S48.5,62,32,62S2,48.5,2,32S15.5,2,32,2 M32,0C14.3,0,0,14.3,0,32s14.3,32,32,32   s32-14.3,32-32S49.7,0,32,0L32,0z"/>
+                                      </g>
+                                    </svg>
+                                    </div>
                                   <span>Free Shipping</span>
                               </div>
                               <div class="Cnt">
-                                  <span>Free shipping for orders over $299</span><br>
-                                  <a href="https://www.couturecandy.com/pages/returns-and-exchanges/" target="_blank">See Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                  <span>Free shipping for orders over $250</span><br>
+                                  <a href="https://www.couturecandy.com/shipping-returns-exchanges/" target="_blank">See Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                               </div>
                          </div>
                          <div class="Details Exchange">
                           <div class="Image">
-                                  <div class="image exchange_image"></div>
+                                  <div class="image exchange_image">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;width: 50px;height: 50px;" xml:space="preserve">
+                                      <style type="text/css">
+                                        .st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+                                        .st1{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+                                      </style>
+                                      <g id="_x32_">
+                                        <g id="XMLID_95_">
+                                          <path id="XMLID_45_" d="M32,2c16.5,0,30,13.5,30,30S48.5,62,32,62S2,48.5,2,32S15.5,2,32,2 M32,0C14.3,0,0,14.3,0,32    s14.3,32,32,32s32-14.3,32-32S49.7,0,32,0L32,0z"/>
+                                        </g>
+                                        <g id="XMLID_11_">
+                                          <line id="XMLID_158_" class="st0" x1="32.5" y1="30.4" x2="19.9" y2="25.2"/>
+                                          <polyline id="XMLID_154_" class="st0" points="19.9,30.7 19.9,37.4 31.8,43.5   "/>
+                                          <path id="XMLID_153_" class="st0" d="M45.4,25.1l-13.1-4.6l-13.1,4.1"/>
+                                          <polyline id="XMLID_152_" class="st0" points="44.7,30.5 44.7,37.9 32.3,42.9 32.3,30.7 44.7,25.7   "/>
+                                          <polyline id="XMLID_156_" class="st0" points="31.9,30.2 29.6,34.8 17.4,29.2 19.8,24.1   "/>
+                                          <polyline id="XMLID_157_" class="st0" points="32.3,30.2 34.4,35.1 46.6,29.5 44.8,24.5   "/>
+                                          <line id="XMLID_5_" class="st0" x1="32.3" y1="20.5" x2="32.3" y2="27.4"/>
+                                        </g>
+                                        <g id="XMLID_1_">
+                                          <path id="XMLID_4_" class="st1" d="M50,18.1c3,3.9,4.8,8.7,4.8,14c0,12.6-10.2,22.8-22.8,22.8c-4.8,0-9.3-1.5-13-4.1"/>
+                                          <path id="XMLID_15_" class="st1" d="M44.7,13.1c-1.4-1-3-1.8-4.6-2.4c-2.5-1-5.3-1.5-8.1-1.5C19.4,9.3,9.2,19.5,9.2,32.1    c0,5,1.6,9.7,4.4,13.4"/>
+                                          <path id="XMLID_3_" class="st1" d="M40,14.6l5.6-0.5c0.3,0,0.6-0.4,0.4-0.7l-2-5.2"/>
+                                          <path id="XMLID_2_" class="st1" d="M24.1,49.5l-5.7,0.3c-0.3,0-0.6,0.3-0.4,0.7l1.8,5.3"/>
+                                        </g>
+                                      </g>
+                                    </svg>
+                                </div>
                                   <span>Exchanges &amp; Returns</span>
                               </div>
                               <div class="Cnt">
@@ -541,22 +594,71 @@
                          </div>
                          <div class="Details Price-match">
                               <div class="Image">
-                                 <div class="image price_image"></div>
+                                 <div class="image price_image">
+                                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;width: 50px;height: 50px;" xml:space="preserve">
+                                     <g id="XMLID_9_">
+                                       <g id="XMLID_437_">
+                                         <path id="XMLID_15_" d="M32,2c16.5,0,30,13.5,30,30S48.5,62,32,62S2,48.5,2,32S15.5,2,32,2 M32,0C14.3,0,0,14.3,0,32    s14.3,32,32,32s32-14.3,32-32S49.7,0,32,0L32,0z"/>
+                                       </g>
+                                       <g id="XMLID_8_">
+                                         <path id="XMLID_30_" d="M49.6,41L49.6,41c-0.2-0.9-0.8-1.6-1.7-1.8c-0.5-0.1-1.2-0.1-1.8,0.1l-1.9,0.5c-2,0.5-4.1,1.1-6.1,1.6    c-0.1,0-0.2,0-0.3,0c-1.3-0.5-2.5-1-3.8-1.5c-1.8-0.7-3.5-1.4-5.3-2.1c-1.7-0.7-3.5-0.5-5.1,0.4c-0.6,0.4-1.3,0.7-1.9,1.1    c-0.3,0.2-0.6,0.4-0.9,0.6l-1.4,0.9l-0.7-1.1c-0.2-0.3-0.4-0.4-0.6-0.5c-0.2-0.1-0.5,0-0.7,0.1c-0.2,0.1-0.8,0.5-1.3,0.8l-1.4,0.8    c-0.3,0.2-0.5,0.6-0.3,1l6.8,11.8c0.1,0.2,0.3,0.3,0.4,0.3c0.1,0,0.1,0,0.2,0c0.1,0,0.3,0,0.4-0.1c0.7-0.4,2.4-1.4,2.7-1.6    c0.5-0.3,0.7-0.8,0.3-1.3l-0.6-1.1c0.8-0.5,1.7-0.6,2.7-0.4l3.5,1c1.7,0.5,3.4,1,5.1,1.5c1,0.3,2.2,0.1,3-0.6    c1.2-1,2.5-1.9,3.7-2.9l2.8-2.2c1.1-0.9,2.3-1.7,3.4-2.6C49.6,42.9,49.8,42,49.6,41z M28,39.3c2.2,0.9,4.4,1.8,6.6,2.6l2.9,1.2    c0.4,0.2,0.9,0.3,1.3,0.5c0.4,0.2,0.5,0.5,0.5,0.9c0,0.4-0.3,0.6-0.7,0.7c-0.2,0-0.3,0-0.5-0.1l-0.1,0c-2-0.4-4-0.8-5.9-1.2    l-1.1-0.2c-0.5-0.1-1,0.2-1.1,0.6c0,0.2,0,0.5,0.1,0.6c0.1,0.2,0.3,0.3,0.6,0.4l1.3,0.3c2.1,0.4,4.1,0.9,6.2,1.3    c1.2,0.2,2.3-0.4,2.8-1.4c0.4-1,0.2-2.1-0.5-2.8c0.1,0,0.2-0.1,0.3-0.1l1-0.3c1.6-0.4,3.2-0.8,4.8-1.2c0.3-0.1,0.6-0.1,0.8-0.1    c0.5,0,0.7,0.3,0.7,0.4c0.1,0.3,0,0.7-0.3,0.9l-3.4,2.6c-2.2,1.7-4.3,3.3-6.5,5c-0.5,0.4-0.9,0.5-1.5,0.3c-1.1-0.3-2.2-0.6-3.4-1    c-1.7-0.5-3.3-1-5-1.4c-0.6-0.2-1.1-0.3-1.7-0.3c-0.9,0-1.7,0.2-2.6,0.7l-3.5-6.1l2.3-1.4c0.6-0.4,1.2-0.7,1.8-1.1    C25.5,38.9,26.8,38.8,28,39.3z M23.3,51l-0.4,0.2c-0.3,0.2-0.5,0.3-0.8,0.4l-5.7-10c0.3-0.2,0.8-0.5,1.2-0.7L23.3,51z"/>
+                                         <g id="XMLID_7_">
+                                           <g id="XMLID_4_">
+                                             <path id="XMLID_2_" d="M37.6,35.5c-4.3,0-7.8-3.5-7.8-7.8s3.5-7.8,7.8-7.8s7.8,3.5,7.8,7.8S41.9,35.5,37.6,35.5z M37.6,21.8      c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S40.9,21.8,37.6,21.8z"/>
+                                             <path id="XMLID_18_" d="M39.9,28c-0.2-0.2-0.5-0.4-0.8-0.5c-0.3-0.1-0.6-0.2-0.9-0.3c-0.2-0.1-0.4-0.1-0.6-0.2l-0.1,0      c-0.4-0.1-0.6-0.2-1-0.4c-0.1,0-0.1-0.1-0.2-0.2c0-0.1,0-0.2,0.1-0.3c0.1-0.1,0.2-0.2,0.3-0.2c0,0,0.1,0,0.1-0.1      c0.5-0.2,1.1-0.2,1.6,0c0.2,0.1,0.3,0.2,0.3,0.5c0,0.2,0.2,0.4,0.4,0.4c0.2,0,0.5,0,0.7,0c0.1,0,0.2,0,0.3-0.1      c0,0,0.1-0.1,0.1-0.3c0-0.1,0-0.3-0.1-0.4C40,25.4,39.6,25,39,24.8c-0.2-0.1-0.4-0.1-0.6-0.1l-0.1,0c0,0,0,0,0,0      c0-0.1,0-0.2,0-0.2c0-0.2-0.1-0.3-0.3-0.3c-0.2,0-0.4,0-0.6,0c-0.2,0-0.3,0.2-0.3,0.4c0,0.1,0,0.1,0,0.2c0,0,0,0-0.1,0l-0.1,0      c-0.5,0.1-0.9,0.3-1.2,0.5c-0.4,0.3-0.6,0.9-0.5,1.4c0,0.5,0.3,0.9,0.7,1.1c0.2,0.1,0.5,0.2,0.7,0.3c0.2,0.1,0.5,0.1,0.7,0.2      c0.3,0.1,0.5,0.1,0.8,0.2c0.3,0.1,0.5,0.2,0.7,0.3c0,0,0,0,0.1,0c0.1,0.1,0.2,0.3,0.1,0.4c0,0.2-0.3,0.5-0.6,0.5      c-0.4,0.1-0.8,0.1-1.3,0c-0.5-0.1-0.7-0.3-0.8-0.7c0-0.2-0.2-0.3-0.4-0.3c-0.2,0-0.4,0-0.6,0c-0.1,0-0.2,0-0.3,0.1      c-0.1,0.1-0.1,0.2-0.1,0.3c0,0.4,0.2,0.7,0.4,1c0.4,0.4,0.9,0.7,1.6,0.8c0.1,0,0.1,0,0.1,0c0,0,0,0.1,0,0.1v0.1      c0,0.2,0.1,0.4,0.3,0.4c0.1,0,0.2,0,0.3,0c0.1,0,0.2,0,0.3,0c0.2,0,0.3-0.1,0.3-0.4c0-0.1,0-0.1,0-0.2c0,0,0.1,0,0.1,0      c0.5-0.1,0.9-0.2,1.2-0.4c0.5-0.3,0.7-0.7,0.8-1.3C40.4,28.8,40.3,28.4,39.9,28z"/>
+                                           </g>
+                                           <g id="XMLID_1_">
+                                             <path id="XMLID_3_" d="M31.2,25.2c-3.8-0.5-6.7-3.8-6.7-7.7c0-4.3,3.5-7.8,7.8-7.8s7.8,3.5,7.8,7.8c0,1.3-0.3,2.5-0.9,3.6      l-1.6-0.8c0.5-0.9,0.7-1.8,0.7-2.8c0-3.3-2.7-6-6-6c-3.3,0-6,2.7-6,6c0,3,2.2,5.5,5.2,5.9L31.2,25.2z"/>
+                                             <path id="XMLID_19_" d="M34.6,17.7c-0.2-0.2-0.5-0.4-0.8-0.5c-0.3-0.1-0.6-0.2-0.9-0.3c-0.2-0.1-0.4-0.1-0.6-0.2l-0.1,0      c-0.4-0.1-0.6-0.2-1-0.4c-0.1,0-0.1-0.1-0.2-0.2c0-0.1,0-0.2,0.1-0.3c0.1-0.1,0.2-0.2,0.3-0.2c0,0,0.1,0,0.1-0.1      c0.5-0.2,1.1-0.2,1.6,0c0.2,0.1,0.3,0.3,0.3,0.5c0,0.2,0.1,0.4,0.4,0.4c0.2,0,0.5,0,0.7,0c0.1,0,0.2,0,0.3-0.1      c0,0,0.1-0.1,0.1-0.3c0-0.1,0-0.3-0.1-0.4c-0.2-0.6-0.6-1-1.2-1.2c-0.2-0.1-0.4-0.1-0.6-0.1l-0.1,0c0,0,0,0,0,0      c0-0.1,0-0.2,0-0.2c0-0.2-0.1-0.3-0.3-0.3c-0.2,0-0.4,0-0.6,0c-0.2,0-0.3,0.2-0.3,0.4c0,0.1,0,0.1,0,0.2c0,0,0,0,0,0l-0.1,0      c-0.5,0.1-0.9,0.3-1.3,0.5c-0.4,0.3-0.6,0.9-0.6,1.4c0,0.5,0.3,0.9,0.8,1.1c0.3,0.1,0.5,0.2,0.7,0.3c0.3,0.1,0.5,0.2,0.8,0.2      c0.3,0.1,0.5,0.1,0.8,0.2c0.3,0.1,0.5,0.2,0.7,0.3c0,0,0,0,0.1,0c0.1,0.1,0.2,0.3,0.1,0.4c0,0.2-0.3,0.5-0.6,0.5      c-0.4,0.1-0.9,0.1-1.3,0c-0.5-0.1-0.7-0.4-0.8-0.8c0-0.2-0.2-0.3-0.4-0.3c-0.2,0-0.4,0-0.6,0c-0.1,0-0.2,0-0.3,0.1      c-0.1,0.1-0.1,0.2-0.1,0.3c0,0.4,0.2,0.7,0.4,1c0.4,0.4,0.9,0.7,1.6,0.8c0.1,0,0.1,0,0.1,0c0,0,0,0.1,0,0.1l0,0.1      c0,0.2,0.1,0.4,0.3,0.4c0.1,0,0.2,0,0.3,0c0.1,0,0.2,0,0.3,0c0.2,0,0.3-0.1,0.3-0.4c0-0.1,0-0.1,0-0.2l0,0c0,0,0.1,0,0.1,0      c0.5-0.1,0.9-0.2,1.2-0.4c0.5-0.3,0.8-0.8,0.8-1.3C35.1,18.5,34.9,18,34.6,17.7z"/>
+                                           </g>
+                                         </g>
+                                       </g>
+                                     </g>
+                                   </svg>
+                                </div>
                                   <span>Price Match</span>
                               </div>
                               <div class="Cnt">
                                   <span>Find a lower price? We'll match it. Exclusions may apply.</span>
-                                  <a href="https://www.couturecandy.com/pages/returns-and-exchanges/" target="_blank">See Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                  <a href="https://www.couturecandy.com/shipping-returns-exchanges/" target="_blank">See Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                               </div>
                          </div>
                          <div class="Details No Tax">
                               <div class="Image">
-                                 <div class="image no_tax_image"></div>
+                                 <div class="image no_tax_image">
+                                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;width: 50px;height: 50px;" xml:space="preserve">
+                                     <style type="text/css">
+                                       .st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+                                       .st1{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+                                     </style>
+                                     <g id="XMLID_74_">
+                                       <path id="XMLID_13_" d="M32,2c16.5,0,30,13.5,30,30S48.5,62,32,62S2,48.5,2,32S15.5,2,32,2 M32,0C14.3,0,0,14.3,0,32s14.3,32,32,32   s32-14.3,32-32S49.7,0,32,0L32,0z"/>
+                                     </g>
+                                     <g id="XMLID_182_">
+                                       <path id="XMLID_57_" class="st0" d="M16.8,37.6l25.7,11.8c0.6,0.3,1.3,0,1.5-0.6l7.2-15.5c0.3-0.6,0-1.3-0.6-1.5L25,20   c-0.4-0.2-0.8-0.2-1.2,0l-10.3,4.6c-0.6,0.3-0.9,1-0.7,1.6L16,36.7C16.2,37.1,16.4,37.5,16.8,37.6z"/>
+                                       <circle id="XMLID_58_" class="st0" cx="20.3" cy="28.6" r="2.3"/>
+                                       <path id="XMLID_61_" class="st1" d="M19.1,26.6c0,0-7.1-8.3-3.5-11.5c0.6-0.5,1.4-0.7,2.2-0.5c1.3,0.4,2.7,1.9,2.8,6.2"/>
+                                       <g id="XMLID_181_">
+                                         <g id="XMLID_62_">
+                                           <path id="XMLID_64_" d="M34.6,27.7l-0.5,1l-1.4-0.7l-2,4.3l-1.3-0.6l2-4.3L30,26.8l0.5-1L34.6,27.7z"/>
+                                           <path id="XMLID_69_" d="M36.5,33.9l-2-0.9l-0.8,0.8l-1.4-0.6l4.4-4.4l1.5,0.7l-0.5,6.2L36.4,35L36.5,33.9z M36.7,32.7l0.2-2.3     l-1.6,1.7L36.7,32.7z"/>
+                                           <path id="XMLID_170_" d="M41.7,37.4l-0.3-2.1l-1.7,1.2l-1.5-0.7l3-1.9l-0.5-3.4l1.5,0.7l0.3,2.1l1.7-1.2l1.5,0.7l-2.9,1.9     l0.5,3.5L41.7,37.4z"/>
+                                         </g>
+                                         <g id="XMLID_63_">
+                                           <path id="XMLID_172_" d="M31,34.4l-0.5,1l-2.2-1l-0.5,1.1l1.6,0.8l-0.5,1l-1.6-0.8l-1,2.2l-1.3-0.6l2.5-5.3L31,34.4z"/>
+                                           <path id="XMLID_174_" d="M32,41.3l-0.2-2.5l-0.3-0.1l-0.9,2L29.2,40l2.5-5.3l2.2,1c0.4,0.2,0.7,0.4,1,0.7     c0.2,0.3,0.4,0.6,0.4,0.9c0,0.3,0,0.6-0.2,1c-0.2,0.4-0.4,0.6-0.7,0.8c-0.3,0.2-0.7,0.2-1.2,0.2l0.3,2.7L32,41.3z M31.9,37.7     l0.8,0.4c0.2,0.1,0.4,0.1,0.6,0.1c0.2-0.1,0.3-0.2,0.4-0.4c0.1-0.2,0.1-0.4,0-0.6c-0.1-0.2-0.2-0.3-0.5-0.4l-0.8-0.4L31.9,37.7z"/>
+                                           <path id="XMLID_177_" d="M37.5,38.6L37,39.7l1.7,0.8l-0.5,1l-1.7-0.8L36,41.9l2,0.9l-0.5,1l-3.3-1.5l2.5-5.3l3.3,1.5l-0.5,1     L37.5,38.6z"/>
+                                           <path id="XMLID_179_" d="M41.6,40.5l-0.5,1.1l1.7,0.8l-0.5,1l-1.7-0.8l-0.5,1.2l2,0.9l-0.5,1l-3.3-1.5l2.5-5.3l3.3,1.5l-0.5,1     L41.6,40.5z"/>
+                                         </g>
+                                       </g>
+                                     </g>
+                                   </svg>  
+                                </div>
                                   <span>No Tax</span>
                               </div>
                               <div class="Cnt">
                                   <span>No Sales Tax if shipped outside Nevada. Save 10%.</span>
-                                  <a href="https://www.couturecandy.com/pages/returns-and-exchanges/" target="_blank">See Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                  <a href="https://www.couturecandy.com/shipping-returns-exchanges/" target="_blank">See Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                               </div> 
                          </div>                                                                         
                       </div><!--ProdDetailInfo main-->
@@ -567,7 +669,7 @@
                        <div class="basel-scroll-content">
                         {% assign vendortitle = product.vendor | downcase  %}
 
-                        {% assign vendortitle_handle = product.vendor | | handleize  %}
+                        {% assign vendortitle_handle = product.vendor | handleize  %}
                       <h1 itemprop="name" class="product_title entry-title">{{ product.title }}</h1>
                            {% for collection in product.collections  -%}
                                       {% assign collectionurls = collection.url  %}
@@ -578,12 +680,12 @@
                                     <h4 itemprop="name" class="BrandName"><a href="/collections/{{ vendortitle_handle }}">{%- if vendortitle == 'ccsale' -%} {% else %} {{ vendortitle }} {%- endif -%} </a></h4>
 
                              </div>
+                             {%- if settings.show_product_page_rating -%}
+                             <a href="#ReviewSection" class="shopify-product-rating">
+                               <div class="yotpo bottomLine" data-product-id="{{ product.id }}"  data-url="{{ product.url }}"></div>          
+                              </a>
+                             {%- endif -%}
                         </div>
-                         {%- if settings.show_product_page_rating -%}
-                          <a href="#ReviewSection" class="shopify-product-rating">
-                            <div class="yotpo bottomLine" data-product-id="{{ product.id }}"  data-url="{{ product.url }}"></div>          
-                           </a>
-                          {%- endif -%}
                           <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
                             <input type="hidden" name="Product_Price" id="tracking_price" value="{{ product.price | money_without_currency }}">
                              <p class="price" id="productPrice">
@@ -628,11 +730,6 @@
                                    
                              </p>
                              <span id="save_percentage"></span>
-                                {%- if settings.show_share_btn and design_products_page != 'product-design-alt' -%}
-                             <div class="product-share">
-                                {%- include 'social-sharing', follow_social:gl_follow_social -%}
-                             </div>
-                             {%- endif -%}
                              <div class="Value" style="color: #ff6666;font-size: 17px;font-weight: bold;margin-bottom: 15px;">
                                    {% if product.type contains 'CCSALE' or product.tags contains 'Clearance Dresses' %}                             
                                    100% Authenticity Guarantee
@@ -640,11 +737,6 @@
                                   {%- else -%}
                                   100% Authenticity Guarantee
                                    {% endif %}
-                                 {% comment %}
-                                   {% if  product.vendor == 'Jarin K Jewelry' or product.vendor == 'Dancing Queen' or product.vendor == 'May Queen' or product.vendor == 'Cinderella Divine' or product.vendor == 'Nox Anabel' or product.vendor == 'Poly USA' or product.vendor == 'Lenovia' or product.vendor == 'Eureka Fashion' or product.vendor == 'Eureka Fashion Bridal' or product.vendor == 'Adrianna Papell' %}
-                                       <span style="display: inline-block;color:black;font-size: 13px;margin: 10px 10px 0px 0;"> Enjoy additional 5% off use code: </span><span style="font-size: 13px;">LOVE5</span>
-                                   {% endif %}
-                                 {% endcomment %} 
                                   {% if  product.vendor == 'Montce Swim' %}
                                        <span style="color: #ff6666;display:block;font-size: 16px;margin: 10px 0px 0px;font-weight: bold;margin-bottom: 15px;">Use Code MONTCE5 for 5% OFF</span>
                                   {% elsif product.vendor == 'Voda Swim' %}
@@ -663,9 +755,13 @@
                                   {% elsif product.vendor == 'Logan Hollowell' %}
                                       <span style="color: #ff6666;font-size: 16px;display:block;margin: 10px 0px 0px;font-weight: bold;margin-bottom: 15px;">Use Code LH5 for 5% OFF</span>
                                   {%- endif -%}
-                               
+                                  {%- if settings.show_share_btn and design_products_page != 'product-design-alt' -%}
+                                  <div class="product-share">
+                                     {%- include 'social-sharing', follow_social:gl_follow_social -%}
+                                  </div>
+                                  {%- endif -%}
                           </div>
-                            <p style="font-size: 13px;"><strong>FREE SHIPPING ON US ORDERS OVER $299!</strong></p>
+                            <p style="font-size: 13px;"><strong>FREE SHIPPING ON US ORDERS OVER $250!</strong></p>
                            
                            <div id="cover"></div>
                             <div id="SizeChart">
@@ -685,7 +781,7 @@
                                 {%-capture variantSoldout-%}
                                 {%-for option in product.options_with_values-%}
                                     {%-for value in option.values-%}
-                                      {% if option.selected_value == value and forloop.last == false %} bg_{{value | handleize}}{% endif-%}
+                                      {% if option.selected_value == value and forloop.last == false %} bg_{{value }}{% endif-%}
                                     {%-endfor-%}
                                 {%-endfor-%}
                                 {%-endcapture-%}
@@ -796,7 +892,7 @@
                                                   <p class="stock out-of-stock variant_stock" id="unavailable-gl" style="display: none">{{ 'products.product.unavailable' | t }}</p>
                                                   {%- if check_external == false -%}
                                                   {%- if current_variant.inventory_quantity <= 0 and current_variant.available and current_variant.inventory_management == 'shopify' -%}
-      <button type="submit" id="shopify_add_to_cart" class="add_to_cart_button ajax_form_cart single_add_to_cart_button button alt if">{{ 'products.product.pre_orders' | t }}</button>
+                                                     <button type="submit" id="shopify_add_to_cart" class="add_to_cart_button ajax_form_cart single_add_to_cart_button button alt if">{{ 'products.product.pre_orders' | t }}</button>
                                                  {%- else -%}
                                                  {% if product.available %} 
                                                       {% if product.vendor == 'Wilderly Bride by Allure Bridals' or product.vendor == 'Mori Lee Bridal' or product.vendor == 'Primavera Bridal' %}
@@ -849,10 +945,10 @@
                                               {%- if current_variant.inventory_quantity <= 0 and current_variant.available and current_variant.inventory_management == 'shopify' -%}
                                                <button type="submit" id="shopify_add_to_cart" onclick="pintrk('track', 'addtocart');
                                                window.dotq = window.dotq || []; window.dotq.push( { 'projectId': '10000', 'properties': {  'pixelId': '10089243', 'qstrings': { 'et': 'custom', 'ec': 'shopping', 'ea': 'AddToCart', 'el': 'AddToCart', 'ev': '{{ product.title }}', 'gv': '{{ product.price | money_without_currency }}' } } } );"
- class="test_1 add_to_cart_button ajax_form_cart single_add_to_cart_button button alt">{{ 'products.product.pre_orders' | t }}</button>
+                                                class="test_1 add_to_cart_button ajax_form_cart single_add_to_cart_button button alt">{{ 'products.product.pre_orders' | t }}</button>
                                               {%- else -%}
                                               <button type="submit" id="shopify_add_to_cart" onclick="pintrk('track', 'addtocart');"
- class="add_to_cart_button ajax_form_cart single_add_to_cart_button button alt">{{ 'products.product.add_to_cart' | t }}</button>
+                                                class="add_to_cart_button ajax_form_cart single_add_to_cart_button button alt">{{ 'products.product.add_to_cart' | t }}</button>
                                               {%- endif -%}
                                             {%- else -%}
                                             <a href="{{ check }}" rel="nofollow" class="single_add_to_cart_button button alt">{{ product.metafields.external | first | first }}</a>
@@ -881,16 +977,39 @@
                             <div id="variant-inventory">
                             </div>
                              {% if vendortitle == 'jovani' %}
-                              <span class="onlyjovani Jovani" style="color: #f85364;font-weight: bold;text-transform: uppercase;display: block;margin-bottom: 10px;">ALL JOVANI OVER $299 DRESSES SHIP COMPLIMENTARY 3 DAY SHIPPING</span>
+                              <span class="onlyjovani Jovani" style="color: #f85364;font-weight: bold;text-transform: uppercase;display: block;margin-bottom: 10px;">ALL JOVANI OVER $250 DRESSES SHIP COMPLIMENTARY 3 DAY SHIPPING</span>
                               {%- endif -%}
                              {%- if vendortitle == 'alfred sung' or vendortitle == 'dessy collection' or vendortitle == 'social bridesmaids by dessy' or vendortitle == 'jy - jenny yoo' or vendortitle == 'lela rose' or vendortitle == '57 grand' -%}
                               <span style="color: #f85364;font-weight: bold;text-transform: uppercase;display: block;margin-bottom: 10px;">This Bridesmaid Dress Ships within 48 hours</span>
                              {%- endif -%}
-                             
-                             <div class="Info" id="ProdDetailInfomobile">
+                               <div class="Info" id="ProdDetailInfomobile">
                                     <div class="Details shipping">
                                             <div class="Image">
-                                                <div class="image shipping_image"></div>
+                                                <div class="image shipping_image"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;width: 50px;height: 50px;" xml:space="preserve">
+                                      <style type="text/css">
+                                        .st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+                                      </style>
+                                      <g id="_x31_">
+                                        <path id="XMLID_24_" class="st0" d="M19.1,40.6l-1,0c-0.7,0-1.3-0.6-1.3-1.3v-1.1"/>
+                                        <path id="XMLID_23_" class="st0" d="M16.7,23.5v-5c0-0.7,0.6-1.3,1.3-1.3l18.2,0c0.7,0,1.3,0.6,1.3,1.3v22.1l-7.2,0"/>
+                                        <path id="XMLID_13_" class="st0" d="M39.3,40.6h-1.7V21.2h6.8c0.6,0,1.1,0.2,1.5,0.6l5.3,5.1c0.4,0.4,0.6,1,0.6,1.5v10.7   c0,0.7-0.6,1.3-1.3,1.3h-0.2"/>
+                                        <g id="XMLID_12_">
+                                          <path id="XMLID_34_" d="M43.3,27l2.6,2.6v2.3h-3.6V27H43.3 M43.6,25h-2.6c-0.4,0-0.6,0.3-0.6,0.6v7.6c0,0.4,0.3,0.6,0.6,0.6h6.3    c0.4,0,0.6-0.3,0.6-0.6v-4c0-0.4-0.2-0.7-0.5-1l-3-3C44.2,25.1,43.9,25,43.6,25L43.6,25z"/>
+                                        </g>
+                                        <line id="XMLID_8_" class="st0" x1="16.4" y1="26.5" x2="26" y2="26.5"/>
+                                        <line id="XMLID_9_" class="st0" x1="14.3" y1="30.8" x2="24.8" y2="30.8"/>
+                                        <line id="XMLID_10_" class="st0" x1="12.1" y1="35.1" x2="22.7" y2="35.1"/>
+                                        <g id="XMLID_7_">
+                                          <path id="XMLID_30_" d="M24.8,41.2c1,0,1.8,0.8,1.8,1.8s-0.8,1.8-1.8,1.8S23,44,23,43S23.8,41.2,24.8,41.2 M24.8,39.2    c-2.1,0-3.8,1.7-3.8,3.8s1.7,3.8,3.8,3.8s3.8-1.7,3.8-3.8S26.9,39.2,24.8,39.2L24.8,39.2z"/>
+                                        </g>
+                                        <g id="XMLID_14_">
+                                          <path id="XMLID_26_" d="M44.8,41.2c1,0,1.8,0.8,1.8,1.8s-0.8,1.8-1.8,1.8S43,44,43,43S43.8,41.2,44.8,41.2 M44.8,39.2    c-2.1,0-3.8,1.7-3.8,3.8s1.7,3.8,3.8,3.8s3.8-1.7,3.8-3.8S46.9,39.2,44.8,39.2L44.8,39.2z"/>
+                                        </g>
+                                      </g>
+                                      <g id="XMLID_244_">
+                                        <path id="XMLID_20_" d="M32,2c16.5,0,30,13.5,30,30S48.5,62,32,62S2,48.5,2,32S15.5,2,32,2 M32,0C14.3,0,0,14.3,0,32s14.3,32,32,32   s32-14.3,32-32S49.7,0,32,0L32,0z"/>
+                                      </g>
+                                    </svg></div>
                                                 <span>Free Shipping</span>
                                             </div>
                                             <div class="Cnt">
@@ -900,7 +1019,32 @@
                                        </div>
                                        <div class="Details Exchange">
                                         <div class="Image">
-                                                <div class="image exchange_image"></div>
+                                                <div class="image exchange_image"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;width: 50px;height: 50px;" xml:space="preserve">
+                                      <style type="text/css">
+                                        .st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+                                        .st1{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+                                      </style>
+                                      <g id="_x32_">
+                                        <g id="XMLID_95_">
+                                          <path id="XMLID_45_" d="M32,2c16.5,0,30,13.5,30,30S48.5,62,32,62S2,48.5,2,32S15.5,2,32,2 M32,0C14.3,0,0,14.3,0,32    s14.3,32,32,32s32-14.3,32-32S49.7,0,32,0L32,0z"/>
+                                        </g>
+                                        <g id="XMLID_11_">
+                                          <line id="XMLID_158_" class="st0" x1="32.5" y1="30.4" x2="19.9" y2="25.2"/>
+                                          <polyline id="XMLID_154_" class="st0" points="19.9,30.7 19.9,37.4 31.8,43.5   "/>
+                                          <path id="XMLID_153_" class="st0" d="M45.4,25.1l-13.1-4.6l-13.1,4.1"/>
+                                          <polyline id="XMLID_152_" class="st0" points="44.7,30.5 44.7,37.9 32.3,42.9 32.3,30.7 44.7,25.7   "/>
+                                          <polyline id="XMLID_156_" class="st0" points="31.9,30.2 29.6,34.8 17.4,29.2 19.8,24.1   "/>
+                                          <polyline id="XMLID_157_" class="st0" points="32.3,30.2 34.4,35.1 46.6,29.5 44.8,24.5   "/>
+                                          <line id="XMLID_5_" class="st0" x1="32.3" y1="20.5" x2="32.3" y2="27.4"/>
+                                        </g>
+                                        <g id="XMLID_1_">
+                                          <path id="XMLID_4_" class="st1" d="M50,18.1c3,3.9,4.8,8.7,4.8,14c0,12.6-10.2,22.8-22.8,22.8c-4.8,0-9.3-1.5-13-4.1"/>
+                                          <path id="XMLID_15_" class="st1" d="M44.7,13.1c-1.4-1-3-1.8-4.6-2.4c-2.5-1-5.3-1.5-8.1-1.5C19.4,9.3,9.2,19.5,9.2,32.1    c0,5,1.6,9.7,4.4,13.4"/>
+                                          <path id="XMLID_3_" class="st1" d="M40,14.6l5.6-0.5c0.3,0,0.6-0.4,0.4-0.7l-2-5.2"/>
+                                          <path id="XMLID_2_" class="st1" d="M24.1,49.5l-5.7,0.3c-0.3,0-0.6,0.3-0.4,0.7l1.8,5.3"/>
+                                        </g>
+                                      </g>
+                                    </svg></div>
                                                 <span>Exchanges &amp; Returns</span>
                                             </div>
                                             <div class="Cnt">
@@ -910,7 +1054,26 @@
                                        </div>
                                        <div class="Details Price-match">
                                             <div class="Image">
-                                               <div class="image price_image"></div>
+                                               <div class="image price_image"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;width: 50px;height: 50px;" xml:space="preserve">
+                                     <g id="XMLID_9_">
+                                       <g id="XMLID_437_">
+                                         <path id="XMLID_15_" d="M32,2c16.5,0,30,13.5,30,30S48.5,62,32,62S2,48.5,2,32S15.5,2,32,2 M32,0C14.3,0,0,14.3,0,32    s14.3,32,32,32s32-14.3,32-32S49.7,0,32,0L32,0z"/>
+                                       </g>
+                                       <g id="XMLID_8_">
+                                         <path id="XMLID_30_" d="M49.6,41L49.6,41c-0.2-0.9-0.8-1.6-1.7-1.8c-0.5-0.1-1.2-0.1-1.8,0.1l-1.9,0.5c-2,0.5-4.1,1.1-6.1,1.6    c-0.1,0-0.2,0-0.3,0c-1.3-0.5-2.5-1-3.8-1.5c-1.8-0.7-3.5-1.4-5.3-2.1c-1.7-0.7-3.5-0.5-5.1,0.4c-0.6,0.4-1.3,0.7-1.9,1.1    c-0.3,0.2-0.6,0.4-0.9,0.6l-1.4,0.9l-0.7-1.1c-0.2-0.3-0.4-0.4-0.6-0.5c-0.2-0.1-0.5,0-0.7,0.1c-0.2,0.1-0.8,0.5-1.3,0.8l-1.4,0.8    c-0.3,0.2-0.5,0.6-0.3,1l6.8,11.8c0.1,0.2,0.3,0.3,0.4,0.3c0.1,0,0.1,0,0.2,0c0.1,0,0.3,0,0.4-0.1c0.7-0.4,2.4-1.4,2.7-1.6    c0.5-0.3,0.7-0.8,0.3-1.3l-0.6-1.1c0.8-0.5,1.7-0.6,2.7-0.4l3.5,1c1.7,0.5,3.4,1,5.1,1.5c1,0.3,2.2,0.1,3-0.6    c1.2-1,2.5-1.9,3.7-2.9l2.8-2.2c1.1-0.9,2.3-1.7,3.4-2.6C49.6,42.9,49.8,42,49.6,41z M28,39.3c2.2,0.9,4.4,1.8,6.6,2.6l2.9,1.2    c0.4,0.2,0.9,0.3,1.3,0.5c0.4,0.2,0.5,0.5,0.5,0.9c0,0.4-0.3,0.6-0.7,0.7c-0.2,0-0.3,0-0.5-0.1l-0.1,0c-2-0.4-4-0.8-5.9-1.2    l-1.1-0.2c-0.5-0.1-1,0.2-1.1,0.6c0,0.2,0,0.5,0.1,0.6c0.1,0.2,0.3,0.3,0.6,0.4l1.3,0.3c2.1,0.4,4.1,0.9,6.2,1.3    c1.2,0.2,2.3-0.4,2.8-1.4c0.4-1,0.2-2.1-0.5-2.8c0.1,0,0.2-0.1,0.3-0.1l1-0.3c1.6-0.4,3.2-0.8,4.8-1.2c0.3-0.1,0.6-0.1,0.8-0.1    c0.5,0,0.7,0.3,0.7,0.4c0.1,0.3,0,0.7-0.3,0.9l-3.4,2.6c-2.2,1.7-4.3,3.3-6.5,5c-0.5,0.4-0.9,0.5-1.5,0.3c-1.1-0.3-2.2-0.6-3.4-1    c-1.7-0.5-3.3-1-5-1.4c-0.6-0.2-1.1-0.3-1.7-0.3c-0.9,0-1.7,0.2-2.6,0.7l-3.5-6.1l2.3-1.4c0.6-0.4,1.2-0.7,1.8-1.1    C25.5,38.9,26.8,38.8,28,39.3z M23.3,51l-0.4,0.2c-0.3,0.2-0.5,0.3-0.8,0.4l-5.7-10c0.3-0.2,0.8-0.5,1.2-0.7L23.3,51z"/>
+                                         <g id="XMLID_7_">
+                                           <g id="XMLID_4_">
+                                             <path id="XMLID_2_" d="M37.6,35.5c-4.3,0-7.8-3.5-7.8-7.8s3.5-7.8,7.8-7.8s7.8,3.5,7.8,7.8S41.9,35.5,37.6,35.5z M37.6,21.8      c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S40.9,21.8,37.6,21.8z"/>
+                                             <path id="XMLID_18_" d="M39.9,28c-0.2-0.2-0.5-0.4-0.8-0.5c-0.3-0.1-0.6-0.2-0.9-0.3c-0.2-0.1-0.4-0.1-0.6-0.2l-0.1,0      c-0.4-0.1-0.6-0.2-1-0.4c-0.1,0-0.1-0.1-0.2-0.2c0-0.1,0-0.2,0.1-0.3c0.1-0.1,0.2-0.2,0.3-0.2c0,0,0.1,0,0.1-0.1      c0.5-0.2,1.1-0.2,1.6,0c0.2,0.1,0.3,0.2,0.3,0.5c0,0.2,0.2,0.4,0.4,0.4c0.2,0,0.5,0,0.7,0c0.1,0,0.2,0,0.3-0.1      c0,0,0.1-0.1,0.1-0.3c0-0.1,0-0.3-0.1-0.4C40,25.4,39.6,25,39,24.8c-0.2-0.1-0.4-0.1-0.6-0.1l-0.1,0c0,0,0,0,0,0      c0-0.1,0-0.2,0-0.2c0-0.2-0.1-0.3-0.3-0.3c-0.2,0-0.4,0-0.6,0c-0.2,0-0.3,0.2-0.3,0.4c0,0.1,0,0.1,0,0.2c0,0,0,0-0.1,0l-0.1,0      c-0.5,0.1-0.9,0.3-1.2,0.5c-0.4,0.3-0.6,0.9-0.5,1.4c0,0.5,0.3,0.9,0.7,1.1c0.2,0.1,0.5,0.2,0.7,0.3c0.2,0.1,0.5,0.1,0.7,0.2      c0.3,0.1,0.5,0.1,0.8,0.2c0.3,0.1,0.5,0.2,0.7,0.3c0,0,0,0,0.1,0c0.1,0.1,0.2,0.3,0.1,0.4c0,0.2-0.3,0.5-0.6,0.5      c-0.4,0.1-0.8,0.1-1.3,0c-0.5-0.1-0.7-0.3-0.8-0.7c0-0.2-0.2-0.3-0.4-0.3c-0.2,0-0.4,0-0.6,0c-0.1,0-0.2,0-0.3,0.1      c-0.1,0.1-0.1,0.2-0.1,0.3c0,0.4,0.2,0.7,0.4,1c0.4,0.4,0.9,0.7,1.6,0.8c0.1,0,0.1,0,0.1,0c0,0,0,0.1,0,0.1v0.1      c0,0.2,0.1,0.4,0.3,0.4c0.1,0,0.2,0,0.3,0c0.1,0,0.2,0,0.3,0c0.2,0,0.3-0.1,0.3-0.4c0-0.1,0-0.1,0-0.2c0,0,0.1,0,0.1,0      c0.5-0.1,0.9-0.2,1.2-0.4c0.5-0.3,0.7-0.7,0.8-1.3C40.4,28.8,40.3,28.4,39.9,28z"/>
+                                           </g>
+                                           <g id="XMLID_1_">
+                                             <path id="XMLID_3_" d="M31.2,25.2c-3.8-0.5-6.7-3.8-6.7-7.7c0-4.3,3.5-7.8,7.8-7.8s7.8,3.5,7.8,7.8c0,1.3-0.3,2.5-0.9,3.6      l-1.6-0.8c0.5-0.9,0.7-1.8,0.7-2.8c0-3.3-2.7-6-6-6c-3.3,0-6,2.7-6,6c0,3,2.2,5.5,5.2,5.9L31.2,25.2z"/>
+                                             <path id="XMLID_19_" d="M34.6,17.7c-0.2-0.2-0.5-0.4-0.8-0.5c-0.3-0.1-0.6-0.2-0.9-0.3c-0.2-0.1-0.4-0.1-0.6-0.2l-0.1,0      c-0.4-0.1-0.6-0.2-1-0.4c-0.1,0-0.1-0.1-0.2-0.2c0-0.1,0-0.2,0.1-0.3c0.1-0.1,0.2-0.2,0.3-0.2c0,0,0.1,0,0.1-0.1      c0.5-0.2,1.1-0.2,1.6,0c0.2,0.1,0.3,0.3,0.3,0.5c0,0.2,0.1,0.4,0.4,0.4c0.2,0,0.5,0,0.7,0c0.1,0,0.2,0,0.3-0.1      c0,0,0.1-0.1,0.1-0.3c0-0.1,0-0.3-0.1-0.4c-0.2-0.6-0.6-1-1.2-1.2c-0.2-0.1-0.4-0.1-0.6-0.1l-0.1,0c0,0,0,0,0,0      c0-0.1,0-0.2,0-0.2c0-0.2-0.1-0.3-0.3-0.3c-0.2,0-0.4,0-0.6,0c-0.2,0-0.3,0.2-0.3,0.4c0,0.1,0,0.1,0,0.2c0,0,0,0,0,0l-0.1,0      c-0.5,0.1-0.9,0.3-1.3,0.5c-0.4,0.3-0.6,0.9-0.6,1.4c0,0.5,0.3,0.9,0.8,1.1c0.3,0.1,0.5,0.2,0.7,0.3c0.3,0.1,0.5,0.2,0.8,0.2      c0.3,0.1,0.5,0.1,0.8,0.2c0.3,0.1,0.5,0.2,0.7,0.3c0,0,0,0,0.1,0c0.1,0.1,0.2,0.3,0.1,0.4c0,0.2-0.3,0.5-0.6,0.5      c-0.4,0.1-0.9,0.1-1.3,0c-0.5-0.1-0.7-0.4-0.8-0.8c0-0.2-0.2-0.3-0.4-0.3c-0.2,0-0.4,0-0.6,0c-0.1,0-0.2,0-0.3,0.1      c-0.1,0.1-0.1,0.2-0.1,0.3c0,0.4,0.2,0.7,0.4,1c0.4,0.4,0.9,0.7,1.6,0.8c0.1,0,0.1,0,0.1,0c0,0,0,0.1,0,0.1l0,0.1      c0,0.2,0.1,0.4,0.3,0.4c0.1,0,0.2,0,0.3,0c0.1,0,0.2,0,0.3,0c0.2,0,0.3-0.1,0.3-0.4c0-0.1,0-0.1,0-0.2l0,0c0,0,0.1,0,0.1,0      c0.5-0.1,0.9-0.2,1.2-0.4c0.5-0.3,0.8-0.8,0.8-1.3C35.1,18.5,34.9,18,34.6,17.7z"/>
+                                           </g>
+                                         </g>
+                                       </g>
+                                     </g>
+                                   </svg></div>
                                                 <span>Price Match</span>
                                             </div>
                                             <div class="Cnt">
@@ -920,7 +1083,33 @@
                                        </div>
                                        <div class="Details No Tax">
                                             <div class="Image">
-                                               <div class="image no_tax_image"></div>
+                                               <div class="image no_tax_image"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;width: 50px;height: 50px;" xml:space="preserve">
+                                     <style type="text/css">
+                                       .st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+                                       .st1{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+                                     </style>
+                                     <g id="XMLID_74_">
+                                       <path id="XMLID_13_" d="M32,2c16.5,0,30,13.5,30,30S48.5,62,32,62S2,48.5,2,32S15.5,2,32,2 M32,0C14.3,0,0,14.3,0,32s14.3,32,32,32   s32-14.3,32-32S49.7,0,32,0L32,0z"/>
+                                     </g>
+                                     <g id="XMLID_182_">
+                                       <path id="XMLID_57_" class="st0" d="M16.8,37.6l25.7,11.8c0.6,0.3,1.3,0,1.5-0.6l7.2-15.5c0.3-0.6,0-1.3-0.6-1.5L25,20   c-0.4-0.2-0.8-0.2-1.2,0l-10.3,4.6c-0.6,0.3-0.9,1-0.7,1.6L16,36.7C16.2,37.1,16.4,37.5,16.8,37.6z"/>
+                                       <circle id="XMLID_58_" class="st0" cx="20.3" cy="28.6" r="2.3"/>
+                                       <path id="XMLID_61_" class="st1" d="M19.1,26.6c0,0-7.1-8.3-3.5-11.5c0.6-0.5,1.4-0.7,2.2-0.5c1.3,0.4,2.7,1.9,2.8,6.2"/>
+                                       <g id="XMLID_181_">
+                                         <g id="XMLID_62_">
+                                           <path id="XMLID_64_" d="M34.6,27.7l-0.5,1l-1.4-0.7l-2,4.3l-1.3-0.6l2-4.3L30,26.8l0.5-1L34.6,27.7z"/>
+                                           <path id="XMLID_69_" d="M36.5,33.9l-2-0.9l-0.8,0.8l-1.4-0.6l4.4-4.4l1.5,0.7l-0.5,6.2L36.4,35L36.5,33.9z M36.7,32.7l0.2-2.3     l-1.6,1.7L36.7,32.7z"/>
+                                           <path id="XMLID_170_" d="M41.7,37.4l-0.3-2.1l-1.7,1.2l-1.5-0.7l3-1.9l-0.5-3.4l1.5,0.7l0.3,2.1l1.7-1.2l1.5,0.7l-2.9,1.9     l0.5,3.5L41.7,37.4z"/>
+                                         </g>
+                                         <g id="XMLID_63_">
+                                           <path id="XMLID_172_" d="M31,34.4l-0.5,1l-2.2-1l-0.5,1.1l1.6,0.8l-0.5,1l-1.6-0.8l-1,2.2l-1.3-0.6l2.5-5.3L31,34.4z"/>
+                                           <path id="XMLID_174_" d="M32,41.3l-0.2-2.5l-0.3-0.1l-0.9,2L29.2,40l2.5-5.3l2.2,1c0.4,0.2,0.7,0.4,1,0.7     c0.2,0.3,0.4,0.6,0.4,0.9c0,0.3,0,0.6-0.2,1c-0.2,0.4-0.4,0.6-0.7,0.8c-0.3,0.2-0.7,0.2-1.2,0.2l0.3,2.7L32,41.3z M31.9,37.7     l0.8,0.4c0.2,0.1,0.4,0.1,0.6,0.1c0.2-0.1,0.3-0.2,0.4-0.4c0.1-0.2,0.1-0.4,0-0.6c-0.1-0.2-0.2-0.3-0.5-0.4l-0.8-0.4L31.9,37.7z"/>
+                                           <path id="XMLID_177_" d="M37.5,38.6L37,39.7l1.7,0.8l-0.5,1l-1.7-0.8L36,41.9l2,0.9l-0.5,1l-3.3-1.5l2.5-5.3l3.3,1.5l-0.5,1     L37.5,38.6z"/>
+                                           <path id="XMLID_179_" d="M41.6,40.5l-0.5,1.1l1.7,0.8l-0.5,1l-1.7-0.8l-0.5,1.2l2,0.9l-0.5,1l-3.3-1.5l2.5-5.3l3.3,1.5l-0.5,1     L41.6,40.5z"/>
+                                         </g>
+                                       </g>
+                                     </g>
+                                   </svg>  </div>
                                                 <span>No Tax</span>
                                             </div>
                                             <div class="Cnt">
@@ -928,27 +1117,141 @@
                                                 <a href="https://www.couturecandy.com/shipping-returns-exchanges/" target="_blank">See Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                             </div> 
                                      </div>                                                                           
-                                  </div><!--ProdDetailInfo Mobile main-->
+                                  </div><!--ProdDetailInfo Mobile main-->                 
                               {%- if product.variants.size == 1 -%}<div class="clear"></div>{%- endif -%}
                              {%- if product.variants.size > 1 and settings.product_img_trust_seal == false -%}<div class="clear"></div>{%- endif -%}
-                             {%- if settings.use_compare or settings.size_chart  -%}
-                             <div class="compare-btn-wrapper">
-                                {%- if settings.use_compare and pages['compare'].empty? != true -%}
-                                <a href="#compare_popup" data-pid="{{product.handle}}_sp_{{product.id}}" class="compare button" data-pid="{{product.handle}}" rel="nofollow">{{ 'products.product.compare' | t }}</a>
-                                {%- endif -%}
-                                {%- if settings.size_chart -%}
-                                {%- if product.metafields.meta.image_size_chart != blank or settings.image_size_chart != blank -%}
-                                <a class="cd chp jas-magnific-image button size_guide" href="{%- if product.metafields.meta.image_size_chart != blank-%}{{product.metafields.meta.image_size_chart}}{%- else -%}{{ settings.image_size_chart | img_url: '1x1' | replace: '_1x1', ''  }}{%- endif -%}" data-effect="mfp-zoom-in">{{ 'products.product.product_size_guide' | t }}</a>
-                                {%- endif -%}
-                                {%- endif -%}
-                             </div>
-                             {%- endif -%}
                              {%- if design_products_page != 'product-design-compact' -%}
                                  <div class="product-tabs-wrapper">
                                     <div class="container">
                                        <div class="row">
                                           <div class="col-sm-12">
-                                             <div class="shopify-tabs sp-tabs-wrapper tabs-layout-tabs">{%- section 'gl-product-page-description' -%}</div>
+                                             <div class="shopify-tabs sp-tabs-wrapper tabs-layout-tabs">
+                                                    {%- if section.blocks.size > 0 -%}
+                                                   <ul class="tabs sp-tabs">
+                                                      {%- for block in section.blocks -%}
+                                                         {%- case block.type -%}
+                                                            {%- when 'description' -%}
+                                                               <li class="description_tab{%- if forloop.first %} active{%- endif -%}"><a href="#tab-description">{{ block.settings.title }}</a></li>
+                                                            {%- when 'additional' -%}
+                                                            {%- if product.has_only_default_variant == false -%}
+                                                               <li class="additional_information_tab{%- if forloop.first %} active{%- endif -%}"><a href="#{{block.id}}">{{ block.settings.title }}</a></li>
+                                                            {%- endif -%}
+                                                            {%- when 'bundle' -%}
+                                                               {%- if product.metafields.nitro_bundle.bundle -%}{%- assign acct_tab = true -%}
+                                                                  <li class="bundle_tab{%- if forloop.first %} active{%- endif -%}"><a href="#tab-bundle">{{ block.settings.title }}</a></li>
+                                                               {%- endif -%}
+                                                            {%- when 'review' -%}
+                                                               {%- if settings.show_product_page_rating -%}
+                                                                  <li class="reviews_tab{%- if forloop.first %} active{%- endif -%}"><a href="#{{block.id}}">{{ block.settings.title }}
+                                                                  {%- if block.settings.use_count_reviews -%} 
+                                                                    {%- assign product__reviews-count=0 -%}
+                                                                    {%- if product.metafields.spr.reviews -%}
+                                                                                {%- capture review_data -%}{{ product.metafields.spr.reviews }}{%- endcapture -%}
+                                                                                {%- assign rd_a1 = review_data | split: '<meta itemprop="reviewCount" content="' -%}
+                                                                                {%- assign rd_a2 = rd_a1[1] | split: '\">\n' | first -%} 
+                                                                                {%- assign product__reviews-count = rd_a2 | plus:0 -%}
+                                                                     {%- endif -%}
+                                                                      {%- if product__reviews-count <= 0 -%}
+                                                                         {%- assign reviews-tab__header="(0)" -%}
+                                                                      {%- else -%}
+                                                                        {%- capture reviews-tab__header -%}({{product__reviews-count}}){%- endcapture -%}   
+                                                                      {%- endif -%} 
+                                                                      {{reviews-tab__header}}
+                                                                  {%-endif-%}
+                                                                  </a></li>
+                                                               {%- endif -%}
+                                                            {%- when 'html' -%}
+                                                               <li class="basel_additional_tab_tab{%- if forloop.first %} active{%- endif -%}"><a href="#{{block.id}}">{{ block.settings.title }}</a></li>
+                                                            {%- when 'text' -%}
+                                                            <li class="basel_additional_tab_tab{%- if forloop.first %} active{%- endif -%}"><a href="#{{block.id}}">{{ block.settings.title }}</a></li>
+                                                         {%- endcase -%}
+                                                      {%- endfor -%}
+                                                      {%- for meta in product.metafields.additions -%}
+                                                         <li class="{{meta[0] | handleize}}_tab{%- if section.blocks.size < 1 and forloop.first %} active{% endif %}">
+                                                          <a id="product_extra_tab_{{meta[0] | handleize}}" href="#tab{{meta[0] | handleize}}">{{meta[0]}}</a>
+                                                         </li>
+                                                      {%- endfor -%}
+                                                   </ul>
+                                                   {%- assign active_product = product -%}
+                                                   {%- for block in section.blocks -%}
+                                                      {% case block.type %}
+                                                         {%- when 'description' -%}
+                                                         <div class="basel-tab-wrapper">
+                                                            <a href="#tab-description" class="basel-accordion-title tab-title-description">{{ block.settings.title }}</a>
+                                                            <div class="shopify-Tabs-panel shopify-Tabs-panel--description panel entry-content sp-tab" id="tab-description">
+                                                                    {%comment%}
+                                                                   {%- include 'custom_description' -%}                                                                                                      
+                                                                   {%endcomment%}
+                                                               {%- include 'shortcode' load: product.description -%}
+                                                            </div>
+                                                         </div>
+                                                         {%- when 'additional' -%}
+                                                            {%- if product.has_only_default_variant == false -%}
+                                                            <div class="basel-tab-wrapper">
+                                                               <a href="{{ block.id }}" class="basel-accordion-title tab-title-additional_information">{{ block.settings.title }}</a>
+                                                               <div class="shopify-Tabs-panel shopify-Tabs-panel--additional_information panel entry-content sp-tab" id="{{ block.id }}">
+                                                                  <table class="shop_attributes">
+                                                                     <tbody>
+                                                                        {% for option in active_product.options_with_values %}
+                                                                        <tr class=">{{ option.name }}">
+                                                                           <th>{{ option.name }}</th>
+                                                                           <td><p>
+                                                                             {%- assign option_index = forloop.index -%}
+                                                                             {%- for value in option.values -%}
+                                                                             {%- assign variant_label_state = true -%}
+                                                                             {%- if active_product.options.size == 1 -%}
+                                                                             {%- unless active_product.variants[forloop.index0].available  -%}
+                                                                             {%- assign variant_label_state = false -%}
+                                                                             {%- endunless -%}
+                                                                             {%- endif -%} 
+                                                                               {{ value | capitalize }}{% unless forloop.last == true %}, {% endunless %}
+                                                                             {%- endfor -%}
+                                                                           </p></td>
+                                                                        </tr>
+                                                                        {% endfor %}
+                                                                     </tbody>
+                                                                  </table>
+                                                               </div>
+                                                            </div>
+                                                            {%- endif -%}
+                                                         {%- when 'bundle' -%}
+                                                            {%- if active_product.metafields.nitro_bundle.bundle -%}{%- assign acct_tab = true -%}
+                                                           <div class="basel-tab-wrapper">
+                                                             <div class="shopify-Tabs-panel shopify-Tabs-panel--description panel entry-content sp-tab" id="tab-bundle">
+                                                             {%- include 'nitro-product-bundle' -%}
+                                                             </div>
+                                                           </div>
+                                                        {%- endif -%}
+                                                         {%- when 'review' -%}
+                                                            {%- if settings.show_product_page_rating -%}
+                                                            <div class="basel-tab-wrapper">
+                                                               <a href="{{ block.id }}" class="basel-accordion-title tab-title-reviews">{{ block.settings.title }}</a>
+                                                               <div class="shopify-Tabs-panel shopify-Tabs-panel--reviews panel entry-content sp-tab" id="{{ block.id }}">
+                                                                  <div id="shopify-product-reviews" data-id="{{active_product.id}}">{{ active_product.metafields.spr.reviews }}</div>
+                                                               </div>
+                                                            </div>
+                                                            {%- endif -%}
+                                                         {%- when 'html' -%}
+                                                         <div class="basel-tab-wrapper tab_html">
+                                                            <a href="{{ block.id }}" class="basel-accordion-title tab-title-reviews">{{ block.settings.title }}</a>
+                                                            <div class="shopify-Tabs-panel shopify-Tabs-panel--reviews panel entry-content sp-tab" id="{{ block.id }}">{{block.settings.code}}</div>
+                                                         </div>
+                                                         {%- when 'text' -%}
+                                                         <div class="basel-tab-wrapper tab_text">
+                                                            <a href="{{ block.id }}" class="basel-accordion-title tab-title-reviews">{{ block.settings.title }}</a>
+                                                            <div class="shopify-Tabs-panel shopify-Tabs-panel--reviews panel entry-content sp-tab" id="{{ block.id }}"><div class="rte-setting">{{ block.settings.text }}</div></div>
+                                                         </div>
+                                                      {%- endcase -%}
+                                                   {%- endfor -%}
+                                                      {%- for meta in active_product.metafields.additions -%}
+                                                       <div class="basel-tab-wrapper"><a href="#tab{{meta[0] | handleize}}" class="basel-accordion-title tab-title-{{meta[0] | handleize}}">{{meta[0]}}</a><div id="tab{{meta[0] | handleize}}" class="shopify-Tabs-panel shopify-Tabs-panel--{{meta[0] | handleize}} panel entry-content wc-tab">{{ meta[1] }}</div></div>
+                                                      {%- endfor -%}
+                                                {%- else -%}
+                                                <div class="text-center">{%- include 'no-blocks'-%}</div>   
+                                                {%- endif -%}
+
+                                            
+                                              </div>
                                           </div>
                                        </div>
                                     </div>
@@ -975,7 +1278,6 @@
                                        {%-endif-%}
                                     </div>
                           {%-endif-%}
-                             {%- if design_products_page == 'product-design-compact' -%}<div class="shopify-tabs sp-tabs-wrapper tabs-layout-accordion">{%- section 'gl-product-page-description' -%}</div>{%- endif -%}
                              <div class="product_meta">
                                 {%- if settings.show_sku -%}<span class="sku_wrapper">{{ 'products.product.product_sku' | t }} <span class="sku variant-sku" id="product-sku" itemprop="sku">{%- if current_variant.sku != blank -%}{{current_variant.sku}}{%-else-%}{{ 'products.product.na' | t }}{%-endif-%}</span></span>{%- endif -%}
                                 {%- if product.collections.size > 0 and settings.show_category_product -%}
@@ -995,18 +1297,11 @@
                              </div>
                              {%- if settings.product_img_trust_seal and settings.img_trust_seal != blank -%}{%- include 'product_img_trust_seal',padding_class:'gl_mb_20' -%}{%- endif -%}
                           {%- if product.has_only_default_variant == false or linklists[product.handle].links.size == 0 -%}</div>{%- endif-%}      
-                       </div>
+                       </div>                       
                     </div>
                  </div><!-- .summary --> 
               </div>  
            </div>
-           {%- if settings.product_sidebar != '1' -%}
-           <aside class="sidebar-container {{class_sidebar}} sidebar-{{settings.product_sidebar}}" role="complementary">
-              <div class="sidebar-inner">
-                 {%- section 'gl_section_sidebar_product' -%}<!-- .widget-area -->
-              </div><!-- .sidebar-inner -->
-           </aside><!-- .sidebar-container -->
-           {%- endif -%}
         </div>
      </div>
      {%- if settings.show_share_btn and design_products_page == 'product-design-alt' -%}
@@ -1014,4 +1309,4 @@
      {%- endif -%}
   </div>
 
- {%- include 'producrtpage-script' -%}
+ 
