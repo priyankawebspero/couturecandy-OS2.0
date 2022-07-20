@@ -26,9 +26,11 @@
 jQuery(document).ready(function(){var e=function(){var e=jQuery(".dropdown-scroll > .sub-menu-dropdown");e.each(function(){var e=jQuery(this),o=e.find("> .container");e.on("mousemove",function(n){var t=e.offset(),i=n.pageY-t.top,r=o.outerHeight()-e.height();if(!(0>r)){var u=i/e.height(),a=0;a=0>=u?0:u>=1?-r:-u*r,a=parseInt(a),o.css({position:"relative",top:a})}})})};setTimeout(function(){e()},1e3),e()});
 </script>
 {%- if admin_shopify -%}<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>{%- elsif check_youtube -%}<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>{%- endif %}
+
 {%- if template contains 'product' -%}
 {%- include 'product_js' -%}
 {%- endif -%}
+
 {%- if template.name == 'addresses' %}
 <script type="text/javascript">
 (function($) {
