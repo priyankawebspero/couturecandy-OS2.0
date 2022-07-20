@@ -166,7 +166,7 @@ Shopify.linkOptionSelectors = function(product) {
       observer.disconnect();
     }
     var config = { childList: true, subtree: true };
-      observer = MutationObserver(function() {      
+      observer = new MutationObserver(function() {      
       Shopify.linkOptionSelectors(product);
       observer.disconnect();
     });  
