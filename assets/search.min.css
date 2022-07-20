@@ -878,6 +878,30 @@ display:none;
     margin: 0 auto 15px auto;
 }
 
+.boost-pfs-search-container h1.boost-pfs-search-result-header {
+    font-size: 35px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.boost-pfs-search-container form.boost-pfs-search-form .boost-pfs-search-input {
+    height: 55px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding-left: 25px;
+	padding-right: 85px;
+}
+
+.boost-pfs-search-container form.boost-pfs-search-form button.boost-pfs-search-btn {
+    background: #e94949;
+}
+
+.boost-pfs-search-container form.boost-pfs-search-form button.boost-pfs-search-btn:before {
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 55px;
+}
+
 @media only screen and (max-width:1550px){
   
   .boost-pfs-container-default-fullwidth {
