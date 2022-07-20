@@ -1711,13 +1711,20 @@ aside.sidebar-container .sidebar-inner ul {
   
 }
 
+.product-grid-item .product-element-top .yith-wcwl-wishlistaddedbrowse.gl_addedbrowse_wishlist {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .product-grid-item .product-element-top .yith-wcwl-wishlistexistsbrowse {
     position: absolute;
     top: 0;
     right: 0;
 }
 
-.product-grid-item .product-element-top .yith-wcwl-wishlistexistsbrowse a {
+.product-grid-item .product-element-top .yith-wcwl-wishlistexistsbrowse a, 
+.product-grid-item .product-element-top .yith-wcwl-wishlistaddedbrowse.gl_addedbrowse_wishlist a{
     color: #e94949;
 }
 
