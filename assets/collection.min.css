@@ -1187,6 +1187,10 @@ display:none;
     font-size: 15px;
 }
   
+.boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li {
+    margin: 0 2px;
+}
+  
 }
 
 @media only screen and (max-width:767px){
