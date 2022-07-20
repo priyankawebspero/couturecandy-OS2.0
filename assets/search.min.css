@@ -1120,31 +1120,7 @@ display:none;
     font-size: 14px;
 }
  
-.main-header .right-column .mobile_log img {
-    max-width: 37px;
-}
-  
-.right-column .mobile-nav-icon {
-    margin-top: 0;
-}
-  
-.topbar-content.mobile .top_bar_left.col-6 .top_bar_text_middle a {
-    font-size: 18px;
-}
-  
-.topbar-content .top_bar_email a i {
-    font-size: 16px;
-}
-  
-.main-header .container .header_middle_block .col-4 {
-   
-    top: -36px;
-}
-  
-.topbar-wrapp {
-    height: 38px;
-}
-  
+
 .boost-pfs-filter-products .boost-pfs-filter-product-item .boost-pfs-filter-product-bottom-inner .boost-pfs-filter-product-item-title {
     font-size: 14px;
     line-height: 1.2;
