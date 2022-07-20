@@ -1293,6 +1293,11 @@ display:none;
     padding: 0 15px;
 }
   
+.boost-pfs-search-result-toolbar {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+  
  .boost-pfs-filter-products {
     width: auto;
 }
