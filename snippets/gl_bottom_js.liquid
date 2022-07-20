@@ -104,3 +104,16 @@ jQuery(function($) {
 });
 </script>
 {%- endif -%}
+
+      {% if template contains "index" %}
+        <script type="text/javascript" src="https://static.criteo.net/js/ld/ld.js?shop=couture-candy.myshopify.com" async="true"></script>
+        <script type="text/javascript">
+        window.criteo_q = window.criteo_q || [];
+        window.criteo_q.push(
+          { event: "setAccount", account: 29071 },
+          { event: "{{setHashedEmail}}", email: "{{emailCust}}" },
+          { event: "setSiteType", type: checkDevice },
+          { event: "viewHome" }
+        );
+        </script>
+      {%- endif -%}
