@@ -1196,6 +1196,10 @@ display:none;
     padding: 0 8px;
 }
   
+.boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li {
+    margin-bottom: 10px;
+}
+  
 }
 
 @media only screen and (max-width:767px){
