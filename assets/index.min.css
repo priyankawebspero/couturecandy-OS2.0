@@ -1164,6 +1164,8 @@ html[lang="pt"] div#shopify-section-template--14532934697043__1654005036571929f8
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+  div#insta-feed {padding: 0 !important;}
+
 }
 @media only screen and (min-width:1200px){
   
@@ -1177,3 +1179,5 @@ html[lang="pt"] div#shopify-section-template--14532934697043__1654005036571929f8
     float: left;
 }
 }
+
+
