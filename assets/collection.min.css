@@ -1160,6 +1160,19 @@ display:none;
     clear: none !important;
 }
   
+.boost-pfs-filter-left-col .boost-pfs-filter-option {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+  
+.boost-pfs-filter-left-col .boost-pfs-filter-option.boost-pfs-filter-option-designer .boost-pfs-filter-option-item-list.boost-pfs-filter-option-item-list-box .boost-pfs-filter-option-item>button {
+    line-height: normal;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: calc(100% - 7px);
+    margin-right: 3px;
+}
+  
 }
 
 @media only screen and (max-width:767px){
