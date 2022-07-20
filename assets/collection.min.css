@@ -1399,9 +1399,7 @@ display:none;
     border-bottom: 1px solid #ccc;
 }
   
-.enable-sticky-header .main-header {
-    border-bottom: none !important;
-}
+
   
 .boost-pfs-filter-top-sorting-mobile .boost-pfs-filter-top-sorting-wrapper {
     background: #f5f5f5;
