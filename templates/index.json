@@ -363,7 +363,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/1_b41d8cfc-c73c-48cc-8f41-4eb4d79796e2.jpg",
             "heading": "PAGEANT DRESSES",
-            "content": "your dream is their dream",
+            "content": "your dream <br>is their dream",
             "button": "Shop Now",
             "id_collection": "pageant-dresses",
             "width": "4"
@@ -374,7 +374,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/2_038f2ade-65f9-4476-ab61-0e8f2f4a048f-min.jpg",
             "heading": "HOMECOMING  DRESSES",
-            "content": "the ultimate homecoming dresses",
+            "content": "the ultimate <br>homecoming dresses",
             "button": "SHOP NOW",
             "id_collection": "homecoming-dresses",
             "width": "4"
@@ -385,7 +385,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/3_73930f79-794c-40c1-851c-47863db576a2.jpg",
             "heading": "GRADUATION  DRESSES",
-            "content": "the ultimate graduation party dresses",
+            "content": "the ultimate graduation <br> party dresses",
             "button": "SHOP NOW",
             "id_collection": "graduation-dresses",
             "width": "4"

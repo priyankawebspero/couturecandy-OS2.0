@@ -1296,14 +1296,6 @@
         "settings": {
         }
       },
-      "list-collections-template": {
-        "type": "list-collections-template",
-        "settings": {
-          "display_type": "all",
-          "sort": "alphabetical",
-          "grid": 3
-        }
-      },
       "faqs_counter": {
         "type": "faqs_counter",
         "blocks": {
