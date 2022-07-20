@@ -3525,11 +3525,9 @@ footer .widget-title i {
 }
 
   footer .active .widget-title i {
-    position: absolute;
-    right: 5px;
-    font-size: 19px;
-    top: 2px;
     transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
 }
 
 }
