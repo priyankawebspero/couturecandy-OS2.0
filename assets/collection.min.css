@@ -1068,11 +1068,11 @@ display:none;
 }
   
 .boost-pfs-filter-left-col {
-    width: 200px;
+    width: 250px;
 }
   
 .boost-pfs-filter-right-col {
-    width: calc(100% - 200px);
+    width: calc(100% - 250px);
 }
   
 .boost-pfs-section-header .boost-pfs-filter-collection-description h1.heading.collection {
