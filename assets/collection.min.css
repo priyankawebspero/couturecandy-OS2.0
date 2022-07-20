@@ -1337,7 +1337,7 @@ display:none;
     margin-top: 0;
     left: 8px;
     width: calc(200% - 15px);
-    background: #000;
+    background: #f8f8f8;
 }
   
 .boost-pfs-filter-custom-sorting .boost-pfs-filter-filter-dropdown li {
@@ -1346,7 +1346,7 @@ display:none;
 }
   
 .boost-pfs-filter-custom-sorting .boost-pfs-filter-filter-dropdown li a {
-    color: #fff;
+    color: #000;
 }
   
 .boost-pfs-filter-top-sorting-mobile .boost-pfs-filter-top-sorting-wrapper span {
