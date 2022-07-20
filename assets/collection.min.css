@@ -1625,4 +1625,11 @@ display:none;
     top: 11px;
 }
   
+.boost-pfs-filter-tree-mobile-sticky.boost-pfs-filter-tree-v .boost-pfs-filter-option.boost-pfs-filter-option-designer .boost-pfs-filter-option-item-list.boost-pfs-filter-option-item-list-box .boost-pfs-filter-option-item>button {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    line-height: initial;
+    line-height: 1.2;
+}
+  
 }
