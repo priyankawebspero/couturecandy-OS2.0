@@ -198,13 +198,14 @@ div#shopify-section-template--14532934697043__165390901603cb214c {
     background: #fff;
     display: inline-block;
     margin-top: 30px;
-    padding: 12px 20px;
+    padding: 12px 20px 10px 20px;
     font-family: 'google_sansregular';
     text-transform: uppercase;
     border-radius: 5px;
     font-size: 16px;
     text-decoration: none !important;
     color: #000 !important;
+    /* padding-top: 15px; */
 }
 
 #shopify-section-template--14532934697043__16541439641d011f7d .Wrap_button_cs a.category-link-button:hover {
