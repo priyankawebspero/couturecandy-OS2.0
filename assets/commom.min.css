@@ -2165,6 +2165,13 @@ div#shopify-section-template--14532934697043__1655293959d5ab1c6c .title:before {
     left: -25px;
 }
 
+.added_to_cart.btn-color-primary:focus, .added_to_cart.btn-color-primary:hover, .btn.btn-color-primary:focus, .btn.btn-color-primary:hover, .button.btn-color-primary:focus, .button.btn-color-primary:hover, button.btn-color-primary:focus, button.btn-color-primary:hover, input[type=submit].btn-color-primary:focus, input[type=submit].btn-color-primary:hover {
+    background-color: #e44949;
+    border-color: #e44949;
+    opacity: 1;
+   
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
