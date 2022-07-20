@@ -2058,7 +2058,12 @@ body.template-product  {
   .single-product-content .product-image-summary .modal .modal-content {
     width: 100%;
 }
+ 
   
+.PreOrder__popup-window {
+    width: 93%;
+    max-width: 560px;
+}
 
   
 }
