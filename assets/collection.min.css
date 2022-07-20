@@ -1144,6 +1144,17 @@ display:none;
     height: 38px;
 }
   
+.boost-pfs-filter-products .boost-pfs-filter-product-item .boost-pfs-filter-product-bottom-inner .boost-pfs-filter-product-item-title {
+    font-size: 14px;
+    line-height: 1.2;
+    max-height: 35px;
+    min-height: 35px;
+}
+  
+.boost-pfs-filter-product-item-grid .boost-pfs-filter-product-bottom ul.boost-pfs-filter-item-swatch li.boost-pfs-filter-item-swatch-more a {
+    font-size: 14px;
+}
+  
 }
 
 @media only screen and (max-width:767px){
