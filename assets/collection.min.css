@@ -878,6 +878,12 @@ display:none;
     margin: 0 auto 15px auto;
 }
 
+.boost-pfs-filter-left-col .boost-pfs-filter-option.boost-pfs-filter-option-designer li.boost-pfs-filter-option-item .boost-pfs-filter-button {
+    line-height: 1.2;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
 @media only screen and (max-width:1550px){
   
   .boost-pfs-container-default-fullwidth {
