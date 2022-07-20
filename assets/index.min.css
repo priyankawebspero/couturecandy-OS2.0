@@ -564,7 +564,15 @@ html[lang="es"] #shopify-section-template--14532934697043__1654005036571929f8 .s
 html[lang="es"] #shopify-section-template--14532934697043__1654005036571929f8 .spb_column.gl_column_container.gl_col-md-6.gl_col-lg-6:last-child .gl_column-inner .spb_wrapper .gl_col-md-12.gl_col-lg-12:first-child .banner-inner {
     max-width: 25vw !important;
 }
+ 
+#shopify-section-template--14532934697043__16541439641d011f7d .Wrap_button_cs h2 {
+   
+    font-size: 2.9vw;
+}
   
+#shopify-section-template--14532934697043__16541439641d011f7d .Wrap_button_cs .content {
+    font-size: 1.5vw;
+}
  
 }
 
