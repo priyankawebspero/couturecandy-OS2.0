@@ -12,40 +12,14 @@
       {% endif %}
    {%- endfor -%}
 {%- endif -%}
-  {% if product.options.size == 1 %}
-  <script type="text/javascript">
-        var $addToCartForm = $('#callBackVariant form[action="/cart/add"]');
-        if (window.MutationObserver && $addToCartForm.length) {
-          if (typeof observer === 'object' && typeof observer.disconnect === 'function') {
-            observer.disconnect();
-          }
-          var config = { childList: true, subtree: true };
-          var observer = new MutationObserver(function() { 
-            {% for variant in product.variants %}
-              {% if variant.available == false %}
-                 {%- if settings.remove_sold_out -%}
-                    jQuery('#callBackVariant .variations .basel-swatch.bg_{{ variant.title | handle }}').addClass('jas_soldout');
-                    jQuery('#callBackVariant .single-option-selector option').filter(function() { return jQuery(this).text() === {{ variant.title | handle | json }}; }).remove();
-                 {%- else -%}
-                    jQuery('#callBackVariant .variations .basel-swatch.bg_{{ variant.title | handle }}').addClass('jas_soldout');
-                    jQuery('#callBackVariant .single-option-selector option:eq({{ forloop.index0 }})').prop('disabled', true);
-                 {%- endif -%}
-              {% endif %}
-            {% endfor %}
-            jQuery('#callBackVariant .single-option-selector').trigger('change');
-            observer.disconnect();
-          });  
-          observer.observe($addToCartForm[0], config);
-        }
-        </script>
-{% endif %}
+
   {% if product.available and product.options.size > 1 %}
 <script type="text/javascript">
 // (c) Copyright 2016 Caroline Schnapp. All Rights Reserved. Contact: mllegeorgesand@gmail.com
-// See https://docs.shopify.com/themes/customization/navigation/link-product-options-in-menus fgnbngdfgfd
-Shopify = Shopify || {};
+// See https://docs.shopify.com/themes/customization/navigation/link-product-options-in-menus
+var Shopify = Shopify || {};
 Shopify.optionsMap = {};
-Shopify.optionsMapJas = {};
+  Shopify.optionsMapJas = {};
 Shopify.updateOptionsInSelector = function(selectorIndex) {
     
   switch (selectorIndex) {
