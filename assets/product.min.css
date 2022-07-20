@@ -362,8 +362,8 @@ background: #000;
 
 .single-product-content .cart button.button, .single-product-content .cart span.button a, span.contact_us_button a{
     font-size: 18px;
-    background: #e94949;
-    border-color: #e94949;
+    background: #e94949 !important;
+    border-color: #e94949 !important;
     border-radius: 5px;
     padding: 19px 15px;
     min-width: 255px;
