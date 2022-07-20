@@ -1108,11 +1108,11 @@ display:none;
     float: left;
     border-radius: 7px 7px 0 0!important;
     padding-left: 0;
-    min-height: 45px;
+    min-height: 39px;
     text-align: center;
     background: #fff;
     border: 1px solid #e94949;
-    padding: 18px 30px 12px 30px;
+    padding: 8px 18px 8px 20px;
 }
   
  .boost-pfs-filter-default-toolbar .boost-pfs-filter-tree-desktop-button>button .boost-pfs-filter-tree-desktop-button-label {
