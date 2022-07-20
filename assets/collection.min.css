@@ -1387,6 +1387,7 @@ display:none;
     background-repeat: no-repeat;
     background-size: contain;
     margin-top: -9px;
+  filter: inherit;
 }
   
 .boost-pfs-filter-top-sorting-mobile+.boost-pfs-filter-tree-mobile-button {
