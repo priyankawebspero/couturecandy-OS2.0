@@ -1155,6 +1155,11 @@ display:none;
     font-size: 14px;
 }
   
+.boost-pfs-filter-products .boost-pfs-filter-product-item {
+    width: 50%;
+    clear: none !important;
+}
+  
 }
 
 @media only screen and (max-width:767px){
