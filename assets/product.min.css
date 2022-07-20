@@ -378,7 +378,7 @@ background: #000;
     border-color: #e94949 !important;
     border-radius: 5px;
     padding: 19px 15px !important;
-    min-width: 255px !important;
+    min-width: 255px;
     text-align: center;
     cursor: pointer;
     display: inline-block;
@@ -1600,7 +1600,7 @@ div#ProdDetailInfomobile {
   .shopify-variation-add-to-cart.variations_button.shopify-variation-add-to-cart-enabled .futureDDays-popup-button {
     font-size: 15px;
     padding: 14px 11px !important;
-    min-width: 170px !important;
+    min-width: 170px;
 }
   
 .single-product-content .variations td {
@@ -1772,7 +1772,7 @@ div#ProdDetailInfo {
     bottom: 0;
     left: 0;
     width: 50%;
-    min-width: inherit !important;
+    min-width: inherit;
     z-index: 99;
     padding: 14px 10px !important;
     border-radius: 0;
