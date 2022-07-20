@@ -360,7 +360,7 @@ background: #000;
     height: 52px;
 }
 
-.single-product-content .cart button.button, .single-product-content .cart span.button a {
+.single-product-content .cart button.button, .single-product-content .cart span.button a{
     font-size: 18px;
     background: #e94949;
     border-color: #e94949;
@@ -369,7 +369,19 @@ background: #000;
     min-width: 255px;
     text-align: center;
     cursor: pointer;
-  display: inline-block;
+    display: inline-block;
+}
+
+.shopify-variation-add-to-cart.variations_button.shopify-variation-add-to-cart-enabled .futureDDays-popup-button {
+    font-size: 18px;
+    background: #e94949 !important;
+    border-color: #e94949 !important;
+    border-radius: 5px;
+    padding: 19px 15px !important;
+    min-width: 255px !important;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
 }
 
 .single-product-content .cart span.button {
@@ -1584,6 +1596,11 @@ div#ProdDetailInfomobile {
     font-size: 15px;
     padding: 14px 11px;
     min-width: 170px;
+}
+  .shopify-variation-add-to-cart.variations_button.shopify-variation-add-to-cart-enabled .futureDDays-popup-button {
+    font-size: 15px;
+    padding: 14px 11px !important;
+    min-width: 170px !important;
 }
   
 .single-product-content .variations td {
