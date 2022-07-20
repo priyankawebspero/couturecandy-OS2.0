@@ -362,8 +362,8 @@ background: #000;
 
 .single-product-content .cart button.button, .single-product-content .cart span.button a, span.contact_us_button a{
     font-size: 18px;
-    background: #e94949 !important;
-    border-color: #e94949 !important;
+    background: #e94949;
+    border-color: #e94949;
     border-radius: 5px;
     padding: 19px 15px;
     min-width: 255px;
@@ -985,6 +985,7 @@ div#cover {
     max-width: 270px;
     height: auto;
     display: inline-block;
+  position: relative !important;
 }
 
 .PreOrder__popup #shopify_add_to_cart:hover{ background: #000;}
