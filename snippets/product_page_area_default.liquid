@@ -945,10 +945,10 @@
                                               {%- if current_variant.inventory_quantity <= 0 and current_variant.available and current_variant.inventory_management == 'shopify' -%}
                                                <button type="submit" id="shopify_add_to_cart" onclick="pintrk('track', 'addtocart');
                                                window.dotq = window.dotq || []; window.dotq.push( { 'projectId': '10000', 'properties': {  'pixelId': '10089243', 'qstrings': { 'et': 'custom', 'ec': 'shopping', 'ea': 'AddToCart', 'el': 'AddToCart', 'ev': '{{ product.title }}', 'gv': '{{ product.price | money_without_currency }}' } } } );"
- class="test_1 add_to_cart_button ajax_form_cart single_add_to_cart_button button alt">{{ 'products.product.pre_orders' | t }}</button>
+                                                class="test_1 add_to_cart_button ajax_form_cart single_add_to_cart_button button alt">{{ 'products.product.pre_orders' | t }}</button>
                                               {%- else -%}
                                               <button type="submit" id="shopify_add_to_cart" onclick="pintrk('track', 'addtocart');"
- class="add_to_cart_button ajax_form_cart single_add_to_cart_button button alt">{{ 'products.product.add_to_cart' | t }}</button>
+                                                class="add_to_cart_button ajax_form_cart single_add_to_cart_button button alt">{{ 'products.product.add_to_cart' | t }}</button>
                                               {%- endif -%}
                                             {%- else -%}
                                             <a href="{{ check }}" rel="nofollow" class="single_add_to_cart_button button alt">{{ product.metafields.external | first | first }}</a>
@@ -1120,18 +1120,6 @@
                                   </div><!--ProdDetailInfo Mobile main-->                 
                               {%- if product.variants.size == 1 -%}<div class="clear"></div>{%- endif -%}
                              {%- if product.variants.size > 1 and settings.product_img_trust_seal == false -%}<div class="clear"></div>{%- endif -%}
-                             {%- if settings.use_compare or settings.size_chart  -%}
-                             <div class="compare-btn-wrapper">
-                                {%- if settings.use_compare and pages['compare'].empty? != true -%}
-                                <a href="#compare_popup" data-pid="{{product.handle}}_sp_{{product.id}}" class="compare button" data-pid="{{product.handle}}" rel="nofollow">{{ 'products.product.compare' | t }}</a>
-                                {%- endif -%}
-                                {%- if settings.size_chart -%}
-                                {%- if product.metafields.meta.image_size_chart != blank or settings.image_size_chart != blank -%}
-                                <a class="cd chp jas-magnific-image button size_guide" href="{%- if product.metafields.meta.image_size_chart != blank-%}{{product.metafields.meta.image_size_chart}}{%- else -%}{{ settings.image_size_chart | img_url: '1x1' | replace: '_1x1', ''  }}{%- endif -%}" data-effect="mfp-zoom-in">{{ 'products.product.product_size_guide' | t }}</a>
-                                {%- endif -%}
-                                {%- endif -%}
-                             </div>
-                             {%- endif -%}
                              {%- if design_products_page != 'product-design-compact' -%}
                                  <div class="product-tabs-wrapper">
                                     <div class="container">
@@ -1290,7 +1278,6 @@
                                        {%-endif-%}
                                     </div>
                           {%-endif-%}
-                             {%- if design_products_page == 'product-design-compact' -%}<div class="shopify-tabs sp-tabs-wrapper tabs-layout-accordion">{%- section 'gl-product-page-description' -%}</div>{%- endif -%}
                              <div class="product_meta">
                                 {%- if settings.show_sku -%}<span class="sku_wrapper">{{ 'products.product.product_sku' | t }} <span class="sku variant-sku" id="product-sku" itemprop="sku">{%- if current_variant.sku != blank -%}{{current_variant.sku}}{%-else-%}{{ 'products.product.na' | t }}{%-endif-%}</span></span>{%- endif -%}
                                 {%- if product.collections.size > 0 and settings.show_category_product -%}
@@ -1315,13 +1302,6 @@
                  </div><!-- .summary --> 
               </div>  
            </div>
-           {%- if settings.product_sidebar != '1' -%}
-           <aside class="sidebar-container {{class_sidebar}} sidebar-{{settings.product_sidebar}}" role="complementary">
-              <div class="sidebar-inner">
-                 {%- section 'gl_section_sidebar_product' -%}<!-- .widget-area -->
-              </div><!-- .sidebar-inner -->
-           </aside><!-- .sidebar-container -->
-           {%- endif -%}
         </div>
      </div>
      {%- if settings.show_share_btn and design_products_page == 'product-design-alt' -%}
