@@ -47,7 +47,7 @@
           "type": "collection",
           "settings": {
             "image": "shopify:\/\/shop_images\/mobile_plussize.png",
-            "collection": "",
+            "collection": "plus-size-dresses",
             "title": "PLUS SIZE"
           }
         }
