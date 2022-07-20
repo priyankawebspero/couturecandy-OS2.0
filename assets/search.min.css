@@ -1288,6 +1288,11 @@ display:none;
     padding: 0;
 }
   
+.boost-pfs-filter-collection-header-wrapper .boost-pfs-search-container {
+    margin-bottom: 0;
+    padding: 0 15px;
+}
+  
  .boost-pfs-filter-products {
     width: auto;
 }
