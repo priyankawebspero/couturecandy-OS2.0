@@ -175,14 +175,18 @@ div#shopify-section-template--14532934697043__165390901603cb214c {
 }
 
 #shopify-section-template--14532934697043__16541439641d011f7d .category-grid-item:last-child .Wrap_button_cs h2 {
-    color: #4b361d;
+    color: #4b361d !important;
+}
+
+#shopify-section-template--14532934697043__16541439641d011f7d .category-grid-item:last-child .Wrap_button_cs .content {
+    color: #000 !important;
 }
 
 #shopify-section-template--14532934697043__16541439641d011f7d .Wrap_button_cs .content {
     font-size: 20px;
     color: #fff;
     letter-spacing: 2px;
-    line-height: 1.5;
+    line-height: 1.4;
     font-size: 1.1vw;
 }
 
