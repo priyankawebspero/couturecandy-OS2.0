@@ -1174,6 +1174,15 @@ display:none;
     margin-right: 3px;
 }
   
+.boost-pfs-filter-refine-by-wrapper .boost-pfs-filter-refine-by {
+    padding: 8px;
+    padding-top: 0;
+}
+  
+.boost-pfs-filter-refine-by-wrapper .boost-pfs-filter-refine-by .boost-pfs-filter-refine-by-items {
+    margin-top: 5px;
+}
+  
 }
 
 @media only screen and (max-width:767px){
