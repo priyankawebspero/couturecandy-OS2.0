@@ -1774,7 +1774,7 @@ div#ProdDetailInfo {
     width: 50%;
     min-width: inherit !important;
     z-index: 99;
-    padding: 14px 10px !important
+    padding: 14px 10px !important;
     border-radius: 0;
     font-size: 15px;
     height: 49px;
