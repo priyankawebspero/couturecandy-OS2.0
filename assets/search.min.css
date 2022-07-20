@@ -1,3 +1,7 @@
+ul.boost-pfs-search-result-panel-controls>li button {
+    color: #000;
+}
+
 .boost-pfs-filter-tree-desktop-button-sticky-wrapper .boost-pfs-filter-toolbar-count-d.boost-pfs-filter-toolbar-count-m {
     display: none;
 }
