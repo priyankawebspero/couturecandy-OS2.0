@@ -1289,6 +1289,12 @@ border-color: #000;
     border-color: #ccc;
 }
 
+.yotpo .yotpo-review .yotpo-header .yotpo-header-element .yotpo-user-name {
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'product_sans_mediumregular';
+}
+
 @media only screen and (min-width:768px){
   
  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
