@@ -26,8 +26,8 @@
   {% assign setHashedEmail = 'setEmail' %}
   {% endif %} 
   {%- include 'head-script-before-content' -%}
-
-  {{ content_for_header }}
+  {%- if template contains 'product' -%}{%- include 'space_check_variant' -%}{%- endif-%}
+  {{ '//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js' | script_tag }}
   {%- capture check_admin -%}{{ content_for_header }}{%- endcapture -%}
   {%- capture check_tab -%}{{ content_for_layout  }}{%- endcapture -%}
   {%- if check_tab contains 'gl_has_youtube' or check_tab contains 'has_section_gl_js' or check_tab contains 'animated_counter' -%}
@@ -36,6 +36,8 @@
   {%- if check_tab contains 'gl_has_google_map' -%}
   {%- assign section_js_googlem_enable = true -%}
   {%- endif -%}
+  
+   {{ content_for_header }}
   <!--begin-bc-sf-filter-css-->
   
   <!--end-bc-sf-filter-css-->
