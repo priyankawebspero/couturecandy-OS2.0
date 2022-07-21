@@ -1326,6 +1326,18 @@ border-color: #000;
     font-weight: normal;
 }
 
+.yotpo .yotpo-display-wrapper .yotpo-nav .yotpo-dropdown-wrapper .yotpo-menu-mobile-collapse {
+    background: #333 !important;
+    border-color: #333 !important;
+}
+
+.yotpo .yotpo-display-wrapper .yotpo-nav .yotpo-dropdown-wrapper .yotpo-menu-mobile-collapse .y-label {
+    color: #fff !important;
+    font-family: 'google_sansregular';
+    font-size: 15px;
+    font-weight: normal;
+}
+
 @media only screen and (min-width:768px){
   
  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
