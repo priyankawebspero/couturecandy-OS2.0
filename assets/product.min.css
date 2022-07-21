@@ -1320,6 +1320,12 @@ border-color: #000;
     color: #000 !important;
 }
 
+.yotpo .yotpo-icon-btn-big span.yotpo-icon {
+    color: #000;
+    font-size: 19px;
+    font-weight: normal;
+}
+
 @media only screen and (min-width:768px){
   
  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
