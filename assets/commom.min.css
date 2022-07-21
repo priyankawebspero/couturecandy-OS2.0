@@ -2205,6 +2205,10 @@ span[aria-label="color: Smoky Blue"] {
     background-color: #556282;
 }
 
+span[aria-label="color: Baby Blue"] {
+    background-color: #a5c0de;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
