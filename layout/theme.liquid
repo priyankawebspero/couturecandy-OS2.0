@@ -14,11 +14,6 @@
   <link rel="preload" href="{{ 'boost-pfs-core.js' | asset_url }}" as="script">
   <link rel="preload" href="{{ 'boost-pfs-filter.js' | asset_url }}" as="script">
   <link rel="preload" href="{{ 'boost-pfs-init.js' | asset_url }}" as="script">
-      <!-- Logo CSS -->
-  {%- include 'inc_css_home' -%}
-  {%- if settings.show_custom_css -%}{{ 'custom.css' | asset_url | stylesheet_tag }}{%- endif-%}
-  {%- if template contains 'product' -%}{%- include 'space_check_variant' -%}{%- endif-%}
-  {{ '//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js' | script_tag }}
   {%- include 'head-style' -%}
     {% assign emailCust =  '' %}
   {% assign setHashedEmail = 'setEmail' %}
@@ -29,6 +24,7 @@
   {% assign emailCust = emailCust | remove: ' ' | strip_newlines | downcase | md5 %}
   {% assign setHashedEmail = 'setEmail' %}
   {% endif %} 
+  {%- include 'head-script-before-content' -%}
 
   {{ content_for_header }}
   {%- capture check_admin -%}{{ content_for_header }}{%- endcapture -%}
@@ -42,6 +38,7 @@
   <!--begin-bc-sf-filter-css-->
   
   <!--end-bc-sf-filter-css-->
+  {%- include 'head-script-after-content' -%}
 
  <!--begin-boost-pfs-filter-css-->
    {% render 'boost-pfs-style' %}
