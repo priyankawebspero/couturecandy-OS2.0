@@ -5,16 +5,7 @@
 
 {%- include 'meta' -%}
 {%- include 'social-meta-tags' -%}
-{% assign emailCust =  '' %}
-{% assign setHashedEmail = 'setEmail' %}
-{% if customer %}
-    {% assign emailCust = customer.email | remove: ' ' | strip_newlines | downcase | md5 %}
-    {% assign setHashedEmail = 'setHashedEmail' %}
-  {% else %}
-  {% assign emailCust = emailCust | remove: ' ' | strip_newlines | downcase | md5 %}
-{% assign setHashedEmail = 'setEmail' %}
-{% endif %}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <meta name="facebook-domain-verification" content="65kh83o91knyi4e2aa294mfau2ovt1" />
   <link rel="preconnect" href="https://services.mybcapps.com/bc-sf-filter/filter  " />
@@ -24,44 +15,19 @@
   <link rel="preload" href="{{ 'boost-pfs-filter.js' | asset_url }}" as="script">
   <link rel="preload" href="{{ 'boost-pfs-init.js' | asset_url }}" as="script">
   {%- include 'head-style' -%}
-    {% if template == "index" %}
-      <meta name="facebook-domain-verification" content="65kh83o91knyi4e2aa294mfau2ovt1" />
-      <link rel="preload" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap"  as="font" />
-      <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" as="font" /> 
-      <script type="text/javascript" src="https://static.criteo.net/js/ld/ld.js?shop=couture-candy.myshopify.com" async="true"></script>
-      <script type="text/javascript">
-      window.criteo_q = window.criteo_q || [];
-      window.criteo_q.push(
-        { event: "setAccount", account: 29071 },
-        { event: "{{setHashedEmail}}", email: "{{emailCust}}" },
-        { event: "setSiteType", type: checkDevice },
-        { event: "viewHome" }
-      );
-      </script>
-      {{ 'tab_shopify.min.css' | asset_url | stylesheet_tag }}
-    {%- endif -%}
+  {% assign emailCust =  '' %}
+  {% assign setHashedEmail = 'setEmail' %}
+    {% if customer %}
+    {% assign emailCust = customer.email | remove: ' ' | strip_newlines | downcase | md5 %}
+    {% assign setHashedEmail = 'setHashedEmail' %}
+    {% else %}
+    {% assign emailCust = emailCust | remove: ' ' | strip_newlines | downcase | md5 %}
+    {% assign setHashedEmail = 'setEmail' %}
+  {% endif %}
+  {%- include 'head-script-before-content' -%}
   {%- capture check_admin -%}{{ content_for_header }}{%- endcapture -%}
   {%- capture check_tab -%}{{ content_for_layout  }}{%- endcapture -%}
-   <link rel="preload" href="{{ 'gl_linecons_icons.min.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="{{ 'gl_linecons_icons.min.css' | asset_url }}"></noscript>
-  {%- if check_admin contains 'design_mode' -%}{%- assign admin_shopify = true -%}{%- endif -%}
-  {%- if check_tab contains 'section_tab_gl_css' -%}
-  {%- assign section_tab_css_enable = true -%}
-  {%- endif -%}
-  {%- if check_tab contains 'gl_has_youtube' or check_tab contains 'has_section_gl_js' or check_tab contains 'animated_counter' -%}
-  {%- assign section_js_enable = true -%}
-  {%- endif -%}
-  {%- if check_tab contains 'gl_has_google_map' -%}
-  {%- assign section_js_googlem_enable = true -%}
-  {%- endif -%}
-  {%- include 'gl_header_css' -%}
-  {%- include 'load-css' -%}
-  {%- if request.host contains 'demo-basel' -%}
-  <script type="text/javascript">(function(){var externallyFramed=false;try{externallyFramed=top.location.host!=location.host;}catch(err){externallyFramed=true;}if(externallyFramed){top.location='https://demo-basel2.myshopify.com/';}})();</script>
-  {%- endif -%}
-  <!-- Logo CSS -->
-  {%- include 'inc_css_home' -%}
-  {%- if settings.show_custom_css -%}{{ 'custom.css' | asset_url | stylesheet_tag }}{%- endif-%}
+
   {%- if template contains 'product' -%}{%- include 'space_check_variant' -%}{%- endif-%}
   {{ '//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js' | script_tag }}
   {{ content_for_header }}
