@@ -1345,6 +1345,11 @@ border-color: #000;
     background: #333 !important;
 }
 
+.yotpo .yotpo-regular-box {
+   
+    margin: 0;
+}
+
 @media only screen and (min-width:768px){
   
  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
