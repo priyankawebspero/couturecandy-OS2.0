@@ -38,9 +38,9 @@
 
   {%- if template contains 'product' -%}
    {%- include 'space_check_variant' -%}
-  {%- endif -%}
-  
+  {%- endif -%}  
     {{ '//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js' | script_tag }}
+  
   {{ content_for_header }}
   <!--end-bc-sf-filter-css-->
   {%- include 'head-script-after-content' -%}
