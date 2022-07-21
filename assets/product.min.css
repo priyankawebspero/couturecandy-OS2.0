@@ -1305,6 +1305,21 @@ border-color: #000;
     font-family: 'google_sansregular';
 }
 
+.yotpo .yotpo-nav-dropdown span:not(.yotpo-icon) {
+    display: inline-block;
+    color: #000;
+    font-family: 'google_sansregular';
+}
+
+.yotpo .yotpo-nav-dropdown span.selected {
+    font-size: 14px;
+}
+
+.yotpo .yotpo-nav-dropdown ul.yotpo-dropdown.list-categories .list-category a {
+    font-family: 'google_sansregular';
+    color: #000 !important;
+}
+
 @media only screen and (min-width:768px){
   
  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
