@@ -1582,6 +1582,11 @@ div#ProdDetailInfomobile {
     margin-right: 0;
 }
   
+.single-product-content .variations .swatches-select .swatch-size-small {
+    margin-right: 3px;
+    margin-left: 3px;
+}
+  
 }
 
 @media only screen and (max-width: 991px) and (min-width:768px){
