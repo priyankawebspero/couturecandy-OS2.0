@@ -2237,6 +2237,10 @@ span[aria-label="color: Royal"] {
     background-color: #b6313c;
 }
 
+span[aria-label="color: Royal Blue"] {
+    background-color: #132c74;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {

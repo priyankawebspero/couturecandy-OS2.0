@@ -1,7 +1,7 @@
 <!doctype html>
 <!--[if IE 9]> <html class="ie9 no-js" lang="{{ shop.locale }}"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="{{ shop.locale }}"> <!--<![endif]-->
-<head>
+<head>{% render 'spdn' %}
  <!-- yett control the execution of (third party) scripts -->
 {%- include 'meta' -%}
 {%- include 'social-meta-tags' -%}
@@ -26,8 +26,6 @@
   {% assign setHashedEmail = 'setEmail' %}
   {% endif %} 
   {%- include 'head-script-before-content' -%}
-
-  {{ content_for_header }}
   {%- capture check_admin -%}{{ content_for_header }}{%- endcapture -%}
   {%- capture check_tab -%}{{ content_for_layout  }}{%- endcapture -%}
   {%- if check_tab contains 'gl_has_youtube' or check_tab contains 'has_section_gl_js' or check_tab contains 'animated_counter' -%}
@@ -38,6 +36,12 @@
   {%- endif -%}
   <!--begin-bc-sf-filter-css-->
 
+  {%- if template contains 'product' -%}
+   {%- include 'space_check_variant' -%}
+  {%- endif -%}
+  
+    {{ '//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js' | script_tag }}
+  {{ content_for_header }}
   <!--end-bc-sf-filter-css-->
   {%- include 'head-script-after-content' -%}
 
