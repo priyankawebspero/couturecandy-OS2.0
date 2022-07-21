@@ -2174,6 +2174,10 @@ span[aria-label="color: Mauve"] {
     background-color: #b9867a;
 }
 
+span[aria-label="color: Sage"] {
+    background-color: #d1bea7;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
