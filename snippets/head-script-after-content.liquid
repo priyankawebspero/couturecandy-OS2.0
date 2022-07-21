@@ -1,5 +1,4 @@
 {%- if template contains 'product' -%}
-{%- include 'space_check_variant' -%}
 <!--YOTO-->
 <script type="text/javascript">(function e(){var e=document.createElement("script");e.type="text/javascript",e.async=true,e.src="//staticw2.yotpo.com/Mi5S4G8kBf4HYxRQL5Sq6ZbNhltQ6TH3q8K1oXYW/widget.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();</script>
 <!--product-page-zoom-->
@@ -8,33 +7,42 @@
     CloudZoom.quickStart(); // cz  
 </script>
 {%- endif -%}
-  {{ '//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js' | script_tag }}
-<!--=========================================Header=========================================-->
-<!-- Global Site Tag (gtag.js) - Google AdWords:AW-950821702 -->
+
+  <!--=========================================Header=========================================-->
+<!-- Global site tag (gtag.js) - Google Ads -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-950821702"></script>
 <script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'AW-950821702', {'send_page_view': false});
-</script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-<!--Yahoo script-->
-<script type="application/javascript">(function(w,d,t,r,u){w[u]=w[u]||[];w[u].push({'projectId':'10000','properties':{'pixelId':'10089243'}});var s=d.createElement(t);s.src=r;s.async=true;s.onload=s.onreadystatechange=function(){var y,rs=this.readyState,c=w[u];if(rs&&rs!="complete"&&rs!="loaded"){return}try{y=YAHOO.ywa.I13N.fireBeacon;w[u]=[];w[u].push=function(p){y([p])};y(c)}catch(e){}};var scr=d.getElementsByTagName(t)[0],par=scr.parentNode;par.insertBefore(s,scr)})(window,document,"script","https://s.yimg.com/wi/ytc.js","dotq");</script>
-<!--Yahoo script END-->
+  gtag('config', 'AW-950821702');
+</script>
+   
+  <!-- Abandoned Cart Information -->
+  <div id="care-cart-customer-information" style="display:none">
+    {"id":"{{customer.id}}", "email":"{{ customer.email }}","default_address":{{ customer.default_address | json }},"first_name":"{{ customer.first_name }}","last_name":"{{ customer.last_name }}","name":"{{ customer.name }}" }
+  </div>
+  <!-- Abandoned Cart Information -->
+  
+  <!--  ShopInformation -->
+  <div id="care-cart-shop-information" style="display:none">
+    {"domain":"{{shop.permanent_domain}}" }
+  </div>
+  <!--  ShopInformation -->
+  
+  <!--EndCareCartCustomCode-->
+  <!--Yahoo script-->
+  <script type="application/javascript">(function(w,d,t,r,u){w[u]=w[u]||[];w[u].push({'projectId':'10000','properties':{'pixelId':'10089243'}});var s=d.createElement(t);s.src=r;s.async=true;s.onload=s.onreadystatechange=function(){var y,rs=this.readyState,c=w[u];if(rs&&rs!="complete"&&rs!="loaded"){return}try{y=YAHOO.ywa.I13N.fireBeacon;w[u]=[];w[u].push=function(p){y([p])};y(c)}catch(e){}};var scr=d.getElementsByTagName(t)[0],par=scr.parentNode;par.insertBefore(s,scr)})(window,document,"script","https://s.yimg.com/wi/ytc.js","dotq");</script>
+  <!--Yahoo script END-->
 
 <!--Pinterest Conversion Tracking-->
 <script type="text/javascript">
 !function(e){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var n=window.pintrk;n.queue=[],n.version="3.0";var t=document.createElement("script");t.async=!0,t.src=e;var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
-
+ 
 pintrk('load','2612396004968');
 pintrk('page');
 </script>
 <noscript>
 <img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2612396004968&noscript=1" />
 </noscript>
-
-
-<script type="text/javascript">
-(function e(){var e=document.createElement("script");e.type="text/javascript",e.async=true,e.src="//staticw2.yotpo.com/Mi5S4G8kBf4HYxRQL5Sq6ZbNhltQ6TH3q8K1oXYW/widget.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();
-</script>
