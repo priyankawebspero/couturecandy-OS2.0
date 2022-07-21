@@ -1574,6 +1574,14 @@ div#ProdDetailInfomobile {
     background-color: inherit;
 }
   
+.single-product-content .variations td.label {
+    padding-bottom: 5px !important;
+}
+  
+.single-product-content .variations td.label label {
+    margin-right: 0;
+}
+  
 }
 
 @media only screen and (max-width: 991px) and (min-width:768px){
