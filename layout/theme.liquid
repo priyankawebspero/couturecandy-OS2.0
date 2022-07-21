@@ -1,62 +1,93 @@
 <!doctype html>
 <!--[if IE 9]> <html class="ie9 no-js" lang="{{ shop.locale }}"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="{{ shop.locale }}"> <!--<![endif]-->
-<head>{% render 'spdn' %}
- <!-- yett control the execution of (third party) scripts -->
-{%- include 'meta' -%}
-{%- include 'social-meta-tags' -%}
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <meta name="facebook-domain-verification" content="65kh83o91knyi4e2aa294mfau2ovt1" />
-  <link rel="preconnect" href="https://services.mybcapps.com/bc-sf-filter/filter  " />
-  <link rel="dns-prefetch" href="https://services.mybcapps.com/bc-sf-filter/filter" />
-  <link rel="preload" href="{{ 'boost-pfs-vendor.js' | asset_url }}" as="script">
-  <link rel="preload" href="{{ 'boost-pfs-core.js' | asset_url }}" as="script">
-  <link rel="preload" href="{{ 'boost-pfs-filter.js' | asset_url }}" as="script">
-  <link rel="preload" href="{{ 'boost-pfs-init.js' | asset_url }}" as="script">
-  {%- include 'head-style' -%}
-  {%- include 'load-css' -%}
-    {% assign emailCust =  '' %}
-  {% assign setHashedEmail = 'setEmail' %}
-  {% if customer %}
-  {% assign emailCust = customer.email | remove: ' ' | strip_newlines | downcase | md5 %}
-  {% assign setHashedEmail = 'setHashedEmail' %}
-  {% else %}
-  {% assign emailCust = emailCust | remove: ' ' | strip_newlines | downcase | md5 %}
-  {% assign setHashedEmail = 'setEmail' %}
-  {% endif %} 
-  {%- include 'head-script-before-content' -%}
+<head>
+
+  
+    {% if template == "index" %}
+      <meta name="facebook-domain-verification" content="65kh83o91knyi4e2aa294mfau2ovt1" />
+      <link rel="preload" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap"  as="font" />
+      <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" as="font" /> 
+      <script type="text/javascript" src="https://static.criteo.net/js/ld/ld.js?shop=couture-candy.myshopify.com" async="true"></script>
+      <script type="text/javascript">
+      window.criteo_q = window.criteo_q || [];
+      window.criteo_q.push(
+        { event: "setAccount", account: 29071 },
+        { event: "{{setHashedEmail}}", email: "{{emailCust}}" },
+        { event: "setSiteType", type: checkDevice },
+        { event: "viewHome" }
+      );
+      </script>
+     
+    {%- endif -%}
   {%- capture check_admin -%}{{ content_for_header }}{%- endcapture -%}
   {%- capture check_tab -%}{{ content_for_layout  }}{%- endcapture -%}
-  {%- if check_tab contains 'gl_has_youtube' or check_tab contains 'has_section_gl_js' or check_tab contains 'animated_counter' -%}
-  {%- assign section_js_enable = true -%}
+
+  {%- include 'head-style' -%}
+  {%- include 'load-css' -%}
+  {%- if request.host contains 'demo-basel' -%}
+  <script type="text/javascript">(function(){var externallyFramed=false;try{externallyFramed=top.location.host!=location.host;}catch(err){externallyFramed=true;}if(externallyFramed){top.location='https://demo-basel2.myshopify.com/';}})();</script>
   {%- endif -%}
-  {%- if check_tab contains 'gl_has_google_map' -%}
-  {%- assign section_js_googlem_enable = true -%}
-  {%- endif -%}
-  <!--begin-bc-sf-filter-css-->
-  {%- if template contains 'product' -%}
-   {%- include 'space_check_variant' -%}
-  {%- endif -%}  
-    {{ '//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js' | script_tag }}
- 
+  <!-- Logo CSS -->
+  {%- include 'inc_css_home' -%}
+  {%- if settings.show_custom_css -%}{{ 'custom.css' | asset_url | stylesheet_tag }}{%- endif-%}
+  {%- if template contains 'product' -%}{%- include 'space_check_variant' -%}{%- endif-%}
+  {{ '//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js' | script_tag }}
   {{ content_for_header }}
-  <!--end-bc-sf-filter-css-->
-  {%- include 'head-script-after-content' -%}
+
+
+  <!--=========================================Header=========================================-->
+<!-- Global site tag (gtag.js) - Google Ads -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-950821702"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-950821702');
+</script>
+   
+  <!-- Abandoned Cart Information -->
+  <div id="care-cart-customer-information" style="display:none">
+    {"id":"{{customer.id}}", "email":"{{ customer.email }}","default_address":{{ customer.default_address | json }},"first_name":"{{ customer.first_name }}","last_name":"{{ customer.last_name }}","name":"{{ customer.name }}" }
+  </div>
+  <!-- Abandoned Cart Information -->
   
-  {% if template != "collection" and template != "index" %} 
-  {%- assign yotpo_offload_content = shop.metafields.yotpo.yotpo_offload_content %}
-  {%- assign time_now = 'now' | date: '%s' %}
-  {%- assign yotpo_live_time = shop.metafields.yotpo.yotpo_live | date: '%s' %}
-  {%- assign diffSeconds = time_now | minus: yotpo_live_time %}
-    {%- if yotpo_offload_content == 'yes' and diffSeconds < 86400 -%}
-      {{ 'yotpo-full-css.css' | asset_url | stylesheet_tag }}
-    {%- endif -%}
+  <!--  ShopInformation -->
+  <div id="care-cart-shop-information" style="display:none">
+    {"domain":"{{shop.permanent_domain}}" }
+  </div>
+  <!--  ShopInformation -->
+  
+  <!--EndCareCartCustomCode-->
+  <!--Yahoo script-->
+  <script type="application/javascript">(function(w,d,t,r,u){w[u]=w[u]||[];w[u].push({'projectId':'10000','properties':{'pixelId':'10089243'}});var s=d.createElement(t);s.src=r;s.async=true;s.onload=s.onreadystatechange=function(){var y,rs=this.readyState,c=w[u];if(rs&&rs!="complete"&&rs!="loaded"){return}try{y=YAHOO.ywa.I13N.fireBeacon;w[u]=[];w[u].push=function(p){y([p])};y(c)}catch(e){}};var scr=d.getElementsByTagName(t)[0],par=scr.parentNode;par.insertBefore(s,scr)})(window,document,"script","https://s.yimg.com/wi/ytc.js","dotq");</script>
+  <!--Yahoo script END-->
+
+<!--Pinterest Conversion Tracking-->
+<script type="text/javascript">
+!function(e){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var n=window.pintrk;n.queue=[],n.version="3.0";var t=document.createElement("script");t.async=!0,t.src=e;var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+ 
+pintrk('load','2612396004968');
+pintrk('page');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2612396004968&noscript=1" />
+</noscript>
+{% if template != "collection" and template != "index" %} 
+{%- assign yotpo_offload_content = shop.metafields.yotpo.yotpo_offload_content %}
+{%- assign time_now = 'now' | date: '%s' %}
+{%- assign yotpo_live_time = shop.metafields.yotpo.yotpo_live | date: '%s' %}
+{%- assign diffSeconds = time_now | minus: yotpo_live_time %}
+  {%- if yotpo_offload_content == 'yes' and diffSeconds < 86400 -%}
+    {{ 'yotpo-full-css.css' | asset_url | stylesheet_tag }}
   {%- endif -%}
+{%- endif -%}
+
+<!--begin-bc-sf-filter-css-->
+  {% include 'bc-sf-filter-style' %}
+<!--end-bc-sf-filter-css-->
   
- <!--begin-boost-pfs-filter-css-->
-   {% render 'boost-pfs-style' %}
- <!--end-boost-pfs-filter-css-->
 <!--   clarity -->
    <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -65,15 +96,14 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "bu2fa977u1");
 </script>
-
- 
-<img alt="icon" width="1000" height="1000" style="pointer-events: none; position: absolute; top: 0; left: 0; width: 99vw; height: 99vh; max-width: 99vw; max-height: 99vh;"  src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI5OTk5OXB4IiBoZWlnaHQ9Ijk5OTk5cHgiIHZpZXdCb3g9IjAgMCA5OTk5OSA5OTk5OSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBzdHJva2U9Im5vbmUiIGZpbGw9Im5vbmUiIGZpbGwtb3BhY2l0eT0iMCI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9Ijk5OTk5IiBoZWlnaHQ9Ijk5OTk5Ij48L3JlY3Q+IDwvZz4gPC9zdmc+">
-
+  
+  {% render 'weglot_hreftags' %}
+{% render 'weglot_switcher' %}
+  
+  
 </head>
 
-
 {%- include 'class_body_theme' -%}
-
 <body class="{%- if settings.ajax_shop -%}basel-ajax-shop-on{%- endif %} template-{{ template | split: '.' | first }} {{header_class }} {{footer_layout}} {{ general_layout }} {{ search_layout }} {{ tab_class }} {{ design_products }} global-header-{{settings.header_design}} global-cart-design-{{settings.cart_design}}{%- if customer %} logged-in{%- endif %}{%- if catalog_mode %} catalog-mode-on{%- else %} catalog-mode-off{%- endif %}{%- unless template contains 'index' %} shopify shopify-page{%- endunless %}{%- if template contains '404' %} error404{%- endif-%}">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQJPKCB"
