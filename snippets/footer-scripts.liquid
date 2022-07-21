@@ -15,9 +15,7 @@
 <!--[if lte IE 9]><script src="{{ 'js_cp_gl_section.min.js' | asset_url }}"></script><![endif]-->
 {%- elsif section_js_enable -%}
 {{ 'animate.min.css' | asset_url | stylesheet_tag }}
-  {% if template contains 'collection' and settings.use_pagination == 'infinit' -%}
-  <script async="async" src="{{ 'waypoints.min.js' | asset_url }}"></script>
-  {%- endif -%}
+
 <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'js_cp_gl.min.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
 <!--[if lte IE 9]><script src="{{ 'js_cp_gl.min.js' | asset_url }}"></script><![endif]-->
 {%- endif -%}  
