@@ -1,4 +1,4 @@
- <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'lazysizes.js' | asset_url }}" async="async"></script><!--<![endif]-->
+  <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'lazysizes.js' | asset_url }}" async="async"></script><!--<![endif]-->
   <!--[if lte IE 9]><script src="{{ 'lazysizes.js' | asset_url }}"></script><![endif]-->
   {%- include 'theme_string' -%}
   {%- if template.directory == 'customers' -%}
@@ -66,73 +66,76 @@
 
 {% if template contains 'product' %}
 <script type="text/javascript">
-    var json_product = {{ product | json }};
+  var json_product = {{ product | json }};
 </script>
 <script>
-    var ecomm_prodid=[];
-    for(var i=0;i<json_product.variants.length;i++)
-    ecomm_prodid.push('shopify_US_{{product.id}}_'+json_product.variants[i].id);
+  var ecomm_prodid=[];
+  for(var i=0;i < json_product.variants.length;i++){
+      let v_id = json_product.variants[i].id;
+    ecomm_prodid.push(v_id);
+  }
 </script>
 <script type="text/javascript">
-    var google_tag_params = {
+  var google_tag_params = {
     ecomm_prodid: ecomm_prodid,
     ecomm_pagetype: 'product',
     ecomm_totalvalue: parseFloat('{{ product.price | money_without_currency | remove: ","}}')
-    };
+  };
 </script>
 {% elsif template contains 'collection' %}
 <script type="text/javascript">
-    var google_tag_params = {
+  var google_tag_params = {
     ecomm_pagetype: 'category'
-    };
+  };
 </script>
 {% elsif template contains 'cart' %}
 <script type="text/javascript">
-    var id = new Array();
-    {% for item in cart.items %}
-    id.push('shopify_US_{{item.product.id}}_{{item.variant.id}}');
-    {% endfor %}
+  var id = new Array();
+  {% for item in cart.items %}
+  id.push('shopify_US_{{item.product.id}}_{{item.variant.id}}');
+   {% endfor %}
 
-    var google_tag_params = {
+   var google_tag_params = {
      ecomm_prodid: id,
      ecomm_pagetype: 'cart',
      ecomm_totalvalue: parseFloat('{{ cart.total_price | money_without_currency | remove: ","}}')
-    };
+   };
 </script>
 {% elsif template contains 'search' %}
 <script type="text/javascript">
-    var google_tag_params = {
+  var google_tag_params = {
     ecomm_pagetype: 'searchresults'
-    };
+  };
 </script>
-{% elsif template contains 'index' or template contains 'cart' %}
-<script defer> (function(src, callback){var s, r, t; r = false; s = document.createElement('script'); s.type = 'text/javascript';s.src = src; s.onload = s.onreadystatechange = function() { if ( !r && (!this.readyState || this.readyState == 'complete') ) { r = true; callback(); } };t = document.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t);}('https://biz.sitejabber.com/js/widget.min.1589224101.js', function() { new STJR.ReviewCarouselWidget({ id: 'reviewCarouselWidget',url:'couturecandy.com'}).render(); }) );</script>
+{% elsif template contains 'index' %}
+  <script> (function(src, callback){var s, r, t; r = false; s = document.createElement('script'); s.type = 'text/javascript';s.src = src; s.onload = s.onreadystatechange = function() { if ( !r && (!this.readyState || this.readyState == 'complete') ) { r = true; callback(); } };t = document.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t);}('https://biz.sitejabber.com/js/widget.min.1589224101.js', function() { new STJR.ReviewCarouselWidget({ id: 'reviewCarouselWidget',url:'couturecandy.com'}).render(); }) );</script>
 <script type="text/javascript">
-    var google_tag_params = {
+  var google_tag_params = {
     ecomm_pagetype: 'home'
-    };
+  };
 </script>
 {% else %}
 <script type="text/javascript">
-    var google_tag_params = {
+  var google_tag_params = {
     ecomm_pagetype: 'other'
-    };
+  };
 </script>
 {% endif %}
 <script>
-    gtag('event', 'page_view', {'send_to': 'AW-950821702',
-    'ecomm_prodid':window.google_tag_params.ecomm_prodid,
-    'ecomm_pagetype': window.google_tag_params.ecomm_pagetype,
-    'ecomm_totalvalue':window.google_tag_params.ecomm_totalvalue
-    });
+gtag('event', 'page_view', {'send_to': 'AW-950821702',
+'ecomm_prodid':window.google_tag_params.ecomm_prodid,
+'ecomm_pagetype': window.google_tag_params.ecomm_pagetype,
+'ecomm_totalvalue':window.google_tag_params.ecomm_totalvalue
+});
 </script>
 
 <!-- Begin Google Analytics Vertical Attributes -->
 <script type="text/javascript">
-    ga('set','dimension1', '{% if template contains "product" %}shopify_US_{{product.id}}_{{product.variants.first.id}}{% endif %}');
-    ga('set','dimension2', '{{product.price_min|money_without_currency}}');
-    ga('set','dimension3', '{{template}}');
+ga('set','dimension1', '{% if template contains "product" %}shopify_US_{{product.id}}_{{product.variants.first.id}}{% endif %}');
+ga('set','dimension2', '{{product.price_min|money_without_currency}}');
+ga('set','dimension3', '{{template}}');
 </script>
+
 
 <!-- CRITEO START -->
 {% include 'criteo-tracking' %}
@@ -154,44 +157,67 @@
 </script>
 {% endif %}
 
+<!--begin-bc-sf-filter-js-->
+  {% include 'bc-sf-filter' %}
+<!--end-bc-sf-filter-js-->
+{% comment %} Init BC Action List {% endcomment %}
+<!--start-bc-al-init-->
+  {% include 'bc-al-init' %}
+<!--end-bc-al-init-->
+{% comment %} Init Recently Viewed Products {% endcomment %}
+{% comment %}
+<!-- start-bc-recently-viewed-product-init -->
+  {% include 'bc-recently-viewed-product-init' %}
+<!-- end-bc-recently-viewed-product-init -->
+{% endcomment %}
+{% comment %} Init Most Popular Widgets {% endcomment %}
+{% comment %}
+<!--start-bc-most-popular-product-init-->
+  {% include 'bc-most-popular-product-init' %}
+<!--end-bc-most-popular-product-init-->
+{% endcomment %}
+  
 <script>
-    var replaced = false;  
-    var threshold =10;
-    var scrolled =0;   
-     $(window).on('keyup keypress scroll touch click mousemove', function(e) {
-       scrolled++;
-       if(!replaced && scrolled>threshold ){
-          console.log('yett unblocked');
-             window.yett.unblock() ;
-             replaced = true;
-       }
-     })
+var replaced = false;  
+var threshold =10;
+var scrolled =0;   
+ $(window).on('keyup keypress scroll touch click mousemove', function(e) {
+   scrolled++;
 
-setTimeout(function(){ 
- var pageURL = $(location).attr("href");
- var Lastpage_visit = sessionStorage.getItem("LastpageURL");
-  if (!Lastpage_visit || Lastpage_visit != pageURL) {
-      sessionStorage.setItem('LastpageURL',pageURL);
-  }
- var lastCount = parseInt(sessionStorage.getItem("pages_view"));
- var value = 0;
- if (!lastCount) {
-    value = 1;
- }else{
-    if (pageURL != Lastpage_visit) {
-        value = lastCount + 1;
-      if (value > 2) {
-        gtag('event', 'conversion', {'send_to': 'AW-950821702/Tyf0CKHIi-oBEMbGscUD'});
+
+   if(!replaced && scrolled>threshold ){
+      console.log('yett unblocked');
+         window.yett.unblock() ;
+         replaced = true;
+   }
+ })
+</script>
+
+<!-- **BEGIN** Hextom SPM Integration // Main Include - DO NOT MODIFY -->
+        {% render 'hextom_spm_main', product: product, customer: customer %}
+        <!-- **END** Hextom SPM Integration // Main Include - DO NOT MODIFY -->
+  <script type="text/javascript">
+  setTimeout(function(){ 
+     var pageURL = $(location).attr("href");
+     var Lastpage_visit = sessionStorage.getItem("LastpageURL");
+      if (!Lastpage_visit || Lastpage_visit != pageURL) {
+          sessionStorage.setItem('LastpageURL',pageURL);
       }
-    }else{
-      value = lastCount;
-    }
- }
- sessionStorage.setItem('pages_view',value);
-}, 1000);
-  </script>
-
-
-<!--Gorgias Chat Widget Start-->
-<script>!function(_){_.GORGIAS_CHAT_APP_ID="550",_.GORGIAS_CHAT_BASE_URL="us-east1-898b.production.gorgias.chat",_.GORGIAS_API_BASE_URL="config.gorgias.chat";var e=new XMLHttpRequest;e.open("GET","https://config.gorgias.chat/applications/550",!0),e.onload=function(n){if(4===e.readyState)if(200===e.status){var t=JSON.parse(e.responseText);if(!t.application||!t.bundleVersion)throw new Error("Missing fields in the response body - https://config.gorgias.chat/applications/550");if(_.GORGIAS_CHAT_APP=t.application,_.GORGIAS_CHAT_BUNDLE_VERSION=t.bundleVersion,t&&t.texts&&(_.GORGIAS_CHAT_TEXTS=t.texts),!document.getElementById("gorgias-chat-container")){var o=document.createElement("div");o.id="gorgias-chat-container",document.body.appendChild(o);var r=document.createElement("script");r.setAttribute("defer",!0),r.src="https://storage.googleapis.com/gorgias-chat-production-client-builds/{bundleVersion}/static/js/main.js".replace("{bundleVersion}",t.bundleVersion),document.body.appendChild(r)}}else console.error("Failed request GET - https://config.gorgias.chat/applications/550")},e.onerror=function(_){console.error(_)},e.send()}(window||{});</script>
-<script>!function(n){n.IS_SHOPIFY=!0,n.SHOPIFY_PERMANENT_DOMAIN="{{shop.permanent_domain}}",n.SHOPIFY_CUSTOMER_ID="{{customer.id}}"}(window||{});</script><!--Gorgias Chat Widget End--> 
+     var lastCount = parseInt(sessionStorage.getItem("pages_view"));
+     var value = 0;
+     if (!lastCount) {
+        value = 1;
+     }else{
+        if (pageURL != Lastpage_visit) {
+            value = lastCount + 1;
+          if (value > 2) {
+            gtag('event', 'conversion', {'send_to': 'AW-950821702/Tyf0CKHIi-oBEMbGscUD'});
+          }
+        }else{
+          value = lastCount;
+        }
+     }
+     sessionStorage.setItem('pages_view',value);
+  }, 1000); 
+</script>
+<!--Gorgias Chat Widget Start--><script>!function(_){_.GORGIAS_CHAT_APP_ID="550",_.GORGIAS_CHAT_BASE_URL="us-east1-898b.production.gorgias.chat",_.GORGIAS_API_BASE_URL="config.gorgias.chat";var e=new XMLHttpRequest;e.open("GET","https://config.gorgias.chat/applications/550",!0),e.onload=function(n){if(4===e.readyState)if(200===e.status){var t=JSON.parse(e.responseText);if(!t.application||!t.bundleVersion)throw new Error("Missing fields in the response body - https://config.gorgias.chat/applications/550");if(_.GORGIAS_CHAT_APP=t.application,_.GORGIAS_CHAT_BUNDLE_VERSION=t.bundleVersion,t&&t.texts&&(_.GORGIAS_CHAT_TEXTS=t.texts),!document.getElementById("gorgias-chat-container")){var o=document.createElement("div");o.id="gorgias-chat-container",document.body.appendChild(o);var r=document.createElement("script");r.setAttribute("defer",!0),r.src="https://storage.googleapis.com/gorgias-chat-production-client-builds/{bundleVersion}/static/js/main.js".replace("{bundleVersion}",t.bundleVersion),document.body.appendChild(r)}}else console.error("Failed request GET - https://config.gorgias.chat/applications/550")},e.onerror=function(_){console.error(_)},e.send()}(window||{});</script><script>!function(n){n.IS_SHOPIFY=!0,n.SHOPIFY_PERMANENT_DOMAIN="{{shop.permanent_domain}}",n.SHOPIFY_CUSTOMER_ID="{{customer.id}}"}(window||{});</script><!--Gorgias Chat Widget End-->  {% include 'revy-bundle-script' %}</body>
