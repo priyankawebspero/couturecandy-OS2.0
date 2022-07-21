@@ -1244,7 +1244,7 @@ border-color: #000;
 }
 
 .template-product div#ReviewSection .yotpo .yotpo-regular-box.yotpo-bottomline .yotpo-star-digits {
-    font-family: 'google_sansregular';
+   
     color: #000;
     font-weight: normal;
     font-size: 20px;
@@ -1265,6 +1265,12 @@ border-color: #000;
     font-weight: normal;
     font-size: 18px;
     color: #000 !important;
+}
+
+.yotpo-reviews .yotpo-review-wrapper .content-review {
+    color: #000 !important;
+    font-family: 'google_sansregular';
+    font-size: 15px;
 }
 
 @media only screen and (min-width:768px){
