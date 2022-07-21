@@ -1273,6 +1273,13 @@ border-color: #000;
     font-size: 15px;
 }
 
+.yotpo .yotpo-nav ul .yotpo-nav-tab .yotpo-nav-wrapper span {
+    font-family: 'product_sans_mediumregular';
+    font-weight: normal;
+    font-size: 18px;
+    color: #000 !important;
+}
+
 @media only screen and (min-width:768px){
   
  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
