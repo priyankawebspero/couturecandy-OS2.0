@@ -1350,6 +1350,11 @@ border-color: #000;
     margin: 0;
 }
 
+.single-product-content .shop_attributes th {
+    padding: 10px 20px;
+}
+
+
 @media only screen and (min-width:768px){
   
  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
