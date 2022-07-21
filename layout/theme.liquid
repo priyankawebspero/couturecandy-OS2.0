@@ -1,7 +1,7 @@
 <!doctype html>
 <!--[if IE 9]> <html class="ie9 no-js" lang="{{ shop.locale }}"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="{{ shop.locale }}"> <!--<![endif]-->
-<head>
+<head>{% render 'spdn' %}
  <!-- yett control the execution of (third party) scripts -->
 {%- include 'meta' -%}
 {%- include 'social-meta-tags' -%}
