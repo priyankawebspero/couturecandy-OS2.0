@@ -32,9 +32,9 @@
       </script>
     {% endif %}
   {% endif %}
-{% if template != 'product' %}
-{% include 'yett' %}
-{% endif %}
+
+{%- include 'yett' -%}
+
 <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
 h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
@@ -48,7 +48,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
   })(window,document,'script','dataLayer','GTM-PQJPKCB');</script>
   <!-- End Google Tag Manager -->
 
-    {% if template == "index" %}
+    {%- if template == "index" -%}
       <meta name="facebook-domain-verification" content="65kh83o91knyi4e2aa294mfau2ovt1" />
       <link rel="preload" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap"  as="font" />
       <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" as="font" /> 
