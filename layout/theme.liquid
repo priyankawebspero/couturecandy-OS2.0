@@ -25,10 +25,6 @@
   {% assign emailCust = emailCust | remove: ' ' | strip_newlines | downcase | md5 %}
   {% assign setHashedEmail = 'setEmail' %}
   {% endif %} 
-  {%- if template contains 'product' -%}
-   {%- include 'space_check_variant' -%}
-  {%- endif -%}  
-    {{ '//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js' | script_tag }}
   {%- include 'head-script-before-content' -%}
   {%- capture check_admin -%}{{ content_for_header }}{%- endcapture -%}
   {%- capture check_tab -%}{{ content_for_layout  }}{%- endcapture -%}
@@ -39,7 +35,10 @@
   {%- assign section_js_googlem_enable = true -%}
   {%- endif -%}
   <!--begin-bc-sf-filter-css-->
-
+  {%- if template contains 'product' -%}
+   {%- include 'space_check_variant' -%}
+  {%- endif -%}  
+    {{ '//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js' | script_tag }}
  
   {{ content_for_header }}
   <!--end-bc-sf-filter-css-->
