@@ -35,8 +35,7 @@
   {%- assign section_js_googlem_enable = true -%}
   {%- endif -%}
   <!--begin-bc-sf-filter-css-->
- {%- if settings.show_custom_css -%}{{ 'custom.css' | asset_url | stylesheet_tag }}{%- endif-%}
-  {%- if template contains 'product' -%}{%- include 'space_check_variant' -%}{%- endif-%}
+  {%- include 'space_check_variant' -%}
   {{ '//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js' | script_tag }}
   {{ content_for_header }}
   <!--end-bc-sf-filter-css-->
