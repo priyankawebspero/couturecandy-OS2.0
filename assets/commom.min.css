@@ -2177,6 +2177,9 @@ span[aria-label="color: Mauve"] {
 span[aria-label="color: Sage"] {
     background-color: #d1bea7;
 }
+span[aria-label="color: Dark Mauve"] {
+    background-color: #d0b2bf;
+}
 
 @media only screen and (min-width:768px){
   
