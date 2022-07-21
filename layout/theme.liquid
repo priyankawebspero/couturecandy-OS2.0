@@ -37,7 +37,8 @@
   {%- assign section_js_googlem_enable = true -%}
   {%- endif -%}
   <!--begin-bc-sf-filter-css-->
-  
+   {%- if template contains 'product' -%}{%- include 'space_check_variant' -%}{%- endif-%}
+  {{ '//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js' | script_tag }}
   <!--end-bc-sf-filter-css-->
   {%- include 'head-script-after-content' -%}
 
