@@ -5,7 +5,7 @@
  <!-- yett control the execution of (third party) scripts -->
 {%- include 'meta' -%}
 {%- include 'social-meta-tags' -%}
-
+  {%- include 'head-script-after-content' -%}
   {%- include 'head-style' -%}
     {% assign emailCust =  '' %}
   {% assign setHashedEmail = 'setEmail' %}
@@ -28,10 +28,7 @@
   {%- if check_tab contains 'gl_has_google_map' -%}
   {%- assign section_js_googlem_enable = true -%}
   {%- endif -%}
-  <!--begin-bc-sf-filter-css-->
-  
-  <!--end-bc-sf-filter-css-->
-  {%- include 'head-script-after-content' -%}
+
 
  <!--begin-boost-pfs-filter-css-->
    {% render 'boost-pfs-style' %}
