@@ -2193,6 +2193,10 @@ span[aria-label="color: Desert Rose"] {
     background-color: #8a2038;
 }
 
+span[aria-label="color: Champagne"] {
+    background-color: #d6c2ad;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
