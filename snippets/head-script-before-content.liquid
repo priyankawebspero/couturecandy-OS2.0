@@ -1,64 +1,63 @@
- <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SJDTLNE3GS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJDTLNE3GS"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  gtag('config', 'G-SJDTLNE3GS');
-</script>
- 
-  
-  <!-- StackAdapt Pixel -->
-  
-  <script>!function(s,a,e,v,n,t,z){if(s.saq)return;n=s.saq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!s._saq)s._saq=n;n.push=n;n.loaded=!0;n.version='1.0';n.queue=[];t=a.createElement(e);t.async=!0;t.src=v;z=a.getElementsByTagName(e)[0];z.parentNode.insertBefore(t,z)}(window,document,'script','https://tags.srv.stackadapt.com/events.js');saq('rt','lLJ2Lmy9X0L3OSJj8O8ca2');</script><noscript><img src="https://tags.srv.stackadapt.com/rt?sid=lLJ2Lmy9X0L3OSJj8O8ca2" width="1" height="1"/></noscript>
-  
-  <script>!function(s,a,e,v,n,t,z){if(s.saq)return;n=s.saq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!s._saq)s._saq=n;n.push=n;n.loaded=!0;n.version='1.0';n.queue=[];t=a.createElement(e);t.async=!0;t.src=v;z=a.getElementsByTagName(e)[0];z.parentNode.insertBefore(t,z)}(window,document,'script','https://tags.srv.stackadapt.com/events.js');saq('conv','0Xr6vCwKPFJ59yVYuZmsPh');</script><noscript><img src="https://tags.srv.stackadapt.com/conv?cid=0Xr6vCwKPFJ59yVYuZmsPh" width="1" height="1"/></noscript>
-  
-  {% if template contains 'collection' and current_tags %}
-      {% if template.suffix == 'new-collections' or template.suffix == 'brands' %}
-      <script type="text/javascript">
-          var template_suffix = '{{ template.suffix }}'; 
-          var collection_handle = '{{collection.handle}}'+'-sale';
-          var current_tags = window.location.pathname.split("/").pop();
-          current_tags.toLowerCase();
-          if (current_tags == 'sale') {
-              window.location.replace("https://www.couturecandy.com/collections/"+collection_handle);
-            // console.log('collection_handle',collection_handle);
-            // console.log('current_tags',current_tags); 
-            // console.log('template_suffix',template_suffix);  
-          }
-          
+        gtag('config', 'G-SJDTLNE3GS');
       </script>
-    {% endif %}
-  {% endif %}
+       <!-- StackAdapt Pixel -->
 
-   {% include 'yett' %}
-<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
-h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
-(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
-})(window,document.documentElement,'async-hide','dataLayer',4000,
-{'GTM-PQJPKCB':true});</script>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PQJPKCB');</script>
-  <!-- End Google Tag Manager -->
+        <script>!function(s,a,e,v,n,t,z){if(s.saq)return;n=s.saq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!s._saq)s._saq=n;n.push=n;n.loaded=!0;n.version='1.0';n.queue=[];t=a.createElement(e);t.async=!0;t.src=v;z=a.getElementsByTagName(e)[0];z.parentNode.insertBefore(t,z)}(window,document,'script','https://tags.srv.stackadapt.com/events.js');saq('rt','lLJ2Lmy9X0L3OSJj8O8ca2');</script><noscript><img src="https://tags.srv.stackadapt.com/rt?sid=lLJ2Lmy9X0L3OSJj8O8ca2" width="1" height="1"/></noscript>
 
-    {% if template == "index" %}
-      <meta name="facebook-domain-verification" content="65kh83o91knyi4e2aa294mfau2ovt1" />
-      <link rel="preload" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap"  as="font" />
-      <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" as="font" /> 
-      <script type="text/javascript" src="https://static.criteo.net/js/ld/ld.js?shop=couture-candy.myshopify.com" async="true"></script>
-      <script type="text/javascript">
-      window.criteo_q = window.criteo_q || [];
-      window.criteo_q.push(
-        { event: "setAccount", account: 29071 },
-        { event: "{{setHashedEmail}}", email: "{{emailCust}}" },
-        { event: "setSiteType", type: checkDevice },
-        { event: "viewHome" }
-      );
-      </script>
-    {%- endif -%}
+        <script>!function(s,a,e,v,n,t,z){if(s.saq)return;n=s.saq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!s._saq)s._saq=n;n.push=n;n.loaded=!0;n.version='1.0';n.queue=[];t=a.createElement(e);t.async=!0;t.src=v;z=a.getElementsByTagName(e)[0];z.parentNode.insertBefore(t,z)}(window,document,'script','https://tags.srv.stackadapt.com/events.js');saq('conv','0Xr6vCwKPFJ59yVYuZmsPh');</script><noscript><img src="https://tags.srv.stackadapt.com/conv?cid=0Xr6vCwKPFJ59yVYuZmsPh" width="1" height="1"/></noscript>
+
+        {% if template contains 'collection' and current_tags %}
+            {% if template.suffix == 'new-collections' or template.suffix == 'brands' %}
+            <script type="text/javascript">
+                var template_suffix = '{{ template.suffix }}'; 
+                var collection_handle = '{{collection.handle}}'+'-sale';
+                var current_tags = window.location.pathname.split("/").pop();
+                current_tags.toLowerCase();
+                if (current_tags == 'sale') {
+                    window.location.replace("https://www.couturecandy.com/collections/"+collection_handle);
+                  // console.log('collection_handle',collection_handle);
+                  // console.log('current_tags',current_tags); 
+                  // console.log('template_suffix',template_suffix);  
+                }
+
+            </script>
+          {% endif %}
+        {% endif %}
+       {% if template != 'product' %}
+         {% include 'yett' %}
+      {% endif %}
+      <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+      h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+      (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+      })(window,document.documentElement,'async-hide','dataLayer',4000,
+      {'GTM-PQJPKCB':true});</script>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-PQJPKCB');</script>
+        <!-- End Google Tag Manager -->
+
+
+      {% if template contains "index" %}
+        <script type="text/javascript" src="https://static.criteo.net/js/ld/ld.js?shop=couture-candy.myshopify.com" async="true"></script>
+        <script type="text/javascript">
+        window.criteo_q = window.criteo_q || [];
+        window.criteo_q.push(
+          { event: "setAccount", account: 29071 },
+          { event: "{{setHashedEmail}}", email: "{{emailCust}}" },
+          { event: "setSiteType", type: checkDevice },
+          { event: "viewHome" }
+        );
+        </script>
+      {%- endif -%}
+       {%- if template contains 'product' -%}{%- include 'space_check_variant' -%}{%- endif-%}
+       {{ '//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js' | script_tag }}
