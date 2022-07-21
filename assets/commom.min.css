@@ -2170,6 +2170,10 @@ span[aria-label="color: Burgundy"] {
     background-color: #800020;
 }
 
+span[aria-label="color: Mauve"] {
+    background-color: #b9867a;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
