@@ -28,6 +28,9 @@
   {%- capture check_admin -%}{{ content_for_header }}{%- endcapture -%}
   {%- capture check_tab -%}{{ content_for_layout  }}{%- endcapture -%}
 
+  <!-- Logo CSS -->
+  {%- include 'inc_css_home' -%}
+  {%- if settings.show_custom_css -%}{{ 'custom.css' | asset_url | stylesheet_tag }}{%- endif-%}
   {%- if template contains 'product' -%}{%- include 'space_check_variant' -%}{%- endif-%}
   {{ '//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js' | script_tag }}
   {{ content_for_header }}
