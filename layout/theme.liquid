@@ -5,9 +5,7 @@
 
 {%- include 'meta' -%}
 {%- include 'social-meta-tags' -%}
-
 {% assign emailCust =  '' %}
-
 {% assign setHashedEmail = 'setEmail' %}
 {% if customer %}
     {% assign emailCust = customer.email | remove: ' ' | strip_newlines | downcase | md5 %}
@@ -16,7 +14,16 @@
   {% assign emailCust = emailCust | remove: ' ' | strip_newlines | downcase | md5 %}
 {% assign setHashedEmail = 'setEmail' %}
 {% endif %}
-  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="facebook-domain-verification" content="65kh83o91knyi4e2aa294mfau2ovt1" />
+  <link rel="preconnect" href="https://services.mybcapps.com/bc-sf-filter/filter  " />
+  <link rel="dns-prefetch" href="https://services.mybcapps.com/bc-sf-filter/filter" />
+  <link rel="preload" href="{{ 'boost-pfs-vendor.js' | asset_url }}" as="script">
+  <link rel="preload" href="{{ 'boost-pfs-core.js' | asset_url }}" as="script">
+  <link rel="preload" href="{{ 'boost-pfs-filter.js' | asset_url }}" as="script">
+  <link rel="preload" href="{{ 'boost-pfs-init.js' | asset_url }}" as="script">
+  {%- include 'head-style' -%}
     {% if template == "index" %}
       <meta name="facebook-domain-verification" content="65kh83o91knyi4e2aa294mfau2ovt1" />
       <link rel="preload" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap"  as="font" />
