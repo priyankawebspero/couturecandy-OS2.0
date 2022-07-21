@@ -1295,6 +1295,11 @@ border-color: #000;
     font-family: 'product_sans_mediumregular';
 }
 
+.yotpo .yotpo-review .yotpo-footer .footer-actions span {
+    font-family: 'google_sansregular';
+    color: #000;
+}
+
 @media only screen and (min-width:768px){
   
  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
