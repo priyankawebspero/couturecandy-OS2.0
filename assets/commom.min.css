@@ -2185,6 +2185,10 @@ span[aria-label="color: Charcoal"] {
     background-color: #504854;
 }
 
+span[aria-label="color: Dusty Blue"] {
+    background-color: #b8c1d0;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
