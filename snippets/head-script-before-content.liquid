@@ -1,4 +1,4 @@
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+ <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJDTLNE3GS"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -7,7 +7,7 @@
 
   gtag('config', 'G-SJDTLNE3GS');
 </script>
-  
+ 
   
   <!-- StackAdapt Pixel -->
   
@@ -32,9 +32,8 @@
       </script>
     {% endif %}
   {% endif %}
-{% if template != 'product' %}
-{% include 'yett' %}
-{% endif %}
+
+   {% include 'yett' %}
 <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
 h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
@@ -61,5 +60,5 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
         { event: "setSiteType", type: checkDevice },
         { event: "viewHome" }
       );
-      </script>      
+      </script>
     {%- endif -%}
