@@ -67,59 +67,8 @@
   
    {%- include 'footer-scripts' -%}
 
-  {% if template contains 'collection' and settings.use_pagination == 'infinit' -%}
-  <!-- trigger function on scroll point -->
-  <script async="async" src="{{ 'waypoints.min.js' | asset_url }}"></script>
-  {%- endif -%}
-
-  {%- assign gl_portfolio = settings.blog_portfolio -%}
-  {%- if blog.handle == gl_portfolio and settings.portfolio_full_width -%}
-    <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'js_cp_gl.min.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
-    <!--[if lte IE 9]><script src="{{ 'js_cp_gl.min.js' | asset_url }}"></script><![endif]-->
-  {%- endif -%}  
-
   {%- include 'gl-currencies' -%}
 
-   <script> const NITRO_CHECKOUT_SELECTOR = [".nitro-bundle-checkout"];</script>
-
-  {%- if settings.enable_header_banner -%}
-  <div class="header-banner color-scheme-light">
-    {%- if settings.close_banner_btn -%}<a href="#" class="close-header-banner"></a>{%- endif -%}
-   {%- if settings.link_banner != blank -%}<a href="{{settings.link_banner}}" class="header-banner-link"></a>{%- endif -%}   
-    <div class="container header-banner-container">
-      <p style="text-align: center; color: {{settings.header_banner_text}} !important;">{{settings.banner_content | strip_html }}</p>
-    </div>
-  </div>
-  {%- endif -%}
-
- {%- if settings.enable_suggest_products -%}{%- include 'tea_suggest' -%}{%- endif -%}
-
-  {%- if template contains 'product' or template contains 'article' or check_photowipe -%}
-  {%- include 'photoswipe' -%}
-  {%- endif -%}
-
-  {%- if settings.use_compare and pages['compare'].empty? != true -%}{%- include 'gl_compare' -%}{%- endif -%}
-
-  {%- if settings.custom_js != blank -%}
-  <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'custom_js.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
-    <!--[if lte IE 9]><script src="{{ 'custom_js.js' | asset_url }}"></script><![endif]-->
-
-  {%- endif -%}
-
-  {%- include 'last_catelog_mod',var_last:true -%}
-
-  <!-- CRITEO START -->
-  {% include 'criteo-tracking' %}
-  <!-- CRITEO END -->
- 
-<!-- **BEGIN** Hextom SPM Integration // Main Include - DO NOT MODIFY -->
-        {% render 'hextom_spm_main', product: product, customer: customer %}
-        <!-- **END** Hextom SPM Integration // Main Include - DO NOT MODIFY -->
-
- {% include 'revy-bundle-script' %}
- <!--begin-boost-pfs-js-->
-   {% render 'boost-pfs' %}
- <!--end-boost-pfs-js-->
   {% render 'weglot_hreftags' %}
   {% render 'weglot_switcher' %}
 </body>
