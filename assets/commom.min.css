@@ -2201,6 +2201,10 @@ span[aria-label="color: Paris Blue"] {
     background-color: #bbd1e5;
 }
 
+span[aria-label="color: Smoky Blue"] {
+    background-color: #556282;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
