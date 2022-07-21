@@ -2166,7 +2166,9 @@ span[aria-label="color: Emerald"] {
 span[aria-label="color: Rose Gold"] {
     background-color: #d4a788;
 }
-
+span[aria-label="color: Burgundy"] {
+    background-color: #800020;
+}
 
 @media only screen and (min-width:768px){
   
