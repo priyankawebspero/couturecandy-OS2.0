@@ -1341,6 +1341,9 @@ border-color: #000;
 .yotpo .yotpo-display-wrapper .yotpo-nav .yotpo-dropdown-wrapper .yotpo-menu-mobile-collapse .yotpo-icon.yotpo-icon-write {
     color: #fff !important;
 }
+.yotpo .yotpo-display-wrapper .yotpo-nav .yotpo-dropdown-wrapper .yotpo-menu-mobile-collapse .yotpo-nav-dropdown-category {
+    background: #333 !important;
+}
 
 @media only screen and (min-width:768px){
   
