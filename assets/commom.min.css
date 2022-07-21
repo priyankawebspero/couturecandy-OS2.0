@@ -2225,6 +2225,14 @@ span[aria-label="color: Dusty Pink"] {
     background-color: #d9b5c6;
 }
 
+span[aria-label="color: Eggplant"] {
+    background-color: #280818;
+}
+
+span[aria-label="color: Wine"] {
+    background-color: #521f2c;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
