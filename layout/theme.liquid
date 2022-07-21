@@ -14,9 +14,7 @@
   <link rel="preload" href="{{ 'boost-pfs-core.js' | asset_url }}" as="script">
   <link rel="preload" href="{{ 'boost-pfs-filter.js' | asset_url }}" as="script">
   <link rel="preload" href="{{ 'boost-pfs-init.js' | asset_url }}" as="script">
-  
   {%- include 'head-style' -%}
-  {%- include 'load-css' -%}
     {% assign emailCust =  '' %}
   {% assign setHashedEmail = 'setEmail' %}
   {% if customer %}
@@ -153,3 +151,37 @@
   {% include 'flits_snippet' %}
   {% endif %}
 </html>    <!-- StartDeliveryDateRange version: 1.1 -->
+    <script>
+      var DeliveryDateRangeData = (function() {
+        var data = {
+          product: null,
+          cartProducts: []
+        };
+        {% if product %}
+          {% assign collection_titles = product.collections | map: 'title' | downcase %}
+          data.product = (function() {
+            return {
+              tags: {{ product.tags | json }},
+              collections: {{ collection_titles }},
+              vendor: "{{ product.vendor | downcase }}",
+              type: "{{ product.type | downcase }}"
+            }
+          })();
+        {% endif %}
+        {% if cart.items.size > 0 %}
+          {% for item in cart.items %}
+            {% assign collection_titles = item.product.collections | map: 'title' | downcase %}
+            data.cartProducts.push(function() {
+              return {
+                tags: {{ item.product.tags | json }},
+                collections: {{ collection_titles }},
+                vendor: "{{ item.product.vendor | downcase }}",
+                type: "{{ item.product.type | downcase }}"
+              }
+            }());
+          {% endfor %}
+        {% endif %}
+
+        return data;
+      })();
+</script>
