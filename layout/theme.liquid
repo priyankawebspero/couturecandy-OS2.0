@@ -29,7 +29,6 @@
   {% assign emailCust = emailCust | remove: ' ' | strip_newlines | downcase | md5 %}
   {% assign setHashedEmail = 'setEmail' %}
   {% endif %} 
-  {%- include 'head-script-before-content' -%}
 
   {{ content_for_header }}
   {%- capture check_admin -%}{{ content_for_header }}{%- endcapture -%}
@@ -43,7 +42,6 @@
   <!--begin-bc-sf-filter-css-->
   
   <!--end-bc-sf-filter-css-->
-  {%- include 'head-script-after-content' -%}
 
  <!--begin-boost-pfs-filter-css-->
    {% render 'boost-pfs-style' %}
