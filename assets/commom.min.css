@@ -2217,6 +2217,10 @@ span[aria-label="color: Guava"] {
     background-color: #ef224e;
 }
 
+span[aria-label="color: Cloud Blue"] {
+    background-color: #a3cdf6;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
