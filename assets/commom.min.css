@@ -2144,6 +2144,15 @@ div#shopify-section-template--14532934697043__1655293959d5ab1c6c .title:before {
     padding-bottom: 7px;
 }
 
+.widget_text .textwidget p.address {
+    max-width: 350px;
+    width: 100%;
+}
+
+.widget_text .textwidget p.address br {
+    display: none;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
@@ -2196,6 +2205,7 @@ html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation li {
   
   
 }
+
 
 @media only screen and (min-width:1200px){
 
