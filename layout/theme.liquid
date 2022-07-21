@@ -25,6 +25,10 @@
   {% assign emailCust = emailCust | remove: ' ' | strip_newlines | downcase | md5 %}
   {% assign setHashedEmail = 'setEmail' %}
   {% endif %} 
+  {%- if template contains 'product' -%}
+   {%- include 'space_check_variant' -%}
+  {%- endif -%}  
+    {{ '//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js' | script_tag }}
   {%- include 'head-script-before-content' -%}
   {%- capture check_admin -%}{{ content_for_header }}{%- endcapture -%}
   {%- capture check_tab -%}{{ content_for_layout  }}{%- endcapture -%}
@@ -36,11 +40,7 @@
   {%- endif -%}
   <!--begin-bc-sf-filter-css-->
 
-  {%- if template contains 'product' -%}
-   {%- include 'space_check_variant' -%}
-  {%- endif -%}  
-    {{ '//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js' | script_tag }}
-  
+ 
   {{ content_for_header }}
   <!--end-bc-sf-filter-css-->
   {%- include 'head-script-after-content' -%}
@@ -90,8 +90,6 @@
     {{ content_for_layout }}
     <!-- FOOTER -->
     {%- include 'footer' -%}
-    <!-- FOOTER -->
-    {%- include 'show_mobile_footer' -%}
     
     <div class="basel-close-side"></div>
     {%- if settings.product_layout_setting == '1' or settings.swatch_style == '1' -%}{%- section 'gl_custom_color' -%}{%- endif -%}
