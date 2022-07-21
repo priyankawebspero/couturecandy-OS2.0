@@ -2198,6 +2198,9 @@ body.template-product  {
     padding: 15px;
 }
 
+  .single-product-content .shop_attributes th {
+    padding: 7px 12px;
+}
   
 }
 
