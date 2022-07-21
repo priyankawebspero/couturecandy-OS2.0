@@ -2153,6 +2153,13 @@ div#shopify-section-template--14532934697043__1655293959d5ab1c6c .title:before {
     display: none;
 }
 
+/*--color-swap---*/
+
+span[aria-label="color: Blush"] {
+    background-color: #d3a79d;
+}
+
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
