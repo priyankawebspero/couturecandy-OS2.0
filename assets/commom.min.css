@@ -2233,6 +2233,10 @@ span[aria-label="color: Wine"] {
     background-color: #521f2c;
 }
 
+span[aria-label="color: Royal"] {
+    background-color: #b6313c;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
