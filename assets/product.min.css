@@ -1243,6 +1243,23 @@ border-color: #000;
     display: block;
 }
 
+.template-product div#ReviewSection .yotpo .yotpo-regular-box.yotpo-bottomline .yotpo-star-digits {
+    font-family: 'google_sansregular';
+    color: #000;
+    font-weight: normal;
+    font-size: 20px;
+    font-family: 'product_sans_mediumregular';
+}
+
+.template-product div#ReviewSection .yotpo .yotpo-regular-box.yotpo-bottomline .yotpo-star-digits + span.yotpo-sum-reviews {
+    display: block;
+    padding: 0;
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    color: #000 !important;
+}
+
 @media only screen and (min-width:768px){
   
  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
