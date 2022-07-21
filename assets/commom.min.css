@@ -2159,6 +2159,14 @@ span[aria-label="color: Blush"] {
     background-color: #d3a79d;
 }
 
+span[aria-label="color: Emerald"] {
+    background-color: #2c6550;
+}
+
+span[aria-label="color: Rose Gold"] {
+    background-color: #d4a788;
+}
+
 
 @media only screen and (min-width:768px){
   
