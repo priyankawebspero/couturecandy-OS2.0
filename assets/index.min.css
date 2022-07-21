@@ -604,7 +604,10 @@ html[lang="es"] #shopify-section-template--14532934697043__1654005036571929f8 .s
  div#shopify-section-template--14532934697043__1654005036571929f8 {
     padding: 40px 20px 0px 20px;
 }
-  
+ 
+div#shopify-section-template--14532934697043__1654005036571929f8 .featured-collection>.gl_col-md-6.gl_col-lg-6:first-child .spb_wrapper .wrapper-content-baner.gl_col-md-6.gl_col-lg-6 h5 + div {
+    font-size: 1.7vw;
+}
   
 }
 
