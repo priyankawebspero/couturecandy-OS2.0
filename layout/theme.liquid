@@ -76,7 +76,7 @@
   {%- if settings.show_backtop -%}<a href="#" class="scrollToTop basel-tooltip"><span class="basel-tooltip-label">Scroll To Top</span>Scroll To Top</a>{%- endif -%}
   
    {%- include 'footer-scripts' -%}
-
+   {%- include 'tracking_scripts' -%}
   {% if template contains 'collection' and settings.use_pagination == 'infinit' -%}
   <!-- trigger function on scroll point -->
   <script async="async" src="{{ 'waypoints.min.js' | asset_url }}"></script>
