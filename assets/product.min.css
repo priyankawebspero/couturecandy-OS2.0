@@ -1284,6 +1284,11 @@ border-color: #000;
     border-color: #ccc;
 }
 
+
+.yotpo .yotpo-nav {
+    border-color: #ccc;
+}
+
 @media only screen and (min-width:768px){
   
  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
