@@ -1300,6 +1300,11 @@ border-color: #000;
     color: #000;
 }
 
+.yotpo .yotpo-regular-box .yotpo-helpful * {
+    color: #000;
+    font-family: 'google_sansregular';
+}
+
 @media only screen and (min-width:768px){
   
  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
