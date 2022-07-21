@@ -25,7 +25,7 @@
   {% assign emailCust = emailCust | remove: ' ' | strip_newlines | downcase | md5 %}
   {% assign setHashedEmail = 'setEmail' %}
   {% endif %} 
-
+  {%- include 'head-script-before-content' -%}
   {%- capture check_admin -%}{{ content_for_header }}{%- endcapture -%}
   {%- capture check_tab -%}{{ content_for_layout  }}{%- endcapture -%}
   {%- if check_tab contains 'gl_has_youtube' or check_tab contains 'has_section_gl_js' or check_tab contains 'animated_counter' -%}
@@ -39,6 +39,7 @@
   {{ '//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js' | script_tag }}
   {{ content_for_header }}
   <!--end-bc-sf-filter-css-->
+  {%- include 'head-script-after-content' -%}
   
   {% if template != "collection" and template != "index" %} 
   {%- assign yotpo_offload_content = shop.metafields.yotpo.yotpo_offload_content %}
