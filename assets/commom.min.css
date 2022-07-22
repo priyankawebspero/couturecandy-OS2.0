@@ -2378,6 +2378,14 @@ background-color: #FFFF00;}
     font-family: 'product_sans_mediumregular';
 }
 
+.blog-post-loop.post-single-page .entry-content p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: 'google_sansregular';
+    color: #000;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
