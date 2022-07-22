@@ -2264,21 +2264,6 @@ span[aria-label="color: Silver/Nude"] {
     display:none;
 }
 
-.bg_color_neon-coral {
-    background: #ff354e;
-}
-
-.bg_color_neon-pink {
-    background-color: #fb1b89;
-}
-.bg_color_light-pink {
-    background-color: #e1c7e0;
-}
-
-.bg_color_dark-berry {
-    background-color: #502a40;
-}
-
 .variations .swatches-select>.jas_soldout  {
   display: none !important;
   }
