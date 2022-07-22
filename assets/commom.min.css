@@ -2536,6 +2536,9 @@ background-color: #FFFF00;}
 .single-post-navigation a {
    font-weight: normal !important;
 }
+.single-post .container {
+    width: 100% !important;
+}
 
 @media only screen and (min-width:768px){
   
