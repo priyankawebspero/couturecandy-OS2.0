@@ -2515,6 +2515,12 @@ background-color: #FFFF00;}
   
 }
 
+.comments-area .comment-reply-title {
+    font-family: 'product_sans_mediumregular';
+    font-weight: normal !important;
+    color: #000 !important;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
