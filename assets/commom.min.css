@@ -2493,6 +2493,13 @@ background-color: #FFFF00;}
     border: 1px solid #ccc;
 }
 
+.comments-area form input[type="text"], .comments-area form input[type="email"] {
+    height: 50px;
+    padding: 0 15px;
+    color: #000;
+    border: 1px solid #ccc;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
