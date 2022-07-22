@@ -2367,6 +2367,10 @@ background-color: #FFFF00;}
     padding: 0 50px;
 }
 
+.single-post .site-content.col-sm-9 {
+    padding-left: 50px;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
