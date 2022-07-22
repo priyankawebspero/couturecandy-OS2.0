@@ -2410,6 +2410,10 @@ background-color: #FFFF00;}
     border-color: #000 !important;
 }
 
+.single-post .sidebar-container .sidebar-widget {
+    margin-bottom: 30px;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
