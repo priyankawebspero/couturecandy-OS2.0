@@ -2405,6 +2405,11 @@ background-color: #FFFF00;}
     display: none;
 }
 
+.single-post .sidebar-container form button#searchsubmit {
+    background: #000 !important;
+    border-color: #000 !important;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
