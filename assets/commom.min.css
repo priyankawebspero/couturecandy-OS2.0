@@ -2256,6 +2256,10 @@ span[aria-label="color: Mustard"] {
     background-color: #ebc80b;
 }
 
+span[aria-label="color: Silver/Nude"] {
+    background-color: #9e9c98;
+}
+
 .swatches-on-grid .swatch-on-grid.current-swatch:after {
     display:none;
 }
