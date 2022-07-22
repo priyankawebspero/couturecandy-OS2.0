@@ -2783,6 +2783,11 @@ html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation>li>a {
 }
 
 @media only screen and (max-width:1199px) and (min-width:992px){
+  .single-post .sidebar-container form button#searchsubmit {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 0px;
+}
   
 html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation>li>a {
     font-size: 12px;
