@@ -2352,10 +2352,6 @@ background-color: #FFFF00;}
     padding-top: 10px;
 }
 
-.main-nav .menu>li.menu-item-design-sized .sub-menu-dropdown .top_nav_main .top_section .top_section_menu_ul li a:hover {
-    margin-left: 5px;
-}
-
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
