@@ -2245,6 +2245,10 @@ span[aria-label="color: Chocolate Brown"] {
     background-color: #3e2b23;
 }
 
+span[aria-label="color: Dusty-Rose"] {
+    background-color: #fac5b2;
+}
+
 .swatches-on-grid .swatch-on-grid.current-swatch:after {
     display:none;
 }
