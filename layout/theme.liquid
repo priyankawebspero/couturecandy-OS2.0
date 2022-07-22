@@ -1,7 +1,7 @@
 <!doctype html>
 <!--[if IE 9]> <html class="ie9 no-js" lang="{{ shop.locale }}"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="{{ shop.locale }}"> <!--<![endif]-->
-<head>
+<head>{% render 'spdn' %}
 {%- include 'meta' -%}
 {%- include 'social-meta-tags' -%}
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,10 +28,9 @@
   {%- if check_tab contains 'gl_has_google_map' -%}
   {%- assign section_js_googlem_enable = true -%}
   {%- endif -%}
-  {%- include 'inc_css_home' -%}
    <!--begin-boost-pfs-filter-css-->
-{% render 'boost-pfs-style' %}
-<!--end-boost-pfs-filter-css-->
+   {% render 'boost-pfs-style' %}
+   <!--end-boost-pfs-filter-css-->
   {%- if template contains 'product' -%}{%- include 'space_check_variant' -%}{%- endif-%}
   {{ '//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js' | script_tag }}
   {%- include 'head-script-before-content' -%}
