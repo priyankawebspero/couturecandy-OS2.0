@@ -2260,6 +2260,10 @@ span[aria-label="color: Chocolate Brown"] {
     background-color: #e1c7e0;
 }
 
+.bg_color_dark-berry {
+    background-color: #502a40;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
