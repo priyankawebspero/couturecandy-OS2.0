@@ -2421,6 +2421,12 @@ background-color: #FFFF00;}
     border-color: #ccc;
 }
 
+.single-post .sidebar-container .sidebar-widget ul li .rpwe-title a {
+    letter-spacing: 0;
+    text-transform: inherit;
+    font-size: 14px;
+    color: #000;
+}
 
 @media only screen and (min-width:768px){
   
