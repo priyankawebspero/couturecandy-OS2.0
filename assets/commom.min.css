@@ -2500,6 +2500,20 @@ background-color: #FFFF00;}
     border: 1px solid #ccc;
 }
 
+.comments-area form .form-submit input[type="submit"] {
+    background: #0f0f0f;
+    border: 1px solid #0f0f0f;
+    margin-top: 10px;
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+
+.comments-area form .form-submit input[type="submit"]:hover, .comments-area form .form-submit input[type="submit"]:focus {
+    background: #e44949;
+    border: 1px solid #e44949;
+  
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
