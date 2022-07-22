@@ -2245,6 +2245,10 @@ span[aria-label="color: Chocolate Brown"] {
     background-color: #3e2b23;
 }
 
+.swatches-on-grid .swatch-on-grid.current-swatch:after {
+    display:none;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
