@@ -2249,6 +2249,10 @@ span[aria-label="color: Chocolate Brown"] {
     display:none;
 }
 
+.bg_color_neon-coral {
+    background: #ff354e;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
