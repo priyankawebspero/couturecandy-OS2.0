@@ -2436,6 +2436,24 @@ background-color: #FFFF00;}
     margin: 0;
 }
 
+.single-post .sidebar-container .sidebar-widget .instagram-widget .clear a {
+    background: #e44949;
+    color: #fff;
+    padding: 7px 15px;
+    display: inline-block;
+    font-family: 'google_sansregular';
+    text-transform: capitalize;
+    font-size: 15px;
+    border-radius: 5px;
+    min-width: 145px;
+    text-align: center;
+}
+
+.single-post .sidebar-container .sidebar-widget .instagram-widget .clear a:hover {
+    background: #0f0f0f;
+    color: #fff;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
