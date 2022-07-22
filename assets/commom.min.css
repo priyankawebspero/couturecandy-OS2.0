@@ -2393,6 +2393,18 @@ background-color: #FFFF00;}
     margin-top: 45px;
 }
 
+.single-post .sidebar-container h5.widget-title {
+    font-family: 'product_sans_mediumregular';
+    font-weight: normal;
+    letter-spacing: 0;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.single-post .sidebar-container h5.widget-title:before {
+    display: none;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
