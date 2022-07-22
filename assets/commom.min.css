@@ -3965,7 +3965,9 @@ footer .widget-title i {
  .single-post .site-content.col-sm-9 {
     padding-left: 15px;
 }
- 
+.single-post .container {
+    padding: 0 15px;
+} 
   
 .topbar-content.mobile .top_bar_right.col-6 .doubly-wrapper .doubly-nice-select {
     float: none;
