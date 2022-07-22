@@ -2372,6 +2372,7 @@ background-color: #FFFF00;}
 }
 .single-post .site-content figure.entry-thumbnail {
     margin-bottom: 15px;
+    text-align: left;
 }
 
 .single-post .site-content h1.entry-title {
