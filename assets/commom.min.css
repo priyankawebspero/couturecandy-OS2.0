@@ -2487,6 +2487,12 @@ background-color: #FFFF00;}
     color: #000;
 }
 
+.comments-area form textarea {
+    padding: 15px;
+    color: #000;
+    border: 1px solid #ccc;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
