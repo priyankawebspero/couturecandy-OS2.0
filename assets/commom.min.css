@@ -2414,6 +2414,14 @@ background-color: #FFFF00;}
     margin-bottom: 30px;
 }
 
+.single-post .sidebar-container .sidebar-widget ul {
+    margin-top: 15px;
+}
+.single-post .sidebar-container .sidebar-widget ul li {
+    border-color: #ccc;
+}
+
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
