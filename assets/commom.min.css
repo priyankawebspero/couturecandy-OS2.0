@@ -2483,6 +2483,10 @@ background-color: #FFFF00;}
     margin-top: 0 !important;
 }
 
+.comments-area form#comment_form p.comment-notes {
+    color: #000;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
