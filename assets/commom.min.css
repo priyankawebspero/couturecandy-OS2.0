@@ -2418,7 +2418,7 @@ background-color: #FFFF00;}
     margin-top: 15px;
 }
 .single-post .sidebar-container .sidebar-widget ul li {
-    border-color: #ccc;
+    border-bottom: 1px solid #ccc;
 }
 
 .single-post .sidebar-container .sidebar-widget ul li .rpwe-title a {
