@@ -3968,6 +3968,10 @@ footer .widget-title i {
 .single-post .container {
     padding: 0 15px;
 } 
+
+.main-page-wrapper.single-post {
+    padding-bottom: 0;
+}
   
 .topbar-content.mobile .top_bar_right.col-6 .doubly-wrapper .doubly-nice-select {
     float: none;
