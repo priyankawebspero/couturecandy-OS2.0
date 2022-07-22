@@ -2343,7 +2343,9 @@ background-color: #FFFF00;}
  
  }
 
-
+.how_shop h2 {
+    font-size: 30px;
+}
 
 @media only screen and (min-width:768px){
   
