@@ -2370,6 +2370,13 @@ background-color: #FFFF00;}
 .single-post .site-content.col-sm-9 {
     padding-left: 50px;
 }
+.single-post .site-content figure.entry-thumbnail {
+    margin-bottom: 15px;
+}
+
+.single-post .site-content h1.entry-title {
+    font-family: 'product_sans_mediumregular';
+}
 
 @media only screen and (min-width:768px){
   
