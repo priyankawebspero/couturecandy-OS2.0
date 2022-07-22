@@ -2256,6 +2256,9 @@ span[aria-label="color: Chocolate Brown"] {
 .bg_color_neon-pink {
     background-color: #fb1b89;
 }
+.bg_color_light-pink {
+    background-color: #e1c7e0;
+}
 
 @media only screen and (min-width:768px){
   
