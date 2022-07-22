@@ -2279,6 +2279,10 @@ span[aria-label="color: Silver/Nude"] {
     background-color: #502a40;
 }
 
+.variations .swatches-select>.jas_soldout  {
+  display: none !important;
+  }
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
