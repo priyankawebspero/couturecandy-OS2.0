@@ -1,96 +1,28 @@
 <!doctype html>
 <!--[if IE 9]> <html class="ie9 no-js" lang="{{ shop.locale }}"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="{{ shop.locale }}"> <!--<![endif]-->
-<head>
-  
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SJDTLNE3GS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SJDTLNE3GS');
-</script>
-  
-  
-  <!-- StackAdapt Pixel -->
-  
-  <script>!function(s,a,e,v,n,t,z){if(s.saq)return;n=s.saq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!s._saq)s._saq=n;n.push=n;n.loaded=!0;n.version='1.0';n.queue=[];t=a.createElement(e);t.async=!0;t.src=v;z=a.getElementsByTagName(e)[0];z.parentNode.insertBefore(t,z)}(window,document,'script','https://tags.srv.stackadapt.com/events.js');saq('rt','lLJ2Lmy9X0L3OSJj8O8ca2');</script><noscript><img src="https://tags.srv.stackadapt.com/rt?sid=lLJ2Lmy9X0L3OSJj8O8ca2" width="1" height="1"/></noscript>
-  
-  <script>!function(s,a,e,v,n,t,z){if(s.saq)return;n=s.saq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!s._saq)s._saq=n;n.push=n;n.loaded=!0;n.version='1.0';n.queue=[];t=a.createElement(e);t.async=!0;t.src=v;z=a.getElementsByTagName(e)[0];z.parentNode.insertBefore(t,z)}(window,document,'script','https://tags.srv.stackadapt.com/events.js');saq('conv','0Xr6vCwKPFJ59yVYuZmsPh');</script><noscript><img src="https://tags.srv.stackadapt.com/conv?cid=0Xr6vCwKPFJ59yVYuZmsPh" width="1" height="1"/></noscript>
-  
-  {% if template contains 'collection' and current_tags %}
-      {% if template.suffix == 'new-collections' or template.suffix == 'brands' %}
-      <script type="text/javascript">
-          var template_suffix = '{{ template.suffix }}'; 
-          var collection_handle = '{{collection.handle}}'+'-sale';
-          var current_tags = window.location.pathname.split("/").pop();
-          current_tags.toLowerCase();
-          if (current_tags == 'sale') {
-              window.location.replace("https://www.couturecandy.com/collections/"+collection_handle);
-            // console.log('collection_handle',collection_handle);
-            // console.log('current_tags',current_tags); 
-            // console.log('template_suffix',template_suffix);  
-          }
-          
-      </script>
-    {% endif %}
-  {% endif %}
-   {% include 'yett' %}
-<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
-h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
-(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
-})(window,document.documentElement,'async-hide','dataLayer',4000,
-{'GTM-PQJPKCB':true});</script>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PQJPKCB');</script>
-  <!-- End Google Tag Manager -->
+<head>{% render 'spdn' %}
 {%- include 'meta' -%}
-
 {%- include 'social-meta-tags' -%}
-  <script>
-    function getMobileOperatingSystem() {
-		  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-      // Windows Phone must come first because its UA also contains "Android"
-    if (/windows phone/i.test(userAgent)) {
-        return "m";
-    }
-
-    if (/android/i.test(userAgent)) {
-        return "m";
-    }
-  
-  if (/iPhone/i.test(userAgent)) {
-        return "m";
-    }
-
-
-    // iOS detection from: http://stackoverflow.com/a/9039885/177710
-    if (/iPad/.test(userAgent) && !window.MSStream) {
-        return "t";
-    }
-
-    return "d";
-}
-var checkDevice = getMobileOperatingSystem();
-    
-  </script>
-{% assign emailCust =  '' %}
-
-{% assign setHashedEmail = 'setEmail' %}
-{% if customer %}
-    {% assign emailCust = customer.email | remove: ' ' | strip_newlines | downcase | md5 %}
-    {% assign setHashedEmail = 'setHashedEmail' %}
-  {% else %}
-  {% assign emailCust = emailCust | remove: ' ' | strip_newlines | downcase | md5 %}
-{% assign setHashedEmail = 'setEmail' %}
-{% endif %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="facebook-domain-verification" content="65kh83o91knyi4e2aa294mfau2ovt1" />
+  <link rel="preconnect" href="https://services.mybcapps.com/bc-sf-filter/filter  " />
+  <link rel="dns-prefetch" href="https://services.mybcapps.com/bc-sf-filter/filter" />
+  <link rel="preload" href="{{ 'boost-pfs-vendor.js' | asset_url }}" as="script">
+  <link rel="preload" href="{{ 'boost-pfs-core.js' | asset_url }}" as="script">
+  <link rel="preload" href="{{ 'boost-pfs-filter.js' | asset_url }}" as="script">
+  <link rel="preload" href="{{ 'boost-pfs-init.js' | asset_url }}" as="script">
+  {%- include 'head-style' -%}
+  {% assign emailCust =  '' %}
+  {% assign setHashedEmail = 'setEmail' %}
+  {% if customer %}
+      {% assign emailCust = customer.email | remove: ' ' | strip_newlines | downcase | md5 %}
+      {% assign setHashedEmail = 'setHashedEmail' %}
+    {% else %}
+    {% assign emailCust = emailCust | remove: ' ' | strip_newlines | downcase | md5 %}
+  {% assign setHashedEmail = 'setEmail' %}
+  {% endif %}
   
     {% if template == "index" %}
       <meta name="facebook-domain-verification" content="65kh83o91knyi4e2aa294mfau2ovt1" />
