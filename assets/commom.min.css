@@ -2362,6 +2362,11 @@ background-color: #FFFF00;}
     padding: 20px 15px;
 }
 
+.single-post .container {
+    max-width: 100%;
+    padding: 0 50px;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
@@ -2441,6 +2446,10 @@ html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation>li>a {
 
 .main-header .wrapp-header {
     /* display: block; */
+    padding: 0 30px;
+}
+.single-post .container {
+    max-width: 100%;
     padding: 0 30px;
 }
   
