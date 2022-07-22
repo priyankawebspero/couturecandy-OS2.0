@@ -2463,7 +2463,9 @@ background-color: #FFFF00;}
     background-color: #0f0f0f;
     color: #fff;
 }
-
+.main-page-wrapper.single-post {
+    padding-bottom: 40px;
+}
 
 @media only screen and (min-width:768px){
   
