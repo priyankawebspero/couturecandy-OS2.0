@@ -2252,6 +2252,10 @@ span[aria-label="color: Dusty-Rose"] {
 span[aria-label="color: Light Mauve"] {
     background-color: #C292A1;
 }
+span[aria-label="color: Mustard"] {
+    background-color: #ebc80b;
+}
+
 .swatches-on-grid .swatch-on-grid.current-swatch:after {
     display:none;
 }
