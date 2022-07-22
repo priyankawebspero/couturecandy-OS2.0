@@ -2356,6 +2356,12 @@ background-color: #FFFF00;}
     margin-bottom: 10px;
 }
 
+/*---single-blog-page-design---------*/
+
+.single-post .gl_page_title {
+    padding: 20px 15px;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
