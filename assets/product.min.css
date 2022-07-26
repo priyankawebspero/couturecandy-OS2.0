@@ -2233,6 +2233,14 @@ body.template-product  {
     padding-bottom: 112%;
 }
 
+.single-product-content .cart button.button, .single-product-content .cart span.button a, span.contact_us_button a {
+ font-size: 13px;
+}
+.single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
+    font-size: 13px;
+}
+
+  
 }
 
 
