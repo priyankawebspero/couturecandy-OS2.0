@@ -2641,6 +2641,10 @@ body .boost-pfs-search-suggestion .boost-pfs-search-suggestion-groups-pro {
     font-family: 'product_sans_mediumregular';
 }
 
+.template-article .site-content h3 b {
+    font-weight: normal;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
