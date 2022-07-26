@@ -2619,7 +2619,7 @@ body .boost-pfs-search-suggestion .boost-pfs-search-suggestion-groups-pro {
 }
 
 .boost-pfs-search-suggestion-groups-pro .boost-pfs-search-suggestion-header-view-all a {
-    background: #000;
+    background: #000 !important;
     color: #fff !important;
     border-radius: 0 !important;
     padding: 7px !important;
