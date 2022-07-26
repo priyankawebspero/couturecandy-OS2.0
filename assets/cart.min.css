@@ -321,4 +321,9 @@ form.shopify-cart-form {
     white-space: normal;
 } 
 
+.template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-name dl.variation dt.variation-Color {
+    min-width: 53px;
+    text-transform: uppercase;
+}
+
 }
