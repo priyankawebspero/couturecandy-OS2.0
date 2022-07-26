@@ -1364,9 +1364,6 @@ border-color: #000;
 .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a:hover {
     color: #fff !important;
 }
-.single-product-content .entry-summary .yith-wcwl-add-to-wishlist .yith-wcwl-add-button.gl_add_wishlist a.add_nitro_wishlist:before {
-    color: #fff !important;
-}
 .single-product-content .entry-summary .yith-wcwl-add-button.gl_adding_wishlist a:before {
     color: #e44949 !important;
 }
