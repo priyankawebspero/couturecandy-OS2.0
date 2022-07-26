@@ -2632,6 +2632,8 @@ body .boost-pfs-search-suggestion .boost-pfs-search-suggestion-groups-pro {
     margin-top: 0 !important;
 }
 
+
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
@@ -2681,7 +2683,10 @@ html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation li {
     margin-left: 10px;
     margin-right: 10px;
 }
-  
+ .sidebar-container {
+    position: sticky;
+    top: 140px;
+} 
   
 }
 
