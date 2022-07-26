@@ -932,6 +932,10 @@ display:none;
     width: 100% !important;
 }
 
+.boost-pfs-filter-option.boost-pfs-filter-option-box.boost-pfs-filter-option-designer li.boost-pfs-filter-option-item {
+    width: 100% !important;
+}
+
 @media only screen and (max-width:1550px){
   
   .boost-pfs-container-default-fullwidth {
