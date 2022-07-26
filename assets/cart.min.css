@@ -322,9 +322,12 @@ form.shopify-cart-form {
 } 
 
 .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-name dl.variation dt.variation-Color {
-    min-width: 53px;
+    min-width: 60px;
     text-transform: uppercase;
+    font-family: 'product_sans_mediumregular';
+    font-size: 14px;
 }
+  
 .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-name dl.variation .variation-Color {
     margin-top: 5px;
 }
