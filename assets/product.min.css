@@ -3,7 +3,15 @@ div#popup {
 }
 .owl-item {height: 0;}    
 .owl-item.active {height: auto;}
-
+.SizeCharttable tbody tr:first-child th, .SizeCharttable tbody:first-child tr:first-child td {
+    background-color: #000;
+    color: #fff!important;
+    text-transform: capitalize;
+    font-size: 13px;
+    font-weight: normal !important;
+    padding: 5px;
+    border: 1px solid #999;
+}
 .single-breadcrumbs-wrapper {
     background: none;
     margin-left: 0;
