@@ -331,5 +331,9 @@ form.shopify-cart-form {
 .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-name dl.variation .variation-Color {
     margin-top: 5px;
 }
+.template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td {
+    font-size: 14px;
+    padding: 7px 10px;
+}
 
 }
