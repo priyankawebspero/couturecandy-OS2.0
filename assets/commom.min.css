@@ -2632,7 +2632,9 @@ body .boost-pfs-search-suggestion .boost-pfs-search-suggestion-groups-pro {
     margin-top: 0 !important;
 }
 
-
+.template-article .site-content p {
+    margin-top: -15px !important;
+}
 
 @media only screen and (min-width:768px){
   
