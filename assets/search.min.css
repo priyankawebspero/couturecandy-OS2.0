@@ -1678,5 +1678,22 @@ display:none;
 .boost-pfs-filter-tree-mobile-style3 .boost-pfs-filter-mobile-toolbar .boost-pfs-filter-mobile-toolbar-bottom {
     top: 11px;
 }
+
+body.template-search .boost-pfs-filter-toolbar-top-mobile {
+    position: fixed !important;
+    bottom: 0 !important;
+    top: auto !important;
+    z-index: 99;
+    width: 100%;
+    display: block !important;
+}
+.boost-pfs-filter-top-sorting-mobile .boost-pfs-filter-top-sorting-wrapper span {
+    color: #fff;
+}
+
+.boost-pfs-filter-top-sorting-mobile .boost-pfs-filter-top-sorting-wrapper {
+    background: #000;
+    color: #fff !important;
+}
   
 }
