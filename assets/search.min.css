@@ -1710,5 +1710,9 @@ body.template-search .boost-pfs-filter-toolbar-top-mobile {
 .boost-pfs-filter-toolbar-top-mobile-inner.boost-pfs-filter-toolbar-show-sort-by-mobile .boost-pfs-filter-tree-mobile-button button:before {
     filter: inherit !important;
 }
+.boost-pfs-filter-tree-open-body .main-header {
+    /* display: none; */
+    z-index: 0 !important;
+}
   
 }
