@@ -1686,7 +1686,9 @@ body.template-search .boost-pfs-filter-toolbar-top-mobile {
     z-index: 99;
     width: 100%;
     display: block !important;
+    margin: 0;
 }
+  
 .boost-pfs-filter-top-sorting-mobile .boost-pfs-filter-top-sorting-wrapper span {
     color: #fff;
 }
