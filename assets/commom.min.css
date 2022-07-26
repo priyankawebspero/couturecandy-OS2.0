@@ -2648,7 +2648,9 @@ body .boost-pfs-search-suggestion .boost-pfs-search-suggestion-groups-pro {
 .shopping-cart .dropdown-cat .product_list_widget li img {
     margin-bottom: 15px;
 }
-
+.boost-pfs-filter-product-item-label .sale {
+    background-color: #e44949 !important;
+}
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
