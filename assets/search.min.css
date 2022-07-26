@@ -916,6 +916,10 @@ display:none;
     outline: none !important;
 }
 
+.boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li {
+    margin-top: 6px;
+}
+
 @media only screen and (max-width:1550px){
   
   .boost-pfs-container-default-fullwidth {
