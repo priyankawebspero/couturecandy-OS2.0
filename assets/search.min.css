@@ -920,6 +920,10 @@ display:none;
     margin-top: 6px;
 }
 
+.boost-pfs-filter-button span {
+    font-weight: normal;
+}
+
 @media only screen and (max-width:1550px){
   
   .boost-pfs-container-default-fullwidth {
