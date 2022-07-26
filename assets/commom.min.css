@@ -2540,9 +2540,94 @@ background-color: #FFFF00;}
     width: 100% !important;
 }
 
-/*--------search-css----design----*/
+/*--------search-css--design----*/
 
+body .boost-pfs-search-suggestion-column-2-non-fullwidth:not(.boost-pfs-search-suggestion-mobile) {
+    width: 100% !important;
+    max-width: 380px !important;
+}
 
+body .boost-pfs-search-suggestion {
+    min-width: inherit !important;
+    padding: 3px;
+}
+
+body .boost-pfs-search-suggestion .boost-pfs-search-suggestion-groups-others {
+    width: 100% !important;
+}
+
+body .boost-pfs-search-suggestion .boost-pfs-search-suggestion-groups-pro {
+    width: 100% !important;
+}
+
+.boost-pfs-search-suggestion-group .boost-pfs-search-suggestion-header {
+    background: #000;
+    color: #fff;
+}
+
+.boost-pfs-search-suggestion-group .boost-pfs-search-suggestion-header {
+    background: #000;
+    color: #fff;
+    font-family: 'product_sans_mediumregular';
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.boost-pfs-search-suggestion-group li.boost-pfs-ui-item:nth-child(odd) {
+    background: #f8f8f8;
+}
+.boost-pfs-search-suggestion-group li.boost-pfs-ui-item a {
+    font-size: 13px;
+    color: #000;
+}
+.boost-pfs-search-suggestion-group li.boost-pfs-ui-item a:hover {
+    color: #e94949;
+}
+
+.boost-pfs-search-suggestion-group li.boost-pfs-ui-item .boost-pfs-search-suggestion-right .boost-pfs-search-suggestion-product-title {
+    font-weight: normal;
+}
+.boost-pfs-search-suggestion-group li.boost-pfs-ui-item {
+    width: 100% !important;
+    padding: 5px 8px;
+}
+
+.boost-pfs-search-suggestion-group li.boost-pfs-ui-item .boost-pfs-search-suggestion-right .boost-pfs-search-suggestion-product-sku {
+    float: right;
+    font-size: 11px;
+    color: #767676;
+    text-align: right;
+}
+
+.boost-pfs-search-suggestion-group li.boost-pfs-ui-item .boost-pfs-search-suggestion-right .boost-pfs-search-suggestion-product-price {
+    font-family: 'product_sans_mediumregular';
+}
+
+.boost-pfs-search-suggestion-group li.boost-pfs-ui-item.boost-pfs-search-suggestion-item-product {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.boost-pfs-search-suggestion-group li.boost-pfs-ui-item .boost-pfs-search-suggestion-right .boost-pfs-search-suggestion-product-price {
+    font-family: 'product_sans_mediumregular';
+    font-size: 15px;
+}
+
+.boost-pfs-search-suggestion-groups-pro .boost-pfs-search-suggestion-header-view-all {
+    margin: 0 !important;
+}
+
+.boost-pfs-search-suggestion-groups-pro .boost-pfs-search-suggestion-header-view-all a {
+    background: #000;
+    color: #fff !important;
+    border-radius: 0 !important;
+    padding: 7px !important;
+}
+.boost-pfs-search-suggestion-groups-pro .boost-pfs-search-suggestion-header-view-all a span {
+    background: none !important;
+    padding-right: 0 !important;
+}
 
 
 @media only screen and (min-width:768px){
