@@ -1714,5 +1714,13 @@ body.template-search .boost-pfs-filter-toolbar-top-mobile {
     /* display: none; */
     z-index: 0 !important;
 }
+.boost-pfs-filter-top-sorting-mobile .boost-pfs-filter-filter-dropdown {
+   background: #f8f8f8;
+    bottom: 100%;
+    top: auto;
+}
+.boost-pfs-filter-custom-sorting .boost-pfs-filter-filter-dropdown li a {
+    color: #000;
+}
   
 }
