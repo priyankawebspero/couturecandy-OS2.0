@@ -4574,6 +4574,18 @@ div#shopify-block-a41a6449-6d18-49a8-8ff1-11479d23387a a.btn {
   
     line-height: 33px;
 }
+
+.boost-pfs-search-suggestion-mobile .boost-pfs-search-suggestion-group>ul>.boost-pfs-search-suggestion-header {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: #000 !important;
+}
+
+.boost-pfs-search-suggestion-group li.boost-pfs-ui-item .boost-pfs-search-suggestion-right .boost-pfs-search-suggestion-product-sku {
+    float: none;
+	padding-bottom: 0;
+    text-align: left;
+}
   
 }
 
