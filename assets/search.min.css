@@ -912,6 +912,9 @@ display:none;
 .boost-pfs-filter-left-col .boost-pfs-filter-option.boost-pfs-filter-option-designer li.boost-pfs-filter-option-item {
     margin-bottom: 7px;
 }
+.boost-pfs-search-container form.boost-pfs-search-form .boost-pfs-search-input {
+    outline: none !important;
+}
 
 @media only screen and (max-width:1550px){
   
