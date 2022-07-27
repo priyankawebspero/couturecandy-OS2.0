@@ -10,7 +10,7 @@
 
 .bottom.description.collection {
     background: #f8f8f8;
-    padding: 70px 50px;
+    padding: 70px 50px 40px 70px;
     text-align: center;
 }
 
@@ -740,9 +740,12 @@ a.text-m {
 .bottom.buttons {
     display: flex;
     flex-direction: row;
-   padding:40px 20px;
+    padding: 0 20px 40px 20px;
     text-align: center;
     justify-content: center;
+    background: #f8f8f8;
+    padding-top: 0;
+    padding-bottom: 40px;
 }
 
 .bottom.buttons .btn {
@@ -922,6 +925,7 @@ display:none;
     color: #000;
     line-height: 1.2;
 }
+
 
 @media only screen and (max-width:1550px){
   
