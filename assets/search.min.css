@@ -1731,7 +1731,7 @@ display:none;
 
 body.template-search .boost-pfs-filter-toolbar-top-mobile {
     position: fixed !important;
-    bottom: 0 !important;
+    bottom: -1px !important;
     top: auto !important;
     z-index: 99;
     width: 100%;
@@ -1772,5 +1772,7 @@ body.template-search .boost-pfs-filter-toolbar-top-mobile {
 .boost-pfs-filter-custom-sorting .boost-pfs-filter-filter-dropdown li a {
     color: #000;
 }
-  
+ body.template-search .boost-pfs-filter-toolbar-top-mobile {
+    border: none !important;
+} 
 }
