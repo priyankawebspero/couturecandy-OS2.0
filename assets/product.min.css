@@ -1772,6 +1772,10 @@ div#ProdDetailInfomobile {
 
 
 @media only screen and (max-width: 767px){
+
+.product-image-summary .Info {
+    margin-top: 0;
+}
   
 .single-product-content .product-tabs-wrapper .shopify-tabs .tabs li {
     display: inline-block;
