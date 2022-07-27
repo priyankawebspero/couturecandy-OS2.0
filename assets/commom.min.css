@@ -2660,6 +2660,13 @@ body .boost-pfs-search-suggestion .boost-pfs-search-suggestion-groups-pro {
 .boost-pfs-filter-button span.boost-pfs-filter-option-value {
     font-weight: normal;
 }
+.boost-pfs-filter-option-item-list.boost-pfs-filter-option-item-list-multiple-list li.selected .boost-pfs-check-box {
+    background: #000;
+}
+
+.boost-pfs-filter-option-item-list.boost-pfs-filter-option-item-list-multiple-list li.selected .boost-pfs-check-box:before {
+    border: 2px solid #fff;
+}
 
 @media only screen and (min-width:768px){
   
