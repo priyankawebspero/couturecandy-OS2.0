@@ -1789,5 +1789,9 @@ body.template-search .boost-pfs-filter-toolbar-top-mobile {
     height: 45px;
     font-size: 15px;
 }
+.boost-pfs-search-container form.boost-pfs-search-form button.boost-pfs-search-btn:before {
+    font-size: 28px;
+    line-height: 42px;
+}
   
 }
