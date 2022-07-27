@@ -2654,6 +2654,9 @@ body .boost-pfs-search-suggestion .boost-pfs-search-suggestion-groups-pro {
 .boost-pfs-filter-option-item-list.boost-pfs-filter-option-item-list-box .boost-pfs-filter-option-item.selected>button span {
     font-weight: normal;
 }
+.boost-pfs-filter-refine-by .boost-pfs-filter-refine-by-items .refine-by-item .refine-by-type span.refine-by-value {
+    font-size: 13px;
+}
 
 @media only screen and (min-width:768px){
   
