@@ -1775,4 +1775,14 @@ body.template-search .boost-pfs-filter-toolbar-top-mobile {
  body.template-search .boost-pfs-filter-toolbar-top-mobile {
     border: none !important;
 } 
+.boost-pfs-filter-collection-header-wrapper {
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.boost-pfs-search-container h1.boost-pfs-search-result-header {
+    font-size: 23px;
+    padding-bottom: 10px;
+}
+  
 }
