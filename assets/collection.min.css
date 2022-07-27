@@ -917,13 +917,7 @@ display:none;
     color: #fff !important;
 }
 
-.boost-pfs-filter-tree-v .boost-pfs-filter-option.boost-pfs-filter-option-size .boost-pfs-filter-option-item-list-box .boost-pfs-filter-option-item button.boost-pfs-filter-button:hover {
-    background: #000 !important;
-}
 
-.boost-pfs-filter-tree-v .boost-pfs-filter-option.boost-pfs-filter-option-size .boost-pfs-filter-option-item-list-box .boost-pfs-filter-option-item button.boost-pfs-filter-button:hover .boost-pfs-filter-option-value{
-    color: #fff !important;
-}
 .boost-pfs-filter-refine-by-wrapper .boost-pfs-filter-refine-by .refine-by-item.boost-pfs-filter-option-label button.boost-pfs-filter-clear {
     color: #000;
     line-height: 1.2;
