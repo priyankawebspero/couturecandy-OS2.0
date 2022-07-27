@@ -2661,6 +2661,10 @@ body .boost-pfs-search-suggestion .boost-pfs-search-suggestion-groups-pro {
     font-weight: normal;
 }
 
+.menu li a {
+    text-decoration: none !important;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
