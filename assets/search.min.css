@@ -1793,5 +1793,8 @@ body.template-search .boost-pfs-filter-toolbar-top-mobile {
     font-size: 28px;
     line-height: 42px;
 }
+.boost-pfs-filter-collection-header-wrapper {
+    margin-bottom: 10px;
+}
   
 }
