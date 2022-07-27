@@ -2251,7 +2251,9 @@ body.template-product  {
     padding: 0 10px;
 }
 
-  
+span.contact_us_button a {
+    line-height: 24px;
+} 
 }
 
 
