@@ -2700,6 +2700,10 @@ div#reviewCarouselWidget .stjr-reviews-carousel-nav.stjr-reviews-carousel-nav--l
     z-index: 9;
 }
 
+div#reviewCarouselWidget  .stjr-reviews-carousel {
+    position: relative;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
