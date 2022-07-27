@@ -1,4 +1,5 @@
 {%- include 'load-css' -%}
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600;1,800&display=swap" rel="stylesheet">
 {% if template contains "index" %}
 <link rel="preload" href="{{ 'index.min.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
 {%- endif -%}
@@ -8,12 +9,7 @@
 <link rel="preload" href="{{ 'gl_vendor.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="{{ 'main.min.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
 <link rel="preload stylesheet" type="text/css" href="{{ 'commom.min.css' | asset_url }}" /> 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600;1,800&display=swap" rel="stylesheet">
-<style>
-  .switchers.col-4 {
-    height: 30px;
-}
-</style>
+<style>.switchers.col-4 {height: 30px;}</style>
 {% if template != "collection" and template != "index" %} 
 {%- assign yotpo_offload_content = shop.metafields.yotpo.yotpo_offload_content %}
 {%- assign time_now = 'now' | date: '%s' %}
