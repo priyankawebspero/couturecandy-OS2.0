@@ -2665,7 +2665,7 @@ body .boost-pfs-search-suggestion .boost-pfs-search-suggestion-groups-pro {
 }
 
 .boost-pfs-filter-option-item-list.boost-pfs-filter-option-item-list-multiple-list li.selected .boost-pfs-check-box:before {
-    border: 2px solid #fff;
+    border-color: #fff !important;
 }
 
 @media only screen and (min-width:768px){
