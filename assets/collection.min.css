@@ -1224,9 +1224,7 @@ display:none;
 }
 
 @media only screen and (max-width:767px){
-body.template-search .boost-pfs-filter-toolbar-top-mobile {
-    border: none !important;
-}
+
 
   
   .boost-pfs-filter-mobile-footer button.boost-pfs-filter-clear-all {
