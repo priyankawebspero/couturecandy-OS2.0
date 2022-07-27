@@ -925,6 +925,7 @@ display:none;
     color: #fff !important;
 }
 .boost-pfs-filter-refine-by-wrapper .boost-pfs-filter-refine-by .refine-by-item.boost-pfs-filter-option-label button.boost-pfs-filter-clear {
+    color: #000;
     line-height: 1.2;
 }
 
