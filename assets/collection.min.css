@@ -1678,5 +1678,9 @@ display:none;
     line-height: initial;
     line-height: 1.2;
 }
+
+.bottom.description.collection h2 {
+    font-size: 25px;
+}
   
 }
