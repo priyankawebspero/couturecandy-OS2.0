@@ -2704,6 +2704,25 @@ div#reviewCarouselWidget  .stjr-reviews-carousel {
     position: relative;
 }
 
+.boost-pfs-search-suggestion::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #e5e5e5;
+}
+
+.boost-pfs-search-suggestion::-webkit-scrollbar
+{   border-radius: 10px;
+	width: 8px;
+	background-color: #e5e5e5;
+}
+
+.boost-pfs-search-suggestion::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	background-color: #e94949;
+}
+
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
