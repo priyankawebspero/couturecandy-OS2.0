@@ -1259,6 +1259,14 @@ display:none;
 }
 
 @media only screen and (max-width:767px){
+
+  .boost-pfs-filter-mobile-footer button.boost-pfs-filter-clear-all {
+    background: #000;
+    text-align: center;
+    font-family: 'google_sansregular';
+    font-size: 16px;
+    font-weight: normal;
+}
   
   .boost-pfs-search-container h1.boost-pfs-search-result-header {
     font-size: 28px;
