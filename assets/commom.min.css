@@ -2670,6 +2670,11 @@ body .boost-pfs-search-suggestion .boost-pfs-search-suggestion-groups-pro {
     text-decoration: none !important;
 }
 
+.top_bar_email a:hover {
+    text-decoration: none !important;
+    color: #e44949;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
