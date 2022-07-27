@@ -53,7 +53,7 @@
     "top_bar_enable": true,
     "top_bar_text": "[social_buttons_follow]",
     "top_bar_email": "CS@COUTURECANDY.COM",
-    "top_bar_text_middle": "NEED HELP? CLICK HERE TO CONTACT US",
+    "top_bar_text_middle": "NEED HELP? <a style=\"color:#fff\" href=\"\/pages\/contact-us\">CLICK HERE TO CONTACT US<\/a>",
     "top_bar_mobile": "(855) 445-8601",
     "full_header_enable": true,
     "sticky_header_enable": true,
