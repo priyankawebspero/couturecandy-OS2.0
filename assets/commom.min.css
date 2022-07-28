@@ -635,7 +635,7 @@ footer {
 footer .widget-title {
     font-family: 'google_sansregular';
     font-weight: normal;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 30px;
 }
 
@@ -643,9 +643,9 @@ footer .widget-title:before {
     position: relative;
     bottom: 0;
     display: block;
-    width: 60px;
+    width: 50px;
     background: #fff !important;
-    height: 3px;
+    height: 2px;
     margin-bottom: 10px;
 }
 
