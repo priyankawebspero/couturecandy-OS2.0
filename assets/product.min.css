@@ -60,7 +60,7 @@ div#popup {
     margin-left: 5px;
     color: #4e4e4e;
     font-size: 15px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 .shopify-breadcrumb a {
     color: #000;
