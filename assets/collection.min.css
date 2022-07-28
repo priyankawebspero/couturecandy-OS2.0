@@ -10,7 +10,7 @@
 
 .bottom.description.collection {
     background: #f8f8f8;
-    padding: 70px 50px 40px 70px;
+    padding: 40px 50px 40px 50px;
     text-align: center;
 }
 
@@ -132,17 +132,18 @@ div#collectionbottomdescription {
     -webkit-border-radius: 0%;
     -moz-border-radius: 0%;
     border-radius: 0%;
-    min-width: 40px;
+    min-width: 35px;
     width: auto;
-   margin: 0 6px;
+    margin: 0 4px;
+    height: 35px;
+    line-height: 35px;
 }
-
 
 .boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li a, .boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li span {
     display: block;
     margin: 0;
     border: 1px solid #d7d7d7;
-    font-size: 16px;
+    font-size: 14px;
     padding: 0 15px;
     background: #fafafa;
     border-radius: 5px;
@@ -203,9 +204,9 @@ background:#fff;}
     fill: #fff !important;
 }
 
-.boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default {
+/*.boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default {
     margin: 20px 0 20px;
-}
+}*/
 
 .boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li:first-child a {
     background: #e94949;

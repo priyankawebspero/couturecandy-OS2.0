@@ -635,7 +635,7 @@ footer {
 footer .widget-title {
     font-family: 'google_sansregular';
     font-weight: normal;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 30px;
 }
 
@@ -643,9 +643,9 @@ footer .widget-title:before {
     position: relative;
     bottom: 0;
     display: block;
-    width: 60px;
+    width: 50px;
     background: #fff !important;
-    height: 3px;
+    height: 2px;
     margin-bottom: 10px;
 }
 
@@ -713,7 +713,7 @@ footer .widget-title:before {
 }
 
 .footer-container .widget-area {
-    padding: 70px 0 20px 0 !important;
+    padding: 50px 0 20px 0 !important;
 }
 
 .widget_text .textwidget p.address, .widget_text .textwidget p.email, .widget_text .textwidget p.tel {
@@ -2737,6 +2737,14 @@ div#reviewCarouselWidget  .stjr-reviews-carousel {
 /*div#reviewCarouselWidget .stjr-reviews-carousel-nav {
     display: none !important;
 }*/
+  
+}
+
+@media only screen and (min-width:2000px){
+
+.main-header .container .header_middle_block .search form {
+  margin-left: auto;
+}
   
 }
 
