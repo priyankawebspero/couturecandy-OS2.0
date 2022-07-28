@@ -132,11 +132,12 @@ div#collectionbottomdescription {
     -webkit-border-radius: 0%;
     -moz-border-radius: 0%;
     border-radius: 0%;
-    min-width: 40px;
+    min-width: 35px;
     width: auto;
-   margin: 0 6px;
+    margin: 0 4px;
+    height: 35px;
+    line-height: 35px;
 }
-
 
 .boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li a, .boost-pfs-filter-products + .boost-pfs-filter-bottom-pagination-default>ul>li span {
     display: block;
