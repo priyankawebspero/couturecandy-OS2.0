@@ -2740,6 +2740,14 @@ div#reviewCarouselWidget  .stjr-reviews-carousel {
   
 }
 
+@media only screen and (min-width:2000px){
+
+.main-header .container .header_middle_block .search form {
+  margin-left: auto;
+}
+  
+}
+
 @media only screen and (min-width:769px){
 .footer-column.footer-column-4.col-md-3.col-sm-6 ul.social-icons.text-center {
     display: none;
