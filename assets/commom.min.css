@@ -475,6 +475,11 @@ section.brands-banner-section {
     margin: 0;
 }
 
+div#shopify-section-template--14532934697043__16541439641d011f7d .spb__column.gl_column_container.gl_col-sm-12>.gl_column-inner {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
 .spb__column.gl_column_container.gl_col-sm-12>.gl_column-inner {
     padding-left: 50px;
     padding-right: 50px;
