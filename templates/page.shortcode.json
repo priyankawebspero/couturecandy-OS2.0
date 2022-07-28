@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "shortcode": {
+      "type": "shortcode",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "shortcode"
+  ]
+}

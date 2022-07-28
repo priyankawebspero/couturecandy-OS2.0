@@ -1,0 +1,12 @@
+{
+    "recently_viewed": {
+      "wishlist": {
+        "type": "recently_viewed",
+        "settings": {
+        }
+      }
+    },
+    "order": [
+      "recently_viewed"
+    ]
+  }
