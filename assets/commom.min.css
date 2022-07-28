@@ -784,13 +784,13 @@ p.newstext {
 
 
 div#reviewCarouselWidget {
-    padding: 20px 50px 50px 50px;
+    padding: 20px 50px 40px 50px;
 }
 
 div#reviewCarouselWidget .headline {
     text-align: center;
-    font-size: 52px !important;
-    margin-bottom: 70px !important;
+    font-size: 42px !important;
+    margin-bottom: 50px !important;
     color: #191919;
     font-family: 'Playfair Display', serif;
 }
