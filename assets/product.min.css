@@ -75,7 +75,7 @@ div#popup {
 
 .single-product-content .product_title {
     font-family: 'product_sans_mediumregular';
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     line-height: 1.1;
 }
 
