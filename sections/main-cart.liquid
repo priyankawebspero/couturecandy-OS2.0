@@ -6,7 +6,6 @@
     padding-bottom: 30px !important;
 }
   </style>
-<link rel="preload" href="{{ 'cart.min.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
 {%- assign cart_title = 'cart.general.title' | t -%}
 <div class="main-page-wrapper">
 {%- include 'page_heading', page_title:cart_title -%}
@@ -115,7 +114,7 @@
                                    <td class="product-quantity" data-title="{{ 'cart.page.quantity' | t }}">
                                       <div class="quantity">
                                          <input type="button" value="-" class="minus">
-                                         <input type="number" data-price="{{item.price}}" data-format="{{shop.money_format}}" data-vid="{{item.id}}" required="required" step="1" min="0" {%- if item.variant.inventory_management == blank or item.variant.inventory_policy == 'continue' %} max="999"{%- else %} max="{{ item.variant.inventory_quantity }}"{%- endif %} name="updates[]" id="updates_{{ item.key }}"  value="{{ item.quantity }}" title="Qty" class="input-text qty text custom-qty" size="4" pattern="[0-9]*" inputmode="numeric">
+                                         <input type="number" data-price="{{item.price}}" data-format="{{shop.money_format | strip_html}}" data-vid="{{item.id}}" required="required" step="1" min="0" {%- if item.variant.inventory_management == blank or item.variant.inventory_policy == 'continue' %} max="999"{%- else %} max="{{ item.variant.inventory_quantity }}"{%- endif %} name="updates[]" id="updates_{{ item.key }}"  value="{{ item.quantity }}" title="Qty" class="input-text qty text custom-qty" size="4" pattern="[0-9]*" inputmode="numeric">
                                          <input type="button" value="+" class="plus">
                                       </div>
                                    </td>
@@ -220,6 +219,7 @@
      </div>
      <!-- .site-content -->
   </div>
+  <div class="cartpageReviews" id="reviewCarouselWidget"><div id="reviewCarouselWidgetInner" class="stjr-widget"></div></div>
 </div>
 <!-- end container -->
 </div><!-- .main-page-wrapper -->
