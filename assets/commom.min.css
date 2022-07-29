@@ -4659,7 +4659,25 @@ footer .widget-title i {
 
 
 @media only screen and (max-width:767px){
-  
+
+  .prom-plann-inner .prom-plann-inner-left {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+  .prom-plann-inner-right ul {
+    margin-bottom: 0 !important;
+}
+
+.prom-plann-inner-right {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    padding: 20px 0 0 0;
+    margin: 0;
+    text-align: center;
+}
   .title {
     font-weight: 500;
     color: #000;
