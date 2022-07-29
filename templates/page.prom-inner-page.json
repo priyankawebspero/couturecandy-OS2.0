@@ -1,0 +1,12 @@
+{
+	"sections": {
+	  "prom_inner_pages": {
+		"type": "prom_inner_pages",
+		"settings": {
+		}
+	  }
+	},
+	"order": [
+	  "prom_inner_pages"
+	]
+  }

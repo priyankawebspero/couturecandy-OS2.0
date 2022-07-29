@@ -1,0 +1,12 @@
+{
+	"sections": {
+	  "prom-guid": {
+		"type": "prom-guid",
+		"settings": {
+		}
+	  }
+	},
+	"order": [
+	  "prom-guid"
+	]
+  }
