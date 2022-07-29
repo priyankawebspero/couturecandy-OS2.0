@@ -71,18 +71,22 @@
     cover.onclick = function() {
         modal.style.display = "none";
         cover.style.display = "none";
+        document.body.classList.remove("popup-visible");
+
         //video.pause();
         //$('.youtube-player iframe')[0].pause();
     }
     span.onclick = function() {
         modal.style.display = "none";
         cover.style.display = "none";
+        document.body.classList.remove("popup-visible");
         //video.pause();
     }
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
             cover.style.display = "none";
+            document.body.classList.remove("popup-visible");
         }
     }
 
