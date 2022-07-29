@@ -3236,6 +3236,10 @@ aside.sidebar-container .sidebar-inner .promduide_cate_block .sidemenu_prom li u
     margin-bottom: 0;
 }
 
+aside.sidebar-container .sidebar-inner .promduide_cate_block .sidemenu_prom li a:hover {
+    color: #e44949;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
