@@ -3166,6 +3166,28 @@ div#reviewCarouselWidget  .stjr-reviews-carousel {
     width: 60%;
     vertical-align: middle;
 }
+
+.prom-plann-inner-right h3:before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #000;
+    margin: 0 auto 12px auto;
+}
+
+.prom-plann-inner-right ul li {
+    padding-left: 0 !important;
+}
+
+.prom-plann-inner-right ul li:before {
+    display: none !important;
+}
+
+.prom-plann-inner-right ul li a {
+    text-decoration: underline;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
