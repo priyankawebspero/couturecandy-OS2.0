@@ -3217,6 +3217,25 @@ aside.sidebar-container .sidebar-inner .promduide_cate_block .sidemenu_prom {
     padding-bottom: 15px;
 }
 
+aside.sidebar-container .sidebar-inner .promduide_cate_block .sidemenu_prom li {
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+aside.sidebar-container .sidebar-inner .promduide_cate_block .sidemenu_prom li a {
+    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-right: 7px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: block;
+    color: #000;
+}
+aside.sidebar-container .sidebar-inner .promduide_cate_block .sidemenu_prom li ul {
+    margin-bottom: 0;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
