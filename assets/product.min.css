@@ -368,7 +368,7 @@ background: #000;
     height: 52px;
 }
 
-.single-product-content .cart button.button, .single-product-content .cart span.button a, span.contact_us_button a{
+.single-product-content .cart button.button, .single-product-content .cart span.button a, span.contact_us_button a, .single-product-content .summary .out-of-stock{
     font-size: 18px;
     background: #e94949;
     border-color: #e94949;
@@ -1172,6 +1172,17 @@ border-color: #000;
 }
 
 .single-product-content .summary .out-of-stock {
+    border: 1px solid #e94949;
+    color: #e94949;
+    font-size: 17px;
+    border-color: #e94949;
+    border-radius: 5px;
+    padding: 14px 15px;
+    min-width: 255px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 0;
+    margin-bottom: 0;
     display: none;
 }
 
@@ -1748,7 +1759,7 @@ div#ProdDetailInfomobile {
 }
  
   
-.single-product-content .cart button.button, .single-product-content .cart span.button a, span.contact_us_button a {
+.single-product-content .cart button.button, .single-product-content .cart span.button a, span.contact_us_button a, .single-product-content .summary .out-of-stock {
     font-size: 15px;
     padding: 14px 11px;
     min-width: 170px;
@@ -1927,7 +1938,7 @@ div#ProdDetailInfo {
     margin-bottom: 15px;
 }
   
-.single-product-content .cart button.button, .single-product-content .cart span.button a, span.contact_us_button a {
+.single-product-content .cart button.button, .single-product-content .cart span.button a, span.contact_us_button a, .single-product-content .summary .out-of-stock {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -2247,7 +2258,7 @@ body.template-product  {
     padding-bottom: 112%;
 }
 
-.single-product-content .cart button.button, .single-product-content .cart span.button a, span.contact_us_button a {
+.single-product-content .cart button.button, .single-product-content .cart span.button a, span.contact_us_button a, .single-product-content .summary .out-of-stock {
  font-size: 13px;
 }
 .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
@@ -2267,7 +2278,7 @@ span.contact_us_button a {
     font-size: 13px;
 }
   
-.single-product-content .cart button.button, .single-product-content .cart span.button a, span.contact_us_button a {
+.single-product-content .cart button.button, .single-product-content .cart span.button a, span.contact_us_button a, .single-product-content .summary .out-of-stock {
     font-size: 13px;
 }
   
