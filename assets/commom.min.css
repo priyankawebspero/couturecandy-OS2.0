@@ -3194,6 +3194,24 @@ div#reviewCarouselWidget  .stjr-reviews-carousel {
     font-weight: 500;
 }
 
+span.promguide-side-title {
+    padding: 8px 15px!important;
+    position: relative;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: block!important;
+    border-bottom: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.1;
+    color: #fff;
+    font-family: 'product_sans_mediumregular';
+    background: #0f0f0f;
+    margin-bottom: 15px;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
