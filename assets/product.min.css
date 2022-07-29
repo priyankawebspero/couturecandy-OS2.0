@@ -2274,7 +2274,7 @@ span.contact_us_button a {
     line-height: 24px;
 } 
 .product-image-summary .row #popup .modal-content .right-side #defaultSizeChart .ChartSizeBlock #Tabs_New {
-    justify-content: space-between;
+    justify-content: inherit;
     flex-wrap: wrap;
 }
 
