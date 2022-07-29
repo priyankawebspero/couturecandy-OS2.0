@@ -2294,7 +2294,9 @@ span.contact_us_button a {
 .product-image-summary .row #popup .modal-content .right-side #defaultSizeChart .SizeCharttable tr td.sizeby_country {
     white-space: nowrap;
 }
-  
+  .main-header .right-column .mobile_log img.mobile {
+    max-width: 55px;
+}
 }
 
 
