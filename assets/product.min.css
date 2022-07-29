@@ -1173,7 +1173,7 @@ border-color: #000;
 
 .single-product-content .summary .out-of-stock {
     border: 1px solid #e94949;
-    color: #ffffff !important;
+    color: #ffffff;
     font-size: 17px;
     border-color: #e94949;
     border-radius: 5px;
