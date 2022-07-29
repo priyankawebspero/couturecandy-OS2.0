@@ -2273,6 +2273,16 @@ body.template-product  {
 span.contact_us_button a {
     line-height: 24px;
 } 
+.product-image-summary .row #popup .modal-content .right-side #defaultSizeChart .ChartSizeBlock #Tabs_New {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-image-summary .row #popup .modal-content .right-side #defaultSizeChart .ChartSizeBlock #Tabs_New li {
+    flex: inherit;
+    text-align: left;
+}
+  
 }
 
 
