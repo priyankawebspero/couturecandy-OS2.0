@@ -3040,7 +3040,9 @@ div#reviewCarouselWidget  .stjr-reviews-carousel {
     font-size: 10px;
 }
 
-
+.popup-visible header.main-header {
+    z-index: 1 !important;
+}
 
 @media only screen and (min-width:768px){
   
