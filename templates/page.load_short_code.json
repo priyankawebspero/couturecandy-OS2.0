@@ -1,13 +1,12 @@
 {
-   "sections": {
-     "load_shortcode": {
-       "type": "load_shortcode",
-       "settings": {
-       }
-     }
-   },
-   "order": [
-     "load_shortcode"
-   ]
- }
- 
+  "sections": {
+    "load_shortcode": {
+      "type": "load_shortcode",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "load_shortcode"
+  ]
+}

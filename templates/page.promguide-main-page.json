@@ -1,12 +1,12 @@
 {
-	"sections": {
-	  "promguide_main_page": {
-		"type": "promguide_main_page",
-		"settings": {
-		}
-	  }
-	},
-	"order": [
-	  "promguide_main_page"
-	]
-  }
+  "sections": {
+    "promguide_main_page": {
+      "type": "promguide_main_page",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "promguide_main_page"
+  ]
+}

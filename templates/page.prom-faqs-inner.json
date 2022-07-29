@@ -1,13 +1,12 @@
 {
-	"sections": {
-	  "faqs_question-prom": {
-		"type": "faqs_question-prom",
-		"settings": {
-		}
-	  }
-	},
-	"order": [
-	  "faqs_question-prom"
-	]
-  }
-        
+  "sections": {
+    "faqs_question-prom": {
+      "type": "faqs_question-prom",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "faqs_question-prom"
+  ]
+}

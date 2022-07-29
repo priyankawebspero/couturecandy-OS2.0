@@ -1,12 +1,12 @@
 {
-    "sections": {
-      "full_width": {
-        "type": "full_width",
-        "settings": {
-        }
+  "sections": {
+    "full_width": {
+      "type": "full_width",
+      "settings": {
       }
-    },
-    "order": [
-      "full_width"
-    ]
-  }
+    }
+  },
+  "order": [
+    "full_width"
+  ]
+}

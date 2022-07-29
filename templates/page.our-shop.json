@@ -1,13 +1,12 @@
 {
-	"sections": {
-	  "our_shop": {
-		"type": "our_shop",
-		"settings": {
-		}
-	  }
-	},
-	"order": [
-	  "our_shop"
-	]
-  }
-  
+  "sections": {
+    "our_shop": {
+      "type": "our_shop",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "our_shop"
+  ]
+}
