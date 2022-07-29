@@ -3188,6 +3188,11 @@ div#reviewCarouselWidget  .stjr-reviews-carousel {
     text-decoration: underline;
 }
 
+.prom-pages-content h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
