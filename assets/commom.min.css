@@ -4659,7 +4659,10 @@ footer .widget-title i {
 
 
 @media only screen and (max-width:767px){
-
+.template-page .breadcrumbs {
+    padding-left: 12px;
+    padding-right: 12px;
+}
   .prom-plann-inner .prom-plann-inner-left {
     display: inline-block;
     width: 100%;
