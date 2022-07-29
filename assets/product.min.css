@@ -1172,7 +1172,7 @@ border-color: #000;
 }
 
 .single-product-content .summary .out-of-stock {
-    display: none !important;
+    display: none;
 }
 
 .single-product-content .single_variation_wrap {
