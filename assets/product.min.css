@@ -2282,6 +2282,18 @@ span.contact_us_button a {
     flex: inherit;
     text-align: left;
 }
+.product-image-summary .row #popup .modal-content .right-side #defaultSizeChart .SizeCharttable tr th {
+    font-size: 12px;
+    padding: 5px;
+}
+
+.product-image-summary .row #popup .modal-content .right-side #defaultSizeChart .SizeCharttable tr td {
+    padding: 5px;
+}
+
+.product-image-summary .row #popup .modal-content .right-side #defaultSizeChart .SizeCharttable tr td.sizeby_country {
+    white-space: nowrap;
+}
   
 }
 
