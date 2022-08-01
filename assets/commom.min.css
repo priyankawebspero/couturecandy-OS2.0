@@ -3377,6 +3377,9 @@ text-align: center;
     object-fit: contain;
     left: 0;
 }
+img.full-width-ims {
+    margin: 30px 0;
+}
 
 @media only screen and (min-width:768px){
 
