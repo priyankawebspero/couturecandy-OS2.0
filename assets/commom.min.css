@@ -3436,6 +3436,11 @@ img.full-width-ims {
     border-color: #fff;
 }
 
+.faq-banner-txt {;
+    margin-bottom: 35px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+
 @media only screen and (min-width:768px){
 
 .makeup-tips_block .makeup-tips_block-cols {
