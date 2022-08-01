@@ -3336,7 +3336,44 @@ p.flr-df-rose span strong {
     vertical-align: top;
 }
 
+.makeup-tips_block-inner {
+    counter-reset: my-sec-counter;
+}
+
+.makeup-tips_block .makeup-tips_block-cols {
+    width: 100%;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    padding: 25px;
+    position: relative;
+}
+.makeup-tips_block .makeup-tips_block-cols:before {
+    counter-increment: my-sec-counter;
+    content: counter(my-sec-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 35px;
+    height: 35px;
+    background: #e44949;
+    font-size: 18px;
+    color: #fff;
+    line-height: 35px;
+}
+
 @media only screen and (min-width:768px){
+
+.makeup-tips_block .makeup-tips_block-cols {
+    width: calc(50% - 19px);
+    margin: 15px 9px;
+    float: left;
+}
+
+.makeup-tips_block-inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -9px;
+}
 
 .night-prom-dresse-box:nth-of-type(even) .night-prom-dresse-cols:first-child {
     order: 2;
