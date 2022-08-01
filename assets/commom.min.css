@@ -3485,6 +3485,21 @@ img.full-width-ims {
     padding: 20px;
     border: 1px solid #ccc;
 }
+.explore-more-prom a {
+    display: inline-block;
+    background: #e44949;
+    color: #fff;
+    padding: 9px 18px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.explore-more-prom a:hover {
+    background: #0f0f0f;
+    color: #fff;
+}
 
 @media only screen and (min-width:768px){
 
