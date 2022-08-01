@@ -4904,6 +4904,10 @@ footer .widget-title i {
 
 
 @media only screen and (max-width:767px){
+.main-page-wrapper.prm_faq_pge {
+    margin-top: 20px !important;
+}
+
 .template-page .breadcrumbs {
     padding-left: 12px;
     padding-right: 12px;
