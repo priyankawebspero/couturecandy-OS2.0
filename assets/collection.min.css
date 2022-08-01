@@ -1230,7 +1230,10 @@ display:none;
 
 @media only screen and (max-width:767px){
 
-
+.boost-pfs-filter-right-col {
+    width: 100%;
+    padding-top: 10px;
+}
   
   .boost-pfs-filter-mobile-footer button.boost-pfs-filter-clear-all {
     background: #000;
