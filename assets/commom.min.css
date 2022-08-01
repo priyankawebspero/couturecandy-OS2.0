@@ -3379,12 +3379,8 @@ text-align: center;
 }
 img.full-width-ims {
     margin: 30px 0;
-    width: 100%;
 }
 
-.banner-im-prom-drs img {
-    width: 100%;
-}
 .prom-pages-inner-content ul.text-icons li:before {
     content: "";
     display: block;
