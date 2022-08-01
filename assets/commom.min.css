@@ -3399,6 +3399,10 @@ img.full-width-ims {
     margin-bottom: 20px;
 }
 
+.main-page-wrapper.prm_faq_pge {
+    margin-top: 40px !important;
+}
+
 @media only screen and (min-width:768px){
 
 .makeup-tips_block .makeup-tips_block-cols {
