@@ -2,7 +2,46 @@
   "sections": {
     "faqs_question-prom": {
       "type": "faqs_question-prom",
+      "blocks": {
+        "62bbca1c-2898-45be-a567-539ffd05e44b": {
+          "type": "question",
+          "settings": {
+            "title": "What To Do Before Prom?",
+            "answer": "<p>Prep up! Spend your free time planning and preparing for prom. Take it one step at a time. Begin with your prom dress, and be sure to check your school’s dress code carefully. If you need to send photos in advance, do that before buying a dress. Then, look for matching accessories, like shoes, prom bag, and jewelry. Make appointments for hair, makeup, and nails. Also, book your ride to and from the venue. Great planning is the key to avoid prom fails. Our prom guide has all the information related to Prom dos and don’ts, so give it a read!<\/p>"
+          }
+        },
+        "e2a85c59-23ed-4e9a-88be-b54ed154b10e": {
+          "type": "question",
+          "settings": {
+            "title": "What To Do At Prom?",
+            "answer": "<p>Have the best time of your life. Prom is a celebration of you and your high school career. Expect a lot of dancing, flirting, and a little bit of drama. Stay prepared for dancing and socializing all night and then indulging in the after-prom activities. <\/p>"
+          }
+        },
+        "c713beb8-01dd-40ed-b810-b53fbffde69f": {
+          "type": "question",
+          "settings": {
+            "title": "What Happens At Prom?",
+            "answer": "<p>Prom is a celebration of high school goers. An event is conducted by the school authorities and a committee is appointed for the same. It is a formal event that demands everyone to dress formally in prom dresses, long gowns, tuxedos, suits, etc. Exchange of prom flowers is a tradition. Usually, prom queen and king are announced, who perform a dance together and then the floor is opened for all to dance the night away. Some schools also conduct after-prom activities that are comparatively less formal and include eating, drinking, and playing fun games together. <\/p>"
+          }
+        },
+        "2adcb236-73f6-466d-b426-8542557292de": {
+          "type": "question",
+          "settings": {
+            "title": "What Does Prom Mean?",
+            "answer": "<p>Prom is a traditional high school event conducted every year around April-May. It is a formal event conducted by the school authorities by appointing a prom committee. Usually, prom is followed by a casual after-prom party. School goers dress up formally in gowns, long dresses, tuxedos, suits etc. and exchange corsages and boutonnieres after having a formal dance. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "62bbca1c-2898-45be-a567-539ffd05e44b",
+        "e2a85c59-23ed-4e9a-88be-b54ed154b10e",
+        "c713beb8-01dd-40ed-b810-b53fbffde69f",
+        "2adcb236-73f6-466d-b426-8542557292de"
+      ],
       "settings": {
+        "expand_questions": false,
+        "page_title": "MORE PROM",
+        "page_description": "In this section, we will take up all your prom-related queries. From what is prom to what are after-prom activities, we answer it all - in the simplest words possible. Find prom-related advice, dress suggestions, and tips on planning for prom. Refer to our prom guide for detailed suggestions!"
       }
     }
   },
