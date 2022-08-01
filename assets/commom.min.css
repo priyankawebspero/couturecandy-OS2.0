@@ -3299,6 +3299,21 @@ aside.sidebar-container .sidebar-inner .promduide_cate_block .sidemenu_prom li a
     padding: 40px 15px;
 }
 
+.night-prom-dresse-box .explore-more-prom a {
+    display: inline-block;
+    background: #e44949;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none !important;
+}
+
+.night-prom-dresse-box .explore-more-prom a:hover {
+    background: #0f0f0f;
+    color: #fff;
+}
+
 @media only screen and (min-width:768px){
 
 .night-dresse-ration img {
