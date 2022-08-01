@@ -3462,7 +3462,34 @@ img.full-width-ims {
     object-position: top;
 }
 
+.pro-guide-page-outer {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 25px;
+    vertical-align: middle;
+}
+
 @media only screen and (min-width:768px){
+
+.pro-guide-page-right {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+    margin-left: -4px;
+    padding-left: 15px;
+  padding: 20px;
+    background: #fff;
+}
+
+.pro-guide-page-left {
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+}
+
+.pro-guide-page-left img {
+    max-width: inherit;
+}
 
 .makeup-tips_block .makeup-tips_block-cols {
     width: calc(50% - 19px);
