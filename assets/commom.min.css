@@ -3314,6 +3314,12 @@ aside.sidebar-container .sidebar-inner .promduide_cate_block .sidemenu_prom li a
     color: #fff;
 }
 
+.prom_cols-two-nml img {
+    float: left;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
 @media only screen and (min-width:768px){
 
 .night-prom-dresse-box:nth-of-type(even) .night-prom-dresse-cols:first-child {
