@@ -65,7 +65,8 @@
       "settings": {
         "expand_questions": false,
         "page_title": "MORE PROM",
-        "page_description": "In this section, we will take up all your prom-related queries. From what is prom to what are after-prom activities, we answer it all - in the simplest words possible. Find prom-related advice, dress suggestions, and tips on planning for prom. Refer to our prom guide for detailed suggestions!"
+        "page_description": "In this section, we will take up all your prom-related queries. From what is prom to what are after-prom activities, we answer it all - in the simplest words possible. Find prom-related advice, dress suggestions, and tips on planning for prom. Refer to our prom guide for detailed suggestions!",
+        "page_top_image": "shopify:\/\/shop_images\/prom-faqs_bnner_new.jpg"
       }
     }
   },
