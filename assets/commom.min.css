@@ -3520,15 +3520,6 @@ img.full-width-ims {
 
 @media only screen and (min-width:768px){
 
-.prom-work-des-inner {
-    margin: 0 -15px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .prom-work-boxes {
     float: left;
@@ -3538,26 +3529,6 @@ img.full-width-ims {
     padding: 20px;
     margin: 15px;
     border: 1px solid #ccc;
-}
-
-.pro-guide-page-right {
-    display: inline-block;
-    vertical-align: middle;
-    width: 60%;
-    margin-left: -4px;
-    padding-left: 15px;
-  padding: 20px;
-    background: #fff;
-}
-
-.pro-guide-page-left {
-    display: inline-block;
-    width: 40%;
-    vertical-align: middle;
-}
-
-.pro-guide-page-left img {
-    max-width: inherit;
 }
 
 .makeup-tips_block .makeup-tips_block-cols {
@@ -3642,6 +3613,37 @@ img.full-width-ims {
    }
 
 @media only screen and (min-width:992px){
+
+.prom-work-des-inner {
+    margin: 0 -15px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pro-guide-page-right {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+    margin-left: -4px;
+    padding-left: 15px;
+  padding: 20px;
+    background: #fff;
+}
+
+.pro-guide-page-left {
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+}
+
+.pro-guide-page-left img {
+    max-width: inherit;
+}
+
   
 .mobile_log {
     display: none !important;
