@@ -3361,6 +3361,22 @@ p.flr-df-rose span strong {
     line-height: 35px;
 }
 
+.make-im-ratio {
+    position: relative;
+    padding-bottom: 66%;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.make-im-ratio img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    left: 0;
+}
+
 @media only screen and (min-width:768px){
 
 .makeup-tips_block .makeup-tips_block-cols {
