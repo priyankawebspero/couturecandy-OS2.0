@@ -3501,6 +3501,23 @@ img.full-width-ims {
     color: #fff;
 }
 
+.pro-guide-page-right h2 {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.pro-guide-page-right  h3 {
+    font-size: 20px !important;
+    font-family: 'product_sans_mediumregular';
+    color: #e44949 !important;
+    margin-bottom: 10px;
+}
+
+.pro-guide-page-right p {
+    line-height: 1.5 !important;
+    font-size: 15px !important;
+}
+
 @media only screen and (min-width:768px){
 
 .prom-work-des-inner {
