@@ -3469,7 +3469,44 @@ img.full-width-ims {
     vertical-align: middle;
 }
 
+.prom-work-des {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    margin: 20px 0;
+}
+
+.prom-work-boxes h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.prom-work-boxes {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
 @media only screen and (min-width:768px){
+
+.prom-work-des-inner {
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prom-work-boxes {
+    float: left;
+    width: calc(50% - 30px);
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    margin: 15px;
+    border: 1px solid #ccc;
+}
 
 .pro-guide-page-right {
     display: inline-block;
