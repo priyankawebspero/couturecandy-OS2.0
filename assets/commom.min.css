@@ -3427,6 +3427,15 @@ img.full-width-ims {
     padding: 20px 20px 20px 20px !important;
 }
 
+.prm_faq_pge .shopify_explorer_faq__item .shopify_explorer_faq__question.active {
+    background: #0f0f0f;
+    color: #fff;
+}
+
+.prm_faq_pge .shopify_explorer_faq__item .shopify_explorer_faq__question.active::before {
+    border-color: #fff;
+}
+
 @media only screen and (min-width:768px){
 
 .makeup-tips_block .makeup-tips_block-cols {
