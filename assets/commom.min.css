@@ -3385,6 +3385,19 @@ img.full-width-ims {
 .banner-im-prom-drs img {
     width: 100%;
 }
+.prom-pages-inner-content ul.text-icons li:before {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 14px;
+    border: solid #e44949;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    background: none;
+}
 
 @media only screen and (min-width:768px){
 
