@@ -3445,6 +3445,23 @@ img.full-width-ims {
     object-position: top;
 }
 
+.pri-style-dre {
+    position: relative;
+    padding-bottom: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.pri-style-dre img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    object-position: top;
+}
+
 @media only screen and (min-width:768px){
 
 .makeup-tips_block .makeup-tips_block-cols {
