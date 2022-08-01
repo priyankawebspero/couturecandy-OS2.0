@@ -3285,6 +3285,10 @@ aside.sidebar-container .sidebar-inner .promduide_cate_block .sidemenu_prom li a
     vertical-align: top;
 }
 
+.night-prom-dresse-link-inner {
+    padding-bottom: 30px;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
