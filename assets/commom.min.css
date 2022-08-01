@@ -3330,6 +3330,12 @@ p.flr-df-rose span strong {
     font-weight: normal;
 }
 
+.memories-im-block {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
 @media only screen and (min-width:768px){
 
 .night-prom-dresse-box:nth-of-type(even) .night-prom-dresse-cols:first-child {
