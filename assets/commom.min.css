@@ -3240,6 +3240,11 @@ aside.sidebar-container .sidebar-inner .promduide_cate_block .sidemenu_prom li a
     color: #e44949;
 }
 
+.prom-pages-inner-content h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
