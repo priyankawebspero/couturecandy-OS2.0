@@ -37,6 +37,20 @@
             "title": "What Prom Dress Should I Wear?",
             "answer": "<p>The dress that abides by the school dress code. There have been cases when students have been asked to leave because of inappropriate attire. It can be very embarrassing and disheartening at the same time. It is highly advised to follow all the instructions given by the school in terms of prom attire. Also, your prom dress should suit your individual style and personality. It shouldn’t make you look like someone you’re not. If you’re elegant and cute, go for a simple a-line prom dress with minimal embellishments, but if you’re bold and bossy, arrive in an eye-catching, figure-flattering ensemble that demands attention. Remember, your dress choice should be in harmony with your school’s dress code.  <\/p>"
           }
+        },
+        "32d76be6-5312-4ff5-83e5-26116ebf5416": {
+          "type": "question",
+          "settings": {
+            "title": "What To Do After-Prom? What Happens After-Prom? What Do You Do At Prom?",
+            "answer": "<p>After prom activities include going to the after-prom school party or going out with a group of close friends or a date. It could be a fun evening party, a sports bar meet, a bowling session, a casual pyjama party, or a romantic dinner date or movie night. All you have to do is either get the after-prom party tickets or make plans with your friends. Our “The Night of Prom” section will answer your questions in detail. <\/p>"
+          }
+        },
+        "aa291bc2-6bd0-484b-af35-3c37de861ebf": {
+          "type": "question",
+          "settings": {
+            "title": "What Color Prom Dress Should I Wear?",
+            "answer": "<p>Many colors are trending for Prom 2021! From shades of blue, such as ice blue, lavender, teal, turquoise, navy blue, midnight blue, royal blue, and sky blue, etc. to pink prom dresses, blush, nude, hot pink and baby pink ensembles, blues and pinks will be everywhere. Other than that, burgundy, wine, coral, emerald, sapphire and champagne prom dresses will be selling out fast. Red prom dresses and black ones are evergreen as always. Silver, golden, and metallic colors are other prom favorites for 2021! Wear a color that compliments your skin tone, hair and eye color, and matches your individual style.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -44,7 +58,9 @@
         "e2a85c59-23ed-4e9a-88be-b54ed154b10e",
         "c713beb8-01dd-40ed-b810-b53fbffde69f",
         "2adcb236-73f6-466d-b426-8542557292de",
-        "4e849c0b-7623-44bc-babf-08521a391602"
+        "4e849c0b-7623-44bc-babf-08521a391602",
+        "32d76be6-5312-4ff5-83e5-26116ebf5416",
+        "aa291bc2-6bd0-484b-af35-3c37de861ebf"
       ],
       "settings": {
         "expand_questions": false,
