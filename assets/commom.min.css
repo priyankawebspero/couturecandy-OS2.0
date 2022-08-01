@@ -3320,6 +3320,16 @@ aside.sidebar-container .sidebar-inner .promduide_cate_block .sidemenu_prom li a
     margin-bottom: 30px;
 }
 
+p.flr-df-rose span {
+    display: block;
+    padding: 4px 0;
+}
+
+p.flr-df-rose span strong {
+    color: #e44949;
+    font-weight: normal;
+}
+
 @media only screen and (min-width:768px){
 
 .night-prom-dresse-box:nth-of-type(even) .night-prom-dresse-cols:first-child {
