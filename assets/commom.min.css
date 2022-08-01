@@ -3437,7 +3437,7 @@ img.full-width-ims {
 }
 
 .faq-banner-txt {;
-    margin-bottom: 35px;
+    margin-bottom: 35px !important;
     box-shadow: 0 0 10px rgba(0,0,0,0.25);
 }
 
