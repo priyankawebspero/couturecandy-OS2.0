@@ -4907,7 +4907,9 @@ footer .widget-title i {
 .main-page-wrapper.prm_faq_pge {
     margin-top: 20px !important;
 }
-
+.page_upper {
+    margin-top: 0 !important;
+}
 .template-page .breadcrumbs {
     padding-left: 12px;
     padding-right: 12px;
