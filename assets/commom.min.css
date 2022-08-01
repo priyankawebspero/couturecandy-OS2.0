@@ -5859,5 +5859,72 @@ background-color:#000;}
 
 {background-color:#FFFFF0;}
 
+/**multi color***/
+
+.bg_color_multi, .bg_color_multicolored, .bg_color_multi-color, .bg_color_multi-nude, .bg_color_multi-floral, .bg_color_multi-black, .bg_color_multi-burgundy, .bg_color_multi-red, .bg_color_multi-white, .bg_color_multi-nude, 
+.bg_color_nude-multi-color, .bg_color_blush-multi-color, .bg_color_blush-multi, .bg_color_peri-multi, .bg_color_nude-multi, .bg_color_ivory-multi, .bg_color_ivory-black-multi, .bg_color_metallic-multi, .bg_color_rockstar, 
+.bg_color_sherbert, .bg_color_sherbet, .bg_color_sherbet-lilac, .bg_color_sherbet-nude, .bg_color_sienna-multi, .bg_color_skin-multi-colored, .bg_color_hot-sherbet, .bg_color_pale-peach-multi, .bg_color_peach-multi, 
+.bg_color_wht-multi, .bg_color_cotton-candy-multi, .bg_color_chart, .bg_color_dark-peacock, .bg_color_dragon-scale, .bg_color_dragonfly, .bg_color_drake-combo, .bg_color_dreamsicle, .bg_color_dreamsicle-silver, 
+.bg_color_dune-sienna, .bg_color_dup, .bg_color_dusk, .bg_color_lime-ombre, .bg_color_midnight-multi-color, .bg_color_rainbow, .bg_color_surf, .bg_color_tango-aruba-multi, .bg_color_ths, .bg_color_urban-camo, .bg_color_army, 
+.bg_color_army-feather, .bg_color_canister-multi, .bg_color_chlorophyll-multi, .bg_color_con, .bg_color_feather-plad, .bg_color_flamboyant-multi, .bg_color_headlight-multi, .bg_color_lt-or-fusion, .bg_color_mlt, 
+.bg_color_mor-gl-mul, .bg_color_mrtl, .bg_color_pass-multi, .bg_color_port-multi, .bg_color_punch-multi, .bg_color_shell-multi, .bg_color_sku, .bg_color_twirl, .bg_color_majestic, .bg_color_mermaid, .bg_color_midnight-multi, 
+.bg_color_multicolor, .bg_color_mutiple, .bg_color_nvy-mul, .bg_color_opal, .bg_color_poppy-ombre, .bg_color_princes, .bg_color_bwbhb, .bg_color_barbados, .bg_color_highlands, .bg_color_london, .bg_color_mustang, 
+.bg_color_sand-city, .bg_color_winter-twig, .bg_color_lombok, .bg_color_lombok-pink-sand, .bg_color_comet-confetti, .bg_color_mulitcolor-spinal, .bg_color_multicolor-and-rose-quartz, .bg_color_multicolor-quartz, 
+.bg_color_multicolor-sapphire, .bg_color_multicolor-spinel, .bg_color_multicolor-stone, .bg_color_multicolor-tourmaline, .bg_color_bicolor-tourmaline, .bg_color_citrine-rainbow-moonstone, .bg_color_clear-quartz, 
+.bg_color_rainbow-moonstone, .bg_color_rainbow-moonstone-pink-tourmaline, .bg_color_rainbow-moonstone-and-amethyst, .bg_color_rainbow-moonstone-and-london-blue-topaz, .bg_color_tsavorite-garnet, .bg_color_white-godl, 
+.bg_color_color, .bg_color_larimar, .bg_color_larimar-kyanite, .bg_color_multi, .bg_color_multi-amazonite, .bg_color_multi-gemstone-gold, .bg_color_multi-gemstone-gold, .bg_color_multi-tourmaline, .bg_color_multi-gemstone, 
+.bg_color_rainbow-moonstone, .bg_color_rainbow-moonstone-pearl, .bg_color_rainbow-moonstone-and-blue-sapphire, .bg_color_rainbow-moonstone-slice-diamond, .bg_color_rainbow, .bg_color_rainbow-moonstone-and-aquamarine, 
+.bg_color_rainbow-moonstone-and-multicolor, .bg_color_rainbow-moonstone-and-turquoise, .bg_color_rainbow-moonstone-pyrite-labradorite, .bg_color_rainbow-moonstone-rose-quartz-labradorite, .bg_color_neon-bloom, 
+.bg_color_paintbrush, .bg_color_paintbrush-ikat, .bg_color_summer-rose, .bg_color_sunburst, .bg_color_sunburst, .bg_color_antique-floral, .bg_color_flow, .bg_color_freedom, .bg_color_imagine, .bg_color_painter, .bg_color_soho, 
+.bg_color_soho-white, .bg_color_citrine-pink-topaz-green-onyx-black-garnet-gold, .bg_color_citrine-pink-topaz-green-onyx-black-garnet-gold, .bg_color_rosewater-solid, .bg_color_dk-peacock, .bg_color_paraiso-nude, 
+.bg_color_moonstone-gold, .bg_color_ikat, .bg_color_aztec, .bg_color_tropical, .bg_color_color, .bg_color_tri-color, .bg_color_paris-stripes, .bg_color_paris-stripes, .bg_color_iolite-w-rainbow-moonstone, .bg_color_python-nude, 
+.bg_color_textured-ebony, .bg_color_conchas, .bg_color_mosaic, .bg_color_military, .bg_color_ratllas, .bg_color_oil-slick, .bg_color_char-multi, .bg_color_animal, .bg_color_pastel-multi, .bg_color_victoria, .bg_color_all, 
+.bg_color_mermaid-white, .bg_color_kashmir-garden, .bg_color_pastel-dream, .bg_color_bmu, .bg_color_navy-black-multi, .bg_color_pink-red-multi, .bg_color_merlot-multi-color-nude, .bg_color_rogue-multi, .bg_color_key-lime-multi, 
+.bg_color_primary-multi, .bg_color_bird, .bg_color_vision, .bg_color_black-iridescent-sky, .bg_color_aurora-borealis, .bg_color_shoreline-tie-dye, .bg_color_graffiti, .bg_color_eyelet, .bg_color_aura, .bg_color_multicolor-qtz, 
+.bg_color_ethopian-opal, .bg_color_gunmetal-multi, .bg_color_magenta-multi-color, .bg_color_mink-multi, .bg_color_red-multi-color, .bg_color_sky-multi, .bg_color_champ-multi, .bg_color_zink, .bg_color_multi-pink, 
+.bg_color_multi-black, .bg_color_rainbow, .bg_color_crystal, .bg_color_fire-opal, .bg_color_multi-pearl, .bg_color_cubism-crystal-quartz, .bg_color_marine-bolt-guava, .bg_color_multicolor-stones, .bg_color_turban, 
+.bg_color_black-lilac-multi, .bg_color_multiple, .bg_color_bright-bellini-multi, .bg_color_multi-color, .bg_color_emerald-ruby-sapphire, .bg_color_galaxy, .bg_color_aurora, .bg_color_plc, .bg_color_aurora, .bg_color_crytal, 
+.bg_color_original-sample, .bg_color_pastel-multi, .bg_color_vintage, .bg_color_floss, .bg_color_unicorn-ombre, .bg_color_mermaid-black, .bg_color_lollipop, .bg_color_glasse, .bg_color_stargazer, .bg_color_multicolor, 
+.bg_color_bohemian, .bg_color_multicolor-tourmaline-and-amethyst, .bg_color_multicolor-tourmalne-amethyst, .bg_color_port-multi, .bg_color_sample, .bg_color_powder-puff, .bg_color_taupe-plum, .bg_color_amethyst-and-iolite, 
+.bg_color_amethyst-aquamarine-prehnite, .bg_color_electric-passion, .bg_color_painted-blooms, .bg_color_tuscan-garden, .bg_color_pink-toumaline-yellow-orange-sapphire, .bg_color_labradorite-lapis-moonstone, 
+.bg_color_dendrite-opal-black-garnet-white-topaz, .bg_color_black-garnet-labradorite-white-topaz, .bg_color_black-garnet-labradorite-white-topaz, .bg_color_hologram, .bg_color_multi-color-stones, .bg_color_unicorn, 
+.bg_color_multi-color-stone, .bg_color_ab, .bg_color_rainbow-moonstone-and-labradorite-and-blue-sapphire, .bg_color_opal-gold, .bg_color_mix-a, .bg_color_mix-b, .bg_color_mix-c, .bg_color_mix-d, .bg_color_rainbow-mix, 
+.bg_color_fiesta, .bg_color_multi-, .bg_color_horizon, .bg_color_unicorn-ombre, .bg_color_prism, .bg_color_multicolor-stones-and-diamond, .bg_color_multi-nude, .bg_color_firestone, .bg_color_aqua-navy-ivory, 
+.bg_color_black-red-gold, .bg_color_black-coral, .bg_color_black-red-taupe, .bg_color_black-tuape, .bg_color_blue-emerald, .bg_color_blue-red, .bg_color_blush-red, .bg_color_blush-white, .bg_color_brown-ivory, 
+.bg_color_burgandy-rusty-red, .bg_color_coral-navy, .bg_color_coral-tan, .bg_color_floral-pink-grey, .bg_color_green-brown, .bg_color_ivory-coral-yellow, .bg_color_ivory-desert-pink, .bg_color_ivory-ice-blue, 
+.bg_color_ivory-pink-black, .bg_color_navy-green-orange, .bg_color_navy-teal, .bg_color_plum-rose, .bg_color_red-turquoise, .bg_color_rose-royal, .bg_color_sage-multi, .bg_color_turquoise-purple, .bg_color_yellow-green, 
+.bg_color_beige-multi, .bg_color_black-greenmulti, .bg_color_blue-yellow-multi, .bg_color_cherry-stone, .bg_color_denim-yellow, .bg_color_emerald-multi, .bg_color_ice-age, .bg_color_ivory-poppy, .bg_color_magic-opal, 
+.bg_color_mauve-black, .bg_color_multicolor-black, .bg_color_nude-bright-pink-blue, .bg_color_pastel-multi, .bg_color_pink-butterfly, .bg_color_soft-white-rose, .bg_color_tiedye, .bg_color_liquid-crystal, .bg_color_purple-red, 
+.bg_color_ruby-emerald, .bg_color_slate-multi, .bg_color_dalmation, .bg_color_golden-blue, .bg_color_pink-multi, .bg_color_gold-navy, .bg_color_rose-gold-orange, .bg_color_tan-multi, .bg_color_eggplant-black, 
+.bg_color_blush-mauve, .bg_color_iridescent-nude, .bg_color_rosegold-ivory, .bg_color_gold-print, .bg_color_totals, .bg_color_black-bronze, .bg_color_black-rose, .bg_color_black-sapphire, .bg_color_royal-blueemerald-green, 
+.bg_color_black-blue-rose, .bg_color_black-blueberry, .bg_color_black-gold-white, .bg_color_black-ivory-red, .bg_color_black-rust, .bg_color_blue-rouge, .bg_color_coral-black-ivory, .bg_color_coral-yellow, .bg_color_cream-violet, .bg_color_navy-rhubarb, .bg_color_pewter-gold, .bg_color_soft-white-multi, .bg_color_teal-prima-rose, .bg_color_wine-pink-black, .bg_color_yellow-navy, .bg_color_autumn-multi, .bg_color_lava, .bg_color_pearlescent, 
+.bg_color_blk-multi, .bg_color_blush-blk, .bg_color_champagne-navy, .bg_color_ivory-mult, .bg_color_blk-ivo, .bg_color_blk-sil, .bg_color_indigo-multi, .bg_color_navy-wedgewood, .bg_color_silver-on-nude, .bg_color_grey-brown, 
+.bg_color_nude-bright-pink-ivory, .bg_color_nude-neon-pink, .bg_color_nude-mint, .bg_color_wine-gunmetal, .bg_color_black-stone, .bg_color_cherry-stone, .bg_color_dark-purple-rose-gold, .bg_color_black-rose-pink, 
+.bg_color_dark-red-gold, .bg_color_rosegold-opal, .bg_color_black-ivory-gold, .bg_color_rose-gold-pink, .bg_color_black-and-multi, .bg_color_nude-hot-pink, .bg_color_red-tangerine, .bg_color_white-and-gold, 
+.bg_color_rose-gold-multi-color, .bg_color_black-neon-green, .bg_color_lilac-navy, .bg_color_mauve-ombre, .bg_color_rose-ivory, .bg_color_tangerine-magenta, .bg_color_oyster-pewter, .bg_color_anne-black-white, 
+.bg_color_camellia-anne-white, .bg_color_camellia-combo, .bg_color_siren-blue-red-pear, .bg_color_black-cream-brown, .bg_color_black-combo, .bg_color_black-white-rose, .bg_color_black-white-yellow, .bg_color_dark-magenta-white, 
+.bg_color_dusty-lime, .bg_color_hot-lime, .bg_color_light-blue-red, .bg_color_navy-berry, .bg_color_palm-multi, .bg_color_pink-ivory-green, .bg_color_silver-combo, .bg_color_thunder-cloud-blue, .bg_color_golden-olive-ivory, 
+.bg_color_lilac-black-floral, .bg_color_orange-black-floral, .bg_color_black-white-blush, .bg_color_silver-rose, .bg_color_nude-turquoise, .bg_color_rose-gold-white, .bg_color_silver-ombre, .bg_color_rose-gold-ombre, 
+.bg_color_navy-multicolor, .bg_color_merlot-rose, .bg_color_camel-black, .bg_color_blush-lavender, .bg_color_dragon-scale, .bg_color_rose-opal, .bg_color_ivory-baby-pink, .bg_color_periw-silver, .bg_color_ivory-emerald, 
+.bg_color_ivory-light-orange, .bg_color_pastel, .bg_color_black-gold-copper, .bg_color_black-gunmetal-silver, .bg_color_nude-peacock-gold, .bg_color_red-fuchsia-red, .bg_color_vintage-opal, .bg_color_black-gold, 
+.bg_color_black-nil-green, .bg_color_navy-stone, .bg_color_nil-green-nude, .bg_color_pink-nil-green, .bg_color_hot-pink-white, .bg_color_lilac-pink, .bg_color_lilac-white, .bg_color_magenta-tangerine, .bg_color_navy-multi-color, .bg_color_neon-coral-white, .bg_color_ocean-blue-white, .bg_color_perwinkle-multi-color, .bg_color_turquoise-white, .bg_color_rose-blue, .bg_color_fuchsia-lime, .bg_color_hot-coral-black, .bg_color_royal-yellow, 
+.bg_color_tangerine-lime, .bg_color_teal-purple, .bg_color_tie-dye, .bg_color_black-hot-pink, .bg_color_black-neon-pink, .bg_color_violet-pearl, .bg_color_cherry-blush, .bg_color_forest-rose-gold, .bg_color_light-gray-rose-gold, .bg_color_navy-light-blue-multi, .bg_color_ombre-blush, .bg_color_wine-ombre, .bg_color_black-silver-nude, .bg_color_cashmere-rose-ivory, .bg_color_diamond-white-midnight, .bg_color_dragonscale, .bg_color_gray-rosewood, 
+.bg_color_ivory-glacier-blue, .bg_color_merlot-gold, .bg_color_midnight-diamond-white, .bg_color_mint-opal, .bg_color_storm-cloud-pink, .bg_color_platinum-dusty-blue, .bg_color_blue-champagne, .bg_color_nude-watermelon, 
+.bg_color_purple-mint, .bg_color_fuchsia-royal-blue, .bg_color_lilac-babyblue, .bg_color_pop-rocks, .bg_color_navy-denim, .bg_color_see-notes, .bg_color_starburst, .bg_color_violet-shimmer, .bg_color_baby-blue-ivory, 
+.bg_color_blk-siliver, .bg_color_blk-green, .bg_color_lilac-blue-silver, .bg_color_nav-wed, .bg_color_powder-silver, .bg_color_royal-blue-green, .bg_color_supernova-navy, .bg_color_beige-cream-black, .bg_color_beige-tan, 
+.bg_color_black-citrine, .bg_color_black-mint, .bg_color_black-red-white, .bg_color_black-royal-white, .bg_color_bordeaux-gold, .bg_color_cobalt-navy, .bg_color_coral-beige, .bg_color_cream-mauve-shadow, .bg_color_cream-peach, 
+.bg_color_fuschia-navy, .bg_color_green-cream, .bg_color_ivory-midnight, .bg_color_ivory-irridescent, .bg_color_lilac-orange, .bg_color_multi-print-beige-black, .bg_color_n-bright-blue, .bg_color_navy-green, .bg_color_pink-lilac, .bg_color_plum-navy, .bg_color_pink-green-multi, .bg_color_sahara, .bg_color_red-cream-navy, .bg_color_aubine-black-multi, .bg_color_berry-gold, .bg_color_blackberry-multi, .bg_color_misty-lilac-iris, .bg_color_raspberry-cherry, .bg_color_taupe-navy, .bg_color_silver-ice, .bg_color_soft-white-avocado, .bg_color_soft-white-orange, .bg_color_soft-white-yellow, .bg_color_tan-khaki, .bg_color_white-lila, .bg_color_yellow-ivory, .bg_color_ivory-limo, 
+.bg_color_dijon-combo, .bg_color_fire-red-combo, .bg_color_green-white, .bg_color_navy-mint, .bg_color_olive-ivory-multi, .bg_color_supernova, .bg_color_champagne-bahama-blue, .bg_color_champagne-blue, 
+.bg_color_orchid-light-blue, .bg_color_nude-aqua-green, .bg_color_camel-olive, .bg_color_dark-red-black, .bg_color_grey-blue, .bg_color_lilac-gold, .bg_color_metalic-green-blue-black, .bg_color_mettalic-gold-black, 
+.bg_color_metallic-silver-red, .bg_color_metalic-green-blue, .bg_color_mint-ivoiry, .bg_color_navy-white-gold, .bg_color_taupe-mint, .bg_color_taupe-gray, .bg_color_pink-red, .bg_color_midnight-copper, .bg_color_pink-blossom, 
+.bg_color_yellow-blossom, .bg_color_banana-blue, .bg_color_black-irridiscent, .bg_color_h-green-gd, .bg_color_ivory-blue-coral, .bg_color_rose-multi, .bg_color_bright-fuchsia-gold, .bg_color_confetti, .bg_color_pink-babyblue, 
+.bg_color_multi-hunter-green, .bg_color_multi-off-white, .bg_color_champagne-royal, .bg_color_ivory-coral-champagne, .bg_color_ivory-sky-champagne, .bg_color_salmon-multi
+{
+	
+background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+background-image: -webkit-linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+background-color: red;
+}
+
 
 
