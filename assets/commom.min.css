@@ -3346,6 +3346,7 @@ p.flr-df-rose span strong {
     border: 1px solid #ccc;
     padding: 25px;
     position: relative;
+text-align: center;
 }
 .makeup-tips_block .makeup-tips_block-cols:before {
     counter-increment: my-sec-counter;
