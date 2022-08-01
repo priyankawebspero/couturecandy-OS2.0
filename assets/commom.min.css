@@ -3289,7 +3289,29 @@ aside.sidebar-container .sidebar-inner .promduide_cate_block .sidemenu_prom li a
     padding-bottom: 30px;
 }
 
+.night-prom-dresse-box .night-prom-dresse-cols {
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.night-prom-dresse-box .night-prom-dresse-cols.text-pro-night {
+    padding: 20px;
+}
+
 @media only screen and (min-width:768px){
+
+.night-prom-dresse-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.night-prom-dresse-box .night-prom-dresse-cols {
+    width: 50%;
+    margin: 0;
+    float: left;
+    padding: 0;
+}
   
  img.promo-banner-image.mobile {
     display: none !important;
