@@ -3245,6 +3245,18 @@ aside.sidebar-container .sidebar-inner .promduide_cate_block .sidemenu_prom li a
     font-weight: 500;
 }
 
+.memories-im-block.prm-flr-banner {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
+.memories-cols {
+    float: left;
+    width: 33.33%;
+    margin: 20px 0 40px;
+}
+
 @media only screen and (min-width:768px){
   
  img.promo-banner-image.mobile {
