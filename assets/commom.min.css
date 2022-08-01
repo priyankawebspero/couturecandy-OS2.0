@@ -3522,6 +3522,23 @@ img.full-width-ims {
     margin-bottom: 30px;
 }
 
+span.promguide-side-title {
+    padding-right: 30px !important;
+}
+
+.sidebar-container .promduideside_div .promduide_cate_block .promguide-side-title::after {
+    content: "+";
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    top: 4px;
+}
+
+.sidebar-container .promduideside_div .promduide_cate_block .promguide-side-title.open::after {
+    content: "-";
+}
+
 @media only screen and (min-width:768px){
 
 .prom-work-des-inner {
