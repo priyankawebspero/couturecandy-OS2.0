@@ -3520,7 +3520,15 @@ img.full-width-ims {
 
 @media only screen and (min-width:768px){
 
-
+.prom-work-des-inner {
+    margin: 0 -15px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
 .prom-work-boxes {
     float: left;
     width: calc(50% - 30px);
@@ -3614,15 +3622,7 @@ img.full-width-ims {
 
 @media only screen and (min-width:992px){
 
-.prom-work-des-inner {
-    margin: 0 -15px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-wrap: wrap;
-}
+
 
 .pro-guide-page-right {
     display: inline-block;
