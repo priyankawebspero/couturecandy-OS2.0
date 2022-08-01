@@ -3423,6 +3423,10 @@ img.full-width-ims {
     width: 10px !important;
 }
 
+.shopify_explorer_faq__item .shopify_explorer_faq__answer {
+    padding: 20px 20px 20px 20px !important;
+}
+
 @media only screen and (min-width:768px){
 
 .makeup-tips_block .makeup-tips_block-cols {
