@@ -535,9 +535,7 @@ background:none !important;}
 .boost-pfs-filter-wrapper.boost-pfs-filter-tree-h-sticky-filter .boost-pfs-container-default-fullwidth {
     margin-top: 0px;
 }
-.boost-pfs-container-default-fullwidth.boost-pfs-filter-default-toolbar-inner {
-    min-height: 35px;
-}
+
 
 .boost-pfs-filter-default-toolbar {
     border: none;
@@ -963,6 +961,10 @@ display:none;
     line-height: 1.2;
 }
 
+.boost-pfs-container-default-fullwidth.boost-pfs-filter-default-toolbar-inner {
+    min-height: 35px;
+}
+
 @media only screen and (max-width:1550px){
   
   .boost-pfs-container-default-fullwidth {
@@ -1077,6 +1079,10 @@ display:none;
 
 
 @media only screen and (max-width:991px){
+
+.boost-pfs-container-default-fullwidth.boost-pfs-filter-default-toolbar-inner {
+    min-height: inherit;
+}
   
   .boost-pfs-filter-right-col {
     margin-top: 0;
