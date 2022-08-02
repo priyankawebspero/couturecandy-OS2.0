@@ -45,3 +45,20 @@
 </div>
 <!-- Yotpo Reviews Tab -->
 <script async="async" type="text/javascript"> (function e(){var e=document.createElement("script");e.type="text/javascript",e.async=!0, e.src="//staticw2.yotpo.com/Mi5S4G8kBf4HYxRQL5Sq6ZbNhltQ6TH3q8K1oXYW/widget.js";var t=document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e,t)})(); </script>
+<script type="text/javascript">
+  $('.promduide_cate_block ul.sidemenu_prom').hide();
+     $('.promduide_cate_block.open ul.sidemenu_prom').show();
+
+      $(".promduide_cate_block .promguide-side-title").on("click", function() {
+            $(".promduide_cate_block.open .sidemenu_prom").hide('slow');
+            if ($(this).hasClass('open')) {
+                $(this).removeClass('open').siblings('ul').hide('slow');
+                $(this).closest('.promduideside_div .promduide_cate_block').removeClass('open')
+            } else {
+                $(".promduideside_div .promduide_cate_block").siblings().removeClass('open');
+                $(".promduideside_div .promduide_cate_block .promguide-side-title").removeClass('open');
+                $(this).closest('.promduideside_div .promduide_cate_block').toggleClass('open');
+                $(this).toggleClass('open').siblings('ul').show('slow')
+            }
+        });
+</script>
