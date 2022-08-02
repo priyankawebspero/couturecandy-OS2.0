@@ -3072,6 +3072,16 @@ span.promguide-side-title {
     object-position: top;
 }
 
+.template-page .breadcrumbs {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+span.promguide-side-title.open{
+    background: #e44949;
+}
+
+
 @media only screen and (min-width:768px){
 
 .prom-work-des-inner {
@@ -6179,14 +6189,6 @@ background-color: #c4bdb7;
 
 .bg_color_coral {
     background-color: #ff7f50 !important;
-}
-.template-page .breadcrumbs {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-span.promguide-side-title.open{
-    background: #e44949;
 }
 
 
