@@ -145,6 +145,25 @@
   });
 }());
 {% endjavascript %}
+
+<script type="text/javascript">
+  $('.promduide_cate_block ul.sidemenu_prom').hide();
+     $('.promduide_cate_block.open ul.sidemenu_prom').show();
+
+      $(".promduide_cate_block .promguide-side-title").on("click", function() {
+            $(".promduide_cate_block.open .sidemenu_prom").hide('slow');
+            if ($(this).hasClass('open')) {
+                $(this).removeClass('open').siblings('ul').hide('slow');
+                $(this).closest('.promduideside_div .promduide_cate_block').removeClass('open')
+            } else {
+                $(".promduideside_div .promduide_cate_block").siblings().removeClass('open');
+                $(".promduideside_div .promduide_cate_block .promguide-side-title").removeClass('open');
+                $(this).closest('.promduideside_div .promduide_cate_block').toggleClass('open');
+                $(this).toggleClass('open').siblings('ul').show('slow')
+            }
+        });
+</script>
+
 <style>
 /**
  * FAQ
