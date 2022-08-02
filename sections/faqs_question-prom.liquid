@@ -37,7 +37,7 @@
          <div class="site-content col-sm-9" role="main"><div class="shopify_explorer__content">
   <div class="page_top">
     {%- if page.title -%}
-        <div class="page_upper 123" {%- if section.settings.page_top_image -%} style="background: url('{{section.settings.page_top_image | img_url: '1024x'}}');" {%- endif -%}>
+        <div class="page_upper 123" {%- if section.settings.page_top_image -%} style="background: url('{{section.settings.page_top_image | img_url: 'master'}}');" {%- endif -%}>
                   {{page.title}}
         </div>
     {%- endif -%}
