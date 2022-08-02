@@ -6185,4 +6185,8 @@ background-color: #c4bdb7;
     padding-right: 15px;
 }
 
+span.promguide-side-title.open{
+    background: #e44949;
+}
+
 
