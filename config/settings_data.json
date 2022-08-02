@@ -323,7 +323,7 @@
     "blog_layout": "left",
     "blog_size_sidebar": "2",
     "blog_design": "1",
-    "articles_per_grid_page": "9",
+    "articles_per_grid_page": "12",
     "blog_columns": "2",
     "posts_excerpt_length": "50",
     "enable_button": "show",
