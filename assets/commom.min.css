@@ -3080,7 +3080,9 @@ span.promguide-side-title {
 span.promguide-side-title.open{
     background: #e44949;
 }
-
+.promduideside_div .promduide_cate_block:last-child ul.sidemenu_prom {
+    padding-bottom: 0;
+}
 
 @media only screen and (min-width:768px){
 
