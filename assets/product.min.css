@@ -585,6 +585,7 @@ background: #000;
     border-right: none;
     font-size: 14px;
    border-left: none;
+  padding: 8px 15px;
 }
 
 .single-product-content .shopify-Tabs-panel .table td {
