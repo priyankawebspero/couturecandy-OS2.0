@@ -370,7 +370,7 @@ header.entry-header .entry-title {
     padding-bottom: 0;
    text-align: left;
 }
-
+  
 .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-subtotal {
     float: right;
     width: calc(100% - 65px);
@@ -378,6 +378,7 @@ header.entry-header .entry-title {
     padding-right: 0;
     padding-bottom: 0;
     text-align: left;
+    display: none;
 }
 
 .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td:before {
