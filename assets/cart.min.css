@@ -149,6 +149,7 @@ form.shopify-cart-form {
     text-transform: capitalize;
     border-color: #0f0f0f;
     padding-left: 0;
+  border: none;
 }
 
 .shopify .cart-collaterals .cart_totals tr.cart-subtotal {
@@ -162,6 +163,7 @@ form.shopify-cart-form {
 .shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table tr td {
     font-size: 16px;
     border-color: #0f0f0f;
+  border: none;
 }
 
 .shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table tr td .amount {
