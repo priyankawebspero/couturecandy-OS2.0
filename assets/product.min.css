@@ -767,11 +767,10 @@ div#cover {
 }
 
 .template-product div#ReviewSection .review-heading {
-    font-size: 32px;
+    font-size: 27px;
     color: #000;
     font-weight: 500;
     line-height: 1;
-    text-transform: uppercase;
     margin-bottom: 5px;
 }
 
