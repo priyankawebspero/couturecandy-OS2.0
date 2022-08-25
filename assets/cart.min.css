@@ -141,6 +141,7 @@ form.shopify-cart-form {
     text-align: left;
     text-transform: capitalize;
     font-size: 28px;
+    display: none !important;
 }
 
 .shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table tr th {
