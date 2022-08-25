@@ -1408,6 +1408,11 @@ border-color: #000;
 }
 @media only screen and (min-width:768px){
 
+.single-product-content .cart button.button, .single-product-content .cart span.button a, span.contact_us_button a, .single-product-content .summary .out-of-stock {
+    font-size: 16px;
+    padding: 16px 15px;
+}
+
   .title {
     font-size: 36px;
     margin-bottom: 30px;
