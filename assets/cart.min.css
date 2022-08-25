@@ -8,6 +8,7 @@
     margin-left: auto;
     margin-right: auto;
     float: none;
+  width:100%;
 }
 header.entry-header .entry-title {
     font-size: 45px;
