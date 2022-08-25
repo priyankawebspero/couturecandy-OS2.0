@@ -252,7 +252,7 @@ span#save_percentage span {
 .single-product-content .variations .swatches-select .swatch-size-small:after{display:none !important;}
 
 .single-product-content .variations td {
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
 .single-product-content .variations td.label label {
