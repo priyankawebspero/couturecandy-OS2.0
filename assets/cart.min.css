@@ -27,9 +27,9 @@ div#reviewCarouselWidget {
 
 
 .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents th {
-    background: #0f0f0f;
-    color: #fff;
     font-weight: normal;
+    font-size: 16px;
+    font-family: 'product_sans_mediumregular';
 }
 
 .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td {
