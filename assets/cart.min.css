@@ -413,7 +413,9 @@ header.entry-header .entry-title {
     left: 0;
     top: 0 !important;
 }
-
+.template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-name dl.variation dd.variation-Color {
+    text-align: right;
+}
   
 }
 
