@@ -393,6 +393,24 @@ header.entry-header .entry-title {
 .site-content .shopify-cart-form__contents tr.shopify-cart-form__cart-item td.product-thumbnail {
     padding-top: 0 !important;
 }
+
+.template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-remove {
+    position: absolute;
+    left: 0;
+    top: 11px;
+    z-index: 9999;
+}
+.shopify .shop_table.cart.shop_table_responsive .product-remove .remove {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.shopify .shop_table.cart.shop_table_responsive .product-remove .remove {
+    position: relative;
+    left: 0;
+    top: 0;
+}
   
 }
 
