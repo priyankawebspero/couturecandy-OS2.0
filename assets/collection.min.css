@@ -834,7 +834,7 @@ display:none;
 
 .boost-pfs-filter-option.boost-pfs-filter-has-scrollbar .boost-pfs-filter-option-content .boost-pfs-filter-option-content-inner::-webkit-scrollbar
 {   border-radius: 10px;
-	width: 8px;
+	width: 5px;
 	background-color: #e5e5e5;
 }
 
@@ -854,7 +854,7 @@ display:none;
 
 .boost-pfs-filter-tree-vertical-style-expand:not(.boost-pfs-filter-tree-horizontal-style-expand).boost-pfs-filter-tree-open-body .boost-pfs-filter-left-col::-webkit-scrollbar
 {   border-radius: 10px;
-	width: 8px;
+	width: 5px;
 	background-color: #f5f5f5;
 }
 
