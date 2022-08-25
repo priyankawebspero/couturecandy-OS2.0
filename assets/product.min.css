@@ -109,13 +109,13 @@ div#popup {
 
 .single-product-content .price {
     color: #000;
-    font-size: 32px;
-    margin: 12px 0 0px !important;
+    font-size: 26px;
+    margin: 8px 0 0px !important;
     display: inline-block;
     width: 100%;
 }
 .single-product-content .price del {
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .single-product-content .sezzle-shopify-info-button .sezzle-checkout-button-wrapper.sezzle-left {
@@ -1558,7 +1558,7 @@ div#ProdDetailInfomobile {
 }
 
 .single-product-content .price {
-    font-size: 26px;
+    font-size: 24px;
 }
   
 .single-product-content .price .sezzle-button-text {
