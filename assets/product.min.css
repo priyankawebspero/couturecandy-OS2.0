@@ -1404,6 +1404,11 @@ border-color: #000;
 }
 
 @media only screen and (min-width:768px){
+
+  .title {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
   
  .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
     height: 56px;
