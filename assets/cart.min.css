@@ -329,6 +329,11 @@ header.entry-header .entry-title {
 .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-name:before {
     display: none !important;
 }
+
+.template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-name .variation {
+    width: 100%;
+    margin-top: 5px;
+}
   
 }
 
