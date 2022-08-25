@@ -300,6 +300,22 @@ header.entry-header .entry-title {
     width: 100%;
     vertical-align: top;
 }
+
+.site-content .shopify-cart-form__contents tr.shopify-cart-form__cart-item td {
+    background: none !important;
+}
+
+.site-content .shopify-cart-form__contents tr.shopify-cart-form__cart-item td.product-thumbnail img {
+    max-width: 60px !important;
+    min-width: 60px !important;
+}
+
+.site-content .shopify-cart-form__contents tr.shopify-cart-form__cart-item td.product-thumbnail {
+    float: left;
+    width: 60px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
   
 }
 
