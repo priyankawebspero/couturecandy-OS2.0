@@ -827,12 +827,12 @@ div#cover {
 
 .template-product .yotpo .yotpo-first-review .yotpo-first-review-content button[type="button"] {
     background: #e94949;
-    padding: 17px 25px;
+    padding: 13px 15px;
     border-radius: 5px;
     margin-bottom: 0;
-    font-size: 17px;
+    font-size: 14px;
     font-family: 'google_sansregular';
-    letter-spacing: 1px;
+    letter-spacing: 0;
 }
 
 
