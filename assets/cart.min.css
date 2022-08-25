@@ -1,4 +1,11 @@
 
+.template-cart  .site-content {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
 div#reviewCarouselWidget {
     margin-left: -15px;
     margin-right: -15px;
