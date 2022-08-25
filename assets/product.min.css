@@ -1448,6 +1448,12 @@ div#ProdDetailInfomobile {
 }
 
 @media only screen and (min-width:992px){
+  .product-image-summary .Info .Details .Cnt br {
+    display: none;
+}
+.product-image-summary .Info .Details .Cnt span {
+    min-height: 65px;
+}
   
   .single-product-content .product-images .shopify-product-gallery__wrapper .owl-item figure {
     opacity: 0;
