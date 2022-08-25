@@ -325,6 +325,10 @@ header.entry-header .entry-title {
     padding-right: 0;
     padding-top: 0;
 }
+
+.template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-name:before {
+    display: none !important;
+}
   
 }
 
