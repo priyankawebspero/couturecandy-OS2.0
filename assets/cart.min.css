@@ -122,10 +122,10 @@ form.shopify-cart-form {
 
 .shopify-cart-form .cart-collaterals .cart_totals {
     width: 100%;
-    max-width: 750px;
+    max-width: 650px;
     background-image: inherit;
-    border: 1px solid #0f0f0f;
-    padding:30px;
+    border: none;
+    padding: 30px;
 }
 
 .shopify-cart-form .cart-collaterals .cart_totals h2 {
