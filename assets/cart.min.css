@@ -203,6 +203,10 @@ form.shopify-cart-form {
     padding: 15px 20px;
 }
 
+.cart-collaterals .cart_totals>.responsive-table {
+    margin-bottom: 0;
+}
+
 .shopify-cart-form .cart-collaterals .cart_totals .wc-proceed-to-checkout .checkout-button {
     background: #e94949;
     color: #fff;
