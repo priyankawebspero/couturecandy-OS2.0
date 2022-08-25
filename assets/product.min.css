@@ -515,11 +515,15 @@ background: #000;
     font-family: 'google_sansregular';
 }
 
-.single-product-content .shopify-Tabs-panel p{ padding: 0 20px;}
+.single-product-content .shopify-Tabs-panel p{ 
+  padding: 0 15px;
+  line-height: 1.5;
+   letter-spacing: 0;
+}
 
 .single-product-content .shopify-Tabs-panel .table td {
     text-align: left;
-    padding: 10px 20px;
+    padding: 8px 15px;
     font-weight: normal;
     font-size: 14px;
 }
