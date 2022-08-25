@@ -88,7 +88,7 @@ div#popup {
 .single-product-content .Value .brand .BrandName {
     margin-bottom: 0;
     font-family: 'google_sansregular';
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
     margin-right: 15px;
 }
@@ -1550,7 +1550,7 @@ div#ProdDetailInfomobile {
 }
   
 .single-product-content .Value .brand .BrandName {
-    font-size: 17px;
+    font-size: 15px;
     margin-right: 11px;
 }
 
