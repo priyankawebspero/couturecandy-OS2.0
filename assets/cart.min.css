@@ -116,8 +116,7 @@ div#reviewCarouselWidget {
 }
 
 .shopify-cart-form .cart-actions {
-    margin-top: 25px;
-    margin-bottom: 50px;
+    display: none;
 }
 
 form.shopify-cart-form {
