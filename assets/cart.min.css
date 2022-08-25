@@ -204,10 +204,15 @@ form.shopify-cart-form {
     font-size: 15px;
    font-weight: normal;
 }
-
+.sezzle-shopify-info-button .sezzle-checkout-button-wrapper.sezzle-left {
+    text-align: left;
+   float: none !important;
+}
 .shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table .sezzle-shopify-info-button button .sezzle-button-text {
     font-size: 14px;
     text-transform: initial;
+    float: none !important;
+    text-align: left !important;
 }
 
 .shopify-cart-form .cart-collaterals .cart_totals table.shop_table tr.shipping {
