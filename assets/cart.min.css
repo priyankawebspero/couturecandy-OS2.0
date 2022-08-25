@@ -3,7 +3,7 @@
     margin-bottom: 20px;
 }
 
-.template-cart .site-content article {
+.template-cart .site-content article .entry-content {
     max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
