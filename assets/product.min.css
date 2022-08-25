@@ -794,17 +794,16 @@ div#cover {
     order: 1;
     margin-right: 25px;
     background: #e94949;
-    padding: 17px 25px;
+    padding: 11px 15px;
     border-radius: 5px;
     margin-bottom: 0;
 }
 
 .template-product div#ReviewSection .yotpo .yotpo-regular-box .yotpo-default-button .yotpo-icon-button-text {
-    font-family: 'product_sans_mediumregular';
-    font-size: 17px;
+    font-size: 14px;
     font-family: 'google_sansregular';
     padding-left: 7px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
 }
 
 .template-product div#ReviewSection .yotpo .yotpo-regular-box .yotpo-stars-and-sum-reviews {
