@@ -129,6 +129,7 @@ form.shopify-cart-form {
     background-image: inherit;
     border: none;
     padding: 30px;
+    margin-top: 25px;
 }
 
 .shopify-cart-form .cart-collaterals .cart_totals h2 {
