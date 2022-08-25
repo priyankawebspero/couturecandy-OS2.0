@@ -55,7 +55,10 @@ div#reviewCarouselWidget {
 .template-cart form.shopify-cart-form .shop_table tr td.product-subtotal .amount {
     font-family: 'product_sans_mediumregular';
     font-weight: normal;
-    font-size: 20px;
+    font-size: 15px;
+}
+.template-cart form.shopify-cart-form .shop_table tr td.product-price .amount {
+    font-size: 15px;
 }
 
 .template-cart form.shopify-cart-form .shop_table tr td.product-thumbnail img {
