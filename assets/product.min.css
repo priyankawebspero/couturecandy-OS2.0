@@ -447,7 +447,7 @@ background: #000;
     margin-right: 0;
     background: #fff;
     border: 1px solid #b4b4b4;
-    margin-top: 15px;
+    margin-top: 0px;
     padding: 0;
 }
 
@@ -477,11 +477,11 @@ background: #000;
 
 .single-product-content .product-tabs-wrapper .shopify-tabs .tabs li a {
     color: #808080;
-    padding: 17px 30px;
+    padding: 15px 25px;
     font-weight: normal;
     text-transform: uppercase;
     font-family: 'product_sans_mediumregular';
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1;
     position: relative;
 }
