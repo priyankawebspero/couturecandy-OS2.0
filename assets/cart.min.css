@@ -81,10 +81,6 @@ div#reviewCarouselWidget {
     max-width: 50px;
 }
 
-.template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tbody tr:nth-of-type(odd) {
-    background: #f8f8f8;
-}
-
 .template-cart .page-title {
     border: none;
     padding-bottom: 0;
