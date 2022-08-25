@@ -174,9 +174,11 @@ form.shopify-cart-form {
     color: #0f0f0f;
 }
 
-.shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table .sezzle-shopify-info-button button span.sezzle-payment-amount {
+
+.shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table .sezzle-shopify-info-button button .sezzle-button-text span.sezzle-payment-amount {
     font-family: 'product_sans_mediumregular';
-    font-weight: normal;
+    font-size: 15px;
+   font-weight: normal;
 }
 
 .shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table .sezzle-shopify-info-button button .sezzle-button-text {
