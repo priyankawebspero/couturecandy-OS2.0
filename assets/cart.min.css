@@ -285,10 +285,6 @@ header.entry-header .entry-title {
     font-family: 'product_sans_mediumregular';
 }
   
- .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr:first-child {
-    border-top: 1px solid #0f0f0f;
-}
-  
  .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-remove {
     height: auto !important;
 }
