@@ -208,8 +208,9 @@ span#save_percentage span {
 .single-product-content .Value + p {
     font-family: 'product_sans_mediumregular';
     color: #000 !important;
-    font-size: 17px !important;
+    font-size: 15px !important;
     letter-spacing: .5px;
+    margin-bottom: 10px;
 }
 
 .single-product-content .Value + p strong {
