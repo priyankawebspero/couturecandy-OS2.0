@@ -593,7 +593,7 @@ background: #000;
 }
 
 .container-fluid.related-and-upsells {
-    padding: 50px;
+    padding: 30px 50px;
 }
 
 .related-and-upsells .title:before {
