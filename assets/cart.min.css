@@ -57,11 +57,6 @@ div#reviewCarouselWidget {
     font-size: 20px;
 }
 
-.template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr {
-    border: 1px solid #0f0f0f;
-    border-top: none;
-}
-
 .template-cart form.shopify-cart-form .shop_table tr td.product-thumbnail img {
     border: 1px solid #ccc;
 }
