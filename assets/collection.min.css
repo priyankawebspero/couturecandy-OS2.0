@@ -1339,8 +1339,8 @@ display:none;
 .boost-pfs-filter-products .boost-pfs-filter-product-item .boost-pfs-filter-product-bottom-inner .boost-pfs-filter-product-item-title {
     font-size: 14px;
     line-height: 1.2;
-    max-height: 35px;
-    min-height: 35px;
+    max-height: 32px;
+    min-height: 32px;
 }
   
 .boost-pfs-filter-products .boost-pfs-filter-product-item .boost-pfs-filter-product-bottom-inner .boost-pfs-filter-product-item-price {
