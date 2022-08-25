@@ -389,6 +389,10 @@ header.entry-header .entry-title {
     line-height: 35px;
     height: 35px;
 }
+
+.site-content .shopify-cart-form__contents tr.shopify-cart-form__cart-item td.product-thumbnail {
+    padding-top: 0 !important;
+}
   
 }
 
