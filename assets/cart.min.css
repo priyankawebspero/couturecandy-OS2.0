@@ -151,6 +151,14 @@ form.shopify-cart-form {
     padding-left: 0;
 }
 
+.shopify .cart-collaterals .cart_totals tr.cart-subtotal {
+    display: flex;
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #0f0f0f;
+}
+
 .shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table tr td {
     font-size: 16px;
     border-color: #0f0f0f;
