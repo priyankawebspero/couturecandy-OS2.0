@@ -333,6 +333,24 @@ header.entry-header .entry-title {
 .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-name .variation {
     width: 100%;
     margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-name .variation .variation-Color {
+    min-width: inherit !important;
+    width: 50%;
+    float: left;
+    margin-right: 0;
+    color: #000;
+    font-size: 13px !important;
+    opacity: 0.9;
+    border-bottom: 1px dotted #ccc;
+    font-family: 'google_sansregular' !important;
+    text-transform: initial !important;
+    line-height: 1.5 !important;
+    min-height: 25px;
+    top: 0;
 }
   
 }
