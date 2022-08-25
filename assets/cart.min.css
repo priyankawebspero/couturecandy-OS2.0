@@ -401,18 +401,18 @@ header.entry-header .entry-title {
     top: 11px;
     z-index: 9999;
 }
-.shopify .shop_table.cart.shop_table_responsive .product-remove .remove {
+
+
+.template-cart .shopify .shop_table.cart.shop_table_responsive .product-remove .remove {
     position: relative;
     left: 0;
-    top: 0;
+    top: 0 !important;
 }
-
-.shopify .shop_table.cart.shop_table_responsive .product-remove .remove {
+.template-cart .shopify .shop_table.cart.shop_table_responsive .product-remove .remove {
     position: relative;
     left: 0;
-    top: 0;
+    top: 0 !important;
 }
-
 
   
 }
