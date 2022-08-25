@@ -316,6 +316,15 @@ header.entry-header .entry-title {
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
+
+.template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-name {
+    float: left;
+    float: right;
+    width: calc(100% - 60px);
+    padding-left: 15px;
+    padding-right: 0;
+    padding-top: 0;
+}
   
 }
 
