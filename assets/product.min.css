@@ -83,6 +83,7 @@ div#popup {
 .single-product-content .product_title + .Value {
     display: flex;
     align-items: center;
+  margin-bottom: 0 !important;
 }
 
 .single-product-content .Value .brand .BrandName {
@@ -1024,6 +1025,8 @@ div#cover {
 
 .single-product-content .Value {
     flex-wrap: wrap;
+    font-size: 15px !important;
+    margin-bottom: 5px !important;
 }
 
 .template-product div#ReviewSection form .write-review-wrapper .yotpo-regular-box .yotpo-footer .connect-wrapper .form-element .y-input {
