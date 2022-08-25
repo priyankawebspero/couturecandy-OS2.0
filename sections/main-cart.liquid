@@ -173,7 +173,8 @@
                                </table>
                             </div>
                          </div>
-                            <table cellspacing="0" class="shop_table shop_table_responsive">
+                        {% comment %}
+                       <table cellspacing="0" class="shop_table shop_table_responsive">
                         <tbody>
                           <tr class="shipping">
                             <th>{{ 'cart.general.coupon' | t }}</th>
@@ -181,6 +182,7 @@
                           </tr>
                         </tbody>
                       </table>
+                      {% endcomment %}            
                          <div class="wc-proceed-to-checkout">
                             <button class="checkout-button button alt" name="checkout">{{ 'cart.general.proceed_checkout' | t }}</button>
                          </div>
