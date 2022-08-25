@@ -384,6 +384,11 @@ header.entry-header .entry-title {
 .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td:before {
     display: none !important;
 }
+
+.template-cart form.shopify-cart-form .shop_table tr td input[type="number"] {
+    line-height: 35px;
+    height: 35px;
+}
   
 }
 
