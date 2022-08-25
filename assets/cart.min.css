@@ -10,9 +10,6 @@
     float: none;
   width:100%;
 }
-header.entry-header .entry-title {
-    font-size: 45px;
-}
 
 div#reviewCarouselWidget {
     margin-left: -15px;
@@ -216,6 +213,14 @@ form.shopify-cart-form {
     background: #0f0f0f;
     color: #fff;
     border-color: #0f0f0f;
+}
+
+
+@media only screen and (min-width: 768px){
+
+header.entry-header .entry-title {
+    font-size: 45px;
+}
 }
 
 @media only screen and (max-width: 1550px){
