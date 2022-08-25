@@ -294,11 +294,12 @@ header.entry-header .entry-title {
     margin-bottom: 25px;
 }
 
-.site-content .shopify-cart-form__contents tr.shopify-cart-form__cart-item {
+  .site-content .shopify-cart-form__contents tr.shopify-cart-form__cart-item {
     display: block;
     display: inline-block;
     width: 100%;
     vertical-align: top;
+    padding-bottom: 20px;
 }
 
 .site-content .shopify-cart-form__contents tr.shopify-cart-form__cart-item td {
