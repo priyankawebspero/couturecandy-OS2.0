@@ -521,4 +521,12 @@ header.entry-header .entry-title {
     padding: 7px 10px;
 }
 
+.shopify .cart-collaterals .cart_totals .responsive-table .responsive-table {
+    padding: 0;
+}
+
+.shopify-cart-form .cart-collaterals .cart_totals .wc-proceed-to-checkout {
+    padding: 10px 10px 15px 10px;
+}
+
 }
