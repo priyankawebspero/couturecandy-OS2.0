@@ -293,6 +293,13 @@ header.entry-header .entry-title {
     margin-top: 25px;
     margin-bottom: 25px;
 }
+
+.site-content .shopify-cart-form__contents tr.shopify-cart-form__cart-item {
+    display: block;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
   
 }
 
