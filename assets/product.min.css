@@ -509,7 +509,7 @@ background: #000;
 
 .single-product-content .shopify-Tabs-panel {
    
-    font-size: 16px;
+    font-size: 14px;
     color: #474747;
     font-family: 'google_sansregular';
 }
@@ -520,7 +520,7 @@ background: #000;
     text-align: left;
     padding: 10px 20px;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .single-product-content .shopify-Tabs-panel p strong {
@@ -529,7 +529,7 @@ background: #000;
 
 .single-product-content .shopify-Tabs-panel .table td:first-child {
     font-family: 'product_sans_mediumregular';
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .single-product-content .shopify-Tabs-panel .table td strong {
