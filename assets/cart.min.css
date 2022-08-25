@@ -46,6 +46,7 @@ div#reviewCarouselWidget {
 .template-cart form.shopify-cart-form .shop_table tr .variation * {
     color: #000;
     font-size: 13px;
+    opacity: 0.9;
 }
 
 .template-cart form.shopify-cart-form .shop_table tr td.product-price .amount {
