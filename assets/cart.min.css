@@ -416,6 +416,11 @@ header.entry-header .entry-title {
 .template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-name dl.variation dd.variation-Color {
     text-align: right;
 }
+
+.template-cart .page-title {
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
   
 }
 
