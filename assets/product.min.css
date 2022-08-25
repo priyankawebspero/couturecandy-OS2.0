@@ -1402,7 +1402,10 @@ border-color: #000;
 .single-product-content .product-image-summary {
     margin-bottom: 30px;
 }
-
+.title:before {
+    height: 3px;
+    margin: 0 auto 8px auto;
+}
 @media only screen and (min-width:768px){
 
   .title {
