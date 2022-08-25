@@ -1,4 +1,8 @@
 
+.template-cart  .site-content {
+    margin-bottom: 20px;
+}
+
 .template-cart  .site-content article {
     max-width: 1500px;
     margin-left: auto;
