@@ -421,6 +421,11 @@ header.entry-header .entry-title {
     padding-top: 15px;
     margin-bottom: 20px;
 }
+
+.site-content .shopify-cart-form__contents tr.shopify-cart-form__cart-item:last-child {
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 20px;
+}
   
 }
 
