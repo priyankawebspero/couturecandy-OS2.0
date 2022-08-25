@@ -467,6 +467,7 @@ background: #000;
 .single-product-content .product-tabs-wrapper .shopify-tabs .tabs {
     text-align: left;
     border-bottom: 1px solid #b4b4b4;
+  margin-bottom: 10px;
 }
 
 .single-product-content .product-tabs-wrapper .shopify-tabs .tabs li {
