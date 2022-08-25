@@ -176,6 +176,11 @@ form.shopify-cart-form {
     font-size: 17px;
 }
 
+.shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table tr td .shopify-Price-amount.amount {
+    font-size: 18px;
+    font-family: 'product_sans_mediumregular';
+}
+
 .shopify-cart-form .cart-collaterals .cart_totals .responsive-table table.shop_table tr.order-total td .amount {
     font-weight: normal;
     font-size: 22px;
