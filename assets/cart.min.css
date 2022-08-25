@@ -5,6 +5,9 @@
     margin-right: auto;
     float: none;
 }
+header.entry-header .entry-title {
+    font-size: 45px;
+}
 
 div#reviewCarouselWidget {
     margin-left: -15px;
