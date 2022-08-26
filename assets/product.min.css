@@ -1826,7 +1826,9 @@ div#ProdDetailInfomobile {
 
 
 @media only screen and (max-width: 767px){
-
+.single-product-content .product-tabs-wrapper {
+    margin-top: 20px;
+}
 .product-image-summary .Info {
     margin-top: 0;
 }
