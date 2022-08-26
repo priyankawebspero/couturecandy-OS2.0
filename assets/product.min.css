@@ -1407,6 +1407,11 @@ border-color: #000;
     height: 3px;
     margin: 0 auto 8px auto;
 }
+.cloudzoom {
+    pointer-events: none;
+}
+
+
 @media only screen and (min-width:768px){
 
 .single-product-content .cart button.button, .single-product-content .cart span.button a, span.contact_us_button a, .single-product-content .summary .out-of-stock {
