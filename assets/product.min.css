@@ -1407,9 +1407,7 @@ border-color: #000;
     height: 3px;
     margin: 0 auto 8px auto;
 }
-.cloudzoom {
-    pointer-events: none;
-}
+
 
 
 @media only screen and (min-width:768px){
@@ -1655,7 +1653,9 @@ div#ProdDetailInfomobile {
 
 
 @media only screen and (max-width: 991px){
-
+.cloudzoom {
+    pointer-events: none;
+}
   .single-product-content .product-image-summary .modal {
     width: 95%;
 }
