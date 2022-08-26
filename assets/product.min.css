@@ -1653,9 +1653,7 @@ div#ProdDetailInfomobile {
 
 
 @media only screen and (max-width: 991px){
-.cloudzoom {
-    pointer-events: none;
-}
+
   .single-product-content .product-image-summary .modal {
     width: 95%;
 }
@@ -1826,6 +1824,9 @@ div#ProdDetailInfomobile {
 
 
 @media only screen and (max-width: 767px){
+  .cloudzoom {
+    pointer-events: none;
+}
 .single-product-content .product-tabs-wrapper {
     margin-top: 20px;
 }
