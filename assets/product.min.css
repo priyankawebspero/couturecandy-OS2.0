@@ -1813,7 +1813,7 @@ div#ProdDetailInfomobile {
   
 .single-product-content .variations td {
     display: block;
-    text-align: center;
+    text-align: left;
 }
   
 .single-product-content .product-tabs-wrapper .shopify-tabs .tabs li {
