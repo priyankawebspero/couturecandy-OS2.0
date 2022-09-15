@@ -4114,7 +4114,7 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     right: 0;
     background: rgba(35,35,35,.8);
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top: 0;
     z-index: -1;
     -webkit-transition: transform .4s ease;
@@ -4135,7 +4135,7 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     overflow: hidden;
 }
 
-.menu_block.active .menu-mobile-nav-container:after {
+.menu_class .menu-mobile-nav-container:after {
     opacity:1;
     visibility:visible; 
 }
