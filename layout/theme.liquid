@@ -2,9 +2,8 @@
 <!--[if IE 9]> <html class="ie9 no-js" lang="{{ shop.locale }}"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="{{ shop.locale }}"> <!--<![endif]-->
 <head>
-   {% if template == "product" %}
-      {% elsif template == "cart" %}
-     {% else %}
+
+{% if template != 'product' and template != 'cart' %}
       {% render 'spdn' %}
    {% endif %}
 {%- include 'meta' -%}

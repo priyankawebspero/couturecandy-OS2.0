@@ -94,7 +94,7 @@
     ga('set','dimension3', '{{template}}');
 </script>
 
-{% if template != 'product' %}
+{% if template != 'product' and template != 'cart' %}
 <script>
     var replaced = false;  
     var threshold =10;
