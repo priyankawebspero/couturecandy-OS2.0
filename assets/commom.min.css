@@ -4111,6 +4111,10 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     
   }
 
+.mobile-nav {
+    height: 100vh;
+}
+
 .menu_class .mobile-nav {
     overflow: hidden;
 }
