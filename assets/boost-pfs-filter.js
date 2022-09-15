@@ -264,7 +264,7 @@ var boostPFSFilterConfig = {
             paddingTop = 1 / aspectRatio * 100;
         }
 
-        html += '<a href="{{itemUrl}}" class="boost-pfs-filter-product-item-image-link g" ';
+        html += '<a href="{{itemUrl}}" class="boost-pfs-filter-product-item-image-link" ';
         html += 'style="padding-top:' + paddingTop + '%;">';
         html += '<img class="boost-pfs-filter-product-item-main-image lazyload Image--lazyLoad"' +
             'data-srcset="' + dataSrcSet + '" ' +
