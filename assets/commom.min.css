@@ -4077,9 +4077,17 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     padding-bottom: 8px;
 }
   
+
 .menu-mobile-nav-container {
-    background: #fff;
+    background: #fff !important;
     border-right: 1px solid #ccc;
+    padding-bottom: 0;
+}
+
+.menu-mobile-nav-container .site-mobile-menu {
+    height: 100%;
+    background: #fff;
+    padding-bottom: 100px;
 }
   
 .mobile-nav .sub-menu-dropdown ul {
