@@ -72,7 +72,7 @@
       "settings": {
         "image_desktop": "shopify:\/\/shop_images\/cc_wedding1-min.png",
         "image_mobile": "shopify:\/\/shop_images\/SPRINGSALEMOBILE.jpg",
-        "link": "shopify:\/\/collections\/all"
+        "link": "\/collection\/bridesmaid-dresses"
       }
     },
     "1654005036571929f8": {
@@ -125,7 +125,7 @@
       "settings": {
         "heading": "SHOP POPULAR DRESSES",
         "row_stretch": "default",
-        "home_featured_products": "prom-dresses",
+        "home_featured_products": "dresses",
         "paginate_index": "4",
         "use_pagination": "view-all",
         "grid_columns": "4",
