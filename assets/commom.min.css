@@ -973,12 +973,12 @@ div#reviewCarouselWidget .stjr-review__content .stjr-review__read_more_link {
 }
 
 .main-header .wrapp-header ul#menu-main-navigation li .sub-menu-dropdown li a:hover {
-    padding-left: 10px;
+   transform: translateX(10px) !important;
 	color: #e94949;
 }
 
 .main-header .wrapp-header ul#menu-main-navigation li .sub-menu-dropdown li a:hover:before {
-    left: -5px;
+    left: -15px;
     content: "\f101";
     position: absolute;
     transition: .8s;
@@ -992,6 +992,7 @@ div#reviewCarouselWidget .stjr-review__content .stjr-review__read_more_link {
     -o-transition: all .2s;
     transition: all .2s;
     position: relative;
+  display:block;
 }
 
 .main-nav .menu>li.menu-item-design-sized .sub-menu-dropdown .top_nav_main .top_section .top_section_heading:before {
