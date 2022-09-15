@@ -1,6 +1,7 @@
 <script> (function(src, callback){var s, r, t; r = false; s = document.createElement('script'); s.type = 'text/javascript';s.src = src; s.onload = s.onreadystatechange = function() { if ( !r && (!this.readyState || this.readyState == 'complete') ) { r = true; callback(); } };t = document.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t);}('https://biz.sitejabber.com/js/widget.min.1589224101.js', function() { new STJR.ReviewCarouselWidget({ id: 'reviewCarouselWidget',url:'couturecandy.com'}).render(); }) );</script>
  <link rel="preload" href="{{ 'cart.min.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
 {%- assign cart_title = 'cart.general.title' | t -%}
+<script src="https://widget.sezzle.com/v1/javascript/price-widget?uuid=bd0b31d4-a0b6-4036-868a-27a0e13ed47a"></script>
 <div class="main-page-wrapper">
 {%- include 'page_heading', page_title:cart_title -%}
 <!-- MAIN CONTENT AREA -->
@@ -219,4 +220,3 @@
 </div>
 <!-- end container -->
 </div><!-- .main-page-wrapper -->
-<script src="https://widget.sezzle.com/v1/javascript/price-widget?uuid=bd0b31d4-a0b6-4036-868a-27a0e13ed47a"></script>
