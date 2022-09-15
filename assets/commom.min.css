@@ -4136,7 +4136,6 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     width: 100%;
     height: 100vh;
     top: 0;
-    z-index: -1;
     -webkit-transition: transform .4s ease;
     -moz-transition: transform .4s ease;
     -ms-transition: transform .4s ease;
