@@ -264,7 +264,7 @@ var boostPFSFilterConfig = {
             paddingTop = 1 / aspectRatio * 100;
         }
 
-        html += '<h3><a href="{{itemUrl}}" class="boost-pfs-filter-product-item-image-link g" ';
+        html += '<a href="{{itemUrl}}" class="boost-pfs-filter-product-item-image-link g" ';
         html += 'style="padding-top:' + paddingTop + '%;">';
         html += '<img class="boost-pfs-filter-product-item-main-image lazyload Image--lazyLoad"' +
             'data-srcset="' + dataSrcSet + '" ' +
@@ -278,7 +278,7 @@ var boostPFSFilterConfig = {
             html += ' data-img-flip-src="' + Utils.optimizeImage(images[1]['src'], rangeWidths[2] + 'x') + '" ' +
                 'data-img-flip-srcset="' + flipImageSrcSet + '" ';
         }
-        html += '/></a></h3>';
+        html += '/></a>';
 
         return html;
     }
