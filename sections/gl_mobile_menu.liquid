@@ -234,12 +234,15 @@
    $('.menu_inner_block.basel-pop').on('click', function (e) {
       e.preventDefault();
       $(this).closest('.menu_block').toggleClass('active');
+      $('body').toggleClass('menu_class');
    });
    $('.close_inner_block').on('click', function () {
       $(this).closest('.menu_block').toggleClass('active');
+           $('body').toggleClass('menu_class');
    });
    $('body').on("click", "#close_menu_main", function() {
     $('body').removeClass("act-mobile-menu");
+      $('body').removeClass('menu_class')
     $('.website-wrapper').removeClass("left-wrapp");
   });
 </script>
