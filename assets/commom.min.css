@@ -4089,6 +4089,33 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     background: #fff;
     padding-bottom: 100px;
 }
+
+
+  .menu_block .menu-mobile-nav-container:after{
+  content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    background: rgba(35,35,35,.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    -webkit-transition: transform .4s ease;
+    -moz-transition: transform .4s ease;
+    -ms-transition: transform .4s ease;
+    -o-transition: transform .4s ease;
+    transition: transform .4s ease;
+    opacity:0;
+    visibility:hidden;
+    
+  }
+
+.menu_block.active .menu-mobile-nav-container:after {
+    opacity:1;
+    visibility:visible; 
+}
+  
   
 .mobile-nav .sub-menu-dropdown ul {
     background-color: #fff;
