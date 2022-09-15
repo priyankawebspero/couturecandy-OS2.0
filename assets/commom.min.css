@@ -1004,7 +1004,7 @@ div#reviewCarouselWidget .stjr-review__content .stjr-review__read_more_link {
 .main-header .wrapp-header ul#menu-main-navigation li.menu-item-sale .sub-menu-dropdown ul.sub-menu li a:hover, 
 .main-header .wrapp-header ul#menu-main-navigation li.menu-item-formal .sub-menu-dropdown ul.sub-menu li a:hover{
     transform: inherit !important;
-    padding-left: 25px;
+    padding-left: 20px;
 }
 
 .main-header .wrapp-header ul#menu-main-navigation li.menu-item-sale .sub-menu-dropdown ul.sub-menu li a:hover:before, 
