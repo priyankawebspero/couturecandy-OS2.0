@@ -968,6 +968,11 @@ div#reviewCarouselWidget .stjr-review__content .stjr-review__read_more_link {
     font-family: 'product_sans_mediumregular';
 }
 
+.main-header .wrapp-header ul#menu-main-navigation li .sub-menu-dropdown li b a {
+    color: #e94949;
+    text-decoration: underline !important;
+}
+
 .main-nav .menu>li.menu-item-design-sized .sub-menu-dropdown .top_nav_main .top_section .top_section_heading:before {
     content: "";
     display: block;
