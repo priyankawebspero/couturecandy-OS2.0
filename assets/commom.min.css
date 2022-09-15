@@ -4111,6 +4111,10 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     
   }
 
+.menu_class .mobile-nav {
+    overflow: hidden;
+}
+
 .menu_block.active .menu-mobile-nav-container:after {
     opacity:1;
     visibility:visible; 
