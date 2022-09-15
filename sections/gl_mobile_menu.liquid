@@ -235,10 +235,16 @@
       e.preventDefault();
       $(this).closest('.menu_block').toggleClass('active');
       $('body').toggleClass('menu_class');
+       $('html, body').animate({
+    scrollTop: 0
+  }, 400);
    });
    $('.close_inner_block').on('click', function () {
       $(this).closest('.menu_block').toggleClass('active');
            $('body').toggleClass('menu_class');
+       $('html, body').animate({
+    scrollTop: 0
+  }, 400);
    });
    $('body').on("click", "#close_menu_main", function() {
     $('body').removeClass("act-mobile-menu");
