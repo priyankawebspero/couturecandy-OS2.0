@@ -235,7 +235,7 @@
       e.preventDefault();
       $(this).closest('.menu_block').toggleClass('active');
       $('body').toggleClass('menu_class');
-       $("html, body").animate({ scrollTop: 0 }, 2000);
+      $("#shopify-section-gl_mobile_menu").scrollTop(0);
    });
    $('.close_inner_block').on('click', function () {
       $(this).closest('.menu_block').toggleClass('active');
