@@ -235,7 +235,8 @@
       e.preventDefault();
       $(this).closest('.menu_block').toggleClass('active');
       $('body').toggleClass('menu_class');
-      $('html,body').animate({scrollTop: 0}, 1500);
+      $('html, body').animate({ scrollTop: 0 }, 1200);
+      return false;
    });
    $('.close_inner_block').on('click', function () {
       $(this).closest('.menu_block').toggleClass('active');
