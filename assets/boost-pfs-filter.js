@@ -500,7 +500,7 @@ var boostPFSFilterConfig = {
         var html = '';
         if (boostPFSThemeConfig.custom.hasOwnProperty('show_product_review') &&
             boostPFSThemeConfig.custom.show_product_review == true) {
-            html = '<div class="yotpo bottomLine" data-product-id="{{ itemId }}"  data-url="{{ itemUrl }}"></div>';
+            html = '<span class="shopify-product-reviews-badge" data-id="{{itemId}}"></span>';
         }
         return html;
     }
