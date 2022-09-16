@@ -609,13 +609,13 @@ a.btn:hover {
 }
 
 .product-grid-item .product-title {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .product-grid-item .price {
     color: #000;
     font-weight: normal;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 18px;
     /* margin-top: 10px; */
     font-family: 'product_sans_mediumregular';
