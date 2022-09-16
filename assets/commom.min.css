@@ -984,6 +984,7 @@ div#reviewCarouselWidget .stjr-review__content .stjr-review__read_more_link {
     transition: .8s;
     font-family: FontAwesome;
     color: #e94949;
+  line-height: 14px;
 }
 
 .main-header .wrapp-header ul#menu-main-navigation li .sub-menu-dropdown li a {
