@@ -1443,6 +1443,14 @@ aside.sidebar-container .sidebar-inner ul li {
     margin-bottom: 10px;
 }
 
+aside.sidebar-container .sidebar-inner ul li {
+    padding-left: 0;
+}
+
+aside.sidebar-container .sidebar-inner ul li:before {
+    display:none;
+}
+
 aside.sidebar-container .sidebar-inner ul {
     margin-bottom: 30px;
 }
