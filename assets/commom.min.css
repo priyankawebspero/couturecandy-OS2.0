@@ -6562,6 +6562,23 @@ div#Tips-homecoming-dress, div#Choose-right-colordress {
      color:#e94949;
 }
 
+.single-post .blog-post-loop ul.mate-post-tags {
+    padding: 0;
+    text-align: center;
+}
+
+.blog-post-loop .mate-post-tags li.tag {
+    display: inline-block;
+    background: #f7f7f7;
+    margin: 5px;
+}
+
+.blog-design-default.blog-post-loop.post-single-page a {
+     color:#e94949;
+   display: block;
+    padding: 2px 10px;
+}
+
 @media only screen and (min-width: 768px){
 .top-tren-ration {
     position: relative;
