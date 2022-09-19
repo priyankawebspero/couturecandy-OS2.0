@@ -6411,3 +6411,8 @@ background-color: #ffff00 !important;
 .error404 .page-wrapper .error-page-menu .menu-ul.sale li a {
     color: #e94949;
 }
+
+.error404 .page-wrapper .error-page-menu p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
