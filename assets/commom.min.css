@@ -6464,3 +6464,21 @@ background-color: #ffff00 !important;
 }
   
 }
+
+
+@media only screen (max-width:479px){
+
+.error404 .site-content form[role="search"] button#searchsubmit {
+    position: relative;
+    height: auto;
+    font-size: 15px;
+    margin-top: 14px;
+    min-width: 175px;
+    padding: 14px 10px;
+}
+
+.error404 .site-content form[role="search"] input[type="text"] {
+    padding: 10px 15px 10px 15px;
+}
+  
+}
