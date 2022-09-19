@@ -6350,7 +6350,9 @@ background-color: #ffff00 !important;
 .error404 .page-title {
     color: #e94949;
 }
-
+.error404 .site-content p {
+    font-size: 17px;
+}
 
 
 
