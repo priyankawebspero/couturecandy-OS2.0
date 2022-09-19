@@ -6495,6 +6495,15 @@ background-color: #ffff00 !important;
     overflow: hidden;
 }
 
+  .top-tren-ration img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+}
+
 .trending-dreeses-latest .cols-trending {
     float: left;
     width: 33.33%;
