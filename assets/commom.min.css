@@ -6383,7 +6383,10 @@ background-color: #ffff00 !important;
   background: #333;
     color: #ffff;
     border: 1px solid #333;
-  
-}
+  }
 
+.error404 .page-wrapper {
+    background: #f8f8f8;
+    padding: 50px 0;
+}
 
