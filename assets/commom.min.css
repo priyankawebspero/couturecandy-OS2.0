@@ -6494,6 +6494,11 @@ background-color: #ffff00 !important;
 .template-article .entry-content h5 {
     font-family: 'product_sans_mediumregular';
     font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.template-article .site-content p {
+    margin-top: 0px !important;
 }
 
 #top-trending-wedding-dress .trending-dreeses-latest .cols-trending h4, .cols-trending h4 {
