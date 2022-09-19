@@ -6517,6 +6517,10 @@ h4.content_homecoming {
     font-size: 20px;
 }
 
+.homecmg-section-outer ul li:before {
+    color:#e94949 !important;
+}
+
 @media only screen and (min-width: 768px){
 .top-tren-ration {
     position: relative;
