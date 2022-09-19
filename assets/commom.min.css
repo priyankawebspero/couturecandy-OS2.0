@@ -6550,6 +6550,10 @@ div#homecoming-doubts {
     padding-bottom: 40px;
 }
 
+div#Tips-homecoming-dress, div#Choose-right-colordress {
+    padding: 40px 0 0;
+}
+
 @media only screen and (min-width: 768px){
 .top-tren-ration {
     position: relative;
