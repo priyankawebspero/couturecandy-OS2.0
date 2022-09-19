@@ -6469,8 +6469,6 @@ background-color: #ffff00 !important;
 }
 
 .trending-dreeses-latest .cols-trending {
-    float: left;
-    width: 33.33%;
     text-align: center;
     padding: 0 5px;
     margin-top: 20px;
@@ -6495,6 +6493,14 @@ background-color: #ffff00 !important;
     position: relative;
     padding-bottom: 140%;
     overflow: hidden;
+}
+
+.trending-dreeses-latest .cols-trending {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    padding: 0 5px;
+    margin-top: 20px;
 }
 
 }
