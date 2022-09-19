@@ -6457,6 +6457,48 @@ background-color: #ffff00 !important;
     padding-bottom: 0;
 }
 
+.trending-dreeses-latest {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.trending-dreeses-latest .cols-trending {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    padding: 0 5px;
+    margin-top: 20px;
+}
+.blog-design-default.blog-post-loop.post-single-page a {
+    color: #f66;
+}
+
+#top-trending-wedding-dress .trending-dreeses-latest .cols-trending h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.blog-post-loop.post-single-page .entry-content p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+@media only screen and (min-width: 768px){
+.top-tren-ration {
+    position: relative;
+    padding-bottom: 140%;
+    overflow: hidden;
+}
+
+}
+
 @media only screen and (min-width:768px) and (max-width:991px){
 
 .error404 .page-wrapper .page-content .col-md-3.col-sm-12.mobi {
