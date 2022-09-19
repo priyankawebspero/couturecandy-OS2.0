@@ -6385,10 +6385,11 @@ background-color: #ffff00 !important;
     border: 1px solid #333;
   }
 
-.error404 .page-wrapper {
+.error404 .page-wrapper .page-content {
     background: #f8f8f8;
     padding: 50px 0 20px 0;
 }
+
 .error404 .page-wrapper .error-page-menu {
     text-align: left;
     margin-bottom: 30px;
@@ -6432,6 +6433,10 @@ background-color: #ffff00 !important;
 
 .error404 .main-page-wrapper .row {
     margin: 0;
+}
+
+.error404 .page-wrapper {
+    margin: 0 -15px;
 }
 
 @media only screen and (min-width:768px) and (max-width:991px){
