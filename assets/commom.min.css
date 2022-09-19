@@ -6492,6 +6492,10 @@ background-color: #ffff00 !important;
     margin: 50px 0;
 }
 
+.template-article .site-content h3 {
+    font-weight: 500;
+}
+
 @media only screen and (min-width: 768px){
 .top-tren-ration {
     position: relative;
