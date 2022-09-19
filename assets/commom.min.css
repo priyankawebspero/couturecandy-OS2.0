@@ -6466,7 +6466,7 @@ background-color: #ffff00 !important;
 }
 
 
-@media only screen (max-width:479px){
+@media only screen and (max-width:479px){
 
 .error404 .site-content form[role="search"] button#searchsubmit {
     position: relative;
