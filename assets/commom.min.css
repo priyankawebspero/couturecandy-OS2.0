@@ -6423,3 +6423,9 @@ background-color: #ffff00 !important;
     font-size: 15px;
     letter-spacing: .5px;
 }
+
+.error404 .page-wrapper .error-page-menu span.time {
+    text-align: right;
+    float: right;
+    padding-left: 5px;
+}
