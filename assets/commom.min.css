@@ -6496,7 +6496,7 @@ background-color: #ffff00 !important;
     font-size: 18px;
 }
 
-#top-trending-wedding-dress .trending-dreeses-latest .cols-trending h4 {
+#top-trending-wedding-dress .trending-dreeses-latest .cols-trending h4, .cols-trending h4 {
     margin-bottom: 10px;
     font-size: 19px;
     font-family: 'product_sans_mediumregular';
