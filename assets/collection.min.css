@@ -931,7 +931,7 @@ display:none;
 }
 
 
-@media only screen and (max-width:1300px){
+@media only screen and (min-width:1300px){
 .boost-pfs-section-header .boost-pfs-filter-collection-description h1.heading.collection {
     position: relative;
     top: 15px;
