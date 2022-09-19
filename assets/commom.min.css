@@ -6480,6 +6480,8 @@ background-color: #ffff00 !important;
 .error404 .site-content form[role="search"] input[type="text"] {
     padding: 10px 15px 10px 15px;
 }
-  
+ .error404 .page-title {
+    letter-spacing: 0;
+} 
   
 }
