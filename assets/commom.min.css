@@ -6403,3 +6403,11 @@ background-color: #ffff00 !important;
 .error404 .page-wrapper .error-page-menu ul li {
     margin-bottom: 6px;
 }
+
+.error404 .page-wrapper .error-page-menu h4.sale {
+    color: #e94949;
+}
+
+.error404 .page-wrapper .error-page-menu .menu-ul.sale li a {
+    color: #e94949;
+}
