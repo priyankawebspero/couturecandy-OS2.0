@@ -362,7 +362,7 @@ window.criteo_q.push(
 {% endif %}
 
 {%- comment -%} TOOLBAR TOP MOBILE {%- endcomment -%}
-<div class="boost-pfs-filter-toolbar-top-mobile {% if hide_toolbar_sort_by_mobile %} boost-pfs-filter-toolbar-top-mobile-hide-sort-by {% endif %}{% if enable_filter_sticky_m %} boost-pfs-filter-tree-mobile-button-stick-wrapper {% endif %}">
+<div class="boost-pfs-filter-toolbar-top-mobile {% if hide_toolbar_sort_by_mobile %} boost-pfs-filter-toolbar-top-mobile-hide-sort-by {% endif %} {% if enable_filter_sticky_m %} boost-pfs-filter-tree-mobile-button-stick-wrapper {% endif %}">
   <div class="boost-pfs-filter-toolbar-top-mobile-inner {% if show_sort_by_m %} boost-pfs-filter-toolbar-show-sort-by-mobile {% endif %}">
     {%- if show_sort_by_m -%}
     	<div class="boost-pfs-filter-top-sorting boost-pfs-filter-top-sorting-mobile boost-pfs-filter-custom-sorting">{%- render 'boost-pfs-filter-skeleton', type: 'button' -%}</div>
