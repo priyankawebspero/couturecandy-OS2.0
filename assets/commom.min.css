@@ -6347,7 +6347,9 @@ background-color: #ffff00 !important;
 .bg_color_fuchsia {
     background-color: #ff00ff !important;
 }
-
+.error404 .page-title {
+    color: #e94949;
+}
 
 
 
