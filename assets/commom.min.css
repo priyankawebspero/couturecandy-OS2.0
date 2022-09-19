@@ -6496,6 +6496,11 @@ background-color: #ffff00 !important;
     font-weight: 500;
 }
 
+.template-article .entry-content h5 {
+    font-family: 'product_sans_mediumregular';
+    font-size: 18px;
+}
+
 @media only screen and (min-width: 768px){
 .top-tren-ration {
     position: relative;
