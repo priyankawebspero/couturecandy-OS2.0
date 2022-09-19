@@ -6477,11 +6477,6 @@ background-color: #ffff00 !important;
     color: #f66;
 }
 
-#top-trending-wedding-dress .trending-dreeses-latest .cols-trending h4 {
-    margin-bottom: 10px;
-    font-size: 16px;
-}
-
 .blog-post-loop.post-single-page .entry-content p {
     line-height: 1.8;
     margin-bottom: 20px;
@@ -6499,6 +6494,12 @@ background-color: #ffff00 !important;
 .template-article .entry-content h5 {
     font-family: 'product_sans_mediumregular';
     font-size: 18px;
+}
+
+#top-trending-wedding-dress .trending-dreeses-latest .cols-trending h4 {
+    margin-bottom: 10px;
+    font-size: 19px;
+    font-family: 'product_sans_mediumregular';
 }
 
 @media only screen and (min-width: 768px){
