@@ -6393,3 +6393,13 @@ background-color: #ffff00 !important;
     text-align: left;
     margin-bottom: 30px;
 }
+
+.error404 .page-wrapper .error-page-menu h4 {
+    margin-bottom: 15px;
+    font-size: 19px;
+    font-family: 'google_sansregular';
+}
+
+.error404 .page-wrapper .error-page-menu ul li {
+    margin-bottom: 6px;
+}
