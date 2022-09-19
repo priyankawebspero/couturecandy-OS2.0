@@ -6507,6 +6507,16 @@ background-color: #ffff00 !important;
     font-family: 'product_sans_mediumregular';
 }
 
+.homecmg-section-outer {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+h4.content_homecoming {
+    font-family: 'product_sans_mediumregular';
+    font-size: 20px;
+}
+
 @media only screen and (min-width: 768px){
 .top-tren-ration {
     position: relative;
