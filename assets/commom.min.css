@@ -6558,6 +6558,10 @@ div#Tips-homecoming-dress, div#Choose-right-colordress {
     font-weight: normal;
 }
 
+.blog-post-loop .entry-content ul>li:before, .comments-area .comment-list li ul>li:before, .single-product-content #tab-description ul>li:before, .single-product-content div[itemprop=description] ul>li:before {
+     color:#e94949;
+}
+
 @media only screen and (min-width: 768px){
 .top-tren-ration {
     position: relative;
