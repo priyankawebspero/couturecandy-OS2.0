@@ -6387,6 +6387,9 @@ background-color: #ffff00 !important;
 
 .error404 .page-wrapper {
     background: #f8f8f8;
-    padding: 50px 0;
+    padding: 50px 0 20px 0;
 }
-
+.error404 .page-wrapper .error-page-menu {
+    text-align: left;
+    margin-bottom: 30px;
+}
