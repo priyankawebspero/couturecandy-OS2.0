@@ -6433,3 +6433,11 @@ background-color: #ffff00 !important;
 .error404 .main-page-wrapper .row {
     margin: 0;
 }
+
+@media only screen and (min-width:768px) and (max-width:991px){
+
+.error404 .page-wrapper .page-content .col-md-3.col-sm-12.mobi {
+    width: 50%;
+}
+  
+}
