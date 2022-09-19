@@ -43,7 +43,8 @@ window.criteo_q.push(
    assign enable_filter_sticky_d = false
   endif
 
-    assign enable_filter_sticky_m = shop.metafields.bc-sf-filter.settings | split: 'general":' | last | split: 'stickyFilterOnMobile":' | last | split: ',' | first |  split: '}}' | first | strip 
+	assign enable_filter_sticky_m = shop.metafields.bc-sf-filter.settings | split: 'general":' | last | split: 'stickyFilterOnMobile":' | last | split: ',' | first |  split: '}}' | first | strip | escape
+    
   assign switch_layout_filter = 'switch_layout_filter_vertical'
 
   assign verticalStyleOffCanvas = false
