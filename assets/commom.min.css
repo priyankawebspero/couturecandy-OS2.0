@@ -6573,7 +6573,7 @@ div#Tips-homecoming-dress, div#Choose-right-colordress {
     margin: 5px;
 }
 
-.blog-design-default.blog-post-loop.post-single-page a {
+.blog-post-loop .mate-post-tags li.tag a {
      color:#e94949;
    display: block;
     padding: 2px 10px;
