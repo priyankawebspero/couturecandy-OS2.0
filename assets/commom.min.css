@@ -6443,6 +6443,10 @@ background-color: #ffff00 !important;
     padding: 0;
 }
 
+.error404 .page-header .container {
+    padding: 0;
+}
+
 @media only screen and (min-width:768px) and (max-width:991px){
 
 .error404 .page-wrapper .page-content .col-md-3.col-sm-12.mobi {
