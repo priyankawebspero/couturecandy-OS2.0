@@ -6554,6 +6554,10 @@ div#Tips-homecoming-dress, div#Choose-right-colordress {
     padding: 40px 0 0;
 }
 
+.template-article .site-content h3 strong {
+    font-weight: normal;
+}
+
 @media only screen and (min-width: 768px){
 .top-tren-ration {
     position: relative;
