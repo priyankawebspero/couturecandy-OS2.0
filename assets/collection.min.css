@@ -955,10 +955,13 @@ display:none;
 
 @media only screen and (max-width:1450px){
   
-.bottom.description.collection h2 {
-    font-size: 32px;
-}
-  
+  .bottom.description.collection h2 {
+      font-size: 32px;
+  }
+  .bottom.description.collection h2.banner_category_page_top {
+      font-size: 32px;
+  }
+    
   
 }
 
