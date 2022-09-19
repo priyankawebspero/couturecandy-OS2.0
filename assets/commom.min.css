@@ -6429,3 +6429,7 @@ background-color: #ffff00 !important;
     float: right;
     padding-left: 5px;
 }
+
+.error404 .main-page-wrapper .row {
+    margin: 0;
+}
