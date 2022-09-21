@@ -1029,7 +1029,7 @@
             "settings": {
               "menu_image": "shopify:\/\/shop_images\/Mob.jpg",
               "menu_text": "MOB",
-              "menu_link_1": "https:\/\/www.couturecandy.com\/collections\/mother-of-the-bride-dresses",
+              "menu_link_1": "\/collections\/mother-of-the-bride-dresses",
               "menu": ""
             }
           },
@@ -1056,7 +1056,7 @@
             "settings": {
               "menu_image": "shopify:\/\/shop_images\/Cocktail_7ad01e54-d32a-4d76-bbdb-4819b36dc585.jpg",
               "menu_text": "COCKTAIL",
-              "menu_link_1": "https:\/\/www.couturecandy.com\/collections\/cocktail-dresses",
+              "menu_link_1": "\/collections\/cocktail-dresses",
               "menu": ""
             }
           },
