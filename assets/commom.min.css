@@ -6653,15 +6653,6 @@ div#Tips-homecoming-dress, div#Choose-right-colordress {
   
 }
 
-@media only screen and (max-width:1200px){
-
-.listine-inner-events ul li {
-    width: 33.33%;
-}
-
-  
-}
-
 @media only screen and (max-width:767px){
 .listine-inner-events ul li {
     width: 100%;
