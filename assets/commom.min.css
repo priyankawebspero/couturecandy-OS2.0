@@ -3312,6 +3312,16 @@ body.template-page .main-page-wrapper .container {
 
 }
 
+@media only screen and (max-width:1315px){
+  
+.main-header .wrapp-header ul#menu-main-navigation li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+}
+
+
 @media only screen and (max-width:1400px) and (min-width:992px){
   
   .main-header .container .header_middle_block .logo.col-4 {
