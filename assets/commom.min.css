@@ -6599,12 +6599,8 @@ div#Tips-homecoming-dress, div#Choose-right-colordress {
     padding: 0 5px !important;
 }
 
-.template-page .site-content ul {
-    margin-bottom: 20px;
-    list-style: none;
-}
 
-.template-page .site-content li:before {
+.listine-inner-events ul li:before {
     display: none !important;
 }
 
