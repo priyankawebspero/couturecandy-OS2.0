@@ -6583,7 +6583,33 @@ div#Tips-homecoming-dress, div#Choose-right-colordress {
     text-decoration: underline;
 }
 
+.listine-inner-events ul li {
+    width: 25%;
+    margin-bottom: 10px !important;
+    padding: 0 5px !important;
+}
+
+.template-page .site-content ul {
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.template-page .site-content li:before {
+    display: none !important;
+}
+
+.listine-inner-events ul li a {
+    font-size: 14px;
+}
+
 @media only screen and (min-width: 768px){
+
+.listine-inner-events ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+}
+  
 .top-tren-ration {
     position: relative;
     padding-bottom: 140%;
@@ -6615,6 +6641,57 @@ div#Tips-homecoming-dress, div#Choose-right-colordress {
     width: 50%;
 }
   
+}
+
+@media only screen and (max-width:1200px){
+
+.listine-inner-events ul li {
+    width: 33.33%;
+}
+
+  
+}
+
+@media only screen and (max-width:767px){
+.listine-inner-events ul li {
+    width: 100%;
+}
+
+.listine-inner-events ul {
+    display: block;
+    margin: 10px 0 0 0;
+}
+
+.listine-inner-events ul li {
+    width: 100%;
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+    border-bottom: 1px solid #ccc;
+}
+
+.listine-inner-events ul li a {
+    display: block;
+    padding: 15px 35px 15px 0;
+    position: relative;
+}
+
+.listine-inner-events ul li a:after {
+    content: "\e606";
+    font-family: simple-line-icons;
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    position: absolute;
+    right: 3px;
+    z-index: 1;
+    top: 16px;
+}
+
+body#all-events.template-page .main-page-wrapper {
+    margin-bottom: 10px;
+}
+
 }
 
 
