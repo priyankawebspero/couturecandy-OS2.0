@@ -6606,6 +6606,7 @@ div#Tips-homecoming-dress, div#Choose-right-colordress {
 
 .listine-inner-events ul li a {
     font-size: 14px;
+    text-transform: capitalize;
 }
 
 @media only screen and (min-width: 768px){
