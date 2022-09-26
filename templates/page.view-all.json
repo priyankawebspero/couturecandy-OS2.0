@@ -1,12 +1,12 @@
 {
   "sections": {
-    "page-section": {
-      "type": "page-section",
+    "page-section-view-all": {
+      "type": "page-section-view-all",
       "settings": {
       }
     }
   },
   "order": [
-    "page-section"
+    "page-section-view-all"
   ]
 }
