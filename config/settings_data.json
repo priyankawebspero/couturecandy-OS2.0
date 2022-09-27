@@ -2290,8 +2290,22 @@
               "color": "#ffffff"
             }
           },
+          "14f533ea-b3c4-4751-a97d-41c95866072a": {
+            "type": "html_block",
+            "settings": {
+              "title": "Sale",
+              "icon": "",
+              "button_link": "shopify:\/\/collections\/dresses-on-sale",
+              "label": "",
+              "color": "#ffffff",
+              "html": "<div class=\"top_nav_main\">\n  <div class=\"top_section\">\n  <br>\n       <ul class=\"top_section_menu_ul\">\n            <li><a href=\"\/collections\/dresses-on-sale\">All Dresses On Sale<\/a><\/li>\n\t\t\t<li><a href=\"\/collections\/formal-gowns-on-sale\">Formal Gowns ON SALE<\/a><\/li>\n\t\t\t<li><a href=\"\/collections\/cocktail-dresses-on-sale\">Cocktail Dresses ON SALE<\/a><\/li>\n\t\t\t<li><a href=\"\/collections\/mother-of-the-bride-on-sale\">Mother of the Bride ON SALE<\/a><\/li>\n\t\t\t<li><a href=\"\/collections\/bridesmaid-dresses-on-sale\">Bridesmaid Dresses ON SALE<\/a><\/li>\n\t\t\t<li><a href=\"\/collections\/prom-dresses-on-sale\">Prom Dresses ON SALE<\/a><\/li>\n\t\t\t<li><a href=\"\/collections\/plus-size-dresses-on-sale\">Plus Size Dresses ON SALE<\/a><\/li>\n\t\t\t<li><a href=\"\/collections\/homecoming-dresses-on-sale\">Homecoming Dresses ON SALE<\/a><\/li>\n\t\t\t<li><a href=\"\/collections\/long-dresses-on-sale\">Long Dresses ON SALE<\/a><\/li>\n\t\t\t<li><a href=\"\/collections\/short-dresses-on-sale\">Short Dresses ON SALE<\/a><\/li>\n\t\t\t<li><a href=\"\/collections\/party-dresses-on-sale\">Party Dresses ON SALE<\/a><\/li>\n\t\t\t<li><a href=\"\/collections\/quinceanera-dresses\/Dresses-on-Sale\">Quinceanera Dresses On Sale<\/a><\/li>\n\t\t\t<li><a href=\"\/collections\/ball-gowns-on-sale\">Ball Gowns On Sale<\/a><\/li>\n            <\/ul>   \n  <\/div>\n \n\n  \n  <div class=\"top_section\">\n    <h5 class=\"top_section_heading\">Designer On Sale<\/h5>\n        <ul class=\"top_section_menu_ul\">\n                <li class=\"\"><a href=\"\/collections\/mac-duggal-sale\">Mac Duggal<\/a><\/li>\n                <li class=\"\"><a href=\"\/collections\/mnm-couture-sale\">MNM Couture <\/a><\/li>\n                <li class=\"\"><a href=\"\/collections\/blush-sale\">Blush By Alexia Designs<\/a><\/li>\n                <li class=\"\"><a href=\"\/collections\/tarik-ediz-flash-sale\">Tarik Ediz<\/a><\/li>\n                <li class=\"\"><a href=\"\/collections\/sherri-hill-sale\">Sherri Hill<\/a><\/li>\n\t\t\t\t<li class=\"\"><a href=\"\/collections\/slny-dresses-sale\">Slny<\/a><\/li>\n        <\/ul>\n  <\/div>\n  \n<\/div>",
+              "menu_width": "750",
+              "user_scroll": false
+            }
+          },
           "1547460579328": {
             "type": "dropdown",
+            "disabled": true,
             "settings": {
               "title": "SALE",
               "icon": "",
@@ -2314,19 +2328,6 @@
               "menu_width": "",
               "user_scroll": false
             }
-          },
-          "14f533ea-b3c4-4751-a97d-41c95866072a": {
-            "type": "html_block",
-            "settings": {
-              "title": "Sale",
-              "icon": "",
-              "button_link": "shopify:\/\/collections\/dresses-on-sale",
-              "label": "",
-              "color": "#ffffff",
-              "html": "<div class=\"top_nav_main\">\n  <div class=\"top_section\">\n  <br>\n       <ul class=\"top_section_menu_ul\">\n            <li><a href=\"\/collections\/dresses-on-sale\">All Dresses On Sale<\/a><\/li>\n\t\t\t<li><a href=\"\/collections\/formal-gowns-on-sale\">Formal Gowns ON SALE<\/a><\/li>\n\t\t\t<li><a href=\"\/collections\/cocktail-dresses-on-sale\">Cocktail Dresses ON SALE<\/a><\/li>\n\t\t\t<li><a href=\"\/collections\/mother-of-the-bride-on-sale\">Mother of the Bride ON SALE<\/a><\/li>\n\t\t\t<li><a href=\"\/collections\/bridesmaid-dresses-on-sale\">Bridesmaid Dresses ON SALE<\/a><\/li>\n\t\t\t<li><a href=\"\/collections\/prom-dresses-on-sale\">Prom Dresses ON SALE<\/a><\/li>\n\t\t\t<li><a href=\"\/collections\/plus-size-dresses-on-sale\">Plus Size Dresses ON SALE<\/a><\/li>\n\t\t\t<li><a href=\"\/collections\/homecoming-dresses-on-sale\">Homecoming Dresses ON SALE<\/a><\/li>\n\t\t\t<li><a href=\"\/collections\/long-dresses-on-sale\">Long Dresses ON SALE<\/a><\/li>\n\t\t\t<li><a href=\"\/collections\/short-dresses-on-sale\">Short Dresses ON SALE<\/a><\/li>\n\t\t\t<li><a href=\"\/collections\/party-dresses-on-sale\">Party Dresses ON SALE<\/a><\/li>\n\t\t\t<li><a href=\"\/collections\/quinceanera-dresses\/Dresses-on-Sale\">Quinceanera Dresses On Sale<\/a><\/li>\n\t\t\t<li><a href=\"\/collections\/ball-gowns-on-sale\">Ball Gowns On Sale<\/a><\/li>\n            <\/ul>   \n  <\/div>\n \n\n  \n  <div class=\"top_section\">\n    <h5 class=\"top_section_heading\">Designer On Sale<\/h5>\n        <ul class=\"top_section_menu_ul\">\n                <li class=\"\"><a href=\"\/collections\/mac-duggal-sale\">Mac Duggal<\/a><\/li>\n                <li class=\"\"><a href=\"\/collections\/mnm-couture-sale\">MNM Couture <\/a><\/li>\n                <li class=\"\"><a href=\"\/collections\/blush-sale\">Blush By Alexia Designs<\/a><\/li>\n                <li class=\"\"><a href=\"\/collections\/tarik-ediz-flash-sale\">Tarik Ediz<\/a><\/li>\n                <li class=\"\"><a href=\"\/collections\/sherri-hill-sale\">Sherri Hill<\/a><\/li>\n\t\t\t\t<li class=\"\"><a href=\"\/collections\/slny-dresses-sale\">Slny<\/a><\/li>\n        <\/ul>\n  <\/div>\n  \n<\/div>",
-              "menu_width": "750",
-              "user_scroll": false
-            }
           }
         },
         "block_order": [
@@ -2339,9 +2340,9 @@
           "1531822542365",
           "1579764742937",
           "33efe2fb-3fa5-4471-82d1-fd876e390266",
+          "14f533ea-b3c4-4751-a97d-41c95866072a",
           "1547460579328",
-          "1546951753072",
-          "14f533ea-b3c4-4751-a97d-41c95866072a"
+          "1546951753072"
         ],
         "settings": {
           "active_sub_menu": "hover",
