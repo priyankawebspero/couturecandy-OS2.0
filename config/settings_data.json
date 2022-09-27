@@ -2314,6 +2314,19 @@
               "menu_width": "",
               "user_scroll": false
             }
+          },
+          "14f533ea-b3c4-4751-a97d-41c95866072a": {
+            "type": "html_block",
+            "settings": {
+              "title": "Sale",
+              "icon": "",
+              "button_link": "shopify:\/\/collections\/dresses-on-sale",
+              "label": "",
+              "color": "#ffffff",
+              "html": "",
+              "menu_width": "750",
+              "user_scroll": false
+            }
           }
         },
         "block_order": [
@@ -2327,7 +2340,8 @@
           "1579764742937",
           "33efe2fb-3fa5-4471-82d1-fd876e390266",
           "1547460579328",
-          "1546951753072"
+          "1546951753072",
+          "14f533ea-b3c4-4751-a97d-41c95866072a"
         ],
         "settings": {
           "active_sub_menu": "hover",
