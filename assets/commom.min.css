@@ -1671,6 +1671,14 @@ aside.sidebar-container .sidebar-inner ul {
     font-size: 13px;
 }
 
+.main-header .wrapp-header ul#menu-main-navigation li.menu-item-sale .sub-menu-dropdown li a {
+    font-size: 14px !important;
+}
+
+.main-header .wrapp-header ul#menu-main-navigation li.menu-item-sale .sub-menu-dropdown li {
+    margin: 10px 0 !important;
+}
+
 .basel-navigation .menu li .sub-menu-dropdown {
     box-shadow: 0 5px 10px rgba(0,0,0,0.15);
 }
