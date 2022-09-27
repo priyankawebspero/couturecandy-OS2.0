@@ -1682,7 +1682,7 @@ aside.sidebar-container .sidebar-inner ul {
 .main-header .wrapp-header ul#menu-main-navigation li.menu-item-sale .sub-menu-dropdown {
     width: 750px !important;
     left: auto;
-    right: 0;
+    right: -125px;
 }
 
 .basel-navigation .menu li .sub-menu-dropdown {
