@@ -1679,6 +1679,12 @@ aside.sidebar-container .sidebar-inner ul {
     margin: 10px 0 !important;
 }
 
+.main-header .wrapp-header ul#menu-main-navigation li.menu-item-sale .sub-menu-dropdown {
+    width: 750px !important;
+    left: auto;
+    right: 0;
+}
+
 .basel-navigation .menu li .sub-menu-dropdown {
     box-shadow: 0 5px 10px rgba(0,0,0,0.15);
 }
