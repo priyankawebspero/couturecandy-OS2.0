@@ -1181,7 +1181,7 @@ var boostPFSFilterConfig = {
                     visibility: 'visible'
                 });
             // Fixed Position
-            } else if (window.scrollY + stickHeight - 500 <= endPos) {
+            } else if (window.scrollY + stickHeight <= endPos) {
                 $stickyElement.addClass('boost-pfs-filter-stick');
                 $stickyElement.removeClass('boost-pfs-filter-absolute');
                 jQ('body').addClass('boost-pfs-filter-stick-body');
@@ -1192,7 +1192,7 @@ var boostPFSFilterConfig = {
                 $stickyElement.css({
                     position: 'fixed',
                     width: isVertical ? stickWidth : '',
-                    maxHeight: (window.innerHeight - offsetTop - 150) + 'px',
+                    maxHeight: (window.innerHeight - offsetTop) + 'px',
                     overflow: isVertical ? 'auto' : 'visible',
                     visibility: 'visible',
                     top: offsetTop + 'px'
