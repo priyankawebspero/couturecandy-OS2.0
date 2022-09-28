@@ -1145,7 +1145,7 @@ var boostPFSFilterConfig = {
             var endPos = jQ(endElement).position().top + jQ(endElement).outerHeight() - 300;
             var stickElementClass = ($stickyElement[0].classList[0] == 'boost-pfs-filter-tree' || $stickyElement[0].classList[0] == 'boost-pfs-filter-tree-h-wrapper') ? $stickyElement[0].classList[0] + '-stick-body' : 'boost-pfs-filter-tree-button-stick-wrapper-body';
             var productListTooShort = jQ(endElement).height() <= windowHeight + 100;
-
+console.log(jQ(endElement).height(), windowHeight)
             // Check for sticky header and announcement bar to avoid
             var offsetTop = 0;
             var $stickyHeader = jQ(avoidElement);
