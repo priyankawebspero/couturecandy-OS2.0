@@ -3057,6 +3057,8 @@ span.promguide-side-title.open{
     padding-bottom: 0;
 }
 
+.boost-pfs-filter-left-col.boost-pfs-filter-stick{background: #fff;}
+
 @media only screen and (min-width:768px){
 
 .prom-work-des-inner {
