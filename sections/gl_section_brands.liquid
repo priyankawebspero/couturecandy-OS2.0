@@ -58,6 +58,11 @@
                           {%- else -%}
                             {{ 'logo' | placeholder_svg_tag: 'gl_placeholder_svg' }}
                           {%- endif -%}
+                            {%- if block.settings.title  != 'blank' -%}
+                            <span class="title">{{ block.settings.title }}</span>
+                            {%- endif -%}
+
+                        
                           {%- if link != blank or photoswipe -%}
                             </a>
                           {%- endif -%}
