@@ -1,12 +1,12 @@
 {
   "sections": {
-    "page-section": {
-      "type": "page-section",
+    "gl_section_brands": {
+      "type": "gl_section_brands",
       "settings": {
       }
     }
   },
   "order": [
-    "page-section"
+    "gl_section_brands"
   ]
 }
