@@ -106,6 +106,112 @@
             "link": "shopify:\/\/collections\/christina-wu-elegance-mother-of-bride-dresses",
             "title": "Christina Wu Elegance Mother Of The Bride Dresses"
           }
+        },
+        "796b3ba9-7b58-4583-b156-b0f53b1be89b": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/alyce-paris-mother-of-the-bride-29143-dress-in-black-mother-of-the-bride-dresses-000-black-28674730950739_540x_1.webp",
+            "link": "shopify:\/\/collections\/alyce-paris-mother-of-bride-dresses",
+            "title": "Alyce Paris Mother Of Bride Dresses"
+          }
+        },
+        "8374f05d-4429-42cf-b66e-2a0ca06c981a": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "36da52d1-a318-4f25-bb37-43c44a337bb7": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "8ee7ef6d-6123-4ae0-a569-b8972e5880b9": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "d287e529-57bd-410d-ad8d-ab754f5befc2": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "d10e361f-dd6b-4235-be97-878fb5458b65": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "2c68f298-d18f-4e1f-a6e8-7adc86bd018e": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "05f494f8-1507-4468-8d13-8cc644e129e9": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "6f734de0-da84-4bc7-8ad8-5e7bff53de46": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "6286ddb5-f671-49a8-a976-c7a521773c86": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "d0eb2316-300d-4c91-adbe-8a6803e9137d": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "de3b04e0-9575-4c76-ace8-1568a05a19a6": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "11f5e1b9-262b-4ce5-880a-bea5b46c7e22": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "2c95c9b5-e922-4008-b7de-7ddc2a3aaabc": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "38963db7-56f3-47f4-b2f9-550b9eac872c": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
         }
       },
       "block_order": [
@@ -121,7 +227,22 @@
         "1e4a0acc-684c-4203-bb5a-10ae8528a29d",
         "34afd819-019a-4b0c-b672-bb8211b29ddf",
         "c6c86362-ae67-4dd5-9daf-34f134058ca2",
-        "367d2e01-41b8-4ccb-a8c5-7bf87bc8c666"
+        "367d2e01-41b8-4ccb-a8c5-7bf87bc8c666",
+        "796b3ba9-7b58-4583-b156-b0f53b1be89b",
+        "8374f05d-4429-42cf-b66e-2a0ca06c981a",
+        "36da52d1-a318-4f25-bb37-43c44a337bb7",
+        "8ee7ef6d-6123-4ae0-a569-b8972e5880b9",
+        "d287e529-57bd-410d-ad8d-ab754f5befc2",
+        "d10e361f-dd6b-4235-be97-878fb5458b65",
+        "2c68f298-d18f-4e1f-a6e8-7adc86bd018e",
+        "05f494f8-1507-4468-8d13-8cc644e129e9",
+        "6f734de0-da84-4bc7-8ad8-5e7bff53de46",
+        "6286ddb5-f671-49a8-a976-c7a521773c86",
+        "d0eb2316-300d-4c91-adbe-8a6803e9137d",
+        "de3b04e0-9575-4c76-ace8-1568a05a19a6",
+        "11f5e1b9-262b-4ce5-880a-bea5b46c7e22",
+        "2c95c9b5-e922-4008-b7de-7ddc2a3aaabc",
+        "38963db7-56f3-47f4-b2f9-550b9eac872c"
       ],
       "settings": {
         "title": "OUR PARTNERS",
