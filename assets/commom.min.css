@@ -6751,10 +6751,11 @@ body#all-events.template-page .main-page-wrapper {
 }
 
 .basel-gallery-item .img-bnds-cs + span.title {
-    font-size: 14px;
+    font-size: 15px;
     display: block;
     margin-bottom: 20px;
     margin-top: 20px;
+  font-family: 'google_sansregular';
 }
 
 .spb_wrapper.brnds-sec-title h2 {
