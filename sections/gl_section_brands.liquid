@@ -41,7 +41,7 @@
            <div class="spb_wrapper"> 
               <div id="gallery_{{ section.id }}" class="basel-images-gallery spacing-{{ section.settings.space | plus: 0 }} columns-{{ section.settings.columns | plus: 0 }} view-{{ section.settings.view }} photoswipe-images gl_mb_0">
                  {%- if section.settings.view != 'carousel' -%}
-                  <div class="gallery-images 123">
+                  <div class="gallery-images">
                   {%- else -%}
                   <div class="gallery-images owl-carousel ins-owl-carousel" data-time='{{ section.settings.silder_speed | plus: 0 }}' data-nav='{%- if section.settings.hide_button -%}false{%- else -%}true{%- endif -%}' data-items='{{ number }}' data-medium='{%- if number > 1 -%}{{ number | minus: 1 }}{%- else -%}1{%- endif -%}' data-small='{%- if number > 1 -%}{{ number | minus: 1 }}{%- else -%}1{%- endif -%}' data-exsmall='{%- if number > 1 -%}2{%- else -%}1{%- endif -%}' data-dots='{%- if section.settings.hide_pagination -%}false{%- else -%}true{%- endif -%}' data-autoplay='{%- if section.settings.autoplay -%}true{%- else -%}false{%- endif -%}' data-loop='{%- if section.settings.slider_loop -%}true{%- else -%}false{%- endif -%}'>
                   {%- endif -%}
