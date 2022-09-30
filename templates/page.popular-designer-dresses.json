@@ -520,13 +520,22 @@
             "link": "shopify:\/\/collections\/colors-dress-mermaid-dresses",
             "title": "Colors Mermaid Dresses"
           }
+        },
+        "3a3e4af5-0aff-41d2-a1e5-ce82380fae26": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/milano-formals-e1573-strapless-sweetheart-neckline-pleated-chiffon-cocktail-dress-1-pc-black-in-size-4-available-ccsale-4-black-28717953810515.jpg",
+            "link": "shopify:\/\/collections\/milano-formals",
+            "title": "Milano Formals"
+          }
         }
       },
       "block_order": [
         "16645166600d15f61b-0",
         "16645166600d15f61b-1",
         "16645166600d15f61b-2",
-        "16645166600d15f61b-3"
+        "16645166600d15f61b-3",
+        "3a3e4af5-0aff-41d2-a1e5-ce82380fae26"
       ],
       "settings": {
         "title": "",
