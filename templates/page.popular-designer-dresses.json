@@ -222,6 +222,63 @@
         "38963db7-56f3-47f4-b2f9-550b9eac872c": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/blush-pleated-straight-across-neck-beaded-a-line-dress-9117-special-occasion-dress-0-lavender-7287817535571.jpg",
+            "link": "shopify:\/\/collections\/blush-cocktail-dresses",
+            "title": "Blush By Alexia Designs Blush Cocktail Dresses"
+          }
+        },
+        "d8a9f0fc-9169-443d-ab6d-c5a541fc4115": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "73ec39cc-cf56-4de2-ac65-e597967f70b1": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "36ac498d-418c-43e6-9ac6-79c8cc2c9a3b": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "28081f61-8d1c-45d2-89ad-caebb96f5c51": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "1b96201e-834b-480e-ad19-d610b0083be1": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "9cc97d5f-a21c-4cc8-b369-27cb80dd3c6f": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "92804835-4d90-4224-a248-075f030cb139": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "2d28e64d-d9fa-4c8c-b54f-d4b0bc570824": {
+          "type": "logo_image",
+          "settings": {
             "link": "",
             "title": ""
           }
@@ -255,7 +312,15 @@
         "de3b04e0-9575-4c76-ace8-1568a05a19a6",
         "11f5e1b9-262b-4ce5-880a-bea5b46c7e22",
         "2c95c9b5-e922-4008-b7de-7ddc2a3aaabc",
-        "38963db7-56f3-47f4-b2f9-550b9eac872c"
+        "38963db7-56f3-47f4-b2f9-550b9eac872c",
+        "d8a9f0fc-9169-443d-ab6d-c5a541fc4115",
+        "73ec39cc-cf56-4de2-ac65-e597967f70b1",
+        "36ac498d-418c-43e6-9ac6-79c8cc2c9a3b",
+        "28081f61-8d1c-45d2-89ad-caebb96f5c51",
+        "1b96201e-834b-480e-ad19-d610b0083be1",
+        "9cc97d5f-a21c-4cc8-b369-27cb80dd3c6f",
+        "92804835-4d90-4224-a248-075f030cb139",
+        "2d28e64d-d9fa-4c8c-b54f-d4b0bc570824"
       ],
       "settings": {
         "title": "OUR PARTNERS",
