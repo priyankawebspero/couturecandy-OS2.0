@@ -6758,6 +6758,9 @@ body#all-events.template-page .main-page-wrapper {
     padding-top: 40px !important;
     padding-bottom: 40px !important;
 }
+.img-bnds-cs:hover {
+    box-shadow: 0 0 0 1px #000 !important;
+}
 
 @media (max-width: 1199px){
 .img-bnds-cs{
