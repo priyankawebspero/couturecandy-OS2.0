@@ -366,6 +366,35 @@
         "3848a648-e92b-43b8-aa82-8d5d3f4cb008": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/cinderella-divine-cj534-long-pleated-metallic-high-slit-dress-bridesmaid-dresses-2-eggplant-28620174557267.jpg",
+            "link": "shopify:\/\/collections\/cinderella-divine-bridesmaid-dresses",
+            "title": "Cinderella Divine Bridesmaid Dresses"
+          }
+        },
+        "2ee9eb0a-b468-47f4-ad90-7b8c4893eaa3": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "322a9af5-2d02-4962-9430-ebe8c6654f88": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "c719c57e-61ee-41ae-9c7f-e52f9f44b5bc": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "44dc2b87-8922-4693-95d9-937cd53bd292": {
+          "type": "logo_image",
+          "settings": {
             "link": "",
             "title": ""
           }
@@ -417,7 +446,11 @@
         "d2374466-148e-4aab-8915-5d834d9c7c42",
         "b42b052a-01ea-45d3-80d5-17cc918be4b7",
         "4bb9299f-9671-4f32-a694-9e2bc1a9b004",
-        "3848a648-e92b-43b8-aa82-8d5d3f4cb008"
+        "3848a648-e92b-43b8-aa82-8d5d3f4cb008",
+        "2ee9eb0a-b468-47f4-ad90-7b8c4893eaa3",
+        "322a9af5-2d02-4962-9430-ebe8c6654f88",
+        "c719c57e-61ee-41ae-9c7f-e52f9f44b5bc",
+        "44dc2b87-8922-4693-95d9-937cd53bd292"
       ],
       "settings": {
         "title": "OUR PARTNERS",
