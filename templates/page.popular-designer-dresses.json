@@ -107,9 +107,78 @@
         "section_padding_bottom": "",
         "section_padding_left": ""
       }
+    },
+    "1664516660e078a184": {
+      "type": "gl_section_brands",
+      "blocks": {
+        "16645166600d15f61b-0": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "16645166600d15f61b-1": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "16645166600d15f61b-2": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "16645166600d15f61b-3": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "16645166600d15f61b-0",
+        "16645166600d15f61b-1",
+        "16645166600d15f61b-2",
+        "16645166600d15f61b-3"
+      ],
+      "settings": {
+        "title": "",
+        "padding_title": "78px-30px",
+        "row_stretch": "default",
+        "content_position": "default",
+        "use_photowipe": false,
+        "view": "carousel",
+        "space": "30",
+        "columns": "4",
+        "silder_speed": "5000",
+        "silder_per_view": "4",
+        "hide_pagination": false,
+        "hide_button": false,
+        "slider_loop": false,
+        "autoplay": false,
+        "hide_medium": false,
+        "hide_small": false,
+        "hide_extra_small": false,
+        "section_bg_color": "",
+        "section_border_color": "",
+        "section_border_style": "solid",
+        "section_border": "",
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding_top": "",
+        "section_padding_right": "",
+        "section_padding_bottom": "",
+        "section_padding_left": ""
+      }
     }
   },
   "order": [
-    "gl_section_brands"
+    "gl_section_brands",
+    "1664516660e078a184"
   ]
 }
