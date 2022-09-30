@@ -6790,6 +6790,8 @@ body#all-events.template-page .main-page-wrapper {
 }
 .basel-gallery-item .img-bnds-cs + span.title {
     margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
 }
 
 }
