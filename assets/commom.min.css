@@ -6723,3 +6723,50 @@ body#all-events.template-page .main-page-wrapper {
 } 
   
 }
+
+
+.img-bnds-cs img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.img-bnds-cs {
+    width: 100%;
+    max-width: 272px;
+    height: 100% !important;
+    max-height: 272px !important;
+    overflow: hidden;
+    border-radius: 100%;
+    border: 4px solid #fff !important;
+    box-shadow: 0 0 0 1px #e6e6e6;
+}
+.basel-gallery-item span.title:before {
+    display: none;
+}
+
+.basel-gallery-item span.title {
+    font-size: 15px;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: 'google_sansregular';
+}
+
+@media (max-width: 1199px){
+.img-bnds-cs{
+    max-width: 220px;
+    max-height: 220px !important;
+}
+
+}
+
+
+@media (max-width: 480px){
+.img-bnds-cs{
+    max-width: 220px;
+    max-height: 220px !important;
+}
+
+}
