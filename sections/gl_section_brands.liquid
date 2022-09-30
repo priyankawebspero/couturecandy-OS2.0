@@ -30,7 +30,7 @@
            <div class="spb_wrapper">
               <div class="spb_text_column spb_content_element gl_mb_0">
                   {%- if section.settings.padding_title != blank -%}{%- assign s_t_padding = section.settings.padding_title | remove: ' ' | split: '-' | join: ' ' -%}{%- endif -%}
-                 <div class="spb_wrapper"><h2 style="letter-spacing: 1px; margin: 0px;border-right-width: 2px; border-right-style: solid; border-right-color: #E4E4E4; text-align: center;{%- if section.settings.padding_title != blank -%}padding: {{s_t_padding}}{%- endif -%}">{{ section.settings.title }}</h2></div>
+                 <div class="spb_wrapper brnds-sec-title"><h2 style="letter-spacing: 1px; margin: 0px;border-right-width: 2px; border-right-style: solid; border-right-color: #E4E4E4; text-align: center;{%- if section.settings.padding_title != blank -%}padding: {{s_t_padding}}{%- endif -%}">{{ section.settings.title }}</h2></div>
               </div>
            </div>
         </div>
