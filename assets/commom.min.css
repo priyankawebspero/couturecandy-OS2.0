@@ -6771,6 +6771,11 @@ body#all-events.template-page .main-page-wrapper {
     box-shadow: 0 0 0 1px #000 !important;
 }
 
+.spb_wrapper.brnds-sec-title h2 {
+    font-size: 35px;
+    letter-spacing: 0 !important;
+}
+
 @media (max-width: 1199px){
 .img-bnds-cs{
     max-width: 220px;
@@ -6792,6 +6797,13 @@ body#all-events.template-page .main-page-wrapper {
     margin-top: 10px;
     margin-bottom: 5px;
     font-size: 14px;
+}
+
+.spb_wrapper.brnds-sec-title h2 {
+    padding-top: 30px !important;
+    padding-bottom: 10px !important;
+   font-size: 28px;
+    letter-spacing: 0 !important;
 }
 
 }
