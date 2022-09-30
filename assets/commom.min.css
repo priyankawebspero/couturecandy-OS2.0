@@ -6765,8 +6765,8 @@ body#all-events.template-page .main-page-wrapper {
 
 @media (max-width: 480px){
 .img-bnds-cs{
-    max-width: 220px;
-    max-height: 220px !important;
+    max-width: 140px;
+    max-height:140px !important;
 }
 
 }
