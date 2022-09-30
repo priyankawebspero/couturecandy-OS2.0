@@ -3,18 +3,12 @@
     "gl_section_brands": {
       "type": "gl_section_brands",
       "blocks": {
-        "367d2e01-41b8-4ccb-a8c5-7bf87bc8c666": {
-          "type": "logo_image",
-          "settings": {
-            "link": "",
-            "title": ""
-          }
-        },
         "e04ecef9-dd3f-4b90-8f59-a7482f26302b": {
           "type": "logo_image",
           "settings": {
-            "link": "",
-            "title": ""
+            "image": "shopify:\/\/shop_images\/blush-by-alexia-designs-5620-vibrant-off-shoulder-sleek-a-line-gown-special-occasion-dress-0-valentine-hot-pink-6565384421433.jpg",
+            "link": "shopify:\/\/collections\/blush-sale",
+            "title": "Blush by Alexia Designs Prom Dresses"
           }
         },
         "625ecfd3-d744-44c2-8eb5-74fc5775ee06": {
@@ -27,6 +21,14 @@
         "5a006037-3d2f-49e0-ae85-f314fb2dcfe4": {
           "type": "logo_image",
           "settings": {
+            "link": "",
+            "title": ""
+          }
+        },
+        "367d2e01-41b8-4ccb-a8c5-7bf87bc8c666": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/christina-wu-elegance-17906-sleeveless-ribbon-ornate-jersey-gown-special-occasion-dress-0-navy-28497445355603_540x_7bfc7aff-9348-444d-bf92-f105ec7d40f8.webp",
             "link": "",
             "title": ""
           }
@@ -68,10 +70,10 @@
         }
       },
       "block_order": [
-        "367d2e01-41b8-4ccb-a8c5-7bf87bc8c666",
         "e04ecef9-dd3f-4b90-8f59-a7482f26302b",
         "625ecfd3-d744-44c2-8eb5-74fc5775ee06",
         "5a006037-3d2f-49e0-ae85-f314fb2dcfe4",
+        "367d2e01-41b8-4ccb-a8c5-7bf87bc8c666",
         "74d4b674-ee54-4bbf-928f-4f33331fb823",
         "5b4a4fac-addb-4984-b963-35eaca0f4538",
         "ac55c8b0-6202-4d1f-b079-53ca64775bba",
