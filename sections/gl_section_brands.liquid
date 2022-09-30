@@ -53,13 +53,15 @@
                           {%- if link != blank or photoswipe -%}
                             <a{% if photoswipe == false %} onclick="window.location.href='{{ link }}'" {% endif %}href="{%- if photoswipe -%}{%-include 'gl_image_format',src: image , size: image_size -%}{%- else -%}{{ link }}{%- endif -%}" class="logo-bar__link" data-width="{{image.width}}" data-height="{{image.height}}" >
                           {%- endif -%}
-                        <div class="img-bnds-cs">
+                       
                           {%- if image != blank -%}
+                             <div class="img-bnds-cs">
                             <img width="{{ image.width }}" height="{{ image.height }}" src="{%-include 'gl_image_format',src: image , size: image_size -%}" alt="{{ image.alt }}" class="basel-gallery-image image-1 attachment-full">                           
                           {%- else -%}
                             {{ 'logo' | placeholder_svg_tag: 'gl_placeholder_svg' }}
+                            </div>
                           {%- endif -%}
-                        </div>
+                        
                             {%- if block.settings.title  != 'blank' -%}
                             <span class="title">{{ block.settings.title }}</span>
                             {%- endif -%}
