@@ -27,14 +27,6 @@
             "title": "La Femme Prom Dresses"
           }
         },
-        "367d2e01-41b8-4ccb-a8c5-7bf87bc8c666": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/christina-wu-elegance-17906-sleeveless-ribbon-ornate-jersey-gown-special-occasion-dress-0-navy-28497445355603_540x_7bfc7aff-9348-444d-bf92-f105ec7d40f8.webp",
-            "link": "",
-            "title": ""
-          }
-        },
         "74d4b674-ee54-4bbf-928f-4f33331fb823": {
           "type": "logo_image",
           "settings": {
@@ -46,8 +38,9 @@
         "5b4a4fac-addb-4984-b963-35eaca0f4538": {
           "type": "logo_image",
           "settings": {
-            "link": "",
-            "title": ""
+            "image": "shopify:\/\/shop_images\/sherri-hill-51910-two-piece-beaded-keyhole-cutout-long-dress-prom-dresses-00-blush-12154640891987.jpg",
+            "link": "shopify:\/\/collections\/sherri-hill-prom-dresses",
+            "title": "Sherri Hill Prom Dresses"
           }
         },
         "ac55c8b0-6202-4d1f-b079-53ca64775bba": {
@@ -70,18 +63,26 @@
             "link": "",
             "title": ""
           }
+        },
+        "367d2e01-41b8-4ccb-a8c5-7bf87bc8c666": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/christina-wu-elegance-17906-sleeveless-ribbon-ornate-jersey-gown-special-occasion-dress-0-navy-28497445355603_540x_7bfc7aff-9348-444d-bf92-f105ec7d40f8.webp",
+            "link": "",
+            "title": ""
+          }
         }
       },
       "block_order": [
         "e04ecef9-dd3f-4b90-8f59-a7482f26302b",
         "625ecfd3-d744-44c2-8eb5-74fc5775ee06",
         "5a006037-3d2f-49e0-ae85-f314fb2dcfe4",
-        "367d2e01-41b8-4ccb-a8c5-7bf87bc8c666",
         "74d4b674-ee54-4bbf-928f-4f33331fb823",
         "5b4a4fac-addb-4984-b963-35eaca0f4538",
         "ac55c8b0-6202-4d1f-b079-53ca64775bba",
         "82171dcc-8954-468a-ae50-1992bd15f54c",
-        "19af4b79-e665-4895-8053-0c68c6c4f824"
+        "19af4b79-e665-4895-8053-0c68c6c4f824",
+        "367d2e01-41b8-4ccb-a8c5-7bf87bc8c666"
       ],
       "settings": {
         "title": "OUR PARTNERS",
