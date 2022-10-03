@@ -1,12 +1,18 @@
 {
   "sections": {
-    "page-section": {
-      "type": "page-section",
+    "page-popular-dresses": {
+      "type": "page-popular-dresses",
+      "settings": {
+      }
+    },
+    "gl_section_brands": {
+      "type": "gl_section_brands",
       "settings": {
       }
     }
   },
   "order": [
-    "page-section"
+    "page-popular-dresses",
+    "gl_section_brands"
   ]
 }
