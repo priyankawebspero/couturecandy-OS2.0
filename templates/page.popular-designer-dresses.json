@@ -850,6 +850,51 @@
         "section_padding_bottom": "",
         "section_padding_left": ""
       }
+    },
+    "1664802936a9cab73c": {
+      "type": "gl_section_brands",
+      "blocks": {
+        "1664802936f41a84a7-0": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/milano-formals-e1573-strapless-sweetheart-neckline-pleated-chiffon-cocktail-dress-1-pc-black-in-size-4-available-ccsale-4-black-28717953810515_35fffd14-ec00-4710-9021-9584fa4e0486.jpg",
+            "link": "\/collections\/milano-formals",
+            "title": "Milano Formals"
+          }
+        }
+      },
+      "block_order": [
+        "1664802936f41a84a7-0"
+      ],
+      "settings": {
+        "title": "Designer Formal Dresses",
+        "padding_title": "78px-30px",
+        "row_stretch": "default",
+        "content_position": "default",
+        "use_photowipe": false,
+        "view": "masonry",
+        "space": "30",
+        "columns": "4",
+        "silder_speed": "5000",
+        "silder_per_view": "4",
+        "hide_pagination": false,
+        "hide_button": false,
+        "slider_loop": false,
+        "autoplay": false,
+        "hide_medium": false,
+        "hide_small": false,
+        "hide_extra_small": false,
+        "section_bg_color": "",
+        "section_border_color": "",
+        "section_border_style": "solid",
+        "section_border": "",
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding_top": "",
+        "section_padding_right": "",
+        "section_padding_bottom": "",
+        "section_padding_left": ""
+      }
     }
   },
   "order": [
@@ -863,6 +908,7 @@
     "1664802019dfb2488a",
     "166480219948561abc",
     "1664802574aa24a7ab",
-    "166480266705535d69"
+    "166480266705535d69",
+    "1664802936a9cab73c"
   ]
 }
