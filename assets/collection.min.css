@@ -1829,5 +1829,43 @@ display:none;
     min-width: 75px;
     text-align: center;
 }
+
+  .boost-pfs-filter-toolbar-top-mobile .boost-pfs-filter-toolbar-top-mobile-inner.boost-pfs-filter-toolbar-show-sort-by-mobile .boost-pfs-filter-tree-mobile-button.boost-pfs-filter-stick {
+    position: relative !important;
+    top: 0 !important;
+    max-height: inherit !important;
+}
+
+.boost-pfs-filter-toolbar-top-mobile .boost-pfs-filter-toolbar-top-mobile-inner.boost-pfs-filter-toolbar-show-sort-by-mobile .boost-pfs-filter-top-sorting button.boost-pfs-filter-top-sorting-wrapper {
+    background: #000;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.boost-pfs-filter-toolbar-top-mobile .boost-pfs-filter-toolbar-top-mobile-inner.boost-pfs-filter-toolbar-show-sort-by-mobile .boost-pfs-filter-top-sorting {
+    width: 50%;
+    margin-top: 0;
+    float: left;
+}
+
+.boost-pfs-filter-toolbar-top-mobile .boost-pfs-filter-toolbar-top-mobile-inner.boost-pfs-filter-toolbar-show-sort-by-mobile .boost-pfs-filter-tree-mobile-button.boost-pfs-filter-stick button {
+    margin: 0 !important;
+    background: #000 !important;
+    color: #fff !important;
+}
+
+.boost-pfs-filter-toolbar-top-mobile .boost-pfs-filter-toolbar-top-mobile-inner.boost-pfs-filter-toolbar-show-sort-by-mobile .boost-pfs-filter-tree-mobile-button.boost-pfs-filter-stick:before {
+    display: none !important;
+}
+
+.boost-pfs-filter-top-sorting-mobile .boost-pfs-filter-filter-dropdown {
+    top: auto !important;
+    bottom: 100%;
+}
+
+.boost-pfs-filter-custom-sorting button>span:after {
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
   
 }
