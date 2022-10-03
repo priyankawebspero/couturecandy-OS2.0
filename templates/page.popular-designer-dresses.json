@@ -229,7 +229,7 @@
         "row_stretch": "default",
         "content_position": "default",
         "use_photowipe": false,
-        "view": "carousel",
+        "view": "masonry",
         "space": "30",
         "columns": "4",
         "silder_speed": "5000",
