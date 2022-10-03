@@ -1867,5 +1867,13 @@ display:none;
     border-right: 1px solid #fff;
     border-bottom: 1px solid #fff;
 }
+
+.boost-pfs-filter-toolbar-top-mobile .boost-pfs-filter-toolbar-top-mobile-inner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
   
 }
