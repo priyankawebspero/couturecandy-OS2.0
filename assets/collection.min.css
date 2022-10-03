@@ -1813,14 +1813,16 @@ display:none;
 .faq_section .table_prom table tr td {
     padding: 10px 10px;
 }
-.faq_section .table_prom table tr td:last-child {
-    min-width: 75px;
-}
 
 .faq_section .faq-wrap img {
     float: none;
     margin-right: 0;
     margin-bottom: 1.2rem;
+}
+
+.faq_section .table_prom table tr td:last-child {
+    min-width: 75px;
+    text-align: center;
 }
   
 }
