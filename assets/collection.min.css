@@ -1782,3 +1782,17 @@ display:none;
 .faq_section .table_prom table tr td a {
     color: #000;
 }
+
+@media only screen and (max-width: 1550px){
+.faq_section {
+    padding: 30px 30px 50px 30px;
+}
+  
+}
+
+@media only screen and (max-width:1199px){
+.faq_section {
+  padding: 30px 20px 50px 20px;
+}
+  
+}
