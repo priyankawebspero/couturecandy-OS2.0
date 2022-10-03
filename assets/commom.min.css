@@ -6776,6 +6776,12 @@ body#all-events.template-page .main-page-wrapper {
     letter-spacing: 0 !important;
 }
 
+.brnds-sec-title h1 {
+    padding: 40px 0;
+    font-size: 35px;
+    letter-spacing: 0 !important;
+}
+
 @media (max-width: 1199px){
 .img-bnds-cs{
     max-width: 220px;
@@ -6804,6 +6810,12 @@ body#all-events.template-page .main-page-wrapper {
     padding-bottom: 10px !important;
    font-size: 28px;
     letter-spacing: 0 !important;
+}
+
+.brnds-sec-title h1 {
+     padding-top: 30px !important;
+    padding-bottom: 10px !important;
+   font-size: 28px;
 }
 
 }
