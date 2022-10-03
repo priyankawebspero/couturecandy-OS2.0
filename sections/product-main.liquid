@@ -16,6 +16,7 @@
             <div id="ReviewSection">
               <h3 class="review-heading">Customer Reviews for {{ product.vendor }}</h3>
                <div class="stjr-product-review-page" data-product-id="{{ product.id }}"></div>
+                {%- comment %}
                 <div class="yotpo yotpo-main-widget" data-product-id="{{ product.id }}" data-name="{{ product.title | escape }}" data-url="{{ shop.url }}{{ product.url }}" data-image-url="{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}" data-description="{{ product.description | escape }}">
                   {%- assign yotpo_offload_content = shop.metafields.yotpo.yotpo_offload_content %}
                   {%- assign time_now = 'now' | date: '%s' %}
@@ -34,6 +35,7 @@
                     {%- endfor -%}
                   {%- endif %}
                 </div>
+                 {%- endcomment %}
                 {% include 'products.custom_fields' %}
             </div>
             {%- if settings.show_related_products or settings.show_recently_products or product.metafields.meta.hashtag != blank -%}
