@@ -553,6 +553,96 @@
         "section_padding_bottom": "",
         "section_padding_left": ""
       }
+    },
+    "16648016397d016a2e": {
+      "type": "gl_section_brands",
+      "blocks": {
+        "1664801639ff19bb2b-0": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gls-by-gloria-gl2558-two-tone-embellished-lace-a-line-gown-special-occasion-dress-7587810967635_3b486189-492f-410c-90bd-e0e5277773c3.jpg",
+            "link": "\/collections\/gls-by-gloria-bridesmaid-dresses",
+            "title": "GLS By Gloria Bridesmaid Dresses"
+          }
+        },
+        "1664801639ff19bb2b-1": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/andrea-and-leo-a1015-strapless-pleated-a-line-long-gown-evening-dresses-2-sage-15868078784595_54233e81-ad6e-4047-a24a-3ed22da359d9.jpg",
+            "link": "\/collections\/andrea-and-leo-bridesmaid-dresses",
+            "title": "Andrea And Leo Bridesmaid Dresses"
+          }
+        },
+        "1664801639ff19bb2b-2": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/alexia-designs-4252-jeweled-cowl-neck-chiffon-sheath-dress-bridesmaid-dresses-0-eggplant-7475198427219_6e0b2ff9-f625-47ef-a61c-a39f4548698e.webp",
+            "link": "\/collections\/alexia-designs-bridesmaid-dresses",
+            "title": "Alexia Designs Bridesmaid Dresses"
+          }
+        },
+        "1664801639ff19bb2b-3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/portia-and-scarlett-ps21047-plunging-off-shoulder-dress-with-slit-evening-dresses-0-red-15892737261651_3ca99049-bbec-4b62-8b48-8a95ba89d08e.webp",
+            "link": "\/collections\/portia-and-scarlett-bridesmaid-dresses",
+            "title": "Portia And Scarlett Bridesmaid Dresses"
+          }
+        },
+        "50bc7760-792d-4dc3-8475-52ee6c78c79b": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cinderella-divine-cj534-long-pleated-metallic-high-slit-dress-bridesmaid-dresses-2-eggplant-28620174557267_ac6cf588-8fb6-4765-a868-2afddb2617af.jpg",
+            "link": "\/collections\/cinderella-divine-bridesmaid-dresses",
+            "title": "Cinderella Divine Bridesmaid Dresses"
+          }
+        },
+        "58c4345a-fe89-4448-8ce4-b20a738888d6": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/may-queen-mq1601-lace-appliqued-chiffon-off-shoulder-formal-gown-bridesmaid-dresses-4-mauve-7006497669203_fe00371c-8054-470e-8b60-137a1a0ad99f.webp",
+            "link": "\/collections\/may-queen-bridesmaid-dresses",
+            "title": "May Queen Bridesmaid Dresses"
+          }
+        }
+      },
+      "block_order": [
+        "1664801639ff19bb2b-0",
+        "1664801639ff19bb2b-1",
+        "1664801639ff19bb2b-2",
+        "1664801639ff19bb2b-3",
+        "50bc7760-792d-4dc3-8475-52ee6c78c79b",
+        "58c4345a-fe89-4448-8ce4-b20a738888d6"
+      ],
+      "settings": {
+        "title": "Designer Bridesmaid Dresses",
+        "padding_title": "78px-30px",
+        "row_stretch": "default",
+        "content_position": "default",
+        "use_photowipe": false,
+        "view": "masonry",
+        "space": "30",
+        "columns": "4",
+        "silder_speed": "5000",
+        "silder_per_view": "4",
+        "hide_pagination": false,
+        "hide_button": false,
+        "slider_loop": false,
+        "autoplay": false,
+        "hide_medium": false,
+        "hide_small": false,
+        "hide_extra_small": false,
+        "section_bg_color": "",
+        "section_border_color": "",
+        "section_border_style": "solid",
+        "section_border": "",
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding_top": "",
+        "section_padding_right": "",
+        "section_padding_bottom": "",
+        "section_padding_left": ""
+      }
     }
   },
   "order": [
@@ -561,6 +651,7 @@
     "1664794636ffebf98e",
     "1664799846e0feb050",
     "1664800650da7c775c",
-    "1664801178a8a794ea"
+    "1664801178a8a794ea",
+    "16648016397d016a2e"
   ]
 }
