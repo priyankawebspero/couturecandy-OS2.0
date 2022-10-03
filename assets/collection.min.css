@@ -1758,7 +1758,7 @@ display:none;
 
 .faq_section .table_prom table {
     border: 1px solid #ccc;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .faq_section .table_prom table tr td {
