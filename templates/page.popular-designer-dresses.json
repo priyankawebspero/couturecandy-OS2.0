@@ -355,12 +355,108 @@
         "section_padding_bottom": "",
         "section_padding_left": ""
       }
+    },
+    "1664800650da7c775c": {
+      "type": "gl_section_brands",
+      "blocks": {
+        "1664800650fb52619a-0": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/blush-pleated-straight-across-neck-beaded-a-line-dress-9117-special-occasion-dress-0-lavender-7287817535571_919a3741-c561-4e46-85f1-917ae6a157af.jpg",
+            "link": "\/collections\/blush-cocktail-dresses",
+            "title": "Blush By Alexia Designs Blush Cocktail Dresses"
+          }
+        },
+        "1664800650fb52619a-1": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jovani-04225-fitted-bead-embellished-cocktail-dress-cocktail-dresses-00-black-28535608541267_8a676016-c631-45b5-b8db-da128b417757.jpg",
+            "link": "\/collections\/jovani-cocktail-dresses",
+            "title": "Jovani Cocktail Dresses"
+          }
+        },
+        "1664800650fb52619a-2": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/la-femme-23790-gilded-high-jewel-short-leather-cocktail-dress-cocktail-dresses-00-black-5515340578873_13d6d443-0b4e-47ac-b2df-382aee4785cf.webp",
+            "link": "\/collections\/la-femme-cocktail-dresses",
+            "title": "La Femme Cocktail Dresses"
+          }
+        },
+        "1664800650fb52619a-3": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Mac Duggal Cocktail Dresses"
+          }
+        },
+        "fa461e70-b5c6-4126-932c-0904c2c44f60": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Sherri Hill Cocktail Dresses"
+          }
+        },
+        "26e374d5-1f6b-4ec4-9f5a-eee42984f7f7": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Tadashi Shoji Cocktail Dresses"
+          }
+        },
+        "9ca8cf81-75fe-460c-9a2e-8bfb5d347438": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Terani Couture Cocktail Dresses"
+          }
+        }
+      },
+      "block_order": [
+        "1664800650fb52619a-0",
+        "1664800650fb52619a-1",
+        "1664800650fb52619a-2",
+        "1664800650fb52619a-3",
+        "fa461e70-b5c6-4126-932c-0904c2c44f60",
+        "26e374d5-1f6b-4ec4-9f5a-eee42984f7f7",
+        "9ca8cf81-75fe-460c-9a2e-8bfb5d347438"
+      ],
+      "settings": {
+        "title": "Designer Cocktail Dresses",
+        "padding_title": "78px-30px",
+        "row_stretch": "default",
+        "content_position": "default",
+        "use_photowipe": false,
+        "view": "masonry",
+        "space": "30",
+        "columns": "4",
+        "silder_speed": "5000",
+        "silder_per_view": "4",
+        "hide_pagination": false,
+        "hide_button": false,
+        "slider_loop": false,
+        "autoplay": false,
+        "hide_medium": false,
+        "hide_small": false,
+        "hide_extra_small": false,
+        "section_bg_color": "",
+        "section_border_color": "",
+        "section_border_style": "solid",
+        "section_border": "",
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding_top": "",
+        "section_padding_right": "",
+        "section_padding_bottom": "",
+        "section_padding_left": ""
+      }
     }
   },
   "order": [
     "page-popular-dresses",
     "gl_section_brands",
     "1664794636ffebf98e",
-    "1664799846e0feb050"
+    "1664799846e0feb050",
+    "1664800650da7c775c"
   ]
 }
