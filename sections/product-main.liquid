@@ -15,6 +15,8 @@
             <div class="clearfix"></div>
             <div id="ReviewSection">
               <h3 class="review-heading">Customer Reviews for {{ product.vendor }}</h3>
+  <div class="stjr-product-review-page" data-product-id="{PRODUCT_ID}"></div>
+  {% comment %}
                 <div class="yotpo yotpo-main-widget" data-product-id="{{ product.id }}" data-name="{{ product.title | escape }}" data-url="{{ shop.url }}{{ product.url }}" data-image-url="{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}" data-description="{{ product.description | escape }}">
                   {%- assign yotpo_offload_content = shop.metafields.yotpo.yotpo_offload_content %}
                   {%- assign time_now = 'now' | date: '%s' %}
@@ -35,6 +37,7 @@
                 </div>
                 {% include 'products.custom_fields' %}
             </div>
+    {% endcomment %}
             {%- if settings.show_related_products or settings.show_recently_products or product.metafields.meta.hashtag != blank -%}
             <div class="container-fluid related-and-upsells">
               {%- if settings.show_related_products -%}
@@ -158,3 +161,4 @@ window.criteo_q.push(
     ]
   }
 {% endschema %}
+<script>(function(d,s,id,c){var js,rC=[],uRC=[],r=0;Array.from(document.querySelectorAll('[class*="stjr-"]')).forEach(r=>{rC=[...rC,...Array.from(r.classList).filter((cl)=>{return /^stjr-/.test(cl);})]});uRC=[...new Set(rC)];t=d.getElementsByTagName(s)[0];js=d.createElement(s);js.id=id;js.src='https://www.sitejabber.com/js/v2/59a6eb482c70a/widgets.js'+(uRC.length ? '?widget-classes=' + uRC.join("|") : '?widget-classes=stjr-base')+'';js.onload=js.onreadystatechange=function(){if(!r&&(!this.readyState||this.readyState[0]=='c')){r=1;c();}};t.parentNode.insertBefore(js,t);}(document,'script','sj-widget',function(){}));</script>
