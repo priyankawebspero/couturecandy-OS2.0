@@ -1772,6 +1772,13 @@ display:none;
     font-family: 'product_sans_mediumregular';
 }
 
+.faq_section .faq-wrap img {
+    float: left;
+    margin-right: 1.5rem;
+    max-height: 150px;
+    max-width: 150px;
+}
+
 .faq_section .table_prom table tr td a {
     color: #000;
 }
