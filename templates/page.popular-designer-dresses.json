@@ -7,12 +7,256 @@
     },
     "gl_section_brands": {
       "type": "gl_section_brands",
+      "blocks": {
+        "365e640f-ec6a-432c-bb50-0ec64a683f56": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Blush by Alexia Designs Prom Dresses"
+          }
+        },
+        "d75292d3-3aec-49ff-98b2-8e69ef87a8c9": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Mac Duggal Prom Dresses"
+          }
+        },
+        "df9b1014-6437-4ce4-a2e9-e043f71b8b84": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "La Femme Prom Dresses"
+          }
+        },
+        "08d94a10-0feb-412a-948e-e5391983a6cc": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Ashley Lauren Prom Dresses"
+          }
+        },
+        "6e4c2d10-83e0-425b-b2b3-f2b0fc89eb12": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Sherri Hill Prom Dresses"
+          }
+        },
+        "7cfa403d-24e3-44de-affb-d34f27bd28e8": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Jovani Prom Dresses"
+          }
+        },
+        "caf24391-4725-4a91-b3f6-4026e868db68": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Ellie Wilde Prom Dresses"
+          }
+        },
+        "5f652633-c34e-4bc0-b3df-d04ce57c2757": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Faviana Prom Dresses"
+          }
+        },
+        "e8981f3d-5c71-4f70-a9c2-82981b3a8933": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Alyce Paris Prom Dresses"
+          }
+        },
+        "9dc121c6-f4f7-4f94-99b4-687d8c89f2b7": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Cinderella Divine Prom Dresses"
+          }
+        },
+        "f98f7aa2-8d4b-42c6-a9bd-93afaf58d737": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Tarik Ediz Prom Dresses"
+          }
+        },
+        "e8051cc9-0fd5-4c12-b5a4-c33778f9b82c": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Madison James Prom Dresses"
+          }
+        }
+      },
+      "block_order": [
+        "365e640f-ec6a-432c-bb50-0ec64a683f56",
+        "d75292d3-3aec-49ff-98b2-8e69ef87a8c9",
+        "df9b1014-6437-4ce4-a2e9-e043f71b8b84",
+        "08d94a10-0feb-412a-948e-e5391983a6cc",
+        "6e4c2d10-83e0-425b-b2b3-f2b0fc89eb12",
+        "7cfa403d-24e3-44de-affb-d34f27bd28e8",
+        "caf24391-4725-4a91-b3f6-4026e868db68",
+        "5f652633-c34e-4bc0-b3df-d04ce57c2757",
+        "e8981f3d-5c71-4f70-a9c2-82981b3a8933",
+        "9dc121c6-f4f7-4f94-99b4-687d8c89f2b7",
+        "f98f7aa2-8d4b-42c6-a9bd-93afaf58d737",
+        "e8051cc9-0fd5-4c12-b5a4-c33778f9b82c"
+      ],
       "settings": {
+        "title": "Designer Prom Dresses",
+        "padding_title": "",
+        "row_stretch": "default",
+        "content_position": "default",
+        "use_photowipe": false,
+        "view": "grid",
+        "space": "30",
+        "columns": "4",
+        "silder_speed": "",
+        "silder_per_view": "4",
+        "hide_pagination": false,
+        "hide_button": false,
+        "slider_loop": false,
+        "autoplay": false,
+        "hide_medium": false,
+        "hide_small": false,
+        "hide_extra_small": false,
+        "section_bg_color": "",
+        "section_border_color": "",
+        "section_border_style": "solid",
+        "section_border": "",
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding_top": "",
+        "section_padding_right": "",
+        "section_padding_bottom": "",
+        "section_padding_left": ""
+      }
+    },
+    "1664794636ffebf98e": {
+      "type": "gl_section_brands",
+      "blocks": {
+        "16647946353ff8580d-0": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Christina Wu Elegance Mother Of The Bride Dresses"
+          }
+        },
+        "16647946353ff8580d-1": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Alyce Paris Mother Of Bride Dresses"
+          }
+        },
+        "16647946353ff8580d-2": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Mon Cheri Mother Of Bride Dresses"
+          }
+        },
+        "16647946353ff8580d-3": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "May Queen Mother Of The Bride Dresses"
+          }
+        },
+        "eee5e11a-fc18-4cd0-a66a-05c22bbca4d0": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Elizabeth K Mother Of The Bride Dresses"
+          }
+        },
+        "eeb9dccb-bca8-4f82-a273-c8d0b9aef612": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "La Femme Mother Of Bride Dresses"
+          }
+        },
+        "9e85749c-9b17-43ad-a8ad-00412f11ebdf": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Jovani Mother Of Bride Dresses"
+          }
+        },
+        "73ec3e59-d885-4edb-975c-f2d404d6a396": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Mac Duggal Mother Of Bride Dresses"
+          }
+        },
+        "47ceb6cc-9b77-419b-8b6b-98c0f1297d29": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Terani Couture Mother Of Bride Dresses"
+          }
+        },
+        "b6d01179-8d06-4216-9260-764ea3aa243a": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Tadashi Shoji Mother Of The Bride \/ Groom"
+          }
+        }
+      },
+      "block_order": [
+        "16647946353ff8580d-0",
+        "16647946353ff8580d-1",
+        "16647946353ff8580d-2",
+        "16647946353ff8580d-3",
+        "eee5e11a-fc18-4cd0-a66a-05c22bbca4d0",
+        "eeb9dccb-bca8-4f82-a273-c8d0b9aef612",
+        "9e85749c-9b17-43ad-a8ad-00412f11ebdf",
+        "73ec3e59-d885-4edb-975c-f2d404d6a396",
+        "47ceb6cc-9b77-419b-8b6b-98c0f1297d29",
+        "b6d01179-8d06-4216-9260-764ea3aa243a"
+      ],
+      "settings": {
+        "title": "Designer Mother Of The Bride Dresses",
+        "padding_title": "78px-30px",
+        "row_stretch": "default",
+        "content_position": "default",
+        "use_photowipe": false,
+        "view": "carousel",
+        "space": "30",
+        "columns": "4",
+        "silder_speed": "5000",
+        "silder_per_view": "4",
+        "hide_pagination": false,
+        "hide_button": false,
+        "slider_loop": false,
+        "autoplay": false,
+        "hide_medium": false,
+        "hide_small": false,
+        "hide_extra_small": false,
+        "section_bg_color": "",
+        "section_border_color": "",
+        "section_border_style": "solid",
+        "section_border": "",
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding_top": "",
+        "section_padding_right": "",
+        "section_padding_bottom": "",
+        "section_padding_left": ""
       }
     }
   },
   "order": [
     "page-popular-dresses",
-    "gl_section_brands"
+    "gl_section_brands",
+    "1664794636ffebf98e"
   ]
 }
