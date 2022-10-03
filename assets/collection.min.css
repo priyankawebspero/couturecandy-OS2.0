@@ -1733,3 +1733,42 @@ display:none;
     font-size: 17px;
     /* font-family: 'google_sansregular'; */
 }
+
+.faq_section ul.products {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.faq_section ul.products li {
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.faq_section .col-12.table_prom {
+    clear: both;
+    padding-top: 20px;
+}
+
+.faq_section .table_prom table {
+    border: 1px solid #ccc;
+}
+
+.faq_section .table_prom table tr td {
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 15px 10px;
+}
+
+.faq_section .table_prom table tr td .price {
+    color: #000;
+    font-family: 'product_sans_mediumregular';
+}
+
+.faq_section .table_prom table tr td a {
+    color: #000;
+}
