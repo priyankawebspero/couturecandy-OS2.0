@@ -643,6 +643,60 @@
         "section_padding_bottom": "",
         "section_padding_left": ""
       }
+    },
+    "1664802019dfb2488a": {
+      "type": "gl_section_brands",
+      "blocks": {
+        "1664802019c3a6eeb9-0": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/blush-5105-feathered-sweetheart-chiffon-a-line-gown-special-occasion-dress-0-fuschia-6565387173945_af467889-18c8-4e0c-96f6-7174ab5b8f2f.jpg",
+            "link": "\/collections\/blush-by-alexia-designs-evening-dresses",
+            "title": "Blush By Alexia Designs Evening Dresses"
+          }
+        },
+        "1664802019c3a6eeb9-1": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mon-cheri-corded-lace-mermaid-gown-220631-1-pc-rose-in-size-6-available-ccsale-6-rose-28734453284947_a5e439d2-7d04-4d1e-a264-c02ff969de5d.jpg",
+            "link": "\/collections\/mon-cheri-evening-dresses",
+            "title": "Mon Cheri Evening Dresses"
+          }
+        }
+      },
+      "block_order": [
+        "1664802019c3a6eeb9-0",
+        "1664802019c3a6eeb9-1"
+      ],
+      "settings": {
+        "title": "Designer Evening Dresses",
+        "padding_title": "78px-30px",
+        "row_stretch": "default",
+        "content_position": "default",
+        "use_photowipe": false,
+        "view": "masonry",
+        "space": "30",
+        "columns": "4",
+        "silder_speed": "5000",
+        "silder_per_view": "4",
+        "hide_pagination": false,
+        "hide_button": false,
+        "slider_loop": false,
+        "autoplay": false,
+        "hide_medium": false,
+        "hide_small": false,
+        "hide_extra_small": false,
+        "section_bg_color": "",
+        "section_border_color": "",
+        "section_border_style": "solid",
+        "section_border": "",
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding_top": "",
+        "section_padding_right": "",
+        "section_padding_bottom": "",
+        "section_padding_left": ""
+      }
     }
   },
   "order": [
@@ -652,6 +706,7 @@
     "1664799846e0feb050",
     "1664800650da7c775c",
     "1664801178a8a794ea",
-    "16648016397d016a2e"
+    "16648016397d016a2e",
+    "1664802019dfb2488a"
   ]
 }
