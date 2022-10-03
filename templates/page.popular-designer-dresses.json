@@ -289,22 +289,33 @@
         "16647998469a773b3e-1": {
           "type": "logo_image",
           "settings": {
-            "link": "",
-            "title": ""
+            "image": "shopify:\/\/shop_images\/dancing-queen-3001-cold-shoulder-gold-lace-applique-cocktail-dress-special-occasion-dress-xs-black-28883155779667_b0b50d77-1b56-4ac1-9535-566183aebd24.jpg",
+            "link": "\/collections\/dancing-queen-homecoming-dresses",
+            "title": "Dancing Queen Homecoming Dresses"
           }
         },
         "16647998469a773b3e-2": {
           "type": "logo_image",
           "settings": {
-            "link": "",
-            "title": ""
+            "image": "shopify:\/\/shop_images\/jovani-03929-sleeveless-v-neck-floral-print-fit-and-flare-dress-homecoming-dresses-00-red-27947580981331_eaa4420b-95b1-4550-b8bb-0e162806ec1e.jpg",
+            "link": "\/collections\/jovani-homecoming-dresses",
+            "title": "Jovani Homecoming Dresses"
           }
         },
         "16647998469a773b3e-3": {
           "type": "logo_image",
           "settings": {
-            "link": "",
-            "title": ""
+            "image": "shopify:\/\/shop_images\/tiffany-homecoming-27059-embellished-neckline-short-chiffon-dress-special-occasion-dress-5535890407481_e7c53b6b-92dd-420b-9cf7-dcad2fb79156.jpg",
+            "link": "\/collections\/tiffany-homecoming",
+            "title": "Tiffany Homecoming"
+          }
+        },
+        "1a51a6b6-1d07-4fac-a5f3-72e2f4d0cc28": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/primavera-couture-3815-beaded-v-neck-cocktail-dress-special-occasion-dress-00-lilac-30837406564435_f2b18729-a65f-4255-be17-e5040a3aea2c.jpg",
+            "link": "\/collections\/primavera-couture-homecoming-dresses",
+            "title": "Primavera Couture Homecoming Dresses"
           }
         }
       },
@@ -312,7 +323,8 @@
         "16647998469a773b3e-0",
         "16647998469a773b3e-1",
         "16647998469a773b3e-2",
-        "16647998469a773b3e-3"
+        "16647998469a773b3e-3",
+        "1a51a6b6-1d07-4fac-a5f3-72e2f4d0cc28"
       ],
       "settings": {
         "title": "Designer Homecoming Dresses",
