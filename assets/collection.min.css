@@ -1801,5 +1801,20 @@ display:none;
 .faq_section {
   padding: 30px 15px;
 }
+
+.faq_section h2 {
+    font-size: 24px;
+}
+
+.faq_section .faq-wrap img {
+    margin-right: 1rem;
+}
+
+.faq_section .table_prom table tr td {
+    padding: 10px 10px;
+}
+.faq_section .table_prom table tr td:last-child {
+    min-width: 75px;
+}
   
 }
