@@ -1721,3 +1721,15 @@ display:none;
 .faq_section {
     padding: 30px 50px 70px 50px;
 }
+
+.faq_section h2 {
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 12px;
+}
+
+.faq_section h3 {
+    font-family: 'product_sans_mediumregular';
+    font-size: 17px;
+    /* font-family: 'google_sansregular'; */
+}
