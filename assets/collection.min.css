@@ -1875,5 +1875,10 @@ display:none;
     width: 100%;
     z-index: 99;
 }
+
+.boost-pfs-filter-toolbar-top-mobile-inner.boost-pfs-filter-toolbar-show-sort-by-mobile .boost-pfs-filter-tree-mobile-button button {
+    color: #fff;
+    background: #000;
+}
   
 }
