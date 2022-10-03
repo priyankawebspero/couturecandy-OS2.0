@@ -454,6 +454,100 @@
         "section_padding_bottom": "",
         "section_padding_left": ""
       }
+    },
+    "1664801178a8a794ea": {
+      "type": "gl_section_brands",
+      "blocks": {
+        "1664801178b91ba7cc-0": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/elizabeth-k-gl1948-v-neck-lace-a-line-wedding-gown-wedding-dresses-27995250917459_f2cb4160-f29c-4296-b307-4e6e2e99e529.jpg",
+            "link": "\/collections\/elizabeth-k-bridal",
+            "title": "Elizabeth K Bridal"
+          }
+        },
+        "1664801178b91ba7cc-1": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jovani-06610-sweetheart-corset-bridal-gown-bridal-dresses-28325827903571_89824fe4-baf4-462f-b60c-b3edd7e12bda.jpg",
+            "link": "\/collections\/jovani-bridal",
+            "title": "Jovani Bridal"
+          }
+        },
+        "1664801178b91ba7cc-2": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Marys Bridal"
+          }
+        },
+        "1664801178b91ba7cc-3": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "May Queen Bridal"
+          }
+        },
+        "38f97e88-99ff-49b2-812d-d3a3a1fd0ac9": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Mori Lee Bridal"
+          }
+        },
+        "ca758b26-192d-4dd9-8899-d9454d4c4967": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Rachel Allan Bridal"
+          }
+        },
+        "debe98ca-75fd-4104-940b-4ee7e0091fe8": {
+          "type": "logo_image",
+          "settings": {
+            "link": "",
+            "title": "Wilderly Bride By Allure Bridals"
+          }
+        }
+      },
+      "block_order": [
+        "1664801178b91ba7cc-0",
+        "1664801178b91ba7cc-1",
+        "1664801178b91ba7cc-2",
+        "1664801178b91ba7cc-3",
+        "38f97e88-99ff-49b2-812d-d3a3a1fd0ac9",
+        "ca758b26-192d-4dd9-8899-d9454d4c4967",
+        "debe98ca-75fd-4104-940b-4ee7e0091fe8"
+      ],
+      "settings": {
+        "title": "Designer Bridal Dresses",
+        "padding_title": "78px-30px",
+        "row_stretch": "default",
+        "content_position": "default",
+        "use_photowipe": false,
+        "view": "masonry",
+        "space": "30",
+        "columns": "4",
+        "silder_speed": "5000",
+        "silder_per_view": "4",
+        "hide_pagination": false,
+        "hide_button": false,
+        "slider_loop": false,
+        "autoplay": false,
+        "hide_medium": false,
+        "hide_small": false,
+        "hide_extra_small": false,
+        "section_bg_color": "",
+        "section_border_color": "",
+        "section_border_style": "solid",
+        "section_border": "",
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding_top": "",
+        "section_padding_right": "",
+        "section_padding_bottom": "",
+        "section_padding_left": ""
+      }
     }
   },
   "order": [
@@ -461,6 +555,7 @@
     "gl_section_brands",
     "1664794636ffebf98e",
     "1664799846e0feb050",
-    "1664800650da7c775c"
+    "1664800650da7c775c",
+    "1664801178a8a794ea"
   ]
 }
