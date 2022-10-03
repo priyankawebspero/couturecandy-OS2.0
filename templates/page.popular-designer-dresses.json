@@ -760,6 +760,96 @@
         "section_padding_bottom": "",
         "section_padding_left": ""
       }
+    },
+    "1664802574aa24a7ab": {
+      "type": "gl_section_brands",
+      "blocks": {
+        "16648025745e453e3b-0": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/blush-by-alexia-designs-ruffled-sweetheart-ballgown-q175-special-occasion-dress-0-valentine-6565334319161_6c679554-e3b7-4c28-9367-6ed2cf0cb1bd.jpg",
+            "link": "\/collections\/blush-ball-gowns",
+            "title": "Blush By Alexia Designs Blush Ball Gowns"
+          }
+        }
+      },
+      "block_order": [
+        "16648025745e453e3b-0"
+      ],
+      "settings": {
+        "title": "Designer Ball Gowns",
+        "padding_title": "78px-30px",
+        "row_stretch": "default",
+        "content_position": "default",
+        "use_photowipe": false,
+        "view": "masonry",
+        "space": "30",
+        "columns": "4",
+        "silder_speed": "5000",
+        "silder_per_view": "4",
+        "hide_pagination": false,
+        "hide_button": false,
+        "slider_loop": false,
+        "autoplay": false,
+        "hide_medium": false,
+        "hide_small": false,
+        "hide_extra_small": false,
+        "section_bg_color": "",
+        "section_border_color": "",
+        "section_border_style": "solid",
+        "section_border": "",
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding_top": "",
+        "section_padding_right": "",
+        "section_padding_bottom": "",
+        "section_padding_left": ""
+      }
+    },
+    "166480266705535d69": {
+      "type": "gl_section_brands",
+      "blocks": {
+        "166480266784d83b73-0": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/colors-dress-2230-crystalline-sweetheart-bodice-mermaid-gown-prom-dresses-2-mauve-13809154457683_d166ce66-4f40-433d-bc65-0849c89beedd.webp",
+            "link": "\/collections\/colors-dress-mermaid-dresses",
+            "title": "Colors Mermaid Dresses"
+          }
+        }
+      },
+      "block_order": [
+        "166480266784d83b73-0"
+      ],
+      "settings": {
+        "title": "Designer Mermaid Dresses",
+        "padding_title": "78px-30px",
+        "row_stretch": "default",
+        "content_position": "default",
+        "use_photowipe": false,
+        "view": "masonry",
+        "space": "30",
+        "columns": "4",
+        "silder_speed": "5000",
+        "silder_per_view": "4",
+        "hide_pagination": false,
+        "hide_button": false,
+        "slider_loop": false,
+        "autoplay": false,
+        "hide_medium": false,
+        "hide_small": false,
+        "hide_extra_small": false,
+        "section_bg_color": "",
+        "section_border_color": "",
+        "section_border_style": "solid",
+        "section_border": "",
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding_top": "",
+        "section_padding_right": "",
+        "section_padding_bottom": "",
+        "section_padding_left": ""
+      }
     }
   },
   "order": [
@@ -771,6 +861,8 @@
     "1664801178a8a794ea",
     "16648016397d016a2e",
     "1664802019dfb2488a",
-    "166480219948561abc"
+    "166480219948561abc",
+    "1664802574aa24a7ab",
+    "166480266705535d69"
   ]
 }
