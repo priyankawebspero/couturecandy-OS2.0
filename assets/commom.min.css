@@ -6906,5 +6906,5 @@ body#all-events.template-page .main-page-wrapper {
     position: relative;
     max-height: 50px;
     min-height: 50px;
-    margin-bottom: 4px;
+    text-decoration: none;
 }
