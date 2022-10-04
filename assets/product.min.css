@@ -1587,6 +1587,14 @@ div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-w
     background: #e94949 !important;
 }
 
+#ReviewSection .stjr-product-review-page-widget-filter__sort-by label {
+    font-weight: normal;
+}
+
+#ReviewSection .stjr-product-review-page-widget__container-inner .stjr-product-review-page-widget-header__write-review-button .stjr-sj-button.stjr-product-review-button-see-all-reviews {
+    background: #e94949 !important;
+}
+
 .product-grid-item .product-element-top>a img {
     object-fit: cover;
     object-position: top;
@@ -1595,14 +1603,6 @@ div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-w
 .product-grid-item .product-element-top .hover-img a img {
     object-position: top;
     object-fit: cover;
-}
-
-#ReviewSection .stjr-product-review-page-widget-filter__sort-by label {
-    font-weight: normal;
-}
-
-#ReviewSection .stjr-product-review-page-widget__container-inner .stjr-product-review-page-widget-header__write-review-button .stjr-sj-button.stjr-product-review-button-see-all-reviews {
-    background: #e94949 !important;
 }
 
 .single-product-content .single_variation_wrap {
