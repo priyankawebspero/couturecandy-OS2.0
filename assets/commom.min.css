@@ -6857,5 +6857,5 @@ body#all-events.template-page .main-page-wrapper {
 
 .iwish_cc .iwishProducts {
     list-style: none;
-    margin: 0;padding: 0;
+    margin: 0 -15px; padding: 0;
 }
