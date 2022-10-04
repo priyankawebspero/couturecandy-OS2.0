@@ -6957,9 +6957,17 @@ body#all-events.template-page .main-page-wrapper {
     margin-top: 30px;
 }
 
+.iwishMsg {
+    padding: 0 50px;
+}
+
 @media only screen and (max-width:1550px){
 
 .iwish_cc {
+    padding: 0 30px;
+}
+
+.iwishMsg {
     padding: 0 30px;
 }
   
@@ -6968,6 +6976,10 @@ body#all-events.template-page .main-page-wrapper {
 @media only screen and (max-width:1199px){
 
 .iwish_cc {
+    padding: 0 20px;
+}
+
+  .iwishMsg {
     padding: 0 20px;
 }
   
@@ -7026,6 +7038,10 @@ body#all-events.template-page .main-page-wrapper {
   .iwishWrapper .iwishTitle {
     margin-bottom: 30px;
     padding: 15px 15px;
+}
+
+.iwishMsg {
+    padding: 0 15px;
 }
   
 }
