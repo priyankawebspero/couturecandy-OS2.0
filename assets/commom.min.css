@@ -4142,7 +4142,10 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
     padding-bottom: 8px;
 }
   
-
+.menu_block:nth-of-type(13) .menu-mobile-nav-container .site-mobile-menu>li>a {
+    text-transform: uppercase;
+}
+  
 .menu-mobile-nav-container {
     background: #fff !important;
     border-right: 1px solid #ccc;
