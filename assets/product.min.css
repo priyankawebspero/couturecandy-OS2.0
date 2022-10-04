@@ -1593,6 +1593,10 @@ div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-w
     object-fit: cover;
 }
 
+#ReviewSection .stjr-product-review-page-widget-filter__sort-by label {
+    font-weight: normal;
+}
+
 #ReviewSection .stjr-product-review-page-widget__container-inner .stjr-product-review-page-widget-header__write-review-button .stjr-sj-button.stjr-product-review-button-see-all-reviews {
     background: #e94949 !important;
 }
