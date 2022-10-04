@@ -1408,7 +1408,26 @@ border-color: #000;
     margin: 0 auto 8px auto;
 }
 
+/*---------new-review-design-----*/
 
+#ReviewSection .stjr-product-review-page-widget__container-inner {
+    max-width: 100% !important;
+}
+
+#ReviewSection .stjr-product-review-page-widget__container-inner 
+ .stjr-product-review-page-widget-header__average-rating {
+    font-size: 26px;
+    color: #000 !important;
+}
+
+#ReviewSection .stjr-product-review-page-widget__container-inner .stjr-product-review-page-widget-header__stars i.star {
+    font-size: 20px !important;
+}
+
+#ReviewSection .stjr-product-review-page-widget__container-inner .stjr-product-review-page-widget-header__num-reviews a {
+    color: #000 !important;
+    font-size: 14px;
+}
 
 @media only screen and (min-width:768px){
 
