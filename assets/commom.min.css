@@ -6949,3 +6949,11 @@ body#all-events.template-page .main-page-wrapper {
     color: #fff;
    
 }
+
+@media only screen and (max-width:1024px){
+
+.iwish_cc .iwishProducts>li {
+    width: 33.33%;
+}
+  
+}
