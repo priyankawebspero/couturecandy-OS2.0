@@ -2069,6 +2069,10 @@ div#ProdDetailInfomobile {
     height: 48px;
     line-height: 50px;
 }
+
+.single-product-content .single_variation_wrap .iwishAddWrap {
+    margin-left: 10px;
+}
   
 }
 
