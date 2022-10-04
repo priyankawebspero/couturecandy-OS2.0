@@ -6984,6 +6984,7 @@ body#all-events.template-page .main-page-wrapper {
     min-width: inherit;
     font-size: 15px;
     width: 100%;
+    max-width: 250px;
 }
 
 .iwish_cc .iwishProducts>li .iwishMeta .iwishMeta-title a {
