@@ -6859,3 +6859,10 @@ body#all-events.template-page .main-page-wrapper {
     list-style: none;
     margin: 0 -15px; padding: 0;
 }
+
+.iwish_cc .iwishProducts>li{
+    float: left;
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
