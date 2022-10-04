@@ -6985,5 +6985,12 @@ body#all-events.template-page .main-page-wrapper {
     font-size: 15px;
     width: 100%;
 }
+
+.iwish_cc .iwishProducts>li .iwishMeta .iwishMeta-title a {
+    font-size: 14px;
+    line-height: 1.2;
+    max-height: 32px;
+    min-height: 32px;
+}
   
 }
