@@ -1920,5 +1920,18 @@ display:none;
 .boost-pfs-filter-tree-v .boost-pfs-filter-refine-by .boost-pfs-filter-refine-by-items, .boost-pfs-filter-refine-by-wrapper-v .boost-pfs-filter-refine-by .boost-pfs-filter-refine-by-items {
     margin-top: 7px;
 }
+
+.boost-pfs-filter-tree-mobile-style3.boost-pfs-filter-tree-mobile-full-width-style .boost-pfs-filter-mobile-footer button.boost-pfs-filter-show-result {
+    width: 50%;
+    float: left;
+    font-size: 15px;
+    line-height: 24px;
+    border-right: 1px solid #fff;
+}
+
+.boost-pfs-filter-tree-mobile-style3.boost-pfs-filter-tree-mobile-full-width-style .boost-pfs-filter-mobile-footer button.boost-pfs-filter-button.boost-pfs-filter-clear-all {
+    float: left;
+    width: 50%;
+}
   
 }
