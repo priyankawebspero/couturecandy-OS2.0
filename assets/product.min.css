@@ -1526,6 +1526,17 @@ div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-w
     width: 100%;
 }
 
+div#ReviewSection .stjr-product-write-review-widget .stjr-review-form .stjr-product-write-review-widget__btns-row .stjr-button.stjr-button--write-review {
+    background: #e94949 !important;
+    text-transform: uppercase;
+}
+
+div#ReviewSection .stjr-product-write-review-widget .stjr-review-form .stjr-product-write-review-widget__btns-row  .stjr-button.stjr-button--back-reviews {
+    text-transform: uppercase;
+    background: #000 !important;
+    margin-right: 10px;
+}
+
 @media only screen and (min-width:768px){
 
 .single-product-content .cart button.button, .single-product-content .cart span.button a, span.contact_us_button a, .single-product-content .summary .out-of-stock {
