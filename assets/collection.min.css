@@ -1804,6 +1804,14 @@ display:none;
 }
 
 @media only screen and (max-width:767px){
+.boost-pfs-filter-toolbar-top-mobile-inner.boost-pfs-filter-toolbar-show-sort-by-mobile .boost-pfs-filter-tree-mobile-button {
+    width: 50%;
+    float: left;
+    visibility: visible !important;
+    position: relative !important;
+    top: 0 !important;
+}
+  
 .faq_section {
   padding: 30px 15px;
 }
