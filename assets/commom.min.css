@@ -6982,9 +6982,10 @@ body#all-events.template-page .main-page-wrapper {
 
 .iwish_cc .iwishProducts>li .iwishMeta input[type="submit"] {
     min-width: inherit;
-    font-size: 15px;
+    font-size: 14px;
     width: 100%;
     max-width: 250px;
+    padding: 10px;
 }
 
 .iwish_cc .iwishProducts>li .iwishMeta .iwishMeta-title a {
