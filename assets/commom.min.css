@@ -6950,6 +6950,13 @@ body#all-events.template-page .main-page-wrapper {
    
 }
 
+.iwishWrapper .iwishShareContainer {
+    padding: 0 15px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
 @media only screen and (max-width:1550px){
 
 .iwish_cc {
