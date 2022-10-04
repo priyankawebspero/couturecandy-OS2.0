@@ -1422,11 +1422,16 @@ border-color: #000;
 
 #ReviewSection .stjr-product-review-page-widget__container-inner .stjr-product-review-page-widget-header__stars i.star {
     font-size: 20px !important;
+    color: #e94949 !important;
 }
 
 #ReviewSection .stjr-product-review-page-widget__container-inner .stjr-product-review-page-widget-header__num-reviews a {
     color: #000 !important;
     font-size: 14px;
+}
+
+#ReviewSection .stjr-product-review-page-widget__container-inner .stars.stars--widgets.stars--widgets--medium i.star {
+    font-size: 16px !important;
 }
 
 @media only screen and (min-width:768px){
