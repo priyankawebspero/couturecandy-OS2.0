@@ -920,7 +920,7 @@
                                                   <a href="{{ check }}" rel="nofollow" class="single_add_to_cart_button button alt">{{ product.metafields.external | first | first }}</a>
                                                   {%- endif -%}
                                                </div>
-                                          {%- if settings.use_wishlist and pages['wishlist'].empty? != true -%}{%- include 'gl-wishlist-product' -%}{%- endif -%}
+                                          {%- if settings.use_wishlist and pages['wishlist'].empty? != true -%}{% include 'iwish_v2' with 'iwishproduct' %}{%- endif -%}
                                            </div>
                                         {%- else -%}
                                             {%- if settings.product_quantity_message -%}
