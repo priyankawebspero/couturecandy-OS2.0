@@ -1090,6 +1090,7 @@
           "0e167639-c162-4643-8966-421c2948277f": {
             "type": "menu_block",
             "settings": {
+              "menu_image": "shopify:\/\/shop_images\/unnamed_1.jpg",
               "menu_text": "Designers",
               "menu_link_1": "",
               "menu": "designer-mobile-menu"
