@@ -2,10 +2,11 @@
 {%- capture bc_layout -%}
 {%- case layout -%}
 {%- when 'productGridItemHtml' -%}
+    {% include 'iwish_v2' with 'iwishCollection' %}
 {% raw %}
 <div class="boost-pfs-filter-product-item boost-pfs-filter-product-item-grid {{gridWidthClass}}{{soldOutClass}}{{saleClass}} {{itemActiveSwapClass}}">
     <div class="boost-pfs-filter-product-item-inner">
-  {% include 'iwish_v2' with 'iwishCollection' %}
+
         <div class="boost-pfs-filter-product-item-image">
             {{itemImages}}
             <div class="boost-pfs-filter-product-item-label">{{itemLabels}}{{itemTagLabels}}</div>
@@ -24,10 +25,11 @@
 </div>
 {% endraw %}
 {%- when 'productListItemHtml' -%}
+    {% include 'iwish_v2' with 'iwishCollection' %}
 {% raw %}
 <div class="boost-pfs-filter-product-item boost-pfs-filter-product-item-list {{soldOutClass}}{{saleClass}} {{itemActiveSwapClass}}">
   <div class="boost-pfs-filter-product-item-inner">
-  {% include 'iwish_v2' with 'iwishCollection' %}
+
     <div class="boost-pfs-filter-product-item-image">
         {{itemImages}}
         <div class="boost-pfs-filter-product-item-label">{{itemLabels}}{{itemTagLabels}}</div>
