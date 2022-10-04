@@ -2553,12 +2553,16 @@ body.template-product  {
     z-index: 99;
 }
 
-.single-product-content .single_variation_wrap .iwishAddWrap .iWishAdd {
+.single-product-content .single_variation_wrap .iwishAddWrap .iWishAdd.iwishAdded {
     background: #333;
     color: #fff;
     height: 49px;
     padding: 0 10px;
     width: 100%;
+    letter-spacing: 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'google_sansregular';
 }
 
 .single-product-content .single_variation_wrap .iwishAddWrap .iWishAdd:before {
