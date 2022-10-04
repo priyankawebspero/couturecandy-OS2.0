@@ -1950,8 +1950,10 @@ display:none;
     background: #f5f5f5;
 }
 
+
 .boost-pfs-filter-tree-mobile-sticky.boost-pfs-filter-tree-mobile-full-width-style {
     padding-bottom: 55px;
+  height: 100%;
 }
   
 }
