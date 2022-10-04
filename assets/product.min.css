@@ -2564,6 +2564,7 @@ body.template-product  {
     text-transform: uppercase;
     font-family: 'google_sansregular';
     border:none;
+  border-radius:0;
 }
 
 .single-product-content .single_variation_wrap .iwishAddWrap .iWishAdd:before {
