@@ -7000,5 +7000,15 @@ body#all-events.template-page .main-page-wrapper {
 .iwish_cc {
     padding: 0 10px;
 }
+
+.iwish_cc .iwishProducts>li .iwishMeta .iwishMeta-price {
+    font-size: 14px;
+}
+
+.iwish_cc .iwishProducts>li .iwishMeta .iwishMeta-price .product-compare-price {
+    opacity: 0.8;
+    font-size: 13px;
+    padding-right: 5px;
+}
   
 }
