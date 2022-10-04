@@ -1579,6 +1579,10 @@ div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-w
     color: #e94949 !important;
 }
 
+#ReviewSection .stjr-product-review-page-widget__container-inner .stjr-product-review-page-widget-header__write-review-button .stjr-sj-button.stjr-sj-button-write-review {
+    background: #e94949 !important;
+}
+
 .product-grid-item .product-element-top>a img {
     object-fit: cover;
     object-position: top;
@@ -1587,6 +1591,10 @@ div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-w
 .product-grid-item .product-element-top .hover-img a img {
     object-position: top;
     object-fit: cover;
+}
+
+#ReviewSection .stjr-product-review-page-widget__container-inner .stjr-product-review-page-widget-header__write-review-button .stjr-sj-button.stjr-product-review-button-see-all-reviews {
+    background: #e94949 !important;
 }
 
 @media only screen and (min-width:768px){
