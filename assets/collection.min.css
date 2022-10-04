@@ -1927,17 +1927,16 @@ display:none;
     margin-top: 7px;
 }
 
+
+.boost-pfs-filter-tree-mobile-style3.boost-pfs-filter-tree-mobile-full-width-style .boost-pfs-filter-mobile-footer button.boost-pfs-filter-button.boost-pfs-filter-clear-all {
+    flex: 1 1 auto;
+}
+
 .boost-pfs-filter-tree-mobile-style3.boost-pfs-filter-tree-mobile-full-width-style .boost-pfs-filter-mobile-footer button.boost-pfs-filter-show-result {
-    width: 50%;
-    float: left;
     font-size: 15px;
     line-height: 24px;
     border-right: 1px solid #fff;
-}
-
-.boost-pfs-filter-tree-mobile-style3.boost-pfs-filter-tree-mobile-full-width-style .boost-pfs-filter-mobile-footer button.boost-pfs-filter-button.boost-pfs-filter-clear-all {
-    float: left;
-    width: 50%;
+    flex: 1 1 auto;
 }
   
 }
