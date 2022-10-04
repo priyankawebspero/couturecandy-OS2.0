@@ -1946,9 +1946,7 @@ display:none;
 .boost-pfs-filter-tree-mobile-sticky.boost-pfs-filter-tree-mobile-open .boost-pfs-filter-tree-content {
     background: #f5f5f5;
 }
-
-
-.boost-pfs-filter-tree-mobile-sticky.boost-pfs-filter-tree-mobile-full-width-style {
+.boost-pfs-filter-tree-mobile-sticky.boost-pfs-filter-tree-mobile-full-width-style.boost-pfs-filter-tree-mobile-open {
     padding-bottom: 55px;
   height: 100%;
 }
