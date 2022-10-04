@@ -1912,5 +1912,13 @@ display:none;
     margin-bottom: 0;
     padding: 15px 15px;
 }
+
+.boost-pfs-filter-tree-mobile-sticky.boost-pfs-filter-tree-v .boost-pfs-filter-refine-by .refine-by-item.boost-pfs-filter-option-label {
+    margin-top: 7px;
+}
+
+.boost-pfs-filter-tree-v .boost-pfs-filter-refine-by .boost-pfs-filter-refine-by-items, .boost-pfs-filter-refine-by-wrapper-v .boost-pfs-filter-refine-by .boost-pfs-filter-refine-by-items {
+    margin-top: 7px;
+}
   
 }
