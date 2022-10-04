@@ -1811,6 +1811,9 @@ display:none;
     position: relative !important;
     top: 0 !important;
 }
+.boost-pfs-filter-toolbar-top-mobile .boost-pfs-filter-toolbar-top-mobile-inner {
+    border-top: 1px solid #fff;
+}
   
 .faq_section {
   padding: 30px 15px;
