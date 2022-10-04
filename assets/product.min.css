@@ -1460,6 +1460,32 @@ border-color: #000;
     font-weight: normal;
     color: #000 !important;
     font-size: 19px !important;
+  order: 1;
+}
+
+#ReviewSection .stjr-product-review-page-widget__container-inner .stjr-reviews-list .stjr-product-review-page-widget-review-container .stjr-product-review-page-widget-review__review-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#ReviewSection .stjr-product-review-page-widget-review__review-info .stjr-product-review-page-widget-review__stars {
+    order: 2;
+}
+
+#ReviewSection .stjr-product-review-page-widget-review-container .stjr-product-review-page-widget-review__author-info .stjr-product-review-page-widget-review-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px !important;
+}
+#ReviewSection .stjr-product-review-page-widget-review__review-info .stjr-product-review-page-widget-review__content {
+    order: 3;
+}
+
+#ReviewSection .stjr-product-review-page-widget-review-container .stjr-product-review-page-widget-review__author-info .stjr-product-review-page-widget-review-info 
+ .stjr-product-review-page-widget-review-info__name {
+    color: #000 !important;
+    font-family: 'product_sans_mediumregular';
+    font-size: 16px;
 }
 
 @media only screen and (min-width:768px){
