@@ -1516,8 +1516,9 @@ div#ReviewSection .stjr-product-write-review-widget .stjr-review-form {
 
 div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-widget-body .stjr-review-form__field input {
     color: #000;
-    border: 1px solid #333;
+    border: 1px solid #ccc;
     width: 100%;
+  font-size: 15px;
 }
 
 div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-widget-body .stjr-review-form__field input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -1539,8 +1540,9 @@ div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-w
 
 div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-widget-body .stjr-review-form__field textarea {
     color: #000;
-    border: 1px solid #333;
+    border: 1px solid #ccc;
     width: 100%;
+  font-size: 15px;
 }
 
 div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-widget-body .stjr-review-form__field textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
