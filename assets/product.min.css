@@ -2558,6 +2558,10 @@ body.template-product  {
     color: #fff;
     height: 49px;
 }
+
+.single-product-content .single_variation_wrap .iwishAddWrap .iWishAdd.iwishAdded:before {
+    display: none;
+}
   
 }
 
