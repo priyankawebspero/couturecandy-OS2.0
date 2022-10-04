@@ -2,7 +2,7 @@
 
 <div class="wishlist-info-widget">
   {% if customer %}
-    {% include 'iwish_v2' with 'iwishlink' %}
+    <a href="/apps/iwish">Wishlist <span class="gl_count_wishlist iWishCount"></span></a>
   {% else %}
 <a href="/account/login">Wishlist <span class="gl_count_wishlist">0</span></a>
   {% endif %}
