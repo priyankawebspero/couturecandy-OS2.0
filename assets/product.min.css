@@ -2632,6 +2632,14 @@ span.contact_us_button a {
   .main-header .right-column .mobile_log img.mobile {
     max-width: 55px;
 }
+.single-product-content .single_variation_wrap .iwishAddWrap .iWishAdd {
+    font-size: 13px;
+}
+
+.single-product-content .single_variation_wrap .iwishAddWrap .iWishAdd:before {
+    margin-right: 6px;font-size: 17px;
+}
+
 }
 
 
