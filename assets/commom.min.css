@@ -6846,3 +6846,7 @@ body#all-events.template-page .main-page-wrapper {
     margin-bottom: 40px;
     padding: 20px 15px;
 }
+
+.iwishWrapper .iwishTitle h1 {
+    margin: 0;
+}
