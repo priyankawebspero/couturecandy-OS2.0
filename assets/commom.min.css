@@ -6884,3 +6884,7 @@ body#all-events.template-page .main-page-wrapper {
     object-fit: cover;
     object-position: top;
 }
+
+.iwish_cc .iwishProducts>li .iwishImgWrap {
+    margin-bottom: 20px;
+}
