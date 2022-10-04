@@ -7018,5 +7018,9 @@ body#all-events.template-page .main-page-wrapper {
     font-size: 13px;
     padding-right: 5px;
 }
+
+.iwish_cc .iwishProducts>li .iwishImgWrap {
+    margin-bottom: 10px;
+}
   
 }
