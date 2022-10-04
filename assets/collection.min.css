@@ -1910,6 +1910,7 @@ display:none;
 .boost-pfs-filter-tree-mobile-sticky.boost-pfs-filter-tree-v .boost-pfs-filter-refine-by {
     display: block;
     margin-bottom: 0;
+    padding: 15px 15px;
 }
   
 }
