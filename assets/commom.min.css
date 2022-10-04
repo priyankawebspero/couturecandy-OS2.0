@@ -6866,3 +6866,21 @@ body#all-events.template-page .main-page-wrapper {
     padding: 0 15px;
     margin-bottom: 30px;
 }
+
+.iwish_cc .iwishProducts>li .iwishImgWrap a {
+    display: block;
+    padding-bottom: 125%;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #b4b4b4;
+}
+
+.iwish_cc .iwishProducts>li .iwishImgWrap a img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: top;
+}
