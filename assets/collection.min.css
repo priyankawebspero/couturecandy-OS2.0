@@ -1941,5 +1941,9 @@ display:none;
     border-right: 1px solid #fff;
     flex: 1 1 auto;
 }
+
+.boost-pfs-filter-tree-mobile-style3.boost-pfs-filter-tree-mobile-full-width-style .boost-pfs-filter-options-wrapper {
+    padding-bottom: 60px;
+}
   
 }
