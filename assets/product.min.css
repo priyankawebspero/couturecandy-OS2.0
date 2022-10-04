@@ -1579,6 +1579,16 @@ div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-w
     color: #e94949 !important;
 }
 
+.product-grid-item .product-element-top>a img {
+    object-fit: cover;
+    object-position: top;
+}
+
+.product-grid-item .product-element-top .hover-img a img {
+    object-position: top;
+    object-fit: cover;
+}
+
 @media only screen and (min-width:768px){
 
 .single-product-content .cart button.button, .single-product-content .cart span.button a, span.contact_us_button a, .single-product-content .summary .out-of-stock {
