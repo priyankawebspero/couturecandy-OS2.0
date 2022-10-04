@@ -6977,7 +6977,7 @@ body#all-events.template-page .main-page-wrapper {
 @media only screen and (max-width:767px){
 
 .iwish_cc .iwishProducts>li {
-    width: 50%;
+    width: 50%;  padding: 0 5px;
 }
 
 .iwish_cc .iwishProducts>li .iwishMeta input[type="submit"] {
@@ -6991,6 +6991,13 @@ body#all-events.template-page .main-page-wrapper {
     line-height: 1.2;
     max-height: 32px;
     min-height: 32px;
+}
+.iwish_cc .iwishProducts {
+    margin: 0 -5px;
+}
+
+.iwish_cc {
+    padding: 0 10px;
 }
   
 }
