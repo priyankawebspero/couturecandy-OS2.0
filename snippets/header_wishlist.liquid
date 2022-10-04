@@ -4,7 +4,7 @@
   {% if customer %}
     {% include 'iwish_v2' with 'iwishlink' %}
   {% else %}
-<a href="/account/login">Wishlist <span class="gl_count_wishlist">{{ NITRO_WISHLIST_COUNT }}</span></a>
+<a href="/account/login">Wishlist <span class="gl_count_wishlist">0</span></a>
   {% endif %}
 </div>
 {%- endif -%}
