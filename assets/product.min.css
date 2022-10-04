@@ -2563,6 +2563,7 @@ body.template-product  {
     font-size: 15px;
     text-transform: uppercase;
     font-family: 'google_sansregular';
+    border:none;
 }
 
 .single-product-content .single_variation_wrap .iwishAddWrap .iWishAdd:before {
