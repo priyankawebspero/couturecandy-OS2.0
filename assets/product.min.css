@@ -2063,6 +2063,12 @@ div#ProdDetailInfomobile {
 .single-product-content .product-tabs-wrapper .shopify-tabs .tabs li {
     display: inline-block;
 }
+
+.single-product-content .single_variation_wrap .iwishAddWrap .iWishAdd {
+    width: 50px;
+    height: 48px;
+    line-height: 50px;
+}
   
 }
 
