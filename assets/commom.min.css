@@ -6957,3 +6957,11 @@ body#all-events.template-page .main-page-wrapper {
 }
   
 }
+
+@media only screen and (max-width:767px){
+
+.iwish_cc .iwishProducts>li {
+    width: 50%;
+}
+  
+}
