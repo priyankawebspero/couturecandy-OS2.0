@@ -2553,7 +2553,7 @@ body.template-product  {
     z-index: 99;
 }
 
-.single-product-content .single_variation_wrap .iwishAddWrap .iWishAdd.iwishAdded {
+.single-product-content .single_variation_wrap .iwishAddWrap .iWishAdd {
     background: #333;
     color: #fff;
     height: 49px;
