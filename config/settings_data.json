@@ -1086,6 +1086,14 @@
               "menu_link_1": "",
               "menu": "popular-categories"
             }
+          },
+          "0e167639-c162-4643-8966-421c2948277f": {
+            "type": "menu_block",
+            "settings": {
+              "menu_text": "Designers",
+              "menu_link_1": "",
+              "menu": "designer-mobile-menu"
+            }
           }
         },
         "block_order": [
@@ -1098,7 +1106,8 @@
           "2aee7e5b-9d17-44e4-845d-c3f0867c9d98",
           "77683a01-ea24-457e-9fed-83304f4ca04e",
           "dcb9abd5-d75b-451a-918c-7d34c393126f",
-          "57c386b2-831c-4850-a645-8dae860b7969"
+          "57c386b2-831c-4850-a645-8dae860b7969",
+          "0e167639-c162-4643-8966-421c2948277f"
         ],
         "settings": {
         }
