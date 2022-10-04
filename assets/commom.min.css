@@ -6950,6 +6950,22 @@ body#all-events.template-page .main-page-wrapper {
    
 }
 
+@media only screen and (max-width:1550px){
+
+.iwish_cc {
+    padding: 0 30px;
+}
+  
+}
+
+@media only screen and (max-width:1199px){
+
+.iwish_cc {
+    padding: 0 20px;
+}
+  
+}
+
 @media only screen and (max-width:1024px){
 
 .iwish_cc .iwishProducts>li {
