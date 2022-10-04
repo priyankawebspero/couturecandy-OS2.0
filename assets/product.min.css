@@ -1521,22 +1521,43 @@ div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-w
 }
 
 div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-widget-body .stjr-review-form__field input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: pink;
+  color: #000;
+  opacity:1;
 }
 div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-widget-body .stjr-review-form__field input::-moz-placeholder { /* Firefox 19+ */
-  color: pink;
+   color: #000;
+  opacity:1;
 }
 div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-widget-body .stjr-review-form__field input:-ms-input-placeholder { /* IE 10+ */
-  color: pink;
+   color: #000;
+  opacity:1;
 }
 div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-widget-body .stjr-review-form__field input:-moz-placeholder { /* Firefox 18- */
-  color: pink;
+   color: #000;
+  opacity:1;
 }
 
 div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-widget-body .stjr-review-form__field textarea {
     color: #000;
     border: 1px solid #333;
     width: 100%;
+}
+
+div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-widget-body .stjr-review-form__field textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000;
+  opacity:1;
+}
+div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-widget-body .stjr-review-form__field textarea::-moz-placeholder { /* Firefox 19+ */
+   color: #000;
+  opacity:1;
+}
+div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-widget-body .stjr-review-form__field textarea:-ms-input-placeholder { /* IE 10+ */
+   color: #000;
+  opacity:1;
+}
+div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-widget-body .stjr-review-form__field textarea:-moz-placeholder { /* Firefox 18- */
+   color: #000;
+  opacity:1;
 }
 
 div#ReviewSection .stjr-product-write-review-widget .stjr-review-form .stjr-product-write-review-widget__btns-row .stjr-button.stjr-button--write-review {
