@@ -1789,6 +1789,12 @@ display:none;
     max-width: 960px;
 }
 
+@media only screen and (min-width:768px){
+.boost-pfs-filter-stick.boost-pfs-filter-tree-v {
+    border: 1px solid #ccc;
+}
+}
+
 @media only screen and (max-width: 1550px){
 .faq_section {
     padding: 30px 30px 50px 30px;
