@@ -1520,6 +1520,17 @@ div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-w
     width: 100%;
 }
 
+div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-widget-body .stjr-review-form__field input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: pink;
+}
+div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-widget-body .stjr-review-form__field input::-moz-placeholder { /* Firefox 19+ */
+  color: pink;
+}
+div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-widget-body .stjr-review-form__field input:-ms-input-placeholder { /* IE 10+ */
+  color: pink;
+}
+
+
 div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-widget-body .stjr-review-form__field textarea {
     color: #000;
     border: 1px solid #333;
