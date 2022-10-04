@@ -1571,6 +1571,10 @@ div#ReviewSection .stjr-product-write-review-widget .stjr-review-form .stjr-prod
     margin-right: 10px;
 }
 
+.stjr-product-review-page-widget-filter__filter-by label {
+    font-weight: 500 !important;
+}
+
 div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-widget-body .stjr-review-form__field.stjr-review-form__stars i.star.star--medium.custom-icon-star2-full {
     color: #e94949 !important;
 }
