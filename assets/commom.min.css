@@ -6979,5 +6979,11 @@ body#all-events.template-page .main-page-wrapper {
 .iwish_cc .iwishProducts>li {
     width: 50%;
 }
+
+.iwish_cc .iwishProducts>li .iwishMeta input[type="submit"] {
+    min-width: inherit;
+    font-size: 15px;
+    width: 100%;
+}
   
 }
