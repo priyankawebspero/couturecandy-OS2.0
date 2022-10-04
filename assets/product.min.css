@@ -1420,9 +1420,7 @@ border-color: #000;
     color: #000 !important;
 }
 
-#ReviewSection .stjr-product-review-page-widget__container-inner .stjr-product-review-page-widget-header__stars i.star {
-    font-size: 20px !important;
-}
+
 
 #ReviewSection .stjr-product-review-page-widget__container-inner .stjr-product-review-page-widget-header__stars i.star.star--medium.custom-icon-star2 {
     color: #e94949 !important;
@@ -1491,6 +1489,24 @@ border-color: #000;
 #ReviewSection .stjr-product-review-page-widget__container-inner .stjr-reviews-list {
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
+}
+
+div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-widget-header {
+    display: none;
+}
+
+div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-widget-body .stjr-review-form__field.stjr-review-form__stars .stjr-review-form__tip {
+    font-weight: normal;
+    color: #000 !important;
+}
+
+div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-widget-body .stjr-review-form__field.stjr-review-form__stars i.star.star--medium.custom-icon-star2-empty {
+    color: #333;
+    opacity: 0.8;
+}
+
+#ReviewSection .stjr-product-review-page-widget__container-inner .stjr-product-review-page-widget-header__stars i.star {
+    font-size: 20px !important;
 }
 
 @media only screen and (min-width:768px){
