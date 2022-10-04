@@ -5,7 +5,7 @@
 {% raw %}
 <div class="boost-pfs-filter-product-item boost-pfs-filter-product-item-grid {{gridWidthClass}}{{soldOutClass}}{{saleClass}} {{itemActiveSwapClass}}">
     <div class="boost-pfs-filter-product-item-inner">
-  {% include 'iwish_v2' with 'iwishCollection' %}
+  <a class="iWishAddColl iwishcheck" href="#" data-variant="{{ product.variants.first.id }}" data-product="{{ product.id }}" data-pTitle="{{ product.title | escape }}">Add to Wishlist</a>
         <div class="boost-pfs-filter-product-item-image">
             {{itemImages}}
             <div class="boost-pfs-filter-product-item-label">{{itemLabels}}{{itemTagLabels}}</div>
@@ -27,6 +27,7 @@
 {% raw %}
 <div class="boost-pfs-filter-product-item boost-pfs-filter-product-item-list {{soldOutClass}}{{saleClass}} {{itemActiveSwapClass}}">
   <div class="boost-pfs-filter-product-item-inner">
+  <a class="iWishAddColl iwishcheck" href="#" data-variant="{{ product.variants.first.id }}" data-product="{{ product.id }}" data-pTitle="{{ product.title | escape }}">Add to Wishlist</a>
     <div class="boost-pfs-filter-product-item-image">
         {{itemImages}}
         <div class="boost-pfs-filter-product-item-label">{{itemLabels}}{{itemTagLabels}}</div>
