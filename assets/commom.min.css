@@ -6834,3 +6834,15 @@ body#all-events.template-page .main-page-wrapper {
 
 
 /*---wishlist-apge-design------------*/
+
+.iwishWrapper .iwishTitle {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
+}
+.iwishWrapper .iwishTitle {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
+    padding: 20px 15px;
+}
