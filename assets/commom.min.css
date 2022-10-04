@@ -7022,5 +7022,12 @@ body#all-events.template-page .main-page-wrapper {
 .iwish_cc .iwishProducts>li .iwishImgWrap {
     margin-bottom: 10px;
 }
+
+  .iwishWrapper .iwishTitle {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+    padding: 15px 15px;
+}
   
 }
