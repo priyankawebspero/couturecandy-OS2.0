@@ -1,2 +1,21 @@
 
 /****PLEASE DON'T MAKE CHANGES IN THIS FILE IT'S AFFECT THE CODE IF YOU NEED ANY HELP PLEASE CONTACT TO FLITS TEAM support@getflits.com ****/
+
+
+.flits-account-page-container .flits-account-page-nav{
+    border-radius: 8px;
+}
+.flits-account-page-container .flits-account-page-nav .flits-nav-tabs .flits-menu-item.flits-active:first-child, .flits-account-page-container .flits-account-page-nav .flits-nav-tabs .flits-menu-item:hover:first-child {
+    border-radius: 8px 8px 0 0;
+}
+.flits-account-page-container .flits-account-page-nav .flits-nav-tabs .flits-menu-item.flits-active {
+    border-left: 4px solid!important;
+}
+.flits-account-page-container .flits-account-page-nav {
+    width: 232px;
+}
+
+.flits-order-tracking{
+  text-decoration: underline;
+  color: rgb(71, 69, 122);
+}
