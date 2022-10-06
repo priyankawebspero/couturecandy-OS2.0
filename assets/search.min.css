@@ -1827,35 +1827,9 @@ body.template-search .boost-pfs-filter-toolbar-top-mobile {
 .boost-pfs-filter-toolbar-top-mobile .boost-pfs-filter-toolbar-top-mobile-inner {
     border-top: 1px solid #fff;
 }
+ 
   
-.faq_section {
-  padding: 30px 15px;
-}
-
-.faq_section h2 {
-    font-size: 24px;
-}
-
-.faq_section .faq-wrap img {
-    margin-right: 1rem;
-}
-
-.faq_section .table_prom table tr td {
-    padding: 10px 10px;
-}
-
-.faq_section .faq-wrap img {
-    float: none;
-    margin-right: 0;
-    margin-bottom: 1.2rem;
-}
-
-.faq_section .table_prom table tr td:last-child {
-    min-width: 75px;
-    text-align: center;
-}
-
-  .boost-pfs-filter-toolbar-top-mobile .boost-pfs-filter-toolbar-top-mobile-inner.boost-pfs-filter-toolbar-show-sort-by-mobile .boost-pfs-filter-tree-mobile-button.boost-pfs-filter-stick {
+.boost-pfs-filter-toolbar-top-mobile .boost-pfs-filter-toolbar-top-mobile-inner.boost-pfs-filter-toolbar-show-sort-by-mobile .boost-pfs-filter-tree-mobile-button.boost-pfs-filter-stick {
     position: relative !important;
     top: 0 !important;
     max-height: inherit !important;
