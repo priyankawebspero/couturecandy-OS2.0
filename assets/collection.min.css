@@ -2039,9 +2039,6 @@ display:none;
 
 .boost-pfs-filter-tree-vertical-style-expand:not(.boost-pfs-filter-tree-horizontal-style-expand).boost-pfs-filter-tree-open-body .boost-pfs-filter-left-col + .boost-pfs-filter-right-col {
       width: calc(100% - 261px);
-    transition: opacity 1s cubic-bezier(.25,.46,.45,.94),height .35s cubic-bezier(.25,.46,.45,.94);
-    -webkit-transition: opacity 1s cubic-bezier(.25,.46,.45,.94),height .35s cubic-bezier(.25,.46,.45,.94);
-    -moz-transition: opacity 1s cubic-bezier(.25,.46,.45,.94),height .35s cubic-bezier(.25,.46,.45,.94);
 }
     
   }
@@ -2050,9 +2047,6 @@ display:none;
 
   .boost-pfs-filter-tree-vertical-style-expand:not(.boost-pfs-filter-tree-horizontal-style-expand).boost-pfs-filter-tree-open-body .boost-pfs-filter-left-col + .boost-pfs-filter-right-col {
     width: calc(100% -226px);
-      transition: opacity 1s cubic-bezier(.25,.46,.45,.94),height .35s cubic-bezier(.25,.46,.45,.94);
-    -webkit-transition: opacity 1s cubic-bezier(.25,.46,.45,.94),height .35s cubic-bezier(.25,.46,.45,.94);
-    -moz-transition: opacity 1s cubic-bezier(.25,.46,.45,.94),height .35s cubic-bezier(.25,.46,.45,.94);
 }
 
 .boost-pfs-filter-left-col {
