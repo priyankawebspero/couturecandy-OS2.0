@@ -1814,3 +1814,260 @@ body.template-search .boost-pfs-filter-toolbar-top-mobile {
 }
   
 }
+
+
+@media only screen and (max-width:767px){
+.boost-pfs-filter-toolbar-top-mobile-inner.boost-pfs-filter-toolbar-show-sort-by-mobile .boost-pfs-filter-tree-mobile-button {
+    width: 50%;
+    float: left;
+    visibility: visible !important;
+    position: relative !important;
+    top: 0 !important;
+}
+.boost-pfs-filter-toolbar-top-mobile .boost-pfs-filter-toolbar-top-mobile-inner {
+    border-top: 1px solid #fff;
+}
+  
+.faq_section {
+  padding: 30px 15px;
+}
+
+.faq_section h2 {
+    font-size: 24px;
+}
+
+.faq_section .faq-wrap img {
+    margin-right: 1rem;
+}
+
+.faq_section .table_prom table tr td {
+    padding: 10px 10px;
+}
+
+.faq_section .faq-wrap img {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 1.2rem;
+}
+
+.faq_section .table_prom table tr td:last-child {
+    min-width: 75px;
+    text-align: center;
+}
+
+  .boost-pfs-filter-toolbar-top-mobile .boost-pfs-filter-toolbar-top-mobile-inner.boost-pfs-filter-toolbar-show-sort-by-mobile .boost-pfs-filter-tree-mobile-button.boost-pfs-filter-stick {
+    position: relative !important;
+    top: 0 !important;
+    max-height: inherit !important;
+}
+
+.boost-pfs-filter-toolbar-top-mobile .boost-pfs-filter-toolbar-top-mobile-inner.boost-pfs-filter-toolbar-show-sort-by-mobile .boost-pfs-filter-top-sorting button.boost-pfs-filter-top-sorting-wrapper {
+    background: #000;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.boost-pfs-filter-toolbar-top-mobile .boost-pfs-filter-toolbar-top-mobile-inner .boost-pfs-filter-top-sorting {
+    width: 50%;
+    margin-top: 0;
+    float: left;
+}
+
+.boost-pfs-filter-toolbar-top-mobile .boost-pfs-filter-toolbar-top-mobile-inner.boost-pfs-filter-toolbar-show-sort-by-mobile .boost-pfs-filter-tree-mobile-button.boost-pfs-filter-stick button {
+    margin: 0 !important;
+    background: #000 !important;
+    color: #fff !important;
+}
+
+.boost-pfs-filter-toolbar-top-mobile .boost-pfs-filter-toolbar-top-mobile-inner.boost-pfs-filter-toolbar-show-sort-by-mobile .boost-pfs-filter-tree-mobile-button.boost-pfs-filter-stick:before {
+    display: none !important;
+}
+
+.boost-pfs-filter-top-sorting-mobile .boost-pfs-filter-filter-dropdown {
+    top: auto !important;
+    bottom: 100%;
+}
+
+.boost-pfs-filter-custom-sorting button>span:after {
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.boost-pfs-filter-toolbar-top-mobile .boost-pfs-filter-toolbar-top-mobile-inner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.boost-pfs-filter-toolbar-top-mobile-inner.boost-pfs-filter-toolbar-show-sort-by-mobile .boost-pfs-filter-tree-mobile-button button {
+    color: #fff;
+    background: #000;
+}
+
+  .boost-pfs-filter-tree-mobile-style3.boost-pfs-filter-tree-mobile-full-width-style .boost-pfs-filter-options-wrapper {
+    width: 100%;
+    background: #f5f5f5;
+    right: 0;
+    left: 0;
+    top: 0 !important;
+    position: relative !important;
+    bottom: 0 !important;
+}
+
+.boost-pfs-filter-refine-by-wrapper {
+    background: #f5f5f5;
+}
+
+.boost-pfs-filter-tree-mobile-sticky.boost-pfs-filter-tree-v .boost-pfs-filter-refine-by {
+    display: block;
+    margin-bottom: 0;
+    padding: 15px 15px;
+}
+
+.boost-pfs-filter-tree-mobile-sticky.boost-pfs-filter-tree-v .boost-pfs-filter-refine-by .refine-by-item.boost-pfs-filter-option-label {
+    margin-top: 12px;
+}
+
+.boost-pfs-filter-tree-v .boost-pfs-filter-refine-by .boost-pfs-filter-refine-by-items, .boost-pfs-filter-refine-by-wrapper-v .boost-pfs-filter-refine-by .boost-pfs-filter-refine-by-items {
+    margin-top: 7px;
+}
+.boost-pfs-filter-tree-mobile-style3.boost-pfs-filter-tree-mobile-full-width-style .boost-pfs-filter-mobile-footer {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.boost-pfs-filter-tree-mobile-style3.boost-pfs-filter-tree-mobile-full-width-style .boost-pfs-filter-mobile-footer button.boost-pfs-filter-button.boost-pfs-filter-clear-all {
+    flex: 1 1 auto;
+}
+
+.boost-pfs-filter-tree-mobile-style3.boost-pfs-filter-tree-mobile-full-width-style .boost-pfs-filter-mobile-footer button.boost-pfs-filter-show-result {
+    font-size: 15px;
+    line-height: 24px;
+    border-right: 1px solid #fff;
+    flex: 1 1 auto;
+}
+
+
+.boost-pfs-filter-tree-mobile-sticky.boost-pfs-filter-tree-mobile-open .boost-pfs-filter-tree-content {
+    background: #f5f5f5;
+}
+.boost-pfs-filter-tree-mobile-sticky.boost-pfs-filter-tree-mobile-full-width-style.boost-pfs-filter-tree-mobile-open {
+    padding-bottom: 55px;
+  height: 100%;
+}
+  
+}
+
+/*-----filter-new-css----*/
+
+.boost-pfs-filter-left-col .boost-pfs-filter-left-col-inner {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: transform 1s cubic-bezier(.165,.84,.44,1) .22s,opacity 1s cubic-bezier(.165,.84,.44,1) .32s;
+}
+
+.boost-pfs-filter-tree-open-body .boost-pfs-filter-left-col .boost-pfs-filter-left-col-inner {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+  @media only screen and (min-width:768px){
+
+  .boost-pfs-container-default-fullwidth {
+      padding-right: 0;
+      padding-left: 0;
+    margin-left:50px;
+     margin-right:50px;
+  }
+
+ .boost-pfs-filter-left-col {
+    width: 293px;
+    transition: all .5s ease-in-out !important;
+    transform: translateX(-293px);
+}
+
+  .boost-pfs-filter-right-col {
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+
+    .boost-pfs-filter-tree-vertical-style-expand:not(.boost-pfs-filter-tree-horizontal-style-expand).boost-pfs-filter-tree-open-body .boost-pfs-filter-left-col + .boost-pfs-filter-right-col {
+    width: calc(100% - 294px);
+    transition: opacity 1s cubic-bezier(.25,.46,.45,.94),height .35s cubic-bezier(.25,.46,.45,.94);
+    -webkit-transition: opacity 1s cubic-bezier(.25,.46,.45,.94),height .35s cubic-bezier(.25,.46,.45,.94);
+    -moz-transition: opacity 1s cubic-bezier(.25,.46,.45,.94),height .35s cubic-bezier(.25,.46,.45,.94);
+}
+
+    .boost-pfs-filter-tree-vertical-style-expand:not(.boost-pfs-filter-tree-horizontal-style-expand).boost-pfs-filter-tree-open-body .boost-pfs-filter-left-col {
+
+    transform: translateX(0);
+}
+    
+  }
+
+ @media only screen and (min-width:1200px) and (max-width:1550px){
+
+  .boost-pfs-container-default-fullwidth {
+    margin-left:30px;
+     margin-right:30px;
+  }
+
+  .boost-pfs-filter-tree-vertical-style-expand:not(.boost-pfs-filter-tree-horizontal-style-expand).boost-pfs-filter-tree-open-body .boost-pfs-filter-left-col + .boost-pfs-filter-right-col {
+    width: calc(100% - 261px);
+    transition: opacity 1s cubic-bezier(.25,.46,.45,.94),height .35s cubic-bezier(.25,.46,.45,.94);
+    -webkit-transition: opacity 1s cubic-bezier(.25,.46,.45,.94),height .35s cubic-bezier(.25,.46,.45,.94);
+    -moz-transition: opacity 1s cubic-bezier(.25,.46,.45,.94),height .35s cubic-bezier(.25,.46,.45,.94);
+}
+
+ .boost-pfs-filter-left-col {
+    width: 260px;
+    transition: all .5s ease-in-out !important;
+    transform: translateX(-260px);
+} 
+    
+  }
+
+ @media only screen and (min-width:768px) and (max-width:1199px){
+
+  .boost-pfs-container-default-fullwidth {
+      margin-left:30px;
+     margin-right:30px;
+  }
+
+  .boost-pfs-filter-left-col {
+    width: 260px;
+    transition: all .5s ease-in-out !important;
+    transform: translateX(-260px);
+} 
+
+.boost-pfs-filter-tree-vertical-style-expand:not(.boost-pfs-filter-tree-horizontal-style-expand).boost-pfs-filter-tree-open-body .boost-pfs-filter-left-col + .boost-pfs-filter-right-col {
+      width: calc(100% - 261px);
+}
+    
+  }
+
+@media only screen and (min-width:768px) and (max-width:991px){
+
+  .boost-pfs-filter-tree-vertical-style-expand:not(.boost-pfs-filter-tree-horizontal-style-expand).boost-pfs-filter-tree-open-body .boost-pfs-filter-left-col + .boost-pfs-filter-right-col {
+    width: calc(100% - 226px);
+}
+
+.boost-pfs-filter-left-col {
+    width: 225px;
+    transition: all .5s ease-in-out !important;
+    transform: translateX(-225px);
+}
+    
+  }
+
+  
+
+/*-----filter-new-css-end----*/
+  
+
+
+
+
