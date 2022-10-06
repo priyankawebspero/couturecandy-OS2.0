@@ -2046,7 +2046,7 @@ display:none;
 @media only screen and (min-width:768px) and (max-width:991px){
 
   .boost-pfs-filter-tree-vertical-style-expand:not(.boost-pfs-filter-tree-horizontal-style-expand).boost-pfs-filter-tree-open-body .boost-pfs-filter-left-col + .boost-pfs-filter-right-col {
-    width: calc(100% -226px);
+    width: calc(100% - 226px);
 }
 
 .boost-pfs-filter-left-col {
