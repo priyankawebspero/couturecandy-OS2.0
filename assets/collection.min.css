@@ -2068,6 +2068,14 @@ display:none;
   
 }
 
+@media only screen and (max-width: 350px){
+.boost-pfs-filter-tree-mobile-style3.boost-pfs-filter-tree-mobile-full-width-style .boost-pfs-filter-mobile-footer button.boost-pfs-filter-show-result {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+  
+}
+
 /*-----filter-new-css-end----*/
   
 
