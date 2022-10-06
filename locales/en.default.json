@@ -600,7 +600,9 @@
       "billing_address": "Billing Address",
       "cancel_at": "Cancelled at",
       "fulfillment_status": "Fulfillment Status",
-      "payment_type": "Payment Type"
+      "payment_type": "Payment Type",
+      "tracking_number": "Tracking Number",
+      "track_your_order": "Track Your Order Here!"
     },
     "order_contact_us": {
       "contact_us_button": "Contact Us",
