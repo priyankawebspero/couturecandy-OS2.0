@@ -970,6 +970,10 @@ display:none;
     color: #e44949;
 }
 
+.boost-pfs-filter-products .boost-pfs-filter-product-item .boost-pfs-filter-product-bottom-inner h3 {
+    margin-bottom: 0;
+}
+
 @media only screen and (max-width:1550px){
   
   .boost-pfs-container-default-fullwidth {
