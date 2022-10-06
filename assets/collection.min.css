@@ -2057,7 +2057,16 @@ display:none;
     
   }
 
+  @media only screen and (max-width: 479px){
+.boost-pfs-filter-mobile-footer button.boost-pfs-filter-clear-all {
+    font-size: 13px;
+}
+
+.boost-pfs-filter-tree-mobile-style3.boost-pfs-filter-tree-mobile-full-width-style .boost-pfs-filter-mobile-footer button.boost-pfs-filter-show-result {
+    font-size: 13px;
+}
   
+}
 
 /*-----filter-new-css-end----*/
   
