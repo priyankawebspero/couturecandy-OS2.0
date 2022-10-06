@@ -1,12 +1,12 @@
 {
   "sections": {
-    "page-section": {
-      "type": "page-section",
+    "feedback-main": {
+      "type": "feedback-main",
       "settings": {
       }
     }
   },
   "order": [
-    "page-section"
+    "feedback-main"
   ]
 }
