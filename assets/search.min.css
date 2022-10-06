@@ -2037,7 +2037,24 @@ body.template-search .boost-pfs-filter-toolbar-top-mobile {
     
   }
 
+   @media only screen and (max-width: 479px){
+.boost-pfs-filter-mobile-footer button.boost-pfs-filter-clear-all {
+    font-size: 13px;
+}
+
+.boost-pfs-filter-tree-mobile-style3.boost-pfs-filter-tree-mobile-full-width-style .boost-pfs-filter-mobile-footer button.boost-pfs-filter-show-result {
+    font-size: 13px;
+}
   
+}
+
+@media only screen and (max-width: 350px){
+.boost-pfs-filter-tree-mobile-style3.boost-pfs-filter-tree-mobile-full-width-style .boost-pfs-filter-mobile-footer button.boost-pfs-filter-show-result {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+  
+} 
 
 /*-----filter-new-css-end----*/
   
