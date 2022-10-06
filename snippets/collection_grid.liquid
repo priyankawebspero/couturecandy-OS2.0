@@ -221,7 +221,7 @@
                   <a href="#" class="open-filters border-c">Color</a>
                   <a href="#" class="open-filters border-c">Price</a>
                {%- else -%}
-               {% comment %}<form class="shopify-ordering" method="get" action="{{cat_link_nathan_xx}}">
+               <form class="shopify-ordering" method="get" action="{{cat_link_nathan_xx}}">
                   {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
                   <label for="sort_by" class="label--hidden hide hidden">{{ 'collections.sorting.title' | t }}</label>
                   <select name="sort_by" id="sort_by" class="collection-sort__input orderby">
@@ -235,7 +235,7 @@
                       <option data-value="{{cat_link_nathan_xx | replace: sort_by, 'created-ascending' }}{{sort_symboy}}sort_by=created-ascending" value="created-ascending"{%- if sort_by == "created-ascending" %} selected="selected"{%- endif -%}>{{ 'collections.sorting.date_ascending' | t }}</option>
                   </select>
                   <input class="collection-header__default-sort" type="hidden" value="{{ collection.default_sort_by }}" />
-               </form>{% endcomment %}
+               </form>
                {%- endif -%}
             </div>
             {%- if settings.shop_filters %}{%- section 'gl_filter_area' -%}{%- endif -%}
