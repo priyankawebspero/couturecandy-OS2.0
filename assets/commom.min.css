@@ -7062,3 +7062,10 @@ button.boost-pfs-filter-show-result {
 .feedback-page .gl_row.spb_row .spb_wrapper .row {
     margin: 0;
 }
+.feedback-page .gl_row.spb_row .spb_wrapper form .field label {
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+.feedback-page .gl_row.spb_row .spb_wrapper form .field p:empty {
+    display: none;
+}
