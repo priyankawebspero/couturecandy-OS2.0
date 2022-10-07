@@ -7095,7 +7095,7 @@ button.boost-pfs-filter-show-result {
     border-color: #000;
 }
 
-@mediaonly screen and (max-width:767px){
+@media only screen and (max-width:767px){
 
 .feedback-page .gl_row.spb_row .spb_wrapper {
     width: 100%;
