@@ -1,3 +1,15 @@
 .iwishAddWrap {display: none !important;}
 .shopify-app-block a{font-size:16px;text-transform:uppercase;}
 .yith-wcwl-add-button {display: none;}
+.iWishView svg {
+    margin-top: ;
+    margin-top: 6px;
+    height: 24px;
+    width: 24px;
+}
+.iWishView {
+    margin-left: 10px;
+    position: relative;
+    margin-top: 12px;
+    top: 6px;
+}
