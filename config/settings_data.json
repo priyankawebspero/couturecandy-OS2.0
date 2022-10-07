@@ -2897,7 +2897,7 @@
       },
       "10603822535667782919": {
         "type": "shopify:\/\/apps\/wishlist\/blocks\/app-embed\/7f9269b0-1b45-4d0c-8479-faf04f05d8ac",
-        "disabled": true,
+        "disabled": false,
         "settings": {
           "hide_float_icon": true,
           "is_show_vendor": false,
