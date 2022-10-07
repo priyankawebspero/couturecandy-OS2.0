@@ -2,8 +2,7 @@
 .shopify-app-block a{font-size:16px;text-transform:uppercase;}
 .yith-wcwl-add-button {display: none;}
 .iWishView svg {
-    margin-top: ;
-    margin-top: 6px;
+    
     height: 24px;
     width: 24px;
 }
@@ -11,7 +10,7 @@
     margin-left: 10px;
     position: relative;
     
-    top: 6px;
+    
 }
 .iwish-counter {
     width: 17px;
