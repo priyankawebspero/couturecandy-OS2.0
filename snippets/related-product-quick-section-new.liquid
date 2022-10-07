@@ -25,7 +25,7 @@
 {%- assign url_nt_bl = false -%}
    {%- assign url_nt = product.url -%}
 {%- endif -%}
-<div class="iwishAddWrapColl product-grid-item product basel-hover-base{{gl_colum_mobile}}{{ gl_colum_width }} purchasable {% if sold_out %} outofstock{%- endif -%}" data-handle="{{itemHandle}}" data-iwish_variant="{{itemVariantId}}" data-iwish_product="{{itemId}}" data-iwish_pTitle="{{itemTitle}}">
+<div class="iwishAddWrapColl product-grid-item product basel-hover-base{{gl_colum_mobile}}{{ gl_colum_width }} purchasable {% if sold_out %} outofstock{%- endif -%}" data-handle="{{ product.handle }}" data-iwish_variant="{{ product.variants.first.id }}" data-iwish_product="{{ product.id }}" data-iwish_pTitle="{{ product.title | escape }}">
    <div class="product-element-top">
       {%- include 'product_element_image' -%}
       {%- if settings.use_wishlist and pages['wishlist'].empty? != true -%} {%- include 'gl-wishlist-product' -%}{%- endif -%}
