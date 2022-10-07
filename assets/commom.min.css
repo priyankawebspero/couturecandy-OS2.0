@@ -7081,15 +7081,16 @@ button.boost-pfs-filter-show-result {
     color: #000;
 }
 .feedback-page .gl_row.spb_row .spb_wrapper form .field input.wpcf7-submit.btn {
-    background: #000;
-    border-color: #000;
+   background-color: #e94949;
+    color: #fff;
+    border-color: #e94949;
+   
     font-size: 15px;
     padding: 13px 25px;
     opacity: 1;
 }
 
 .feedback-page .gl_row.spb_row .spb_wrapper form .field input.wpcf7-submit.btn:hover {
-    background-color: #e94949;
-    color: #fff;
-    border-color: #e94949;
+    background: #000;
+    border-color: #000;
 }
