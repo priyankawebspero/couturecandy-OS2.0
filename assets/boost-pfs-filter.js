@@ -77,12 +77,12 @@ var boostPFSFilterConfig = {
     /************************** END CUSTOMIZE DATA BEFORE BUILDING PRODUCT ITEM **************************/
     /************************** BUILD PRODUCT LIST **************************/
     // Build Product Grid Item
-  itemHtml = itemHtml.replace(/{{itemVariantId}}/g, data.variants[0].id);
+  
     ProductGridItem.prototype.compileTemplate = function(data) {
         if (!data) data = this.data;
         // Customize API data to get the Shopify data
         data = prepareShopifyData(data);
-
+itemHtml = itemHtml.replace(/{{itemVariantId}}/g, data.variants[0].id);
         // Get Template
         var itemHtml = boostPFSTemplate.productGridItemHtml;
         // Add Custom class
