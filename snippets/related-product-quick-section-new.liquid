@@ -25,7 +25,7 @@
 {%- assign url_nt_bl = false -%}
    {%- assign url_nt = product.url -%}
 {%- endif -%}
-<div class="product-grid-item product basel-hover-base{{gl_colum_mobile}}{{ gl_colum_width }} purchasable {% if sold_out %} outofstock{%- endif -%}">
+<div class="hi product-grid-item product basel-hover-base{{gl_colum_mobile}}{{ gl_colum_width }} purchasable {% if sold_out %} outofstock{%- endif -%}">
    <div class="product-element-top">
       {%- include 'product_element_image' -%}
       {%- if settings.use_wishlist and pages['wishlist'].empty? != true -%} {%- include 'gl-wishlist-product' -%}{%- endif -%}
