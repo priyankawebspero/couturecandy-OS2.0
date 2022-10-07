@@ -18,7 +18,7 @@
             "txt_font_size": 14,
             "iwish_text_clr": "#000000",
             "iwish_text_hover_clr": "#000000",
-            "variant_change_wrapper": "",
+            "variant_change_wrapper": ".with-swatches",
             "variant_name_id_selector": "[name=id]",
             "iwish_qvWrapper": "",
             "iwish_qvBtn_click": "",
