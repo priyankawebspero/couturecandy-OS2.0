@@ -125,7 +125,7 @@ var boostPFSFilterConfig = {
         itemHtml = itemHtml.replace(/{{itemHandle}}/g, data.handle);
         itemHtml = itemHtml.replace(/{{itemVendorLabel}}/g, data.vendor);
         itemHtml = itemHtml.replace(/{{itemUrl}}/g, Utils.buildProductItemUrlWithVariant(data));
-        itemHtml = itemHtml.replace(/{{itemVariantId}}/g, data.variants[0].id); //our definded variable
+        itemHtml = itemHtml.replace(/{{itemVariantId}}/g, data.variants[0].id); //iwish our definded variable
         return itemHtml;
     };
     // Build Product List Item
