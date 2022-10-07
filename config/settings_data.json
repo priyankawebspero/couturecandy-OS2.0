@@ -2897,12 +2897,12 @@
       },
       "10603822535667782919": {
         "type": "shopify:\/\/apps\/wishlist\/blocks\/app-embed\/7f9269b0-1b45-4d0c-8479-faf04f05d8ac",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "hide_float_icon": true,
           "is_show_vendor": false,
           "heart_icon_color": "",
-          "iwish_count_clr": "#FFFFFF",
+          "iwish_count_clr": "#ffffff",
           "iwish_float_custom_icon": "",
           "float_heart_position": "middle",
           "float_heart_alignment": "left",
