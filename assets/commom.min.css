@@ -7063,9 +7063,20 @@ button.boost-pfs-filter-show-result {
     margin: 0;
 }
 .feedback-page .gl_row.spb_row .spb_wrapper form .field label {
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 7px;
 }
 .feedback-page .gl_row.spb_row .spb_wrapper form .field p:empty {
     display: none;
+}
+.feedback-page .gl_row.spb_row .spb_wrapper form .field {
+    margin-bottom: 15px;
+}
+
+.feedback-page .gl_row.spb_row .spb_wrapper form .field .wpcf7-form-control-wrap input {
+    height: 42px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+    color: #000;
 }
