@@ -3,7 +3,7 @@
 {%- case layout -%}
 {%- when 'productGridItemHtml' -%}
 {% raw %}
-<div class="boost-pfs-filter-product-item boost-pfs-filter-product-item-grid {{gridWidthClass}}{{soldOutClass}}{{saleClass}} {{itemActiveSwapClass}}" >
+<div class="iwishAddWrapColl boost-pfs-filter-product-item boost-pfs-filter-product-item-grid {{gridWidthClass}}{{soldOutClass}}{{saleClass}} {{itemActiveSwapClass}}" data-handle="{{ product.handle }}" data-iwish_variant="{{ product.variants.first.id }}" data-iwish_product="{{ product.id }}" data-iwish_pTitle="{{ product.title | escape }}">
  
   <div class="boost-pfs-filter-product-item-inner">
       <div class="boost-pfs-filter-product-item-image">
