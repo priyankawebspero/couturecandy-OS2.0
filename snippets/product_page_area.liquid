@@ -957,7 +957,12 @@
                                             {% if settings.enable_payment_button %}
                                               {{ form | payment_button }}
                                             {% endif %}
-                                          <div>Hello world</div>
+                                          {%- for block in section.blocks -%}              
+                                              {% case block.type %}              
+                                              {% when '@app' %}
+                                                  {% render block  %}
+                                              {% endcase %}
+                                            {%- endfor -%} 
                                       {%- endform -%}
                                    {%- endif -%}
                                 {%- else -%}
