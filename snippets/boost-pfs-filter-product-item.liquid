@@ -243,7 +243,7 @@
       {%- endif -%}
 
       {%- if swatch_values_size > 0 -%}
-        <ul class="boost-pfs-filter-item-swatch boost-pfs-filter-item-swatch-option-{{swatch_option_name}} boost-pfs-filter-item-swatch-shape-{{swatchShape}} boost-pfs-filter-item-swatch-type-{{swatchType}}">
+        <ul class="hi  boost-pfs-filter-item-swatch boost-pfs-filter-item-swatch-option-{{swatch_option_name}} boost-pfs-filter-item-swatch-shape-{{swatchShape}} boost-pfs-filter-item-swatch-type-{{swatchType}}">
           {%- for productOption in product.options -%}
             {%- assign option = productOption | strip | downcase -%}
             {%- assign swatch_option_original_name = swatch_option_original_name | strip | downcase -%}
