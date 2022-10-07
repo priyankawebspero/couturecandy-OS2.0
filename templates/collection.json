@@ -6,7 +6,7 @@
         "375d3757-1aa9-4b98-9934-6ff7e14bf9a6": {
           "type": "shopify:\/\/apps\/wishlist\/blocks\/app-block\/7f9269b0-1b45-4d0c-8479-faf04f05d8ac",
           "settings": {
-            "is_collection": false,
+            "is_collection": true,
             "is_text_only_col": false,
             "iwish_add_txt": "Add To Wishlist",
             "iwish_added_txt": "Added To Wishlist",
