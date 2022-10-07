@@ -1,4 +1,376 @@
 
+<style>
+  
+.flits-account-page-content .flits-account-page-container{width:100% !important;max-width:1200px;padding:0 15px;}
+
+ .flits-account-page-container .flits-account-page-header p.flits-h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px !important;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-weight: normal !important;
+}
+
+.flits-account-page-container .flits-account-page-nav {
+    background: #0f0f0f !important;
+    border-radius: 0 !important;
+}
+
+.flits-account-page-container .flits-account-page-nav .flits-nav-tabs .flits-menu-item.flits-active {
+    border-left: inherit !important;
+    border-radius: 0 !important;
+    background: #e94949 !important;
+    border-color: #e94949 !important;
+}
+
+.flits-account-page-container .flits-account-page-nav .flits-nav-tabs .flits-menu-item {
+    margin: 0!important;
+    cursor: pointer;
+    padding: 14px 15px;
+    transition: .3s all;
+    border-bottom: 1px solid #fff !important;
+  border-radius:0 !important;
+}
+
+.flits-account-page-container .flits-account-page-nav .flits-nav-tabs .flits-menu-item .flits-nav-link .flist-menu-title {
+    font-size: 16px;
+	color:#fff !important;
+    font-weight: normal !important;
+}
+
+.flits-account-page-container.flits-has-hover .flits-account-page-nav .flits-nav-tabs .flits-menu-item:hover {
+    opacity: 1!important;
+    background: #e94949 !important;
+}
+
+.flits-account-page-container .flits-account-page-nav .flits-nav-tabs .flits-menu-item .flits-nav-link .flits-badge-nav {
+    min-width: 20px;
+    border-radius: 25px;
+    height: 20px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    background: #e94949 !important;
+}
+
+  .flits-account-page-container.flits-has-hover .flits-account-page-nav .flits-nav-tabs .flits-menu-item:hover .flits-nav-link .flits-badge-nav{
+
+ background: #fff !important;
+  color:#e94949 !important; 
+  }
+
+.flits-account-page-container .flits-account-page-nav .flits-nav-tabs .flits-menu-item.flits-active .flits-nav-link .flits-badge-nav{
+
+ background: #fff !important;
+  color:#e94949 !important; 
+  }
+
+.flits-account-page-container .flits-account-page-nav .flits-nav-tabs .flits-menu-item .flits-nav-link .flits-badge-nav span.money {
+    background: none !important;
+}
+
+  .flits-account-page-container .flits-account-page-header {
+    width: 100%;
+}
+
+  .flits-account-section {
+  display: flex;
+    flex-wrap: wrap;
+}
+
+.flits-account-page-container .flits-account-page-nav {
+    height: auto !important;
+}
+
+.flits-account-page-container.flits-has-hover .flits-account-page-nav .flits-nav-tabs .flits-menu-item:hover .flits-nav-link .flits-badge-nav span.money{
+color:#e94949 !important;
+}
+
+.flits-account-page-container .flits-account-page-nav .flits-nav-tabs .flits-menu-item.flits-active {
+    border-bottom: 1px solid #fff !important;
+}
+
+.flits-account-page-container .flits-account-page-nav .flits-nav-tabs .flits-menu-item.flits-active .flits-nav-link .flits-badge-nav span.money{
+  color: #e94949 !important;
+}
+
+.flits-tab-box-body p.flits-h2 {
+    font-weight: 500;
+    font-family: 'product_sans_mediumregular';
+    margin-bottom: 30px !important;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.flits-account-page-container form input[type="text"], .flits-account-page-container form input[type="password"] {
+     border-radius: 4px !important;
+    height: 45px !important;
+    padding: 10px !important;
+    font-size: 14px !important;
+}
+
+  .flits-account-page-container form input[type="email"] {
+     border-radius: 4px !important;
+    height: 45px !important;
+    padding: 10px !important;
+    font-size: 14px !important;
+}
+
+ .flits-account-page-container form input[type="date"] {
+     border-radius: 4px !important;
+    height: 45px !important;
+    padding: 10px !important;
+    font-size: 14px !important;
+}
+
+.flits-account-page-container form input[type="tel"] {
+    height: 45px !important;
+    border-radius: 4px !important;
+}
+
+.flits-account-page-container form .flits-input-wrap .flits-country-drpdown {
+    height: 45px;
+}
+
+.flits-account-page-container form .flits-input-wrap select {
+    border-radius: 5px !important;
+    height: 45px;
+    font-size: 14px !important;
+    padding: 10px;
+}
+
+  .flits-account-page-container form .flits-input-row input[type="checkbox"] {
+    border-radius: 3px !important;
+}
+
+.flits-account-page-container form .flits-input-row input[type="checkbox"] + label.flits-input-label {
+    font-size: 14px;
+}
+
+  .flits-account-page-container .flits-button.flits-primary-btn  {
+    background: #e94949 !important;
+    border-color: #e94949 !important;
+    font-size: 16px;
+    min-width: 115px;
+    padding: 13px 10px !important;
+}
+
+.flits-account-page-container .flits-button.flits-primary-btn:hover, .flits-account-page-container .flits-button.flits-primary-btn:focus{
+ background: #000 !important;
+    border-color: #000 !important;
+}
+
+.flits-account-page-container.flits-has-hover .flits-button.flits-primary-btn:hover, .flits-account-page-container.flits-has-hover .flits-button.flits-primary-btn:not([disabled]):hover {
+    background: #000 !important;
+    border-color: #000 !important;
+}
+
+.flits-account-page-container .flits-button.flits-secondary-btn {
+    border-color: #e94949 !important;
+    color: #000 !important;
+    padding: 13px 10px !important;
+    min-width: 115px;
+}
+
+.flits-account-page-container .flits-button.flits-secondary-btn:hover , .flits-account-page-container .flits-button.flits-secondary-btn:focus{
+ background: #e94949 !important;
+    border-color: #e94949 !important;
+	color:#fff !important;
+	}
+
+.flits-account-page-container.flits-has-hover .flits-button.flits-secondary-btn:hover, .flits-account-page-container.flits-has-hover .flits-button.flits-secondary-btn:not([disabled]):hover {
+   background: #e94949 !important;
+    border-color: #e94949 !important;
+	color:#fff !important;
+}
+
+  .flits-account-page-container .flits-order-div .flits-button.flits-primary-btn {
+    min-width: 175px;
+    margin-top: 20px !important;
+    padding: 15px !important;
+}
+
+.flits-account-page-container .flits-recently-view-div .flits-button.flits-primary-btn {
+    min-width: 175px;
+    margin-top: 20px !important;
+    padding: 15px !important;
+}
+
+  .flits-account-page-container .flits-credit-box.flits-earn-credit-box {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 15px;
+    background: #fff;
+}
+
+.flits-account-page-container .flits-credit-box .flits-credit-title {
+    font-size: 18px;
+    font-family: 'product_sans_mediumregular';
+}
+
+.flits-account-page-container .flits-credit-box.flits-earn-credit-box .flits-credit-value {
+    font-size: 24px;
+}
+
+.flits-account-page-container .flits-credit-box.flits-earn-credit-box {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 15px;
+    background: #fff;
+}
+
+.flits-account-page-container .flits-credit-box .flits-credit-title {
+    font-size: 18px;
+    font-family: 'product_sans_mediumregular';
+}
+
+.flits-account-page-container .flits-credit-box.flits-earn-credit-box .flits-credit-value {
+    font-size: 24px;
+}
+
+.flits-account-page-container .flits-credit-box .flits-button.flits-primary-btn {
+    min-width: 175px;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    padding: 15px !important;
+}
+
+  .flits-account-page-container form .flits-button.flits-primary-btn.flits-change-pass-button {
+    padding: 15px 25px !important;
+    margin-top: 20px !important;
+}
+
+.flits-account-page-container form.flits-read-input .flits-input {
+    height: auto !important;
+    padding: 0 !important;
+    font-weight: normal !important;
+    font-size: 17px !important;
+    font-family: 'product_sans_mediumregular';
+}
+
+
+.flits-account-page-container form.flits-read-input .flits-row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.flits-account-page-container form.flits-read-input .flits-col-md-6 {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin: 0 !important;
+    margin-bottom: 10px !important;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.flits-account-page-container form.flits-read-input  .flits-button.flits-primary-btn.flits-profile-edit-button {
+    margin-top: 20px;
+}
+
+  .flits-account-page-container .flits-credit-box {
+    background: #fff;
+}
+
+.flits-account-page-container .flits-product-quantity {
+    position: relative;
+    width: 100%;
+    max-width: 120px;
+    margin: 10px auto !important;
+}
+
+.flits-account-page-container .flits-product-quantity input.flits-input {
+    height: 36px !important;
+    padding: 8px 38px !important;
+}
+
+.flits-account-page-container .flits-product-card .flits-floating-label{
+    margin-top: 20px !important;
+}
+
+.flits-account-page-container .flits-product-card .flits-floating-label label {
+    font-size: 14px !important;
+    line-height: 1.5;
+}
+
+.flits-account-page-container .flits-product-card .flits-product-image {
+    height: auto;
+}
+  
+@media only screen and (min-width:992px){
+  .flits-account-page-container .flits-account-page-nav {
+    background: #0f0f0f !important;
+    width: 300px !important;
+    border-radius: 0 !important;
+}
+
+.flits-account-page-container .flits-account-page-tabs {
+    width: calc(100% - 300px);
+    border: 1px solid #e0e0e0;
+    padding: 40px 30px;
+    background: #f8f8f8 !important;
+    height: auto !important;
+}
+    
+  }
+
+@media only screen and (max-width:767px)
+{
+
+.flits-account-page-content .flits-account-page-container {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.flits-account-page-container .flits-account-page-header p.flits-h1 {
+    font-size: 28px !important;
+    margin-bottom: 0;
+}
+
+.flits-account-page-container .flits-account-page-tabs .flits-tabs-box .flits-tab-box {
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+}
+
+.flits-account-page-container .flits-account-page-tabs .flits-tabs-box .flits-tab-box .flits-tab-box-header {
+    border-radius: 0 !important;
+    background: #0f0f0f;
+    padding-top: 13px !important;
+    padding-bottom: 13px !important;
+}
+.flits-account-page-container .flits-account-page-tabs .flits-tabs-box .flits-tab-box .flits-tab-box-body {
+    padding: 30px 15px;
+}
+.flits-tab-box-body p.flits-h2 {
+    font-size: 22px;
+}
+.flits-account-page-container .flits-account-page-tabs .flits-tabs-box .flits-tab-box .flits-tab-box-header .flits-tab-box-title {
+    font-size: 18px;
+    font-weight: normal !important;
+    line-height: 1.2;
+    padding: 0 75px;
+}
+
+.flits-account-page-container .flits-credit-box.flits-earn-credit-box .flits-credit-value {
+    font-size: 20px;
+}
+
+.flits-account-page-container .flits-credit-box.flits-earn-credit-box {
+    margin-bottom: 0;
+}
+
+}
+
+@media only screen and (max-width: 350px){
+.flits-account-page-container .flits-recently-view-product-list li, .flits-account-page-container .flits-wishlist-product-list li {
+    min-width: 253px;
+}
+
+}
+  
+</style>
+
+
+
 {% comment %} PLEASE DON'T MAKE CHANGES IN THIS FILE IT'S AFFECT THE CODE IF YOU NEED ANY HELP PLEASE CONTACT TO FLITS TEAM support@getflits.com {% endcomment %}
 
 {% if shop.metafields.Flits.IS_WISHLIST_PAID == 1 and shop.metafields.Flits.IS_WISHLIST_ENABLE == 1 %}
