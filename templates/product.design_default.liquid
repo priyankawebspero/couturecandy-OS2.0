@@ -11,7 +11,7 @@
       <div class="container-fluid">
          <div class="row">
             <div class="site-content col-sm-12" role="main"{%- if product.metafields.meta.background != blank %} style="{%- assign image_name = product.metafields.meta.background | strip -%}background-image: url({{ image_name | file_url  }});"{%- endif -%}>
-              {%- if settings.use_wishlist -%}{%- include 'nitro-wishlist' -%}{%- endif -%}
+              {%- if settings.use_wishlist -%}{% comment %}{%- include 'nitro-wishlist' -%}{% endcomment %}{%- endif -%}
               {%- include 'product_page_area' -%}
             </div><!-- .site-content -->
             <div class="clearfix"></div>
