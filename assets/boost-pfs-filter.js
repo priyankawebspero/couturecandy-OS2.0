@@ -101,7 +101,8 @@ var boostPFSFilterConfig = {
         itemHtml = itemHtml.replace(/{{itemImages}}/g, buildImages(data));
         // Add Price
         itemHtml = itemHtml.replace(/{{itemPrice}}/g, buildPrice(data));
-
+          var itemWishListHtml = '<span class="iWishAddColl iwishcheck" data-variant="' + firstVariant.id + '" data-product="{{itemId}}" data-ptitle="{{itemTitle}}"><i class="fa fa-heart"></i></span>';
+  itemHtml = itemHtml.replace(/{{itemWishlist}}/g, itemWishListHtml);   
         // Add Review
         if (typeof Integration === 'undefined' ||
             (typeof Integration != 'undefined' &&
