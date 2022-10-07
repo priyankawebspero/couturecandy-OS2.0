@@ -61,7 +61,7 @@
 					                              <input type="text" name="contact[rmanumber]" value="{%- if form[rma-number] -%}{{ form[rma-number] }}{%- elsif customer -%}{{ customer.rma-number }}{%- endif -%}" size="40" class="{%- if form.errors contains 'rma-number' -%}input__error{%- else -%}input__ok{%- endif -%}" aria-required="true" aria-invalid="false">
 					                     </div>
 					                     <div class="field">  
-					                        <label><span class="required">*</span>Details</label> 
+					                        <label><span class="required">*</span>Your Feedback</label> 
 					                        <span class="wpcf7-form-control-wrap your-message">
 					                           <textarea name="contact[body]" cols="40" class="{%- if form.errors contains 'body' -%}input__error{%- else -%}input__ok{%- endif -%}" aria-required="true" aria-invalid="false">{%- if form.body -%}{{ form.body }}{%- endif -%}</textarea>
 					                        </span> 
