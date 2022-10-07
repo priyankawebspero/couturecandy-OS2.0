@@ -13,3 +13,17 @@
     margin-top: 12px;
     top: 6px;
 }
+.iwish-counter {
+    width: 17px;
+    height: 17px;
+    line-height: 16px;
+    background-color: #e94949;
+    font-size: 11px;
+    color: #fff;
+    top: -14px;
+    left: 15px;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
