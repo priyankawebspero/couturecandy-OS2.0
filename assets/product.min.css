@@ -2682,8 +2682,7 @@ body.template-product  {
 .single-product-content .product-image-summary .modal {
     height: 90vh;
     padding-bottom: 10px;
-    top: 20%;
-    transform: translateY(-35%);
+    top: 35%;
 }
 
 body.template-product.popup-visible {
