@@ -1670,11 +1670,6 @@ div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-w
     margin-bottom: 30px;
     margin-left: 18px;
 }
-
-.single-product-content .shopify-app-block a.iWishAdd.iwishAdded {
-    background: #000;
-}
-
 .single-product-content .shopify-app-block a.iWishAdd.iwishAdded svg, .single-product-content .shopify-app-block a.iWishAdd.iwishAdded svg path {
     fill: #e94949;
 }
