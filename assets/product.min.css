@@ -2640,6 +2640,11 @@ body.template-product  {
     letter-spacing: 0;
     color: #fff;
 }
+
+.single-product-content .shopify-app-block a svg, .single-product-content .shopify-app-block a svg path {
+    fill: #fff;
+    margin-right: 7px;
+}
   
 }
 
