@@ -7226,6 +7226,10 @@ body .iWishAddColl.iwishAdded svg {
     fill: #e94949 !important;
 }
 
+body .iWishAddColl.iwishAdded svg path {
+    fill: #e94949 !important;
+}
+
 @media only screen and (max-width:767px){
 
 .feedback-page .gl_row.spb_row .spb_wrapper {
