@@ -1208,20 +1208,21 @@ var boostPFSFilterConfig = {
                 //     $stickyElement.css({top: offsetTop + 'px'});
                 // }, timeOutValue);
             // End Position
-            } else {
-                $stickyElement.removeClass('boost-pfs-filter-stick');
-                $stickyElement.addClass('boost-pfs-filter-absolute');
-                jQ('body').removeClass('boost-pfs-filter-stick-body');
-                jQ('body').removeClass(stickElementClass);
-                var topPos = Settings.getSettingValue('general.stickyFixTopPos') ? (endPos - startPos - stickHeight) : (endPos - stickHeight - offsetTop);
-                $stickyElement.css({
-                    position: 'absolute',
-                    top: topPos + 'px',
-                    width: isVertical ? stickWidth : '',
-                    maxHeight: 'none',
-                    visibility: isVertical ? 'visible' : 'hidden'
-                });
-            }
+            } 
+          // else {
+          //       $stickyElement.removeClass('boost-pfs-filter-stick');
+          //       $stickyElement.addClass('boost-pfs-filter-absolute');
+          //       jQ('body').removeClass('boost-pfs-filter-stick-body');
+          //       jQ('body').removeClass(stickElementClass);
+          //       var topPos = Settings.getSettingValue('general.stickyFixTopPos') ? (endPos - startPos - stickHeight) : (endPos - stickHeight - offsetTop);
+          //       $stickyElement.css({
+          //           position: 'absolute',
+          //           top: topPos + 'px',
+          //           width: isVertical ? stickWidth : '',
+          //           maxHeight: 'none',
+          //           visibility: isVertical ? 'visible' : 'hidden'
+          //       });
+          //   }
         };
         jQ(window).off('scroll', setPosition);
         jQ(window).on('scroll', setPosition);
