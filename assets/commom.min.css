@@ -7232,6 +7232,11 @@ body .iWishAddColl.iwishAdded svg path {
 
 @media only screen and (max-width:767px){
 
+.iwishMsg .iWishLoginNote {
+    min-height: inherit;
+    font-size: 16px !important;
+}
+
 .feedback-page .gl_row.spb_row .spb_wrapper {
     width: 100%;
     max-width: 700px;
