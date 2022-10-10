@@ -2643,8 +2643,12 @@ body.template-product  {
 
 .single-product-content .shopify-app-block a svg, .single-product-content .shopify-app-block a svg path {
     fill: #fff;
+}
+
+.single-product-content .shopify-app-block a svg{
     margin-right: 7px;
 }
+
   
 }
 
@@ -2709,6 +2713,14 @@ span.contact_us_button a {
 
 .template-product div#ReviewSection {
     padding: 25px 15px;
+}
+
+.single-product-content .shopify-app-block a {
+    font-size: 13px;
+}
+
+.single-product-content .shopify-app-block a svg{
+    fill: #fff;
 }
 
 }
