@@ -7218,8 +7218,12 @@ div#mst-iwish-drawer-root {
   
 }
 
-.template-collection span.iWishAddColl {
+body span.iWishAddColl {
     z-index: 9;
+}
+
+body .iWishAddColl.iwishAdded svg {
+    fill: #e94949 !important;
 }
 
 @media only screen and (max-width:767px){
