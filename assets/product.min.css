@@ -2689,6 +2689,10 @@ body.template-product  {
 body.template-product.popup-visible {
     overflow: hidden;
 }
+
+.size-chart.bg-gray {
+    overflow: auto;
+}
   
 }
 
