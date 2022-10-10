@@ -2906,7 +2906,7 @@
           "iwish_float_custom_icon": "",
           "float_heart_position": "middle",
           "float_heart_alignment": "left",
-          "open_drawer_once": true,
+          "open_drawer_once": false,
           "multi_category_wishlist": false,
           "is_old_cur_convertor": true,
           "drawer_is_add_all_to_cart": false,
