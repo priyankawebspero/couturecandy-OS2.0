@@ -2683,6 +2683,7 @@ body.template-product  {
     height: 90vh;
     padding-bottom: 10px;
     top: 35%;
+  overflow-x: hidden;
 }
 
 body.template-product.popup-visible {
