@@ -2637,7 +2637,7 @@ body.template-product  {
     justify-content: center;
     align-items: center;
     border-left: 1px solid #fff;
-    letter-spacing: 0;
+    letter-spacing: 0.5px;
     color: #fff;
 }
 
