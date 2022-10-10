@@ -7196,6 +7196,11 @@ div#mst-iwish-drawer-root {
     font-size: 15px;
 }
 
+.iwishEmailWishlist form textarea {
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
 .iwishEmailWishlist form  button.btn[type="submit"] {
     background: #e94949;
     border-color: #e94949;
