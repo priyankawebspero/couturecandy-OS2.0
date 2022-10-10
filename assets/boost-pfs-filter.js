@@ -1143,7 +1143,7 @@ var boostPFSFilterConfig = {
         var setPosition = () => {
             var isVertical = $stickyElement.hasClass(Class.filterTreeVertical) || $stickyElement.find(Selector.filterTreeVertical).length > 0 ? true : false;
             var stickWidth = $stickyElement.outerWidth();
-            var stickHeight = isVertical ? $stickyElement[0].scrollHeight : $stickyElement.outerHeight();
+            var stickHeight = isVertical ? $stickyElement[0].scrollHeight : $stickyElement.outerHeight() + 150;
             var windowHeight = window.innerHeight;
             var endPos = jQ(endElement).position().top + jQ(endElement).outerHeight();
             var stickElementClass = ($stickyElement[0].classList[0] == 'boost-pfs-filter-tree' || $stickyElement[0].classList[0] == 'boost-pfs-filter-tree-h-wrapper') ? $stickyElement[0].classList[0] + '-stick-body' : 'boost-pfs-filter-tree-button-stick-wrapper-body';
