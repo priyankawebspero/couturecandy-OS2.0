@@ -2721,7 +2721,10 @@ span.contact_us_button a {
 
 .single-product-content .shopify-app-block a svg {
     margin-right: 3px;
+    width: 16px;
+    height: 16px;
 }
+
 
 }
 
