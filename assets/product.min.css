@@ -1671,8 +1671,8 @@ div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-w
 
 .size-chart.bg-gray img {
     margin-bottom: 20px;
-    /* width: 100%; */
-    /* max-width: 200px; */
+    width: 100%;
+    max-width: 300px;
 }
 
 /****-new-wishlist-icon--css-----------*/
