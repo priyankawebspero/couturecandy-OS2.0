@@ -1132,100 +1132,100 @@ var boostPFSFilterConfig = {
         this.afterToggleFilterTree();
     }
     
-    Utils.sticky = function ($stickyElement, endElement, avoidElement) {
-        if ($stickyElement.attr('data-offset-top') == undefined) {
-            var startPosData = $stickyElement.offset().top;
-            $stickyElement.attr('data-offset-top', startPosData);
-        }
+    // Utils.sticky = function ($stickyElement, endElement, avoidElement) {
+    //     if ($stickyElement.attr('data-offset-top') == undefined) {
+    //         var startPosData = $stickyElement.offset().top;
+    //         $stickyElement.attr('data-offset-top', startPosData);
+    //     }
 
-        var startPos = $stickyElement.attr('data-offset-top') - 150;
+    //     var startPos = $stickyElement.attr('data-offset-top') - 150;
 
-        var setPosition = () => {
-            var isVertical = $stickyElement.hasClass(Class.filterTreeVertical) || $stickyElement.find(Selector.filterTreeVertical).length > 0 ? true : false;
-            var stickWidth = $stickyElement.outerWidth();
-            var stickHeight = isVertical ? $stickyElement[0].scrollHeight : $stickyElement.outerHeight() - 100;
-            var windowHeight = window.innerHeight;
-            var endPos = jQ(endElement).position().top + jQ(endElement).outerHeight();
-            var stickElementClass = ($stickyElement[0].classList[0] == 'boost-pfs-filter-tree' || $stickyElement[0].classList[0] == 'boost-pfs-filter-tree-h-wrapper') ? $stickyElement[0].classList[0] + '-stick-body' : 'boost-pfs-filter-tree-button-stick-wrapper-body';
-            var productListTooShort = jQ(endElement).height() <= windowHeight + 100;
+    //     var setPosition = () => {
+    //         var isVertical = $stickyElement.hasClass(Class.filterTreeVertical) || $stickyElement.find(Selector.filterTreeVertical).length > 0 ? true : false;
+    //         var stickWidth = $stickyElement.outerWidth();
+    //         var stickHeight = isVertical ? $stickyElement[0].scrollHeight : $stickyElement.outerHeight() - 100;
+    //         var windowHeight = window.innerHeight;
+    //         var endPos = jQ(endElement).position().top + jQ(endElement).outerHeight();
+    //         var stickElementClass = ($stickyElement[0].classList[0] == 'boost-pfs-filter-tree' || $stickyElement[0].classList[0] == 'boost-pfs-filter-tree-h-wrapper') ? $stickyElement[0].classList[0] + '-stick-body' : 'boost-pfs-filter-tree-button-stick-wrapper-body';
+    //         var productListTooShort = jQ(endElement).height() <= windowHeight + 100;
           
-            // Check for sticky header and announcement bar to avoid
-            var offsetTop = 0;
-            var $stickyHeader = jQ(avoidElement);
-            if ($stickyHeader.length > 0) {
-                $stickyHeader.each((index, header) => {
-                    var rect = header.getBoundingClientRect();
-                    // Sticky header is visible in viewport
-                    if (rect.y >= 0 && rect.height > 0) {
-                        offsetTop += rect.height;
-                        // Check sticky header's children
-                    } else {
-                        jQ(header).children().each((index, headerChild) => {
-                            var childRect = headerChild.getBoundingClientRect();
-                            if (childRect.y >= 0 && childRect.height > 0) {
-                                offsetTop += childRect.height;
-                            }
-                        });
-                    }
-                })
-            }
+    //         // Check for sticky header and announcement bar to avoid
+    //         var offsetTop = 0;
+    //         var $stickyHeader = jQ(avoidElement);
+    //         if ($stickyHeader.length > 0) {
+    //             $stickyHeader.each((index, header) => {
+    //                 var rect = header.getBoundingClientRect();
+    //                 // Sticky header is visible in viewport
+    //                 if (rect.y >= 0 && rect.height > 0) {
+    //                     offsetTop += rect.height;
+    //                     // Check sticky header's children
+    //                 } else {
+    //                     jQ(header).children().each((index, headerChild) => {
+    //                         var childRect = headerChild.getBoundingClientRect();
+    //                         if (childRect.y >= 0 && childRect.height > 0) {
+    //                             offsetTop += childRect.height;
+    //                         }
+    //                     });
+    //                 }
+    //             })
+    //         }
 
-          	// Initial Position
-            if (window.scrollY < startPos || endPos - startPos <= stickHeight || productListTooShort) {
-                $stickyElement.removeClass('boost-pfs-filter-stick');
-                $stickyElement.removeClass('boost-pfs-filter-absolute');
-                jQ('body').removeClass('boost-pfs-filter-stick-body');
-                jQ('body').removeClass(stickElementClass);
-                $stickyElement.css({
-                    position: 'initial',
-                    width: '',
-                    maxHeight: 'none',
-                    overflow: 'visible',
-                    visibility: 'visible'
-                });
-            // Fixed Position
-            } else if (window.scrollY + stickHeight <= endPos) {
-              // console.log(window.scrollY, stickHeight, endPos);
-                $stickyElement.addClass('boost-pfs-filter-stick');
-                $stickyElement.removeClass('boost-pfs-filter-absolute');
-                jQ('body').addClass('boost-pfs-filter-stick-body');
-                jQ('body').addClass(stickElementClass);
+    //       	// Initial Position
+    //         if (window.scrollY < startPos || endPos - startPos <= stickHeight || productListTooShort) {
+    //             $stickyElement.removeClass('boost-pfs-filter-stick');
+    //             $stickyElement.removeClass('boost-pfs-filter-absolute');
+    //             jQ('body').removeClass('boost-pfs-filter-stick-body');
+    //             jQ('body').removeClass(stickElementClass);
+    //             $stickyElement.css({
+    //                 position: 'initial',
+    //                 width: '',
+    //                 maxHeight: 'none',
+    //                 overflow: 'visible',
+    //                 visibility: 'visible'
+    //             });
+    //         // Fixed Position
+    //         } else if (window.scrollY + stickHeight <= endPos) {
+    //           // console.log(window.scrollY, stickHeight, endPos);
+    //             $stickyElement.addClass('boost-pfs-filter-stick');
+    //             $stickyElement.removeClass('boost-pfs-filter-absolute');
+    //             jQ('body').addClass('boost-pfs-filter-stick-body');
+    //             jQ('body').addClass(stickElementClass);
 
 
-                // Set position fixed & top
-                $stickyElement.css({
-                    position: 'fixed',
-                    width: isVertical ? stickWidth : '',
-                    maxHeight: (window.innerHeight - offsetTop) + 'px',
-                    overflow: isVertical ? 'scroll' : 'visible',
-                    visibility: 'visible',
-                    top: offsetTop + 'px'
-                });
-                // Fix issue with top sometimes not set with animated header show/hide
-                var timeOutValue = Settings.getSettingValue('general.stickyChangeTopTimeout');
-                if (typeof timeOutValue != 'number') timeOutValue = 0;
-                $stickyElement.css({top: offsetTop + 'px'});
-                // setTimeout(() => {
-                //     $stickyElement.css({top: offsetTop + 'px'});
-                // }, timeOutValue);
-            // End Position
-            } else {
-                $stickyElement.removeClass('boost-pfs-filter-stick');
-                $stickyElement.addClass('boost-pfs-filter-absolute');
-                jQ('body').removeClass('boost-pfs-filter-stick-body');
-                jQ('body').removeClass(stickElementClass);
-                var topPos = Settings.getSettingValue('general.stickyFixTopPos') ? (endPos - startPos - stickHeight) : (endPos - stickHeight - offsetTop);
-                $stickyElement.css({
-                    position: 'absolute',
-                    top: topPos + 'px',
-                    width: isVertical ? stickWidth : '',
-                    maxHeight: 'none',
-                    visibility: isVertical ? 'visible' : 'hidden'
-                });
-            }
-        };
-        jQ(window).off('scroll', setPosition);
-        jQ(window).on('scroll', setPosition);
-        setPosition();
-    }
+    //             // Set position fixed & top
+    //             $stickyElement.css({
+    //                 position: 'fixed',
+    //                 width: isVertical ? stickWidth : '',
+    //                 maxHeight: (window.innerHeight - offsetTop) + 'px',
+    //                 overflow: isVertical ? 'scroll' : 'visible',
+    //                 visibility: 'visible',
+    //                 top: offsetTop + 'px'
+    //             });
+    //             // Fix issue with top sometimes not set with animated header show/hide
+    //             var timeOutValue = Settings.getSettingValue('general.stickyChangeTopTimeout');
+    //             if (typeof timeOutValue != 'number') timeOutValue = 0;
+    //             $stickyElement.css({top: offsetTop + 'px'});
+    //             // setTimeout(() => {
+    //             //     $stickyElement.css({top: offsetTop + 'px'});
+    //             // }, timeOutValue);
+    //         // End Position
+    //         } else {
+    //             $stickyElement.removeClass('boost-pfs-filter-stick');
+    //             $stickyElement.addClass('boost-pfs-filter-absolute');
+    //             jQ('body').removeClass('boost-pfs-filter-stick-body');
+    //             jQ('body').removeClass(stickElementClass);
+    //             var topPos = Settings.getSettingValue('general.stickyFixTopPos') ? (endPos - startPos - stickHeight) : (endPos - stickHeight - offsetTop);
+    //             $stickyElement.css({
+    //                 position: 'absolute',
+    //                 top: topPos + 'px',
+    //                 width: isVertical ? stickWidth : '',
+    //                 maxHeight: 'none',
+    //                 visibility: isVertical ? 'visible' : 'hidden'
+    //             });
+    //         }
+    //     };
+    //     jQ(window).off('scroll', setPosition);
+    //     jQ(window).on('scroll', setPosition);
+    //     setPosition();
+    // }
 })();
