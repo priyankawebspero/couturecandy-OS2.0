@@ -2110,6 +2110,10 @@ div#ProdDetailInfomobile {
 .single-product-content .single_variation_wrap .iwishAddWrap {
     margin-left: 10px;
 }
+.single-product-content .shopify-app-block a.iWishAdd {
+    width: 48px;
+    height: 48px;
+}
   
 }
 
