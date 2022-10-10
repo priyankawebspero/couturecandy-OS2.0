@@ -7108,6 +7108,10 @@ button.boost-pfs-filter-show-result {
 
 /*----------wishlist-icon-top----*/
 
+.iwish-counter {
+    top: -4px !important;
+}
+
 div#mst-iwish-drawer-root {
     display: none !important;
 }
