@@ -2678,6 +2678,15 @@ body.template-product  {
  .single-product-content .cart button.button, .single-product-content .cart span.button a, span.contact_us_button a, .single-product-content .summary .out-of-stock {
     font-weight: normal;
 }
+
+.single-product-content .product-image-summary .modal {
+    height: 90vh;
+    padding-bottom: 50px;
+}
+
+body.template-product.popup-visible {
+    overflow: hidden;
+}
   
 }
 
