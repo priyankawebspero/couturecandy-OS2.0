@@ -7135,6 +7135,12 @@ div#mst-iwish-drawer-root {
     font-size: 18px !important;
 }
 
+.iwishMsg .iWishLoginNote a {
+    text-decoration: underline;
+    color: #e94949;
+    text-transform: capitalize;
+}
+
 @media only screen and (max-width:767px){
 
 .feedback-page .gl_row.spb_row .spb_wrapper {
