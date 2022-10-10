@@ -1138,7 +1138,7 @@ var boostPFSFilterConfig = {
             $stickyElement.attr('data-offset-top', startPosData);
         }
 
-        var startPos = $stickyElement.attr('data-offset-top') - 50;
+        var startPos = $stickyElement.attr('data-offset-top') - 150;
 
         var setPosition = () => {
             var isVertical = $stickyElement.hasClass(Class.filterTreeVertical) || $stickyElement.find(Selector.filterTreeVertical).length > 0 ? true : false;
