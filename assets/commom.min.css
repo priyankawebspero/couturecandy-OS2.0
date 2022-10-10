@@ -7141,6 +7141,12 @@ div#mst-iwish-drawer-root {
     text-transform: capitalize;
 }
 
+.iwishEmailWishlist {
+    padding: 50px 15px;
+    width: 100% !important;
+    max-width: 650px !important;
+}
+
 @media only screen and (max-width:767px){
 
 .feedback-page .gl_row.spb_row .spb_wrapper {
