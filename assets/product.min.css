@@ -2679,7 +2679,7 @@ body.template-product  {
     font-weight: normal;
 }
 
-/*.single-product-content .product-image-summary .modal {
+.single-product-content .product-image-summary .modal {
     height: 95vh;
     padding-bottom: 10px;
     top: 50%;
@@ -2693,7 +2693,7 @@ body.template-product.popup-visible {
 
 .size-chart.bg-gray {
     overflow: auto;
-}*/
+}
   
 }
 
