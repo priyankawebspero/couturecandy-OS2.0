@@ -39,6 +39,7 @@ function asyncLoadshopapps(){
 		jQuery(".iWishAdd").click(function() {
 			var iWishvId = jQuery(this).parents(iwishWrapperClass).find(iWishVarSelector).val();
 			iwish_add(jQuery(this), iWishvId);
+                      iWishCounter();
 			return false;
 		});
 		jQuery(".iWishAddColl").click(function() {
