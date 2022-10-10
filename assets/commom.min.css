@@ -7158,11 +7158,24 @@ div#mst-iwish-drawer-root {
     margin: 50px auto;
 }
 
+.iwishEmailWishlist .iwishTitle + div {
+    float: right;
+    margin-top: 18px;
+}
+.iwishEmailWishlist .iwishTitle {
+    display: inline-block;
+}
+
 .iwishEmailWishlist .iwishMsg {
     clear: both;
     padding: 0;
     display: block;
     width: 100%;
+}
+
+.iwishEmailWishlist .iwishTitle + div a#iwishBackBtn {
+    text-decoration: underline;
+    color: #e94949;
 }
 
 @media only screen and (max-width:767px){
