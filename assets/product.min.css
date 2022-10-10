@@ -2750,6 +2750,9 @@ span.contact_us_button a {
     height: 16px;
 }
 
+  .single-product-content .cart button.button, .single-product-content .cart span.button a, span.contact_us_button a, .single-product-content .summary .out-of-stock {
+    font-weight: normal;
+}
 
 }
 
