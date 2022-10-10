@@ -1145,7 +1145,7 @@ var boostPFSFilterConfig = {
             var stickWidth = $stickyElement.outerWidth();
             var stickHeight = isVertical ? $stickyElement[0].scrollHeight : $stickyElement.outerHeight();
             var windowHeight = window.innerHeight;
-            var endPos = jQ(endElement).position().top + jQ(endElement).outerHeight() - 100;
+            var endPos = jQ(endElement).position().top + jQ(endElement).outerHeight() - 50;
             var stickElementClass = ($stickyElement[0].classList[0] == 'boost-pfs-filter-tree' || $stickyElement[0].classList[0] == 'boost-pfs-filter-tree-h-wrapper') ? $stickyElement[0].classList[0] + '-stick-body' : 'boost-pfs-filter-tree-button-stick-wrapper-body';
             var productListTooShort = jQ(endElement).height() <= windowHeight + 100;
           
