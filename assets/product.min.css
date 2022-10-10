@@ -1654,6 +1654,44 @@ div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-w
     color: #fff;
 }
 
+/****-new-wishlist-icon--css-----------*/
+
+.single-product-content .single_variation_wrap {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.single-product-content .shopify-app-block {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: 18px;
+}
+
+.single-product-content .shopify-app-block a.iWishAdd {
+    border: 1px solid #000;
+    font-size: 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 5px;
+    background: #fff;
+    padding: 0;
+    line-height: 52px;
+    text-align: center;
+    margin-bottom: 0;
+	padding: 12px;
+}
+
+.single-product-content .shopify-app-block a.iWishAdd.iwishAdded {
+    background: #000;
+}
+
+.single-product-content .shopify-app-block a.iWishAdd.iwishAdded svg, .single-product-content .shopify-app-block a.iWishAdd.iwishAdded svg path {
+    fill: #e94949;
+}
+
+
 @media only screen and (min-width:768px){
 
 .single-product-content .cart button.button, .single-product-content .cart span.button a, span.contact_us_button a, .single-product-content .summary .out-of-stock {
