@@ -2683,6 +2683,7 @@ body.template-product  {
     height: 95vh;
     padding-bottom: 10px;
     top: 50%;
+  transform: translateY(-50%);
   overflow-x: hidden;
 }
 
