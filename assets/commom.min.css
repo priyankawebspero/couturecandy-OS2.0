@@ -7232,5 +7232,13 @@ div#mst-iwish-drawer-root {
 .iwishEmailWishlist {
     padding: 25px 15px;
 }
+
+.iwishEmailWishlist .iwishTitle h1 {
+    font-size: 23px;
+}
+
+.iwishEmailWishlist .iwishTitle + div {
+    margin-top: 11px;
+}
   
 }
