@@ -2680,10 +2680,9 @@ body.template-product  {
 }
 
 .single-product-content .product-image-summary .modal {
-    height: 95vh;
-    padding-bottom: 10px;
-    top: 50%;
-  transform: translateY(-50%);
+    height: 100%;
+    padding-bottom: 50px;
+    top: 0;
   overflow-x: hidden;
 }
 
