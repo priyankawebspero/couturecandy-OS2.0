@@ -1658,6 +1658,7 @@ div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-w
 
 .size-chart.bg-gray table.SizeCharttable {
     background: #f5f5f5;
+    margin-bottom: 25px;
 }
 .size-chart.bg-gray table.SizeCharttable tr td {
     padding: 7px;
