@@ -1196,7 +1196,7 @@ var boostPFSFilterConfig = {
                     position: 'fixed',
                     width: isVertical ? stickWidth : '',
                     maxHeight: (window.innerHeight - offsetTop) + 'px',
-                    overflow: isVertical ? 'auto' : 'visible',
+                    overflow: isVertical ? 'scroll' : 'visible',
                     visibility: 'visible',
                     top: offsetTop + 'px'
                 });
