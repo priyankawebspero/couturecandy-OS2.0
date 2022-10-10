@@ -2719,8 +2719,8 @@ span.contact_us_button a {
     font-size: 13px;
 }
 
-.single-product-content .shopify-app-block a svg{
-    fill: #fff;
+.single-product-content .shopify-app-block a svg {
+    margin-right: 3px;
 }
 
 }
