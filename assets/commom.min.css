@@ -7209,6 +7209,7 @@ div#mst-iwish-drawer-root {
     opacity: 1;
     color: #fff;
     min-width: 175px;
+    border-radius: 5px;
 }
 
 .iwishEmailWishlist form  button.btn[type="submit"]:hover{
