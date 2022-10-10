@@ -2680,9 +2680,9 @@ body.template-product  {
 }
 
 .single-product-content .product-image-summary .modal {
-    height: 90vh;
+    height: 95vh;
     padding-bottom: 10px;
-    top: 35%;
+    top: 50%;
   overflow-x: hidden;
 }
 
