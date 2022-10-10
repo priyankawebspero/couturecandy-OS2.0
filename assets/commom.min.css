@@ -7132,6 +7132,7 @@ div#mst-iwish-drawer-root {
     min-height: 400px;
     text-align: center;
     padding-top: 5vw;
+    font-size: 18px !important;
 }
 
 @media only screen and (max-width:767px){
