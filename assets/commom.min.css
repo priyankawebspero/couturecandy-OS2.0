@@ -7196,6 +7196,22 @@ div#mst-iwish-drawer-root {
     font-size: 15px;
 }
 
+.iwishEmailWishlist form  button.btn[type="submit"] {
+    background: #e94949;
+    border-color: #e94949;
+    font-size: 15px;
+    padding: 13px 25px;
+    opacity: 1;
+    color: #fff;
+    min-width: 175px;
+}
+
+.iwishEmailWishlist form  button.btn[type="submit"]:hover{
+  background: #000;
+    border-color: #000;
+  
+}
+
 @media only screen and (max-width:767px){
 
 .feedback-page .gl_row.spb_row .spb_wrapper {
