@@ -7150,9 +7150,12 @@ div#mst-iwish-drawer-root {
 }
 
 .iwishEmailWishlist {
-    padding: 50px 15px;
-    width: 100% !important;
+    width: 95% !important;
     max-width: 650px !important;
+    background: #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+    padding: 25px;
+    margin: 50px auto;
 }
 
 @media only screen and (max-width:767px){
