@@ -7259,3 +7259,10 @@ body .iWishAddColl.iwishAdded svg path {
 }
   
 }
+
+@media only screen and (max-width: 991px) and (min-width: 575px){
+.main-header .right-column a.iWishView {
+    margin-right: 20px;
+}
+
+}
