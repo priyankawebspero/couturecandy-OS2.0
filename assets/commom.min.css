@@ -7106,6 +7106,28 @@ button.boost-pfs-filter-show-result {
     border-color: #000;
 }
 
+/*----------wishlist-icon-top----*/
+
+div#mst-iwish-drawer-root {
+    display: none !important;
+}
+
+.main-header .right-column a.iWishView {
+    text-decoration: none !important;
+}
+
+.main-header .right-column a.iWishView {
+    text-decoration: none !important;
+    display: inline-block;
+    vertical-align: middle;
+    top: 0;
+    margin-right: 7px;
+}
+
+.main-header .right-column a.iWishView .iwish-counter {
+    top: -4px;
+}
+
 @media only screen and (max-width:767px){
 
 .feedback-page .gl_row.spb_row .spb_wrapper {
