@@ -2615,6 +2615,31 @@ body.template-product  {
     background: #000;
     color: #e94949;
 }
+
+.single-product-content .shopify-app-block {
+    position: fixed;
+    width: 50%;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    z-index: 99;
+}
+
+.single-product-content .shopify-app-block a {
+    background: #e94949;
+    margin: 0;
+    z-index: 99;
+    padding: 14px 10px !important;
+    border-radius: 0;
+    font-size: 15px;
+    height: 49px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #fff;
+    letter-spacing: 0;
+    color: #fff;
+}
   
 }
 
