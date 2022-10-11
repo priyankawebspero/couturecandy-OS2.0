@@ -2684,7 +2684,7 @@ body.template-product  {
     padding-bottom: 50px;
     top: 50%;
     overflow-x: hidden;
-    max-height: 650px;
+    max-height: 95%;
     transform: translateY(-50%);
     position: fixed;
 }
