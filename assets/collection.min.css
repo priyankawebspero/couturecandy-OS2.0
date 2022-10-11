@@ -1104,10 +1104,6 @@ display:none;
 .boost-pfs-filter-default-toolbar .boost-pfs-filter-tree-desktop-button>button {
     font-size: 0;
     position: relative;
-    transform: inherit;
-    -webkit-transform: inherit;
-    -moz-transform: inherit;
-    transform-origin: inherit;
     min-height: 38px;
     padding: 8px 20px 8px 20px;
     border-radius: 5px !important;
