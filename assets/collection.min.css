@@ -466,7 +466,10 @@ background:none !important;}
 .boost-pfs-filter-default-toolbar .boost-pfs-filter-tree-desktop-button {
     position: fixed;
     left: 0;
-    /* transform: rotate(90deg); */
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform-origin: left bottom;
     z-index: 9;
     top: 280px;
     margin: 0;
@@ -476,10 +479,6 @@ background:none !important;}
 .boost-pfs-filter-default-toolbar .boost-pfs-filter-tree-desktop-button>button {
     font-size: 0;
     position: relative;
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    transform-origin: left bottom;
     float: left;
     border-radius: 7px 7px 0 0!important;
     padding-left: 0;
