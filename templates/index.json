@@ -2,64 +2,6 @@
   "sections": {
     "165665994781beea14": {
       "type": "home-list-collections",
-      "blocks": {
-        "bec0e86e-db41-4f7d-a7de-e4be4f548af6": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/prom_mobile.png",
-            "collection": "prom-dresses",
-            "title": "PROM 2023"
-          }
-        },
-        "68910d30-4ea1-4a94-a545-965e8708ddc1": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/mobile-home-coming.png",
-            "collection": "dresses",
-            "title": "DRESSES"
-          }
-        },
-        "b2f7101a-fb9d-465d-b59e-87098b01b3ba": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/mobile_wedding.png",
-            "collection": "wedding-dresses",
-            "title": "WEDDING"
-          }
-        },
-        "af0b2b4b-1922-4513-a9cf-76c5a6a74ee3": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/mobile-mob.png",
-            "collection": "mother-of-the-bride-dresses",
-            "title": "MOB"
-          }
-        },
-        "3ecd3826-2397-46b8-99a7-359b2aad1628": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/mobile-bridemaid.png",
-            "collection": "bridesmaid-dresses",
-            "title": "BRIDESMAID"
-          }
-        },
-        "119c3c45-5c51-4cbe-9af7-1d5b8c5fa5f0": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/mobile_plussize.png",
-            "collection": "plus-size-dresses",
-            "title": "PLUS SIZE"
-          }
-        }
-      },
-      "block_order": [
-        "bec0e86e-db41-4f7d-a7de-e4be4f548af6",
-        "68910d30-4ea1-4a94-a545-965e8708ddc1",
-        "b2f7101a-fb9d-465d-b59e-87098b01b3ba",
-        "af0b2b4b-1922-4513-a9cf-76c5a6a74ee3",
-        "3ecd3826-2397-46b8-99a7-359b2aad1628",
-        "119c3c45-5c51-4cbe-9af7-1d5b8c5fa5f0"
-      ],
       "settings": {
         "display_padding": true,
         "margin_bottom_mb": 0,
@@ -478,10 +420,34 @@
             "feed_width": 100,
             "html_area": "<a href=\"https:\/\/www.instagram.com\/shopcouturecandy\/\" class=\"btn btn-color-primary btn-style-default btn-size-default text-center mobile\">VIEW MORE<\/a>"
           }
+        },
+        "99cbdb75-ae94-49aa-b44b-02ff60aa5af1": {
+          "type": "shopify:\/\/apps\/wishlist\/blocks\/app-block\/7f9269b0-1b45-4d0c-8479-faf04f05d8ac",
+          "settings": {
+            "is_collection": true,
+            "is_text_only_col": false,
+            "iwish_add_txt": "Add To Wishlist",
+            "iwish_added_txt": "Added To Wishlist",
+            "outline_icon": "default_outline",
+            "filled_icon": "default_filled",
+            "iwish_add_icon_outline": "",
+            "iwish_added_icon_filled": "",
+            "iwish_theme_class": "",
+            "txt_font_size": 14,
+            "iwish_text_clr": "#000000",
+            "iwish_text_hover_clr": "#000000",
+            "variant_change_wrapper": "",
+            "variant_name_id_selector": "[name=id]",
+            "iwish_qvWrapper": "",
+            "iwish_qvBtn_click": "",
+            "iwish_custom_filters": "",
+            "filter_timeout": 1500
+          }
         }
       },
       "block_order": [
-        "a41a6449-6d18-49a8-8ff1-11479d23387a"
+        "a41a6449-6d18-49a8-8ff1-11479d23387a",
+        "99cbdb75-ae94-49aa-b44b-02ff60aa5af1"
       ],
       "settings": {
       }
