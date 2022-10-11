@@ -6972,6 +6972,10 @@ button.boost-pfs-filter-show-result {
 .iwishMsg {
     padding: 0 30px;
 }
+
+.iwish_cc .iwishProducts>li {
+    width: 20%;
+}
   
 }
 
