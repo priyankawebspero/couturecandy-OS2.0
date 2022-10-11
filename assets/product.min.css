@@ -2696,6 +2696,15 @@ body.template-product.popup-visible {
 .size-chart.bg-gray {
     overflow: auto;
 }
+
+.popup-visible .single-product-content .single_variation_wrap {
+    position: relative;
+    z-index: 1;
+}
+
+.popup-visible .single-product-content .shopify-app-block {
+    z-index: 1;
+}
   
 }
 
