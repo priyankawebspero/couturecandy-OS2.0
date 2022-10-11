@@ -2681,7 +2681,7 @@ body.template-product  {
 
 .single-product-content .product-image-summary .modal {
     /* height: 100%; */
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     top: 50%;
     overflow-x: hidden;
     max-height: 95%;
