@@ -7261,6 +7261,12 @@ body .iWishAddColl.iwishAdded svg path {
 .iwishEmailWishlist .iwishTitle + div {
     margin-top: 11px;
 }
+
+.shopify .return-to-shop .button {
+    font-size: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
   
 }
 
