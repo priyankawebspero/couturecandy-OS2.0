@@ -7108,7 +7108,7 @@ button.boost-pfs-filter-show-result {
 
 /*----------wishlist-icon-top----*/
 
-a.iWishAddColl {
+.template-index a.iWishAddColl {
     z-index: 1;
 }
 
