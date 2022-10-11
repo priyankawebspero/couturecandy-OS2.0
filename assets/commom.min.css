@@ -6963,20 +6963,24 @@ button.boost-pfs-filter-show-result {
     padding: 0 50px;
 }
 
-@media only screen and (max-width:1550px){
-
-.iwish_cc {
-    padding: 0 30px;
-}
-
-.iwishMsg {
-    padding: 0 30px;
-}
+@media only screen and (max-width:1450px){
 
 .iwish_cc .iwishProducts>li {
     width: 20%;
 }
+
+}
+
+@media only screen and (max-width:1550px){
+
+  .iwish_cc {
+      padding: 0 30px;
+  }
   
+  .iwishMsg {
+      padding: 0 30px;
+  }
+
 }
 
 @media only screen and (max-width:1199px){
