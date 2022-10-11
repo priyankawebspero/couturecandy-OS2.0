@@ -7108,6 +7108,10 @@ button.boost-pfs-filter-show-result {
 
 /*----------wishlist-icon-top----*/
 
+a.iWishAddColl {
+    z-index: 1;
+}
+
 .mobile_bottom_icons .iwish-counter {
     top: -7px !important;
 }
