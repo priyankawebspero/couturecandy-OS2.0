@@ -41,15 +41,18 @@
     },
     "gl-product-page-description": {
       "type": "gl-product-page-description",
+      "disabled": true,
       "blocks": {
         "7c3e9c01-ae8c-482c-895a-959697848a23": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "title": "Description"
           }
         },
         "507d4b8f-5817-4d28-845d-4d9e215b9435": {
           "type": "additional",
+          "disabled": true,
           "settings": {
             "title": "Size"
           }
