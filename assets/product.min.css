@@ -1704,8 +1704,12 @@ div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-w
     color: #000;
 }
 
-span.isHelpful {
+#ReviewSection span.isHelpful {
     color: #000 !important;
+}
+
+#ReviewSection .stjr-product-review-page-widget-review-container .stjr-product-review-page-widget-review__author-info .stjr-product-review-page-widget-review-info span.stjr-product-review-page-widget-review-info__time {
+    color: #000;
 }
 
 /****-new-wishlist-icon--css-----------*/
