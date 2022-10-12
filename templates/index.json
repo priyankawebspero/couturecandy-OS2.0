@@ -436,6 +436,21 @@
         "read_more": "Read More",
         "text_below": "<p>Wearing a designer prom dress shouldn’t be an exorbitant affair for any teen. We, at CoutureCandy, strive to get the best prices for our dear shoppers. Our on-sale prom dresses under $100 can be easily mistaken for $1000. We offer best-sellers from top designers like Jovani, Sherri Hill, and Blush, etc. at highly discounted prices online. Thousands of long and short prom dresses are available in different styles, sizes and price ranges - ready to be shipped to prom-goers around the world.<\/p>"
       }
+    },
+    "16655759791a6bd1c1": {
+      "type": "apps",
+      "blocks": {
+        "43412905-6922-4b45-91ac-1b3b3272f864": {
+          "type": "shopify:\/\/apps\/sitejabber-customer-reviews\/blocks\/review-carousel\/888a55e3-b12d-42fd-a941-84fa4cf34213",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "43412905-6922-4b45-91ac-1b3b3272f864"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -450,6 +465,7 @@
     "16539975212558b7d0",
     "1655293959d5ab1c6c",
     "1655293802112cf900",
-    "16539976128b65b898"
+    "16539976128b65b898",
+    "16655759791a6bd1c1"
   ]
 }
