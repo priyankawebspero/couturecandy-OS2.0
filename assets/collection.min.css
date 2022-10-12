@@ -929,7 +929,9 @@ display:none;
     margin-bottom: 0;
 }
 
-
+.boost-pfs-filter-product-item-price .boost-pfs-filter-product-item-sale-price {
+    color: #e94949 !important;
+}
 
 @media only screen and (min-width:1300px){
 .boost-pfs-section-header .boost-pfs-filter-collection-description h1.heading.collection {
