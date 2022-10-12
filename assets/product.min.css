@@ -1676,6 +1676,14 @@ div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-w
     max-width: 300px;
 }
 
+.single-product-content .price ins .money {
+    color: #e94949;
+}
+
+.single-product-content .shopify-Tabs-panel p {
+    color: #000;
+}
+
 /****-new-wishlist-icon--css-----------*/
 
 @media only screen and (min-width:768px){
