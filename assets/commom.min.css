@@ -7235,6 +7235,11 @@ body span.iWishAddColl {
     padding-top: 5px;
 }
 
+
+body a.iWishAddColl {
+    padding-top: 4px;
+}
+
 body .iWishAddColl.iwishAdded svg {
     fill: #e94949 !important;
 }
