@@ -7248,10 +7248,6 @@ body .iWishAddColl.iwishAdded svg path {
     fill: #e94949 !important;
 }
 
-.single-product-content .price ins .money {
-    color: #e94949;
-}
-
 @media only screen and (max-width:767px){
 
   .shopify .cart-empty {
