@@ -1684,6 +1684,10 @@ div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-w
     color: #000;
 }
 
+.single-product-content .shopify-Tabs-panel .table td {
+    color: #000;
+}
+
 /****-new-wishlist-icon--css-----------*/
 
 @media only screen and (min-width:768px){
