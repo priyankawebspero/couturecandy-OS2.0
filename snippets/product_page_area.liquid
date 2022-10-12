@@ -682,7 +682,7 @@
                              </div>
                              {%- if settings.show_product_page_rating -%}
                              <a href="#ReviewSection" class="shopify-product-rating">
-                               <div class="yotpo bottomLine" data-product-id="{{ product.id }}"  data-url="{{ product.url }}"></div>          
+                              <div class="stjr-product-rating" data-product-id="{{ product.id }}"></div>
                               </a>
                              {%- endif -%}
                         </div>
@@ -920,7 +920,7 @@
                                                   <a href="{{ check }}" rel="nofollow" class="single_add_to_cart_button button alt">{{ product.metafields.external | first | first }}</a>
                                                   {%- endif -%}
                                                </div>
-                                          {%- if settings.use_wishlist and pages['wishlist'].empty? != true -%}{%- include 'gl-wishlist-product' -%}{%- endif -%}
+                                          {%- if settings.use_wishlist and pages['wishlist'].empty? != true -%}{% include 'iwish_v2' with 'iwishproduct' %}{%- endif -%}
                                            </div>
                                         {%- else -%}
                                             {%- if settings.product_quantity_message -%}
@@ -957,6 +957,12 @@
                                             {% if settings.enable_payment_button %}
                                               {{ form | payment_button }}
                                             {% endif %}
+                                          {%- for block in section.blocks -%}              
+                                              {% case block.type %}              
+                                              {% when '@app' %}
+                                                  {% render block  %}
+                                              {% endcase %}
+                                            {%- endfor -%} 
                                       {%- endform -%}
                                    {%- endif -%}
                                 {%- else -%}
@@ -1309,5 +1315,3 @@
      <div class="product-share">{%- include 'social-sharing', gl_design:'icons-design-colored', gl_size:'icons-size-default', follow_social:gl_follow_social -%}</div>
      {%- endif -%}
   </div>
-
- 
