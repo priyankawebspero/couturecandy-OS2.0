@@ -25,10 +25,24 @@
             "iwish_custom_filters": "",
             "filter_timeout": 1500
           }
+        },
+        "269c14df-74ba-45f9-b1e9-c8e091c4acd3": {
+          "type": "description",
+          "settings": {
+            "title": "Description"
+          }
+        },
+        "88661908-78b4-4467-a5ab-f0c3481c9bb2": {
+          "type": "additional",
+          "settings": {
+            "title": "SIZE GUIDE"
+          }
         }
       },
       "block_order": [
-        "0f422a92-1518-4207-b475-a9de337814f0"
+        "0f422a92-1518-4207-b475-a9de337814f0",
+        "269c14df-74ba-45f9-b1e9-c8e091c4acd3",
+        "88661908-78b4-4467-a5ab-f0c3481c9bb2"
       ],
       "settings": {
       }
