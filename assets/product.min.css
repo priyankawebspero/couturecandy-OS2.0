@@ -1700,6 +1700,10 @@ div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-w
     color: #000 !important;
 }
 
+.stjr-product-review-page-widget .stjr-dropdown-interactive .stjr-dropdown-option-button .stjr-dropdown-text-content {
+    color: #000;
+}
+
 /****-new-wishlist-icon--css-----------*/
 
 @media only screen and (min-width:768px){
