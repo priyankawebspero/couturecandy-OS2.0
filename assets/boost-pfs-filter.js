@@ -1228,4 +1228,27 @@ var boostPFSFilterConfig = {
     //     jQ(window).on('scroll', setPosition);
     //     setPosition();
     // }
+
+    // Only send Weglot request if the current language is different from English
+    function isWeglotActive() {
+        if (!window.Weglot || !window.Weglot.initialized) {
+          	return false;
+        } else {
+        	var currentLang = Weglot.getCurrentLang();
+    	// Change 'en' to suitable with original language of the store
+        	return currentLang !== 'en';
+        }
+    }
+        
+    FilterApi.beforeCallAsync = function(callFilterApi) {
+        // Then use it in our API
+        if (Utils.isSearchPage() && window.Weglot && window.Weglot.initialized && isWeglotActive()) {
+              Weglot.search(Utils.getSearchTerm(), function(englishTerm) {
+                  	Globals.queryParams['q'] = englishTerm;
+                  	callFilterApi();
+              });
+        } else {
+              callFilterApi();
+        }
+    }
 })();
