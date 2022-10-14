@@ -7010,6 +7010,11 @@ button.boost-pfs-filter-show-result {
     stroke: #fff !important;
 }
 
+.mobile-nav .mobile_bottom_icons a.iWishView {
+    top: 0 !important;
+    margin-left: 0;
+}
+
 }
 
 @media only screen and (max-width:767px){
