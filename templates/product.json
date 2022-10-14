@@ -5,6 +5,7 @@
       "blocks": {
         "0f422a92-1518-4207-b475-a9de337814f0": {
           "type": "shopify:\/\/apps\/wishlist\/blocks\/app-block\/7f9269b0-1b45-4d0c-8479-faf04f05d8ac",
+          "disabled": true,
           "settings": {
             "is_collection": false,
             "is_text_only_col": false,
