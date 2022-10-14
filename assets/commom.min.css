@@ -7145,9 +7145,8 @@ div#mst-iwish-drawer-root {
 }
 
 .iwishMsg .iWishLoginNote {
-    min-height: 400px;
     text-align: center;
-    padding-top: 5vw;
+    padding-top: 5px;
     font-size: 18px !important;
 }
 
