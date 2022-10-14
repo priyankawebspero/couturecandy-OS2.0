@@ -601,6 +601,12 @@ var boostPFSFilterConfig = {
                 html = boostPFSTemplate.sortingHtml.replace(/{{sortingItems}}/g, sortingItemsHtml);
             }
         }
+
+        if (typeof iwishCheckColl !== 'undefined' && typeof iwishCheckColl === 'function') 
+        {
+          iwishCheckColl();
+        }
+      
         return html;
     };
 
