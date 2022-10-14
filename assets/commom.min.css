@@ -7092,6 +7092,10 @@ ul.iwishProducts {
 ul.iwishProducts {
     padding: 0 2px;
 }
+
+ul.iwishProducts>li {
+    margin-bottom: 15px;
+}
   
 }
 
