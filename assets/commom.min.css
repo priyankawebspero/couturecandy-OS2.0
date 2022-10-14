@@ -7003,6 +7003,15 @@ button.boost-pfs-filter-show-result {
   
 }
 
+
+@media only screen and (max-width:991px){
+
+.mobile-nav .mobile_bottom_icons a.iWishView svg path {
+    stroke: #fff !important;
+}
+
+}
+
 @media only screen and (max-width:767px){
 
 .iwish_cc .iwishProducts>li {
