@@ -6989,6 +6989,10 @@ button.boost-pfs-filter-show-result {
       padding: 0 30px;
   }
 
+ul.iwishProducts {
+      padding: 0 15px;
+  }
+
 }
 
 @media only screen and (max-width:1199px){
@@ -7000,12 +7004,16 @@ button.boost-pfs-filter-show-result {
   .iwishMsg {
     padding: 0 20px;
 }
+
+ul.iwishProducts {
+      padding: 0 5px;
+  }
   
 }
 
 @media only screen and (max-width:1024px){
 
-.iwish_cc .iwishProducts>li {
+.iwish_cc .iwishProducts>li, .iwishProducts>li {
     width: 33.33%;
 }
   
