@@ -7088,6 +7088,10 @@ ul.iwishProducts {
 .iwishMsg {
     padding: 0 15px;
 }
+
+ul.iwishProducts {
+    padding: 0 2px;
+}
   
 }
 
