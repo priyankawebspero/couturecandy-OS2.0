@@ -7076,7 +7076,7 @@ ul.iwishProducts {
     padding-right: 5px;
 }
 
-.iwish_cc .iwishProducts>li .iwishImgWrap, .iwishProducts>li .iwishImgWrap {
+.iwish_cc .iwishProducts>li .iwishImgWrap, ul.iwishProducts>li .iwishImgWrap {
     margin-bottom: 10px;
 }
 
