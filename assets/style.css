@@ -33,13 +33,12 @@ a.iWishAddColl svg {
 }
 a.iWishAddColl {
     position: absolute;
-    right: 17px;
-    top: 0px;
+    right: 25px;
+    top: 6px;
     background: #fff;
-    border-radius: 50%;
+    border-radius: 100%;
     width: 25px;
     height: 25px;
     display: flex;
     justify-content: center;
-    top: 6px;
 }
