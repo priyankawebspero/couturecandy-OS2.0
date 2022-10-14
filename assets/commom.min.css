@@ -7052,7 +7052,7 @@ ul.iwishProducts {
     padding: 10px;
 }
 
-.iwish_cc .iwishProducts>li .iwishMeta .iwishMeta-title a, .iwishProducts>li .iwishMeta .iwishMeta-title a {
+.iwish_cc .iwishProducts>li .iwishMeta .iwishMeta-title a, ul.iwishProducts>li .iwishMeta .iwishMeta-title a {
     font-size: 14px;
     line-height: 1.2;
     max-height: 32px;
