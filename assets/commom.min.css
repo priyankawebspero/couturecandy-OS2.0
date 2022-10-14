@@ -7100,6 +7100,11 @@ ul.iwishProducts>li {
 .iwishProducts>li .iwishMeta .iwishMeta-price {
     letter-spacing: -.5px;
 }
+
+ul.iwishProducts {
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
   
 }
 
