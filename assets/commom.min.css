@@ -6971,6 +6971,10 @@ button.boost-pfs-filter-show-result {
     padding: 0 50px;
 }
 
+ul.iwishProducts {
+    margin-bottom: 50px;
+}
+
 @media only screen and (min-width:1450px){
 
 .iwish_cc .iwishProducts>li, ul.iwishProducts>li {
