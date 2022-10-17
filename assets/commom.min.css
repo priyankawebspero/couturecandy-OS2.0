@@ -7283,12 +7283,13 @@ div#mst-iwish-drawer-root {
 
 body span.iWishAddColl {
     z-index: 9;
-    padding-top: 5px;
+    padding-top: 0;
+    background: none;
 }
 
-
 body a.iWishAddColl {
-    padding-top: 5px;
+    padding-top: 0;
+  background: none;
 }
 
 body .iWishAddColl.iwishAdded svg {
