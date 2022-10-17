@@ -7299,6 +7299,14 @@ body .iWishAddColl.iwishAdded svg path {
     fill: #e94949 !important;
 }
 
+body .iWishAddColl svg {
+    fill: #e94949 !important;
+}
+
+body .iWishAddColl svg path {
+    fill: #e94949 !important;
+}
+
 @media only screen and (max-width:767px){
 
   .shopify .cart-empty {
