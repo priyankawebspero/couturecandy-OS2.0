@@ -52,6 +52,7 @@ function asyncLoadshopapps(){
 			return false;
 		});
 		jQuery('body').on('click',".iWishAddColl", function() {
+          jQuery('.iWishAddColl').toggleClass('iwishAdded');
 			var iWishvId = jQuery(this).attr("data-variant");
 			iwish_addCollection(jQuery(this),iWishvId);
 			return false;
