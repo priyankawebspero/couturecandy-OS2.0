@@ -170,6 +170,7 @@
 
         return data;
       })();
+      {% if request.page_type == 'product' %}
       $(document).ready( function() { 
 jQuery('form[action="/cart/add"]').submit(function(e) {
   e.preventDefault();
@@ -192,5 +193,6 @@ jQuery('form[action="/cart/add"]').submit(function(e) {
   });
 });
          });
+      {% endif %}
 </script>
   
