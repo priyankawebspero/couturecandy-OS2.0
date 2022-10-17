@@ -147,10 +147,10 @@ jQuery('form[action="/cart/add"]').submit(function(e) {
       var response = eval('(' + jqXHR.responseText + ')').description;
       if (response.slice(0,4) === 'All ') {
         // jQuery('form[action="/cart/add"]').find('input[type="submit"], button[type="submit"]').val('Sold Out').addClass('disabled').attr('disabled','disabled');
-        alert(response.replace('All 1 ', 'All '));
+        jQuery("#variant-error-msg").text(response.replace('All 1 ', 'All '));
       }
       else {
-        alert(response);
+        jQuery("#variant-error-msg").text(response);
       }
     }
   });
