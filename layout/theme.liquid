@@ -170,6 +170,27 @@
 
         return data;
       })();
-
+      $(document).ready( function() { 
+jQuery('form[action="/cart/add"]').submit(function(e) {
+  e.preventDefault();
+  jQuery.ajax( {
+    url: '/cart/add.js',
+    type: 'post',
+    dataType: 'json',
+    data: jQuery(this).serialize(),
+    success: function() { window.location.href = '/cart' },
+    error: function(jqXHR) {
+      var response = eval('(' + jqXHR.responseText + ')').description;
+      if (response.slice(0,4) === 'All ') {
+        // jQuery('form[action="/cart/add"]').find('input[type="submit"], button[type="submit"]').val('Sold Out').addClass('disabled').attr('disabled','disabled');
+        alert(response.replace('All 1 ', 'All '));
+      }
+      else {
+        alert(response);
+      }
+    }
+  });
+});
+         });
 </script>
   
