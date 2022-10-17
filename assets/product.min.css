@@ -1,7 +1,7 @@
 div#popup {
     display: none;
 }
-div#variant-error-msg {
+div.inventory-active {
     margin-bottom: 20px;
     color: #d02e2e;
     background-color: #fff6f6;
