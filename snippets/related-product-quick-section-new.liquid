@@ -35,8 +35,7 @@
 
    </div>
   <div class="product-element-bottom">
-   <h3 class="product-title"><a href="{{ url_nt }}">{{ product.title }}</a></h3>
-    <div class="yotpo bottomLine" data-product-id="{{ product.id }}"  data-url="{{ product.url }}"></div>          
+   <h3 class="product-title"><a href="{{ url_nt }}">{{ product.title }}</a></h3>          
       <span class="price">
        {%- if product.price_varies -%}
 		<span class="Bold-theme-hook-DO-NOT-DELETE bold_product_price" data-override-value-set="1" data-override-value="{{ product.price_max }}" style="display:none !important;"></span>{{ product.price_max | money }}
