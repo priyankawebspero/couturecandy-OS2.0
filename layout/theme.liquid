@@ -148,9 +148,11 @@ jQuery('form[action="/cart/add"]').submit(function(e) {
       if (response.slice(0,4) === 'All ') {
         // jQuery('form[action="/cart/add"]').find('input[type="submit"], button[type="submit"]').val('Sold Out').addClass('disabled').attr('disabled','disabled');
         jQuery("#variant-error-msg").text(response.replace('All 1 ', 'All '));
+        jQuery("#variant-error-msg").addClass("inventory-active");
       }
       else {
         jQuery("#variant-error-msg").text(response);
+        jQuery("#variant-error-msg").addClass("inventory-active");
       }
     }
   });
