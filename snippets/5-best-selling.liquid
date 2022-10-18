@@ -1,0 +1,71 @@
+<div class="recommendations">
+ {%- assign counter = 0 -%}
+<div class="col-6 table_prom best_seller">          
+  <h3>→ What are the top 5 best selling {{collection.title | downcase }} in 2022 on {{shop.name}}?</h3> 
+  <table>
+  <tbody>
+    
+   </tbody>
+ </table>
+     <script>
+        $.ajax({
+          url: '/collections/{{collection.handle}}?sort_by=best-selling',
+          type:'GET',
+          dataType:'Html'
+       }).done(function(data){
+           var main = $(data).find('.boost-pfs-filter-products  .boost-pfs-filter-product-bottom-inner');
+           jQuery.each( main, function( i, val ) {         
+            if(i < 5){
+                console.log(val);
+             var product_title = $(val).find('a.boost-pfs-filter-product-item-title').data('title'); 
+             var product_url = $(val).find('a.boost-pfs-filter-product-item-title').data('url'); 
+             var product_ava = $(val).find('a.boost-pfs-filter-product-item-title').data('available');
+            if (product_ava = "true"){
+             var products = '<a href="'+product_url+'">'+product_title+'</a>'
+              $('.best_seller table tbody').append(products);
+            }
+          }
+        }); 
+    }) 
+</script>
+</div>
+{%- assign counter2 = 0 -%}
+<div class="col-6 table_prom">          
+  <h3>→ What are the most beautiful {{collection.title | downcase }} at {{shop.name}}?</h3> 
+  <table>
+  <tbody>
+    {% assign collection_price = collection.products | sort: "price" %} 
+     {% assign collection_price_rev = collection_price | reverse %} 
+      {% for product in collection_price_rev limit:5 %}
+        {% unless counter2 > 4 %}
+            {% if product.available %}
+               {%- assign counter2 = counter2 | plus: 1 -%}
+          <tr>
+              <td> <a href="{{ product.url }}">{{ product.title }}</a></td>
+          </tr>
+            {% endif %}
+        {% endunless %}  
+      {% endfor %}
+  </tbody>
+  </table>
+</div>
+{%- assign counter3 = 0 -%}
+<div class="col-6 table_prom">          
+  <h3>What are the best prices for the popular {{collection.title | downcase }} at {{shop.name}}?</h3> 
+  <table>
+  <tbody>
+      {% for product in collection_price limit:5 %}
+        {% unless counter3 > 4 %}
+            {% if product.available %}
+               {%- assign counter3 = counter3 | plus: 1 -%}
+          <tr>
+              <td> <a href="{{ product.url }}">{{ product.title }}</a></td>
+              <td> <span class="price" data-wg-notranslate="manual">{{ product.price | money_with_currency }}</span></td>
+          </tr>
+            {% endif %}
+        {% endunless %}  
+      {% endfor %}
+  </tbody>
+  </table>
+</div>
+</div>
