@@ -565,6 +565,7 @@ window.criteo_q.push(
    {%- if collection.metafields.global.faq != blank %}
     <div class="faq_section"> {{ collection.metafields.global.faq }}</div>
     {%- endif -%}
+       {%- include '5-best-selling' -%}
 {%- render 'boost-pfs-theme-config',
 	layout_type: layout_type,
 	enable_filter_sticky_d: enable_filter_sticky_d,
