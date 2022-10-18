@@ -1718,7 +1718,8 @@ display:none;
 /*------collection-bottom-csss-------*/
 
 .faq_section {
-    padding: 30px 50px 70px 50px;
+    padding: 30px 50px 0px 50px;
+    margin-bottom: 30px;
 }
 
 .faq_section h2 {
