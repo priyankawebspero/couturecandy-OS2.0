@@ -2203,7 +2203,8 @@ display:none;
 }
 
   .collection_faq h2 {
-   padding: 0 15px;
+    padding: 0 15px;
+    font-size: 26px;
 }
 
 .recommendations .table_prom table tr td:last-child {
