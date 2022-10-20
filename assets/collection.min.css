@@ -2172,6 +2172,26 @@ display:none;
     position: relative;
 }
 
+.recommendations .table_prom table tr td a {
+    position: relative;
+    padding-left: 22px;
+}
+
+.recommendations .table_prom table tr td a:before{
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 12px;
+    border: solid #e44949;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    vertical-align: top;
+    margin-right: 12px;
+    position: absolute;
+    left: 12px;
+    top: 15px;
+}
+
 @media only screen and (min-width: 992px){
 
 .recommendations .col-6.table_prom {
