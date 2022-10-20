@@ -2188,8 +2188,8 @@ display:none;
     vertical-align: top;
     margin-right: 12px;
     position: absolute;
-    left: 12px;
-    top: 15px;
+    left: 2px;
+    top: 0px;
 }
 
 @media only screen and (min-width: 992px){
