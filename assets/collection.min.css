@@ -2271,6 +2271,11 @@ display:none;
     margin-left: 0;
 }
 
+.recommendations .col-6.table_prom.best_seller tbody a:before {
+    left: 12px;
+    top: 10px;
+}
+
 }
 
   
