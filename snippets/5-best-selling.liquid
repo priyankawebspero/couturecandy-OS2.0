@@ -40,12 +40,12 @@
      {% assign collection_price_rev = collection_price | reverse %} 
       {% for product in collection_price_rev limit:5 %}
         {% unless counter2 > 4 %}
-            
+            {% if product.available %}
                {%- assign counter2 = counter2 | plus: 1 -%}
           <tr>
               <td> <a href="{{ product.url }}">{{ product.title }}</a></td>
           </tr>
-           
+            {% endif %}
         {% endunless %}  
       {% endfor %}
   </tbody>
