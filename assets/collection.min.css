@@ -2137,7 +2137,12 @@ display:none;
 .table_prom a:hover, .faq_section .table_prom table tr td a:hover {
      color: #e94949;
 }
-
+.collection_faq h2 {
+    text-transform: capitalize;
+    padding: 0 50px;
+    margin-top: 30px;
+    font-size: 30px;
+}
 
 @media only screen and (min-width: 992px){
 
@@ -2170,12 +2175,20 @@ display:none;
 .recommendations {
     padding: 0 30px;
 }
+
+.collection_faq h2 {
+   padding: 0 30px;
+}
   
 }
 
 @media only screen and (max-width:1199px){
 .recommendations {
     padding: 0 20px;
+}
+
+.collection_faq h2 {
+   padding: 0 20px;
 }
   
 }
@@ -2187,6 +2200,10 @@ display:none;
 
 .recommendations {
     padding: 0 15px;
+}
+
+  .collection_faq h2 {
+   padding: 0 15px;
 }
 
 .recommendations .table_prom table tr td:last-child {
