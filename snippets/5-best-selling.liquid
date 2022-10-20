@@ -3,7 +3,7 @@
 <div class="recommendations">
  {%- assign counter = 0 -%}
 <div class="col-6 table_prom best_seller">          
-  <h3>→ What are the top 5 best selling {{collection.title | downcase }} in 2022 on {{shop.name}}?</h3> 
+  <h3>→ What are the top 5 best selling {{collection.title | downcase | replace:'2022', ''}} in {{  "now" | date: "%Y" }} on {{shop.name}}?</h3> 
   <table>
   <tbody>
     
