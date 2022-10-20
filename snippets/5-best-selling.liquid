@@ -57,7 +57,7 @@
   <tbody>
       {% for product in collection_price %}
         {% unless counter3 > 4 %}
-            {% if product.available and product.price > 0 %}
+            {% if product.available %}
                {%- assign counter3 = counter3 | plus: 1 -%}
           <tr>
               <td> <a href="{{ product.url }}">{{ product.title }}</a></td>
