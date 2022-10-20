@@ -1,7 +1,6 @@
 <div class="collection_faq">
 <h2>Frequently Asked Questions About {{ collection.handle | capitalize | replace:'-', ' '}}</h2>
 <div class="recommendations">
- {%- assign counter = 0 -%}
 <div class="col-6 table_prom best_seller">          
   <h3>→ What are the top 5 best selling {{collection.handle | replace:'-', ' '}} in {{  "now" | date: "%Y" }} on {{shop.name}}?</h3> 
   <table>
