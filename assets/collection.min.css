@@ -2175,8 +2175,8 @@ display:none;
 .recommendations .table_prom table tr td a {
     position: relative;
     padding-left: 22px;
+    display: block;
 }
-
 .recommendations .table_prom table tr td a:before{
     content: "";
     display: inline-block;
