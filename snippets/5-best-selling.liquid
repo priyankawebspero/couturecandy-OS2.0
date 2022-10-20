@@ -58,11 +58,13 @@
       {% for product in collection_price %}
         {% unless counter3 > 4 %}
             {% if product.available %}
+               {% if product.price > 0 %}
                {%- assign counter3 = counter3 | plus: 1 -%}
-          <tr>
-              <td> <a href="{{ product.url }}">{{ product.title }}</a></td>
-              <td> <span class="price" data-wg-notranslate="manual">{{ product.price | money_with_currency }}</span></td>
-          </tr>
+                  <tr>
+                      <td> <a href="{{ product.url }}">{{ product.title }}</a></td>
+                      <td> <span class="price" data-wg-notranslate="manual">{{ product.price | money_with_currency }}</span></td>
+                  </tr>
+              {% endif %}
             {% endif %}
         {% endunless %}  
       {% endfor %}
