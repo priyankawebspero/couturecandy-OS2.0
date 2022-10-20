@@ -39,6 +39,7 @@
     {% assign collection_price = collection.products | sort: "price" %} 
      {% assign collection_price_rev = collection_price | reverse %} 
       {% for product in collection_price_rev limit:5 %}
+{{ product.title }}
         {% unless counter2 > 4 %}
             {% if product.available %}
                {%- assign counter2 = counter2 | plus: 1 -%}
