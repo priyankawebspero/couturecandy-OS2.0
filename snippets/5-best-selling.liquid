@@ -38,8 +38,7 @@
   <tbody>
     {% assign collection_price = collection.products | sort: "price" %} 
      {% assign collection_price_rev = collection_price | reverse %} 
-      {% for product in collection_price_rev limit:5 %}
-{{ product.title }}
+      {% for product in collection_price_rev %}
         {% unless counter2 > 4 %}
             {% if product.available %}
                {%- assign counter2 = counter2 | plus: 1 -%}
@@ -57,7 +56,7 @@
   <h3>What are the best prices for the popular {{collection.handle | replace:'-', ' '}} at {{shop.name}}?</h3> 
   <table>
   <tbody>
-      {% for product in collection_price limit:5 %}
+      {% for product in collection_price %}
         {% unless counter3 > 4 %}
             {% if product.available %}
                {%- assign counter3 = counter3 | plus: 1 -%}
