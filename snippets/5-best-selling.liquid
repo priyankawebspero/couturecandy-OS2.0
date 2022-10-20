@@ -38,7 +38,6 @@
   <tbody>
     {% assign collection_price = collection.products | sort: "price" %} 
      {% assign collection_price_rev = collection_price | reverse %} 
-    {{ collection_price_rev }}
       {% for product in collection_price_rev limit:5 %}
         {% unless counter2 > 4 %}
             {% if product.available %}
