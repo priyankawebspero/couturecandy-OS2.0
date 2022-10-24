@@ -38,7 +38,11 @@
     assign enable_filter_tree_button_desktop = true
   endif
   
-  assign boost_translations = shop.metafields.boostpfs-settings.labelTranslations
+  if shop.metafields.boostpfs-settings.labelTranslations.type != nil 
+assign boost_translations = shop.metafields.boostpfs-settings.labelTranslations.value
+else
+assign boost_translations = shop.metafields.boostpfs-settings.labelTranslations
+endif
 	assign current_locale = request.locale.iso_code
 	assign primary_locale = current_locale
 	for locale in shop.published_locales
@@ -414,7 +418,6 @@
 	<div class="boost-pfs-container-default-{{ layout_type }}">
 			{%- if switch_layout_filter != 'switch_layout_filter_horizontal' -%}
 			<div class="boost-pfs-filter-left-col">
-              <span>FILTERS</span>
 				<div class="boost-pfs-filter-left-col-inner">
 					<div class="boost-pfs-filter-tree boost-pfs-filter-tree-v" data-is-desktop id="boost-pfs-filter-tree2">
             {%- unless enable_filter_tree_button_desktop -%}

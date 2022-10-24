@@ -68,7 +68,11 @@ window.criteo_q.push(
     assign enable_filter_tree_button_desktop = true
   endif
 
-	assign boost_translations = shop.metafields.boostpfs-settings.labelTranslations
+	if shop.metafields.boostpfs-settings.labelTranslations.type != nil 
+assign boost_translations = shop.metafields.boostpfs-settings.labelTranslations.value
+else
+assign boost_translations = shop.metafields.boostpfs-settings.labelTranslations
+endif
   assign boost_settings = shop.metafields.bc-sf-filter.settings
 	assign boost_in_collection_search = boost_settings | split: 'enableCollectionSearch":' | last | split: ',"' | first | strip 
 	assign current_locale = request.locale.iso_code
