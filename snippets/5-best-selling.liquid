@@ -84,7 +84,7 @@
                   {% unless counter2 > 4 %}
                       {% if product.available %}
                          {%- assign counter2 = counter2 | plus: 1 -%}
-                         {{ product.title }}<br>
+                         {{ product.title }}
                       {% endif %}
                   {% endunless %}  
                 {% endfor %}
@@ -96,7 +96,7 @@
                       {% if product.available %}
                          {% if product.price > 0 %}
                          {%- assign counter3 = counter3 | plus: 1 -%}
-                           {{ product.title }}<br>
+                           {{ product.title }}
                         {% endif %}
                       {% endif %}
                   {% endunless %}  
@@ -111,14 +111,14 @@
     "name": "What are the most beautiful {{collection.handle | replace:'-', ' '}} at {{shop.name}}?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "{{ faq2 }}"
+      "text": "{{ faq2 | strip }}"
     }
   },{
     "@type": "Question",
     "name": "What are the best prices for the popular {{collection.handle | replace:'-', ' '}} at {{shop.name}}?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "{{ faq3 }}"
+      "text": "{{ faq3 | strip }}"
     }
   }]
 }
