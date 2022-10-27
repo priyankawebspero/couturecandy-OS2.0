@@ -59,8 +59,12 @@
   </table>
 </div>
 {%- assign counter3 = 0 -%}
-<div class="col-6 table_prom">          
-  <h3>What are the best prices for the popular {{collection.handle | replace:'-', ' ' | capitalize }} dresses at {{shop.name}}?</h3> 
+<div class="col-6 table_prom">  
+      {% if collection.handle == 'adrianna-papell' %}
+  <h3>What are the best prices for the popular {{collection.title }} dresses at {{shop.name}}?</h3> 
+  {% else %}
+          <h3>What are the best prices for the popular {{collection.handle | replace:'-', ' ' }}  at {{shop.name}}?</h3> 
+        {% endif %}
   <table>
   <tbody>
       {% for product in collection_price %}
