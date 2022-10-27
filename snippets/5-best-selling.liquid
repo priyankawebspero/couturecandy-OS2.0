@@ -35,8 +35,12 @@
 </script>
 </div>
 {%- assign counter2 = 0 -%}
-<div class="col-6 table_prom">          
-  <h3>→ What are the most beautiful {{collection.title | replace:'-', ' ' | capitalize }} dresses at {{shop.name}}?</h3> 
+<div class="col-6 table_prom">  
+    {% if collection.handle == 'adrianna-papell' %}
+  <h3>→ What are the most beautiful {{collection.title }} dresses at {{shop.name}}?</h3> 
+  {% else %}
+ <h3>→ What are the most beautiful {{collection.handle | replace:'-', ' ' | capitalize }} at {{shop.name}}?</h3> 
+  {% endif %}
   <table>
   <tbody>
     {% assign collection_price = collection.products | sort: "price" %} 
