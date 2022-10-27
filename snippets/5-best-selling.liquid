@@ -39,7 +39,7 @@
     {% if collection.handle == 'adrianna-papell' %}
   <h3>→ What are the most beautiful {{collection.title }} dresses at {{shop.name}}?</h3> 
   {% else %}
- <h3>→ What are the most beautiful {{collection.handle | replace:'-', ' ' | capitalize }} at {{shop.name}}?</h3> 
+ <h3>→ What are the most beautiful {{collection.handle | replace:'-', ' ' }} at {{shop.name}}?</h3> 
   {% endif %}
   <table>
   <tbody>
