@@ -1,6 +1,4 @@
 <!--product_page_area.liquid----------------------->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.cookie/1.3/jquery.cookie.js"></script>
- <script src="https://widget.sezzle.com/v1/javascript/price-widget?uuid=bd0b31d4-a0b6-4036-868a-27a0e13ed47a"></script>
   {%- if settings.first_available_variant or settings.remove_sold_out -%}
    {%- assign current_variant = product.selected_or_first_available_variant -%}
   {%- elsif product.selected_variant != blank  -%}
