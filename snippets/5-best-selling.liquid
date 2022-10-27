@@ -1,10 +1,12 @@
-{% assign faq3 = "" %}
-{% assign faq2 = "" %}
 <div class="collection_faq">
 <h2>Frequently Asked Questions About {{ collection.handle | capitalize | replace:'-', ' '}}</h2>
 <div class="recommendations">
-<div class="col-6 table_prom best_seller">          
-  <h3>→ What are the top 5 best selling {{collection.handle | replace:'-', ' '}} in {{  "now" | date: "%Y" }} on {{shop.name}}?</h3> 
+<div class="col-6 table_prom best_seller">
+  {% if collection.handle == 'adrianna-papell' %}
+  <h3>→ What are the top 5 best selling {{collection.title}} dresses in {{  "now" | date: "%Y" }} on {{shop.name}}?</h3> 
+    {% else %}
+      <h3>→ What are the top 5 best selling {{collection.handle | replace:'-', ' ' | capitalize }} in {{  "now" | date: "%Y" }} on {{shop.name}}?</h3> 
+    {% endif %}
   <table>
   <tbody>
     
@@ -27,9 +29,6 @@
              var products = '<a href="'+product_url+'">'+product_title+'</a>'
               $('.best_seller table tbody').append(products);
             }
-              {% capture faq1 %}
-                
-              {% endcapture %}
           }
         }); 
     }) 
@@ -37,7 +36,7 @@
 </div>
 {%- assign counter2 = 0 -%}
 <div class="col-6 table_prom">          
-  <h3>→ What are the most beautiful {{collection.handle | replace:'-', ' '}} at {{shop.name}}?</h3> 
+  <h3>→ What are the most beautiful {{collection.title | replace:'-', ' ' | capitalize }} dresses at {{shop.name}}?</h3> 
   <table>
   <tbody>
     {% assign collection_price = collection.products | sort: "price" %} 
@@ -57,7 +56,7 @@
 </div>
 {%- assign counter3 = 0 -%}
 <div class="col-6 table_prom">          
-  <h3>What are the best prices for the popular {{collection.handle | replace:'-', ' '}} at {{shop.name}}?</h3> 
+  <h3>What are the best prices for the popular {{collection.handle | replace:'-', ' ' | capitalize }} dresses at {{shop.name}}?</h3> 
   <table>
   <tbody>
       {% for product in collection_price %}
@@ -78,56 +77,3 @@
 </div>
 </div>
 </div>
-{%- assign counter2 = 0 -%}
-{%- assign counter3 = 0 -%}
-               {% capture faq2 %}
-               {% for product in collection_price_rev %}
-                  {% unless counter2 > 4 %}
-                      {% if product.available %}
-                         {%- assign counter2 = counter2 | plus: 1 -%}
-                         {{ product.title }}
-                      {% endif %}
-                  {% endunless %}  
-                {% endfor %}
-              {% endcapture %}
-
-              {% capture faq3 %}
-                {% for product in collection_price %}
-                  {% unless counter3 > 4 %}
-                      {% if product.available %}
-                         {% if product.price > 0 %}
-                         {%- assign counter3 = counter3 | plus: 1 -%}
-                           {{ product.title }}
-                        {% endif %}
-                      {% endif %}
-                  {% endunless %}  
-                {% endfor %}
-              {% endcapture %}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "What are the top 5 best selling {{collection.handle | replace:'-', ' '}} in {{  "now" | date: "%Y" }} on {{shop.name}}?",    
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "ghjghj"
-    }
-  },{
-    "@type": "Question",
-    "name": "What are the most beautiful {{collection.handle | replace:'-', ' '}} at {{shop.name}}?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "{{ faq2 | strip }}"
-    }
-  },{
-    "@type": "Question",
-    "name": "What are the best prices for the popular {{collection.handle | replace:'-', ' '}} at {{shop.name}}?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "{{ faq3 | strip }}"
-    }
-  }]
-}
-</script>
