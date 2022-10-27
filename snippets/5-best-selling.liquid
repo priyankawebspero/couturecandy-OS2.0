@@ -2,7 +2,7 @@
 <h2>Frequently Asked Questions About {{ collection.handle | capitalize | replace:'-', ' '}}</h2>
 <div class="recommendations">
 <div class="col-6 table_prom best_seller">          
-  <h3>→ What are the top 5 best selling {{collection.handle | replace:'-', ' '}} in {{  "now" | date: "%Y" }} on {{shop.name}}?</h3> 
+  <h3>→ What are the top 5 best selling {{collection.handle | replace:'-', ' ' | capitalize }} dresses in {{  "now" | date: "%Y" }} on {{shop.name}}?</h3> 
   <table>
   <tbody>
     
@@ -32,7 +32,7 @@
 </div>
 {%- assign counter2 = 0 -%}
 <div class="col-6 table_prom">          
-  <h3>→ What are the most beautiful {{collection.handle | replace:'-', ' '}} at {{shop.name}}?</h3> 
+  <h3>→ What are the most beautiful {{collection.handle | replace:'-', ' ' | capitalize }} dresses at {{shop.name}}?</h3> 
   <table>
   <tbody>
     {% assign collection_price = collection.products | sort: "price" %} 
@@ -52,7 +52,7 @@
 </div>
 {%- assign counter3 = 0 -%}
 <div class="col-6 table_prom">          
-  <h3>What are the best prices for the popular {{collection.handle | replace:'-', ' '}} at {{shop.name}}?</h3> 
+  <h3>What are the best prices for the popular {{collection.handle | replace:'-', ' ' | capitalize }} dresses at {{shop.name}}?</h3> 
   <table>
   <tbody>
       {% for product in collection_price %}
