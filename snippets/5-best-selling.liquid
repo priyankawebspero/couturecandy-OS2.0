@@ -84,7 +84,7 @@
                   {% unless counter2 > 4 %}
                       {% if product.available %}
                          {%- assign counter2 = counter2 | plus: 1 -%}
-                         {{ product.title }}
+                         {{ product.title }}<br>
                       {% endif %}
                   {% endunless %}  
                 {% endfor %}
@@ -96,7 +96,7 @@
                       {% if product.available %}
                          {% if product.price > 0 %}
                          {%- assign counter3 = counter3 | plus: 1 -%}
-                           {{ product.title }}
+                           {{ product.title }}<br>
                         {% endif %}
                       {% endif %}
                   {% endunless %}  
