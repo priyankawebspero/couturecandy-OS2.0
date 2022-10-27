@@ -25,6 +25,9 @@
              var products = '<a href="'+product_url+'">'+product_title+'</a>'
               $('.best_seller table tbody').append(products);
             }
+              {% capture faq1 %}
+                
+              {% endcapture %}
           }
         }); 
     }) 
@@ -44,6 +47,9 @@
           <tr>
               <td> <a href="{{ product.url }}">{{ product.title }}</a></td>
           </tr>
+               {% capture faq2 %}
+                {{ product.title }}<br/>
+              {% endcapture %}
             {% endif %}
         {% endunless %}  
       {% endfor %}
@@ -64,6 +70,9 @@
                       <td> <a href="{{ product.url }}">{{ product.title }}</a></td>
                       <td> <span class="price" data-wg-notranslate="manual">{{ product.price | money_with_currency }}</span></td>
                   </tr>
+               {% capture faq3 %}
+                {{ product.title }}<br/>
+              {% endcapture %}
               {% endif %}
             {% endif %}
         {% endunless %}  
@@ -73,3 +82,31 @@
 </div>
 </div>
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": {
+    "@type": "Question",
+    "name": "What are the top 5 best selling {{collection.handle | replace:'-', ' '}} in {{  "now" | date: "%Y" }} on {{shop.name}}?",    
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": ""
+    },{
+    "@type": "Question",
+    "name": "What are the most beautiful {{collection.handle | replace:'-', ' '}} at {{shop.name}}?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "{{ FAQ2 }}"
+    },{
+    "@type": "Question",
+    "name": "What are the best prices for the popular {{collection.handle | replace:'-', ' '}} at {{shop.name}}?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "{{ FAQ3 }}"
+    }
+  
+  }
+}
+</script>
