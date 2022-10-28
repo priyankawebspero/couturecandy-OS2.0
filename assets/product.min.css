@@ -2190,6 +2190,9 @@ div#ProdDetailInfomobile {
 
 
 @media only screen and (max-width: 767px){
+  .single-product-content .shopify-product-rating .shopify-app-block {
+    margin-top: 0;
+}
 
   .stjr-product-review-page-widget.stjr-widget--mobile {
     padding: 0 !important;
