@@ -2691,14 +2691,14 @@ body.template-product  {
     color: #e94949;
 }
 
-.single-product-content .shopify-app-block {
+/*.single-product-content .shopify-app-block {
     position: fixed;
     width: 50%;
     right: 0;
     bottom: 0;
     margin: 0;
     z-index: 99;
-}
+}*/
 
 .single-product-content .shopify-app-block a {
     background: #e94949;
