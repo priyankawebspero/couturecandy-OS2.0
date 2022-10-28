@@ -92,7 +92,7 @@ div.inventory-active {
 .single-product-content .product_title + .Value {
     display: flex;
     align-items: center;
-  margin-bottom: 0 !important;
+  margin-bottom: 5px !important;
 }
 
 .single-product-content .Value .brand .BrandName {
