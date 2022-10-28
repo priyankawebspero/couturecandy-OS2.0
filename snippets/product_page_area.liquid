@@ -681,7 +681,13 @@
                              </div>
                              {%- if settings.show_product_page_rating -%}
                              <a href="#ReviewSection" class="shopify-product-rating">
-                              <div class="stjr-product-rating" data-product-id="{{ product.id }}"></div>
+                               {%- for block in section.blocks -%}              
+                                  {% case block.type %}              
+                                  {% when '@app' %}
+                                      {% render block  %}
+                                    {% break %}
+                                  {% endcase %}
+                                {%- endfor -%} 
                               </a>
                              {%- endif -%}
                         </div>
