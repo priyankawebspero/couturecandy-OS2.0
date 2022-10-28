@@ -1,5 +1,5 @@
 {%- assign bc_shop_metafields = shop.metafields.bc-sf-filter -%}
-{%- if bc_shop_metafields.mostPopularEnable == 'true' or bc_shop_metafields.recentlyViewedEnable == 'true' -%}
+
 {%- capture bc_sf_product_json -%}
 {
   "id": {{- product.id | json -}},
@@ -44,4 +44,3 @@
 }
 {%- endcapture -%}
 {{- bc_sf_product_json | strip_newlines -}}
-{%- endif -%}
