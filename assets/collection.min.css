@@ -2086,6 +2086,7 @@ display:none;
 .recommendations h3 {
     font-family: 'product_sans_mediumregular';
     font-size: 17px;
+    text-transform: capitalize;
 }
 
 .recommendations .col-6.table_prom {
