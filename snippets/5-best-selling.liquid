@@ -27,9 +27,6 @@
              var products = '<a itemprop="text" href="'+product_url+'">'+product_title+'</a>'
               $('.best_seller table tbody').append(products);
             }
-              {% capture faq1 %}
-                
-              {% endcapture %}
           }
         }); 
     }) 
@@ -47,7 +44,7 @@
             {% if product.available %}
                {%- assign counter2 = counter2 | plus: 1 -%}
           <tr>
-              <td> <a itemprop="text" href="{{ product.url }}">{{ product.title }}</a></td>
+              <td> <a href="{{ product.url }}" ><span itemprop="text">{{ product.title }}</span></a></td>
           </tr>
                {% capture faq2 %}
                 {{ product.title }}
@@ -69,7 +66,7 @@
                {% if product.price > 0 %}
                {%- assign counter3 = counter3 | plus: 1 -%}
                   <tr>
-                      <td> <a  itemprop="text" href="{{ product.url }}">{{ product.title }}</a></td>
+                      <td> <a href="{{ product.url }}"><span itemprop="text">{{ product.title }}</span></a></td>
                       <td> <span class="price" data-wg-notranslate="manual">{{ product.price | money_with_currency }}</span></td>
                   </tr>
                {% capture faq3 %}
