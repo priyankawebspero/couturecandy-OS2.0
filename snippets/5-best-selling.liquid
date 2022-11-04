@@ -2,13 +2,13 @@
  <div class="row">
         <div class="boost-pfs-most-popular"></div>
       </div>
-<div class="collection_faq" itemscope itemtype="https://schema.org/FAQPage">
+<div class="collection_faq">
 <h2>Frequently Asked Questions About {{ collection.handle | capitalize | replace:'-', ' '}}</h2>
 <div class="recommendations">
-<div class="col-6 table_prom best_seller" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">          
-  <h3 itemprop="name">→ What are the top 5 best selling {{collection.handle | replace:'-', ' '}} in {{  "now" | date: "%Y" }} on {{shop.name}}?</h3> 
+<div class="col-6 table_prom best_seller">          
+  <h3>→ What are the top 5 best selling {{collection.handle | replace:'-', ' '}} in {{  "now" | date: "%Y" }} on {{shop.name}}?</h3> 
   <table>
-  <tbody itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+  <tbody>
     
    </tbody>
  </table>
@@ -26,7 +26,7 @@
              var product_url = $(val).find('a.boost-pfs-filter-product-item-title').data('url'); 
              var product_ava = $(val).find('a.boost-pfs-filter-product-item-title').data('available');
             if (product_ava = "true"){
-             var products = '<a itemprop="text" href="'+product_url+'">'+product_title+'</a>'
+             var products = '<a href="'+product_url+'">'+product_title+'</a>'
               $('.best_seller table tbody').append(products);
             }
           }
@@ -35,10 +35,10 @@
 </script>
 </div>
 {%- assign counter2 = 0 -%}
-<div class="col-6 table_prom" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">          
-  <h3 itemprop="name">→ What are the most beautiful {{collection.handle | replace:'-', ' '}} at {{shop.name}}?</h3> 
+<div class="col-6 table_prom">          
+  <h3>→ What are the most beautiful {{collection.handle | replace:'-', ' '}} at {{shop.name}}?</h3> 
   <table>
-  <tbody  itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+  <tbody>
     {% assign collection_price = collection.products | sort: "price" %} 
      {% assign collection_price_rev = collection_price | reverse %} 
       {% for product in collection_price_rev %}
@@ -46,7 +46,7 @@
             {% if product.available %}
                {%- assign counter2 = counter2 | plus: 1 -%}
           <tr>
-              <td> <a href="{{ product.url }}" ><span itemprop="text">{{ product.title }}</span></a></td>
+              <td> <a href="{{ product.url }}" ><span>{{ product.title }}</span></a></td>
           </tr>
                {% capture faq2 %}
                 {{ product.title }}
@@ -58,18 +58,18 @@
   </table>
 </div>
 {%- assign counter3 = 0 -%}
-<div class="col-6 table_prom" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">          
-  <h3 itemprop="name">What are the best prices for the popular {{collection.handle | replace:'-', ' '}} at {{shop.name}}?</h3> 
+<div class="col-6 table_prom" >          
+  <h3>What are the best prices for the popular {{collection.handle | replace:'-', ' '}} at {{shop.name}}?</h3> 
   <table>
-  <tbody  itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+  <tbody >
       {% for product in collection_price %}
         {% unless counter3 > 4 %}
             {% if product.available %}
                {% if product.price > 0 %}
                {%- assign counter3 = counter3 | plus: 1 -%}
                   <tr>
-                      <td> <a href="{{ product.url }}"><span itemprop="text">{{ product.title }}</span></a></td>
-                      <td> <span class="price" data-wg-notranslate="manual">{{ product.price | money_with_currency }}</span></td>
+                      <td> <a href="{{ product.url }}"><span >{{ product.title }}</span></a></td>
+                      <td> <span >{{ product.price | money_with_currency }}</span></td>
                   </tr>
                {% capture faq3 %}
                 {{ product.title }}
@@ -90,10 +90,8 @@
 {% for product in collection_price_rev %}
         {% unless counter2 > 4 %}
             {% if product.available %}
-                {% if product.price > 0 %}
                {%- assign counter2 = counter2 | plus: 1 -%}
                   {{ product.title }}
-              {% endif %}
             {% endif %}
         {% endunless %}  
       {% endfor %}
