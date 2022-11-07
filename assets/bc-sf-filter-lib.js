@@ -11277,7 +11277,7 @@ var jQ = jQuery.noConflict(!0),
                 ((e += '<div class="' + this.class.searchSuggestion + '-product-price">'),
                 b && this.getSettingValue("search.showSuggestionProductSalePrice")
                     ? ((e += "<s>" + d + "</s>  "), (e += '<span class="bc-sf-product-sale-price">' + c + "</span>"))
-                    : n && (e += '<span class="bc-sf-product-regular-price">' + c + "</span>"),
+                    : n ? (e += '<span class="bc-sf-product-regular-price">' + c + "</span>"),
                 (e += "</div>")),
             e
         );
