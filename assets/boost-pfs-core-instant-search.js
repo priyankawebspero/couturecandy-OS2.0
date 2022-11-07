@@ -6418,8 +6418,8 @@ var BoostPFS = (function (t) {
                     {
                         key: "getTemplate",
                         value: function (t) {
+                                                                                   console.log(t);
                             switch (t) {
-console.log(t);
                                 case g.tempType.IMAGE:
                                     return '\n\t\t\t\t\t<div class="{{class.searchSuggestion}}-left">\n\t\t\t\t\t\t<img tabindex="-1" src="{{imageUrl}}" alt="{{escapedTitle}}">\n\t\t\t\t\t</div>\n\t\t\t\t'.trim();
                                 case g.tempType.SKU:
