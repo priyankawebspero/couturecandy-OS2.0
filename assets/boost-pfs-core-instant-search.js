@@ -6495,7 +6495,6 @@ var BoostPFS = (function (t) {
                         key: "compileSuggestionProductPrice",
                         value: function () {
                             this.prepareSuggestionProductPriceData();
-                              console.log(this);
                             var t = this.data.compare_at_price_min > this.data.price_min,
                                 e = i.a.formatMoney(this.data.price_min),
                                 f = this.data.price_min > 0,
@@ -6506,10 +6505,11 @@ var BoostPFS = (function (t) {
                             var r = "";
                             return (
                                 s.a.getSettingValue("search.showSuggestionProductPrice") &&
-                                    (r = t && s.a.getSettingValue("search.showSuggestionProductSalePrice") ? this.getTemplate(g.tempType.PRICE_SALE) : this.getTemplate(g.tempType.PRICE)),
-                                r.replace(/{{regularPrice}}/g, e).replace(/{{compareAtPrice}}/g, n)
+                                 (r = t && s.a.getSettingValue("search.showSuggestionProductSalePrice") ? this.getTemplate(g.tempType.PRICE_SALE) : this.getTemplate(g.tempType.PRICE))
+                                 , f && (r.replace(/{{regularPrice}}/g, e).replace(/{{compareAtPrice}}/g, n))
                             );
                         },
+
                     },
                     {
                         key: "customizeProductTitle",
