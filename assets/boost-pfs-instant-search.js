@@ -86,18 +86,8 @@ var boostPFSInstantSearchConfig = {
       }
   }
 
-  FilterApi.beforeCall = function() {
-    FilterApi.setParam('product_available', true);
-    FilterApi.setParam('variant_available', true);
-  }
-
-  // FilterApi.beforeCall = function(eventType, eventInfo) {
-  //         /* Change the filter params before calling api */
-  //   console.log(eventType, 'EVENT TYPE');
-  //   console.log(eventInfo, 'EVENT INFO')
-  //         Globals.queryParams.variant_available = 'true';
-  //         Globals.queryParams.product_available = 'true';
-  //         /* No need to return anything */
-  //     }
+   InstantSearchApi.beforeCallAsync = function(callInstantSearchApi) {
+     console.log(callInstantSearchApi)
+   }
 
 })();
