@@ -86,7 +86,7 @@ var boostPFSInstantSearchConfig = {
       }
   }
 
-   InstantSearch.prototype.afterRender = function() {
+   InstantSearchResultItemProduct.prototype.compileSuggestionProduct = function() {
      console.log(this, 'DATA?')
    }
 
