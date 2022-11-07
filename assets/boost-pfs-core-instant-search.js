@@ -6428,7 +6428,7 @@ var BoostPFS = (function (t) {
                                 case g.tempType.PRICE:
                                     return '\n\t\t\t\t\t<p class="{{class.searchSuggestion}}-product-price">\n\t\t\t\t\t\t<span class="{{class.searchSuggestion}}-product-regular-price">{{regularPrice}}</span>\n\t\t\t\t\t</p>\n\t\t\t\t'.trim();
                                 case g.tempType.PRICE_ZERO:
-                                    return '\n\t\t\t\t\t<p class="{{class.searchSuggestion}}-product-price">\n\t\t\t\t\t\t<span class="{{class.searchSuggestion}}-product-regular-price">{{regularPrice}}</span>\n\t\t\t\t\t</p>\n\t\t\t\t'.trim();
+                                    return '\n\t\t\t\t\t<p class="{{class.searchSuggestion}}-product-price">\n\t\t\t\t\t\t<span class="{{class.searchSuggestion}}-product-regular-price"></span>\n\t\t\t\t\t</p>\n\t\t\t\t'.trim();
                                case g.tempType.PRICE_SALE:
                                     return '\n\t\t\t\t\t<p class="{{class.searchSuggestion}}-product-price">\n\t\t\t\t\t\t<s>{{compareAtPrice}}</s>&nbsp;\n\t\t\t\t\t\t<span class="{{class.searchSuggestion}}-product-sale-price">{{regularPrice}}</span>\n\t\t\t\t\t</p>\n\t\t\t\t'.trim();
                                 default:
