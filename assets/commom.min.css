@@ -3065,9 +3065,9 @@ span.promguide-side-title.open{
     justify-content: center;
     align-items: center;
 }
-.product-element-bottom .price span.money {
-    order: 2;
-    margin: 0 5px;
+
+.product-element-bottom .price ins span.money {
+    color: #e94949;
 }
 
 @media only screen and (min-width:768px){
