@@ -6495,7 +6495,7 @@ var BoostPFS = (function (t) {
                             this.prepareSuggestionProductPriceData();
                             var t = this.data.compare_at_price_min > this.data.price_min,
                                 e = i.a.formatMoney(this.data.price_min),
-                                f = e > 0,
+                                f = this.data.price_min > 0,
                                 n = "";
                             this.data &&
                                 this.data.compare_at_price_min &&
@@ -6503,7 +6503,7 @@ var BoostPFS = (function (t) {
                             var r = "";
                             return (
                                 s.a.getSettingValue("search.showSuggestionProductPrice") &&
-                                    (r = t && s.a.getSettingValue("search.showSuggestionProductSalePrice") ? this.getTemplate(g.tempType.PRICE_SALE) : this.getTemplate(g.tempType.PRICE)),
+                                    (r = t && s.a.getSettingValue("search.showSuggestionProductSalePrice") ? this.getTemplate(g.tempType.PRICE_SALE) : f ? this.getTemplate(g.tempType.PRICE)),
                                 r.replace(/{{regularPrice}}/g, e).replace(/{{compareAtPrice}}/g, n)
                             );
                         },
