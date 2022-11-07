@@ -6495,6 +6495,7 @@ var BoostPFS = (function (t) {
                     {
                         key: "compileSuggestionProductPrice",
                         value: function () {
+                              console.log('dsfffffffffff') ;                                                          
                             this.prepareSuggestionProductPriceData();
                             var t = this.data.compare_at_price_min > this.data.price_min,
                                 e = i.a.formatMoney(this.data.price_min),
