@@ -6911,7 +6911,7 @@ var BoostPFS = (function (t) {
                                 case p.tempType.P:
                                     return '\n\t\t\t\t\t<p class="{{class.searchSuggestion}}-{{classType}}">{{content}}</p>\n\t\t\t\t'.trim();
                                 default:
-                                    return '\n\t\t\t\t\t<div class="{{class.searchSuggestionItem}} {{class.searchSuggestion}}-dym" aria-label="Did you mean">{{dymContent}}</div>\n\t\t\t\t'.trim();
+                                    return '\n\t\t\t\t\t<div class="test {{class.searchSuggestionItem}} {{class.searchSuggestion}}-dym" aria-label="Did you mean">{{dymContent}}</div>\n\t\t\t\t'.trim();
                             }
                         },
                     },
