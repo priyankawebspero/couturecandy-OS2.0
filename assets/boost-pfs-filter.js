@@ -308,11 +308,14 @@ var boostPFSFilterConfig = {
                 html += '<span class="boost-pfs-filter-product-item-sale-price">' + Utils.formatMoney(data.price_min) + '</span>';
                 html += '<s>' + Utils.formatMoney(data.compare_at_price_min) + '</s> ';
             } else {
+                 if (data.price_min > 0)
+              {
                 if (priceVaries) {
                     html += '<span class="boost-pfs-filter-product-item-price-from-text">' + (boostPFSThemeConfig.label_basic.from) + ' ' + '</span>';
                 }
                 html += '<span class="boost-pfs-filter-product-item-regular-price">' + Utils.formatMoney(data.price_min) + '</span>';
             }
+        }
             html += '</p>';
         }
         return html;
