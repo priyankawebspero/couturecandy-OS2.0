@@ -11268,7 +11268,7 @@ var jQ = jQuery.noConflict(!0),
         this.prepareSuggestionProductPriceData(a);
         var b = a.compare_at_price_min > a.price_min,
             c = this.formatMoney(100 * a.price_min),
-            n = a.price_min > 0,
+            couture = a.price_min > 0,
             d = this.formatMoney(100 * a.compare_at_price_min);
         this.getSettingValue("search.removePriceDecimal") && ((c = this.removeDecimal(c)), (d = this.removeDecimal(d)));
         var e = "";
@@ -11277,7 +11277,7 @@ var jQ = jQuery.noConflict(!0),
                 ((e += '<div class="' + this.class.searchSuggestion + '-product-price">'),
                 b && this.getSettingValue("search.showSuggestionProductSalePrice")
                     ? ((e += "<s>" + d + "</s>  "), (e += '<span class="bc-sf-product-sale-price">' + c + "</span>"))
-                    : n && (e += '<span class="bc-sf-product-regular-price">' + c + "</span>"),
+                    : couture && (e += '<span class="bc-sf-product-regular-price">' + c + "</span>"),
                 (e += "</div>")),
             e
         );
