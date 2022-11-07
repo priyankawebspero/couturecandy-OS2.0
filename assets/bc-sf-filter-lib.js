@@ -11266,6 +11266,7 @@ var jQ = jQuery.noConflict(!0),
     }),
     (BCSfFilter.prototype.buildSuggestionProductPrice = function (a) {
         this.prepareSuggestionProductPriceData(a);
+        console.log('a', a);
         var b = a.compare_at_price_min > a.price_min,
             c = this.formatMoney(100 * a.price_min),
             f = a.price_min > 0,
