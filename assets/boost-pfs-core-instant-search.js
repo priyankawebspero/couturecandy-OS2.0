@@ -6505,8 +6505,8 @@ var BoostPFS = (function (t) {
                             var r = "";
                             return (
                                 s.a.getSettingValue("search.showSuggestionProductPrice") &&
-                                 (r = t && s.a.getSettingValue("search.showSuggestionProductSalePrice") ? this.getTemplate(g.tempType.PRICE_SALE) : this.getTemplate(g.tempType.PRICE))
-                                 , f && (r.replace(/{{regularPrice}}/g, e).replace(/{{compareAtPrice}}/g, n))
+                                 (r = t && s.a.getSettingValue("search.showSuggestionProductSalePrice") ? this.getTemplate(g.tempType.PRICE_SALE) : this.getTemplate(g.tempType.PRICE_ZERO))
+                                 , r.replace(/{{regularPrice}}/g, e).replace(/{{compareAtPrice}}/g, n)
                             );
                         },
 
