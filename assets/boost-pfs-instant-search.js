@@ -93,6 +93,8 @@ var boostPFSInstantSearchConfig = {
 
   FilterApi.beforeCall = function(eventType, eventInfo) {
           /* Change the filter params before calling api */
+    console.log(eventType, 'EVENT TYPE');
+    console.log(eventInfo, 'EVENT INFO')
           Globals.queryParams.variant_available = 'true';
           Globals.queryParams.product_available = 'true';
           /* No need to return anything */
