@@ -86,7 +86,7 @@ var boostPFSInstantSearchConfig = {
       }
   }
 
-   InstantSearch.prototype.beforeRender = function() {
+   InstantSearch.prototype.afterRender = function() {
      console.log(this, 'DATA?')
    }
 
