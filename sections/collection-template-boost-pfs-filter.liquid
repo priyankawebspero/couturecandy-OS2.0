@@ -539,7 +539,7 @@ endif
 {%- endpaginate -%}
   <div class="bottom description collection">
     {%- if collection.description != blank and settings.show_des_collection -%}
-   <p> {{  collection.description | replace: "2022", "2023" }}</p>
+   <p> {{  collection.description  }}</p>
     {%- endif -%}
      {%- if collection.metafields.Bottomdescription.Bottomdescription != blank -%}
     <div id="collectionbottomdescription" class="append-content-custom"  {%- if collection.description != blank and settings.show_des_collection -%} style="display: none;"{%- else -%}style="display: block;"{%- endif -%}>    
