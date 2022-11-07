@@ -6427,9 +6427,7 @@ var BoostPFS = (function (t) {
                                     return '\n\t\t\t\t\t<p class="{{class.searchSuggestion}}-product-vendor">{{vendor}}</p>\n\t\t\t\t'.trim();
                                 case g.tempType.PRICE:
                                     return '\n\t\t\t\t\t<p class="{{class.searchSuggestion}}-product-price">\n\t\t\t\t\t\t<span class="{{class.searchSuggestion}}-product-regular-price">{{regularPrice}}</span>\n\t\t\t\t\t</p>\n\t\t\t\t'.trim();
-                                case g.tempType.PRICE_ZERO:
-                                    return '\n\t\t\t\t\t<p class="{{class.searchSuggestion}}-product-price">\n\t\t\t\t\t\t<span class="{{class.searchSuggestion}}-product-regular-price"></span>\n\t\t\t\t\t</p>\n\t\t\t\t'.trim();
-                               case g.tempType.PRICE_SALE:
+                                case g.tempType.PRICE_SALE:
                                     return '\n\t\t\t\t\t<p class="{{class.searchSuggestion}}-product-price">\n\t\t\t\t\t\t<s>{{compareAtPrice}}</s>&nbsp;\n\t\t\t\t\t\t<span class="{{class.searchSuggestion}}-product-sale-price">{{regularPrice}}</span>\n\t\t\t\t\t</p>\n\t\t\t\t'.trim();
                                 default:
                                     return '\n\t\t\t\t\t<li class="{{class.searchSuggestionItem}} {{class.searchSuggestionItem}}-product {{class.searchUiAutocompleteItem}}" aria-label="{{escapedBlockType}}: {{escapedTitle}}" data-id="{{id}}" role="option">\n\t\t\t\t\t\t<a tabindex="-1" href="{{url}}" {{newTabAttribute}}>\n\t\t\t\t\t\t\t{{itemProductImage}}\n\t\t\t\t\t\t\t<div class="{{class.searchSuggestion}}-right">\n\t\t\t\t\t\t\t\t<p class="{{class.searchSuggestion}}-product-title">{{title}}</p>\n\t\t\t\t\t\t\t\t{{itemProductSku}}\n\t\t\t\t\t\t\t\t{{itemProductVendor}}\n\t\t\t\t\t\t\t\t{{itemProductPrice}}\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n\t\t\t\t'.trim();
@@ -6495,7 +6493,6 @@ var BoostPFS = (function (t) {
                         key: "compileSuggestionProductPrice",
                         value: function () {
                             this.prepareSuggestionProductPriceData();
-                               console.log(this);
                             var t = this.data.compare_at_price_min > this.data.price_min,
                                 e = i.a.formatMoney(this.data.price_min),
                                 f = this.data.price_min > 0,
@@ -6506,8 +6503,8 @@ var BoostPFS = (function (t) {
                             var r = "";
                             return (
                                 s.a.getSettingValue("search.showSuggestionProductPrice") &&
-                                    (r = t && s.a.getSettingValue("search.showSuggestionProductSalePrice") ? this.getTemplate(g.tempType.PRICE_SALE) : getTemplate(g.tempType.PRICE_ZERO)),
-                              //  r.replace(/{{regularPrice}}/g, e).replace(/{{compareAtPrice}}/g, n)
+                                    (r = t && s.a.getSettingValue("search.showSuggestionProductSalePrice") ? this.getTemplate(g.tempType.PRICE_SALE) : this.getTemplate(g.tempType.PRICE)),
+                                r.replace(/{{regularPrice}}/g, e).replace(/{{compareAtPrice}}/g, n)
                             );
                         },
                     },
