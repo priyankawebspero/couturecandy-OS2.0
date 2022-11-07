@@ -352,14 +352,14 @@ background:none !important;}
 }
 
 .boost-pfs-filter-products .boost-pfs-filter-product-item .boost-pfs-filter-product-bottom-inner .boost-pfs-filter-product-item-price .boost-pfs-filter-product-item-sale-price {
-    padding-left: 5px;
+    padding-left: 0px;
     padding-right: 0px;
     order: 2;
 }
 
 .boost-pfs-filter-products .boost-pfs-filter-product-item-price s {
     margin-left: 0px;
-   margin-right: 5px;
+   margin-right: 0px;
   order: 1;
 }
 
@@ -368,6 +368,7 @@ background:none !important;}
     justify-content: center;
     align-items: center;
   flex-wrap:wrap;
+  gap: 10px;
 }
 
 .boost-pfs-filter-left-col {
