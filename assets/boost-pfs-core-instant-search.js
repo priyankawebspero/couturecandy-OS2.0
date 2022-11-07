@@ -6506,8 +6506,8 @@ var BoostPFS = (function (t) {
                             var r = "";
                             return (
                                 s.a.getSettingValue("search.showSuggestionProductPrice") &&
-                                    (r = t && s.a.getSettingValue("search.showSuggestionProductSalePrice") ? this.getTemplate(g.tempType.PRICE_SALE) :  if (f){ this.getTemplate(g.tempType.PRICE_ZERO)} else {this.getTemplate(g.tempType.PRICE)} ),
-                                r.replace(/{{regularPrice}}/g, e).replace(/{{compareAtPrice}}/g, n)
+                                    (r = t && s.a.getSettingValue("search.showSuggestionProductSalePrice") ? this.getTemplate(g.tempType.PRICE_SALE) : getTemplate(g.tempType.PRICE_ZERO)),
+                              //  r.replace(/{{regularPrice}}/g, e).replace(/{{compareAtPrice}}/g, n)
                             );
                         },
                     },
