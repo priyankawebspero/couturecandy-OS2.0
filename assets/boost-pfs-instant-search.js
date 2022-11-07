@@ -86,7 +86,7 @@ var boostPFSInstantSearchConfig = {
       }
   }
 
-   InstantSearchApi.beforeCallAsync = function(callInstantSearchApi) {
+   InstantSearchApi.beforeCall = function(callInstantSearchApi) {
      console.log(callInstantSearchApi)
    }
 
