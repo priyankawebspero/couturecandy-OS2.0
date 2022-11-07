@@ -63,7 +63,7 @@
                 {%- endif -%}
             {% endcase %}
 {%- else -%}
-<meta property="og:description" content="{{ og_description }}">
+<meta property="og:description" content="{{ og_description | replace : "2022", "2023" }}">
 {%- endif -%}
 {%- if template.name == 'product' -%}
   <meta property="og:image:alt" content="{{ product.title | strip_html }}">
