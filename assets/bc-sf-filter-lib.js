@@ -11264,26 +11264,26 @@ var jQ = jQuery.noConflict(!0),
     (BCSfFilter.prototype.customizeSuggetionProductTitle = function (a, b, c) {
         return a;
     }),
-    (BCSfFilter.prototype.buildSuggestionProductPrice = function (a) {
-        this.prepareSuggestionProductPriceData(a);
-        console.log('a', a);
-        var b = a.compare_at_price_min > a.price_min,
-            c = this.formatMoney(100 * a.price_min),
-            f = a.price_min > 0,
-            d = this.formatMoney(100 * a.compare_at_price_min);
-        this.getSettingValue("search.removePriceDecimal") && ((c = this.removeDecimal(c)), (d = this.removeDecimal(d)));
-        var e = "";
+    // (BCSfFilter.prototype.buildSuggestionProductPrice = function (a) {
+    //     this.prepareSuggestionProductPriceData(a);
+    //     console.log('a', a);
+    //     var b = a.compare_at_price_min > a.price_min,
+    //         c = this.formatMoney(100 * a.price_min),
+    //         f = a.price_min > 0,
+    //         d = this.formatMoney(100 * a.compare_at_price_min);
+    //     this.getSettingValue("search.removePriceDecimal") && ((c = this.removeDecimal(c)), (d = this.removeDecimal(d)));
+    //     var e = "";
 
-        return (
-            this.getSettingValue("search.showSuggestionProductPrice") &&
-                ((e += '<div class="' + this.class.searchSuggestion + '-product-price">'),
-                b && this.getSettingValue("search.showSuggestionProductSalePrice")
-                    ? ((e += "<s>" + d + "</s>  "), (e += '<span class="bc-sf-product-sale-price">' + c + "</span>"))
-                    : (e += '<span class="bc-sf-product-regular-price">' + c + "</span>"),
-                (e += "</div>")),
-            e
-        );
-    }),
+    //     return (
+    //         this.getSettingValue("search.showSuggestionProductPrice") &&
+    //             ((e += '<div class="' + this.class.searchSuggestion + '-product-price">'),
+    //             b && this.getSettingValue("search.showSuggestionProductSalePrice")
+    //                 ? ((e += "<s>" + d + "</s>  "), (e += '<span class="bc-sf-product-sale-price">' + c + "</span>"))
+    //                 : (e += '<span class="bc-sf-product-regular-price">' + c + "</span>"),
+    //             (e += "</div>")),
+    //         e
+    //     );
+    // }),
     (BCSfFilter.prototype.prepareSuggestionProductPriceData = function (a) {
         if (void 0 !== bcSfFilterConfig.general.currencies && bcSfFilterConfig.general.currencies.length > 1) {
             var b = (bcSfFilterConfig.general.current_currency.toLowerCase().trim(), a.variants[0]),
