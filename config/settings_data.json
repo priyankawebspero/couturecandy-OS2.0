@@ -56,7 +56,7 @@
     "top_bar_text_middle": "NEED HELP? <a style=\"color:#fff\" href=\"\/pages\/contact-us\">CLICK HERE TO CONTACT US<\/a>",
     "top_bar_mobile": "(855) 445-8601",
     "full_header_enable": true,
-    "sticky_header_enable": false,
+    "sticky_header_enable": true,
     "header_design": "simple",
     "overlap_header_enable": true,
     "right_column_width": "390",
