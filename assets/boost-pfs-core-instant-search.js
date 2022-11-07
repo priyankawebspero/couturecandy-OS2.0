@@ -6492,20 +6492,20 @@ var BoostPFS = (function (t) {
                     {
                         key: "compileSuggestionProductPrice",
                         value: function () {
-                            this.prepareSuggestionProductPriceData();
-                            var t = this.data.compare_at_price_min > this.data.price_min,
-                                e = i.a.formatMoney(this.data.price_min),
-                                f = this.data.price_min > 0,
-                                n = "";
-                            this.data &&
-                                this.data.compare_at_price_min &&
-                                ((n = i.a.formatMoney(this.data.compare_at_price_min)), s.a.getSettingValue("search.removePriceDecimal") && ((e = i.a.removeDecimal(e)), (n = i.a.removeDecimal(n))));
-                            var r = "";
-                            return (
-                                s.a.getSettingValue("search.showSuggestionProductPrice") &&
-                                    (r = t && s.a.getSettingValue("search.showSuggestionProductSalePrice") ? this.getTemplate(g.tempType.PRICE_SALE) : this.getTemplate(g.tempType.PRICE)),
-                                r.replace(/{{regularPrice}}/g, e).replace(/{{compareAtPrice}}/g, n)
-                            );
+                            // this.prepareSuggestionProductPriceData();
+                            // var t = this.data.compare_at_price_min > this.data.price_min,
+                            //     e = i.a.formatMoney(this.data.price_min),
+                            //     f = this.data.price_min > 0,
+                            //     n = "";
+                            // this.data &&
+                            //     this.data.compare_at_price_min &&
+                            //     ((n = i.a.formatMoney(this.data.compare_at_price_min)), s.a.getSettingValue("search.removePriceDecimal") && ((e = i.a.removeDecimal(e)), (n = i.a.removeDecimal(n))));
+                            // var r = "";
+                            // return (
+                            //     s.a.getSettingValue("search.showSuggestionProductPrice") &&
+                            //         (r = t && s.a.getSettingValue("search.showSuggestionProductSalePrice") ? this.getTemplate(g.tempType.PRICE_SALE) : this.getTemplate(g.tempType.PRICE)),
+                            //     r.replace(/{{regularPrice}}/g, e).replace(/{{compareAtPrice}}/g, n)
+                            // );
                         },
                     },
                     {
