@@ -3059,6 +3059,17 @@ span.promguide-side-title.open{
 
 .boost-pfs-filter-left-col{background: #fff;}
 
+.product-element-bottom .price {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.product-element-bottom .price span.money {
+    order: 2;
+    margin: 0 5px;
+}
+
 @media only screen and (min-width:768px){
 
 .prom-work-des-inner {
