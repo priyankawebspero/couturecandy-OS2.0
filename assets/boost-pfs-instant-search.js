@@ -86,8 +86,4 @@ var boostPFSInstantSearchConfig = {
       }
   }
 
-   InstantSearchResultItemProduct.prototype.compileSuggestionProduct = function() {
-     console.log(this, 'DATA?')
-   }
-
 })();
