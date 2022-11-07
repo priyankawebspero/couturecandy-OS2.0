@@ -86,4 +86,9 @@ var boostPFSInstantSearchConfig = {
       }
   }
 
+  FilterApi.beforeCall = function() {
+    FilterApi.setParam('product_available', true);
+    FilterApi.setParam('variant_available', true);
+  }
+
 })();
