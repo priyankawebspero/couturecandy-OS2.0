@@ -86,8 +86,8 @@ var boostPFSInstantSearchConfig = {
       }
   }
 
-   InstantSearchApi.beforeCall = function(callInstantSearchApi) {
-     console.log(callInstantSearchApi)
+   InstantSearch.prototype.beforeRender = function() {
+     console.log(this, 'DATA?')
    }
 
 })();
