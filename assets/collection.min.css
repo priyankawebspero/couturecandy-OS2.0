@@ -352,12 +352,12 @@ background:none !important;}
 }
 
 .boost-pfs-filter-products .boost-pfs-filter-product-item .boost-pfs-filter-product-bottom-inner .boost-pfs-filter-product-item-price .boost-pfs-filter-product-item-sale-price {
-    margin:0 5px
+    margin:0 5px;
     order: 2;
 }
 
 .boost-pfs-filter-products .boost-pfs-filter-product-item-price s {
-    margin:0 5px
+    margin:0 5px;
   order: 1;
 }
 
