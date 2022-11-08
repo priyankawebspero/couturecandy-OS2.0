@@ -87,8 +87,10 @@ var boostPFSInstantSearchConfig = {
   }
 
    InstantSearchApi.beforeCall = function() {
-       InstantSearchApi.setParam('product_available', true);
-       InstantSearchApi.setParam('variant_available', true);
+       /* Change the filter params before calling api */
+          Globals.queryParams.variant_available = 'true';
+          Globals.queryParams.product_available = 'true';
+          /* No need to return anything */
    }
 
 })();
