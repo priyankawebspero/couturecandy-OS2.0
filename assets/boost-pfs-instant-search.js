@@ -89,7 +89,6 @@ var boostPFSInstantSearchConfig = {
   InstantSearchApi.beforeCall = function() {
       InstantSearchApi.setParam('product_available', true);
       InstantSearchApi.setParam('variant_available', true);
-   
 }
 
 })();
