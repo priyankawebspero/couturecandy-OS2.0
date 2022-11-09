@@ -230,7 +230,7 @@ span#save_percentage span {
     font-weight: normal;
     font-size: 15px;
     color: #e94949;
-    font-family: 'product_sans_mediumregular';
+    /*font-family: 'product_sans_mediumregular';*/
     letter-spacing: .5px;
     border-bottom: 1px solid #e94949;
     line-height: 16px;
