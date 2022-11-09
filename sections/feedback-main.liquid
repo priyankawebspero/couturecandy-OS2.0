@@ -1,6 +1,6 @@
-{%- if settings.show_share_btn_feedback_us and settings.share_type_feedback_us == '1' -%}
+{%- if settings.show_share_btn_contact_us and settings.share_type_contact_us == '1' -%}
    {%- assign gl_follow_social = false -%}
-{%- elsif settings.show_share_btn_feedback_us and settings.share_type_feedback_us == '2' -%}
+{%- elsif settings.show_share_btn_contact_us and settings.share_type_contact_us == '2' -%}
    {%- assign gl_follow_social = true -%}
 {%- endif -%}
 <div class="main-page-wrapper page_contc feedback-page">
@@ -26,7 +26,7 @@
 					                  <div class="screen-reader-response"></div>
 					                   {%- form 'feedback' -%}
 					                     {%- if form.posted_successfully? -%}
-					                        <div class="wpcf7-response-output wpcf7-mail-sent-ok" role="alert">{{ 'feedback.form.post_success' | t }}</div>
+					                        <div class="wpcf7-response-output wpcf7-mail-sent-ok" role="alert">{{ 'contact.form.post_success' | t }}</div>
 					                     {%- elsif form.errors -%}
 					                        <div class="wpcf7-response-output wpcf7-validation-errors" role="alert">{{ form.errors | default_errors }}</div>
 					                     {%- endif -%}
@@ -34,40 +34,40 @@
 					                        <div class="field">
 					                              <label>Full Name</label> 
 					                              <span class="wpcf7-form-control-wrap your-name">
-					                              <input type="text" name="feedback[name]" value="{%- if form[name] -%}{{ form[name] }}{%- elsif customer -%}{{ customer.name }}{%- endif -%}" size="40" class="{%- if form.errors contains 'name' -%}input__error{%- else -%}input__ok{%- endif -%}" aria-required="true" aria-invalid="false">
+					                              <input type="text" name="contact[name]" value="{%- if form[name] -%}{{ form[name] }}{%- elsif customer -%}{{ customer.name }}{%- endif -%}" size="40" class="{%- if form.errors contains 'name' -%}input__error{%- else -%}input__ok{%- endif -%}" aria-required="true" aria-invalid="false">
 					                              </span> 
 					                           </p>
 					                        </div>
 					                        <div class="field">
 					                              <label><span class="required">*</span>Email Address</label> 
 					                              <span class="wpcf7-form-control-wrap your-email">
-					                                 <input type="email" name="feedback[email]" value="{%- if form.email -%}{{ form.email }}{%- elsif customer -%}{{ customer.email }}{%- endif -%}" size="40" class="{%- if form.errors contains 'email' -%}input__error{%- else -%}input__ok{%- endif -%}" aria-required="true" aria-invalid="false">
+					                                 <input type="email" name="contact[email]" value="{%- if form.email -%}{{ form.email }}{%- elsif customer -%}{{ customer.email }}{%- endif -%}" size="40" class="{%- if form.errors contains 'email' -%}input__error{%- else -%}input__ok{%- endif -%}" aria-required="true" aria-invalid="false">
 					                              </span> 
 					                        </div>
 					                     <div class="field">
 					                      <label>Phone Number</label>
 					                        <span class="wpcf7-form-control-wrap your-subject">
-					                           <input type="tel" class="{%- if form.errors contains 'phone' -%}input__error{%- else -%}input__ok{%- endif -%}" name="feedback[phone]" pattern="[0-9\-]*" value="{%- if form[phone] -%}{{ form[phone] }}{%- elsif customer -%}{{ customer.phone }}{%- endif -%}" aria-required="true" aria-invalid="false">
+					                           <input type="tel" class="{%- if form.errors contains 'phone' -%}input__error{%- else -%}input__ok{%- endif -%}" name="contact[phone]" pattern="[0-9\-]*" value="{%- if form[phone] -%}{{ form[phone] }}{%- elsif customer -%}{{ customer.phone }}{%- endif -%}" aria-required="true" aria-invalid="false">
 					                        </span>
 					                     </div>  
 					                     <div class="field">  
 					                        <label>Order Number</label> 
 					                      	 <span class="wpcf7-form-control-wrap order-number">
-					                              <input type="text" name="feedback[order-number]" value="{%- if form[order-number] -%}{{ form[ordernumber] }}{%- elsif customer -%}{{ customer.order-number }}{%- endif -%}" size="40" class="{%- if form.errors contains 'order-number' -%}input__error{%- else -%}input__ok{%- endif -%}" aria-required="true" aria-invalid="false">
+					                              <input type="text" name="contact[order-number]" value="{%- if form[order-number] -%}{{ form[ordernumber] }}{%- elsif customer -%}{{ customer.order-number }}{%- endif -%}" size="40" class="{%- if form.errors contains 'order-number' -%}input__error{%- else -%}input__ok{%- endif -%}" aria-required="true" aria-invalid="false">
 					                     </div>
 					                      <div class="field">  
 					                        <label>RMA Number</label> 
 					                      	 <span class="wpcf7-form-control-wrap rma-number">
-					                              <input type="text" name="feedback[rmanumber]" value="{%- if form[rma-number] -%}{{ form[rma-number] }}{%- elsif customer -%}{{ customer.rma-number }}{%- endif -%}" size="40" class="{%- if form.errors contains 'rma-number' -%}input__error{%- else -%}input__ok{%- endif -%}" aria-required="true" aria-invalid="false">
+					                              <input type="text" name="contact[rmanumber]" value="{%- if form[rma-number] -%}{{ form[rma-number] }}{%- elsif customer -%}{{ customer.rma-number }}{%- endif -%}" size="40" class="{%- if form.errors contains 'rma-number' -%}input__error{%- else -%}input__ok{%- endif -%}" aria-required="true" aria-invalid="false">
 					                     </div>
 					                     <div class="field">  
 					                        <label><span class="required">*</span>Your Feedback</label> 
 					                        <span class="wpcf7-form-control-wrap your-message">
-					                           <textarea name="feedback[body]" cols="40" class="{%- if form.errors contains 'body' -%}input__error{%- else -%}input__ok{%- endif -%}" aria-required="true" aria-invalid="false">{%- if form.body -%}{{ form.body }}{%- endif -%}</textarea>
+					                           <textarea name="contact[body]" cols="40" class="{%- if form.errors contains 'body' -%}input__error{%- else -%}input__ok{%- endif -%}" aria-required="true" aria-invalid="false">{%- if form.body -%}{{ form.body }}{%- endif -%}</textarea>
 					                        </span> 
 					                     </div>
 					                      <div class="field submit">
-					                      	<input type="submit" value="{{ 'feedback.form.submit' | t }}" class="wpcf7-form-control wpcf7-submit btn btn-color-primary">
+					                      	<input type="submit" value="{{ 'contact.form.submit' | t }}" class="wpcf7-form-control wpcf7-submit btn btn-color-primary">
 					                      </div>
 					                  {%- endform -%}
 					               </div>
