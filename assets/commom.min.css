@@ -7429,6 +7429,10 @@ body .iWishAddColl svg path {
     margin-top: 0 !important;
 }
 
+.boost-pfs-filter-custom-sorting .boost-pfs-filter-filter-dropdown li a {
+    text-transform: uppercase;
+}
+
 @media only screen and (max-width:767px){
 
   .template-collection .shopify-section {
