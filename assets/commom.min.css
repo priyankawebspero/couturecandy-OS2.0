@@ -7423,6 +7423,10 @@ body .iWishAddColl svg path {
     background: #e44949;
 }
 
+.shopify-app-block {
+    margin-top: 0 !important;
+}
+
 @media only screen and (max-width:767px){
 
   .template-collection .shopify-section {
