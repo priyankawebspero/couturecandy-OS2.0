@@ -422,6 +422,10 @@ background:none !important;}
     padding-bottom: 15px;
 }
 
+.boost-pfs-filter-tree-v .boost-pfs-filter-option:first-child {
+    padding-top: 15px;
+}
+
 .boost-pfs-filter-left-col .boost-pfs-filter-option .boost-pfs-filter-option-title .boost-pfs-filter-option-title-heading {
     font-weight: 500;
     font-size: 15px;
