@@ -39,7 +39,7 @@
 
   <script type="text/javascript">document.documentElement.className = document.documentElement.className.replace('no-js', 'yes-js js_active js')</script>
    {%- capture seo_title -%}
-    {{ page_title }}
+    {{ page_title | replace:"2022","2023" }}
     {%- if current_tags -%}
       {%- assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
     {%- endif -%}

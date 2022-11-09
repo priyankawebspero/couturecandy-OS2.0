@@ -701,7 +701,8 @@ footer .widget-title:before {
 }
 
 .footer-column .textwidget ul.social-icons li a {
-    color: #525252;
+    /*color: #525252;*/
+  color: #fff;
 }
 
 .footer-column .textwidget ul.social-icons li a:hover {
