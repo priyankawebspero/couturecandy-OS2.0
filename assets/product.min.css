@@ -1623,7 +1623,7 @@ div#ReviewSection .stjr-product-write-review-widget .stjr-product-write-review-w
 .single-product-content .single_variation_wrap .iwishAddWrap {
     display: inline-block;
     margin-left: 18px;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 
