@@ -109,12 +109,14 @@
         "59018970-5927-4c73-bd0b-110fb0918fe0": {
           "type": "Brand",
           "settings": {
+            "image": "shopify:\/\/shop_images\/1-min_360x_9597c349-d487-4b78-81f9-cd00aa306e41.jpg",
             "link": "\/collections\/jovani"
           }
         },
         "fc543391-ad81-4099-b947-78f2a00e32a9": {
           "type": "Brand",
           "settings": {
+            "image": "shopify:\/\/shop_images\/2-min_360x_74c76e54-4043-43e6-a3e0-d1d0c85b4638.jpg",
             "link": "\/collections\/cinderella-divine"
           }
         },
