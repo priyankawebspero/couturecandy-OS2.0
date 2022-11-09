@@ -7330,6 +7330,10 @@ body .iWishAddColl svg path {
     overflow: hidden;
 }
 
+ .template-search .shopify-section {
+    overflow: hidden;
+}
+
   .shopify .cart-empty {
     font-size: 28px;
 }
