@@ -9,16 +9,7 @@
 {%- endif -%}
 
   <!--=========================================Header=========================================-->
-<!-- Global site tag (gtag.js) - Google Ads -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-950821702"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-950821702');
-</script>
-   
+  
   <!-- Abandoned Cart Information -->
   <div id="care-cart-customer-information" style="display:none">
     {"id":"{{customer.id}}", "email":"{{ customer.email }}","default_address":{{ customer.default_address | json }},"first_name":"{{ customer.first_name }}","last_name":"{{ customer.last_name }}","name":"{{ customer.name }}" }
