@@ -945,9 +945,6 @@ display:none;
     color: #e94949 !important;
 }
 
-ul.boost-pfs-filter-filter-dropdown li[aria-label="Manual"] {
-    display: none !important;
-}
 
 @media only screen and (min-width:1300px){
 .boost-pfs-section-header .boost-pfs-filter-collection-description h1.heading.collection {
