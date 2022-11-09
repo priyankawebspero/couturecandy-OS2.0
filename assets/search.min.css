@@ -989,9 +989,6 @@ display:none;
     margin-bottom: 0;
 }
 
-ul.boost-pfs-filter-filter-dropdown li[aria-label="Manual"] {
-    display: none !important;
-}
 
 @media only screen and (max-width:1550px){
   
