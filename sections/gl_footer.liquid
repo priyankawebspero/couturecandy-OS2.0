@@ -168,7 +168,8 @@
                      <div class="textwidget">
                         <ul class="menu">
                            {%- for link in linklists[block.settings.menu].links -%}
-                           <li{% if link.active %} class="current-menu-item"{% endif %}><a href="{{ link.url }}">{{ link.title | split: '[' | first }}</a></li>
+                              {% assign url = link.url  %}
+                           <li{% if link.active %} class="current-menu-item"{% endif %}><a href="{{ link.url }}" {% if url contains 'aftership' %} target="_blank" {% endif %}>{{ link.title | split: '[' | first }}</a></li>
                          {%- else -%}
                            {% capture theme_settings_footer_linklist_path %}<strong>Footer</strong> > <strong>Quick links link list</strong>{% endcapture %}
                            {{ 'layout.footer.instructions_for_linklist_html' | t: theme_settings_link: theme_settings_link, theme_settings_footer_linklist_path: theme_settings_footer_linklist_path }}
