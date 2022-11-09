@@ -540,10 +540,11 @@ div#shopify-section-template--14532934697043__16541439641d011f7d .spb__column.gl
 .product-grid-item .product-element-top>a img {
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
+  object-position: top;
 }
 
 .product-grid-item .product-element-top .hover-img {
@@ -558,7 +559,8 @@ div#shopify-section-template--14532934697043__16541439641d011f7d .spb__column.gl
 .product-grid-item .product-element-top .hover-img a img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+  object-position: top;
 }
 
 .basel-hover-base .product-element-top .yith-wcwl-add-to-wishlist>div>a:before {
