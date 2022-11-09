@@ -546,7 +546,7 @@ endif
        {{ collection.metafields.Bottomdescription.Bottomdescription | replace: "2022", "2023" }}
     </div>
   {%- endif -%}
-   {%- if collection.description != blank and settings.show_des_collection -%}
+   {%- if collection.description != blank and settings.show_des_collection and collection.metafields.Bottomdescription.Bottomdescription != blank -%}
    <span class="moreless-button btn">Read more</span>
    {%- endif -%}
   </div>
