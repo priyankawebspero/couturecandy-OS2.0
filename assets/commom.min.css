@@ -7416,6 +7416,13 @@ body .iWishAddColl svg path {
     text-decoration: none !important;
 }
 
+.iwishMsg .iwishMsgSuccess {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    background: #e44949;
+}
+
 @media only screen and (max-width:767px){
 
   .template-collection .shopify-section {
