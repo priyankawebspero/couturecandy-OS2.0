@@ -307,20 +307,24 @@
         "16541439647bf16666-2": {
           "type": "masonry_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/1_570x_6dca38f6-4923-4161-9a50-c6054f8b5dbd.jpg",
             "heading": "PAGEANT DRESSES",
-            "content": "your dream <br>is their dream",
+            "content": "your dream is their dream",
             "button": "Shop Now",
             "id_collection": "pageant-dresses",
+            "image_hover": "shopify:\/\/shop_images\/1_570x_6dca38f6-4923-4161-9a50-c6054f8b5dbd.jpg",
             "width": "4"
           }
         },
         "16541439647bf16666-1": {
           "type": "masonry_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/2-min_570x_02e1bf18-9f08-4ea5-b12f-8fe0a57e2191.jpg",
             "heading": "HOMECOMING  DRESSES",
-            "content": "the ultimate <br>homecoming dresses",
+            "content": "the ultimate homecoming dresses",
             "button": "SHOP NOW",
             "id_collection": "homecoming-dresses",
+            "image_hover": "shopify:\/\/shop_images\/2-min_570x_02e1bf18-9f08-4ea5-b12f-8fe0a57e2191.jpg",
             "width": "4"
           }
         },
