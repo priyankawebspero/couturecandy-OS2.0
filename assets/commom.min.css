@@ -7412,6 +7412,10 @@ body .iWishAddColl svg path {
     display: none;
 }
 
+.flits-menu-item a {
+    text-decoration: none !important;
+}
+
 @media only screen and (max-width:767px){
 
   .template-collection .shopify-section {
