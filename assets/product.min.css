@@ -438,8 +438,9 @@ background: #000;
 }
 
 .single-product-content div#variant-inventory {
-    color: #000;
+    color: #e94949;
     font-size: 17px;
+    margin-bottom: 15px;
 }
 
 .single-product-content span.onlyjovani {
