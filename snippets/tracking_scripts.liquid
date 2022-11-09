@@ -297,7 +297,6 @@ setTimeout("ga('set', 'nonInteraction', true);ga('send', 'event', 'abr', '45 sec
 
 <script src="https://conduit.mailchimpapp.com/js/stores/hw6z1b/conduit.js" async="async"></script>
 {%- if template.name == 'product' -%}
-
 <script>
 pintrk('track', 'pagevisit', {
   line_items: [{
@@ -309,14 +308,12 @@ pintrk('track', 'pagevisit', {
 </script>
  <noscript> 
     <img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2612396004968&event=pagevisit&noscript=1" />
-
-      <img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2612396004968&event=AddToCart&ed[value]={{ product.price | money_without_currency }}&ed[order_quantity]=1&noscript=1" />
-
+    <img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2612396004968&event=AddToCart&ed[value]={{ product.price | money_without_currency }}&ed[order_quantity]=1&noscript=1" />
 </noscript>
+
  <script type="application/javascript">
    $( document ).ready(function() {
         $('#shopify_add_to_cart').click(function() {
-
           pintrk('track', 'addtocart', {
               value: '{{ product.price | money_without_currency }}',
               currency: '{{ shop.currency }}',
