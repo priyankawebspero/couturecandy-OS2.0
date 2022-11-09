@@ -7326,6 +7326,10 @@ body .iWishAddColl svg path {
 
 @media only screen and (max-width:767px){
 
+  .template-collection .shopify-section {
+    overflow: hidden;
+}
+
   .shopify .cart-empty {
     font-size: 28px;
 }
