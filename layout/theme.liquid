@@ -41,6 +41,15 @@
    {{ content_for_header }}
   {%- include 'head-script-after-content' -%}
     {{ 'style.css' | asset_url | stylesheet_tag }}
+    <!-- Global site tag (gtag.js) - Google Ads -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-950821702"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-950821702');
+</script> 
     </head>
 
 {%- include 'class_body_theme' -%}
