@@ -26,8 +26,8 @@
     "16539111747fa4ce03": {
       "type": "single-banner",
       "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/CC_Banner_Fall_Uploaded.png",
-        "image_mobile": "shopify:\/\/shop_images\/768x768px.png",
+        "image_desktop": "shopify:\/\/shop_images\/CC_Banner_Fall_27c040d3-d9b0-4b18-b050-0aca503c94b2.png",
+        "image_mobile": "shopify:\/\/shop_images\/MicrosoftTeams-image.png",
         "link": "shopify:\/\/collections\/dresses"
       }
     },
@@ -37,6 +37,8 @@
         "1654005036d5d16ee9-0": {
           "type": "banner-1",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Prom-dresses_9f6ee5b4-220a-4ef5-9f64-e3e1264f94f6.jpg",
+            "image_mob": "shopify:\/\/shop_images\/Prom-dresses_9f6ee5b4-220a-4ef5-9f64-e3e1264f94f6.jpg",
             "category_heading": "Prom Dresses",
             "category_content": "Shop our latest selection",
             "banner_btn_title": "SHOP NOW",
@@ -46,6 +48,8 @@
         "1654005036d5d16ee9-1": {
           "type": "banner-2",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Occasion_878a88c9-3916-42d3-9109-3a59c61a1510.jpg",
+            "image_mob": "shopify:\/\/shop_images\/mobile-occasion-dress-pic_fa219560-a070-4b59-a5fa-f4ba359de26d.jpg",
             "category_heading": "Occasion",
             "category_content": "Dresses for every occasion",
             "banner_btn_title": "SHOP NOW",
