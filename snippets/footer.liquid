@@ -14,25 +14,5 @@
       </div>
    </div>
   
-   {%- endif -%}
-  
- <script>
-  $(document).ready(function(){
-  $('.moreless-button').click(function () {
-    $(this).parent().find('.append-content-custom').slideToggle();
-    if ($(this).text() == "Read Less") {
-      $(this).text("Read More");
-    } else {
-      $(this).text("Read Less");
-    }
-  });
-    $('#shopify-section-gl_footer .widget-title').on('click', function(){
-      $(this).parent().closest('.footer-column').toggleClass('active');
-
-    })
-  });
-</script>
-  
-
-  
+   {%- endif -%}  
 </footer>
