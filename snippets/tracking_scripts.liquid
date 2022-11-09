@@ -289,14 +289,13 @@ pintrk('track', 'pagevisit', {
                 }
             } } );
         });
-         $('.add-to-cart-form').submit(function(event) {
+         $('form#cart-form').submit(function(event) {
              console.log('kucucucuucucucuuccucucuucucucu');
            var ProductPrice = $('#tracking_price').val();
              ProductPrice = parseInt(ProductPrice);
-             var percentage = ProductPrice*(10/100);
            gtag('event', 'conversion', {
                 'send_to': 'AW-950821702/A_zfCJqkj-wBEMbGscUD',
-                'value': percentage,
+                'value': ProductPrice,
                 'currency': 'USD'
             });
              console.log('percentagekfgjf', percentage);
