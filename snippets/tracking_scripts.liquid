@@ -376,11 +376,6 @@ pintrk('track', 'viewcategory', {
     line_items: [{ product_category: '{{ collection.title }}'}]
 });
 </script>
-<noscript>
-    <!-- <img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2612396004968&event=AddToCart&ed[value]={{ product.price | money_without_currency }}&ed1=2&noscript=1" /> -->
-
-  <img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2612396004968&event=viewcategory&noscript=1" />
-</noscript>
 {% endif %}
 
 {% if customer %}
