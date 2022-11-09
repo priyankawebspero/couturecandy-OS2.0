@@ -331,10 +331,12 @@
         "16541439647bf16666-0": {
           "type": "masonry_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/3_570x_520b2540-59bc-4654-84ef-9e219d4c1c4a.jpg",
             "heading": "GRADUATION  DRESSES",
-            "content": "the ultimate graduation <br> party dresses",
+            "content": "the ultimate graduation  party dresses",
             "button": "SHOP NOW",
             "id_collection": "graduation-dresses",
+            "image_hover": "shopify:\/\/shop_images\/3_570x_520b2540-59bc-4654-84ef-9e219d4c1c4a.jpg",
             "width": "4"
           }
         }
