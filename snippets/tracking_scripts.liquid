@@ -289,10 +289,10 @@ pintrk('track', 'pagevisit', {
                 }
             } } );
         });
-         $('.add-to-cart-form').submit(function(event) {
+         $('#shopify_add_to_cart').click(function(event) {
              var ProductPrice = $('#tracking_price').val();
              ProductPrice = parseInt(ProductPrice);
-             var percentage = ProductPrice*(10/100);
+             var percentage = ProductPrice*(1/100);
            gtag('event', 'conversion', {
                 'send_to': 'AW-950821702/A_zfCJqkj-wBEMbGscUD',
                 'value': percentage,
