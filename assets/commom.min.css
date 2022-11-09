@@ -7324,6 +7324,15 @@ body .iWishAddColl svg path {
     fill: #e94949 !important;
 }
 
+.template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-price s span.money {
+    color: #000;
+    margin-right: 5px;
+}
+
+.template-cart form.shopify-cart-form .shop_table.shopify-cart-form__contents tr td.product-price s + span.money {
+    color: #e44949;
+}
+
 @media only screen and (max-width:767px){
 
   .template-collection .shopify-section {
