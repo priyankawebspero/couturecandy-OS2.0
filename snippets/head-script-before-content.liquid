@@ -17,6 +17,8 @@
 
   gtag('config', 'AW-950821702');
 </script>  
+<script>
+
 
   <!-- StackAdapt Pixel -->
 
@@ -71,7 +73,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
       window.criteo_q.push(
         { event: "setAccount", account: 29071 },
         { event: "{{setHashedEmail}}", email: "{{emailCust}}" },
-        { event: "setSiteType"},
+        { event: "setSiteType", type: checkDevice },
         { event: "viewHome" }
       );
       </script>      
