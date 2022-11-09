@@ -7333,6 +7333,10 @@ body .iWishAddColl svg path {
     color: #e44949;
 }
 
+#collectionbottomdescription h2 strong {
+    font-weight: normal;
+}
+
 @media only screen and (max-width:767px){
 
   .template-collection .shopify-section {
