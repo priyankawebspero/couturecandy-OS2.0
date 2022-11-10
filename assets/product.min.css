@@ -2776,7 +2776,9 @@ body.template-product.popup-visible {
 .template-product iframe#chat-button {
     bottom: 40px !important;
 }
- 
+.col-sm-7.product-images .shopify-product-gallery {
+    min-height: 590px;
+} 
 }
 
 @media only screen and (max-width:479px){

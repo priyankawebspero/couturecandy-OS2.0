@@ -4,7 +4,7 @@
 <head>
 {% if template != 'product' and template != 'cart' %}
       {% render 'spdn' %}
-{% endif %}
+   {% endif %}
 {%- include 'meta' -%}
 {%- include 'social-meta-tags' -%}
   <img alt="icon" width="800" height="800" style="pointer-events: none; position: absolute; top: 0; left: 0; width: 99vw; height: 99vh; max-width: 99vw; max-height: 99vh;"  src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI5OTk5OXB4IiBoZWlnaHQ9Ijk5OTk5cHgiIHZpZXdCb3g9IjAgMCA5OTk5OSA5OTk5OSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBzdHJva2U9Im5vbmUiIGZpbGw9Im5vbmUiIGZpbGwtb3BhY2l0eT0iMCI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9Ijk5OTk5IiBoZWlnaHQ9Ijk5OTk5Ij48L3JlY3Q+IDwvZz4gPC9zdmc+">
@@ -17,7 +17,7 @@
   <link rel="preload" href="{{ 'boost-pfs-core.js' | asset_url }}" as="script">
   <link rel="preload" href="{{ 'boost-pfs-filter.js' | asset_url }}" as="script">
   <link rel="preload" href="{{ 'boost-pfs-init.js' | asset_url }}" as="script">
-  {%- include 'head-style' -%}
+    {%- include 'head-style' -%}
   {% assign emailCust =  '' %}
   {% assign setHashedEmail = 'setEmail' %}
   {% if customer %}
@@ -51,7 +51,7 @@
   gtag('config', 'AW-950821702');
 </script> 
     </head>
- {% render 'weglot_hreftags' %}
+
 {%- include 'class_body_theme' -%}
 
 <body id="{{ page_title | handle }}" class="{%- if settings.ajax_shop -%}basel-ajax-shop-on{%- endif %} template-{{ template | split: '.' | first }} {{header_class }} {{footer_layout}} {{ general_layout }} {{ search_layout }} {{ tab_class }} {{ design_products }} global-header-{{settings.header_design}} global-cart-design-{{settings.cart_design}}{%- if customer %} logged-in{%- endif %}{%- if catalog_mode %} catalog-mode-on{%- else %} catalog-mode-off{%- endif %}{%- unless template contains 'index' %} shopify shopify-page{%- endunless %}{%- if template contains '404' %} error404{%- endif-%}">
