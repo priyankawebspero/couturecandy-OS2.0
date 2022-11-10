@@ -3078,11 +3078,7 @@ span.promguide-side-title.open{
 }
 
 @media only screen and (min-width:768px){
-
-.wg-drop.country-selector.closed ul {
-    display: none;
-}
-
+  
 .prom-work-des-inner {
     margin: 0 -15px;
     display: -webkit-box;
