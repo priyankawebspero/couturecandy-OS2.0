@@ -2772,6 +2772,10 @@ body.template-product.popup-visible {
 .single-product-content .quantity_test {
     margin-top: 10px !important; 
 }
+
+.template-product iframe#chat-button {
+    bottom: 40px !important;
+}
   
 }
 
