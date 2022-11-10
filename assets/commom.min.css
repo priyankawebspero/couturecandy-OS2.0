@@ -3083,6 +3083,10 @@ span.promguide-side-title.open{
     min-width: 95px;
 }
 
+.wg-drop.country-selector.closed ul {
+    display: none;
+}
+
 .prom-work-des-inner {
     margin: 0 -15px;
     display: -webkit-box;
