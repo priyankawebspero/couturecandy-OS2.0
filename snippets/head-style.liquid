@@ -9,7 +9,7 @@
 <link rel="preload" href="{{ 'gl_vendor.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="{{ 'main.min.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
 <link rel="preload stylesheet" type="text/css" href="{{ 'commom.min.css' | asset_url }}" /> 
-<style>.switchers.col-4 {height: 30px;} .wg-drop.country-selector.closed ul {display: none;}</style>
+<style>.switchers.col-4 {height: 30px;} .wg-drop.country-selector.closed ul {display: none;} div#currency_switcher {min-width: 95px;}</style>
 {% if template != "collection" and template != "index" %} 
 {%- assign yotpo_offload_content = shop.metafields.yotpo.yotpo_offload_content %}
 {%- assign time_now = 'now' | date: '%s' %}
