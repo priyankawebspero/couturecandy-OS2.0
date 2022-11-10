@@ -1292,6 +1292,10 @@ display:none;
 
 @media only screen and (max-width:767px){
 
+  .template-search .main-page-wrapper {
+    overflow: hidden;
+}
+
   .boost-pfs-filter-mobile-footer button.boost-pfs-filter-clear-all {
     background: #000;
     text-align: center;
