@@ -2451,13 +2451,14 @@ body.template-product  {
 }
   
 .product-image-summary .Info .Details .Cnt span {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.2;
 }
-  
+
 .product-image-summary .Info .Details .Cnt a {
     margin-top: 5px;
-    font-size: 13px;
+    font-size: 14px;
+    font-family: 'product_sans_mediumregular';
 }
   
  .fake_counter_real_time {
