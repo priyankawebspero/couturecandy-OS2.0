@@ -2763,6 +2763,11 @@ body.template-product.popup-visible {
 .popup-visible .single-product-content .shopify-app-block {
     z-index: 1;
 }
+
+.product-image-summary .Info .Details {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
   
 }
 
@@ -2824,7 +2829,7 @@ span.contact_us_button a {
 }
 
 .template-product div#ReviewSection {
-    padding: 25px 15px;
+    padding: 25px 15px 0;
 }
 
 .single-product-content .shopify-app-block a {
