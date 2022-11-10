@@ -2779,6 +2779,10 @@ body.template-product.popup-visible {
 .col-sm-7.product-images .shopify-product-gallery {
     min-height: 590px;
 } 
+.single-product-content .single_variation_wrap .iwishAddWrap .iWishAdd.iwishAdded {
+    text-decoration: none !important;
+}
+  
 }
 
 @media only screen and (max-width:479px){
@@ -2802,7 +2806,7 @@ body.template-product.popup-visible {
 }
   
 .single-product-content .entry-summary .yith-wcwl-add-to-wishlist a {
-    font-size: 13px;
+    font-size: 14px;
     padding: 0 10px;
 }
 
