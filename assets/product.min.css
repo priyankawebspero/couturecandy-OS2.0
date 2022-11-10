@@ -2776,6 +2776,24 @@ body.template-product.popup-visible {
 .template-product iframe#chat-button {
     bottom: 40px !important;
 }
+
+
+body .boost-pfs-search-suggestion .boost-pfs-search-suggestion-groups-others .boost-pfs-search-suggestion-group {
+    padding-top: 0;
+}
+
+body .boost-pfs-search-suggestion .boost-pfs-search-suggestion-groups-others .boost-pfs-search-suggestion-group ul {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+body .boost-pfs-search-suggestion .boost-pfs-search-suggestion-groups-others .boost-pfs-search-suggestion-group ul .boost-pfs-search-suggestion-header {
+    padding: 6px 12px;
+    line-height: 20px;
+}
+body .boost-pfs-search-suggestion-open .boost-pfs-search-suggestion {
+    display: block !important;
+}
   
 }
 
