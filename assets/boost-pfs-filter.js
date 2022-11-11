@@ -1105,6 +1105,7 @@ var boostPFSFilterConfig = {
         this.filterTree.filterOptions.forEach(function(filterOption) {
             // FilterOption has numberAppliedFilterItems field. We add those up.
             if (filterOption.status != 'disabled') {
+              // Boost - 153213
              if (filterOption.numberAppliedFilterItems != undefined ) count += filterOption.numberAppliedFilterItems;
             }
         })
