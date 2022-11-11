@@ -86,9 +86,22 @@ var boostPFSInstantSearchConfig = {
       }
   }
 
-   InstantSearchApi.beforeCall = function() {
-          Globals.instantSearchQueryParams.variant_available = true;
-          Globals.instantSearchQueryParams.product_available = true;
-   }
+   // InstantSearchApi.beforeCall = function() {
+   //        Globals.instantSearchQueryParams.variant_available = true;
+   //        Globals.instantSearchQueryParams.product_available = true;
+   // }
+
+  // Boost - 153213
+  // Hide the price in the ISW if the product/variant it's $0
+  var buildPrice = InstantSearchResultItemProduct.prototype.compileSuggestionProductPrice;
+  
+  InstantSearchResultItemProduct.prototype.compileSuggestionProductPrice =
+      function () {
+        console.log('PRODUCTS:', this.data)
+        var moreThan0 = this.data.variants.some((v) => v.price === "0.00");
+        // console.log(moreThan0)
+          if (this.data.price_min === "0" || moreThan0) return " ";
+          return buildPrice.call(this);
+      };
 
 })();
