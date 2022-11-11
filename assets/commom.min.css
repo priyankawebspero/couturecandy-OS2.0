@@ -3077,6 +3077,10 @@ span.promguide-side-title.open{
     color: #e94949;
 }
 
+.scrollToTop {
+    bottom: 115px;
+}
+
 @media only screen and (min-width:768px){
   
 .prom-work-des-inner {
