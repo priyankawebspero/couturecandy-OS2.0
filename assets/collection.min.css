@@ -18,13 +18,25 @@
     text-align: center;
 }
 
-
-
 #collectionbottomdescription h2 {
     margin-bottom: 20px;
     /*color: #000;*/
     margin-top: 30px;
 }
+.bottom.description.collection ul {
+    list-style-type: disc;
+    text-align: left;
+    width: 100%;
+    max-width: 1200px;
+    margin: 15px auto;
+    padding-left: 30px;
+}
+.bottom.description.collection ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    /* list-style-type: disc; */
+}
+
 .bottom.description.collection h2 {
     font-size: 40px;
 }
