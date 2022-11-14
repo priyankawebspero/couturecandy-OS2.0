@@ -7437,6 +7437,10 @@ body .iWishAddColl svg path {
     text-transform: uppercase;
 }
 
+.bottom.description.collection a {
+    text-decoration: underline;
+}
+
 @media only screen and (max-width:767px){
 
   .template-collection .shopify-section {
