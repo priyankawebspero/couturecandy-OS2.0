@@ -5,3 +5,11 @@ jQuery( document ).ready(function( $ ) {
   {{settings.custom_js | html }}
 });
 {%- endif -%}
+/*Anchor lower case code*/
+$(document).ready(function(){
+    $(".bottom.description.collection a, .bottom.buttons a").each(function(){
+   var lower_link = $(this).attr("href").toLowerCase();
+        console.log(lower_link);
+        $(this).attr("href",lower_link);
+}); 
+});
