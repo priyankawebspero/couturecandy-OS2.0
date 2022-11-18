@@ -1,4 +1,10 @@
-{% if collection.products_count > 0 %}
+{% assign in_stock = false %}
+{% for product in collection.products %}
+  {% if product.available %}
+    {% assign in_stock = true %}
+{% endif %}
+  {% endfor %}
+{% if collection.products_count > 0 and in_stock %}
  <div class="row">
         <div class="boost-pfs-most-popular"></div>
       </div>
