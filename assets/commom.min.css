@@ -3185,7 +3185,7 @@ span.promguide-side-title.open{
 
 @media only screen and (min-width:992px){
 
-.basel-product-design-default .product-images {
+.template-product .product-image-summary {
     min-height: 850px;
 }
 
