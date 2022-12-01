@@ -3185,7 +3185,9 @@ span.promguide-side-title.open{
 
 @media only screen and (min-width:992px){
 
-
+.basel-product-design-default .product-images {
+    min-height: 850px;
+}
 
 .pro-guide-page-right {
     display: inline-block;
