@@ -1809,9 +1809,7 @@ div#ProdDetailInfomobile {
 }
 
 @media only screen and (min-width:992px){
-.col-sm-7.product-images .shopify-product-gallery {
-    min-height: 850px;
-}
+
   
   .product-image-summary .Info .Details .Cnt br {
     display: none;
@@ -1867,7 +1865,9 @@ div#ProdDetailInfomobile {
 
 @media only screen and (min-width:1200px){
   
-  
+  .col-sm-7.product-images .shopify-product-gallery {
+    min-height: 850px;
+}
 
   .basel-product-design-default .product-images {
     width: 41%;
