@@ -7496,3 +7496,5 @@ body .iWishAddColl svg path {
 .main-header .logo .site-logo .basel-logo-wrap {
     font-family: 'Playfair Display', serif;
 }
+
+.single-post .entry-content h2, .single-post .entry-content h3{font-family: 'product_sans_mediumregular';}
