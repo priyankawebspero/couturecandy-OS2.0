@@ -1866,7 +1866,7 @@ div#ProdDetailInfomobile {
 @media only screen and (min-width:1200px){
   
   .col-sm-7.product-images .shopify-product-gallery {
-    min-height: 850px;
+    min-height: 650px;
 }
 
   .basel-product-design-default .product-images {
@@ -1881,6 +1881,16 @@ div#ProdDetailInfomobile {
 
 
 }
+
+
+@media only screen and (min-width:1440px){
+  
+  .col-sm-7.product-images .shopify-product-gallery {
+    min-height: 850px;
+}
+
+}
+
 
 @media only screen and (max-width: 1550px){
   
