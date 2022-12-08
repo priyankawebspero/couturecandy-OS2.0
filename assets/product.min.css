@@ -3,6 +3,10 @@
           min-height: 300px;
       }
   }
+
+div#popup {
+    display: none;
+}
 div.inventory-active {
     margin-bottom: 20px;
     color: #d02e2e;
