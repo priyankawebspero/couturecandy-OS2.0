@@ -3,62 +3,32 @@
   $( document ).ready(function() {
         if ($(window).width() < 767){
           $(".mobiletoggle").hide();
-          $(".mobiletogglebutton").click(function(){
-            $(this).toggleClass('mobile_ca');
-          $(this).next().toggle('slow');
-          });
+          $(".mobiletogglebutton").click(function(){ $(this).toggleClass('mobile_ca');  $(this).next().toggle('slow');  });
           $('#someone-purchased').removeClass('hidead');
           
-          $('.bc-sf-filter-option-item').click(function(){
-            var asas = $('.filterapply').attr("id");
-            
-          });
+          $('.bc-sf-filter-option-item').click(function(){  var asas = $('.filterapply').attr("id"); });
           $('#shopify-section-collection-template-bc-sf-filter #bc-sf-filter-wrapper .filterapply').click(function(){
-            if($(this).attr('id') === 'applynow'){
-                $('#bc-sf-filter-tree-mobile-button').removeAttr("onclick");
-              $('#bc-sf-filter-tree-mobile-button').click();
-            }
+            if($(this).attr('id') === 'applynow'){ $('#bc-sf-filter-tree-mobile-button').removeAttr("onclick"); $('#bc-sf-filter-tree-mobile-button').click(); }
           });
           
       $('.main-page-wrapper .site-content #shopify-section-collection-template-bc-sf-filter #bc-sf-filter-tree-mobile').click(function(){
         $('#freeshipping_top').toggleClass('on');
-        var cehc = $('.filterapply').attr("id");
-        
-        if(cehc =='mobile_sort_by'){
-          $('.filterapply').attr("id", "applynow");
-            $('.filterapply').text('Apply Now');
-          $('#bc-sf-filter-tree-mobile-button').text('Cancel');
-          $('#bc-sf-filter-tree-mobile-button').attr('onclick', 'clearAllFilterOptions(event)');
-          
-        }else{
-       
-        $('.filterapply').attr("id", "mobile_sort_by");
-          $('.filterapply').text('Shop By');
-          $('#bc-sf-filter-tree-mobile-button').text('Refine By');
-          $('#bc-sf-filter-tree-mobile-button').removeAttr("onclick");
-        }
-        
+        var cehc = $('.filterapply').attr("id");        
+        if(cehc =='mobile_sort_by'){   $('.filterapply').attr("id", "applynow");  $('.filterapply').text('Apply Now'); $('#bc-sf-filter-tree-mobile-button').text('Cancel'); $('#bc-sf-filter-tree-mobile-button').attr('onclick', 'clearAllFilterOptions(event)'); }
+        else{ $('.filterapply').attr("id", "mobile_sort_by"); $('.filterapply').text('Shop By');  $('#bc-sf-filter-tree-mobile-button').text('Refine By'); $('#bc-sf-filter-tree-mobile-button').removeAttr("onclick"); }  
        $('.main-page-wrapper .site-content #shopify-section-collection-template-bc-sf-filter #bc-sf-filter-tree #bc-sf-filter-options-wrapper .bc-sf-filter-option-block-sale .bc-sf-filter-block-content').show();
-   });
+       });
+  
       $('.bc-sf-filter-block-content').css('display','none');
       window.setInterval(function(){
-     
-      var casdgsdn = $('#bc-sf-filter-tree-mobile-button').text();
-              
+      var casdgsdn = $('#bc-sf-filter-tree-mobile-button').text();         
       var shidepp = $('.filterapply').text();
-      if(casdgsdn == "Cancel" || shidepp == "Apply Now" || shidepp == "Close"){
-        $('#someone-purchased').addClass('hidead');
-      } else{
-        $('#someone-purchased').removeClass('hidead');
-      }
-        if($('.jspScrollable').length > 0){
-          $('.bc-sf-filter-block-content').removeClass('jspScrollable');
-        }
-        
-        var afads = $('.filterapply').attr("id");
-        if(afads ==='applynow'){
-            $('body').addClass('refinefilter');
-          
+      if(casdgsdn == "Cancel" || shidepp == "Apply Now" || shidepp == "Close"){ $('#someone-purchased').addClass('hidead'); }
+      else{  $('#someone-purchased').removeClass('hidead'); }
+      if($('.jspScrollable').length > 0){ $('.bc-sf-filter-block-content').removeClass('jspScrollable'); } 
+      var afads = $('.filterapply').attr("id");
+      if(afads ==='applynow'){
+          $('body').addClass('refinefilter');
           $('#bc-sf-filter-tree-mobile-button').text('Cancel');
           $('#bc-sf-filter-tree-mobile-button').attr('onclick', 'clearAllFilterOptions(event)');
         }else{
@@ -114,7 +84,6 @@ window.dotq.push(
 <!-- Start Tracking Code for analytics_facebook -->
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
 fbq('set', 'autoConfig', 'false', '311715418953318');
 fbq('init', '311715418953318');
 fbq('set', 'agent', 'plbigcommerce1.2', '311715418953318');
