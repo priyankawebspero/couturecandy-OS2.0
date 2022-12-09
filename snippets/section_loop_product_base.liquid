@@ -51,7 +51,7 @@
        {%- if settings.show_product_color and colour_count > 1 -%}
       {%- include 'swatches_on_grid' -%}
     {%- endif -%}
-    {% if template = "article" %}
+    {% if template == "article" %}
      <span><a href="{{ url_nt }}"><button class="button" style="font-size: 12px;"><span style="color: #ffffff;">SHOP THIS DRESS</span></button></a></span>
     {%- endif -%}
       </div>
