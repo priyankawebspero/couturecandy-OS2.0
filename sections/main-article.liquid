@@ -294,7 +294,7 @@
         {%- assign single_article = block.settings.single_post -%}
         {%- if page_URL == single_article -%}
         {%- assign selected_col = block.settings.single_post_collection -%}
-          {% for product in collections[selected_col].products limit: product_limit  %}
+          {% for product in collections[selected_col].products limit: 30  %}
            <div class="product-item owl-carousel-item">
               <div class="owl-carousel-item-inner"> 
                 {% include 'section_loop_product_base' %}
