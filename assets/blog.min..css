@@ -48,3 +48,33 @@
     font-size: 17px;
 }
 
+@media only screen and (max-width:768px){
+
+
+.template-article .related.products .owl-nav {
+    display: block !important;
+}
+
+.template-article .related.products .owl-nav .owl-prev {
+    width: 30px;
+    height: 30px;
+    left: 10px!important;
+}
+
+.template-article .related.products .owl-nav .owl-next {
+     width: 30px;
+    height: 30px;
+    right: 10px!important;
+}
+
+.template-article .related.products .owl-nav .owl-prev:before, .template-article .related.products .owl-nav .owl-next:before {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+}
+  
+}
+
+
+
