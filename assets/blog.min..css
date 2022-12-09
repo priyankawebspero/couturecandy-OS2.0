@@ -20,3 +20,31 @@
 .template-article section.related.products .product-grid-item .product-element-bottom .swatches-on-grid {
     display: none;
 }
+
+
+.template-article .related.products .owl-nav .owl-prev {
+    opacity: 1;
+    width: 35px;
+    height: 35px;
+    background: #000;
+    margin-top: -70px;
+    left: -5px !important;
+}
+
+.template-article .related.products .owl-nav .owl-next {
+    opacity: 1;
+    width: 35px;
+    height: 35px;
+    background: #000;
+    margin-top: -70px;
+    right: -5px !important;
+}
+
+.template-article .related.products .owl-nav .owl-prev:before, .template-article .related.products .owl-nav .owl-next:before {
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 17px;
+}
+
