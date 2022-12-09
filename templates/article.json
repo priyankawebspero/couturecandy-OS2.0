@@ -18,11 +18,19 @@
             "single_post": "",
             "single_post_collection": ""
           }
+        },
+        "72ab51b1-8e30-4f6e-984b-0a5ca121ea99": {
+          "type": "article",
+          "settings": {
+            "single_post": "celebrity\/why-black-dresses-never-goes-out-of-style",
+            "single_post_collection": "black-dresses"
+          }
         }
       },
       "block_order": [
         "a7eaac88-5576-4364-a4a7-38626bc1db6e",
-        "83c7cf33-d3f6-4953-aeff-f176d1957cde"
+        "83c7cf33-d3f6-4953-aeff-f176d1957cde",
+        "72ab51b1-8e30-4f6e-984b-0a5ca121ea99"
       ],
       "settings": {
         "search_show": true,
