@@ -4,7 +4,11 @@
 {%- assign image_size = '263x336' -%}
 {%- endunless -%}
 {%- unless gl_colum_width -%}
-{%- assign gl_colum_width = 'col-sm-4 col-md-3' -%}
+  {% if template == "article" %}
+    {%- assign gl_colum_width = 'col-sm-4 col-md-3' -%}
+  {%- else -%}
+    {%- assign gl_colum_width = 'col-sm-4 col-md-4' -%}
+  {%- endif -%}
 {%- else -%}
 {%- assign gl_colum_width = gl_colum_width | remove: "col-xs-6 " -%}
 {%- endunless -%}
