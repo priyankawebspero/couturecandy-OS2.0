@@ -268,6 +268,36 @@
                   </header><!-- .entry-header -->
             {%- endcase -%}
                <div class="entry-content">{%- include 'shortcode' load: article.content -%}
+                                  
+                     {%- assign page_URL = canonical_url | remove: "https://www.couturecandy.com/blogs/" -%}
+                      {%- assign product_limit = section.settings.set_limit -%}
+                     {%- capture related_items -%} 
+                      {% for block in section.blocks %}
+                      {%- assign single_article = block.settings.single_post -%}
+                      {%- if page_URL == single_article -%}
+                      {%- assign selected_col = block.settings.single_post_collection -%}
+                        {% for product in collections[selected_col].products limit: 30  %}
+                         <div class="product-item owl-carousel-item">
+                            <div class="owl-carousel-item-inner"> 
+                              {% include 'section_loop_product_base' %}
+                        </div>  
+                      </div>
+                        {% endfor %}
+                      {%- endif -%}
+                      {% endfor %}
+                      {%- endcapture -%}
+                {%- assign related_items = related_items | trim -%}
+              
+               {%- unless related_items == blank -%}
+                  <section class="related products">
+                    <h3 class="heading">Shop Similar Dress Trends & Hottest Styles</h3>
+                      <div id="carousel-{{product.id}}" class="gl_carousel_container">
+                      <div class="product-items owl-carousel gl_carousel_data" data-nav="true"  data-dots="false" data-loop="true" data-items="4">
+                        {{ related_items }}
+                      </div><!-- end product-items -->
+                    </div><!-- end #carousel-{{product.id}} -->
+                  </section>
+                {%- endunless -%}
                 <div class="post-tags">
                     
                     <ul class="mate-post-tags">
@@ -288,36 +318,6 @@
                {%- if blog.next_article != blank -%}<div class="next-link"><a href="{{ blog.next_article }}" rel="next">{{ 'blogs.article.next_post' | t }}</a></div>{%- endif -%} 
             </div>
             {%- endif -%}
-                 
-       {%- assign page_URL = canonical_url | remove: "https://www.couturecandy.com/blogs/" -%}
-        {%- assign product_limit = section.settings.set_limit -%}
-       {%- capture related_items -%} 
-        {% for block in section.blocks %}
-        {%- assign single_article = block.settings.single_post -%}
-        {%- if page_URL == single_article -%}
-        {%- assign selected_col = block.settings.single_post_collection -%}
-          {% for product in collections[selected_col].products limit: 30  %}
-           <div class="product-item owl-carousel-item">
-              <div class="owl-carousel-item-inner"> 
-                {% include 'section_loop_product_base' %}
-          </div>  
-        </div>
-          {% endfor %}
-        {%- endif -%}
-        {% endfor %}
-        {%- endcapture -%}
-  {%- assign related_items = related_items | trim -%}
-
- {%- unless related_items == blank -%}
-    <section class="related products">
-      <h3 class="heading">Shop Similar Dress Trends & Hottest Styles</h3>
-        <div id="carousel-{{product.id}}" class="gl_carousel_container">
-        <div class="product-items owl-carousel gl_carousel_data" data-nav="true"  data-dots="false" data-loop="true" data-items="4">
-          {{ related_items }}
-        </div><!-- end product-items -->
-      </div><!-- end #carousel-{{product.id}} -->
-    </section>
-  {%- endunless -%}
             {%- if blog.comments_enabled? -%}
                <div id="comments" class="comments-area">
                   {%- if number_of_comments > 0 -%}<h2 class="comments-title">{{ 'blogs.comments.with_count_comments' | t: count: article.comments_count}} {{ 'blogs.comments.comments_title_html' | t:article_title:article.title }}</h2>{%- endif -%}
