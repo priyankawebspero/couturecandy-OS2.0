@@ -50,6 +50,14 @@
     font-size: 17px;
 }
 
+.template-article section.related.products .product-grid-item .product-title a {
+    color: #000;
+}
+
+.template-article section.related.products .product-grid-item .product-title a:hover {
+    color: #e94949;
+}
+
 @media only screen and (max-width:768px){
 
 
