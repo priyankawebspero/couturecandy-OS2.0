@@ -14,7 +14,9 @@
     {{ checkout_stylesheets }}
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     {{ checkout_scripts }}
-  </head>
+  {% render 'weglot_hreftags' %}
+{% render 'weglot_switcher' %}
+</head>
   <body id="checkout">
 
     {{ skip_to_content_link }}
