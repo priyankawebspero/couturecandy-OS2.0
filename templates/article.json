@@ -21,6 +21,7 @@
         },
         "72ab51b1-8e30-4f6e-984b-0a5ca121ea99": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "single_post": "celebrity\/why-black-dresses-never-goes-out-of-style",
             "single_post_collection": "stylish-and-elegant-black-dresses"
