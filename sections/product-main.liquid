@@ -88,7 +88,7 @@
   "sku": "{{ current_variant.sku }}",
   {% endif %}
   "brand": {
-    "@type": "Thing",
+    "@type": "Brand",
     "name": "{{ product.vendor | escape }}"
   },
   "description": "{{ product.description | strip_html | escape | remove:'"' | truncatewords: 30 }}",
