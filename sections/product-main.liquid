@@ -85,7 +85,7 @@
   "name": "{{ product.title | strip_html | escape }}",
   "url": "{{ shop.url }}{{ product.url }}",
   {% if current_variant.sku != blank %}
-  "sku": "{{ current_variant.sku }}",
+  "sku": "{{ current_variant.sku | replace: " ", "-"}}",
   {% endif %}
   "brand": {
     "@type": "Brand",
