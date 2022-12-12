@@ -98,7 +98,7 @@
             {
               "@type": "Offer",
               "priceValidUntil" :"{{ "now" | date: "%Y-%m-%d" }}",
-              "price": "{{ current_variant.price | money_without_currency }}",
+              "price": "{{ current_variant.price | money_without_currency | remove: ','}}",
               "priceCurrency": "{{ shop.currency }}",
               "availability": "http://schema.org/{%- if product.available -%}InStock{%- else -%}OutOfStock{%- endif -%}",
               "url": "{{ shop.url | append: '/products/' | append: product.handle }}",
