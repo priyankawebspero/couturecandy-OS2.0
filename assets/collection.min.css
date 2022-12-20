@@ -1475,8 +1475,8 @@ display:none;
     font-family: 'product_sans_mediumregular';
     font-size: 14px;
     text-transform: uppercase;
-    color: #fff;
-    background: #000;
+    color: #fff !important;
+    background: #000 !important;
 }
   
 .boost-pfs-filter-toolbar-top-mobile-inner.boost-pfs-filter-toolbar-show-sort-by-mobile .boost-pfs-filter-tree-mobile-button button span.boost-pfs-filter-tree-mobile-button-label {
