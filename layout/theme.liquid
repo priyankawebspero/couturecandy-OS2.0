@@ -50,9 +50,8 @@
     </head>
 
 {%- include 'class_body_theme' -%}
-    
 <body id="{{ page_title | handle }}" class="{%- if settings.ajax_shop -%}basel-ajax-shop-on{%- endif %} template-{{ template | split: '.' | first }} {{header_class }} {{footer_layout}} {{ general_layout }} {{ search_layout }} {{ tab_class }} {{ design_products }} global-header-{{settings.header_design}} global-cart-design-{{settings.cart_design}}{%- if customer %} logged-in{%- endif %}{%- if catalog_mode %} catalog-mode-on{%- else %} catalog-mode-off{%- endif %}{%- unless template contains 'index' %} shopify shopify-page{%- endunless %}{%- if template contains '404' %} error404{%- endif-%}">
- {% include 'iwish_v2' with 'iwishfooter' %}
+
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQJPKCB"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>  
@@ -134,7 +133,7 @@
  <!--end-boost-pfs-js-->
   {% render 'weglot_hreftags' %}
   {% render 'weglot_switcher' %}
- 
+  {% include 'iwish_v2' with 'iwishfooter' %}
 	{%- render 'flits_capture_code' with 'load_snippet',template:'flits_snippet' -%}
         {% if request.page_type == 'product' %}
           <script>
