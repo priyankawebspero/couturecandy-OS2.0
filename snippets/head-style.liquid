@@ -1,13 +1,14 @@
 {%- include 'load-css' -%}
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600;1,800&display=swap" rel="stylesheet">
 {% if template contains "index" %}
 <link rel="preload" href="{{ 'index.min.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
 {%- endif -%}
 {% if template contains "page" %}
 <link rel="preload" href="{{ 'pages.min.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
 {%- endif -%}
-<link rel="preload stylesheet" type="text/css" href="{{ 'commom.min.css' | asset_url }}" />
 <link rel="preload" href="{{ 'gl_vendor.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
-<link rel="preload" href="{{ 'main.min.css' | asset_url }}" as="style" onload="this.rel='stylesheet'"> 
+<link rel="preload" href="{{ 'main.min.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
+<link rel="preload stylesheet" type="text/css" href="{{ 'commom.min.css' | asset_url }}" /> 
 <style>.switchers.col-4 { height: 30px;} .wg-drop.country-selector.closed ul {display: none;}
 div#currency_switcher {
     min-width: 105px;
@@ -24,8 +25,7 @@ div#currency_switcher {
 }
   .basel-scroll-content h1.product_title.entry-title {
     min-height: 30px;
-}
-.basel-scroll-content div[itemprop="offers"] {
+}.basel-scroll-content div[itemprop="offers"] {
     min-height: 157px;
 }
 }
