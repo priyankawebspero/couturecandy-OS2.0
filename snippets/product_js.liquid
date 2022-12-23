@@ -498,10 +498,10 @@ Shopify.linkOptionSelectors = function(product) {
             id = $(this).parent().attr("data-id"),
             $product = $('.single-product-page'),
             $thumbs = $('.images .thumbnails');
-        $variation_form.find('select#product-select-option-' + id).val(value).trigger('change');
-        $(this).parent().find('.active-swatch').removeClass('active-swatch');
-        $(this).addClass('active-swatch');
-        
+            $variation_form.find('select#product-select-option-' + id).val(value).trigger('change');
+            $(this).parent().find('.active-swatch').removeClass('active-swatch');
+            $(this).addClass('active-swatch');
+            
         if( $(this).hasClass('bg_color') && $product.hasClass('gl_group_variant_images') ) {
            var url = '{{product.url}}?variant='+$variantId,
                $thumbs = $('.images .thumbnails'),
@@ -530,6 +530,7 @@ Shopify.linkOptionSelectors = function(product) {
                 }
                 $("#gl_thum,#gl_thumbnails").html("");
                 $('#gl_thum').html(data);
+  console.log(data);
               },
               error: function(data) {
                 console.log('ajax error');
