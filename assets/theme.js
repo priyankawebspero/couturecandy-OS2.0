@@ -2431,7 +2431,7 @@ theme.Product = (function() {
       }
 
       // Set active thumbnails (incl. slick cloned thumbs) with matching 'href'
-      //var $thumbnail = $(this.selectors.productThumbImages + '[href="' + src + '"]');
+      var $thumbnail = $(this.selectors.productThumbImages + '[href="' + src + '"]');
       $(this.selectors.productThumbImages).removeClass(activeClass);
       $thumbnail.addClass(activeClass);
     },
