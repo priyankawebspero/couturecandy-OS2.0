@@ -5,6 +5,9 @@
   .single-product-content .Value {
     min-height: 47px;
 }
+  .single-product-content p.price {
+    min-height: 36px;
+}
   }
 
 div#popup {
