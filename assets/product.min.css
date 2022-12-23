@@ -2,12 +2,6 @@
       div#gl_thumbnails .slick-list.draggable {
           min-height: 300px;
       }
-  .Value.social {
-    min-height: 47px;
-}
-  .single-product-content p.price {
-    min-height: 36px;
-}
   }
 
 div#popup {
