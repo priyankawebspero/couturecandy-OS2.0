@@ -7,7 +7,7 @@
    {%- endif -%}
       <a href="/" class="basel-logo basel-main-logo" rel="home" itemprop="url">
       {%- if settings.body_logo_svg != blank -%}
-        <img src="{{ settings.body_logo_svg | file_url }}" alt="{{ image.alt | default: shop.name }}" itemprop="logo">               
+        <img src="https://cdn.shopify.com/s/files/1/0144/7018/5017/files/cc-logo.png?v=1672036929" alt="{{ image.alt | default: shop.name }}" itemprop="logo">               
       {%- elsif settings.body_logo_image != blank -%}
       {%- assign image = settings.body_logo_image -%}
       {%- assign image_width = image.width | append:'x' -%}
