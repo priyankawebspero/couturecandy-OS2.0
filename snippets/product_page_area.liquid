@@ -127,7 +127,7 @@
                             {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                                 {%- if image.attached_to_variant? and settings.use_clicking_variant_image -%}
                                    <figure data-variant_id= "{{current_variant.id}}" data-lenght= "{{product.options.size}}" data-one='{{ current_variant.option1 | handleize }}' data-two= '{{ current_variant.option2 | handleize }}' data-three= '{{ current_variant.option3 | handleize }}' data-thumb="{%- if crop_thumb_nt != blank -%}{%-include 'gl_image_format_crop',src: image.src , size: crop_thumb_nt,position:'top' -%}{%- else -%}{%-include 'gl_image_format',cache:true,src: image.src , size: '219x' -%}{%- endif -%}" data-alt="{{image.alt}}" data-id="{{image.id}}" class="shopify-product-gallery__image test6">
-                                      <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}">
+                                      <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale , format: 'pjpg' }}">
                                         {%- if crop_nt != blank -%}
                                         {%- assign image_height = 50 | divided_by: image.aspect_ratio | round -%}
                                         {%- assign image_size_el = 50 | append:'x' | append:image_height -%}
