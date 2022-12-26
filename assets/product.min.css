@@ -531,6 +531,9 @@ background: #000;
 .single-product-content .tabs li:hover a {
     border-bottom: 3px solid #e94849;
 }
+.single-product-content .tabs li a {
+    border-bottom: 3px solid #e9484900;
+}
 .single-product-content .shopify-Tabs-panel {
    
     font-size: 14px;
