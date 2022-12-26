@@ -3184,6 +3184,16 @@ span.promguide-side-title.open{
    }
 
 @media only screen and (min-width:992px){
+.main-header .container .header_middle_block .logo .site-logo .basel-logo-wrap a {
+    width: 100%;
+    max-width: 384px;
+}
+
+.main-header .container .header_middle_block .logo .site-logo .basel-logo-wrap svg {
+    width: 100%;
+    /* max-width: 381px; */
+}
+  
 .pro-guide-page-right {
     display: inline-block;
     vertical-align: middle;
