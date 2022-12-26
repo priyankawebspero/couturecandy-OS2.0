@@ -1,7 +1,7 @@
 <div class="site-logo">
   {%- if settings.body_logo_svg == 'blank' -%}
    {%- if template == 'index' -%}
-     <h1 class="basel-logo-wrap" itemscope itemtype="http://schema.org/Organization" style="font-family: 'Playfair Display', serif;">
+     <h1 class="basel-logo-wrap" itemscope itemtype="http://schema.org/Organization">
    {%- else -%}
      <div class="basel-logo-wrap" itemscope itemtype="http://schema.org/Organization">
    {%- endif -%}
@@ -25,6 +25,6 @@
      </div>
    {%- endif -%}
    {%- else -%}
-   <div class="site-logo"><h1 class="basel-logo-wrap" itemscope="" itemtype="http://schema.org/Organization" style="font-family:'Playfair Display', serif"><a href="/" class="basel-logo basel-main-logo" rel="home" itemprop="url"> <img src="https://cdn.shopify.com/s/files/1/0144/7018/5017/files/cc-logo.png?v=1672036929" alt="CoutureCandy" itemprop="logo" width="381" height="36"> </a></h1></div>
+   <div class="site-logo"><h1 class="basel-logo-wrap" itemscope="" itemtype="http://schema.org/Organization"><a href="/" class="basel-logo basel-main-logo" rel="home" itemprop="url">{{settings.body_logo_svg}}</a></h1></div>
    {%- endif -%}
   </div>
