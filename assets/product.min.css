@@ -2,6 +2,10 @@
       div#gl_thumbnails .slick-list.draggable {
           min-height: 300px;
       }
+
+.single-product-content p.price {
+    vertical-align: top;
+}
   }
 
 div#popup {
