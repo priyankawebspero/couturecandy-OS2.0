@@ -1266,4 +1266,14 @@ var boostPFSFilterConfig = {
               callFilterApi();
         }
     }
+
+    FilterDesktopButton.prototype.afterBindEvents = function () {
+      setTimeout(function() {
+        jQ('body').addClass('load-completed');
+      },1500)
+    }
+
+    MostPopular.prototype.beforeInit = function() {
+      if (typeof this.data == 'undefined') this.data = {};
+    }
 })();
