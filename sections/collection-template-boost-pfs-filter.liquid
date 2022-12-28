@@ -425,7 +425,7 @@ endif
 	<div class="boost-pfs-container-default-{{ layout_type }}">
       {%- include 'BreadcrumbMenu', page_handle:collection.handle -%}
 		{%- if switch_layout_filter != 'switch_layout_filter_horizontal' -%}
-      <div class="boost-pfs-filter-left-col">
+      <div class="boost-pfs-filter-left-col" style="transform: translateX(0); min-width: 260px">
         <span>FILTERS</span>
         <div class="boost-pfs-filter-left-col-inner">
           <div class="boost-pfs-filter-tree boost-pfs-filter-tree-v" data-is-desktop id="boost-pfs-filter-tree2">            
@@ -438,7 +438,7 @@ endif
 			{%- endif -%}
 
 		{%- if switch_layout_filter != 'switch_layout_filter_horizontal' -%}
-		  <div class="boost-pfs-filter-right-col">
+		  <div class="boost-pfs-filter-right-col" style="width: calc(100% - 293px);">
             <div class="boost-pfs-section-header">
              <div class="boost-pfs-filter-bottom-pagination boost-pfs-filter-bottom-pagination-default">
 				{%- if paginate.pages > 1 -%}
@@ -461,7 +461,7 @@ endif
             {%- endif -%}
             </div>
 			<div class="helo boost-pfs-filter-products {{ products_item_settings }}">
-				{%- for product in collection.products -%}
+			{%- for product in collection.products -%}
 				{%- render 'boost-pfs-filter-product-item',
 					product: product,
 					products_per_row: products_per_row,
