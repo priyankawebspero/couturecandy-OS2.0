@@ -2307,5 +2307,10 @@ display:none;
 
 }
 
+@media screen and (min-width: 768px) {
+.load-completed.boost-pfs-filter-tree-vertical-style-expand:not(.boost-pfs-filter-tree-horizontal-style-expand):not(.boost-pfs-filter-tree-open-body) .boost-pfs-filter-right-col {
+    width: 100% !important;
+}
+}
   
 
