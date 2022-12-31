@@ -1139,7 +1139,7 @@
                                                    <ul class="tabs sp-tabs">
                                                       {%- for block in section.blocks -%}
                                                          {%- case block.type -%}
-                                                            {%- when 'c' -%}
+                                                            {%- when 'description' -%}
                                                                <li class="description_tab{%- if forloop.first %} active{%- endif -%}"><a href="#tab-description">{{ block.settings.title }}</a></li>
                                                             {%- when 'additional' -%}
                                                             {%- if product.has_only_default_variant == false -%}
