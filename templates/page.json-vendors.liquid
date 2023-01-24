@@ -1,4 +1,4 @@
-<div>
+<div id="vendorslist">
 {% capture vendors %}{% for vendor in shop.vendors %}{% assign vendor_name =  vendor | title  %}{{ vendor_name }},{% endfor %}{% endcapture %} 
   {{ vendors }}
 <script>
