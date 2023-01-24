@@ -1,11 +1,11 @@
 <div>
- {% assign vendors = '' | split: "," %}
-
+{% capture vendors %} 
 {% for vendor in shop.vendors %}
    {% assign vendor_name =  vendor | title | append: ","  %}
-  {{ vendor_name }}
-    {% assign vendors = vendors | concat: vendor_name %}
+  {{ vendor_name }}    
 {% endfor %}
+{% endcapture %} 
+  {{ vendors }}
 <script>
 var vendors = '{{ vendors }}';
   console.log('vendors',vendors);
