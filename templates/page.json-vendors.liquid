@@ -2,7 +2,7 @@
  {% assign vendors = '' | split: ',' %}
 
 {% for vendor in shop.vendors %}
-   {% assign vendor_name =  vendor | title | append: "," %}
+   {% assign vendor_name =  vendor | title  %}
     {% assign vendors = controllers | concat: vendor_name %}
 {% endfor %}
 {{ vendors }}
