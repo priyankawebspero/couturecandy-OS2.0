@@ -2,7 +2,7 @@
 {% capture vendors %} 
 {% for vendor in shop.vendors %}
    {% assign vendor_name =  vendor | title | append: ","  %}
-  {{ vendor_name }}    
+  {{ vendor_name }}
 {% endfor %}
 {% endcapture %} 
   {{ vendors }}
