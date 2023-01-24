@@ -1,9 +1,6 @@
 <div>
 {% capture vendors %} 
-{% for vendor in shop.vendors %}
-   {% assign vendor_name =  vendor | title | append: ","  %}
-  {{ {{ vendor_name }}  }}
-{% endfor %}
+{% for vendor in shop.vendors %}{% assign vendor_name =  vendor | title  %}{{ vendor_name }},{% endfor %}
 {% endcapture %} 
   {{ vendors }}
 <script>
