@@ -1,5 +1,6 @@
 <div>
 {% for vendor in shop.vendors %}
-   {{ vendor | title }}
+   {% assign vendors =  vendor | title | append: "," %}
 {% endfor %}
+{{ vendors }}
 </div>
