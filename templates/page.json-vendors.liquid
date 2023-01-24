@@ -1,5 +1,5 @@
 <div>
- {% assign vendors = '' %}
+ {% assign vendors = '' | split: "," %}
 
 {% for vendor in shop.vendors %}
    {% assign vendor_name =  vendor | title | append: ","  %}
