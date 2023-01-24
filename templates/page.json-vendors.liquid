@@ -6,5 +6,7 @@
   {{ vendor_name }}
     {% assign vendors = vendors | concat: vendor_name %}
 {% endfor %}
-{{ vendors }}
+<script>
+var vendors '{{ vendors }}'
+</script>
 </div>
