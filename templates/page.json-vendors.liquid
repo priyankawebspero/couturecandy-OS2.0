@@ -1,10 +1,4 @@
 <div id="vendorslist">
 {% capture vendors %}{% for vendor in shop.vendors %}{% assign vendor_name =  vendor | title  %}{{ vendor_name }},{% endfor %}{% endcapture %} 
   {{ vendors }}
-<script>
-var vendors = "{{ vendors }}";
-const vendorslist = vendors.split(",");
-
-  console.log('vendorslist',vendorslist);
-</script>
 </div>
