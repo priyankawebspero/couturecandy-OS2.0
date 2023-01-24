@@ -1,9 +1,9 @@
 <div>
- {% assign vendors = '' | split: ',' %}
+ {% assign vendors = '' %}
 
 {% for vendor in shop.vendors %}
    {% assign vendor_name =  vendor | title  %}
-    {% assign vendors = controllers | concat: vendor_name %}
+    {% assign vendors = vendor_name | concat: vendor_name %}
 {% endfor %}
 {{ vendors }}
 </div>
