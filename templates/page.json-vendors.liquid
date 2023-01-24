@@ -1,1 +1,1 @@
-<div id="vendorslist">{% capture vendors %}{% for vendor in shop.vendors %}{% assign vendor_name =  vendor | title  %}{{ vendor_name }},{% endfor %}{% endcapture %}{{ vendors }}</div>
+<div id="vendorslist">{% capture vendors %}{% assign counter = 0 %}{% for vendor in shop.vendors %}{% assign counter = counter | plus: 1 %}{% assign vendor_name =  vendor | title  %}{{ vendor_name }},{% endfor %}{{ counter }}{% endcapture %}{{ vendors }}</div>
