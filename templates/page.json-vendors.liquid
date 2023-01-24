@@ -3,7 +3,7 @@
 
 {% for vendor in shop.vendors %}
    {% assign vendor_name =  vendor | title  %}
-    {% assign vendors = vendor_name | concat: vendor_name %}
+    {% assign vendors = vendors | concat: vendor_name %}
 {% endfor %}
 {{ vendors }}
 </div>
