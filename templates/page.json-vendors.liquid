@@ -1,3 +1,6 @@
+<script>
 {% for vendor in shop.vendors %}
-  {{- vendor | link_to_vendor }}
+  var vendors = {{- vendor.title }}
+console.log(vendors);
 {% endfor %}
+<script>
