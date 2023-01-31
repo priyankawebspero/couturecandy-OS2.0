@@ -16,7 +16,6 @@
             </div>
          </div>
          {%- endif -%}
-         <style type="text/css">{%- if block.settings.label != blank and block.settings.color != blank -%}.menu-item-{{block.id}} .menu-label-{{block.settings.label | handleize}}{ background-color: {{block.settings.color}}}.menu-item-{{block.id}} .menu-label-{{block.settings.label | handleize}}:after{ color: {{block.settings.color}}}{%- endif -%} .menu-item-{{block.id}} > .sub-menu-dropdown {min-height: 120px;{%- if block.settings.banner != blank -%}{%- assign image = block.settings.banner -%}{%- assign image_width = image.width | append:'x' -%}background-image: url({%-include 'gl_image_format',src: image , size: image_width -%});{%- endif -%}{%- if block.settings.menu_width != blank -%} width: {{ block.settings.menu_width | escape | default: '750' | remove: 'px' | append: 'px' }}{%- endif -%} }</style>
       </li>
       {%- when 'sub_mega_product' -%}
       <li id="menu-item-{{block.id}}" class="block_type_sub_mega_product menu-item menu-item-{{block.settings.title | handleize}} menu-item-{{block.id}} menu-item-design-full-width item-event-{{section.settings.active_sub_menu}} menu-item-has-children with-offsets">
@@ -203,11 +202,9 @@
                         </div>
                      </div>
                   </div>
-                  <style type="text/css">.gl_custom_1479204564519{margin-bottom: 30px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.gl_custom_1480366259560{border-right-width: 1px !important;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;border-right-color: #eaeaea !important;border-right-style: solid !important;}.gl_custom_1475581999943{margin-bottom: 0px !important;padding-right: 20px !important;padding-left: 20px !important;}.gl_custom_1474656058991{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;}.gl_custom_1474894251362{margin-bottom: 0px !important;}.gl_custom_1446742142663{margin-bottom: 0px !important;}.gl_custom_1446742137800{margin-bottom: 0px !important;}.gl_custom_1446742132151{margin-bottom: 0px !important;}.gl_custom_1483613170893{margin-bottom: 10px !important;}.gl_custom_1475612615663{margin-bottom: 10px !important;}.gl_custom_1489735068292{margin-bottom: 10px !important;}.gl_custom_1479208229502{margin-bottom: 10px !important;}.gl_custom_1474656302067{margin-bottom: 0px !important;}.gl_custom_1474656297012{margin-bottom: 0px !important;}.gl_custom_1474656291867{margin-bottom: 0px !important;}.gl_custom_1474656282948{margin-bottom: 0px !important;}.gl_custom_1479204795229{margin-bottom: 0px !important;border-right-width: 1px !important;border-right-color: #e0e0e0 !important;border-right-style: solid !important;}.gl_custom_1479204799674{margin-bottom: 0px !important;border-right-width: 1px !important;border-right-color: #e0e0e0 !important;border-right-style: solid !important;}.gl_custom_1479204804099{margin-bottom: 0px !important;border-right-width: 1px !important;border-right-color: #e0e0e0 !important;border-right-style: solid !important;}.gl_custom_1479204808986{margin-bottom: 0px !important;}</style>
                </div>
             </div>
          {%- endif -%}
-         <style type="text/css">{%- if block.settings.label != blank and block.settings.color != blank -%}.menu-item-{{block.id}} .menu-label-{{block.settings.label | handleize}}{ background-color: {{block.settings.color}}}.menu-item-{{block.id}} .menu-label-{{block.settings.label | handleize}}:after{ color: {{block.settings.color}}}{%- endif -%} .menu-item-{{block.id}} > .sub-menu-dropdown {min-height: 120px;{%- if block.settings.banner != blank and block.settings.show_img and check_product_id != blank -%}{%- assign image = block.settings.banner -%}{%- assign image_width = image.width | append:'x' -%}background-image: url({%-include 'gl_image_format',src: image , size: image_width -%});{%- endif -%}{%- if block.settings.menu_width != blank -%} width: {{ block.settings.menu_width | escape | default: '750' | remove: 'px' | append: 'px' }}{%- endif -%} }</style>
       </li>
       {%- when 'mega_sub' -%}
       <li id="menu-item-{{block.id}}" class="block_type_mega_sub menu-item menu-item-{{block.settings.title | handleize}} menu-item-{{block.id}} item-event-{{section.settings.active_sub_menu}} menu-item-has-children with-offsets{%- if block.settings.full_width %} menu-item-design-full-width{%- else %} menu-item-design-sized{%-endif-%}">
@@ -307,12 +304,10 @@
                      </div>
                   {%- endfor -%}
                   </div>
-                  <style type="text/css">.gl_custom_1447326536772{margin-bottom: -35px !important;}.gl_custom_1457906267198{margin-bottom: 0px !important;}.gl_custom_1483621673237{margin-bottom: 0px !important;}.gl_custom_1450200825017{margin-bottom: 0px !important;}.gl_custom_1494340633560{margin-bottom: 1px !important;}</style>
                {%- endif -%}
                </div>
             </div>
          {%- endif -%}
-          <style type="text/css">{%- if block.settings.label != blank and block.settings.color != blank -%}.menu-item-{{block.id}} .menu-label-{{block.settings.label | handleize}}{ background-color: {{block.settings.color}}}.menu-item-{{block.id}} .menu-label-{{block.settings.label | handleize}}:after{ color: {{block.settings.color}}}{%- endif -%} .menu-item-{{block.id}} > .sub-menu-dropdown {min-height: 120px;{%- if block.settings.banner != blank and block.settings.show_img -%}{%- assign image = block.settings.banner -%}{%- assign image_width = image.width | append:'x' -%}background-image: url({%-include 'gl_image_format',src: image , size: image_width -%});background-size: contain;{%- endif -%}{%- if block.settings.menu_width != blank -%} width: {{ block.settings.menu_width | escape | default: '750' | remove: 'px' | append: 'px' }}{%- endif -%} }</style>
       </li>
       {%- when 'dropdown' -%}
       {%- assign link_list = block.settings.menu -%}
@@ -434,16 +429,9 @@
            </div>
            {%- endif -%}
       </li>
-      {%- if block.settings.menu_width != blank -%}
-      <style type="text/css">
-         .menu-item-{{block.id}} > .sub-menu-dropdown {width: {{ block.settings.menu_width | escape | default: '250' | remove: 'px' | append: 'px' }} !important }
-      </style>
-      {%- endif -%}
-      <style type="text/css">{%- if block.settings.label != blank and block.settings.color != blank -%}.menu-item-{{block.id}} .menu-label-{{block.settings.label | handleize}}{ background-color: {{block.settings.color}}}.menu-item-{{block.id}} .menu-label-{{block.settings.label | handleize}}:after{ color: {{block.settings.color}}}{%- endif -%}</style>
-      {%- when 'menu_item_no_children' -%}
+        {%- when 'menu_item_no_children' -%}
       <li id="menu-item-{{block.id}}" class="block_type_no_children menu-item menu-item-{{block.settings.title | handleize}} menu-item-{{block.id}} menu-item-design-default item-event-{{section.settings.active_sub_menu}}">
          <a href="{{block.settings.button_link}}" target="_self">{%- if block.settings.icon != blank -%}<i class="fa fa-{{block.settings.icon}}"></i>{%- endif -%}{{block.settings.title}}{%- if block.settings.label != blank and block.settings.color != blank -%}<span class="menu-label menu-label-{{block.settings.label | handleize}}">{{block.settings.label}}</span>{%- endif -%}</a>
-         <style type="text/css">{%- if block.settings.label != blank and block.settings.color != blank -%}.menu-item-{{block.id}} .menu-label-{{block.settings.label | handleize}}{ background-color: {{block.settings.color}}}.menu-item-{{block.id}} .menu-label-{{block.settings.label | handleize}}:after{ color: {{block.settings.color}}}{%- endif -%}</style>
       </li>
       {%- else -%}
       {%- if block.settings.title != blank and block.settings.button_link != blank -%}
@@ -453,22 +441,7 @@
 {%- endfor -%}
 </ul>
    {%- if section.settings.label_1 != blank or section.settings.label_2 != blank or section.settings.label_3 != blank or section.settings.label_4 != blank or section.settings.label_5 != blank -%}
-   <style type="text/css">
-   {%- capture min_css -%}
-      {%- for i in (1..5) -%}
-      {%- assign label = 'label_' | append:i -%}
-      {%- assign color = 'color_' | append:i -%}
-      {%- assign label_id = section.settings[label] -%}
-      {%- assign color_id = section.settings[color] -%}
-       
-         {%- if label_id != blank and color_id != blank -%}
-         .menu-label-{{label_id | handleize }} {background-color: {{color_id}}}.menu-label-{{label_id | handleize }}:after { color: {{color_id}} }
-         {%- endif -%}
-      {%- endfor -%}
-   {%- endcapture -%}
-   {{min_css | strip_newline | remove: " " }}
-   </style>
-   {%- endif -%}
+  {%- endif -%}
 {%- endif -%}
 {%- if section.blocks.size == 0 -%}<br><h5>Create your first navigation menu sidebar using the sidebar.</h5>{%- endif -%}
 {%- schema -%}
