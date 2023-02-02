@@ -2,9 +2,8 @@
 <!--[if IE 9]> <html class="ie9 no-js" lang="{{ shop.locale }}"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="{{ shop.locale }}"> <!--<![endif]-->
 <head>
-
   {% assign boost_pfs_is_init = false %}    
-{%- if request.page_type == 'collection' or request.page_type == 'search' -%}
+   {%- if request.page_type == 'collection' or request.page_type == 'search' -%}
     {%- unless template contains 'boost-pfs-original' -%}
     {% assign boost_pfs_is_init = true %}
 	  {%- if request.page_type == 'collection' -%}
@@ -41,6 +40,7 @@
   <meta name="facebook-domain-verification" content="65kh83o91knyi4e2aa294mfau2ovt1" />
   <link rel="preconnect" href="https://services.mybcapps.com/bc-sf-filter/filter  " />
   <link rel="dns-prefetch" href="https://services.mybcapps.com/bc-sf-filter/filter" />
+  <link rel="preconnect" href="https://cdn.shopify.com/" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600;1,800&display=swap" rel="stylesheet">
   {%- include 'head-style' -%}
   <link rel="preload" href="{{ 'boost-pfs-vendor.js' | asset_url }}" as="script">
