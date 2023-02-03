@@ -11,7 +11,7 @@
       {%- if downcased_option == 'color' or downcased_option == 'colour' or gl_color_name contains downcased_option_check -%}
             <tr data-option-index="{{ option_index }}" id="gl_select_{{ option_index }}">
                <td class="label"><label for="{{ option_index }}">{{ option.name }}</label></td>
-               <td class="value with-swatches">
+               <td class="value with-swatches" style="min-width:270px">
                   <div class="swatches-select " data-id="{{ option_index }}" data-option-index="{{ option_index }}">
                      {%-assign index = 0 %}
                      {%- for value in option.values -%}
@@ -26,7 +26,7 @@
       {%- else- %}
          <tr data-option-index="{{ option_index }}" id="gl_select_{{ option_index }}">
             <td class="label"><label for="{{ option_index }}">{{ option.name }}</label></td>
-            <td class="value with-swatches">
+            <td class="value with-swatches" style="min-width:270px">
                <div class="swatches-select" data-id="{{ option_index }}">
                  {%- for value in option.values -%}
                   {%- unless product.options.size == 1 and product.has_only_default_variant -%}
