@@ -82,7 +82,7 @@
 {
   "@context": "http://schema.org/",
   "@type": "Product",
-  "name": "{{ product.title | strip_html | escape }}",
+  "name": "{{ product.title | strip_html | escape | remove:'\'}}",
   "url": "{{ shop.url }}{{ product.url }}",
   {% if current_variant.sku != blank %}
   "sku": "{{ current_variant.sku | replace: " ", "-"}}",
