@@ -31,7 +31,7 @@
 {%- endcapture -%}
 {%- assign number = section.settings.silder_per_view | plus: 0 -%}
 {{ style_block_section }}
-<div {{ data_section }} data-section-id="{{ section.id }}" data-section-type="categories" {%- if section.settings.use_video and section.settings.video_url != blank %} data-gl-video-bg="{{ section.settings.video_url }}"{%- endif %} class="{{class_has_fill}} gl_custom_{{section.id}} featured-blog{%- if section.settings.row_stretch == 'stretch_row_content_no_spaces' %} gl_row-no-padding{%- endif %}{%- if section.settings.use_parallax %} basel-parallax{%- endif %} gl_row spb_row gl_row-fluid {%- if section.settings.use_video and section.settings.video_url != blank %} opacity-video-bg gl_video-bg-container gl_has_youtube{%- endif %}{%- if section.settings.full_height %} gl_row-o-full-height gl_row-o-columns-{{section.settings.columns_position}}{%- endif %}{%- if section.settings.equal_height %} gl_row-o-equal-height{%- endif %}{%- if section.settings.section_bg_image != blank %} lazy_bg lazyload{%- endif %}"{%- if section.settings.section_bg_image != blank %} data-bgset="{%- include 'bgset', image: section.settings.section_bg_image -%}" data-sizes="auto" data-parent-fit="cover" style="background-image: url('{{ section.settings.section_bg_image | img_url: '50x50' }}')"{%- endif -%}>
+<div {{ data_section }} data-section-id="{{ section.id }}" data-section-type="categories" {%- if section.settings.use_video and section.settings.video_url != blank %} data-gl-video-bg="{{ section.settings.video_url }}"{%- endif %} class=" {{class_has_fill}} gl_custom_{{section.id}} featured-blog{%- if section.settings.row_stretch == 'stretch_row_content_no_spaces' %} gl_row-no-padding{%- endif %}{%- if section.settings.use_parallax %} basel-parallax{%- endif %} gl_row spb_row gl_row-fluid {%- if section.settings.use_video and section.settings.video_url != blank %} opacity-video-bg gl_video-bg-container gl_has_youtube{%- endif %}{%- if section.settings.full_height %} gl_row-o-full-height gl_row-o-columns-{{section.settings.columns_position}}{%- endif %}{%- if section.settings.equal_height %} gl_row-o-equal-height{%- endif %}{%- if section.settings.section_bg_image != blank %} lazy_bg lazyload{%- endif %}"{%- if section.settings.section_bg_image != blank %} data-bgset="{%- include 'bgset', image: section.settings.section_bg_image -%}" data-sizes="auto" data-parent-fit="cover" style="background-image: url('{{ section.settings.section_bg_image | img_url: '50x50' }}')"{%- endif -%}>
   <div class="spb__column gl_column_container gl_col-sm-12">
     <div class="gl_column-inner">
       <div class="spb__wrapper">
@@ -96,6 +96,12 @@
     "class": "index-section tea_categories",
     "max_blocks": 6,
     "settings": [
+      {
+        "type": "text",
+        "id": "class",
+        "label": "Section class",
+        "default": "lorem"
+      },
       {
         "type": "header",
         "content": "== Row Settings"
