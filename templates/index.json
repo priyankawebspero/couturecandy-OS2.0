@@ -278,6 +278,7 @@
         "1653916013d85199cb-3"
       ],
       "settings": {
+        "class": "product_categories",
         "title": "SHOP POPULAR CATEGORIES",
         "sub_title": "",
         "categories_layout": "default",
@@ -347,6 +348,7 @@
         "16541439647bf16666-0"
       ],
       "settings": {
+        "class": "featured_categories",
         "title": "FEATURED CATEGORIES",
         "sub_title": "",
         "categories_layout": "default",
