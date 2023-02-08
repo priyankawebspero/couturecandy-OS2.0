@@ -39,7 +39,7 @@
   </div>
 </div>
 <div class="gl_row-full-width gl_clearfix"></div>
-<div data-section-id="{{ section.id }}" data-section-type="categories" class="gl_row spb_row gl_row-fluid position-relative z-index-h gl_custom_145{{section.id}} gl_row-has-fill">
+<div data-section-id="{{ section.id }}" data-section-type="categories" class="{{ section.settings.class }}  gl_row spb_row gl_row-fluid position-relative z-index-h gl_custom_145{{section.id}} gl_row-has-fill">
   <div class="spb__column gl_column_container gl_col-sm-12">
     <div class="gl_column-inner gl_custom_194{{section.id}}">
       <div class="spb__wrapper">
@@ -117,7 +117,12 @@
     "class": "index-section tea_categories",
     "max_blocks": 10,
     "settings": [
-      {
+       {
+        "type": "text",
+        "id": "class",
+        "label": "Section class",
+        "default": "lorem"
+      },{
         "type": "header",
         "content": "== General Settings"
       },
