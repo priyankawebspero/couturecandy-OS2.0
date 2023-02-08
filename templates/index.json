@@ -12,8 +12,8 @@
     "16539111747fa4ce03": {
       "type": "single-banner",
       "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/CCProm2023HPFin_2048x_154c5589-586c-4389-a994-499d13f50c53.png",
-        "image_mobile": "shopify:\/\/shop_images\/768x768px.png",
+        "image_desktop": "shopify:\/\/shop_images\/CCProm2023HPFin.png",
+        "image_mobile": "shopify:\/\/shop_images\/CCProm2023HPFinMob.png",
         "link": "shopify:\/\/collections\/dresses"
       }
     },
@@ -23,6 +23,8 @@
         "1654005036d5d16ee9-0": {
           "type": "banner-1",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Prom-dresses_9f6ee5b4-220a-4ef5-9f64-e3e1264f94f6.jpg",
+            "image_mob": "shopify:\/\/shop_images\/Prom-dresses_9f6ee5b4-220a-4ef5-9f64-e3e1264f94f6.jpg",
             "category_heading": "Prom Dresses",
             "category_content": "Shop our latest selection",
             "banner_btn_title": "SHOP NOW",
@@ -32,16 +34,20 @@
         "1654005036d5d16ee9-1": {
           "type": "banner-2",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Occasion_878a88c9-3916-42d3-9109-3a59c61a1510.jpg",
+            "image_mob": "shopify:\/\/shop_images\/mobile-occasion-dress-pic_fa219560-a070-4b59-a5fa-f4ba359de26d.jpg",
             "category_heading": "Occasion",
             "category_content": "Dresses for every occasion",
             "banner_btn_title": "SHOP NOW",
             "banner_link": "\/collections\/dresses",
             "image1": "shopify:\/\/shop_images\/Cocktail-dresses.jpg",
+            "image1_mob": "shopify:\/\/shop_images\/mobile-cocktail-dress-pic_b3e387c7-18a8-4182-a950-c7e2a48d492a.jpg",
             "category_heading1": "COCKTAIL DRESSES",
             "category_content1": "Looks that stay warm in style",
             "banner_btn_title1": "SHOP NOW",
             "banner_link1": "\/collections\/cocktail-dresses",
             "image2": "shopify:\/\/shop_images\/Formal-Gowns.jpg",
+            "image2_mob": "shopify:\/\/shop_images\/mobile-formal-gowns-pic_733f8e64-d818-46cb-8f2f-4c913fc13224.jpg",
             "category_heading2": "FORMAL GOWNS",
             "category_content2": "In every shape & size",
             "banner_btn_title2": "SHOP NOW",
@@ -89,90 +95,105 @@
         "59018970-5927-4c73-bd0b-110fb0918fe0": {
           "type": "Brand",
           "settings": {
+            "image": "shopify:\/\/shop_images\/1-min_360x_9597c349-d487-4b78-81f9-cd00aa306e41.jpg",
             "link": "\/collections\/jovani"
           }
         },
         "fc543391-ad81-4099-b947-78f2a00e32a9": {
           "type": "Brand",
           "settings": {
+            "image": "shopify:\/\/shop_images\/2-min_360x_74c76e54-4043-43e6-a3e0-d1d0c85b4638.jpg",
             "link": "\/collections\/cinderella-divine"
           }
         },
         "0dd2be6d-34f3-48b0-978a-8e207232b79d": {
           "type": "Brand",
           "settings": {
+            "image": "shopify:\/\/shop_images\/3-min_360x_d9500a86-259c-4cf7-b5bf-d7de488ca24d.jpg",
             "link": "\/collections\/mac-duggal"
           }
         },
         "2356af53-847a-4ca4-ae00-001b3105c353": {
           "type": "Brand",
           "settings": {
+            "image": "shopify:\/\/shop_images\/4-min_360x_b239003a-751b-4111-8474-a5cffd3fee0a.jpg",
             "link": "\/collections\/la-femme"
           }
         },
         "72e8848a-0ad0-4e0a-bb2a-392b0ed2a9dd": {
           "type": "Brand",
           "settings": {
+            "image": "shopify:\/\/shop_images\/5-min_360x_8d0f7a0a-1054-471e-8d81-806de9444914.jpg",
             "link": "\/collections\/terani-couture"
           }
         },
         "a5481908-cb60-4439-9f07-5b5224c3feb1": {
           "type": "Brand",
           "settings": {
+            "image": "shopify:\/\/shop_images\/6-min_360x_278c606d-ed72-4bbc-b8f3-785d18de5f2c.jpg",
             "link": "\/collections\/tarik-ediz"
           }
         },
         "6fcb3258-f50e-4298-a3c6-3a3ef7c74f7b": {
           "type": "Brand",
           "settings": {
+            "image": "shopify:\/\/shop_images\/7-min_360x_0a2ac49a-c6f0-4845-a284-34021d7488e2.jpg",
             "link": "\/collections\/sherri-hill"
           }
         },
         "5aaf21ed-1df0-43fe-ac3f-1d131db76cc0": {
           "type": "Brand",
           "settings": {
+            "image": "shopify:\/\/shop_images\/8-min_360x_22895555-a3b3-4f68-b7f7-baa03490fa4d.jpg",
             "link": "\/collections\/gls-by-gloria"
           }
         },
         "1c5de893-842f-40bf-9c09-9e3941db66e2": {
           "type": "Brand",
           "settings": {
+            "image": "shopify:\/\/shop_images\/9-min_360x_aaf9413b-c642-4048-8b90-9a10a04d450a.jpg",
             "link": "\/collections\/ieena-duggal"
           }
         },
         "540b2bd6-dadb-4010-9dfc-70be713e2d09": {
           "type": "Brand",
           "settings": {
+            "image": "shopify:\/\/shop_images\/10-min_360x_99e231da-b384-4b00-8ad3-8fdfb43cb9dd.jpg",
             "link": "\/collections\/alyce-paris-dresses"
           }
         },
         "f8563964-0536-4f51-81c7-5b1f7b0bf986": {
           "type": "Brand",
           "settings": {
+            "image": "shopify:\/\/shop_images\/11-min_360x_cde996f7-e280-4a19-8542-63ca39ff3935.jpg",
             "link": "\/collections\/mnm-couture"
           }
         },
         "7fc8ad6d-b3a4-4e0b-a5de-ff48cee5ddad": {
           "type": "Brand",
           "settings": {
+            "image": "shopify:\/\/shop_images\/12-min_360x_ee401bba-f129-4c08-9ca0-4a87674e797d.jpg",
             "link": "\/collections\/mon-cheri"
           }
         },
         "94ccef59-48c4-4004-a683-68c8f114ad9a": {
           "type": "Brand",
           "settings": {
+            "image": "shopify:\/\/shop_images\/13-min_360x_6d5bf4b3-1ca1-4f89-ad7a-089fec08e74c.jpg",
             "link": "\/collections\/ashley-lauren-dresses"
           }
         },
         "0eba3c45-382d-4897-b2f4-5f4d7e9be81a": {
           "type": "Brand",
           "settings": {
+            "image": "shopify:\/\/shop_images\/14-min_360x_fd875515-65e1-4382-9a1a-21c6ccb5a217.jpg",
             "link": "\/collections\/may-queen"
           }
         },
         "21cc8c5b-f358-4245-b2da-7f0b3052e044": {
           "type": "Brand",
           "settings": {
+            "image": "shopify:\/\/shop_images\/prom-dresses-menu-min_360x_fe50f967-c809-4aa6-b791-3e9c80877b07.jpg",
             "link": "\/collections\/soulmates"
           }
         }
@@ -204,40 +225,48 @@
         "1653916013d85199cb-0": {
           "type": "masonry_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Mother-of-bride-min_570x_8e885979-23c4-43bc-9097-24496635b3f1.jpg",
             "heading": "",
             "content": "",
             "button": "MOTHER OF BRIDE",
             "id_collection": "mother-of-the-bride-dresses",
+            "image_hover": "shopify:\/\/shop_images\/Mother-of-bride-min_570x_8e885979-23c4-43bc-9097-24496635b3f1.jpg",
             "width": "3"
           }
         },
         "1653916013d85199cb-1": {
           "type": "masonry_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Wedding-dresses-min_570x_b32db396-62fc-4d6c-a247-0a712c3f75a0.jpg",
             "heading": "",
             "content": "",
             "button": "WEDDING DRESSES",
             "id_collection": "wedding-dresses",
+            "image_hover": "shopify:\/\/shop_images\/Wedding-dresses-min_570x_b32db396-62fc-4d6c-a247-0a712c3f75a0.jpg",
             "width": "3"
           }
         },
         "1653916013d85199cb-2": {
           "type": "masonry_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Wedding-guest-min_570x_f00e63f1-898e-491e-9f75-bf59756a352f.jpg",
             "heading": "",
             "content": "",
             "button": "WEDDING GUEST",
             "id_collection": "wedding-guest",
+            "image_hover": "shopify:\/\/shop_images\/Wedding-guest-min_570x_f00e63f1-898e-491e-9f75-bf59756a352f.jpg",
             "width": "3"
           }
         },
         "1653916013d85199cb-3": {
           "type": "masonry_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Bridesmaid-min_570x_68ad1824-704e-4efc-9171-50840c9798a4.jpg",
             "heading": "",
             "content": "",
             "button": "BRIDESMAID",
             "id_collection": "bridesmaid-dresses",
+            "image_hover": "shopify:\/\/shop_images\/Bridesmaid-min_570x_68ad1824-704e-4efc-9171-50840c9798a4.jpg",
             "width": "3"
           }
         }
@@ -279,30 +308,36 @@
         "16541439647bf16666-2": {
           "type": "masonry_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/1_570x_6dca38f6-4923-4161-9a50-c6054f8b5dbd.jpg",
             "heading": "PAGEANT DRESSES",
             "content": "your dream is their dream",
             "button": "Shop Now",
             "id_collection": "pageant-dresses",
+            "image_hover": "shopify:\/\/shop_images\/1_570x_6dca38f6-4923-4161-9a50-c6054f8b5dbd.jpg",
             "width": "4"
           }
         },
         "16541439647bf16666-1": {
           "type": "masonry_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/2-min_570x_02e1bf18-9f08-4ea5-b12f-8fe0a57e2191.jpg",
             "heading": "HOMECOMING  DRESSES",
             "content": "the ultimate homecoming dresses",
             "button": "SHOP NOW",
             "id_collection": "homecoming-dresses",
+            "image_hover": "shopify:\/\/shop_images\/2-min_570x_02e1bf18-9f08-4ea5-b12f-8fe0a57e2191.jpg",
             "width": "4"
           }
         },
         "16541439647bf16666-0": {
           "type": "masonry_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/3_570x_520b2540-59bc-4654-84ef-9e219d4c1c4a.jpg",
             "heading": "GRADUATION  DRESSES",
             "content": "the ultimate graduation  party dresses",
             "button": "SHOP NOW",
             "id_collection": "graduation-dresses",
+            "image_hover": "shopify:\/\/shop_images\/3_570x_520b2540-59bc-4654-84ef-9e219d4c1c4a.jpg",
             "width": "4"
           }
         }
