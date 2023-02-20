@@ -3076,6 +3076,10 @@ span.promguide-side-title.open{
     bottom: 115px;
 }
 
+div#reviewCarouselWidget  .stjr-reviews-carousel {
+    margin: 0 auto;
+}
+
 @media only screen and (min-width:768px){
   
 .prom-work-des-inner {
