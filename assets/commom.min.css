@@ -827,11 +827,13 @@ div#reviewCarouselWidget .stjr-reviews-carousel-pagination .stjr-reviews-carouse
     border-radius: 30px;
     transition: all .3s ease-in-out;
     background: #c2c2c2;
+  border-color: #c2c2c2 !important;
 }
 
 div#reviewCarouselWidget .stjr-reviews-carousel-pagination .stjr-reviews-carousel-pagination__dot.stjr-reviews-carousel-pagination__dot--active {
     width: 25px;
     background: #e94949;
+  border-color: #e94949 !important;
 }
 
 div#reviewCarouselWidget .stjr-review__content {
