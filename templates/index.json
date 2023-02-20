@@ -375,7 +375,7 @@
     "16539999234cb01da9": {
       "type": "custom-content",
       "settings": {
-        "code": "<div id=\"reviewCarouselWidget\">\n<div class=\"headline\" style=\"\">Real Reviews From Real Customers<\/div>\n<div id=\"reviewCarouselWidgetInner\" class=\"stjr-widget\"><\/div>\n<\/div>",
+        "code": "<div id=\"reviewCarouselWidget\">\n<div class=\"headline\" style=\"\">Real Reviews From Real Customers<\/div>\n<div id=\"reviewCarouselWidgetInner\" class=\"stjr-widget\" style=\"min-height: 370px;\"><\/div>\n<\/div>",
         "section_margin_top": "",
         "section_margin_bottom": "",
         "section_padding_top": "",
