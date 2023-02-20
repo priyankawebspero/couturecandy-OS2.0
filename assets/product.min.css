@@ -553,7 +553,7 @@ background: #000;
 
 .single-product-content .shopify-Tabs-panel .table td {
     text-align: left;
-    padding: 8px 15px;
+    /*padding: 8px 15px;*/
     font-weight: normal;
     font-size: 14px;
 }
