@@ -22,9 +22,6 @@
 {% if template contains "index" %}
 <link rel="preload" href="{{ 'index.min.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
 {%- endif -%}
-{% if template contains "product" %}
-<link rel="preload" href="{{ 'product.min.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
-{% endif %}
 {% if template contains "page" %}
 <link rel="preload" href="{{ 'pages.min.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
 {%- endif -%}
