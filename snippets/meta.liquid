@@ -9,15 +9,8 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="google-site-verification" content="uNyud5IX_hzvOUqdb4FrTPFZ4dGGPNeTYGGt8G8-yfQ" />
   <meta name="robots" content="noodp" />
-{% if template.name == 'collection' %}
-  	{%- if current_page != 1 -%}
-  		<meta name="robots" content="noindex">
-	 {%else%}		  
-  		<meta name="robots" content="index, follow">		 		
-  {% endif %}
-{%else%}		  
-  		<meta name="robots" content="index, follow">		 		
-{% endif %}
+  {% if template.name == 'collection' %}{%- if current_page != 1 -%}<meta name="robots" content="noindex"> {%else%}	<meta name="robots" content="index, follow">{% endif %}
+  {%else%} <meta name="robots" content="index, follow"> {% endif %}
   <meta name="google-site-verification" content="tZL7TRIeXljhic50KX2FmPu7OimcE2bBA9_DRUBs488" />
   {% assign change_con = 'https://www.couturecandy.com' | append: {{collection.url}} | append: '/dresses' %}
   {% if canonical_url == change_con %}
@@ -36,8 +29,6 @@
    {%- if settings.favicon_apple != blank -%}
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ settings.favicon_apple | img_url: '152x' }}">
   {%- endif -%}
-
-
   <script type="text/javascript">document.documentElement.className = document.documentElement.className.replace('no-js', 'yes-js js_active js')</script>
    {%- capture seo_title -%}
     {{ page_title | replace:"2022","2023" }}
