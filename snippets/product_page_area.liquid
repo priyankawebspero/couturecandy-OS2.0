@@ -652,7 +652,7 @@
                         {% assign vendortitle = product.vendor | downcase  %}
 
                         {% assign vendortitle_handle = product.vendor | handleize  %}
-                      <h1 itemprop="name" class="product_title entry-title">{{ product.title }}</h1>
+                      <h1 itemprop="name" class="product_title entry-title" height="30px">{{ product.title }}</h1>
                            {% for collection in product.collections  -%}
                                       {% assign collectionurls = collection.url  %}
                               
