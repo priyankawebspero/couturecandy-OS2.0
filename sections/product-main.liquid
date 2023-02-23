@@ -90,13 +90,7 @@
             }
           ]
   {% endif %}
-  {% if product.metafields.yotpo.reviews_count and product.metafields.yotpo.reviews_count != "0" %},
-       "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "{{ product.metafields.yotpo.reviews_average }}",
-            "reviewCount": "{{ product.metafields.yotpo.reviews_count }}"
-          }
-    {% endif %}}
+                }
 </script>
 {% endcapture %}{% include 'hidden-collections.require-authorization' %}
 <script type="text/javascript" src="https://static.criteo.net/js/ld/ld.js?shop=couture-candy.myshopify.com" async="true"></script>
