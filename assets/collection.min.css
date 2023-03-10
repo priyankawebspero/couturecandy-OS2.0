@@ -1341,7 +1341,9 @@ display:none;
     padding: 25px 15px;
     flex-wrap: wrap;
 }
-
+.bottom.buttons>b {
+    flex-wrap: wrap;
+}
   
  .boost-pfs-filter-right-col {
     width: 100% !important;
