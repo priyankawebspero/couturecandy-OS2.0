@@ -1087,7 +1087,7 @@ display:none;
     margin: 5px 0;
 }
   
-.bottom.buttons {
+.bottom.buttons, .bottom.buttons>b {
     flex-wrap: wrap;
 }
   
