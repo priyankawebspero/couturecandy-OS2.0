@@ -886,8 +886,12 @@
                                                       {% if product.vendor == 'Wilderly Bride by Allure Bridals' or product.vendor == 'Mori Lee Bridal' or product.vendor == 'Primavera Bridal' %}
                                                         <span class="contact_us_button"><a class="button" href="/pages/contact-us">Contact Us</a></span>
                                                       {% else %}
+                                                        {% if product.vendor == 'Alyce Paris ' or product.price <= 0 %}
+                                                          <span class="contact_us_button"><a class="button" href="/pages/contact-us">Contact Us</a></span>
+                                                         {% else %}
                                                           <button type="submit"  id="shopify_add_to_cart" class="add_to_cart_button ajax_form_cart single_add_to_cart_button button alt else {%- if current_variant.inventory_quantity > 1100 -%} futureDDays_popup nbsp   {%- endif -%}  ">{{ 'products.product.add_to_cart' | t }}</button>
-                                                      {%- endif -%}
+                                                        {%- endif -%}
+                                                        {%- endif -%}
                                                           <div class="PreOrder__popup" style="display: none;">
                                                            <div class="PreOrder__popup-shadow"></div>
                                                               <div class="PreOrder__popup-window">
