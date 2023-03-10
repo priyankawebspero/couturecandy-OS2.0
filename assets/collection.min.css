@@ -772,6 +772,9 @@ a.text-m {
     padding-bottom: 40px;
 }
 
+.bottom.buttons>b{ display: flex;
+    flex-direction: row;width:100%;}
+
 .bottom.buttons .btn {
     width: 100%;
     align-items: center;
