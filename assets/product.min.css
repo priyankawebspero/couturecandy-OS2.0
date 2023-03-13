@@ -1224,6 +1224,7 @@ border-color: #000;
     margin-right: 0;
     margin-bottom: 0;
    background: #afaaaa;
+  pointer-events: none;
 }
 
 .single-product-content .single_variation_wrap {
