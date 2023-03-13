@@ -1,4 +1,3 @@
-{%- if settings.use_wishlist -%}{%- include 'nitro-wishlist' -%}{%- endif -%}
 {%- assign paginate_index = section.settings.paginate_index | plus: 0 -%}
 {%- if section.settings.home_featured_products == blank -%}
    {%- if collections["frontpage"].products.size > 0 -%}
