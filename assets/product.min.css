@@ -2816,6 +2816,8 @@ body.template-product.popup-visible {
 .single-product-content .single_variation_wrap .iwishAddWrap .iWishAdd.iwishAdded {
     text-decoration: none !important;
 }
+
+  .single-product-content .summary .out-of-stock{width: 100%;}
   
 }
 
