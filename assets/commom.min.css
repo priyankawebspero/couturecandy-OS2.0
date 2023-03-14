@@ -7509,3 +7509,26 @@ body .iWishAddColl svg path {
 }
 
 .single-post .entry-content h2, .single-post .entry-content h3{font-family: 'product_sans_mediumregular';}
+
+.ada-footer img {
+    max-width: 80px;
+    min-width: 80px;
+}
+
+.ada-footer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.ada-footer .txt-ada {
+    color: #fff;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px){
+.ada-footer {
+    flex-direction: column;
+}
+
+}
