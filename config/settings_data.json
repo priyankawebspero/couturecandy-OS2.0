@@ -1282,6 +1282,8 @@
             "settings": {
               "title": "Newsletter",
               "ns_text": "Subscribe to receive updates, exclusive deals, and more.",
+              "ada_image": "shopify:\/\/shop_images\/adascLogo_150x_dca6d92b-0d2e-420c-900e-eac35add73e5.png",
+              "ada_text": "By using this site you agree to our Terms &amp; Conditions of Use and Privacy Statement.",
               "use_mailchimp": true
             }
           }
