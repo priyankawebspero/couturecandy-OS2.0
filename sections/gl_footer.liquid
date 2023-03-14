@@ -218,7 +218,11 @@
                         {%- if block.settings.ns_text != blank -%}<p class="newstext">{{block.settings.ns_text}}</p>{%- endif -%}
                         <div class="bbb">
                            {%- include 'social-sharing', gl_design:settings.footer_social_design, gl_size:settings.footer_social_size, follow_social:gl_follow_social -%}
-                          <img src="https://cdn.shopify.com/s/files/1/0144/7018/5017/files/bbb-footer.png" alt="bbb-footer lazyload" width="323" height="57">
+                           <div class="ada-footer">
+                              <img src="{{ block.settings.ada_image | img_url }}" alt="bbb-footer lazyload" width="323" height="57">
+                              <div class="txt-ada">{{ block.settings.ada_text }}</div>
+                            </div>
+                           <img src="https://cdn.shopify.com/s/files/1/0144/7018/5017/files/bbb-footer.png" alt="bbb-footer lazyload" width="323" height="57">
                         </div>
                      </div>
                   </div>
@@ -380,6 +384,14 @@
             "id": "ns_text",
             "label": "Text",
             "default": "Newsletter Text"
+         },{
+            "type": "image_picker",
+            "id": "ada_image",
+            "label": "ADA Image"
+         },{
+            "type": "html",
+            "id": "ada_text",
+            "label": "Ada Text"
          },
          {
            "type": "checkbox",
