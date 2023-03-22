@@ -893,6 +893,10 @@ div#reviewCarouselWidget .stjr-review__content .stjr-review__read_more_link {
     color: #000;
 }
 
+.stjr-reviews-carousel .stjr-review__stars .stars--widgets i.star {
+    margin-right: 2px !important;
+}
+
 /*-----header-drop-down-mneu-css----*/
 
 .main-nav .menu>li.menu-item-design-sized .sub-menu-dropdown .top_nav_main {
