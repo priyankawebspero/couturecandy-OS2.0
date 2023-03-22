@@ -897,6 +897,20 @@ div#reviewCarouselWidget .stjr-review__content .stjr-review__read_more_link {
     margin-right: 2px !important;
 }
 
+.stjr-reviews-carousel .stjr-review__stars .stars--widgets i.star:after {
+    content: "";
+    background: none;
+    content: "\f005";
+    font-family: 'FontAwesome' !important;
+    font-size: 18px;
+    color: #e94949;
+}
+
+.stjr-reviews-carousel .stjr-review__stars .stars--widgets i.star.custom-icon-star2-empty:after {
+    color: #b5b5b5;
+}
+
+
 /*-----header-drop-down-mneu-css----*/
 
 .main-nav .menu>li.menu-item-design-sized .sub-menu-dropdown .top_nav_main {
