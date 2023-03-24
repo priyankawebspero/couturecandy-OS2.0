@@ -827,7 +827,7 @@
                                         </select>
                                         {%- if product.has_only_default_variant == false and settings.swatch_design != '3' -%}{%- include 'swatch' -%}{%- elsif product.has_only_default_variant == false and settings.swatch_design == '3' -%}{%- include 'swatch_simple' -%}{%- endif -%}
                                      <div class="quantity_test" style="margin-top: 10px;">
-
+                                      <div id="variant-inventory"> </div>
                               {% if product.vendor == 'Jovani' or product.vendor == 'Ellie Wilde' or product.vendor == 'Faviana' or product.vendor == 'Mac Duggal' or product.vendor == 'Dancing Queen' or product.vendor == 'Alyce Paris' or product.vendor == 'La Femme' %}
                                     {%- if current_variant.inventory_quantity <= 0 -%}
                                                    {%- else -%}
@@ -970,8 +970,6 @@
                                    </form>
                                 {%- endif -%}
                              {%- endif -%}
-                            <div id="variant-inventory">
-                            </div>
                                <div id="variant-error-msg"></div>
                              {% if vendortitle == 'jovani' %}
                               <span class="onlyjovani Jovani" style="color: #f85364;font-weight: bold;text-transform: uppercase;display: block;margin-bottom: 10px;">ALL JOVANI OVER $250 DRESSES SHIP COMPLIMENTARY 3 DAY SHIPPING</span>
