@@ -2899,6 +2899,10 @@ span.contact_us_button a {
 .single-product-content .quantity_test {
     font-size: 16px;
 }
+
+.single-product-content div#variant-inventory {
+    font-size: 16px;
+}
   
 }
 
