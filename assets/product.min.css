@@ -2417,6 +2417,7 @@ div#ProdDetailInfo {
     font-size: 15px;
     height: 49px;
     border: none;
+      padding: 16px 10px !important;
 }
   
   .single-product-content .cart span.button a {
