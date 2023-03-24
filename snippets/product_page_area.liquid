@@ -828,13 +828,16 @@
                                         {%- if product.has_only_default_variant == false and settings.swatch_design != '3' -%}{%- include 'swatch' -%}{%- elsif product.has_only_default_variant == false and settings.swatch_design == '3' -%}{%- include 'swatch_simple' -%}{%- endif -%}
                                      <div class="quantity_test" style="margin-top: 10px;">
                                   <div id="variant-inventory"> </div>
-                              {% if product.vendor == 'Jovani' or product.vendor == 'Ellie Wilde' or product.vendor == 'Faviana' or product.vendor == 'Mac Duggal' or product.vendor == 'Dancing Queen' or product.vendor == 'Alyce Paris' or product.vendor == 'La Femme' %}
-                                    {%- if current_variant.inventory_quantity <= 0 -%}
+                             {% comment %}  {% if product.vendor == 'Jovani' or product.vendor == 'Ellie Wilde' or product.vendor == 'Faviana' or product.vendor == 'Mac Duggal' or product.vendor == 'Dancing Queen' or product.vendor == 'Alyce Paris' or product.vendor == 'La Femme' %}
+                                                 {%- if current_variant.inventory_quantity <= 0 -%}
                                                    {%- else -%}
                                                         <div class="callback">We currently have <span id="vistorspan">5</span> in stock.</div>
-
                                                   {%- endif -%}
-                                              {% endif %}
+                                              {% endif %}{% endcomment %}
+                                          {%- if current_variant.inventory_quantity <= 0 -%}
+                                                   {%- else -%}
+                                                        <div class="callback">We currently have <span id="vistorspan">5</span> in stock.</div>
+                                                  {%- endif -%}
                                               {%- if settings.show_real_time_visitor -%}
                                                   {% if product.vendor == 'Jovani' or product.vendor == 'Ellie Wilde' %}
                                                         <div class="fake_counter_real_time gl_pt_15">
