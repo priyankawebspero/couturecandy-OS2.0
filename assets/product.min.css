@@ -2892,6 +2892,10 @@ span.contact_us_button a {
     font-weight: normal;
 }
 
+.shopify-variation-add-to-cart.variations_button.shopify-variation-add-to-cart-enabled .futureDDays-popup-button {
+    font-size: 14px;
+}
+
 }
 
 
