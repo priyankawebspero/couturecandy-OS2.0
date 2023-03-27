@@ -5,15 +5,16 @@
   <meta name="author" content="{{ shop.domain | strip_html | strip }}">
   <meta name="msvalidate.01" content="8BA77E72B27710936ACB44C48B176C68" />
   <meta name="format-detection" content="telephone=no">
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="block-all-mixed-content">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="google-site-verification" content="uNyud5IX_hzvOUqdb4FrTPFZ4dGGPNeTYGGt8G8-yfQ" />
   <meta name="robots" content="noodp" />
-  {% if template.name == 'collection' %}{%- if current_page != 1 -%}<meta name="robots" content="noindex,follow"> {%else%}	<meta name="robots" content="index, follow">{% endif %}
+  {% if template.name == 'collection' %}{%- if current_page != 1 -%}<meta name="robots" content="noindex"> {%else%}	<meta name="robots" content="index, follow">{% endif %}
   {%else%} <meta name="robots" content="index, follow"> {% endif %}
   <meta name="google-site-verification" content="tZL7TRIeXljhic50KX2FmPu7OimcE2bBA9_DRUBs488" />
   {% assign change_con = 'https://www.couturecandy.com' | append: {{collection.url}} | append: '/dresses' %}
   {% if canonical_url == change_con %}
-    <link rel="canonical" href="https://www.couturecandy.com{{collection.url}}" >
+    <link rel="canonical" href="https://www.couturecandy.com{{collection.url}}">
   {%- else -%}
     <link rel="canonical" href="{{ canonical_url | remove:'.html' }}">
   {% endif %}
