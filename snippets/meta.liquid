@@ -14,9 +14,9 @@
   <meta name="google-site-verification" content="tZL7TRIeXljhic50KX2FmPu7OimcE2bBA9_DRUBs488" />
   {% assign change_con = 'https://www.couturecandy.com' | append: {{collection.url}} | append: '/dresses' %}
   {% if canonical_url == change_con %}
-    <link rel="canonical ff" href="https://www.couturecandy.com{{collection.url}}" >
+    <link rel="canonical" href="https://www.couturecandy.com{{collection.url}}" >
   {%- else -%}
-    <link rel="canonical ffg" href="{{ canonical_url | remove:'.html' }}">
+    <link rel="canonical" href="{{ canonical_url | remove:'.html' }}">
   {% endif %}
   {% assign Cname = 'https://www.couturecandy.com' | append: {{collection.url}} | append: '/sale' %}
   
