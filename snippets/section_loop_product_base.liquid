@@ -34,7 +34,7 @@
    {%- if settings.show_product_color and colour_count > 1 -%}
       {%- include 'swatches_on_grid' -%}
     {%- endif -%}
-   <h3 class="product-title"><a href="{{ url_nt }}">{{ product.vendor }}{{ product.title }}</a></h3>
+   <h3 class="product-title"><a href="{{ url_nt }}">{{ product.title }}</a></h3>
    {%- if settings.show_product_rating -%}<div class="gl_star-rating"><span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span></div>{%- endif -%}
    <span class="price">
        {%- if product.price_varies -%}
