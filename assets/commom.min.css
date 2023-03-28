@@ -3804,6 +3804,10 @@ aside.sidebar-container .sidebar-inner ul li h3 {
 }
 
 @media only screen and (max-width:991px){
+
+header.main-header {
+    min-height: inherit !important;
+}
   
 .topbar-content.mobile .top_bar_right.col-6 .doubly-wrapper .doubly-nice-select {
     float: none;
