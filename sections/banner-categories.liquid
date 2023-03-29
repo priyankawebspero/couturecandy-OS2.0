@@ -24,7 +24,7 @@
              <div class="wrapper-content-baner gl_col-md-6 gl_col-lg-6">
                 <div class="banner-inner">
                 {%- if block.settings.category_heading != blank -%}
-                  <h5>{{ block.settings.category_heading }}</h5>
+                  <h2><a href="{{ block.settings.banner_link }}">{{ block.settings.category_heading }}</a></h2>
                 {%- endif -%}
                    {%- if block.settings.category_content != blank -%}
                   <div> {{ block.settings.category_content }} </div>
@@ -64,7 +64,7 @@
            <div class="wrapper-content-baner gl_col-md-6 gl_col-lg-6">
               <div class="banner-inner">
               {%- if block.settings.category_heading != blank -%}
-                <h5>{{ block.settings.category_heading }}</h5>
+                <h2><a href="{{ block.settings.banner_link }}">{{ block.settings.category_heading }}</a></h2>
               {%- endif -%}
                  {%- if block.settings.category_content != blank -%}
                 <div> {{ block.settings.category_content }} </div>
@@ -97,7 +97,7 @@
           <div class="wrapper-content-baner gl_col-md-6 gl_col-lg-6">
              <div class="banner-inner">
              {%- if block.settings.category_heading1 != blank -%}
-               <h5>{{ block.settings.category_heading1 }}</h5>
+               <h2><a href="{{ block.settings.banner_link1 }}">{{ block.settings.category_heading1 }}</a></h2>
              {%- endif -%}
                 {%- if block.settings.category_content1 != blank -%}
                <div> {{ block.settings.category_content1 }} </div>
@@ -131,7 +131,7 @@
           <div class="wrapper-content-baner gl_col-md-6 gl_col-lg-6">
              <div class="banner-inner">
              {%- if block.settings.category_heading2 != blank -%}
-               <h5>{{ block.settings.category_heading2 }}</h5>
+               <h2><a href="{{ block.settings.banner_link2 }}">{{ block.settings.category_heading2 }}</a></h2>
              {%- endif -%}
                 {%- if block.settings.category_content2 != blank -%}
                <div> {{ block.settings.category_content2 }} </div>
