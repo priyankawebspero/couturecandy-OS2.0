@@ -2891,9 +2891,22 @@
       "1579768293519"
     ],
     "blocks": {
+      "7840667977585544467": {
+        "type": "shopify:\/\/apps\/sitejabber-customer-reviews\/blocks\/app-script\/888a55e3-b12d-42fd-a941-84fa4cf34213",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "16818320902336805558": {
+        "type": "shopify:\/\/apps\/sitejabber-customer-reviews\/blocks\/product-template-schema\/888a55e3-b12d-42fd-a941-84fa4cf34213",
+        "disabled": false,
+        "settings": {
+          "product": "adrianna-papell-041911070-sequined-ornate-short-dress"
+        }
+      },
       "10603822535667782919": {
-        "type": "shopify:\/\/apps\/wishlist\/blocks\/app-embed\/7f9269b0-1b45-4d0c-8479-faf04f05d8ac",
-        "disabled": true,
+        "type": "shopify:\/\/apps\/iwish-wishlist\/blocks\/app-embed\/7f9269b0-1b45-4d0c-8479-faf04f05d8ac",
+        "disabled": false,
         "settings": {
           "hide_float_icon": true,
           "is_show_vendor": false,
@@ -2916,21 +2929,9 @@
           "drawer_login_msg": "Wishlist is not saved permanently yet. Please <a class=\"link-text\" href=\"\/account\/login\">log in<\/a> or <a class=\"link-text\" href=\"\/account\/register\">Create Account<\/a> to save it.",
           "add_to_cart_txt": "Add To Cart",
           "add_all_to_cart_txt": "Add All To Cart",
+          "drawer_sold_out": "Sold Out",
           "main_wishlist_text": "Main Wishlist",
           "save_btn_text": "SAVE"
-        }
-      },
-      "7840667977585544467": {
-        "type": "shopify:\/\/apps\/sitejabber-customer-reviews\/blocks\/app-script\/888a55e3-b12d-42fd-a941-84fa4cf34213",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "16818320902336805558": {
-        "type": "shopify:\/\/apps\/sitejabber-customer-reviews\/blocks\/product-template-schema\/888a55e3-b12d-42fd-a941-84fa4cf34213",
-        "disabled": false,
-        "settings": {
-          "product": "adrianna-papell-041911070-sequined-ornate-short-dress"
         }
       }
     }
