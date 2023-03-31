@@ -1,6 +1,4 @@
 <meta charset="utf-8">
-    {% if template.name == 'collection' %}{%- if current_page != 1 -%}<meta name="robots" content="noindex,follow"> {%else%}	<meta name="robots" content="index, follow">{% endif %}
-  {%else%} <meta name="robots" content="index, follow"> {% endif %}
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
   <meta name="theme-color" content="{{ settings.color_primary }}">
@@ -10,8 +8,17 @@
   <meta http-equiv="Content-Security-Policy" content="block-all-mixed-content">
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="google-site-verification" content="uNyud5IX_hzvOUqdb4FrTPFZ4dGGPNeTYGGt8G8-yfQ" />
+  <meta name="robots" content="noodp" />
+{% if template.name == 'collection' %}
+  	{%- if current_page != 1 -%}
+  		<meta name="robots" content="noindex">
+	 {%else%}		  
+  		<meta name="robots" content="index, follow">		 		
+  {% endif %}
+{%else%}		  
+  		<meta name="robots" content="index, follow">		 		
+{% endif %}
   <meta name="google-site-verification" content="tZL7TRIeXljhic50KX2FmPu7OimcE2bBA9_DRUBs488" />
-  <meta name="facebook-domain-verification" content="65kh83o91knyi4e2aa294mfau2ovt1" />
   {% assign change_con = 'https://www.couturecandy.com' | append: {{collection.url}} | append: '/dresses' %}
   {% if canonical_url == change_con %}
     <link rel="canonical" href="https://www.couturecandy.com{{collection.url}}">
@@ -29,6 +36,8 @@
    {%- if settings.favicon_apple != blank -%}
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ settings.favicon_apple | img_url: '152x' }}">
   {%- endif -%}
+
+
   <script type="text/javascript">document.documentElement.className = document.documentElement.className.replace('no-js', 'yes-js js_active js')</script>
    {%- capture seo_title -%}
     {{ page_title | replace:"2022","2023" }}
