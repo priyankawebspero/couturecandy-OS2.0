@@ -56,6 +56,15 @@
   {%- capture check_tab -%}{{ content_for_layout  }}{%- endcapture -%}
    <!--begin-boost-pfs-filter-css-->
    {% render 'boost-pfs-style' %}
+  {% if template.name == 'collection' %}
+  	{%- if current_page != 1 -%}
+  		<meta name="robots" content="noindex, follow">
+	 {%else%}		  
+  		<meta name="robots" content="index, follow">		 		
+  {% endif %}
+{%else%}		  
+  		<meta name="robots" content="index, follow">		 		
+{% endif %}
    <!--end-boost-pfs-filter-css-->
   {%- if template contains 'product' -%}{%- include 'space_check_variant' -%}{%- endif-%}
   {{ '//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js' | script_tag }}
