@@ -951,7 +951,7 @@
                                             {%- else -%}
                                             <a href="{{ check }}" rel="nofollow" class="single_add_to_cart_button button alt">{{ product.metafields.external | first | first }}</a>
                                             {%- endif -%}
-                                                                      {% include 'iwish_v2' with 'iwishproduct' %}
+                                             {% include 'iwish_v2' with 'iwishproduct' %}
                                             </div>
                                         {%- endif -%}
                                             {% if settings.enable_payment_button %}
