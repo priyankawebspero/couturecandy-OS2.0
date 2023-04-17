@@ -941,11 +941,11 @@
                                              {% include 'iwish_v2' with 'iwishproduct' %}
                                             {%- if check_external == false -%}
                                               {%- if current_variant.inventory_quantity <= 0 and current_variant.available and current_variant.inventory_management == 'shopify' -%}
-                                               <button type="submit" id="shopify_add_to_cart b" onclick="pintrk('track', 'addtocart');
+                                               <button type="submit" id="shopify_add_to_cart" onclick="pintrk('track', 'addtocart');
                                                window.dotq = window.dotq || []; window.dotq.push( { 'projectId': '10000', 'properties': {  'pixelId': '10089243', 'qstrings': { 'et': 'custom', 'ec': 'shopping', 'ea': 'AddToCart', 'el': 'AddToCart', 'ev': '{{ product.title }}', 'gv': '{{ product.price | money_without_currency }}' } } } );"
                                                 class="test_1 add_to_cart_button ajax_form_cart single_add_to_cart_button button alt">{{ 'products.product.pre_orders' | t }}</button>
                                               {%- else -%}
-                                              <button type="submit" id="shopify_add_to_cart b" onclick="pintrk('track', 'addtocart');"
+                                              <button type="submit" id="shopify_add_to_cart" onclick="pintrk('track', 'addtocart');"
                                                 class="add_to_cart_button ajax_form_cart single_add_to_cart_button button alt">{{ 'products.product.add_to_cart' | t }}</button>
                                               {%- endif -%}
                                             {%- else -%}
