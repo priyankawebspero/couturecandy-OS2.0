@@ -14,7 +14,7 @@
        {%- if image.width > 600 -%}
         {%- assign image_width = '600x' -%}
         {%- endif -%}
-      <img class="regular-logo" src="{%-include 'gl_image_format',src: image , size: image_width -%}" srcset="{{ image | img_url: image_width }} 1x, {{ image | img_url: image_width, scale: 2 }} 2x" alt="{{ image.alt | default: shop.name }}" itemprop="logo">
+      <img class="regular-logo" src="{%-include 'gl_image_format',src: image , size: image_width -%}" srcset="{{ image | img_url: image_width }} 1x, {{ image | img_url: image_width, scale: 2 }} 2x" alt="{{ image.alt | default: shop.name }}" itemprop="logo" alt="Couture Candy">
       {%- else -%}
       {{shop.name}}
       {%- endif -%}
