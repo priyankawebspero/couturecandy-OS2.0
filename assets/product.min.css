@@ -2726,6 +2726,21 @@ body.template-product  {
     margin-right: 8px;
 }
 
+.single-product-content .iwishAddWrap a.iWishAdd:before {
+    content: "\e08a";
+    display: inline-block;
+    font-family: Simple-Line-Icons;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    font-size: 18px;
+    width: auto;
+    vertical-align: top;
+    margin-right: 8px;
+    height: 100%;
+}
+
   .single-product-content .single_variation_wrap .iwishAddWrap .iWishAdd.iwishAdded, .single-product-content .iwishAddWrap .iWishAdd .iwishAdded {
     background: #000;
     color: #e94949;
