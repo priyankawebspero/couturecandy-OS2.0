@@ -2693,7 +2693,7 @@ body.template-product  {
     padding: 7px 12px;
 }
 
-.single-product-content .single_variation_wrap .iwishAddWrap {
+.single-product-content .single_variation_wrap .iwishAddWrap, .single-product-content .iwishAddWrap {
     position: fixed;
     width: 50%;
     right: 0;
@@ -2702,7 +2702,7 @@ body.template-product  {
     z-index: 99;
 }
 
-.single-product-content .single_variation_wrap .iwishAddWrap .iWishAdd {
+.single-product-content .single_variation_wrap .iwishAddWrap .iWishAdd, .single-product-content .iwishAddWrap .iWishAdd {
     background: #333;
     color: #fff;
     height: 49px;
@@ -2714,6 +2714,9 @@ body.template-product  {
     font-family: 'google_sansregular';
     border:none;
   border-radius:0;
+  line-height: 52px;
+    text-align: center;
+    display: block;
 }
 
 .single-product-content .single_variation_wrap .iwishAddWrap .iWishAdd:before {

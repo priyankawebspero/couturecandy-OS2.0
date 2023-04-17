@@ -939,8 +939,7 @@
                                             </div>
                                             <p class="stock out-of-stock variant_stock" id="out-of-stock-gl" style="display: none">{{ 'products.product.outofstock' | t }}</p>
                                             <div class="single_variation_wrap ">
-                                            {% include 'iwish_v2' with 'iwishproduct' %}
-                                            {%- if check_external == false -%}
+                                                  {%- if check_external == false -%}
                                               {%- if current_variant.inventory_quantity <= 0 and current_variant.available and current_variant.inventory_management == 'shopify' -%}
                                                <button type="submit" id="shopify_add_to_cart" onclick="pintrk('track', 'addtocart');
                                                window.dotq = window.dotq || []; window.dotq.push( { 'projectId': '10000', 'properties': {  'pixelId': '10089243', 'qstrings': { 'et': 'custom', 'ec': 'shopping', 'ea': 'AddToCart', 'el': 'AddToCart', 'ev': '{{ product.title }}', 'gv': '{{ product.price | money_without_currency }}' } } } );"
@@ -952,6 +951,7 @@
                                             {%- else -%}
                                             <a href="{{ check }}" rel="nofollow" class="single_add_to_cart_button button alt">{{ product.metafields.external | first | first }}</a>
                                             {%- endif -%}
+                                                                      {% include 'iwish_v2' with 'iwishproduct' %}
                                             </div>
                                         {%- endif -%}
                                             {% if settings.enable_payment_button %}
