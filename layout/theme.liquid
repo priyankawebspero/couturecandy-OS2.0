@@ -197,7 +197,11 @@ jQuery('form[action="/cart/add"]').submit(function(e) {
          });
           </script>
       {% endif %}
-</body>
+
+    <!-- ACCESSIBILITYSPARK START -->
+    {% render 'accessibility-spark-widget' %}
+    <!-- ACCESSIBILITYSPARK END -->
+  </body>
 
   {% if template != "index" %} 
   {% endif %}
