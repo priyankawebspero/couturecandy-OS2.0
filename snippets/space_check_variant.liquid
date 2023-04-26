@@ -14,7 +14,7 @@
 {%-endif-%}
 {%- if product.has_only_default_variant == false -%}
       <style type="text/css">
-        {%- if product.variants.size == 1 -%}.single-product-content .variations {    margin-bottom: 20px;}{%- endif -%}
+        {%- if product.variants.size == 1 -%}.single-product-content .variations { margin-bottom: 20px;}{%- endif -%}
       {%- capture min_css -%}
          {%- if settings.swatch_style == '2' or settings.product_layout_setting == '2' -%}
         {%- if settings.color_name_check != blank -%}{%- assign _gl_color_name = settings.color_name_check | replace: ' ,', ',' | replace: ', ', ',' | split: ',' -%}{%- assign gl_color_name = _gl_color_name | downcase -%}{%-else-%}{%- assign gl_color_name = '\nathan_dt\' -%}{%-endif-%}
