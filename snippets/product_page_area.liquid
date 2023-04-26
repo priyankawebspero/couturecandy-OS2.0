@@ -107,7 +107,7 @@
                                    {%- assign product_image_size = image.width | append: 'x' -%}
                                    {%- assign image_width = image.width -%}
                                 {%- endif -%}
-                            {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                            {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' , format: 'pjpg'-%}
                                 {%- if image.attached_to_variant? and settings.use_clicking_variant_image -%}
                                    <figure data-variant_id= "{{current_variant.id}}" data-lenght= "{{product.options.size}}" data-one='{{ current_variant.option1 | handleize }}' data-two= '{{ current_variant.option2 | handleize }}' data-three= '{{ current_variant.option3 | handleize }}' data-thumb="{%- if crop_thumb_nt != blank -%}{%-include 'gl_image_format_crop',src: image.src , size: crop_thumb_nt,position:'top' -%}{%- else -%}{%-include 'gl_image_format',cache:true,src: image.src , size: '219x' -%}{%- endif -%}" data-alt="{{image.alt}}" data-id="{{image.id}}" class="shopify-product-gallery__image test6">
                                       <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale , format: 'pjpg' }}">
@@ -125,7 +125,7 @@
                                            {%- if image_size_first > 219 -%}{%- assign image_height = 219 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 219 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 219w{%- endif -%} 
                                            {%- if image_size_first > 526 -%}{%- assign image_height = 526 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 526 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 526w{%- endif -%}" sizes="(max-width: {{ image_size_first }}px) 100vw, {{ image_size_first }}px"> 
                                       {%- else -%} 
-                                                      <img width="{{ image.width }}" height="{{ image.height }}" src="{{ image | img_url: '50x50' }}" class="lazyload attachment-shop_single size-shop_single sp-post-image" alt="{{image.alt}}" title="{{product.title}}" 
+                                                      <img width="{{ image.width }}" height="{{ image.height }}" src="{{ image | img_url: '50x50' , format: 'pjpg'}}" class="lazyload attachment-shop_single size-shop_single sp-post-image" alt="{{image.alt}}" title="{{product.title}}" 
                                                       data-src="{{ img_url }}" 
                                                       data-large_image="{%-include 'gl_image_format',cache:true, src: image.src, size: product_image_photowipe -%}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}" 
                                                       data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}" data-sizes="auto">
@@ -135,7 +135,7 @@
                                    </figure>
                                 {%- else -%}
                                 <figure data-thumb="{%- if crop_thumb_nt != blank -%}{%-include 'gl_image_format_crop',src: image.src , size: crop_thumb_nt,position:'top' -%}{%- else -%}{%-include 'gl_image_format',cache:true,src: image.src , size: '219x' -%}{%- endif -%}" data-alt="{{image.alt}}" data-id="{{image.id}}" class="shopify-product-gallery__image test5">
-                                   <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}">
+                                   <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale , format: 'pjpg'}}">
                                    {%- if crop_nt != blank -%}
                                          {%- assign image_height = 50 | divided_by: image.aspect_ratio | round -%}
                                         {%- assign image_size_el = 50 | append:'x' | append:image_height -%}
@@ -150,7 +150,7 @@
                                            {%- if image_size_first > 219 -%}{%- assign image_height = 219 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 219 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 219w{%- endif -%} 
                                            {%- if image_size_first > 526 -%}{%- assign image_height = 526 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 526 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 526w{%- endif -%}" sizes="(max-width: {{ image_size_first }}px) 100vw, {{ image_size_first }}px"> 
                                    {%- else -%} 
-                                                      <img width="{{ image.width }}" height="{{ image.height }}" src="{{ image | img_url: '50x50' }}" class="lazyload attachment-shop_single size-shop_single sp-post-image" alt="{{image.alt}}" title="{{product.title}}" 
+                                                      <img width="{{ image.width }}" height="{{ image.height }}" src="{{ image | img_url: '50x50' , format: 'pjpg'}}" class="lazyload attachment-shop_single size-shop_single sp-post-image" alt="{{image.alt}}" title="{{product.title}}" 
                                                       data-src="{{ img_url }}" 
                                                       data-large_image="{%-include 'gl_image_format',cache:true, src: image.src, size: product_image_photowipe -%}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}" 
                                                       data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}" data-sizes="auto">
@@ -186,15 +186,15 @@
                                                         {%- assign product_image_size = image.width | append: 'x' -%}
                                                         {%- assign image_width = image.width -%}
                                                      {%- endif -%}
-                                                     {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                                                     {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' , format: 'pjpg'-%}
                                                         {%- if image.attached_to_variant? and settings.use_clicking_variant_image -%}
                                                            {%- for variant in image.variants -%}
                                                               <figure data-variant_id= "{{variant.id}}" data-lenght= "{{product.options.size}}" data-one='{{ variant.option1 | handleize }}' data-two= '{{ variant.option2 | handleize }}' data-three= '{{ variant.option3 | handleize }}' data-thumb="{%- if crop_thumb_nt != blank -%}{%-include 'gl_image_format_crop',src: image.src , size: crop_thumb_nt,position:'top' -%}{%- else -%}{%-include 'gl_image_format',cache:true,src: image.src , size: '219x' -%}{%- endif -%}" data-alt="{{image.alt}}" data-id="{{image.id}}" class="shopify-product-gallery__image test4">
-                                                                 <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}">
+                                                                 <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale , format: 'pjpg'}}">
                                                                     {%- if crop_nt != blank -%}
                                                                       {%- assign image_height = 50 | divided_by: image.aspect_ratio | round -%}
                                         {%- assign image_size_el = 50 | append:'x' | append:image_height -%}
-                                        <img width="{{ image_size_first }}" height="{{ image_height }}" src="{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %}" class="lazyload attachment-shop_catalog size-shop_catalog" alt="{{ image.alt | escape }}" 
+                                        <img width="{{ image_size_first }}" height="{{ image_height }}" src="{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' , format: 'pjpg'%}" class="lazyload attachment-shop_catalog size-shop_catalog" alt="{{ image.alt | escape }}" 
                                              data-src="{{ img_url }}" 
                                                                            data-large_image="{%-include 'gl_image_format',cache:true, src: image.src, size: product_image_photowipe -%}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}" 
                                                                          data-srcset="{%-include 'gl_image_format_crop',src: image.src , size: crop_nt,position:'top' %} {{image_size_first}}w 
@@ -205,7 +205,7 @@
                                                                          {%- if image_size_first > 219 -%}{%- assign image_height = 219 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 219 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 219w{%- endif -%} 
                                                                          {%- if image_size_first > 526 -%}{%- assign image_height = 526 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 526 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 526w{%- endif -%}" sizes="(max-width: {{ image_size_first }}px) 100vw, {{ image_size_first }}px"> 
                                                                     {%- else -%} 
-                                                      <img width="{{ image.width }}" height="{{ image.height }}" src="{{ image | img_url: '50x50' }}" class="lazyload attachment-shop_single size-shop_single sp-post-image" alt="{{image.alt}}" title="{{product.title}}" 
+                                                      <img width="{{ image.width }}" height="{{ image.height }}" src="{{ image | img_url: '50x50' , format: 'pjpg'}}" class="lazyload attachment-shop_single size-shop_single sp-post-image" alt="{{image.alt}}" title="{{product.title}}" 
                                                       data-src="{{ img_url }}" 
                                                       data-large_image="{%-include 'gl_image_format',cache:true, src: image.src, size: product_image_photowipe -%}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}" 
                                                       data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}" data-sizes="auto">
@@ -216,7 +216,7 @@
                                                            {%- endfor -%}
                                                         {%- else -%}
                                                            <figure data-thumb="{%- if crop_thumb_nt != blank -%}{%-include 'gl_image_format_crop',src: image.src , size: crop_thumb_nt,position:'top' -%}{%- else -%}{%-include 'gl_image_format',cache:true,src: image.src , size: '219x' -%}{%- endif -%}" data-alt="{{image.alt}}" data-id="{{image.id}}" class="shopify-product-gallery__image test3">
-                                                              <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}">
+                                                              <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale , format: 'pjpg'}}">
                                                                  {%- if crop_nt != blank -%}
                                                                    {%- assign image_height = 50 | divided_by: image.aspect_ratio | round -%}
                                         {%- assign image_size_el = 50 | append:'x' | append:image_height -%}
@@ -231,7 +231,7 @@
                                                                       {%- if image_size_first > 219 -%}{%- assign image_height = 219 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 219 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 219w{%- endif -%} 
                                                                       {%- if image_size_first > 526 -%}{%- assign image_height = 526 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 526 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 526w{%- endif -%}" sizes="(max-width: {{ image_size_first }}px) 100vw, {{ image_size_first }}px"> 
                                                                  {%- else -%} 
-                                                      <img width="{{ image.width }}" height="{{ image.height }}" src="{{ image | img_url: '50x50' }}" class="lazyload attachment-shop_single size-shop_single sp-post-image" alt="{{image.alt}}" title="{{product.title}}" 
+                                                      <img width="{{ image.width }}" height="{{ image.height }}" src="{{ image | img_url: '50x50' , format: 'pjpg'}}" class="lazyload attachment-shop_single size-shop_single sp-post-image" alt="{{image.alt}}" title="{{product.title}}" 
                                                       data-src="{{ img_url }}" 
                                                       data-large_image="{%-include 'gl_image_format',cache:true, src: image.src, size: product_image_photowipe -%}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}" 
                                                       data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}" data-sizes="auto">
@@ -255,7 +255,7 @@
                           {%-else-%}
                              {%- if current_variant.featured_image != blank -%}
                                 {%- assign image = current_variant.featured_image -%}
-                                 {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                                 {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' , format: 'pjpg'-%}
                                 {%- assign product_image_photowipe = image.width | append: 'x' -%}
                                 {%- if crop_nt != blank -%}
                                    {%- assign image_width_append = crop_nt -%}
@@ -268,7 +268,7 @@
                                 {%- endif -%}
                                    {%- if image.attached_to_variant? and settings.use_clicking_variant_image -%}
                                          <figure data='{{ forloop.index}}' data-variant_id= "{{current_variant.id}}" data-lenght= "{{product.options.size}}" data-one='{{ current_variant.option1 | handleize | handleize }}' data-two= '{{ current_variant.option2 | handleize | handleize }}' data-three= '{{ current_variant.option3 | handleize | handleize }}' data-thumb="{%- if crop_thumb_nt != blank -%}{%-include 'gl_image_format_crop',src: image.src , size: crop_thumb_nt,position:'top' -%}{%- else -%}{%-include 'gl_image_format',cache:true,src: image.src , size: '219x' -%}{%- endif -%}" data-alt="{{image.alt}}" data-id="{{image.id}}" class="shopify-product-gallery__image test2">
-                                            <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}">
+                                            <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale , format: 'pjpg'}}">
                                                {%- if crop_nt != blank -%}
                                                  {%- assign image_height = 50 | divided_by: image.aspect_ratio | round -%}
                                         {%- assign image_size_el = 50 | append:'x' | append:image_height -%}
@@ -284,13 +284,13 @@
                                                     {%- if image_size_first > 526 -%}{%- assign image_height = 526 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 526 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 526w{%- endif -%}" sizes="(max-width: {{ image_size_first }}px) 100vw, {{ image_size_first }}px"> 
                                                {%- else -%} 
                                                 <img class="attachment-shop_single size-shop_single sp-post-image lazyload"
-                     src="{{ image | img_url: '50x50' }}"
+                     src="{{ image | img_url: '50x50' , format: 'pjpg'}}"
                      data-src="{{ img_url }}"
                      data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
                      data-aspectratio="{{ image.aspect_ratio }}"
                      data-sizes="auto"
                      data-variant_id= "{{variant.id}}" data-image-id="{{ image.id }}"
-                     data-large_image="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}"
+                     data-large_image="{{ image | img_url: product_image_zoom_size, scale: product_image_scale , format: 'pjpg'}}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}"
                      alt="{{ image.alt | split:'|' | last | escape }}">
                                               {%- endif -%}
                                               <div class="jas-wrap-lazy"></div>
@@ -298,11 +298,11 @@
                                          </figure>
                                    {%- else -%}
                                       <figure data-thumb="{%- if crop_thumb_nt != blank -%}{%-include 'gl_image_format_crop',src: image.src , size: crop_thumb_nt,position:'top' -%}{%- else -%}{%-include 'gl_image_format',cache:true,src: image.src , size: '219x' -%}{%- endif -%}" data-alt="{{image.alt}}" data-id="{{image.id}}" class="shopify-product-gallery__image test1">
-                                         <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}">
+                                         <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale , format: 'pjpg'}}">
                                             {%- if crop_nt != blank -%}
                                               {%- assign image_height = 50 | divided_by: image.aspect_ratio | round -%}
                                         {%- assign image_size_el = 50 | append:'x' | append:image_height -%}
-                                        <img width="{{ image_size_first }}" height="{{ image_height }}" src="{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %}" class="lazyload attachment-shop_catalog size-shop_catalog" alt="{{ image.alt | escape }}" 
+                                        <img width="{{ image_size_first }}" height="{{ image_height }}" src="{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' , format: 'pjpg'%}" class="lazyload attachment-shop_catalog size-shop_catalog" alt="{{ image.alt | escape }}" 
                                              data-src="{{ img_url }}" 
                                          data-large_image="{%-include 'gl_image_format',cache:true, src: image.src, size: product_image_photowipe -%}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}" 
                                                  data-srcset="{%-include 'gl_image_format_crop',src: image.src , size: crop_nt,position:'top' %} {{image_size_first}}w 
@@ -314,7 +314,7 @@
                                                  {%- if image_size_first > 526 -%}{%- assign image_height = 526 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 526 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 526w{%- endif -%}" sizes="(max-width: {{ image_size_first }}px) 100vw, {{ image_size_first }}px"> 
                                             {%- else -%} 
                                              <img class="cloudzoom attachment-shop_single size-shop_single sp-post-image lazyload"
-                                                 src="{{ image | img_url: '50x50' }}"
+                                                 src="{{ image | img_url: '50x50' , format: 'pjpg'}}"
                                                  data-src="{{ img_url }}"
                                                  data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
                                                  data-aspectratio="{{ image.aspect_ratio }}"
@@ -322,7 +322,7 @@
                                                  width="600"
                                                  height="800"
                                                  data-variant_id= "{{variant.id}}" data-image-id="{{ image.id }}"
-                                                 data-large_image="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}"
+                                                 data-large_image="{{ image | img_url: product_image_zoom_size, scale: product_image_scale , format: 'pjpg'}}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}"
                                                  alt="{{ image.alt | split:'|' | last | escape }}">
                                            {%- endif -%}
                                            <div class="jas-wrap-lazy"></div>
@@ -332,7 +332,7 @@
                              {%- elsif variant_recoment == true -%}
                                 {%- assign id_page = id_page | json -%}
                                 {%- for image in product.images -%}
-                             {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                             {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' , format: 'pjpg'-%}
                                    {%- for variant in image.variants -%}
                                       {%- assign image_re_id = image.id | prepend :'"'| append: '"'-%}
                                         {%- if image_re_id == id_page -%}
@@ -349,11 +349,11 @@
                                          {%- if image.attached_to_variant? and settings.use_clicking_variant_image -%}
                                             {%- for variant in image.variants -%}
                                                <figure data-variant_id= "{{variant.id}}" data-lenght= "{{product.options.size}}" data-one='{{ variant.option1 | handleize }}' data-two= '{{ variant.option2 | handleize }}' data-three= '{{ variant.option3 | handleize }}' data-thumb="{%- if crop_thumb_nt != blank -%}{%-include 'gl_image_format_crop',src: image.src , size: crop_thumb_nt,position:'top' -%}{%- else -%}{%-include 'gl_image_format',cache:true,src: image.src , size: '219x' -%}{%- endif -%}" data-alt="{{image.alt}}" data-id="{{image.id}}" class="shopify-product-gallery__image test10">
-                                                  <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}">
+                                                  <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale , format: 'pjpg'}}">
                                                      {%- if crop_nt != blank -%}
                                                        {%- assign image_height = 50 | divided_by: image.aspect_ratio | round -%}
                                         {%- assign image_size_el = 50 | append:'x' | append:image_height -%}
-                                        <img width="{{ image_size_first }}" height="{{ image_height }}" src="{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %}" class="lazyload attachment-shop_catalog size-shop_catalog" alt="{{ image.alt | escape }}" 
+                                        <img width="{{ image_size_first }}" height="{{ image_height }}" src="{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' , format: 'pjpg'%}" class="lazyload attachment-shop_catalog size-shop_catalog" alt="{{ image.alt | escape }}" 
                                              data-src="{{ img_url }}" 
                                          data-large_image="{%-include 'gl_image_format',cache:true, src: image.src, size: product_image_photowipe -%}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}" 
                                                           data-srcset="{%-include 'gl_image_format_crop',src: image.src , size: crop_nt,position:'top' %} {{image_size_first}}w 
@@ -364,7 +364,7 @@
                                                           {%- if image_size_first > 219 -%}{%- assign image_height = 219 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 219 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 219w{%- endif -%} 
                                                           {%- if image_size_first > 526 -%}{%- assign image_height = 526 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 526 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 526w{%- endif -%}" sizes="(max-width: {{ image_size_first }}px) 100vw, {{ image_size_first }}px"> 
                                                      {%- else -%} 
-                                                      <img width="{{ image.width }}" height="{{ image.height }}" src="{{ image | img_url: '50x50' }}" class="lazyload attachment-shop_single size-shop_single sp-post-image" alt="{{image.alt}}" title="{{product.title}}" 
+                                                      <img width="{{ image.width }}" height="{{ image.height }}" src="{{ image | img_url: '50x50' , format: 'pjpg'}}" class="lazyload attachment-shop_single size-shop_single sp-post-image" alt="{{image.alt}}" title="{{product.title}}" 
                                                       data-src="{{ img_url }}" 
                                                       data-large_image="{%-include 'gl_image_format',cache:true, src: image.src, size: product_image_photowipe -%}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}" 
                                                       data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}" data-sizes="auto">
@@ -375,11 +375,11 @@
                                             {%- endfor -%}
                                          {%- else -%}
                                             <figure data-thumb="{%- if crop_thumb_nt != blank -%}{%-include 'gl_image_format_crop',src: image.src , size: crop_thumb_nt,position:'top' -%}{%- else -%}{%-include 'gl_image_format',cache:true,src: image.src , size: '219x' -%}{%- endif -%}" data-alt="{{image.alt}}" data-id="{{image.id}}" class="shopify-product-gallery__image test8">
-                                               <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}">
+                                               <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale , format: 'pjpg'}}">
                                                   {%- if crop_nt != blank -%}
                                                     {%- assign image_height = 50 | divided_by: image.aspect_ratio | round -%}
                                         {%- assign image_size_el = 50 | append:'x' | append:image_height -%}
-                                        <img width="{{ image_size_first }}" height="{{ image_height }}" src="{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %}" class="lazyload attachment-shop_catalog size-shop_catalog" alt="{{ image.alt | escape }}" 
+                                        <img width="{{ image_size_first }}" height="{{ image_height }}" src="{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' , format: 'pjpg'%}" class="lazyload attachment-shop_catalog size-shop_catalog" alt="{{ image.alt | escape }}" 
                                              data-src="{{ img_url }}" 
                                          data-large_image="{%-include 'gl_image_format',cache:true, src: image.src, size: product_image_photowipe -%}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}" 
                                                        data-srcset="{%-include 'gl_image_format_crop',src: image.src , size: crop_nt,position:'top' %} {{image_size_first}}w 
@@ -410,7 +410,7 @@
                                 {%- endfor -%}
                              {%- endif -%}
                              {%- for image in product.images -%}
-                             {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                             {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.', format: 'pjpg' -%}
                              {%- unless current_variant.featured_image == image or current_variant_re_nt == image -%}
                                 {%- if crop_nt != blank -%}
                                    {%- assign image_width_append = crop_nt -%}
@@ -425,11 +425,11 @@
                                 {%- if image.attached_to_variant? and settings.use_clicking_variant_image -%}
                                    {%- for variant in image.variants -%}
                                       <figure data-variant_id= "{{variant.id}}" data-lenght= "{{product.options.size}}" data-one='{{ variant.option1 | handleize }}' data-two= '{{ variant.option2 | handleize }}' data-three= '{{ variant.option3 | handleize }}' data-thumb="{%- if crop_thumb_nt != blank -%}{%-include 'gl_image_format_crop',src: image.src , size: crop_thumb_nt,position:'top' -%}{%- else -%}{%-include 'gl_image_format',cache:true,src: image.src , size: '219x' -%}{%- endif -%}" data-alt="{{image.alt}}" data-id="{{image.id}}" class="shopify-product-gallery__image test9">
-                                         <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}">
+                                         <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale , format: 'pjpg'}}">
                                             {%- if crop_nt != blank -%}
                                               {%- assign image_height = 50 | divided_by: image.aspect_ratio | round -%}
                                         {%- assign image_size_el = 50 | append:'x' | append:image_height -%}
-                                        <img width="{{ image_size_first }}" height="{{ image_height }}" src="{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %}" class="lazyload attachment-shop_catalog size-shop_catalog" alt="{{ image.alt | escape }}" 
+                                        <img width="{{ image_size_first }}" height="{{ image_height }}" src="{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' , format: 'pjpg'%}" class="lazyload attachment-shop_catalog size-shop_catalog" alt="{{ image.alt | escape }}" 
                                              data-src="{{ img_url }}" 
                                          data-large_image="{%-include 'gl_image_format',cache:true, src: image.src, size: product_image_photowipe -%}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}" 
                                                  data-srcset="{%-include 'gl_image_format_crop',src: image.src , size: crop_nt,position:'top' %} {{image_size_first}}w 
@@ -441,13 +441,13 @@
                                                  {%- if image_size_first > 526 -%}{%- assign image_height = 526 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 526 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 526w{%- endif -%}" sizes="(max-width: {{ image_size_first }}px) 100vw, {{ image_size_first }}px"> 
                                             {%- else -%} 
                                              <img class="attachment-shop_single size-shop_single sp-post-image lazyload"
-                     src="{{ image | img_url: '50x50' }}"
+                     src="{{ image | img_url: '50x50' , format: 'pjpg'}}"
                      data-src="{{ img_url }}"
                      data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
                      data-aspectratio="{{ image.aspect_ratio }}"
                      data-sizes="auto"
                      data-variant_id= "{{variant.id}}" data-image-id="{{ image.id }}"
-                     data-large_image="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}"
+                     data-large_image="{{ image | img_url: product_image_zoom_size, scale: product_image_scale , format: 'pjpg'}}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}"
                      alt="{{ image.alt | split:'|' | last | escape }}">
                                            {%- endif -%}
                                            <div class="jas-wrap-lazy"></div>
@@ -455,8 +455,8 @@
                                       </figure>
                                    {%- endfor -%}
                                 {%- else -%}
-                                   <figure data-thumb="{%- if crop_thumb_nt != blank -%}{%-include 'gl_image_format_crop',src: image.src , size: crop_thumb_nt,position:'top' -%}{%- else -%}{%-include 'gl_image_format',cache:true,src: image.src , size: '219x' -%}{%- endif -%}" data-alt="{{image.alt}}" data-id="{{image.id}}" class="shopify-product-gallery__image test7">
-                                     <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}">
+                                   <figure data-thumb="{%- if crop_thumb_nt != blank -%}{%-include 'gl_image_format_crop',src: image.src , size: crop_thumb_nt,position:'top' , format: 'pjpg'-%}{%- else -%}{%-include 'gl_image_format',cache:true,src: image.src , size: '219x' -%}{%- endif -%}" data-alt="{{image.alt}}" data-id="{{image.id}}" class="shopify-product-gallery__image test7">
+                                     <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale , format: 'pjpg'}}">
                                          {%- if crop_nt != blank -%}
                                            {%- assign image_height = 50 | divided_by: image.aspect_ratio | round -%}
                                         {%- assign image_size_el = 50 | append:'x' | append:image_height -%}
@@ -471,12 +471,12 @@
                                               {%- if image_size_first > 219 -%}{%- assign image_height = 219 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 219 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 219w{%- endif -%} 
                                               {%- if image_size_first > 526 -%}{%- assign image_height = 526 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 526 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 526w{%- endif -%}" sizes="(max-width: {{ image_size_first }}px) 100vw, {{ image_size_first }}px"> 
                                          {%- else -%} 
-                                         <img id="product-main-image" class="cloudzoom attachment-shop_single size-shop_single sp-post-image lazyload" src="{{ image | img_url: '50x50' }}" data-src="{{ img_url }}"
+                                         <img id="product-main-image" class="cloudzoom attachment-shop_single size-shop_single sp-post-image lazyload" src="{{ image | img_url: '50x50' , format: 'pjpg'}}" data-src="{{ img_url }}"
                                           width="600"
                                                  height="800"
                                           data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ image.aspect_ratio }}"
                      data-sizes="auto" data-variant_id= "{{variant.id}}" data-image-id="{{ image.id }}"
-                     data-large_image="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}"
+                     data-large_image="{{ image | img_url: product_image_zoom_size, scale: product_image_scale , format: 'pjpg'}}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}"
                      alt="{{ image.alt | split:'|' | last | escape }}">
 
                                         {%- endif -%}
