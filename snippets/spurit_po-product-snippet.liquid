@@ -1,4 +1,4 @@
-<script>
+<script defer>
 	var SPOParams = {
 		"id" : "4cfbbfb238e2b4d44eb60a7fd712378b",
         "s3Root" : "//s3.amazonaws.com/shopify-apps/pre-order",
@@ -22,7 +22,7 @@
 {% endif %}
 {% if poVariant.inventory_quantity <= 0 and poVariant.inventory_management == 'shopify' %}
 <style>{{shop.metafields.spurit_po['addtocart_selector']  | replace: '"',"'"}}{ display: none; }</style>
-<script>
+<script defer>
 	try{
 		if(isPoAppInstalled !== true){
 			$(function(){
