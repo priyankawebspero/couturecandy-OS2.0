@@ -170,7 +170,7 @@
     "pr_image_size": "",
     "pr_thumb_image_size": "100x",
     "thumbnails_position": "left",
-    "main_click": "none",
+    "main_click": "popup",
     "disable_download_img": true,
     "show_zoom_img": false,
     "button_art_to_cart_style": "2",
