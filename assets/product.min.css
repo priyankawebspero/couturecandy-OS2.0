@@ -403,12 +403,12 @@ background: #000;
 }
 
 .shopify-variation-add-to-cart.variations_button.shopify-variation-add-to-cart-enabled .futureDDays-popup-button {
-    font-size: 16px;
+    font-size: 18px;
     background: #e94949 !important;
     border-color: #e94949 !important;
     border-radius: 5px;
     padding: 17px 15px !important;
-    min-width: 235px;
+    min-width: 255px;
     text-align: center;
     cursor: pointer;
     display: inline-block;
@@ -450,8 +450,8 @@ background: #000;
 .single-product-content div#variant-inventory {
     color: #e94949;
     font-size: 17px;
-    margin-bottom: 10px;
-  font-family: 'google_sansregular';
+    margin-bottom: 15px;
+   font-family: 'product_sans_mediumregular';
 }
 
 .single-product-content span.onlyjovani {
@@ -2002,7 +2002,11 @@ div#ProdDetailInfomobile {
     font-size: 15px;
     letter-spacing: 0;
 }
+  
+.single-product-content div#variant-inventory {
 
+    font-size: 14px;
+}
 .single-product-content span.onlyjovani {
     font-size: 14px;
     letter-spacing: 0;
@@ -2195,7 +2199,7 @@ div#ProdDetailInfomobile {
 }
   .shopify-variation-add-to-cart.variations_button.shopify-variation-add-to-cart-enabled .futureDDays-popup-button {
     font-size: 15px;
-    padding: 15px 11px !important;
+    padding: 14px 11px !important;
     min-width: 170px;
 }
   
@@ -2417,7 +2421,6 @@ div#ProdDetailInfo {
     font-size: 15px;
     height: 49px;
     border: none;
-      padding: 16px 10px !important;
 }
   
   .single-product-content .cart span.button a {
@@ -2553,6 +2556,9 @@ body.template-product  {
     font-size: 14px !important;
 }
   
+.single-product-content div#variant-inventory {
+    font-size: 12px;
+}
   
 .single-product-content .shop_attributes th {
     font-size: 15px;
@@ -2693,7 +2699,7 @@ body.template-product  {
     padding: 7px 12px;
 }
 
-.single-product-content .single_variation_wrap .iwishAddWrap, .single-product-content .iwishAddWrap {
+.single-product-content .single_variation_wrap .iwishAddWrap {
     position: fixed;
     width: 50%;
     right: 0;
@@ -2702,7 +2708,7 @@ body.template-product  {
     z-index: 99;
 }
 
-.single-product-content .single_variation_wrap .iwishAddWrap .iWishAdd, .single-product-content .iwishAddWrap .iWishAdd {
+.single-product-content .single_variation_wrap .iwishAddWrap .iWishAdd {
     background: #333;
     color: #fff;
     height: 49px;
@@ -2714,9 +2720,6 @@ body.template-product  {
     font-family: 'google_sansregular';
     border:none;
   border-radius:0;
-  line-height: 52px;
-    text-align: center;
-    display: block;
 }
 
 .single-product-content .single_variation_wrap .iwishAddWrap .iWishAdd:before {
@@ -2726,22 +2729,7 @@ body.template-product  {
     margin-right: 8px;
 }
 
-.single-product-content .iwishAddWrap a.iWishAdd:before {
-    content: "\e08a";
-    display: inline-block;
-    font-family: Simple-Line-Icons;
-    -webkit-transition: all .2s;
-    -moz-transition: all .2s;
-    -o-transition: all .2s;
-    transition: all .2s;
-    font-size: 18px;
-    width: auto;
-    vertical-align: top;
-    margin-right: 8px;
-    height: 100%;
-}
-
-  .single-product-content .single_variation_wrap .iwishAddWrap .iWishAdd.iwishAdded, .single-product-content .iwishAddWrap .iWishAdd .iwishAdded {
+  .single-product-content .single_variation_wrap .iwishAddWrap .iWishAdd.iwishAdded {
     background: #000;
     color: #e94949;
 }
@@ -2910,18 +2898,6 @@ span.contact_us_button a {
     font-weight: normal;
 }
 
-.shopify-variation-add-to-cart.variations_button.shopify-variation-add-to-cart-enabled .futureDDays-popup-button {
-    font-size: 14px;
-}
-
-.single-product-content .quantity_test {
-    font-size: 16px;
-}
-
-.single-product-content div#variant-inventory {
-    font-size: 16px;
-}
-  
 }
 
 
@@ -2939,4 +2915,176 @@ span.contact_us_button a {
     line-height: 2;
 }
   
+}
+
+
+/*----zoom-image-layout-css---*/
+
+.pswp__bg {
+    background: #f8f8f8;
+}
+
+.pswp__scroll-wrap {
+    background: #f8f8f8;
+}
+
+.pswp__scroll-wrap .pswp__ui {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    /* opacity: 1 !important; */
+    text-align: center;
+    transition: all .15s ease-in-out;
+    left: 0;
+}
+
+.pswp__scroll-wrap .pswp__ui button.pswp__button.pswp__button--arrow--left {
+    opacity: 1 !important;
+    position: relative !important;
+    left: 0 !important;
+    /* right: 0 !important; */
+    margin: 0 !important;
+    top: 0 !important;
+    width: 45px;
+    height: 45px;
+    float: none !important;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block !important;
+    transform: scale(1.001);
+  transition: all .5s ease-in-out;
+  box-shadow: 0 2px 10px #36363626;
+}
+
+.pswp__scroll-wrap .pswp__ui button.pswp__button.pswp__button--arrow--left:before {
+    content: "\e605";
+    display: inline-block;
+    font-size: 14px;
+    line-height: 42px;
+    font-family: simple-line-icons;
+    background: none;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    opacity: 1 !important;
+    color: #000;
+  
+}
+
+.pswp__scroll-wrap .pswp__ui button.pswp__button.pswp__button--arrow--right {
+    opacity: 1 !important;
+    position: relative !important;
+    right: 0 !important;
+    margin: 0 !important;
+    top: 0 !important;
+    width: 45px;
+    height: 45px;
+    float: none !important;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block !important;
+    transform: scale(1.001);
+  transition: all .5s ease-in-out;
+  box-shadow: 0 2px 10px #36363626;
+}
+
+.pswp__scroll-wrap .pswp__ui button.pswp__button.pswp__button--arrow--left:hover, .pswp__scroll-wrap .pswp__ui button.pswp__button.pswp__button--arrow--right:hover {
+    transform: scale(1.05);
+}
+
+.pswp__scroll-wrap .pswp__ui button.pswp__button.pswp__button--arrow--right:before {
+    content: "\e606";
+    display: inline-block;
+    font-size: 14px;
+    line-height: 42px;
+    font-family: simple-line-icons;
+    background: none;
+    position: relative;
+    right: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    opacity: 1 !important;
+    color: #000;
+}
+
+.pswp__scroll-wrap .pswp__ui .pswp__top-bar {
+    opacity: 1 !important;
+    background: none !important;
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    margin: 0 18px;
+    vertical-align: middle;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.pswp__scroll-wrap .pswp__ui .pswp__top-bar .pswp__button.pswp__button--close {
+    background: #fff;
+    width: 55px;
+    height: 55px;
+    border-radius: 30px;
+    line-height: 55px;
+    position: relative;
+    cursor: pointer !important;
+    opacity: 1 !important;
+    color: #fff !important;
+   transition: all .5s ease-in-out;
+  display:block;
+  box-shadow: 0 2px 10px #36363626;
+}
+
+.pswp__scroll-wrap .pswp__ui .pswp__top-bar .pswp__button.pswp__button--close:hover {
+    transform: scale(1.05);
+}
+
+.pswp__scroll-wrap .pswp__ui .pswp__top-bar .pswp__button.pswp__button--close:before {
+    content: "";
+    display: block !important;
+    width: 1.2px;
+    height: 20px;
+    background: #000;
+    position: absolute;
+    top: 18px;
+    left: 26px;
+    transform: rotate(-45deg);
+}
+
+.pswp__scroll-wrap .pswp__ui .pswp__top-bar .pswp__button.pswp__button--close:after {
+    content: "'";
+    display: block;
+    width: 1.2px;
+    height: 20px;
+    background: #000;
+    position: absolute;
+    top: 18px;
+    left: 26px;
+    transform: rotate(45deg);
+}
+
+.pswp__scroll-wrap .pswp__ui .pswp__top-bar .pswp__preloader {
+    display: none;
+}
+
+.pswp__scroll-wrap .pswp__img--placeholder--blank {
+    background: #fff;
+}
+
+.pswp--zoom-allowed .pswp__img {
+    cursor: url("//cdn.shopify.com/s/files/1/2334/9687/t/187/assets/cursor-zoom-in.svg") 18 18,zoom-in !important;
+    cursor: -webkit-image-set( url("//cdn.shopify.com/s/files/1/2334/9687/t/187/assets/cursor-zoom-in.svg") 1x , url("//cdn.shopify.com/s/files/1/2334/9687/t/187/assets/cursor-zoom-in.svg") 2x ) 18 18,zoom-in !important;
+}
+
+.single-product-content .shopify-main-image img{ 
+  cursor: url("//cdn.shopify.com/s/files/1/2334/9687/t/187/assets/cursor-zoom-in.svg") 18 18,zoom-in !important;
+    cursor: -webkit-image-set( url("//cdn.shopify.com/s/files/1/2334/9687/t/187/assets/cursor-zoom-in.svg") 1x , url("//cdn.shopify.com/s/files/1/2334/9687/t/187/assets/cursor-zoom-in.svg") 2x ) 18 18,zoom-in !important;
+}
+
+.pswp--zoom-allowed .pswp__img {
+     transform: scale(1.18);
 }
