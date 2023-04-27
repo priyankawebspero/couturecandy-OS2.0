@@ -31,7 +31,7 @@
    <div class="container">
       <div class="row">
         {%- if show_breadcrums -%}
-        	{%- include 'BreadcrumbMenu', page_handle:page.handle -%}<!-- .breadcrumbs -->
+        <div class="breadcrumbs col-sm-12" xmlns:v="http://rdf.data-vocabulary.org/#"><a href="/" rel="v:url" property="v:title">{{ 'general.breadcrumbs.home' | t }}</a> » <span class="current">{{ page_title }}</span></div><!-- .breadcrumbs -->
         {%- endif -%}
         <aside class="sidebar-container col-sm-3 sidebar-2" role="complementary">
               <div class="sidebar-inner">
