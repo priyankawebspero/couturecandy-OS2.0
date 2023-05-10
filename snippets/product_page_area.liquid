@@ -314,7 +314,7 @@
                                               {%- if image_size_first > 219 -%}{%- assign image_height = 219 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 219 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 219w{%- endif -%} 
                                               {%- if image_size_first > 526 -%}{%- assign image_height = 526 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 526 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 526w{%- endif -%}" sizes="(max-width: {{ image_size_first }}px) 100vw, {{ image_size_first }}px"> 
                                          {%- else -%} 
-                                          <img class="{% if vendortitle == 'jovani' or vendortitle == 'ladivine' %}{% else %} cloudzoom {% endif %} attachment-shop_single size-shop_single sp-post-image lazyload"
+                                          <img class="attachment-shop_single size-shop_single sp-post-image lazyload"
                                               src="{{ image | img_url: '50x50' }}"
                                               data-src="{{ img_url }}"
                                               data-widths="[180, 360, 540, 720]"
