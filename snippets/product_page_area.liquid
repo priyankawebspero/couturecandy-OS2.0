@@ -91,9 +91,9 @@
               {%- if product.images.size > 0 -%}
              <div class="{{class_images}} product-images">
                  {%- include 'product_labels' -%}
-                 <div class="shopify-product-gallery shopify-product-gallery--with-images shopify-product-gallery--columns-4 images row thumbs-position-{{settings.thumbnails_position}} {% if vendortitle == 'jovani' or vendortitle == 'ladivine' %}image-action-{{settings.main_click}}{% endif %} ">
+                 <div class="shopify-product-gallery shopify-product-gallery--with-images shopify-product-gallery--columns-4 images row thumbs-position-{{settings.thumbnails_position}} image-action-{{settings.main_click}}">
                     <div class="{%- if product.images.size > 1 and settings.thumbnails_position == 'left' and design_products_page != 'product-design-sticky' -%}col-md-9 col-md-push-2{%- else -%}col-sm-11{%- endif -%}">
-                       <figure id="gl_thum" class="shopify-product-gallery__wrapper{%- if design_products_page != 'product-design-sticky' %} owl-carousel{%- endif %} {% if vendortitle == 'jovani' or vendortitle == 'ladivine' %}{%- if settings.main_click == 'popup' %} shopify-main-image{%- endif -%}{% endif %}">
+                       <figure id="gl_thum" class="shopify-product-gallery__wrapper{%- if design_products_page != 'product-design-sticky' %} owl-carousel{%- endif %}{%- if settings.main_click == 'popup' %} shopify-main-image{%- endif -%}">
                        {%- if settings.show_grouped_variant_image and product.has_only_default_variant == false and product.images.size > 1 and not_group == false -%}
                           {%- if current_variant.featured_image != blank -%}
                              {%- assign image = current_variant.featured_image -%}
@@ -472,7 +472,7 @@
                                            {%- if image_size_first > 219 -%}{%- assign image_height = 219 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 219 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 219w{%- endif -%} 
                                            {%- if image_size_first > 526 -%}{%- assign image_height = 526 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 526 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 526w{%- endif -%}" sizes="(max-width: {{ image_size_first }}px) 100vw, {{ image_size_first }}px"> 
                                       {%- else -%} 
-                                      <img id="product-main-image" class="{% if vendortitle == 'jovani' or vendortitle == 'ladivine' %}{% else %} cloudzoom {%endif%} attachment-shop_single size-shop_single sp-post-image lazyload" src="{{ image | img_url: '50x50' }}" data-src="{{ img_url }}"
+                                      <img id="product-main-image" class="attachment-shop_single size-shop_single sp-post-image lazyload" src="{{ image | img_url: '50x50' }}" data-src="{{ img_url }}"
                                        width="600"
                                               height="800"
                                        data-widths="[180, 360, 540, 720]" data-aspectratio="{{ image.aspect_ratio }}"
