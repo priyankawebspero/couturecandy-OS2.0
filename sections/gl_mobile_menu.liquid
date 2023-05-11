@@ -24,7 +24,7 @@
 <div class="menu_block">
   
    <div class="menu_inner_block nbvbn {%- if block.settings.menu_link_1 %} {%- else %} basel-pop{%- endif -%}">
-   {% if block.settings.menu_link_1 != 'blank' %}<a href="{{block.settings.menu_link_1}}" class="test">{%-else-%}{%-endif-%}
+   {% if block.settings.menu_link_1 != 'blank' %}<a href="{{block.settings.menu_link_1}}">{%-else-%}{%-endif-%}
      {% if block.settings.menu_text != 'blank' %}<div class="menu_title">{{block.settings.menu_text}}</div>{%-endif-%}
       {% if block.settings.menu_text != 'blank' %}<div class="menu_image"><img
             src="{{block.settings.menu_image | img_url:'200x'}}" alt="{{block.settings.menu_text}}"></div>{%-endif-%}
