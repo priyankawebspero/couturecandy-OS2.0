@@ -75,6 +75,7 @@
   "description": "{{ product.description | strip_html | escape | remove:'"' | truncatewords: 30 }}",
   "image": "https:{{ product.featured_image.src | img_url: 'grande' }}",
   {% if product.variants %}
+  {% assign priceShipping = current_variant.price | money_without_currency | remove: ',' | plus:0 %}
     "offers": [
             {
               "@type": "Offer",
@@ -89,6 +90,11 @@
                 "url": "{{shop.url}}"
               },"shippingDetails": {
                 "@type": "OfferShippingDetails",
+               "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": {% if priceShipping > 299.00 %}0{% else %}14.95{% endif %},
+                  "currency": "USD"
+                },
                 "shippingDestination": {
                   "@type": "DefinedRegion",
                   "addressCountry": "US"
