@@ -244,7 +244,7 @@ span#save_percentage span {
     letter-spacing: .5px;
     border-bottom: 1px solid #e94949;
     line-height: 16px;
-    pointer-events:cursive;
+    cursor: pointer;
 }
 
 .single-product-content div#SizeChart {
