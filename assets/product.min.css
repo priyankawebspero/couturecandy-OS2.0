@@ -236,7 +236,7 @@ span#save_percentage span {
     font-weight: normal;
 }
 
-.single-product-content div#SizeChart .popupsizebutton a {
+.single-product-content div#SizeChart .popupsizebutton span {
     font-weight: normal;
     font-size: 15px;
     color: #e94949;
@@ -685,7 +685,7 @@ background: #000;
     font-size: 15px;
 }
 
-.single-product-content div#SizeChart .popupsizebutton a {
+.single-product-content div#SizeChart .popupsizebutton span {
     text-decoration: none !important;
 }
 
@@ -1998,7 +1998,7 @@ div#ProdDetailInfomobile {
     padding-top: 0;
 }
   
-.single-product-content div#SizeChart .popupsizebutton a {
+.single-product-content div#SizeChart .popupsizebutton span {
     font-size: 15px;
     letter-spacing: 0;
 }
@@ -2366,7 +2366,7 @@ div#ProdDetailInfo {
     margin-bottom: 6px;
     margin-top: -10px;
 }
-.single-product-content div#SizeChart .popupsizebutton a {
+.single-product-content div#SizeChart .popupsizebutton span {
     letter-spacing: 0;
     border: none;
     text-decoration: underline !important;
