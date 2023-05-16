@@ -67,7 +67,7 @@
       "settings": {
         "heading": "SHOP POPULAR DRESSES",
         "row_stretch": "default",
-        "home_featured_products": "dresses",
+        "home_featured_products": "best-selling-dresses",
         "paginate_index": "4",
         "use_pagination": "view-all",
         "grid_columns": "4",
