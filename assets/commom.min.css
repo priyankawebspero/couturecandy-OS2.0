@@ -7557,3 +7557,7 @@ body .iWishAddColl svg path {
 .pswp__counter, button.pswp__button.pswp__button--share,  button.pswp__button.pswp__button--fs, button.pswp__button.pswp__button--zoom{
     display: none !important;
 }
+
+a.stjr-review__read_more_link{
+    display: none !important;
+}
