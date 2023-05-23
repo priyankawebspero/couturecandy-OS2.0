@@ -7565,3 +7565,7 @@ a.stjr-review__read_more_link{
 span.moreless-button.btn {
     font-weight: 600;
 }
+.footer-column 
+ input[type="submit"] {
+    font-weight: 600;
+}
