@@ -314,7 +314,7 @@
 
           {%- if swatch_values_size > 4 -%}
             <li class="boost-pfs-filter-item-swatch-more">
-            <a href="{{- product_url -}}" aria-label="More {{- swatch_option_name -}}" title="More {{- swatch_option_name -}}">
+            <a role="color" href="{{- product_url -}}" aria-label="More {{- swatch_option_name -}}" title="More {{- swatch_option_name -}}">
               + {{- swatch_values_size | minus : swath_limit -}}
             </a>
             </li>
