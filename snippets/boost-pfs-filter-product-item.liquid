@@ -297,7 +297,7 @@
                     <a aria-label="{{ option }}: {{ swatch_name | escape }}" title="{{- swatch_name -}}" href="{{ product.url}}?variant={{ variant.id }}">{{- swatch_name -}}</a>
                   {%- else -%}
                     <div class="boost-pfs-product-item-tooltip">{{- swatch_name -}}</div>
-                    <span tabindex="0"
+                    <span role="color" tabindex="0"
                       aria-label="{{ option }}: {{ swatch_name | escape }}"
                       data-value="{{- swatch_name | handleize -}}"
                       style="{{- swatch_bg_img -}} {{- swatch_bg_color -}}"
@@ -314,7 +314,7 @@
 
           {%- if swatch_values_size > 4 -%}
             <li class="boost-pfs-filter-item-swatch-more">
-            <a role="color" href="{{- product_url -}}" aria-label="More {{- swatch_option_name -}}" title="More {{- swatch_option_name -}}">
+            <a href="{{- product_url -}}" aria-label="More {{- swatch_option_name -}}" title="More {{- swatch_option_name -}}">
               + {{- swatch_values_size | minus : swath_limit -}}
             </a>
             </li>
