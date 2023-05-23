@@ -9,7 +9,7 @@
                <label class="screen-reader-text" for="q"></label>
                <input type="text" placeholder="{{ 'general.search.placeholder' | t }}" value="{{ search.terms | escape }}" name="q" id="q" autocomplete="off">
                {%- if settings.only_search_products -%}<input type="hidden" name="type" value="product" />{%- endif -%}
-               <button type="submit" id="searchsubmit">{{ 'general.search.submit' | t }}</button>
+               <button type="submit" id="searchsubmitMob">{{ 'general.search.submit' | t }}</button>
             </div>
          </form>
          <div class="search-results-wrapper">
