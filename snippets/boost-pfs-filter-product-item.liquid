@@ -297,7 +297,7 @@
                     <a aria-label="{{ option }}: {{ swatch_name | escape }}" title="{{- swatch_name -}}" href="{{ product.url}}?variant={{ variant.id }}">{{- swatch_name -}}</a>
                   {%- else -%}
                     <div class="boost-pfs-product-item-tooltip">{{- swatch_name -}}</div>
-                    <span role="color" tabindex="0"
+                    <span role="button" tabindex="0"
                       aria-label="{{ option }}: {{ swatch_name | escape }}"
                       data-value="{{- swatch_name | handleize -}}"
                       style="{{- swatch_bg_img -}} {{- swatch_bg_color -}}"
