@@ -306,7 +306,9 @@ body .boost-pfs-filter-stick.boost-pfs-filter-tree-desktop-button-sticky-wrapper
     color: #000;
 }
 
-.main-header .container .header_middle_block .search form button#searchsubmit, .main-header .container .header_middle_block .search form button#searchsubmitMob{
+.main-header .container .header_middle_block .search form button#searchsubmit,
+.main-header .container .header_middle_block .search form button#searchsubmitMob,
+.main-header .container .header_middle_block .search form button#searchsubmitMobn{
     font-size: 15px;
     background: #e94949;
     width: auto;
@@ -321,14 +323,17 @@ body .boost-pfs-filter-stick.boost-pfs-filter-tree-desktop-button-sticky-wrapper
 .main-header .container .header_middle_block .search form button#searchsubmit:hover, 
 .main-header .container .header_middle_block .search form button#searchsubmit:focus,
 .main-header .container .header_middle_block .search form button#searchsubmitMob:hover,
-.main-header .container .header_middle_block .search form button#searchsubmitMob:focus
+.main-header .container .header_middle_block .search form button#searchsubmitMob:focus,
+.main-header .container .header_middle_block .search form button#searchsubmitMobn:hover,
+.main-header .container .header_middle_block .search form button#searchsubmitMobn:focus
 { background: #000;
 opacity:1 !important;
 }
 
 
 .main-header .container .header_middle_block .search form button#searchsubmit:after,
-.main-header .container .header_middle_block .search form button#searchsubmitMob:after{
+.main-header .container .header_middle_block .search form button#searchsubmitMob:after,
+.main-header .container .header_middle_block .search form button#searchsubmitMobn:after{
     display: none;
 }
 
@@ -1128,7 +1133,8 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
 }
 
  html[lang="ga"] .main-header .container .header_middle_block .search form button#searchsubmit:after,
- html[lang="ga"] .main-header .container .header_middle_block .search form button#searchsubmitMob:after{
+ html[lang="ga"] .main-header .container .header_middle_block .search form button#searchsubmitMob:after,
+ html[lang="ga"] .main-header .container .header_middle_block .search form button#searchsubmitMobn:after{
     content: "\e090";
     display: inline-block !important;
     line-height: 30px;
@@ -1137,7 +1143,8 @@ div#shopify-section-template--14532934697043__1655293802112cf900 {
 }
 
  html[lang="ga"] .main-header .container .header_middle_block .search form button#searchsubmit,
- html[lang="ga"] .main-header .container .header_middle_block .search form button#searchsubmitMob{
+ html[lang="ga"] .main-header .container .header_middle_block .search form button#searchsubmitMob,
+ html[lang="ga"] .main-header .container .header_middle_block .search form button#searchsubmitMobn{
     font-size: 0;
 }
 
@@ -2328,7 +2335,9 @@ div#shopify-section-template--14532934697043__1655293959d5ab1c6c .title:before {
     display: none;
 }
 
-.single-post .sidebar-container form button#searchsubmit, .single-post .sidebar-container form button#searchsubmitmob {
+.single-post .sidebar-container form button#searchsubmit,
+.single-post .sidebar-container form button#searchsubmitMob,
+single-post .sidebar-container form button#searchsubmitMobn {
     background: #000 !important;
     border-color: #000 !important;
 }
@@ -3334,7 +3343,9 @@ html[lang="es"] .main-header .wrapp-header {
     padding: 0 30px;
 }
   
-.main-header .container .header_middle_block .search form button#searchsubmit, .main-header .container .header_middle_block .search form button#searchsubmitMob {
+.main-header .container .header_middle_block .search form button#searchsubmit,
+.main-header .container .header_middle_block .search form button#searchsubmitMob,
+ .main-header .container .header_middle_block .search form button#searchsubmitMobn {
     font-size: 14px;
     padding: 9px 15px;
 }
@@ -3478,7 +3489,9 @@ html[lang="es"] .main-header .wrapp-header ul#menu-main-navigation>li>a {
 }
 
 @media only screen and (max-width:1199px) and (min-width:992px){
-  .single-post .sidebar-container form button#searchsubmit, .single-post .sidebar-container form button#searchsubmitMob {
+  .single-post .sidebar-container form button#searchsubmit, 
+  .single-post .sidebar-container form button#searchsubmitMob,
+  .single-post .sidebar-container form button#searchsubmitMobn{
     position: relative;
     margin-top: 10px;
     margin-left: 0px;
@@ -3575,7 +3588,9 @@ html[lang="pt"] .main-header .wrapp-header ul#menu-main-navigation li {
     padding-right: 15px;
 }
 
-  .single-post .sidebar-container form button#searchsubmit, .single-post .sidebar-container form button#searchsubmitMob {
+  .single-post .sidebar-container form button#searchsubmit, 
+  .single-post .sidebar-container form button#searchsubmitMob,
+  .single-post .sidebar-container form button#searchsubmitMobn{
     position: relative;
     margin-top: 10px;
     margin-left: 0px;
