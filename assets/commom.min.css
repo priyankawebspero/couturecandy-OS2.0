@@ -4389,7 +4389,8 @@ div#shopify-section-gl_mobile_menu div#close_menu_main i:before {
 }
   
 .basel-search-dropdown .basel-search-wrapper .basel-search-inner form button#searchsubmit,
-  .basel-search-dropdown .basel-search-wrapper .basel-search-inner form button#searchsubmitMob{
+  .basel-search-dropdown .basel-search-wrapper .basel-search-inner form button#searchsubmitMob,
+  .basel-search-dropdown .basel-search-wrapper .basel-search-inner form button#searchsubmitMobn{
     position: absolute;
     right: 0;
     height: 50px;
@@ -6550,7 +6551,8 @@ background-color: #808080 !important;}
     cursor: pointer;
 }
 .error404 .site-content form[role="search"] button#searchsubmit:hover,
-.error404 .site-content form[role="search"] button#searchsubmitMob:hover{
+.error404 .site-content form[role="search"] button#searchsubmitMob:hover,
+.error404 .site-content form[role="search"] button#searchsubmitMobn:hover{
   background: #333;
     color: #ffff;
     border: 1px solid #333;
@@ -6857,7 +6859,8 @@ body#all-events.template-page .main-page-wrapper {
 @media only screen and (max-width:479px){
 
 .error404 .site-content form[role="search"] button#searchsubmit,
-.error404 .site-content form[role="search"] button#searchsubmitMob{
+.error404 .site-content form[role="search"] button#searchsubmitMob,
+  .error404 .site-content form[role="search"] button#searchsubmitMobn{
     position: relative;
     height: auto;
     font-size: 15px;
