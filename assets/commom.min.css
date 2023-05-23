@@ -7561,3 +7561,7 @@ body .iWishAddColl svg path {
 a.stjr-review__read_more_link{
     display: none !important;
 }
+
+span.moreless-button.btn {
+    font-weight: 600;
+}
