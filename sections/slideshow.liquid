@@ -51,10 +51,10 @@
                     {%- if block.settings.banner_btn_title != blank and block.settings.banner_link != blank -%}             
   <div class="clear"></div>
   <div class="basel-button-wrapper text-{{ block.settings.banner_alignment }} gl_mt_20 hidden-xs">
-    <a href="{{ block.settings.banner_link }}" class="btn btn-color-{{ block.settings.button_color }} btn-style-{{ block.settings.button_style }} btn-size-{{ block.settings.button_size }}">{{ block.settings.banner_btn_title }}</a>
+    <a aria-label="Dresses" href="{{ block.settings.banner_link }}" class="btn btn-color-{{ block.settings.button_color }} btn-style-{{ block.settings.button_style }} btn-size-{{ block.settings.button_size }}">{{ block.settings.banner_btn_title }}</a>
                     </div>
   <div class="basel-button-wrapper text-{{ block.settings.banner_alignment }} gl_mt_10 visible-xs">
-    <a href="{{ block.settings.banner_link }}" class="visible-xs btn btn-color-{{ block.settings.button_color }} btn-style-{{ block.settings.button_style }} btn-size-extra-small">{{ block.settings.banner_btn_title }}</a>
+    <a aria-label="Dresses" href="{{ block.settings.banner_link }}" class="visible-xs btn btn-color-{{ block.settings.button_color }} btn-style-{{ block.settings.button_style }} btn-size-extra-small">{{ block.settings.banner_btn_title }}</a>
                     </div>
   {%- endif -%}
                    </div>
