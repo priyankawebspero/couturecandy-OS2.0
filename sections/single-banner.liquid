@@ -1,7 +1,7 @@
 <section class="sub-page-banner-section">
     <div class="row">
         <div class="col-md-12">
-            <a href="{{ section.settings.link }}" class="">
+            <a href="{{ section.settings.link }}" class="singlebanner" aria-label="Dresses">
             {% if section.settings.image_desktop != blank %}
             {%- assign image = section.settings.image_desktop -%}
             {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}           
