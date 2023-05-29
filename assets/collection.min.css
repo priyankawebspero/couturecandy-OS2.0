@@ -2317,5 +2317,9 @@ display:none;
     width: 100% !important;
 }
 }
-  
+
+.bottom.description.collection .moreless-button.btn {
+    background: #000 !important;
+    color: #fff !important;
+}
 
