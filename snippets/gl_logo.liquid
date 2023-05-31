@@ -5,7 +5,7 @@
    {%- else -%}
      <div class="basel-logo-wrap" itemscope itemtype="http://schema.org/Organization">
    {%- endif -%}
-      <a href="/" class="basel-logo basel-main-logo" rel="home" itemprop="url">
+      <a href="/" class="basel-logo basel-main-logo" rel="home" aria-label="home" itemprop="url">
       {%- if settings.body_logo_svg != blank -%}
         <img src="{{ settings.body_logo_svg | file_url }}" alt="{{ image.alt | default: shop.name }}" itemprop="logo" alt="Couture Candy">               
       {%- elsif settings.body_logo_image != blank -%}
@@ -25,6 +25,6 @@
      </div>
    {%- endif -%}
    {%- else -%}
-   <div class="site-logo"><h1 class="basel-logo-wrap" itemscope="" itemtype="http://schema.org/Organization"><a href="/" class="basel-logo basel-main-logo" rel="home" itemprop="url">{{settings.body_logo_svg}}</a></h1></div>
+   <div class="site-logo"><h1 class="basel-logo-wrap" itemscope="" itemtype="http://schema.org/Organization"><a href="/" class="basel-logo basel-main-logo" rel="home" aria-label="home" itemprop="url">{{settings.body_logo_svg}}</a></h1></div>
    {%- endif -%}
   </div>
