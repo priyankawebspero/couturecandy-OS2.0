@@ -622,7 +622,7 @@ endif
     {
         "@context": "http://schema.org",
         "@graph": [
-           {% for product in collection.products %} 
+           {% for product in collection.products limit:10 %} 
              {
                 "@type": "Product",
                 "@id": "{{ shop.url }}{{ product.url }}",
