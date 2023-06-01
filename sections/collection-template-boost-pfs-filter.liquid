@@ -630,8 +630,7 @@ endif
                 "image": "{{product.image }}",
                 "url": "{{ shop.url }}{{ product.url }}",
                 "brand": { "@type": "Brand", "name": "{{ product.vendor | escape }}" },
-                "offers": { "@type": "Offer", "price": "{{ product.price }}", "priceCurrency": "{{ shop.currency }}", "availability": "http://schema.org/{%- if product.available -%}InStock{%- else -%}OutOfStock{%- endif -%}", "name": "{{ product.title | strip_html | escape }}", "category": "{{ collection.title }}" },
-                "aggregateRating": { "@type": "AggregateRating", "ratingValue": 4.8, "reviewCount": 19 }
+                "offers": { "@type": "Offer", "price": "{{ product.price }}", "priceCurrency": "{{ shop.currency }}", "availability": "http://schema.org/{%- if product.available -%}InStock{%- else -%}OutOfStock{%- endif -%}", "name": "{{ product.title | strip_html | escape }}", "category": "{{ collection.title }}" } 
             }{% if forloop.last %}{% else %},{% endif %}
         {% endfor %}
         ]
