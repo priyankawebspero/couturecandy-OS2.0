@@ -627,7 +627,7 @@ endif
                 "@type": "Product",
                 "@id": "{{ shop.url }}{{ product.url }}",
                 "name": "{{ product.title | strip_html | escape }}",
-                "image": "{{product.image }}",
+                "image": "https:{{ product.featured_image.src | img_url: 'grande' }}",
                 "url": "{{ shop.url }}{{ product.url }}",
                 "brand": { "@type": "Brand", "name": "{{ product.vendor | escape }}" },
                 "offers": { "@type": "Offer", "price": "{{ product.price }}", "priceCurrency": "{{ shop.currency }}", "availability": "http://schema.org/{%- if product.available -%}InStock{%- else -%}OutOfStock{%- endif -%}", "name": "{{ product.title | strip_html | escape }}", "category": "{{ collection.title }}" } 
