@@ -305,8 +305,9 @@ div.gl_section_promo_categories .promo-banner .banner-inner .btn:hover {
 }
 
 div.gl_section_promo_categories .featured-collection>.gl_col-md-6.gl_col-lg-6:first-child .promo-banner .banner-inner .btn {
-    background: #e94949 !important;
+    /*background: #e94949 !important;*/
     color: #fff;
+  background: #000 !important;
 }
 
 div.gl_section_promo_categories .featured-collection>.gl_col-md-6.gl_col-lg-6:first-child .promo-banner .banner-inner .btn:hover {
