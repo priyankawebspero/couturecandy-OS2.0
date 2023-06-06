@@ -1,3 +1,4 @@
+{%- if collection.handle != "green-dresses" -%}
 {% assign in_stock = false %}
 {% for product in collection.products %}
   {% if product.available %}
@@ -63,7 +64,6 @@
   </tbody>
   </table>
 </div>
-  {%- if collection.handle != "green-dresses" -%}
 {%- assign counter3 = 0 -%}
 <div class="col-6 table_prom" >          
   <h3>What are the best prices for the popular {{collection.handle | replace:'-', ' '}} at {{shop.name}}?</h3> 
@@ -90,7 +90,7 @@
 </div>
 </div>
 </div>
-   {%- endif -%}
+
  {%- assign counter2 = 0 -%}
 {%- assign counter3 = 0 -%}
 {% capture faq2 %}
@@ -103,7 +103,7 @@
         {% endunless %}  
       {% endfor %}
 {% endcapture %}
-{%- if collection.handle != "green-dresses" -%}
+
 {% capture faq3 %}
 {% for product in collection_price %}
         {% unless counter3 > 4 %}
@@ -116,7 +116,6 @@
         {% endunless %}  
       {% endfor %}
 {% endcapture %}
-   {%- endif -%}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -128,22 +127,19 @@
       "@type": "Answer",
       "text": "{{ faq2 }}"
     }
-  }
-{%- if collection.handle != "green-dresses" -%}
-,{
+  },{
     "@type": "Question",
     "name": "What are the best prices for the popular {{collection.handle | replace:'-', ' '}} at {{shop.name}}?",
     "acceptedAnswer": {
       "@type": "Answer",
       "text": "{{ faq3 }}"
     }
-  }
-  {%- endif -%}
-  ]
+  }]
 }
 </script>
-
 {% endif %}
+{% endif %}
+
 
 {%- if collection.handle == "green-dresses" -%}
 <div class="section_faq">
@@ -254,25 +250,23 @@ $(document).ready(function () {
     "acceptedAnswer": {
       "@type": "Answer",
       "text": "Here are some of the top 5 best selling green dresses on Couture Candy:
-
-Cinderella Divine - 7488 Draped Off Shoulder Gown With Slit
-Cinderella Divine - CD160 Deep V Neck High Slit Metallic Pleated Gown
-Jovani - 59993 Off Shoulder Bell Sleeve Draping Mermaid Gown
-Cinderella Divine - CD0168 Plunging V-Neck Long Sleeve Mermaid Gown
-La Femme - 28607 Sleeveless Deep V Neck High Leg Slit A-Line Gown"
+        Cinderella Divine - 7488 Draped Off Shoulder Gown With Slit
+        Cinderella Divine - CD160 Deep V Neck High Slit Metallic Pleated Gown
+        Jovani - 59993 Off Shoulder Bell Sleeve Draping Mermaid Gown
+        Cinderella Divine - CD0168 Plunging V-Neck Long Sleeve Mermaid Gown
+        La Femme - 28607 Sleeveless Deep V Neck High Leg Slit A-Line Gown"
     }
   },{
     "@type": "Question",
     "name": "What Are The Most Beautiful Green Dresses At Couture Candy?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Below are some of the most beautiful green dresses that are offered by Couture candy. 
-
-Sherri Hill - 53348 Bateau Metallic Applique A-Line Dress
-La Femme - 27630 Strapless Ruched Bodice Rhinestone Beaded Tulle Gown
-Jasz Couture - 7306 Embellished Sleeveless V-Neck Trumpet Dress
-La Femme 30317 - Sheer Lace Dress
-La Femme - 24158 Sophisticated Sparkling Sleeveless Beaded High Neck Two-Piece Dress"
+      "text": "Below are some of the most beautiful green dresses that are offered by Couture candy.         
+        Sherri Hill - 53348 Bateau Metallic Applique A-Line Dress
+        La Femme - 27630 Strapless Ruched Bodice Rhinestone Beaded Tulle Gown
+        Jasz Couture - 7306 Embellished Sleeveless V-Neck Trumpet Dress
+        La Femme 30317 - Sheer Lace Dress
+        La Femme - 24158 Sophisticated Sparkling Sleeveless Beaded High Neck Two-Piece Dress"
     }
   },{
     "@type": "Question",
@@ -293,11 +287,7 @@ La Femme - 24158 Sophisticated Sparkling Sleeveless Beaded High Neck Two-Piece D
     "name": "What Are Some Styling Tips For A Green Dress?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Accessorize with gold: Add a touch of elegance to your green dress by accessorizing with gold accents. Opt for a statement gold necklace or a pair of metallic gold heels to complement the vibrant green hue.
-
-Embrace nature-inspired patterns: Emphasize the green theme by incorporating nature-inspired patterns into your ensemble. Consider pairing your dress with a floral-printed scarf or a leaf-shaped clutch to create a whimsical and trendy look.
-
-Contrast with bold colors: Create a striking contrast by combining your green dress with bold, vibrant colors. Try a pair of electric blue heels or a red belt to make your green dress pop and add an unexpected twist to your outfit."
+      "text": "Accessorize with gold: Add a touch of elegance to your green dress by accessorizing with gold accents. Opt for a statement gold necklace or a pair of metallic gold heels to complement the vibrant green hue. Embrace nature-inspired patterns: Emphasize the green theme by incorporating nature-inspired patterns into your ensemble. Consider pairing your dress with a floral-printed scarf or a leaf-shaped clutch to create a whimsical and trendy look. Contrast with bold colors: Create a striking contrast by combining your green dress with bold, vibrant colors. Try a pair of electric blue heels or a red belt to make your green dress pop and add an unexpected twist to your outfit."
     }
   }]
 }
