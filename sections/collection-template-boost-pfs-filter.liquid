@@ -449,6 +449,10 @@ endif
                 <h1 class="heading collection">{{ collection.title | replace:'2022','2023' }}</h1>
               </div>
             </div>
+            {%- if collection.handle == "green-dresses" -%}
+           <p><b>Green dresses </b><span style="font-weight: 400;">have become an undeniable fashion staple, offering a vibrant and refreshing twist to any woman fashion style. From green designer dresses to elegant evening </span><b data-mce-fragment="1">green gowns</b><span style="font-weight: 400;">, there is a wide range of options to suit every style and occasion.</span></p>
+           <p><span style="font-weight: 400;">Incorporating some </span><b >green designer dresses</b><span style="font-weight: 400;">, in your wardrobe, and&nbsp; not only it adds a touch of elegance, but elevates the fashion quotient too!</span></p>
+          {%- endif -%}
 		{%- endif -%}
             <div class="toolbar_count">
             {%- if show_product_count == true or show_product_count_m == true -%}
