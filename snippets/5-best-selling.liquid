@@ -63,6 +63,7 @@
   </tbody>
   </table>
 </div>
+  {%- if collection.handle != "green-dresses" -%}
 {%- assign counter3 = 0 -%}
 <div class="col-6 table_prom" >          
   <h3>What are the best prices for the popular {{collection.handle | replace:'-', ' '}} at {{shop.name}}?</h3> 
@@ -89,7 +90,7 @@
 </div>
 </div>
 </div>
-
+   {%- endif -%}
  {%- assign counter2 = 0 -%}
 {%- assign counter3 = 0 -%}
 {% capture faq2 %}
@@ -102,7 +103,7 @@
         {% endunless %}  
       {% endfor %}
 {% endcapture %}
-
+{%- if collection.handle != "green-dresses" -%}
 {% capture faq3 %}
 {% for product in collection_price %}
         {% unless counter3 > 4 %}
@@ -115,6 +116,7 @@
         {% endunless %}  
       {% endfor %}
 {% endcapture %}
+   {%- endif -%}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
