@@ -126,14 +126,18 @@
       "@type": "Answer",
       "text": "{{ faq2 }}"
     }
-  },{
+  }
+{%- if collection.handle != "green-dresses" -%}
+,{
     "@type": "Question",
     "name": "What are the best prices for the popular {{collection.handle | replace:'-', ' '}} at {{shop.name}}?",
     "acceptedAnswer": {
       "@type": "Answer",
       "text": "{{ faq3 }}"
     }
-  }]
+  }
+  {%- endif -%}
+  ]
 }
 </script>
 
