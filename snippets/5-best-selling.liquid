@@ -231,10 +231,11 @@
 </div></div>            
           </div>
 <script async>  
-  $(document).ready(function(){
-    $(".see-full-ingredent").click(function(){
-      $(".full-ingredint-list").slideToggle("slow").delay(800);
-    });
-  });
+$(document).ready(function () {
+                 $(".toggle-inner").hide(),
+                jQuery(".toggle .toggle-title").click(function () {
+                    jQuery(this).hasClass("active") ? jQuery(this).removeClass("active").closest(".toggle").find(".toggle-inner").slideUp(200) : jQuery(this).addClass("active").closest(".toggle").find(".toggle-inner").slideDown(200);
+                });
+        });
 </script>
 {%- endif -%}
