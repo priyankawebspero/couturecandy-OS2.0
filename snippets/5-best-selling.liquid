@@ -1,4 +1,4 @@
-{%- if collection.handle != "green-dresses" -%}
+
 {% assign in_stock = false %}
 {% for product in collection.products %}
   {% if product.available %}
@@ -11,6 +11,7 @@
       </div>
 <div class="collection_faq">
 <h2>Frequently Asked Questions About {{ collection.handle | capitalize | replace:'-', ' '}}</h2>
+{%- if collection.handle != "green-dresses" -%}  
 <div class="recommendations">
 <div class="col-6 table_prom best_seller">          
   <h3>→ What are the top 5 best selling {{collection.handle | replace:'-', ' '}} in {{  "now" | date: "%Y" | replace:"2022","2023" }} on {{shop.name}}?</h3> 
@@ -89,8 +90,9 @@
   </table>
 </div>
 </div>
+{%- endif -%}
 </div>
-
+{%- if collection.handle != "green-dresses" -%}
  {%- assign counter2 = 0 -%}
 {%- assign counter3 = 0 -%}
 {% capture faq2 %}
