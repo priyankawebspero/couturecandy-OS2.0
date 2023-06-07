@@ -66,6 +66,8 @@
     
       gtag('config', 'AW-950821702');
     </script> 
+      {% render 'weglot_hreftags' %}
+  {% render 'weglot_switcher' %}
 </head>
 
 {%- include 'class_body_theme' -%}
@@ -150,8 +152,7 @@
  <!--begin-boost-pfs-js-->
    {% render 'boost-pfs' %}
  <!--end-boost-pfs-js-->
-  {% render 'weglot_hreftags' %}
-  {% render 'weglot_switcher' %}
+
  
 	{%- render 'flits_capture_code' with 'load_snippet',template:'flits_snippet' -%}
     {% if request.page_type == 'product' %}
