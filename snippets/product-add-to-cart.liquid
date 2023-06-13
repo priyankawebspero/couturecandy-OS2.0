@@ -14,12 +14,12 @@ add-to-cart-form cart{%- if product.variants.size > 1 %} variations_form{%-endif
 <div class="quantity_test" style="margin-top: 10px;">
 <div id="variant-inventory"> </div>
 {% comment %}  {% if product.vendor == 'Jovani' or product.vendor == 'Ellie Wilde' or product.vendor == 'Faviana' or product.vendor == 'Mac Duggal' or product.vendor == 'Dancing Queen' or product.vendor == 'Alyce Paris' or product.vendor == 'La Femme' %}
-         {%- if current_variant.inventory_quantity <= 0 -%}
+         {%- if current_variant.inventory_quantity <= 0 and current_variant.price > 0 -%}
            {%- else -%}
                 <div class="callback">We currently have <span id="vistorspan">5</span> in stock.</div>
           {%- endif -%}
       {% endif %}{% endcomment %}
-  {%- if current_variant.inventory_quantity <= 0 -%}
+  {%- if current_variant.inventory_quantity <= 0 and current_variant.price > 0 -%}
            {%- else -%}
                 <div class="callback">We currently have <span id="vistorspan">5</span> in stock.</div>
           {%- endif -%}
