@@ -797,7 +797,7 @@
                        {%- endcomment -%}
                              
                              {%- if product.variants.size == 1 and sold_out -%}
-                                <p class="stock out-of-stock" id="out-of-stock-gl">{{ 'products.product.outofstock' | t }}</p>
+                                <p class="stock out-of-stock" id="out-of-stock-gl"><span class="contact_us_button test1"><a class="button" href="/pages/contact-us">Contact Us</a></span></p>
                                 {%- if settings.product_quantity_message -%}
                                 <div id="variantQuantity" class="variant-quantity{%- if current_variant.inventory_management %} show{%- endif -%}">
                                    {%- if current_variant.inventory_management -%}
