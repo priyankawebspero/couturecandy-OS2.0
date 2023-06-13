@@ -814,7 +814,7 @@
                                 {%- if check_external and product.variants.size == 1 -%}
                                    <p class="cart"><a href="{{ check }}" rel="nofollow" class="single_add_to_cart_button button alt">{{ product.metafields.external | first | first }}</a></p>
                                 {%- else -%}
-                                  {% render 'add-to-form' %}
+                                  {% include 'add-to-form' %}
                                 {%- endif -%}
                              {%- else -%}
                                 <form class="cart" method="post" enctype="multipart/form-data">
