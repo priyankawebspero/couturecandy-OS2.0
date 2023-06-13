@@ -3089,3 +3089,9 @@ span.contact_us_button a {
 .pswp--zoom-allowed .pswp__img {
      transform: scale(1.18);
 }
+.single-product-content .summary .out-of-stock {
+    padding: 0;
+    width: auto;
+    min-width: auto;
+    border: none;
+}
