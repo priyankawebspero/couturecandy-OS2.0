@@ -882,8 +882,10 @@
                                                   <input type="number" step="1" min="1" max="{%- if current_variant.inventory_quantity <= 0 and current_variant.available and current_variant.inventory_management != null -%}999{%- elsif current_variant.inventory_management != null -%}{{current_variant.inventory_quantity}}{%- else -%}999{%- endif -%}" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
                                                   <input type="button" value="+" class="plus">
                                                </div>
+                                               {% if product.available %} <span class="availability"></span>  {% endif %}
                                                <p class="stock out-of-stock variant_stock" id="out-of-stock-gl" style="display: none">{{ 'products.product.outofstock' | t }}</p>
                                                <p class="stock out-of-stock variant_stock" id="unavailable-gl" style="display: none">{{ 'products.product.unavailable' | t }}</p>
+
                                                
                                                {%- if check_external == false -%}
                                                {%- if current_variant.inventory_quantity <= 0 and current_variant.available and current_variant.inventory_management == 'shopify' -%}
