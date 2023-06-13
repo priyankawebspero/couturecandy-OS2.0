@@ -882,11 +882,12 @@
                                                   <input type="number" step="1" min="1" max="{%- if current_variant.inventory_quantity <= 0 and current_variant.available and current_variant.inventory_management != null -%}999{%- elsif current_variant.inventory_management != null -%}{{current_variant.inventory_quantity}}{%- else -%}999{%- endif -%}" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
                                                   <input type="button" value="+" class="plus">
                                                </div>
-                                               {% if product.available %}  {% else %}<span class="availability"></span>  {% endif %}
+                                               {% if product.available and product.price <= 0 %}
+                                               <span class="contact_us_button"><a class="button" href="/pages/contact-us">Contact Us</a></span> 
+                                               {% else %}
                                                <p class="stock out-of-stock variant_stock" id="out-of-stock-gl" style="display: none">{{ 'products.product.outofstock' | t }}</p>
-                                               <p class="stock out-of-stock variant_stock" id="unavailable-gl" style="display: none">{{ 'products.product.unavailable' | t }}</p>
-
-                                               
+                                               <p class="stock out-of-stock variant_stock" id="unavailable-gl" style="display: none">{{ 'products.product.unavailable' | t }}</p>                                            
+                                               {% endif %}                                               
                                                {%- if check_external == false -%}
                                                {%- if current_variant.inventory_quantity <= 0 and current_variant.available and current_variant.inventory_management == 'shopify' -%}
                                                   <button type="submit" id="shopify_add_to_cart" class="add_to_cart_button ajax_form_cart single_add_to_cart_button button alt if">{{ 'products.product.pre_orders' | t }}</button>
