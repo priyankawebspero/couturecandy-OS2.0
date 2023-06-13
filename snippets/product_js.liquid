@@ -226,7 +226,8 @@ Shopify.linkOptionSelectors = function(product) {
                {%- endif -%}
             {%- endif %}
           var last = $.cookie("last_stock"); 
-        if(variant){
+
+          if(variant){
             $variantId = variant.id;
             var d = new Date();
             const monthNames = ["January", "February", "March", "April", "May", "June",
@@ -297,6 +298,7 @@ Shopify.linkOptionSelectors = function(product) {
                      });
             }// variant.inventory_quantity > 1100
           else{
+            console.log("variant",variant);
               if ($('#shopify_quantity span').hasClass('product_has_old_date')) {
                   jQuery('.product_has_old_date').replaceWith(' <button type="submit" id="shopify_add_to_cart" class=" add_to_cart_button   ajax_form_cart single_add_to_cart_button button alt">{{ 'products.product.add_to_cart' | t }}</button>');
               }
@@ -322,6 +324,16 @@ Shopify.linkOptionSelectors = function(product) {
                   }
             } 
             jQuery('.product_has_old_date').replaceWith(' <button type="submit" id="shopify_add_to_cart" class="add_to_cart_button ajax_form_cart single_add_to_cart_button button alt">{{ 'products.product.add_to_cart' | t }}</button>');
+
+            // add check if the product price is ZERO than disable the ATC button
+            if(variant.price <= 0){
+              //if(jQuery(".contact_us_button").length < 0 ){
+                jQuery('#shopify_add_to_cart.add_to_cart_button').replaceWith('<span class="contact_us_button test1"><a class="button" href="/pages/contact-us">Contact Us</a></span>');
+              //}
+            }else{
+              jQuery('.contact_us_button').replaceWith(' <button type="submit" id="shopify_add_to_cart" class="add_to_cart_button ajax_form_cart single_add_to_cart_button button alt">{{ 'products.product.add_to_cart' | t }}</button>');
+              console.log("add button");
+            }
           }
            {%- if product.options.size == 1 -%}
                      if($('#gl_select_0 .basel-swatch.active-swatch').css('display') == 'none') {
