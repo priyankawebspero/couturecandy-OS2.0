@@ -1,1172 +1,141 @@
-<!--product_page_area.liquid----------------------->
-{%- if settings.first_available_variant or settings.remove_sold_out -%}
-{%- assign current_variant = product.selected_or_first_available_variant -%}
-{%- elsif product.selected_variant != blank  -%}
-{%- assign current_variant = product.selected_variant -%}
-{%- else -%}
-{%- assign current_variant = product.variants.first -%}
-{%- endif -%}
-{%- assign first_available_variant = settings.first_available_variant -%}
-{%- assign loop_countdown = settings.loop_show_countdown -%}
-{%- if settings.pr_image_size != blank -%}{%- assign crop_nt = settings.pr_image_size | replace: ' x', 'x' | replace: 'x ', 'x' -%}{%- endif -%}
-{%- if settings.pr_thumb_image_size != blank -%}{%- assign crop_thumb_nt = settings.pr_thumb_image_size | replace: ' x', 'x' | replace: 'x ', 'x' -%}{%- endif -%}
-{%- include 'check_label_gl' -%}
-{%- if settings.color_name_check != blank -%}{%- assign _gl_color_name = settings.color_name_check | replace: ' ,', ',' | replace: ', ', ',' | split: ',' -%}{%- assign gl_color_name = _gl_color_name | downcase -%}{%-else-%}{%- assign gl_color_name = '\nathan_dt\' -%}{%-endif-%}
-{%- for option in product.options_with_values -%}
-  {%- assign downcased_option = option.name | downcase -%}
-  {%- assign downcased_option_check = option.name | downcase | prepend: '"' | append: '"' | strip -%} 
-  {%- if downcased_option == 'color' or downcased_option == 'colour' or gl_color_name contains downcased_option_check -%}
-    {%- assign colour_count = option.values.size | plus:0 -%}
-  {%- endif -%}
-{%- endfor -%}
-{%- if settings.product_sidebar == 'left' -%}
-  {%- case settings.size_sidebar -%}
-    {% when '1' %}
-      {%- assign class_gl = 'col-sm-10 col-sm-push-2' -%}
-      {%- assign class_sidebar = 'col-sm-2 col-sm-pull-10' -%}
-    {% when '2' %}
-      {%- assign class_gl = 'col-sm-9 col-sm-push-3' -%}
-      {%- assign class_sidebar = 'col-sm-3 col-sm-pull-9' -%}
-    {% when '3' %}
-      {%- assign class_gl = 'col-sm-8 col-sm-push-4' -%}
-      {%- assign class_sidebar = 'col-sm-4 col-sm-pull-8' -%}
-  {%- endcase -%}
-{%- elsif settings.product_sidebar == 'right' -%}
-  {%- case settings.size_sidebar -%}
-    {% when '1' %}
-      {%- assign class_gl = 'col-sm-10' -%}
-      {%- assign class_sidebar = 'col-sm-2' -%}
-    {% when '2' %}
-      {%- assign class_gl = 'col-sm-9' -%}
-      {%- assign class_sidebar = 'col-sm-3' -%}
-    {% when '3' %}
-      {%- assign class_gl = 'col-sm-8' -%}
-      {%- assign class_sidebar = 'col-sm-4' -%}
-  {%- endcase -%}
-{%- else -%}
-  {%- assign class_gl = 'col-sm-12' -%}
-{%- endif -%}
-{%- case settings.size_img_products -%}
-    {% when '1' %}
-      {%- assign class_images = 'col-sm-4' -%}
-      {%- assign class_summary = 'col-sm-8' -%}
-    {% when '2' %}
-      {%- assign class_images = 'col-sm-7' -%}
-      {%- assign class_summary = 'col-sm-5' -%}
-    {% when '3' %}
-      {%- assign class_images = 'col-sm-8' -%}
-      {%- assign class_summary = 'col-sm-4' -%}
-{%- endcase -%}
-{%- case settings.countdown_style -%}
-   {%- when 'light' -%}
-     {%- assign countdown_style = 'color-scheme-dark timer-size-small timer-style-standard' -%} 
-   {%- when 'dark' -%}
-     {%- assign countdown_style = 'color-scheme-light timer-size-small timer-style-standard' -%}
-   {%- when 'transparent_1' -%}
-     {%- assign countdown_style = 'color-scheme-light timer-size-small timer-style-transparent' -%}
-  {%- when 'transparent_2' -%}
-     {%- assign countdown_style = 'color-scheme-dark timer-size-small timer-style-transparent' -%}
-{%- endcase -%}
-{%- if settings.show_share_btn and settings.share_type == '1' -%}
-  {%- assign gl_follow_social = false -%}
-{%- elsif settings.show_share_btn and settings.share_type == '2' -%}
-  {%- assign gl_follow_social = true -%}
-{%- endif -%}
-{%- include 'check_not_feature_img' -%}
-{% assign vendortitle = product.vendor | downcase  %}
-{%- if settings.show_grouped_variant_image and product.has_only_default_variant == false and product.images.size > 1 and not_group == false -%}{%- include 'check_position_feature_img' -%}{%-endif-%}
-<div class="single-breadcrumbs-wrapper">
-  <div class="container-fluid">
-     {%- include 'product_breadcrumb' -%}
-  </div>
-</div>
-<div class="container-fluid"></div>
-<div id="product-{{product.id}}" class="product-nathan-{{product.id}} nathan_style_{{settings.button_art_to_cart_style}} single-product-page single-product-content {{design_products_page}}{%- if product.metafields.meta.video contains 'youtube' or product.metafields.meta.video contains 'vimeo' %} product-with-attachments{%- endif %}{%- if linklists[product.handle].links.size > 0 %} product-type-grouped{%- endif %}{%- if settings.show_grouped_variant_image and product.images.size > 1 and product.has_only_default_variant == false and not_group == false %} gl_group_variant_images{%- endif -%}">
-{%- assign product_image_zoom_size = 'master' -%}
-{%- assign product_image_scale = '1' -%}
-  <div class="container-fluid">
-     <div class="row">
-        <div class="product-image-summary {{class_gl}}">
-           <div class="row">
-              {%- if product.images.size > 0 -%}
-             <div class="{{class_images}} product-images">
-                 {%- include 'product_labels' -%}
-                 <div class="shopify-product-gallery shopify-product-gallery--with-images shopify-product-gallery--columns-4 images row thumbs-position-{{settings.thumbnails_position}} image-action-{{settings.main_click}}">
-                    <div class="{%- if product.images.size > 1 and settings.thumbnails_position == 'left' and design_products_page != 'product-design-sticky' -%}col-md-9 col-md-push-2{%- else -%}col-sm-11{%- endif -%}">
-                       <figure id="gl_thum" class="shopify-product-gallery__wrapper{%- if design_products_page != 'product-design-sticky' %} owl-carousel{%- endif %}{%- if settings.main_click == 'popup' %} shopify-main-image{%- endif -%}">
-                       {%- if settings.show_grouped_variant_image and product.has_only_default_variant == false and product.images.size > 1 and not_group == false -%}
-                          {%- if current_variant.featured_image != blank -%}
-                             {%- assign image = current_variant.featured_image -%}
-                             {%- assign product_image_photowipe = image.width | append: 'x' -%}
-                             {%- if crop_nt != blank -%}
-                                {%- assign image_width_append = crop_nt -%}
-                                {%- assign image_width_append_arr = image_width_append | replace: ' x', 'x' | replace: 'x ', 'x' | replace: ' x ', 'x' | split: 'x' -%}
-                                {%- assign image_width = image_width_append_arr[0] -%}
-                                {%- assign image_size_first = image_width | plus:0 -%}
-                                {%- assign image_height = image_size_first | divided_by: image.aspect_ratio | round -%}
-                             {%- else -%} 
-                                {%- assign product_image_size = image.width | append: 'x' -%}
-                                {%- assign image_width = image.width -%}
-                             {%- endif -%}
-                         {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                             {%- if image.attached_to_variant? and settings.use_clicking_variant_image -%}
-                                <figure data-variant_id= "{{current_variant.id}}" data-lenght= "{{product.options.size}}" data-one='{{ current_variant.option1 | handleize }}' data-two= '{{ current_variant.option2 | handleize }}' data-three= '{{ current_variant.option3 | handleize }}' data-thumb="{%- if crop_thumb_nt != blank -%}{%-include 'gl_image_format_crop',src: image.src , size: crop_thumb_nt,position:'top' -%}{%- else -%}{%-include 'gl_image_format',cache:true,src: image.src , size: '219x' -%}{%- endif -%}" data-alt="{{image.alt}}" data-id="{{image.id}}" class="shopify-product-gallery__image test6">
-                                   <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale , format: 'pjpg' }}">
-                                     {%- if crop_nt != blank -%}
-                                     {%- assign image_height = 50 | divided_by: image.aspect_ratio | round -%}
-                                     {%- assign image_size_el = 50 | append:'x' | append:image_height -%}
-                                     <img width="{{ image_size_first }}" height="{{ image_height }}" src="{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %}" class="lazyload attachment-shop_catalog size-shop_catalog" alt="{{ image.alt | escape }}" 
-                                          data-src="{{ img_url }}" 
-                                      data-large_image="{%-include 'gl_image_format',cache:true, src: image.src, size: product_image_photowipe -%}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}" 
-                                        data-srcset="{%-include 'gl_image_format_crop',src: image.src , size: crop_nt,position:'top' %} {{image_size_first}}w 
-                                        {%- if image_size_first > 235 -%}{%- assign image_height = 235 | divided_by: image.aspect_ratio | round -%}{%- assign image_size_el = 235 | append:'x' | append:image_height -%},{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 235w{%- endif -%} 
-                                        {%- if image_size_first > 768 -%}{%- assign image_height = 768 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 768 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 768w{%- endif -%}
-                                        {%- if image_size_first > 803 -%}{%- assign image_height = 803 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 803 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 803w{%- endif -%} 
-                                        {%- if image_size_first > 266 -%}{%- assign image_height = 266 | divided_by: image.aspect_ratio | round -%}{%- assign image_size_el = 266 | append:'x' | append:image_height -%},{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 266w{%- endif -%} 
-                                        {%- if image_size_first > 219 -%}{%- assign image_height = 219 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 219 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 219w{%- endif -%} 
-                                        {%- if image_size_first > 526 -%}{%- assign image_height = 526 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 526 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 526w{%- endif -%}" sizes="(max-width: {{ image_size_first }}px) 100vw, {{ image_size_first }}px"> 
-                                   {%- else -%} 
-                                                   <img width="{{ image.width }}" height="{{ image.height }}" src="{{ image | img_url: '50x50' }}" class="lazyload attachment-shop_single size-shop_single sp-post-image" alt="{{image.alt}}" title="{{product.title}}" 
-                                                   data-src="{{ img_url }}" 
-                                                   data-large_image="{%-include 'gl_image_format',cache:true, src: image.src, size: product_image_photowipe -%}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}" 
-                                                   data-widths="[180, 360, 540, 720]" data-aspectratio="{{ image.aspect_ratio }}" data-sizes="auto">
-                                                 {%- endif -%}
-                                      <div class="jas-wrap-lazy"></div>
-                                   </a>
-                                </figure>
-                             {%- else -%}
-                             <figure data-thumb="{%- if crop_thumb_nt != blank -%}{%-include 'gl_image_format_crop',src: image.src , size: crop_thumb_nt,position:'top' -%}{%- else -%}{%-include 'gl_image_format',cache:true,src: image.src , size: '219x' -%}{%- endif -%}" data-alt="{{image.alt}}" data-id="{{image.id}}" class="shopify-product-gallery__image test5">
-                                <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}">
-                                {%- if crop_nt != blank -%}
-                                      {%- assign image_height = 50 | divided_by: image.aspect_ratio | round -%}
-                                     {%- assign image_size_el = 50 | append:'x' | append:image_height -%}
-                                     <img width="{{ image_size_first }}" height="{{ image_height }}" src="{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %}" class="lazyload attachment-shop_catalog size-shop_catalog" alt="{{ image.alt | escape }}" 
-                                          data-src="{{ img_url }}" 
-                                      data-large_image="{%-include 'gl_image_format',cache:true, src: image.src, size: product_image_photowipe -%}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}" 
-                                        data-srcset="{%-include 'gl_image_format_crop',src: image.src , size: crop_nt,position:'top' %} {{image_size_first}}w 
-                                        {%- if image_size_first > 235 -%}{%- assign image_height = 235 | divided_by: image.aspect_ratio | round -%}{%- assign image_size_el = 235 | append:'x' | append:image_height -%},{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 235w{%- endif -%} 
-                                        {%- if image_size_first > 768 -%}{%- assign image_height = 768 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 768 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 768w{%- endif -%}
-                                        {%- if image_size_first > 803 -%}{%- assign image_height = 803 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 803 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 803w{%- endif -%} 
-                                        {%- if image_size_first > 266 -%}{%- assign image_height = 266 | divided_by: image.aspect_ratio | round -%}{%- assign image_size_el = 266 | append:'x' | append:image_height -%},{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 266w{%- endif -%} 
-                                        {%- if image_size_first > 219 -%}{%- assign image_height = 219 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 219 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 219w{%- endif -%} 
-                                        {%- if image_size_first > 526 -%}{%- assign image_height = 526 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 526 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 526w{%- endif -%}" sizes="(max-width: {{ image_size_first }}px) 100vw, {{ image_size_first }}px"> 
-                                {%- else -%} 
-                                                   <img width="{{ image.width }}" height="{{ image.height }}" src="{{ image | img_url: '50x50' }}" class="lazyload attachment-shop_single size-shop_single sp-post-image" alt="{{image.alt}}" title="{{product.title}}" 
-                                                   data-src="{{ img_url }}" 
-                                                   data-large_image="{%-include 'gl_image_format',cache:true, src: image.src, size: product_image_photowipe -%}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}" 
-                                                   data-widths="[180, 360, 540, 720]" data-aspectratio="{{ image.aspect_ratio }}" data-sizes="auto">
-                                                 {%- endif -%}
-                                  <div class="jas-wrap-lazy"></div>
-                                </a>
-                             </figure>
-                             {%- endif -%}
-                          {%- endif -%}
-                          {%- assign option_index = 0 -%}{%-assign image_index = 0-%}
-                           {%- for option in product.options -%}
-                             {%- assign downcased_option = option | downcase -%}
-                             {%- assign downcased_option_check = option | downcase | prepend: '"' | append: '"' | strip -%} 
-                             {%- if downcased_option == 'color' or downcased_option == 'colour' or gl_color_name contains downcased_option_check -%}
-                                 {%- assign option_index = forloop.index0 -%}
-                                 {%- assign displayed_option_values = '' -%}
-                                 {%- for variant in product.variants -%}
+{% capture "form_classes" -%}
+add-to-cart-form cart{%- if product.variants.size > 1 %} variations_form{%-endif %}
+{%- if settings.show_watch_products %} swatch-color-single{%- endif -%}
+{%- endcapture %}
+{%- form 'product', product, id: "cart-form", class: form_classes -%}
+<select name="id" id="product-select" class="product-form__variants hide hidden">
+  {%- for variant in product.variants -%}
+      <div nes_estimate style="display: none;">{{ variant.metafields.estimate.date }}</div>
 
-                                   {%- assign option_value = variant.options[option_index] -%}
-                                   {%- unless displayed_option_values contains option_value -%}
-                                   {%- if current_variant.option1 == option_value or current_variant.option2 == option_value or current_variant.option3 == option_value -%}
-                                          {%- assign imgs_arr_child = imgs_arr[image_index] | split:','  -%}
-                                           {%- for src in imgs_arr_child -%}
-                                               {%- for image in product.images -%}
-                                                  {%- if src == image and src != current_variant.featured_image -%}
-                                                  {%- assign product_image_photowipe = image.width | append: 'x' -%}
-                                                  {%- if crop_nt != blank -%}
-                                                     {%- assign image_width_append = crop_nt -%}
-                                                     {%- assign image_width_append_arr = image_width_append | replace: ' x', 'x' | replace: 'x ', 'x' | replace: ' x ', 'x' | split: 'x' -%}
-                                                     {%- assign image_width = image_width_append_arr[0] -%}
-                                                     {%- assign image_size_first = image_width | plus:0 -%}
-                                                  {%- else -%}
-                                                     {%- assign product_image_size = image.width | append: 'x' -%}
-                                                     {%- assign image_width = image.width -%}
-                                                  {%- endif -%}
-                                                  {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                                                     {%- if image.attached_to_variant? and settings.use_clicking_variant_image -%}
-                                                        {%- for variant in image.variants -%}
-                                                           <figure data-variant_id= "{{variant.id}}" data-lenght= "{{product.options.size}}" data-one='{{ variant.option1 | handleize }}' data-two= '{{ variant.option2 | handleize }}' data-three= '{{ variant.option3 | handleize }}' data-thumb="{%- if crop_thumb_nt != blank -%}{%-include 'gl_image_format_crop',src: image.src , size: crop_thumb_nt,position:'top' -%}{%- else -%}{%-include 'gl_image_format',cache:true,src: image.src , size: '219x' -%}{%- endif -%}" data-alt="{{image.alt}}" data-id="{{image.id}}" class="shopify-product-gallery__image test4">
-                                                              <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}">
-                                                                 {%- if crop_nt != blank -%}
-                                                                   {%- assign image_height = 50 | divided_by: image.aspect_ratio | round -%}
-                                     {%- assign image_size_el = 50 | append:'x' | append:image_height -%}
-                                     <img width="{{ image_size_first }}" height="{{ image_height }}" src="{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %}" class="lazyload attachment-shop_catalog size-shop_catalog" alt="{{ image.alt | escape }}" 
-                                          data-src="{{ img_url }}" 
-                                                                        data-large_image="{%-include 'gl_image_format',cache:true, src: image.src, size: product_image_photowipe -%}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}" 
-                                                                      data-srcset="{%-include 'gl_image_format_crop',src: image.src , size: crop_nt,position:'top' %} {{image_size_first}}w 
-                                                                      {%- if image_size_first > 235 -%}{%- assign image_height = 235 | divided_by: image.aspect_ratio | round -%}{%- assign image_size_el = 235 | append:'x' | append:image_height -%},{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 235w{%- endif -%} 
-                                                                      {%- if image_size_first > 768 -%}{%- assign image_height = 768 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 768 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 768w{%- endif -%}
-                                                                      {%- if image_size_first > 803 -%}{%- assign image_height = 803 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 803 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 803w{%- endif -%} 
-                                                                      {%- if image_size_first > 266 -%}{%- assign image_height = 266 | divided_by: image.aspect_ratio | round -%}{%- assign image_size_el = 266 | append:'x' | append:image_height -%},{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 266w{%- endif -%} 
-                                                                      {%- if image_size_first > 219 -%}{%- assign image_height = 219 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 219 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 219w{%- endif -%} 
-                                                                      {%- if image_size_first > 526 -%}{%- assign image_height = 526 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 526 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 526w{%- endif -%}" sizes="(max-width: {{ image_size_first }}px) 100vw, {{ image_size_first }}px"> 
-                                                                 {%- else -%} 
-                                                   <img width="{{ image.width }}" height="{{ image.height }}" src="{{ image | img_url: '50x50' }}" class="lazyload attachment-shop_single size-shop_single sp-post-image" alt="{{image.alt}}" title="{{product.title}}" 
-                                                   data-src="{{ img_url }}" 
-                                                   data-large_image="{%-include 'gl_image_format',cache:true, src: image.src, size: product_image_photowipe -%}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}" 
-                                                   data-widths="[180, 360, 540, 720]" data-aspectratio="{{ image.aspect_ratio }}" data-sizes="auto">
-                                                 {%- endif -%}
-                                                                <div class="jas-wrap-lazy"></div>
-                                                              </a>
-                                                           </figure>
-                                                        {%- endfor -%}
-                                                     {%- else -%}
-                                                        <figure data-thumb="{%- if crop_thumb_nt != blank -%}{%-include 'gl_image_format_crop',src: image.src , size: crop_thumb_nt,position:'top' -%}{%- else -%}{%-include 'gl_image_format',cache:true,src: image.src , size: '219x' -%}{%- endif -%}" data-alt="{{image.alt}}" data-id="{{image.id}}" class="shopify-product-gallery__image test3">
-                                                           <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}">
-                                                              {%- if crop_nt != blank -%}
-                                                                {%- assign image_height = 50 | divided_by: image.aspect_ratio | round -%}
-                                     {%- assign image_size_el = 50 | append:'x' | append:image_height -%}
-                                     <img width="{{ image_size_first }}" height="{{ image_height }}" src="{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %}" class="lazyload attachment-shop_catalog size-shop_catalog" alt="{{ image.alt | escape }}" 
-                                          data-src="{{ img_url }}" 
-                                                                   data-large_image="{%-include 'gl_image_format',cache:true, src: image.src, size: product_image_photowipe -%}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}" 
-                                                                    data-srcset="{%-include 'gl_image_format_crop',src: image.src , size: crop_nt,position:'top' %} {{image_size_first}}w 
-                                                                   {%- if image_size_first > 235 -%}{%- assign image_height = 235 | divided_by: image.aspect_ratio | round -%}{%- assign image_size_el = 235 | append:'x' | append:image_height -%},{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 235w{%- endif -%} 
-                                                                   {%- if image_size_first > 768 -%}{%- assign image_height = 768 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 768 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 768w{%- endif -%}
-                                                                   {%- if image_size_first > 803 -%}{%- assign image_height = 803 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 803 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 803w{%- endif -%} 
-                                                                   {%- if image_size_first > 266 -%}{%- assign image_height = 266 | divided_by: image.aspect_ratio | round -%}{%- assign image_size_el = 266 | append:'x' | append:image_height -%},{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 266w{%- endif -%} 
-                                                                   {%- if image_size_first > 219 -%}{%- assign image_height = 219 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 219 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 219w{%- endif -%} 
-                                                                   {%- if image_size_first > 526 -%}{%- assign image_height = 526 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 526 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 526w{%- endif -%}" sizes="(max-width: {{ image_size_first }}px) 100vw, {{ image_size_first }}px"> 
-                                                              {%- else -%} 
-                                                   <img width="{{ image.width }}" height="{{ image.height }}" src="{{ image | img_url: '50x50' }}" class="lazyload attachment-shop_single size-shop_single sp-post-image" alt="{{image.alt}}" title="{{product.title}}" 
-                                                   data-src="{{ img_url }}" 
-                                                   data-large_image="{%-include 'gl_image_format',cache:true, src: image.src, size: product_image_photowipe -%}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}" 
-                                                   data-widths="[180, 360, 540, 720]" data-aspectratio="{{ image.aspect_ratio }}" data-sizes="auto">
-                                                 {%- endif -%}
-                                                             <div class="jas-wrap-lazy"></div>
-                                                           </a>
-                                                        </figure>
-                                                     {%- endif -%}
-                                                  {%- endif -%}
-                                               {%- endfor -%}
-                                             {%- endfor -%}
-                                   {%- endif -%}
-                                     {%- assign displayed_option_values = displayed_option_values | join: ',' -%}
-                                     {%- assign displayed_option_values = displayed_option_values | append: ',' | append: option_value -%}
-                                     {%- assign displayed_option_values = displayed_option_values | split: ',' -%}
-                                     {%- assign image_index = image_index | plus: 1 -%}
-                                     {%- endunless -%}
-                                   {%- endfor -%}
-                             {%- endif -%}
-                             {%- endfor -%}
-                       {%-else-%}
-                          {%- if current_variant.featured_image != blank -%}
-                             {%- assign image = current_variant.featured_image -%}
-                              {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                             {%- assign product_image_photowipe = image.width | append: 'x' -%}
-                             {%- if crop_nt != blank -%}
-                                {%- assign image_width_append = crop_nt -%}
-                                {%- assign image_width_append_arr = image_width_append | replace: ' x', 'x' | replace: 'x ', 'x' | replace: ' x ', 'x' | split: 'x' -%}
-                                {%- assign image_width = image_width_append_arr[0] -%}
-                                {%- assign image_size_first = image_width | plus:0 -%}
-                             {%- else -%} 
-                                {%- assign product_image_size = image.width | append: 'x' -%}
-                                {%- assign image_width = image.width -%}
-                             {%- endif -%}
-                                {%- if image.attached_to_variant? and settings.use_clicking_variant_image -%}
-                                      <figure data='{{ forloop.index}}' data-variant_id= "{{current_variant.id}}" data-lenght= "{{product.options.size}}" data-one='{{ current_variant.option1 | handleize | handleize }}' data-two= '{{ current_variant.option2 | handleize | handleize }}' data-three= '{{ current_variant.option3 | handleize | handleize }}' data-thumb="{%- if crop_thumb_nt != blank -%}{%-include 'gl_image_format_crop',src: image.src , size: crop_thumb_nt,position:'top' -%}{%- else -%}{%-include 'gl_image_format',cache:true,src: image.src , size: '219x' -%}{%- endif -%}" data-alt="{{image.alt}}" data-id="{{image.id}}" class="shopify-product-gallery__image test2">
-                                         <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}">
-                                            {%- if crop_nt != blank -%}
-                                              {%- assign image_height = 50 | divided_by: image.aspect_ratio | round -%}
-                                     {%- assign image_size_el = 50 | append:'x' | append:image_height -%}
-                                     <img width="{{ image_size_first }}" height="{{ image_height }}" src="{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %}" class="lazyload attachment-shop_catalog size-shop_catalog" alt="{{ image.alt | escape }}" 
-                                          data-src="{{ img_url }}" 
-                                      data-large_image="{%-include 'gl_image_format',cache:true, src: image.src, size: product_image_photowipe -%}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}" 
-                                                 data-srcset="{%-include 'gl_image_format_crop',src: image.src , size: crop_nt,position:'top' %} {{image_size_first}}w 
-                                                 {%- if image_size_first > 235 -%}{%- assign image_height = 235 | divided_by: image.aspect_ratio | round -%}{%- assign image_size_el = 235 | append:'x' | append:image_height -%},{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 235w{%- endif -%} 
-                                                 {%- if image_size_first > 768 -%}{%- assign image_height = 768 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 768 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 768w{%- endif -%}
-                                                 {%- if image_size_first > 803 -%}{%- assign image_height = 803 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 803 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 803w{%- endif -%} 
-                                                 {%- if image_size_first > 266 -%}{%- assign image_height = 266 | divided_by: image.aspect_ratio | round -%}{%- assign image_size_el = 266 | append:'x' | append:image_height -%},{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 266w{%- endif -%} 
-                                                 {%- if image_size_first > 219 -%}{%- assign image_height = 219 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 219 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 219w{%- endif -%} 
-                                                 {%- if image_size_first > 526 -%}{%- assign image_height = 526 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 526 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 526w{%- endif -%}" sizes="(max-width: {{ image_size_first }}px) 100vw, {{ image_size_first }}px"> 
-                                            {%- else -%} 
-                                             <img class="attachment-shop_single size-shop_single sp-post-image lazyload"
-                  src="{{ image | img_url: '50x50' }}"
-                  data-src="{{ img_url }}"
-                  data-widths="[180, 360, 540, 720]"
-                  data-aspectratio="{{ image.aspect_ratio }}"
-                  data-sizes="auto"
-                  data-variant_id= "{{variant.id}}" data-image-id="{{ image.id }}"
-                  data-large_image="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}"
-                  alt="{{ image.alt | split:'|' | last | escape }}">
-                                           {%- endif -%}
-                                           <div class="jas-wrap-lazy"></div>
-                                         </a>
-                                      </figure>
-                                {%- else -%}
-                                   <figure data-thumb="{%- if crop_thumb_nt != blank -%}{%-include 'gl_image_format_crop',src: image.src , size: crop_thumb_nt,position:'top' -%}{%- else -%}{%-include 'gl_image_format',cache:true,src: image.src , size: '219x' -%}{%- endif -%}" data-alt="{{image.alt}}" data-id="{{image.id}}" class="shopify-product-gallery__image test1">
-                                      <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}">
-                                         {%- if crop_nt != blank -%}
-                                           {%- assign image_height = 50 | divided_by: image.aspect_ratio | round -%}
-                                     {%- assign image_size_el = 50 | append:'x' | append:image_height -%}
-                                     <img width="{{ image_size_first }}" height="{{ image_height }}" src="{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %}" class="lazyload attachment-shop_catalog size-shop_catalog" alt="{{ image.alt | escape }}" 
-                                          data-src="{{ img_url }}" 
-                                      data-large_image="{%-include 'gl_image_format',cache:true, src: image.src, size: product_image_photowipe -%}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}" 
-                                              data-srcset="{%-include 'gl_image_format_crop',src: image.src , size: crop_nt,position:'top' %} {{image_size_first}}w 
-                                              {%- if image_size_first > 235 -%}{%- assign image_height = 235 | divided_by: image.aspect_ratio | round -%}{%- assign image_size_el = 235 | append:'x' | append:image_height -%},{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 235w{%- endif -%} 
-                                              {%- if image_size_first > 768 -%}{%- assign image_height = 768 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 768 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 768w{%- endif -%}
-                                              {%- if image_size_first > 803 -%}{%- assign image_height = 803 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 803 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 803w{%- endif -%} 
-                                              {%- if image_size_first > 266 -%}{%- assign image_height = 266 | divided_by: image.aspect_ratio | round -%}{%- assign image_size_el = 266 | append:'x' | append:image_height -%},{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 266w{%- endif -%} 
-                                              {%- if image_size_first > 219 -%}{%- assign image_height = 219 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 219 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 219w{%- endif -%} 
-                                              {%- if image_size_first > 526 -%}{%- assign image_height = 526 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 526 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 526w{%- endif -%}" sizes="(max-width: {{ image_size_first }}px) 100vw, {{ image_size_first }}px"> 
-                                         {%- else -%} 
-                                          <img class="attachment-shop_single size-shop_single sp-post-image lazyload"
-                                              src="{{ image | img_url: '50x50' }}"
-                                              data-src="{{ img_url }}"
-                                              data-widths="[180, 360, 540, 720]"
-                                              data-aspectratio="{{ image.aspect_ratio }}"
-                                              data-sizes="auto"
-                                              width="600"
-                                              height="800"
-                                              data-variant_id= "{{variant.id}}" data-image-id="{{ image.id }}"
-                                              data-large_image="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}"
-                                              alt="{{ image.alt | split:'|' | last | escape }}">
-                                        {%- endif -%}
-                                        <div class="jas-wrap-lazy"></div>
-                                      </a>
-                                   </figure>
-                                {%- endif -%}
-                          {%- elsif variant_recoment == true -%}
-                             {%- assign id_page = id_page | json -%}
-                             {%- for image in product.images -%}
-                          {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                                {%- for variant in image.variants -%}
-                                   {%- assign image_re_id = image.id | prepend :'"'| append: '"'-%}
-                                     {%- if image_re_id == id_page -%}
-                                      {%- if crop_nt != blank -%}
-                                        {%- assign image_width_append = crop_nt -%}
-                                         {%- assign image_width_append_arr = image_width_append | replace: ' x', 'x' | replace: 'x ', 'x' | replace: ' x ', 'x' | split: 'x' -%}
-                                         {%- assign image_width = image_width_append_arr[0] -%}
-                                         {%- assign image_size_first = image_width | plus:0 -%}
-                                      {%- else -%}
-                                        {%- assign product_image_size = image.width | append: 'x' -%}
-                                        {%- assign image_width = image.width -%}
-                                      {%- endif -%}
-                                      {%- assign product_image_photowipe = image.width | append: 'x' -%}
-                                      {%- if image.attached_to_variant? and settings.use_clicking_variant_image -%}
-                                         {%- for variant in image.variants -%}
-                                            <figure data-variant_id= "{{variant.id}}" data-lenght= "{{product.options.size}}" data-one='{{ variant.option1 | handleize }}' data-two= '{{ variant.option2 | handleize }}' data-three= '{{ variant.option3 | handleize }}' data-thumb="{%- if crop_thumb_nt != blank -%}{%-include 'gl_image_format_crop',src: image.src , size: crop_thumb_nt,position:'top' -%}{%- else -%}{%-include 'gl_image_format',cache:true,src: image.src , size: '219x' -%}{%- endif -%}" data-alt="{{image.alt}}" data-id="{{image.id}}" class="shopify-product-gallery__image test10">
-                                               <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}">
-                                                  {%- if crop_nt != blank -%}
-                                                    {%- assign image_height = 50 | divided_by: image.aspect_ratio | round -%}
-                                     {%- assign image_size_el = 50 | append:'x' | append:image_height -%}
-                                     <img width="{{ image_size_first }}" height="{{ image_height }}" src="{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %}" class="lazyload attachment-shop_catalog size-shop_catalog" alt="{{ image.alt | escape }}" 
-                                          data-src="{{ img_url }}" 
-                                      data-large_image="{%-include 'gl_image_format',cache:true, src: image.src, size: product_image_photowipe -%}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}" 
-                                                       data-srcset="{%-include 'gl_image_format_crop',src: image.src , size: crop_nt,position:'top' %} {{image_size_first}}w 
-                                                       {%- if image_size_first > 235 -%}{%- assign image_height = 235 | divided_by: image.aspect_ratio | round -%}{%- assign image_size_el = 235 | append:'x' | append:image_height -%},{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 235w{%- endif -%} 
-                                                       {%- if image_size_first > 768 -%}{%- assign image_height = 768 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 768 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 768w{%- endif -%}
-                                                       {%- if image_size_first > 803 -%}{%- assign image_height = 803 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 803 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 803w{%- endif -%} 
-                                                       {%- if image_size_first > 266 -%}{%- assign image_height = 266 | divided_by: image.aspect_ratio | round -%}{%- assign image_size_el = 266 | append:'x' | append:image_height -%},{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 266w{%- endif -%} 
-                                                       {%- if image_size_first > 219 -%}{%- assign image_height = 219 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 219 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 219w{%- endif -%} 
-                                                       {%- if image_size_first > 526 -%}{%- assign image_height = 526 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 526 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 526w{%- endif -%}" sizes="(max-width: {{ image_size_first }}px) 100vw, {{ image_size_first }}px"> 
-                                                  {%- else -%} 
-                                                   <img width="{{ image.width }}" height="{{ image.height }}" src="{{ image | img_url: '50x50' }}" class="lazyload attachment-shop_single size-shop_single sp-post-image" alt="{{image.alt}}" title="{{product.title}}" 
-                                                   data-src="{{ img_url }}" 
-                                                   data-large_image="{%-include 'gl_image_format',cache:true, src: image.src, size: product_image_photowipe -%}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}" 
-                                                   data-widths="[180, 360, 540, 720]" data-aspectratio="{{ image.aspect_ratio }}" data-sizes="auto">
-                                                 {%- endif -%}
-                                                 <div class="jas-wrap-lazy"></div>
-                                               </a>
-                                            </figure>
-                                         {%- endfor -%}
-                                      {%- else -%}
-                                         <figure data-thumb="{%- if crop_thumb_nt != blank -%}{%-include 'gl_image_format_crop',src: image.src , size: crop_thumb_nt,position:'top' -%}{%- else -%}{%-include 'gl_image_format',cache:true,src: image.src , size: '219x' -%}{%- endif -%}" data-alt="{{image.alt}}" data-id="{{image.id}}" class="shopify-product-gallery__image test8">
-                                            <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}">
-                                               {%- if crop_nt != blank -%}
-                                                 {%- assign image_height = 50 | divided_by: image.aspect_ratio | round -%}
-                                     {%- assign image_size_el = 50 | append:'x' | append:image_height -%}
-                                     <img width="{{ image_size_first }}" height="{{ image_height }}" src="{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %}" class="lazyload attachment-shop_catalog size-shop_catalog" alt="{{ image.alt | escape }}" 
-                                          data-src="{{ img_url }}" 
-                                      data-large_image="{%-include 'gl_image_format',cache:true, src: image.src, size: product_image_photowipe -%}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}" 
-                                                    data-srcset="{%-include 'gl_image_format_crop',src: image.src , size: crop_nt,position:'top' %} {{image_size_first}}w 
-                                                    {%- if image_size_first > 235 -%}{%- assign image_height = 235 | divided_by: image.aspect_ratio | round -%}{%- assign image_size_el = 235 | append:'x' | append:image_height -%},{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 235w{%- endif -%} 
-                                                    {%- if image_size_first > 768 -%}{%- assign image_height = 768 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 768 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 768w{%- endif -%}
-                                                    {%- if image_size_first > 803 -%}{%- assign image_height = 803 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 803 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 803w{%- endif -%} 
-                                                    {%- if image_size_first > 266 -%}{%- assign image_height = 266 | divided_by: image.aspect_ratio | round -%}{%- assign image_size_el = 266 | append:'x' | append:image_height -%},{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 266w{%- endif -%} 
-                                                    {%- if image_size_first > 219 -%}{%- assign image_height = 219 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 219 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 219w{%- endif -%} 
-                                                    {%- if image_size_first > 526 -%}{%- assign image_height = 526 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 526 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 526w{%- endif -%}" sizes="(max-width: {{ image_size_first }}px) 100vw, {{ image_size_first }}px"> 
-                                               {%- else -%} 
-                                                <img class="attachment-shop_single size-shop_single sp-post-image lazyload"
-                  src="{{ image | img_url: '50x50' }}"
-                  data-src="{{ img_url }}"
-                  data-widths="[180, 360, 540, 720]"
-                  data-aspectratio="{{ image.aspect_ratio }}"
-                  data-sizes="auto"
-                  data-variant_id= "{{variant.id}}" data-image-id="{{ image.id }}"
-                  data-large_image="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}"
-                  alt="{{ image.alt | split:'|' | last | escape }}">
-                                              {%- endif -%}
-                                              <div class="jas-wrap-lazy"></div>
-                                            </a>
-                                         </figure>
-                                      {%- endif -%}
-                                      {%- assign current_variant_re_nt = image -%}
-                                     {%- endif -%}
-                                {%- endfor- %}
-                             {%- endfor -%}
-                          {%- endif -%}
-                          {%- for image in product.images -%}
-                          {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                          {%- unless current_variant.featured_image == image or current_variant_re_nt == image -%}
-                             {%- if crop_nt != blank -%}
-                                {%- assign image_width_append = crop_nt -%}
-                                {%- assign image_width_append_arr = image_width_append | replace: ' x', 'x' | replace: 'x ', 'x' | replace: ' x ', 'x' | split: 'x' -%}
-                                {%- assign image_width = image_width_append_arr[0] -%}
-                                {%- assign image_size_first = image_width | plus:0 -%}
-                              {%- else -%}
-                                {%- assign product_image_size = image.width | append: 'x' -%}
-                                {%- assign image_width = image.width -%}
-                              {%- endif -%}
-                              {%- assign product_image_photowipe = image.width | append: 'x' -%}
-                             {%- if image.attached_to_variant? and settings.use_clicking_variant_image -%}
-                                {%- for variant in image.variants -%}
-                                   <figure data-variant_id= "{{variant.id}}" data-lenght= "{{product.options.size}}" data-one='{{ variant.option1 | handleize }}' data-two= '{{ variant.option2 | handleize }}' data-three= '{{ variant.option3 | handleize }}' data-thumb="{%- if crop_thumb_nt != blank -%}{%-include 'gl_image_format_crop',src: image.src , size: crop_thumb_nt,position:'top' -%}{%- else -%}{%-include 'gl_image_format',cache:true,src: image.src , size: '219x' -%}{%- endif -%}" data-alt="{{image.alt}}" data-id="{{image.id}}" class="shopify-product-gallery__image test9">
-                                      <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}">
-                                         {%- if crop_nt != blank -%}
-                                           {%- assign image_height = 50 | divided_by: image.aspect_ratio | round -%}
-                                     {%- assign image_size_el = 50 | append:'x' | append:image_height -%}
-                                     <img width="{{ image_size_first }}" height="{{ image_height }}" src="{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %}" class="lazyload attachment-shop_catalog size-shop_catalog" alt="{{ image.alt | escape }}" 
-                                          data-src="{{ img_url }}" 
-                                      data-large_image="{%-include 'gl_image_format',cache:true, src: image.src, size: product_image_photowipe -%}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}" 
-                                              data-srcset="{%-include 'gl_image_format_crop',src: image.src , size: crop_nt,position:'top' %} {{image_size_first}}w 
-                                              {%- if image_size_first > 235 -%}{%- assign image_height = 235 | divided_by: image.aspect_ratio | round -%}{%- assign image_size_el = 235 | append:'x' | append:image_height -%},{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 235w{%- endif -%} 
-                                              {%- if image_size_first > 768 -%}{%- assign image_height = 768 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 768 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 768w{%- endif -%}
-                                              {%- if image_size_first > 803 -%}{%- assign image_height = 803 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 803 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 803w{%- endif -%} 
-                                              {%- if image_size_first > 266 -%}{%- assign image_height = 266 | divided_by: image.aspect_ratio | round -%}{%- assign image_size_el = 266 | append:'x' | append:image_height -%},{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 266w{%- endif -%} 
-                                              {%- if image_size_first > 219 -%}{%- assign image_height = 219 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 219 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 219w{%- endif -%} 
-                                              {%- if image_size_first > 526 -%}{%- assign image_height = 526 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 526 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 526w{%- endif -%}" sizes="(max-width: {{ image_size_first }}px) 100vw, {{ image_size_first }}px"> 
-                                         {%- else -%} 
-                                          <img class="attachment-shop_single size-shop_single sp-post-image lazyload"
-                  src="{{ image | img_url: '50x50' }}"
-                  data-src="{{ img_url }}"
-                  data-widths="[180, 360, 540, 720]"
-                  data-aspectratio="{{ image.aspect_ratio }}"
-                  data-sizes="auto"
-                  data-variant_id= "{{variant.id}}" data-image-id="{{ image.id }}"
-                  data-large_image="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}"
-                  alt="{{ image.alt | split:'|' | last | escape }}">
-                                        {%- endif -%}
-                                        <div class="jas-wrap-lazy"></div>
-                                      </a>
-                                   </figure>
-                                {%- endfor -%}
-                             {%- else -%}
-                                <figure data-thumb="{%- if crop_thumb_nt != blank -%}{%-include 'gl_image_format_crop',src: image.src , size: crop_thumb_nt,position:'top' -%}{%- else -%}{%-include 'gl_image_format',cache:true,src: image.src , size: '219x' -%}{%- endif -%}" data-alt="{{image.alt}}" data-id="{{image.id}}" class="shopify-product-gallery__image test7">
-                                  <a href="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}">
-                                      {%- if crop_nt != blank -%}
-                                        {%- assign image_height = 50 | divided_by: image.aspect_ratio | round -%}
-                                     {%- assign image_size_el = 50 | append:'x' | append:image_height -%}
-                                     <img width="{{ image_size_first }}" height="{{ image_height }}" src="{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %}" class="lazyload attachment-shop_catalog size-shop_catalog" alt="{{ image.alt | escape }}" 
-                                          data-src="{{ img_url }}" 
-                                      data-large_image="{%-include 'gl_image_format',cache:true, src: image.src, size: product_image_photowipe -%}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}" 
-                                           data-srcset="{%-include 'gl_image_format_crop',src: image.src , size: crop_nt,position:'top' %} {{image_size_first}}w 
-                                           {%- if image_size_first > 235 -%}{%- assign image_height = 235 | divided_by: image.aspect_ratio | round -%}{%- assign image_size_el = 235 | append:'x' | append:image_height -%},{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 235w{%- endif -%} 
-                                           {%- if image_size_first > 768 -%}{%- assign image_height = 768 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 768 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 768w{%- endif -%}
-                                           {%- if image_size_first > 803 -%}{%- assign image_height = 803 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 803 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 803w{%- endif -%} 
-                                           {%- if image_size_first > 266 -%}{%- assign image_height = 266 | divided_by: image.aspect_ratio | round -%}{%- assign image_size_el = 266 | append:'x' | append:image_height -%},{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 266w{%- endif -%} 
-                                           {%- if image_size_first > 219 -%}{%- assign image_height = 219 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 219 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 219w{%- endif -%} 
-                                           {%- if image_size_first > 526 -%}{%- assign image_height = 526 | divided_by: image.aspect_ratio | round -%},{%- assign image_size_el = 526 | append:'x' | append:image_height -%}{%-include 'gl_image_format_crop',src: image.src , size:image_size_el,position:'top' %} 526w{%- endif -%}" sizes="(max-width: {{ image_size_first }}px) 100vw, {{ image_size_first }}px"> 
-                                      {%- else -%} 
-                                      <img id="product-main-image" class="attachment-shop_single size-shop_single sp-post-image lazyload" src="{{ image | img_url: '50x50' }}" data-src="{{ img_url }}"
-                                       width="600"
-                                              height="800"
-                                       data-widths="[180, 360, 540, 720]" data-aspectratio="{{ image.aspect_ratio }}"
-                  data-sizes="auto" data-variant_id= "{{variant.id}}" data-image-id="{{ image.id }}"
-                  data-large_image="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}" data-large_image_width="{{ image.width }}" data-large_image_height="{{ image.height }}"
-                  alt="{{ image.alt | split:'|' | last | escape }}">
-
-                                     {%- endif -%}
-                                     <div class="jas-wrap-lazy"></div>
-                                   </a>
-                                </figure>
-                             {%- endif -%}
-                          {%- endunless -%}
-                          {%- endfor -%}
-                       {%-endif-%}
-                       </figure>
-                       {%- if settings.main_click == 'zoom' and settings.show_zoom_img -%}<div class="basel-show-product-gallery-wrap"><a href="#" class="basel-show-product-gallery basel-tooltip"><span class="basel-tooltip-label">{{ 'products.product.click_zoom' | t }}</span>{{ 'products.product.click_zoom' | t }}</a></div>{%- endif -%}
-                    </div>
-                    {%- if product.images.size > 1 and design_products_page != 'product-design-sticky' -%}<div class="{%- if settings.thumbnails_position == 'left' -%}col-md-2 col-md-pull-9{%- else -%}col-sm-12{%- endif -%}"><div id="gl_thumbnails" class="thumbnails"></div></div>{%- endif -%}
-                 </div>
-                 {%- if settings.use_view_360 -%}
-                 {%- elsif product.metafields.meta.video contains 'youtube' or product.metafields.meta.video contains 'vimeo' -%}
-                    <div class="product-additional-galleries">
-                       <div class="product-video-button">
-                       <a href="{{product.metafields.meta.video}}"><span>{{ 'products.product.video' | t }}</span></a>
-                       </div>
-                    </div>
-                 {%- endif -%}
-                 <div class="Info" id="ProdDetailInfo">
-                      <div class="Details shipping">
-                           <div class="Image">
-                               <div class="image shipping_image">
-                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;width: 50px;height: 50px;" xml:space="preserve">
-                                   <style type="text/css">
-                                     .st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
-                                   </style>
-                                   <g id="_x31_">
-                                     <path id="XMLID_24_" class="st0" d="M19.1,40.6l-1,0c-0.7,0-1.3-0.6-1.3-1.3v-1.1"/>
-                                     <path id="XMLID_23_" class="st0" d="M16.7,23.5v-5c0-0.7,0.6-1.3,1.3-1.3l18.2,0c0.7,0,1.3,0.6,1.3,1.3v22.1l-7.2,0"/>
-                                     <path id="XMLID_13_" class="st0" d="M39.3,40.6h-1.7V21.2h6.8c0.6,0,1.1,0.2,1.5,0.6l5.3,5.1c0.4,0.4,0.6,1,0.6,1.5v10.7   c0,0.7-0.6,1.3-1.3,1.3h-0.2"/>
-                                     <g id="XMLID_12_">
-                                       <path id="XMLID_34_" d="M43.3,27l2.6,2.6v2.3h-3.6V27H43.3 M43.6,25h-2.6c-0.4,0-0.6,0.3-0.6,0.6v7.6c0,0.4,0.3,0.6,0.6,0.6h6.3    c0.4,0,0.6-0.3,0.6-0.6v-4c0-0.4-0.2-0.7-0.5-1l-3-3C44.2,25.1,43.9,25,43.6,25L43.6,25z"/>
-                                     </g>
-                                     <line id="XMLID_8_" class="st0" x1="16.4" y1="26.5" x2="26" y2="26.5"/>
-                                     <line id="XMLID_9_" class="st0" x1="14.3" y1="30.8" x2="24.8" y2="30.8"/>
-                                     <line id="XMLID_10_" class="st0" x1="12.1" y1="35.1" x2="22.7" y2="35.1"/>
-                                     <g id="XMLID_7_">
-                                       <path id="XMLID_30_" d="M24.8,41.2c1,0,1.8,0.8,1.8,1.8s-0.8,1.8-1.8,1.8S23,44,23,43S23.8,41.2,24.8,41.2 M24.8,39.2    c-2.1,0-3.8,1.7-3.8,3.8s1.7,3.8,3.8,3.8s3.8-1.7,3.8-3.8S26.9,39.2,24.8,39.2L24.8,39.2z"/>
-                                     </g>
-                                     <g id="XMLID_14_">
-                                       <path id="XMLID_26_" d="M44.8,41.2c1,0,1.8,0.8,1.8,1.8s-0.8,1.8-1.8,1.8S43,44,43,43S43.8,41.2,44.8,41.2 M44.8,39.2    c-2.1,0-3.8,1.7-3.8,3.8s1.7,3.8,3.8,3.8s3.8-1.7,3.8-3.8S46.9,39.2,44.8,39.2L44.8,39.2z"/>
-                                     </g>
-                                   </g>
-                                   <g id="XMLID_244_">
-                                     <path id="XMLID_20_" d="M32,2c16.5,0,30,13.5,30,30S48.5,62,32,62S2,48.5,2,32S15.5,2,32,2 M32,0C14.3,0,0,14.3,0,32s14.3,32,32,32   s32-14.3,32-32S49.7,0,32,0L32,0z"/>
-                                   </g>
-                                 </svg>
-                                 </div>
-                               <span>Free Shipping</span>
-                           </div>
-                           <div class="Cnt">
-                               <span>Free shipping for orders over $250</span><br>
-                               <a href="https://www.couturecandy.com/shipping-returns-exchanges/" target="_blank">See Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                           </div>
-                      </div>
-                      <div class="Details Exchange">
-                       <div class="Image">
-                               <div class="image exchange_image">
-                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;width: 50px;height: 50px;" xml:space="preserve">
-                                   <style type="text/css">
-                                     .st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
-                                     .st1{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
-                                   </style>
-                                   <g id="_x32_">
-                                     <g id="XMLID_95_">
-                                       <path id="XMLID_45_" d="M32,2c16.5,0,30,13.5,30,30S48.5,62,32,62S2,48.5,2,32S15.5,2,32,2 M32,0C14.3,0,0,14.3,0,32    s14.3,32,32,32s32-14.3,32-32S49.7,0,32,0L32,0z"/>
-                                     </g>
-                                     <g id="XMLID_11_">
-                                       <line id="XMLID_158_" class="st0" x1="32.5" y1="30.4" x2="19.9" y2="25.2"/>
-                                       <polyline id="XMLID_154_" class="st0" points="19.9,30.7 19.9,37.4 31.8,43.5   "/>
-                                       <path id="XMLID_153_" class="st0" d="M45.4,25.1l-13.1-4.6l-13.1,4.1"/>
-                                       <polyline id="XMLID_152_" class="st0" points="44.7,30.5 44.7,37.9 32.3,42.9 32.3,30.7 44.7,25.7   "/>
-                                       <polyline id="XMLID_156_" class="st0" points="31.9,30.2 29.6,34.8 17.4,29.2 19.8,24.1   "/>
-                                       <polyline id="XMLID_157_" class="st0" points="32.3,30.2 34.4,35.1 46.6,29.5 44.8,24.5   "/>
-                                       <line id="XMLID_5_" class="st0" x1="32.3" y1="20.5" x2="32.3" y2="27.4"/>
-                                     </g>
-                                     <g id="XMLID_1_">
-                                       <path id="XMLID_4_" class="st1" d="M50,18.1c3,3.9,4.8,8.7,4.8,14c0,12.6-10.2,22.8-22.8,22.8c-4.8,0-9.3-1.5-13-4.1"/>
-                                       <path id="XMLID_15_" class="st1" d="M44.7,13.1c-1.4-1-3-1.8-4.6-2.4c-2.5-1-5.3-1.5-8.1-1.5C19.4,9.3,9.2,19.5,9.2,32.1    c0,5,1.6,9.7,4.4,13.4"/>
-                                       <path id="XMLID_3_" class="st1" d="M40,14.6l5.6-0.5c0.3,0,0.6-0.4,0.4-0.7l-2-5.2"/>
-                                       <path id="XMLID_2_" class="st1" d="M24.1,49.5l-5.7,0.3c-0.3,0-0.6,0.3-0.4,0.7l1.8,5.3"/>
-                                     </g>
-                                   </g>
-                                 </svg>
-                             </div>
-                               <span>Exchanges &amp; Returns</span>
-                           </div>
-                           <div class="Cnt">
-                               <span>Easy returns &amp; exchanges within 5 days on eligible items</span>
-                               <a href="https://www.couturecandy.com/pages/returns-and-exchanges/" target="_blank">See Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                           </div>
-                      </div>
-                      <div class="Details Price-match">
-                           <div class="Image">
-                              <div class="image price_image">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;width: 50px;height: 50px;" xml:space="preserve">
-                                  <g id="XMLID_9_">
-                                    <g id="XMLID_437_">
-                                      <path id="XMLID_15_" d="M32,2c16.5,0,30,13.5,30,30S48.5,62,32,62S2,48.5,2,32S15.5,2,32,2 M32,0C14.3,0,0,14.3,0,32    s14.3,32,32,32s32-14.3,32-32S49.7,0,32,0L32,0z"/>
-                                    </g>
-                                    <g id="XMLID_8_">
-                                      <path id="XMLID_30_" d="M49.6,41L49.6,41c-0.2-0.9-0.8-1.6-1.7-1.8c-0.5-0.1-1.2-0.1-1.8,0.1l-1.9,0.5c-2,0.5-4.1,1.1-6.1,1.6    c-0.1,0-0.2,0-0.3,0c-1.3-0.5-2.5-1-3.8-1.5c-1.8-0.7-3.5-1.4-5.3-2.1c-1.7-0.7-3.5-0.5-5.1,0.4c-0.6,0.4-1.3,0.7-1.9,1.1    c-0.3,0.2-0.6,0.4-0.9,0.6l-1.4,0.9l-0.7-1.1c-0.2-0.3-0.4-0.4-0.6-0.5c-0.2-0.1-0.5,0-0.7,0.1c-0.2,0.1-0.8,0.5-1.3,0.8l-1.4,0.8    c-0.3,0.2-0.5,0.6-0.3,1l6.8,11.8c0.1,0.2,0.3,0.3,0.4,0.3c0.1,0,0.1,0,0.2,0c0.1,0,0.3,0,0.4-0.1c0.7-0.4,2.4-1.4,2.7-1.6    c0.5-0.3,0.7-0.8,0.3-1.3l-0.6-1.1c0.8-0.5,1.7-0.6,2.7-0.4l3.5,1c1.7,0.5,3.4,1,5.1,1.5c1,0.3,2.2,0.1,3-0.6    c1.2-1,2.5-1.9,3.7-2.9l2.8-2.2c1.1-0.9,2.3-1.7,3.4-2.6C49.6,42.9,49.8,42,49.6,41z M28,39.3c2.2,0.9,4.4,1.8,6.6,2.6l2.9,1.2    c0.4,0.2,0.9,0.3,1.3,0.5c0.4,0.2,0.5,0.5,0.5,0.9c0,0.4-0.3,0.6-0.7,0.7c-0.2,0-0.3,0-0.5-0.1l-0.1,0c-2-0.4-4-0.8-5.9-1.2    l-1.1-0.2c-0.5-0.1-1,0.2-1.1,0.6c0,0.2,0,0.5,0.1,0.6c0.1,0.2,0.3,0.3,0.6,0.4l1.3,0.3c2.1,0.4,4.1,0.9,6.2,1.3    c1.2,0.2,2.3-0.4,2.8-1.4c0.4-1,0.2-2.1-0.5-2.8c0.1,0,0.2-0.1,0.3-0.1l1-0.3c1.6-0.4,3.2-0.8,4.8-1.2c0.3-0.1,0.6-0.1,0.8-0.1    c0.5,0,0.7,0.3,0.7,0.4c0.1,0.3,0,0.7-0.3,0.9l-3.4,2.6c-2.2,1.7-4.3,3.3-6.5,5c-0.5,0.4-0.9,0.5-1.5,0.3c-1.1-0.3-2.2-0.6-3.4-1    c-1.7-0.5-3.3-1-5-1.4c-0.6-0.2-1.1-0.3-1.7-0.3c-0.9,0-1.7,0.2-2.6,0.7l-3.5-6.1l2.3-1.4c0.6-0.4,1.2-0.7,1.8-1.1    C25.5,38.9,26.8,38.8,28,39.3z M23.3,51l-0.4,0.2c-0.3,0.2-0.5,0.3-0.8,0.4l-5.7-10c0.3-0.2,0.8-0.5,1.2-0.7L23.3,51z"/>
-                                      <g id="XMLID_7_">
-                                        <g id="XMLID_4_">
-                                          <path id="XMLID_2_" d="M37.6,35.5c-4.3,0-7.8-3.5-7.8-7.8s3.5-7.8,7.8-7.8s7.8,3.5,7.8,7.8S41.9,35.5,37.6,35.5z M37.6,21.8      c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S40.9,21.8,37.6,21.8z"/>
-                                          <path id="XMLID_18_" d="M39.9,28c-0.2-0.2-0.5-0.4-0.8-0.5c-0.3-0.1-0.6-0.2-0.9-0.3c-0.2-0.1-0.4-0.1-0.6-0.2l-0.1,0      c-0.4-0.1-0.6-0.2-1-0.4c-0.1,0-0.1-0.1-0.2-0.2c0-0.1,0-0.2,0.1-0.3c0.1-0.1,0.2-0.2,0.3-0.2c0,0,0.1,0,0.1-0.1      c0.5-0.2,1.1-0.2,1.6,0c0.2,0.1,0.3,0.2,0.3,0.5c0,0.2,0.2,0.4,0.4,0.4c0.2,0,0.5,0,0.7,0c0.1,0,0.2,0,0.3-0.1      c0,0,0.1-0.1,0.1-0.3c0-0.1,0-0.3-0.1-0.4C40,25.4,39.6,25,39,24.8c-0.2-0.1-0.4-0.1-0.6-0.1l-0.1,0c0,0,0,0,0,0      c0-0.1,0-0.2,0-0.2c0-0.2-0.1-0.3-0.3-0.3c-0.2,0-0.4,0-0.6,0c-0.2,0-0.3,0.2-0.3,0.4c0,0.1,0,0.1,0,0.2c0,0,0,0-0.1,0l-0.1,0      c-0.5,0.1-0.9,0.3-1.2,0.5c-0.4,0.3-0.6,0.9-0.5,1.4c0,0.5,0.3,0.9,0.7,1.1c0.2,0.1,0.5,0.2,0.7,0.3c0.2,0.1,0.5,0.1,0.7,0.2      c0.3,0.1,0.5,0.1,0.8,0.2c0.3,0.1,0.5,0.2,0.7,0.3c0,0,0,0,0.1,0c0.1,0.1,0.2,0.3,0.1,0.4c0,0.2-0.3,0.5-0.6,0.5      c-0.4,0.1-0.8,0.1-1.3,0c-0.5-0.1-0.7-0.3-0.8-0.7c0-0.2-0.2-0.3-0.4-0.3c-0.2,0-0.4,0-0.6,0c-0.1,0-0.2,0-0.3,0.1      c-0.1,0.1-0.1,0.2-0.1,0.3c0,0.4,0.2,0.7,0.4,1c0.4,0.4,0.9,0.7,1.6,0.8c0.1,0,0.1,0,0.1,0c0,0,0,0.1,0,0.1v0.1      c0,0.2,0.1,0.4,0.3,0.4c0.1,0,0.2,0,0.3,0c0.1,0,0.2,0,0.3,0c0.2,0,0.3-0.1,0.3-0.4c0-0.1,0-0.1,0-0.2c0,0,0.1,0,0.1,0      c0.5-0.1,0.9-0.2,1.2-0.4c0.5-0.3,0.7-0.7,0.8-1.3C40.4,28.8,40.3,28.4,39.9,28z"/>
-                                        </g>
-                                        <g id="XMLID_1_">
-                                          <path id="XMLID_3_" d="M31.2,25.2c-3.8-0.5-6.7-3.8-6.7-7.7c0-4.3,3.5-7.8,7.8-7.8s7.8,3.5,7.8,7.8c0,1.3-0.3,2.5-0.9,3.6      l-1.6-0.8c0.5-0.9,0.7-1.8,0.7-2.8c0-3.3-2.7-6-6-6c-3.3,0-6,2.7-6,6c0,3,2.2,5.5,5.2,5.9L31.2,25.2z"/>
-                                          <path id="XMLID_19_" d="M34.6,17.7c-0.2-0.2-0.5-0.4-0.8-0.5c-0.3-0.1-0.6-0.2-0.9-0.3c-0.2-0.1-0.4-0.1-0.6-0.2l-0.1,0      c-0.4-0.1-0.6-0.2-1-0.4c-0.1,0-0.1-0.1-0.2-0.2c0-0.1,0-0.2,0.1-0.3c0.1-0.1,0.2-0.2,0.3-0.2c0,0,0.1,0,0.1-0.1      c0.5-0.2,1.1-0.2,1.6,0c0.2,0.1,0.3,0.3,0.3,0.5c0,0.2,0.1,0.4,0.4,0.4c0.2,0,0.5,0,0.7,0c0.1,0,0.2,0,0.3-0.1      c0,0,0.1-0.1,0.1-0.3c0-0.1,0-0.3-0.1-0.4c-0.2-0.6-0.6-1-1.2-1.2c-0.2-0.1-0.4-0.1-0.6-0.1l-0.1,0c0,0,0,0,0,0      c0-0.1,0-0.2,0-0.2c0-0.2-0.1-0.3-0.3-0.3c-0.2,0-0.4,0-0.6,0c-0.2,0-0.3,0.2-0.3,0.4c0,0.1,0,0.1,0,0.2c0,0,0,0,0,0l-0.1,0      c-0.5,0.1-0.9,0.3-1.3,0.5c-0.4,0.3-0.6,0.9-0.6,1.4c0,0.5,0.3,0.9,0.8,1.1c0.3,0.1,0.5,0.2,0.7,0.3c0.3,0.1,0.5,0.2,0.8,0.2      c0.3,0.1,0.5,0.1,0.8,0.2c0.3,0.1,0.5,0.2,0.7,0.3c0,0,0,0,0.1,0c0.1,0.1,0.2,0.3,0.1,0.4c0,0.2-0.3,0.5-0.6,0.5      c-0.4,0.1-0.9,0.1-1.3,0c-0.5-0.1-0.7-0.4-0.8-0.8c0-0.2-0.2-0.3-0.4-0.3c-0.2,0-0.4,0-0.6,0c-0.1,0-0.2,0-0.3,0.1      c-0.1,0.1-0.1,0.2-0.1,0.3c0,0.4,0.2,0.7,0.4,1c0.4,0.4,0.9,0.7,1.6,0.8c0.1,0,0.1,0,0.1,0c0,0,0,0.1,0,0.1l0,0.1      c0,0.2,0.1,0.4,0.3,0.4c0.1,0,0.2,0,0.3,0c0.1,0,0.2,0,0.3,0c0.2,0,0.3-0.1,0.3-0.4c0-0.1,0-0.1,0-0.2l0,0c0,0,0.1,0,0.1,0      c0.5-0.1,0.9-0.2,1.2-0.4c0.5-0.3,0.8-0.8,0.8-1.3C35.1,18.5,34.9,18,34.6,17.7z"/>
-                                        </g>
-                                      </g>
-                                    </g>
-                                  </g>
-                                </svg>
-                             </div>
-                               <span>Price Match</span>
-                           </div>
-                           <div class="Cnt">
-                               <span>Find a lower price? We'll match it. Exclusions may apply.</span>
-                               <a href="https://www.couturecandy.com/shipping-returns-exchanges/" target="_blank">See Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                           </div>
-                      </div>
-                      <div class="Details No Tax">
-                           <div class="Image">
-                              <div class="image no_tax_image">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;width: 50px;height: 50px;" xml:space="preserve">
-                                  <style type="text/css">
-                                    .st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
-                                    .st1{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
-                                  </style>
-                                  <g id="XMLID_74_">
-                                    <path id="XMLID_13_" d="M32,2c16.5,0,30,13.5,30,30S48.5,62,32,62S2,48.5,2,32S15.5,2,32,2 M32,0C14.3,0,0,14.3,0,32s14.3,32,32,32   s32-14.3,32-32S49.7,0,32,0L32,0z"/>
-                                  </g>
-                                  <g id="XMLID_182_">
-                                    <path id="XMLID_57_" class="st0" d="M16.8,37.6l25.7,11.8c0.6,0.3,1.3,0,1.5-0.6l7.2-15.5c0.3-0.6,0-1.3-0.6-1.5L25,20   c-0.4-0.2-0.8-0.2-1.2,0l-10.3,4.6c-0.6,0.3-0.9,1-0.7,1.6L16,36.7C16.2,37.1,16.4,37.5,16.8,37.6z"/>
-                                    <circle id="XMLID_58_" class="st0" cx="20.3" cy="28.6" r="2.3"/>
-                                    <path id="XMLID_61_" class="st1" d="M19.1,26.6c0,0-7.1-8.3-3.5-11.5c0.6-0.5,1.4-0.7,2.2-0.5c1.3,0.4,2.7,1.9,2.8,6.2"/>
-                                    <g id="XMLID_181_">
-                                      <g id="XMLID_62_">
-                                        <path id="XMLID_64_" d="M34.6,27.7l-0.5,1l-1.4-0.7l-2,4.3l-1.3-0.6l2-4.3L30,26.8l0.5-1L34.6,27.7z"/>
-                                        <path id="XMLID_69_" d="M36.5,33.9l-2-0.9l-0.8,0.8l-1.4-0.6l4.4-4.4l1.5,0.7l-0.5,6.2L36.4,35L36.5,33.9z M36.7,32.7l0.2-2.3     l-1.6,1.7L36.7,32.7z"/>
-                                        <path id="XMLID_170_" d="M41.7,37.4l-0.3-2.1l-1.7,1.2l-1.5-0.7l3-1.9l-0.5-3.4l1.5,0.7l0.3,2.1l1.7-1.2l1.5,0.7l-2.9,1.9     l0.5,3.5L41.7,37.4z"/>
-                                      </g>
-                                      <g id="XMLID_63_">
-                                        <path id="XMLID_172_" d="M31,34.4l-0.5,1l-2.2-1l-0.5,1.1l1.6,0.8l-0.5,1l-1.6-0.8l-1,2.2l-1.3-0.6l2.5-5.3L31,34.4z"/>
-                                        <path id="XMLID_174_" d="M32,41.3l-0.2-2.5l-0.3-0.1l-0.9,2L29.2,40l2.5-5.3l2.2,1c0.4,0.2,0.7,0.4,1,0.7     c0.2,0.3,0.4,0.6,0.4,0.9c0,0.3,0,0.6-0.2,1c-0.2,0.4-0.4,0.6-0.7,0.8c-0.3,0.2-0.7,0.2-1.2,0.2l0.3,2.7L32,41.3z M31.9,37.7     l0.8,0.4c0.2,0.1,0.4,0.1,0.6,0.1c0.2-0.1,0.3-0.2,0.4-0.4c0.1-0.2,0.1-0.4,0-0.6c-0.1-0.2-0.2-0.3-0.5-0.4l-0.8-0.4L31.9,37.7z"/>
-                                        <path id="XMLID_177_" d="M37.5,38.6L37,39.7l1.7,0.8l-0.5,1l-1.7-0.8L36,41.9l2,0.9l-0.5,1l-3.3-1.5l2.5-5.3l3.3,1.5l-0.5,1     L37.5,38.6z"/>
-                                        <path id="XMLID_179_" d="M41.6,40.5l-0.5,1.1l1.7,0.8l-0.5,1l-1.7-0.8l-0.5,1.2l2,0.9l-0.5,1l-3.3-1.5l2.5-5.3l3.3,1.5l-0.5,1     L41.6,40.5z"/>
-                                      </g>
-                                    </g>
-                                  </g>
-                                </svg>  
-                             </div>
-                               <span>No Tax</span>
-                           </div>
-                           <div class="Cnt">
-                               <span>No Sales Tax if shipped outside NV, CA, GA, MA, MI, FL, IL - Save 10%.</span>
-                               <a href="https://www.couturecandy.com/shipping-returns-exchanges/" target="_blank">See Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                           </div> 
-                      </div>                                                                         
-                   </div><!--ProdDetailInfo main-->
-              </div>
+<option  data-sku="{{ variant.sku }}" data-index="{{ forloop.index0 }}" value="{{ variant.id }}"{%- if variant.id == current_variant.id %} selected="selected"{%- endif -%}>{{ variant.title }}</option>
+  {%- endfor -%}
+</select>
+{%- if product.has_only_default_variant == false and settings.swatch_design != '3' -%}{%- include 'swatch' -%}{%- elsif product.has_only_default_variant == false and settings.swatch_design == '3' -%}{%- include 'swatch_simple' -%}{%- endif -%}
+<div class="quantity_test" style="margin-top: 10px;">
+<div id="variant-inventory"> </div>
+{% comment %}  {% if product.vendor == 'Jovani' or product.vendor == 'Ellie Wilde' or product.vendor == 'Faviana' or product.vendor == 'Mac Duggal' or product.vendor == 'Dancing Queen' or product.vendor == 'Alyce Paris' or product.vendor == 'La Femme' %}
+         {%- if current_variant.inventory_quantity <= 0 -%}
+           {%- else -%}
+                <div class="callback">We currently have <span id="vistorspan">5</span> in stock.</div>
+          {%- endif -%}
+      {% endif %}{% endcomment %}
+  {%- if current_variant.inventory_quantity <= 0 -%}
+           {%- else -%}
+                <div class="callback">We currently have <span id="vistorspan">5</span> in stock.</div>
+          {%- endif -%}
+      {%- if settings.show_real_time_visitor -%}
+          {% if product.vendor == 'Jovani' or product.vendor == 'Ellie Wilde' %}
+                <div class="fake_counter_real_time gl_pt_15">
+                     {{settings.text_real}} <span id="number_counter"><span>4</span>
+                     <i class="fa fa-bolt" aria-hidden="true"></i></span> {{settings.text_visitor}}
+                </div>
+          {%- endif -%}
+    {%- endif -%}
+  </div>      
+{%- if product.variants.size > 1 -%}
+  <div class="single_variation_wrap {% if product.available %}{%- else -%}full-width{%- endif -%}">
+       {%- if product.price_varies -%}
+      <!--  <div class="shopify-variation single_variation">
+           <div class="shopify-variation-price">
+             <span style="display: none;" class="price" id="productPrice">
+               {%- if on_sale -%}<del id="old-product-price">{{ current_variant.compare_at_price | money }}</del> <ins id="product-price"><span class="Bold-theme-hook-DO-NOT-DELETE bold_product_price_3" data-override-value-set="1" data-override-value="{{ current_variant.price }}" style="display:none !important;"></span>{{ current_variant.price | money }}</ins>
+               {%- else -%}
+               <span id="product-price"><span class="Bold-theme-hook-DO-NOT-DELETE bold_product_price_4" data-override-value-set="1" data-override-value="{{ current_variant.price }}" style="display:none !important;"></span>{{ current_variant.price | money }}</span> 
+               {%- endif -%}
+             </span>-
+           </div>
+        </div> -->
+        {%- endif -%}
+       {%- if settings.product_quantity_message -%}
+          <div id="variantQuantity" class="variant-quantity{%- if product.has_only_default_variant and current_variant.inventory_management %} show{%- endif -%}">
+             {%- if product.has_only_default_variant and current_variant.inventory_management -%}
+                {%- if current_variant.inventory_quantity < 10 and current_variant.inventory_quantity > 0 -%}
+                   {{ 'products.product.only_left' | t: count: current_variant.inventory_quantity }}
+                {%- elsif current_variant.inventory_quantity <= 0 and current_variant.incoming -%}
+                  {%- assign next_incoming_date = current_variant.next_incoming_date | date: format: 'month_day_year' -%}
+    {{ 'products.product.will_not_ship_until' | t: date:next_incoming_date }}
+                {%- endif -%}
+             {%- endif -%}
+          </div>
+          {%- endif -%}
+      <div class="shopify-variation-add-to-cart variations_button shopify-variation-add-to-cart-enabled">
+          <div id="shopify_quantity" class="quantity">
+             <input type="button" value="-" class="minus">
+             <input type="number" step="1" min="1" max="{%- if current_variant.inventory_quantity <= 0 and current_variant.available and current_variant.inventory_management != null -%}999{%- elsif current_variant.inventory_management != null -%}{{current_variant.inventory_quantity}}{%- else -%}999{%- endif -%}" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
+             <input type="button" value="+" class="plus">
+          </div>
+          <p class="stock out-of-stock variant_stock" id="out-of-stock-gl" style="display: none">{{ 'products.product.outofstock' | t }}</p>
+          <p class="stock out-of-stock variant_stock" id="unavailable-gl" style="display: none">{{ 'products.product.unavailable' | t }}</p>
+          
+          {%- if check_external == false -%}
+          {%- if current_variant.inventory_quantity <= 0 and current_variant.available and current_variant.inventory_management == 'shopify' -%}
+             <button type="submit" id="shopify_add_to_cart" class="add_to_cart_button ajax_form_cart single_add_to_cart_button button alt if">{{ 'products.product.pre_orders' | t }}</button>
+         {%- else -%}
+         {% if product.available %} 
+              {% if product.vendor == 'Wilderly Bride by Allure Bridals' or product.vendor == 'Mori Lee Bridal' or product.vendor == 'Primavera Bridal' or product.vendor == 'Alyce Paris ' or product.price <= 0 %}
+                <span class="contact_us_button test1"><a class="button" href="/pages/contact-us">Contact Us</a></span>
+              {% else %}
+                  <button type="submit"  id="shopify_add_to_cart" class="add_to_cart_button ajax_form_cart single_add_to_cart_button button alt else {%- if current_variant.inventory_quantity > 1100 -%} futureDDays_popup nbsp   {%- endif -%}  ">{{ 'products.product.add_to_cart' | t }}</button>
               {%- endif -%}
-              <div class="{{class_summary}} summary entry-summary">
-                 <div class="summary-inner{%- if design_products_page == 'product-design-compact' %} basel-scroll{%- endif -%}">
-                    <div class="basel-scroll-content">
-                     {% assign vendortitle = product.vendor | downcase  %}
-
-                     {% assign vendortitle_handle = product.vendor | handleize  %}
-                   <h1 itemprop="name" class="product_title entry-title" height="30px">{{ product.title }}</h1>
-                        {% for collection in product.collections  -%}
-                                   {% assign collectionurls = collection.url  %}
-                           
-                        {%- endfor -%}
-                       <div class="Value" style="min-height:25px; display: flex;" itemprop="brand" itemscope="" itemtype="http://schema.org/Brand">
-                             <div class="brand">
-                                 <h4 class="BrandName"><a href="/collections/{{ vendortitle_handle }}">{%- if vendortitle == 'ccsale' -%} {% else %} {{ vendortitle }} {%- endif -%} </a></h4>
-
-                          </div>
-                          {%- if settings.show_product_page_rating -%}
-                          <a href="#ReviewSection" class="shopify-product-rating" style="min-width:170px">
-                            {%- for block in section.blocks -%}              
-                               {% case block.type %}              
-                               {% when '@app' %}
-                                   {% render block  %}
-                                 {% break %}
-                               {% endcase %}
-                             {%- endfor -%} 
-                           </a>
-                          {%- endif -%}
-                     </div>
-                       <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
-                         <input type="hidden" name="Product_Price" id="tracking_price" value="{{ product.price | money_without_currency }}">
-                          <p class="price" id="productPrice">
-                           {% capture Theproduc %} 
-                              {{ product.compare_at_price_max | minus:product.price | money }} <!-- percentage maths -->
-                           {% endcapture %}
-
-                           {% capture discountamount %} 
-                              {{ product.compare_at_price_max | minus:product.price | money }} <!-- percentage maths -->
-                           {% endcapture %}
-
-                           {% capture discount %} 
-
-                                 {{ product.compare_at_price_max | minus:product.price | times:100 | divided_by:product.compare_at_price_max | append: '%'}}
-                      
-                           {% endcapture %}
-                         
-                       {% if product.available %}
-                           {% if product.compare_at_price_max > 0 %}
-                             <del id="old-product-price">{{ product.compare_at_price_max | money }}</del> 
-                               <ins id="product-price">
-                               <span class="Bold-theme-hook-DO-NOT-DELETE bold_product_price" data-override-value-set="1" data-override-value="{{ product.price }}" style="display:none !important;"></span>
-                               <span class="money">{{ product.price | money }}</span></ins>
-                           {% else %}
-                               <input type="hidden" value="{{ product.variants.size }}" name="vSize">
-                                {% if product.price > 0 %}
-                                   {% if product.variants.size == 1  %} 
-                                     <span class="product-price" itemprop="price">
-                                     {{ product.price | money_with_currency }}</span>
-                                   {% endif %}
-                                   <span class="product-price" style="display:none;" itemprop="price">
-                                   {{ product.price | money_without_currency| remove:'.00'}}</span>
-                                   <span class="product-price">
-                                     <span class="Bold-theme-hook-DO-NOT-DELETE bold_product_price_2" data-override-value-set="1" data-override-value="{{ product.price }}" style="display:none !important;">
-                                     </span>
-                                   </span>
-                                 {% endif %}
-                           {% endif %}
-                         {% else %}
-                             <span class="product-price" itemprop="price">{{ 'products.product.sold_out' | t }}</span>
-                         {% endif %}
-                                
-                          </p>
-                          <span id="save_percentage"></span>
-                          <div class="Value social" style="color: #ff6666;font-size: 17px;font-weight: bold;margin-bottom: 15px; min-height:47px;">
-                                {% if product.type contains 'CCSALE' or product.tags contains 'Clearance Dresses' %}                             
-                                100% Authenticity Guarantee
-                                  <span style="display: block;color: #ff6666;font-size: 17px;font-weight: bold;margin-top: 10px;">The Final Sale is non-returnable</span>
-                               {%- else -%}
-                               100% Authenticity Guarantee
-                                {% endif %}
-                               {% if  product.vendor == 'Montce Swim' %}
-                                    <span style="color: #ff6666;display:block;font-size: 16px;margin: 10px 0px 0px;font-weight: bold;margin-bottom: 15px;">Use Code MONTCE5 for 5% OFF</span>
-                               {% elsif product.vendor == 'Voda Swim' %}
-                               <span style="color: #ff6666;font-size: 16px;display:block;margin: 10px 0px 0px;font-weight: bold;margin-bottom: 15px;">Use Code VODA10 for 10% OFF</span>
-                                     
-                               {% elsif product.vendor == 'Elizabeth Cole Jewelry' %}
-                                   <span style="color: #ff6666;font-size: 16px;display:block;margin: 10px 0px 0px;font-weight: bold;margin-bottom: 15px;">Use Code ECJ10 for 10% OFF</span>
-                               {% elsif product.vendor == 'CZ by Kenneth Jay Lane' %}
-                                   <span style="color: #ff6666;font-size: 16px;display:block;margin: 10px 0px 0px;font-weight: bold;margin-bottom: 15px;">Use Code CZ15 for 15% OFF</span>
-                               {% elsif product.vendor == 'Ben-Amun' %}
-                                   <span style="color: #ff6666;font-size: 16px;display:block;margin: 10px 0px 0px;font-weight: bold;margin-bottom: 15px;">Use Code BEN15 for 15% OFF</span> 
-                               {% elsif product.vendor == 'ChiChi Active' %}
-                                   <span style="color: #ff6666;font-size: 16px;display:block;margin: 10px 0px 0px;font-weight: bold;margin-bottom: 15px;">Use Code CHI10 for 10% OFF</span>
-                               {% elsif product.vendor == 'Helen Jon' %}
-                                   <span style="color: #ff6666;font-size: 16px;display:block;margin: 10px 0px 0px;font-weight: bold;margin-bottom: 15px;">Use Code HL10 for 10% OFF</span>
-                               {% elsif product.vendor == 'Logan Hollowell' %}
-                                   <span style="color: #ff6666;font-size: 16px;display:block;margin: 10px 0px 0px;font-weight: bold;margin-bottom: 15px;">Use Code LH5 for 5% OFF</span>
-                               {%- endif -%}
-                               {%- if settings.show_share_btn and design_products_page != 'product-design-alt' -%}
-                               <div class="product-share">
-                                  {%- include 'social-sharing', follow_social:gl_follow_social -%}
-                               </div>
-                               {%- endif -%}
-                       </div>
-                         <p class="free_ship" style="font-size: 13px;"><strong>FREE SHIPPING ON US ORDERS OVER $250!</strong></p>
-                        
-                        <div id="cover"></div>
-                         <div id="SizeChart">
-                           <div class="popupsizebutton">
-                            <span class="SizeChartPopupLink" id="customSizeChartNew" data-toggle="modal" data-target="#customSizeChartNew">Size Guide: Check your Size for this Brand before purchase!</span>
-                           </div><!--popupsizebutton-->
-                          </div><!--SizeChartCLOSE-->
-<!--                             <meta itemprop="price" content="{{ product.price | divided_by: 100.00 }}">
-                         <meta itemprop="priceCurrency" content="{{ shop.currency }}">
-                         <link itemprop="availability" href="http://schema.org/{%- if product.available -%}InStock{%- else -%}OutOfStock{%- endif -%}"> 
-                          -->
-                       </div>
-                       
-                       {%- assign section_settings_countdown = settings.show_countdown -%}
-                       {%- include 'basel_count_down' -%}
-                           {%- unless product.options.size == 1 and product.has_only_default_variant -%}
-                             {%-capture variantSoldout-%}
-                             {%-for option in product.options_with_values-%}
-                                 {%-for value in option.values-%}
-                                   {% if option.selected_value == value and forloop.last == false %} bg_{{value }}{% endif-%}
-                                 {%-endfor-%}
-                             {%-endfor-%}
-                             {%-endcapture-%}
-                          {%-endunless-%}
-                          {%- if product.metafields.external -%}
-                             {%- assign check = product.metafields.external | first | last -%}
-                             {%- if check contains 'https:' or check  contains 'http:' -%}{%- assign check_external = true -%}{%-else-%}{%- assign check_external = false -%}{%-endif-%}
-                          {%-endif-%}
-                          {%- if product.has_only_default_variant == false or linklists[product.handle].links.size == 0 -%}<div id="callBackVariant" class="{{variantSoldout}}">{%- endif-%}
-                          {%- if settings.catalog_mode == false -%}
-                             {%- comment -%}
-                               {%- if settings.product_quantity_message and product.variants.size == 1 and sold_out == false -%}
-                          <div id="variantQuantity" class="variant-quantity{%- if current_variant.inventory_management %} show{%- endif -%}">
-                             {%- if current_variant.inventory_management -%}
-                                {%- if current_variant.inventory_quantity < 10 and current_variant.inventory_quantity > 0 -%}
-                                   {{ 'products.product.only_left' | t: count: current_variant.inventory_quantity }}
-                                {%- elsif current_variant.inventory_quantity <= 0 and current_variant.incoming -%}
-                                   {%- assign next_incoming_date = current_variant.next_incoming_date | date: format: 'month_day_year' -%}
-                                   {{ 'products.product.will_not_ship_until' | t: date:next_incoming_date }}
-                                {%- endif -%}
-                             {%- endif -%}
-                          </div>
-                          {%- endif -%}
-                       {%- endcomment -%}
-                             
-                             {%- if product.variants.size == 1 and sold_out -%}
-                                <p class="stock out-of-stock" id="out-of-stock-gl">{{ 'products.product.outofstock' | t }}</p>
-                                {%- if settings.product_quantity_message -%}
-                                <div id="variantQuantity" class="variant-quantity{%- if current_variant.inventory_management %} show{%- endif -%}">
-                                   {%- if current_variant.inventory_management -%}
-                                      {%- if current_variant.inventory_quantity < 10 and current_variant.inventory_quantity > 0 -%}
-                                         {{ 'products.product.only_left' | t: count: current_variant.inventory_quantity }}
-                                      {%- elsif current_variant.inventory_quantity <= 0 and current_variant.incoming -%}
-                                         {%- assign next_incoming_date = current_variant.next_incoming_date | date: format: 'month_day_year' -%}
-                                         {{ 'products.product.will_not_ship_until' | t: date:next_incoming_date }}
-                                      {%- endif -%}
-                                   {%- endif -%}
-                                </div>
-                                {%- endif -%}
-                             {%- elsif linklists[product.handle].links.size == 0 -%}
-                                {%- if check_external and product.variants.size == 1 -%}
-                                   <p class="cart"><a href="{{ check }}" rel="nofollow" class="single_add_to_cart_button button alt">{{ product.metafields.external | first | first }}</a></p>
-                                {%- else -%}
-                                   {% include 'product-add-to-cart' %}                                    
-                                {%- endif -%}
-                             {%- else -%}
-                                <form class="cart" method="post" enctype="multipart/form-data">
-                                   <table cellspacing="0" class="group_table">
-                                      <tbody>
-                                      {%- include 'product_group' -%}
-                                      </tbody>
-                                   </table>
-                                   {%- if check_external == false -%}
-                                    <button type="submit" id="multi-variant-add" class="add_to_cart_button single_add_to_cart_button button alt">{{ 'products.product.add_to_cart' | t }}</button>
-                                   {%- else -%}
-                                   <a href="{{ check }}" rel="nofollow" class="single_add_to_cart_button button alt">{{ product.metafields.external | first | first }}</a>
-                                   {%- endif -%}
-                                </form>
-                             {%- endif -%}
-                          {%- endif -%}
-                            <div id="variant-error-msg"></div>
-                          {% if vendortitle == 'jovani' %}
-                           <span class="onlyjovani Jovani" style="color: #f85364;font-weight: bold;text-transform: uppercase;display: block;margin-bottom: 10px;">ALL JOVANI OVER $250 DRESSES SHIP COMPLIMENTARY 3 DAY SHIPPING</span>
-                           {%- endif -%}
-                          {%- if vendortitle == 'alfred sung' or vendortitle == 'dessy collection' or vendortitle == 'social bridesmaids by dessy' or vendortitle == 'jy - jenny yoo' or vendortitle == 'lela rose' or vendortitle == '57 grand' -%}
-                           <span style="color: #f85364;font-weight: bold;text-transform: uppercase;display: block;margin-bottom: 10px;">This Bridesmaid Dress Ships within 48 hours</span>
-                          {%- endif -%}
-                            <div class="Info" id="ProdDetailInfomobile">
-                                 <div class="Details shipping">
-                                         <div class="Image">
-                                             <div class="image shipping_image"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;width: 50px;height: 50px;" xml:space="preserve">
-                                   <style type="text/css">
-                                     .st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
-                                   </style>
-                                   <g id="_x31_">
-                                     <path id="XMLID_24_" class="st0" d="M19.1,40.6l-1,0c-0.7,0-1.3-0.6-1.3-1.3v-1.1"/>
-                                     <path id="XMLID_23_" class="st0" d="M16.7,23.5v-5c0-0.7,0.6-1.3,1.3-1.3l18.2,0c0.7,0,1.3,0.6,1.3,1.3v22.1l-7.2,0"/>
-                                     <path id="XMLID_13_" class="st0" d="M39.3,40.6h-1.7V21.2h6.8c0.6,0,1.1,0.2,1.5,0.6l5.3,5.1c0.4,0.4,0.6,1,0.6,1.5v10.7   c0,0.7-0.6,1.3-1.3,1.3h-0.2"/>
-                                     <g id="XMLID_12_">
-                                       <path id="XMLID_34_" d="M43.3,27l2.6,2.6v2.3h-3.6V27H43.3 M43.6,25h-2.6c-0.4,0-0.6,0.3-0.6,0.6v7.6c0,0.4,0.3,0.6,0.6,0.6h6.3    c0.4,0,0.6-0.3,0.6-0.6v-4c0-0.4-0.2-0.7-0.5-1l-3-3C44.2,25.1,43.9,25,43.6,25L43.6,25z"/>
-                                     </g>
-                                     <line id="XMLID_8_" class="st0" x1="16.4" y1="26.5" x2="26" y2="26.5"/>
-                                     <line id="XMLID_9_" class="st0" x1="14.3" y1="30.8" x2="24.8" y2="30.8"/>
-                                     <line id="XMLID_10_" class="st0" x1="12.1" y1="35.1" x2="22.7" y2="35.1"/>
-                                     <g id="XMLID_7_">
-                                       <path id="XMLID_30_" d="M24.8,41.2c1,0,1.8,0.8,1.8,1.8s-0.8,1.8-1.8,1.8S23,44,23,43S23.8,41.2,24.8,41.2 M24.8,39.2    c-2.1,0-3.8,1.7-3.8,3.8s1.7,3.8,3.8,3.8s3.8-1.7,3.8-3.8S26.9,39.2,24.8,39.2L24.8,39.2z"/>
-                                     </g>
-                                     <g id="XMLID_14_">
-                                       <path id="XMLID_26_" d="M44.8,41.2c1,0,1.8,0.8,1.8,1.8s-0.8,1.8-1.8,1.8S43,44,43,43S43.8,41.2,44.8,41.2 M44.8,39.2    c-2.1,0-3.8,1.7-3.8,3.8s1.7,3.8,3.8,3.8s3.8-1.7,3.8-3.8S46.9,39.2,44.8,39.2L44.8,39.2z"/>
-                                     </g>
-                                   </g>
-                                   <g id="XMLID_244_">
-                                     <path id="XMLID_20_" d="M32,2c16.5,0,30,13.5,30,30S48.5,62,32,62S2,48.5,2,32S15.5,2,32,2 M32,0C14.3,0,0,14.3,0,32s14.3,32,32,32   s32-14.3,32-32S49.7,0,32,0L32,0z"/>
-                                   </g>
-                                 </svg></div>
-                                             <span>Free Shipping</span>
-                                         </div>
-                                         <div class="Cnt">
-                                             <span>Free shipping for orders over $299</span><br>
-                                             <a href="https://www.couturecandy.com/shipping-returns-exchanges/" target="_blank">See Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                                         </div>
-                                    </div>
-                                    <div class="Details Exchange">
-                                     <div class="Image">
-                                             <div class="image exchange_image"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;width: 50px;height: 50px;" xml:space="preserve">
-                                   <style type="text/css">
-                                     .st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
-                                     .st1{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
-                                   </style>
-                                   <g id="_x32_">
-                                     <g id="XMLID_95_">
-                                       <path id="XMLID_45_" d="M32,2c16.5,0,30,13.5,30,30S48.5,62,32,62S2,48.5,2,32S15.5,2,32,2 M32,0C14.3,0,0,14.3,0,32    s14.3,32,32,32s32-14.3,32-32S49.7,0,32,0L32,0z"/>
-                                     </g>
-                                     <g id="XMLID_11_">
-                                       <line id="XMLID_158_" class="st0" x1="32.5" y1="30.4" x2="19.9" y2="25.2"/>
-                                       <polyline id="XMLID_154_" class="st0" points="19.9,30.7 19.9,37.4 31.8,43.5   "/>
-                                       <path id="XMLID_153_" class="st0" d="M45.4,25.1l-13.1-4.6l-13.1,4.1"/>
-                                       <polyline id="XMLID_152_" class="st0" points="44.7,30.5 44.7,37.9 32.3,42.9 32.3,30.7 44.7,25.7   "/>
-                                       <polyline id="XMLID_156_" class="st0" points="31.9,30.2 29.6,34.8 17.4,29.2 19.8,24.1   "/>
-                                       <polyline id="XMLID_157_" class="st0" points="32.3,30.2 34.4,35.1 46.6,29.5 44.8,24.5   "/>
-                                       <line id="XMLID_5_" class="st0" x1="32.3" y1="20.5" x2="32.3" y2="27.4"/>
-                                     </g>
-                                     <g id="XMLID_1_">
-                                       <path id="XMLID_4_" class="st1" d="M50,18.1c3,3.9,4.8,8.7,4.8,14c0,12.6-10.2,22.8-22.8,22.8c-4.8,0-9.3-1.5-13-4.1"/>
-                                       <path id="XMLID_15_" class="st1" d="M44.7,13.1c-1.4-1-3-1.8-4.6-2.4c-2.5-1-5.3-1.5-8.1-1.5C19.4,9.3,9.2,19.5,9.2,32.1    c0,5,1.6,9.7,4.4,13.4"/>
-                                       <path id="XMLID_3_" class="st1" d="M40,14.6l5.6-0.5c0.3,0,0.6-0.4,0.4-0.7l-2-5.2"/>
-                                       <path id="XMLID_2_" class="st1" d="M24.1,49.5l-5.7,0.3c-0.3,0-0.6,0.3-0.4,0.7l1.8,5.3"/>
-                                     </g>
-                                   </g>
-                                 </svg></div>
-                                             <span>Exchanges &amp; Returns</span>
-                                         </div>
-                                         <div class="Cnt">
-                                             <span>Easy returns &amp; exchanges within 5 days on eligible items</span>
-                                             <a href="https://www.couturecandy.com/shipping-returns-exchanges/" target="_blank">See Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                                         </div>
-                                    </div>
-                                    <div class="Details Price-match">
-                                         <div class="Image">
-                                            <div class="image price_image"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;width: 50px;height: 50px;" xml:space="preserve">
-                                  <g id="XMLID_9_">
-                                    <g id="XMLID_437_">
-                                      <path id="XMLID_15_" d="M32,2c16.5,0,30,13.5,30,30S48.5,62,32,62S2,48.5,2,32S15.5,2,32,2 M32,0C14.3,0,0,14.3,0,32    s14.3,32,32,32s32-14.3,32-32S49.7,0,32,0L32,0z"/>
-                                    </g>
-                                    <g id="XMLID_8_">
-                                      <path id="XMLID_30_" d="M49.6,41L49.6,41c-0.2-0.9-0.8-1.6-1.7-1.8c-0.5-0.1-1.2-0.1-1.8,0.1l-1.9,0.5c-2,0.5-4.1,1.1-6.1,1.6    c-0.1,0-0.2,0-0.3,0c-1.3-0.5-2.5-1-3.8-1.5c-1.8-0.7-3.5-1.4-5.3-2.1c-1.7-0.7-3.5-0.5-5.1,0.4c-0.6,0.4-1.3,0.7-1.9,1.1    c-0.3,0.2-0.6,0.4-0.9,0.6l-1.4,0.9l-0.7-1.1c-0.2-0.3-0.4-0.4-0.6-0.5c-0.2-0.1-0.5,0-0.7,0.1c-0.2,0.1-0.8,0.5-1.3,0.8l-1.4,0.8    c-0.3,0.2-0.5,0.6-0.3,1l6.8,11.8c0.1,0.2,0.3,0.3,0.4,0.3c0.1,0,0.1,0,0.2,0c0.1,0,0.3,0,0.4-0.1c0.7-0.4,2.4-1.4,2.7-1.6    c0.5-0.3,0.7-0.8,0.3-1.3l-0.6-1.1c0.8-0.5,1.7-0.6,2.7-0.4l3.5,1c1.7,0.5,3.4,1,5.1,1.5c1,0.3,2.2,0.1,3-0.6    c1.2-1,2.5-1.9,3.7-2.9l2.8-2.2c1.1-0.9,2.3-1.7,3.4-2.6C49.6,42.9,49.8,42,49.6,41z M28,39.3c2.2,0.9,4.4,1.8,6.6,2.6l2.9,1.2    c0.4,0.2,0.9,0.3,1.3,0.5c0.4,0.2,0.5,0.5,0.5,0.9c0,0.4-0.3,0.6-0.7,0.7c-0.2,0-0.3,0-0.5-0.1l-0.1,0c-2-0.4-4-0.8-5.9-1.2    l-1.1-0.2c-0.5-0.1-1,0.2-1.1,0.6c0,0.2,0,0.5,0.1,0.6c0.1,0.2,0.3,0.3,0.6,0.4l1.3,0.3c2.1,0.4,4.1,0.9,6.2,1.3    c1.2,0.2,2.3-0.4,2.8-1.4c0.4-1,0.2-2.1-0.5-2.8c0.1,0,0.2-0.1,0.3-0.1l1-0.3c1.6-0.4,3.2-0.8,4.8-1.2c0.3-0.1,0.6-0.1,0.8-0.1    c0.5,0,0.7,0.3,0.7,0.4c0.1,0.3,0,0.7-0.3,0.9l-3.4,2.6c-2.2,1.7-4.3,3.3-6.5,5c-0.5,0.4-0.9,0.5-1.5,0.3c-1.1-0.3-2.2-0.6-3.4-1    c-1.7-0.5-3.3-1-5-1.4c-0.6-0.2-1.1-0.3-1.7-0.3c-0.9,0-1.7,0.2-2.6,0.7l-3.5-6.1l2.3-1.4c0.6-0.4,1.2-0.7,1.8-1.1    C25.5,38.9,26.8,38.8,28,39.3z M23.3,51l-0.4,0.2c-0.3,0.2-0.5,0.3-0.8,0.4l-5.7-10c0.3-0.2,0.8-0.5,1.2-0.7L23.3,51z"/>
-                                      <g id="XMLID_7_">
-                                        <g id="XMLID_4_">
-                                          <path id="XMLID_2_" d="M37.6,35.5c-4.3,0-7.8-3.5-7.8-7.8s3.5-7.8,7.8-7.8s7.8,3.5,7.8,7.8S41.9,35.5,37.6,35.5z M37.6,21.8      c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S40.9,21.8,37.6,21.8z"/>
-                                          <path id="XMLID_18_" d="M39.9,28c-0.2-0.2-0.5-0.4-0.8-0.5c-0.3-0.1-0.6-0.2-0.9-0.3c-0.2-0.1-0.4-0.1-0.6-0.2l-0.1,0      c-0.4-0.1-0.6-0.2-1-0.4c-0.1,0-0.1-0.1-0.2-0.2c0-0.1,0-0.2,0.1-0.3c0.1-0.1,0.2-0.2,0.3-0.2c0,0,0.1,0,0.1-0.1      c0.5-0.2,1.1-0.2,1.6,0c0.2,0.1,0.3,0.2,0.3,0.5c0,0.2,0.2,0.4,0.4,0.4c0.2,0,0.5,0,0.7,0c0.1,0,0.2,0,0.3-0.1      c0,0,0.1-0.1,0.1-0.3c0-0.1,0-0.3-0.1-0.4C40,25.4,39.6,25,39,24.8c-0.2-0.1-0.4-0.1-0.6-0.1l-0.1,0c0,0,0,0,0,0      c0-0.1,0-0.2,0-0.2c0-0.2-0.1-0.3-0.3-0.3c-0.2,0-0.4,0-0.6,0c-0.2,0-0.3,0.2-0.3,0.4c0,0.1,0,0.1,0,0.2c0,0,0,0-0.1,0l-0.1,0      c-0.5,0.1-0.9,0.3-1.2,0.5c-0.4,0.3-0.6,0.9-0.5,1.4c0,0.5,0.3,0.9,0.7,1.1c0.2,0.1,0.5,0.2,0.7,0.3c0.2,0.1,0.5,0.1,0.7,0.2      c0.3,0.1,0.5,0.1,0.8,0.2c0.3,0.1,0.5,0.2,0.7,0.3c0,0,0,0,0.1,0c0.1,0.1,0.2,0.3,0.1,0.4c0,0.2-0.3,0.5-0.6,0.5      c-0.4,0.1-0.8,0.1-1.3,0c-0.5-0.1-0.7-0.3-0.8-0.7c0-0.2-0.2-0.3-0.4-0.3c-0.2,0-0.4,0-0.6,0c-0.1,0-0.2,0-0.3,0.1      c-0.1,0.1-0.1,0.2-0.1,0.3c0,0.4,0.2,0.7,0.4,1c0.4,0.4,0.9,0.7,1.6,0.8c0.1,0,0.1,0,0.1,0c0,0,0,0.1,0,0.1v0.1      c0,0.2,0.1,0.4,0.3,0.4c0.1,0,0.2,0,0.3,0c0.1,0,0.2,0,0.3,0c0.2,0,0.3-0.1,0.3-0.4c0-0.1,0-0.1,0-0.2c0,0,0.1,0,0.1,0      c0.5-0.1,0.9-0.2,1.2-0.4c0.5-0.3,0.7-0.7,0.8-1.3C40.4,28.8,40.3,28.4,39.9,28z"/>
-                                        </g>
-                                        <g id="XMLID_1_">
-                                          <path id="XMLID_3_" d="M31.2,25.2c-3.8-0.5-6.7-3.8-6.7-7.7c0-4.3,3.5-7.8,7.8-7.8s7.8,3.5,7.8,7.8c0,1.3-0.3,2.5-0.9,3.6      l-1.6-0.8c0.5-0.9,0.7-1.8,0.7-2.8c0-3.3-2.7-6-6-6c-3.3,0-6,2.7-6,6c0,3,2.2,5.5,5.2,5.9L31.2,25.2z"/>
-                                          <path id="XMLID_19_" d="M34.6,17.7c-0.2-0.2-0.5-0.4-0.8-0.5c-0.3-0.1-0.6-0.2-0.9-0.3c-0.2-0.1-0.4-0.1-0.6-0.2l-0.1,0      c-0.4-0.1-0.6-0.2-1-0.4c-0.1,0-0.1-0.1-0.2-0.2c0-0.1,0-0.2,0.1-0.3c0.1-0.1,0.2-0.2,0.3-0.2c0,0,0.1,0,0.1-0.1      c0.5-0.2,1.1-0.2,1.6,0c0.2,0.1,0.3,0.3,0.3,0.5c0,0.2,0.1,0.4,0.4,0.4c0.2,0,0.5,0,0.7,0c0.1,0,0.2,0,0.3-0.1      c0,0,0.1-0.1,0.1-0.3c0-0.1,0-0.3-0.1-0.4c-0.2-0.6-0.6-1-1.2-1.2c-0.2-0.1-0.4-0.1-0.6-0.1l-0.1,0c0,0,0,0,0,0      c0-0.1,0-0.2,0-0.2c0-0.2-0.1-0.3-0.3-0.3c-0.2,0-0.4,0-0.6,0c-0.2,0-0.3,0.2-0.3,0.4c0,0.1,0,0.1,0,0.2c0,0,0,0,0,0l-0.1,0      c-0.5,0.1-0.9,0.3-1.3,0.5c-0.4,0.3-0.6,0.9-0.6,1.4c0,0.5,0.3,0.9,0.8,1.1c0.3,0.1,0.5,0.2,0.7,0.3c0.3,0.1,0.5,0.2,0.8,0.2      c0.3,0.1,0.5,0.1,0.8,0.2c0.3,0.1,0.5,0.2,0.7,0.3c0,0,0,0,0.1,0c0.1,0.1,0.2,0.3,0.1,0.4c0,0.2-0.3,0.5-0.6,0.5      c-0.4,0.1-0.9,0.1-1.3,0c-0.5-0.1-0.7-0.4-0.8-0.8c0-0.2-0.2-0.3-0.4-0.3c-0.2,0-0.4,0-0.6,0c-0.1,0-0.2,0-0.3,0.1      c-0.1,0.1-0.1,0.2-0.1,0.3c0,0.4,0.2,0.7,0.4,1c0.4,0.4,0.9,0.7,1.6,0.8c0.1,0,0.1,0,0.1,0c0,0,0,0.1,0,0.1l0,0.1      c0,0.2,0.1,0.4,0.3,0.4c0.1,0,0.2,0,0.3,0c0.1,0,0.2,0,0.3,0c0.2,0,0.3-0.1,0.3-0.4c0-0.1,0-0.1,0-0.2l0,0c0,0,0.1,0,0.1,0      c0.5-0.1,0.9-0.2,1.2-0.4c0.5-0.3,0.8-0.8,0.8-1.3C35.1,18.5,34.9,18,34.6,17.7z"/>
-                                        </g>
-                                      </g>
-                                    </g>
-                                  </g>
-                                </svg></div>
-                                             <span>Price Match</span>
-                                         </div>
-                                         <div class="Cnt">
-                                             <span>Find a lower price? We'll match it. Exclusions may apply.</span>
-                                             <a href="https://www.couturecandy.com/shipping-returns-exchanges/" target="_blank">See Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                                         </div>
-                                    </div>
-                                    <div class="Details No Tax">
-                                         <div class="Image">
-                                            <div class="image no_tax_image"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;width: 50px;height: 50px;" xml:space="preserve">
-                                  <style type="text/css">
-                                    .st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
-                                    .st1{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
-                                  </style>
-                                  <g id="XMLID_74_">
-                                    <path id="XMLID_13_" d="M32,2c16.5,0,30,13.5,30,30S48.5,62,32,62S2,48.5,2,32S15.5,2,32,2 M32,0C14.3,0,0,14.3,0,32s14.3,32,32,32   s32-14.3,32-32S49.7,0,32,0L32,0z"/>
-                                  </g>
-                                  <g id="XMLID_182_">
-                                    <path id="XMLID_57_" class="st0" d="M16.8,37.6l25.7,11.8c0.6,0.3,1.3,0,1.5-0.6l7.2-15.5c0.3-0.6,0-1.3-0.6-1.5L25,20   c-0.4-0.2-0.8-0.2-1.2,0l-10.3,4.6c-0.6,0.3-0.9,1-0.7,1.6L16,36.7C16.2,37.1,16.4,37.5,16.8,37.6z"/>
-                                    <circle id="XMLID_58_" class="st0" cx="20.3" cy="28.6" r="2.3"/>
-                                    <path id="XMLID_61_" class="st1" d="M19.1,26.6c0,0-7.1-8.3-3.5-11.5c0.6-0.5,1.4-0.7,2.2-0.5c1.3,0.4,2.7,1.9,2.8,6.2"/>
-                                    <g id="XMLID_181_">
-                                      <g id="XMLID_62_">
-                                        <path id="XMLID_64_" d="M34.6,27.7l-0.5,1l-1.4-0.7l-2,4.3l-1.3-0.6l2-4.3L30,26.8l0.5-1L34.6,27.7z"/>
-                                        <path id="XMLID_69_" d="M36.5,33.9l-2-0.9l-0.8,0.8l-1.4-0.6l4.4-4.4l1.5,0.7l-0.5,6.2L36.4,35L36.5,33.9z M36.7,32.7l0.2-2.3     l-1.6,1.7L36.7,32.7z"/>
-                                        <path id="XMLID_170_" d="M41.7,37.4l-0.3-2.1l-1.7,1.2l-1.5-0.7l3-1.9l-0.5-3.4l1.5,0.7l0.3,2.1l1.7-1.2l1.5,0.7l-2.9,1.9     l0.5,3.5L41.7,37.4z"/>
-                                      </g>
-                                      <g id="XMLID_63_">
-                                        <path id="XMLID_172_" d="M31,34.4l-0.5,1l-2.2-1l-0.5,1.1l1.6,0.8l-0.5,1l-1.6-0.8l-1,2.2l-1.3-0.6l2.5-5.3L31,34.4z"/>
-                                        <path id="XMLID_174_" d="M32,41.3l-0.2-2.5l-0.3-0.1l-0.9,2L29.2,40l2.5-5.3l2.2,1c0.4,0.2,0.7,0.4,1,0.7     c0.2,0.3,0.4,0.6,0.4,0.9c0,0.3,0,0.6-0.2,1c-0.2,0.4-0.4,0.6-0.7,0.8c-0.3,0.2-0.7,0.2-1.2,0.2l0.3,2.7L32,41.3z M31.9,37.7     l0.8,0.4c0.2,0.1,0.4,0.1,0.6,0.1c0.2-0.1,0.3-0.2,0.4-0.4c0.1-0.2,0.1-0.4,0-0.6c-0.1-0.2-0.2-0.3-0.5-0.4l-0.8-0.4L31.9,37.7z"/>
-                                        <path id="XMLID_177_" d="M37.5,38.6L37,39.7l1.7,0.8l-0.5,1l-1.7-0.8L36,41.9l2,0.9l-0.5,1l-3.3-1.5l2.5-5.3l3.3,1.5l-0.5,1     L37.5,38.6z"/>
-                                        <path id="XMLID_179_" d="M41.6,40.5l-0.5,1.1l1.7,0.8l-0.5,1l-1.7-0.8l-0.5,1.2l2,0.9l-0.5,1l-3.3-1.5l2.5-5.3l3.3,1.5l-0.5,1     L41.6,40.5z"/>
-                                      </g>
-                                    </g>
-                                  </g>
-                                </svg>  </div>
-                                             <span>No Tax</span>
-                                         </div>
-                                         <div class="Cnt">
-                                             <span>No Sales Tax if shipped outside Nevada. Save 10%.</span>
-                                             <a href="https://www.couturecandy.com/shipping-returns-exchanges/" target="_blank">See Details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                                         </div> 
-                                  </div>                                                                           
-                               </div><!--ProdDetailInfo Mobile main-->  
-                      
-                           {%- if product.variants.size == 1 -%}<div class="clear"></div>{%- endif -%}
-                          {%- if product.variants.size > 1 and settings.product_img_trust_seal == false -%}<div class="clear"></div>{%- endif -%}
-                          {%- if design_products_page != 'product-design-compact' -%}
-                              <div class="product-tabs-wrapper">
-                                 <div class="container">
-                                    <div class="row">
-                                       <div class="col-sm-12">
-                                          <div class="shopify-tabs sp-tabs-wrapper tabs-layout-tabs">
-                                                 {%- if section.blocks.size > 0 -%}
-                                                <ul class="tabs sp-tabs">
-                                                   {%- for block in section.blocks -%}
-                                                      {%- case block.type -%}
-                                                         {%- when 'description' -%}
-                                                            <li class="description_tab{%- if forloop.first %} active{%- endif -%}"><a href="#tab-description">{{ block.settings.title }}</a></li>
-                                                         {%- when 'additional' -%}
-                                                         {%- if product.has_only_default_variant == false -%}
-                                                            <li class="additional_information_tab{%- if forloop.first %} active{%- endif -%}"><a href="#{{block.id}}">{{ block.settings.title }}</a></li>
-                                                         {%- endif -%}
-                                                         {%- when 'review' -%}
-                                                            {%- if settings.show_product_page_rating -%}
-                                                               <li class="reviews_tab{%- if forloop.first %} active{%- endif -%}"><a href="#{{block.id}}">{{ block.settings.title }}
-                                                               {%- if block.settings.use_count_reviews -%} 
-                                                                 {%- assign product__reviews-count=0 -%}
-                                                                 {%- if product.metafields.spr.reviews -%}
-                                                                             {%- capture review_data -%}{{ product.metafields.spr.reviews }}{%- endcapture -%}
-                                                                             {%- assign rd_a1 = review_data | split: '<meta itemprop="reviewCount" content="' -%}
-                                                                             {%- assign rd_a2 = rd_a1[1] | split: '\">\n' | first -%} 
-                                                                             {%- assign product__reviews-count = rd_a2 | plus:0 -%}
-                                                                  {%- endif -%}
-                                                                   {%- if product__reviews-count <= 0 -%}
-                                                                      {%- assign reviews-tab__header="(0)" -%}
-                                                                   {%- else -%}
-                                                                     {%- capture reviews-tab__header -%}({{product__reviews-count}}){%- endcapture -%}   
-                                                                   {%- endif -%} 
-                                                                   {{reviews-tab__header}}
-                                                               {%-endif-%}
-                                                               </a></li>
-                                                            {%- endif -%}
-                                                         {%- when 'html' -%}
-                                                            <li class="basel_additional_tab_tab{%- if forloop.first %} active{%- endif -%}"><a href="#{{block.id}}">{{ block.settings.title }}</a></li>
-                                                         {%- when 'text' -%}
-                                                         <li class="basel_additional_tab_tab{%- if forloop.first %} active{%- endif -%}"><a href="#{{block.id}}">{{ block.settings.title }}</a></li>
-                                                      {%- endcase -%}
-                                                   {%- endfor -%}
-                                                   {%- for meta in product.metafields.additions -%}
-                                                      <li class="{{meta[0] | handleize}}_tab{%- if section.blocks.size < 1 and forloop.first %} active{% endif %}">
-                                                       <a id="product_extra_tab_{{meta[0] | handleize}}" href="#tab{{meta[0] | handleize}}">{{meta[0]}}</a>
-                                                      </li>
-                                                   {%- endfor -%}
-                                                </ul>
-                                                {%- assign active_product = product -%}
-                                                {%- for block in section.blocks -%}
-                                                   {% case block.type %}
-                                                      {%- when 'description' -%}
-                                                      <div class="basel-tab-wrapper">
-                                                         <a href="#tab-description" class="basel-accordion-title tab-title-description">{{ block.settings.title }}</a>
-                                                         <div class="shopify-Tabs-panel shopify-Tabs-panel--description panel entry-content sp-tab" id="tab-description">
-                                                                 {%comment%}
-                                                                {%- include 'custom_description' -%}                                                                                                      
-                                                                {%endcomment%}
-                                                            {%- include 'shortcode' load: product.description -%}
-                                                         </div>
-                                                      </div>
-                                                      {%- when 'additional' -%}
-                                                         {%- if product.has_only_default_variant == false -%}
-                                                         <div class="basel-tab-wrapper">
-                                                            <a href="{{ block.id }}" class="basel-accordion-title tab-title-additional_information">{{ block.settings.title }}</a>
-                                                            <div class="shopify-Tabs-panel shopify-Tabs-panel--additional_information panel entry-content sp-tab" id="{{ block.id }}">
-                                                               <table class="shop_attributes">
-                                                                  <tbody>
-                                                                     {% for option in active_product.options_with_values %}
-                                                                     <tr class=">{{ option.name }}">
-                                                                        <th>{{ option.name }}</th>
-                                                                        <td><p>
-                                                                          {%- assign option_index = forloop.index -%}
-                                                                          {%- for value in option.values -%}
-                                                                          {%- assign variant_label_state = true -%}
-                                                                          {%- if active_product.options.size == 1 -%}
-                                                                          {%- unless active_product.variants[forloop.index0].available  -%}
-                                                                          {%- assign variant_label_state = false -%}
-                                                                          {%- endunless -%}
-                                                                          {%- endif -%} 
-                                                                            {{ value | capitalize }}{% unless forloop.last == true %}, {% endunless %}
-                                                                          {%- endfor -%}
-                                                                        </p></td>
-                                                                     </tr>
-                                                                     {% endfor %}
-                                                                  </tbody>
-                                                               </table>
-                                                            </div>
-                                                         </div>
-                                                         {%- endif -%}
-                                                      {%- when 'review' -%}
-                                                         {%- if settings.show_product_page_rating -%}
-                                                         <div class="basel-tab-wrapper">
-                                                            <a href="{{ block.id }}" class="basel-accordion-title tab-title-reviews">{{ block.settings.title }}</a>
-                                                            <div class="shopify-Tabs-panel shopify-Tabs-panel--reviews panel entry-content sp-tab" id="{{ block.id }}">
-                                                               <div id="shopify-product-reviews" data-id="{{active_product.id}}">{{ active_product.metafields.spr.reviews }}</div>
-                                                            </div>
-                                                         </div>
-                                                         {%- endif -%}
-                                                      {%- when 'html' -%}
-                                                      <div class="basel-tab-wrapper tab_html">
-                                                         <a href="{{ block.id }}" class="basel-accordion-title tab-title-reviews">{{ block.settings.title }}</a>
-                                                         <div class="shopify-Tabs-panel shopify-Tabs-panel--reviews panel entry-content sp-tab" id="{{ block.id }}">{{block.settings.code}}</div>
-                                                      </div>
-                                                      {%- when 'text' -%}
-                                                      <div class="basel-tab-wrapper tab_text">
-                                                         <a href="{{ block.id }}" class="basel-accordion-title tab-title-reviews">{{ block.settings.title }}</a>
-                                                         <div class="shopify-Tabs-panel shopify-Tabs-panel--reviews panel entry-content sp-tab" id="{{ block.id }}"><div class="rte-setting">{{ block.settings.text }}</div></div>
-                                                      </div>
-                                                   {%- endcase -%}
-                                                {%- endfor -%}
-                                                   {%- for meta in active_product.metafields.additions -%}
-                                                    <div class="basel-tab-wrapper"><a href="#tab{{meta[0] | handleize}}" class="basel-accordion-title tab-title-{{meta[0] | handleize}}">{{meta[0]}}</a><div id="tab{{meta[0] | handleize}}" class="shopify-Tabs-panel shopify-Tabs-panel--{{meta[0] | handleize}} panel entry-content wc-tab">{{ meta[1] }}</div></div>
-                                                   {%- endfor -%}
-                                             {%- else -%}
-                                             <div class="text-center">{%- include 'no-blocks'-%}</div>   
-                                             {%- endif -%}
-
-                                         
-                                           </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                          {%- endif -%}
-                          {%- if settings.use_description_excerpt -%}
-                                 {%- assign _prodcut_excerpt_length = settings.prodcut_excerpt_length | plus:0 -%}
-                                 {%- assign prodcut_excerpt_length = _prodcut_excerpt_length | default: 31 -%}
-                                 <div class="shopify-product-details__short-description{%- if product.template_suffix == 'design_compact'%} hide hidden{%- endif %}{%- if settings.use_description_full %} gl_mb_20{%- endif -%}" itemprop="description">
-                                    {%- if settings.use_description_full -%}
-                                       {%- include 'shortcode' load: product.description -%}
-                                    {%-else-%}
-                                       <p class="p_des_ex">
-                                          {%- if product.metafields.meta.description_excerpt -%}
-                                           {{  product.metafields.meta.description_excerpt | strip }}
-                                         {% elsif product.description contains  '[' %}
-                                           {% assign pr_des = product.description | split: '[' %}
-                                           {% assign pr_des = pr_des[1] | split: ']' | first | append:']' | prepend:'[' %}
-                                           {{ product.description | remove: pr_des | strip_html | truncatewords: prodcut_excerpt_length }}
-                                         {%-else-%}
-                                           {{ product.description | strip_html | truncatewords: prodcut_excerpt_length }}
-                                         {%-endif-%}
-                                       </p>
-                                    {%-endif-%}
-                                 </div>
-                       {%-endif-%}
-                          <div class="product_meta">
-                             {%- if settings.show_sku -%}<span class="sku_wrapper">{{ 'products.product.product_sku' | t }} <span class="sku variant-sku" id="product-sku" itemprop="sku">{%- if current_variant.sku != blank -%}{{current_variant.sku}}{%-else-%}{{ 'products.product.na' | t }}{%-endif-%}</span></span>{%- endif -%}
-                             {%- if product.collections.size > 0 and settings.show_category_product -%}
-                             <span class="posted_in">{{ 'products.product.product_category' | t }} 
-                             {% for collection in product.collections limit:10 -%}
-                               {{ collection.title | link_to: collection.url }}{%- if forloop.last == false -%},{%- endif %}
-                               {%- endfor -%}
-                             </span>
-                             {%- endif -%}
-                             {%- if product.tags.size > 0 and settings.show_tag_product and product.collections.size > 0 -%}
-                             <span class="tagged_as">{{ 'products.product.product_tag' | t }}
-                                {%- for tag in product.tags limit:10 -%}
-                                <a href="{%- if collection != blank -%}{{ collection.url }}{%- else -%}{{ product.collections.first.url }}{%- endif -%}/{{ tag | handle }}">{{ tag | remove:'type ' | remove:'Type ' }}</a>{%- unless forloop.last -%}, {% endunless -%}
-                                {%- endfor -%}
-                             </span>
-                             {%- endif -%}
-                          </div>
-                          {%- if settings.product_img_trust_seal and settings.img_trust_seal != blank -%}{%- include 'product_img_trust_seal',padding_class:'gl_mb_20' -%}{%- endif -%}
-                       {%- if product.has_only_default_variant == false or linklists[product.handle].links.size == 0 -%}</div>{%- endif-%}      
-                    </div>                       
-                 </div>
-              </div><!-- .summary --> 
-           </div>  
-                            <div id="popup" class="modal" style="display:none;">
-                       <div class="modal-content">
-                         <span class="close">&times;</span>
-                         <div class="Mobileposition"></div>
-                         <div class="left-side">
-                           <h4 style="text-align: left;">How to measure your size? Watch Below:</h4>                                          
-                           <div class="youtube-player" data-id="VdTUuVeGERk"></div>
-                           <div class="sizechart-left-des">
-                             <p>Measuring your correct and current dress size for a dress purchase is the single most important step in finding and keeping the perfect dress.</p><p>If after watching our tutorial you have any question regarding your size or the fit of a dress, please contact us at 855-700-4239.</p><p>After determining your unique measurements, refer to the dress designer's size chart. Sizes are often different between designers. Size 2 in Jovani, can easily be a size 0 in Alyce! It is extremely important to utilize each designer's size chart, when purchasing multiple dresses!</p><p>If you are between sizes ALWAYS go a size up as a dress can be altered smaller, but not larger.</p>
-                             <img src="https://cdn.shopify.com/s/files/1/0144/7018/5017/files/size-silhoutte.png" alt="image">                                      
-                           </div>
-                         </div>
-                         <div class="right-side">
-                           {%- include 'product_size_chart' -%}
-                         </div>
-                       </div><!--modal-contentCLOSE-->  
-                     </div><!--SizeChartPopupCLOSE-->
-        </div>
-     </div>
-  </div>
-  {%- if settings.show_share_btn and design_products_page == 'product-design-alt' -%}
-  <div class="product-share">{%- include 'social-sharing', gl_design:'icons-design-colored', gl_size:'icons-size-default', follow_social:gl_follow_social -%}</div>
-  {%- endif -%}
-</div>
+                  <div class="PreOrder__popup" style="display: none;">
+                   <div class="PreOrder__popup-shadow"></div>
+                      <div class="PreOrder__popup-window">
+                        <div class="PreOrder__popup-close">×</div>
+                        <div class="PreOrder__popup-content">
+                          <p>THE SIZE AND COLOR COMBINATION YOU'VE SELECTED IS</p>
+                          <p class="large">NOT IN STOCK</p>
+                          <p>THIS SPECIAL ORDER* ITEM IS ESTIMATED TO SHIP <BR> FROM OUR WAREHOUSE AFTER</p><br>
+                           <span id="futureDDays"></span>
+                          <button id="shopify_add_to_cart" class="add_to_cart_button ajax_form_cart single_add_to_cart_button button alt" >Agree</button>
+                          <p>*See Cancellation Policy on Special Order Item</p>
+                        </div>
+                      </div>
+                    </div>
+            {%- endif -%}
+        {%- endif -%}
+          {%- else -%}
+          <a href="{{ check }}" rel="nofollow" class="single_add_to_cart_button button alt">{{ product.metafields.external | first | first }}</a>
+          {%- endif -%}
+       </div>                                          
+    {% include 'iwish_v2' with 'iwishproduct' %}
+  
+   </div>
+{%- else -%}
+    {%- if settings.product_quantity_message -%}
+       <div id="variantQuantity" class="variant-quantity{%- if product.variants.size == 1 and current_variant.inventory_management %} show{%- endif -%}">
+          {%- if product.variants.size == 1 and current_variant.inventory_management -%}
+             {%- if current_variant.inventory_quantity < 10 and current_variant.inventory_quantity > 0 -%}
+                {{ 'products.product.only_left' | t: count: current_variant.inventory_quantity }}
+             {%- elsif current_variant.inventory_quantity <= 0 and current_variant.incoming -%}
+                {%- assign next_incoming_date = current_variant.next_incoming_date | date: format: 'month_day_year' -%}
+    {{ 'products.product.will_not_ship_until' | t: date:next_incoming_date }}
+             {%- endif -%}
+          {%- endif -%}
+       </div>
+    {%- endif -%}
+    <div id="shopify_quantity" class="quantity">
+       <input type="button" value="-" class="minus">
+       <input type="number" step="1" min="1" max="{%- if current_variant.inventory_quantity <= 0 and current_variant.available and current_variant.inventory_management != null -%}999{%- elsif current_variant.inventory_management != null -%}{{current_variant.inventory_quantity}}{%- else -%}999{%- endif -%}" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
+       <input type="button" value="+" class="plus">
+    </div>
+    <p class="stock out-of-stock variant_stock" id="out-of-stock-gl" style="display: none">{{ 'products.product.outofstock' | t }}</p>
+    <div class="single_variation_wrap ">                                             
+          {%- if check_external == false -%}
+      {%- if current_variant.inventory_quantity <= 0 and current_variant.available and current_variant.inventory_management == 'shopify' -%}
+       <button type="submit" id="shopify_add_to_cart" onclick="pintrk('track', 'addtocart');
+       window.dotq = window.dotq || []; window.dotq.push( { 'projectId': '10000', 'properties': {  'pixelId': '10089243', 'qstrings': { 'et': 'custom', 'ec': 'shopping', 'ea': 'AddToCart', 'el': 'AddToCart', 'ev': '{{ product.title }}', 'gv': '{{ product.price | money_without_currency }}' } } } );"
+        class="test_1 add_to_cart_button ajax_form_cart single_add_to_cart_button button alt">{{ 'products.product.pre_orders' | t }}</button>
+      {%- else -%}
+      <button type="submit" id="shopify_add_to_cart" onclick="pintrk('track', 'addtocart');"
+        class="add_to_cart_button ajax_form_cart single_add_to_cart_button button alt">{{ 'products.product.add_to_cart' | t }}</button>
+      {%- endif -%}
+    {%- else -%}
+    <a href="{{ check }}" rel="nofollow" class="single_add_to_cart_button button alt">{{ product.metafields.external | first | first }}</a>
+    {%- endif -%}
+     {% include 'iwish_v2' with 'iwishproduct' %}
+    </div>
+{%- endif -%}
+    {% if settings.enable_payment_button %}
+      {{ form | payment_button }}
+    {% endif %}                                          
+{%- endform -%}
