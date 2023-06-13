@@ -847,11 +847,9 @@
                                                      </div>
                                                {%- endif -%}
                                          {%- endif -%}
-                                       </div>    
-                                      
-                                    {%- if product.variants.size > 1 -%}
-                                    <!-- for multi variant-->
-                                       <div class="single_variation_wrap {% if product.available %}{%- else -%}full-width{%- endif -%} hjhhjk">
+                                       </div>      
+                           {%- if product.variants.size > 1 -%}
+                                       <div class="single_variation_wrap {% if product.available %}{%- else -%}full-width{%- endif -%}">
                                             {%- if product.price_varies -%}
                                            <!--  <div class="shopify-variation single_variation">
                                                 <div class="shopify-variation-price">
@@ -871,21 +869,20 @@
                                                         {{ 'products.product.only_left' | t: count: current_variant.inventory_quantity }}
                                                      {%- elsif current_variant.inventory_quantity <= 0 and current_variant.incoming -%}
                                                        {%- assign next_incoming_date = current_variant.next_incoming_date | date: format: 'month_day_year' -%}
-                                                        {{ 'products.product.will_not_ship_until' | t: date:next_incoming_date }}
+                                         {{ 'products.product.will_not_ship_until' | t: date:next_incoming_date }}
                                                      {%- endif -%}
                                                   {%- endif -%}
                                                </div>
-                                              {%- endif -%}
+                                               {%- endif -%}
                                            <div class="shopify-variation-add-to-cart variations_button shopify-variation-add-to-cart-enabled">
                                                <div id="shopify_quantity" class="quantity">
                                                   <input type="button" value="-" class="minus">
                                                   <input type="number" step="1" min="1" max="{%- if current_variant.inventory_quantity <= 0 and current_variant.available and current_variant.inventory_management != null -%}999{%- elsif current_variant.inventory_management != null -%}{{current_variant.inventory_quantity}}{%- else -%}999{%- endif -%}" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
                                                   <input type="button" value="+" class="plus">
                                                </div>
-                                              
                                                <p class="stock out-of-stock variant_stock" id="out-of-stock-gl" style="display: none">{{ 'products.product.outofstock' | t }}</p>
-                                               <p class="stock out-of-stock variant_stock" id="unavailable-gl" style="display: none">{{ 'products.product.unavailable' | t }}</p>                                            
-                                                                                            
+                                               <p class="stock out-of-stock variant_stock" id="unavailable-gl" style="display: none">{{ 'products.product.unavailable' | t }}</p>
+                                               
                                                {%- if check_external == false -%}
                                                {%- if current_variant.inventory_quantity <= 0 and current_variant.available and current_variant.inventory_management == 'shopify' -%}
                                                   <button type="submit" id="shopify_add_to_cart" class="add_to_cart_button ajax_form_cart single_add_to_cart_button button alt if">{{ 'products.product.pre_orders' | t }}</button>
@@ -924,7 +921,6 @@
                                        
                                         </div>
                                      {%- else -%}
-                                     <!-- for single variant-->
                                          {%- if settings.product_quantity_message -%}
                                             <div id="variantQuantity" class="variant-quantity{%- if product.variants.size == 1 and current_variant.inventory_management %} show{%- endif -%}">
                                                {%- if product.variants.size == 1 and current_variant.inventory_management -%}
@@ -932,7 +928,7 @@
                                                      {{ 'products.product.only_left' | t: count: current_variant.inventory_quantity }}
                                                   {%- elsif current_variant.inventory_quantity <= 0 and current_variant.incoming -%}
                                                      {%- assign next_incoming_date = current_variant.next_incoming_date | date: format: 'month_day_year' -%}
-                                                     {{ 'products.product.will_not_ship_until' | t: date:next_incoming_date }}
+                                         {{ 'products.product.will_not_ship_until' | t: date:next_incoming_date }}
                                                   {%- endif -%}
                                                {%- endif -%}
                                             </div>
@@ -943,8 +939,8 @@
                                             <input type="button" value="+" class="plus">
                                          </div>
                                          <p class="stock out-of-stock variant_stock" id="out-of-stock-gl" style="display: none">{{ 'products.product.outofstock' | t }}</p>
-                                         <div class="single_variation_wrap">                                             
-                                         {%- if check_external == false -%}
+                                         <div class="single_variation_wrap ">                                             
+                                               {%- if check_external == false -%}
                                            {%- if current_variant.inventory_quantity <= 0 and current_variant.available and current_variant.inventory_management == 'shopify' -%}
                                             <button type="submit" id="shopify_add_to_cart" onclick="pintrk('track', 'addtocart');
                                             window.dotq = window.dotq || []; window.dotq.push( { 'projectId': '10000', 'properties': {  'pixelId': '10089243', 'qstrings': { 'et': 'custom', 'ec': 'shopping', 'ea': 'AddToCart', 'el': 'AddToCart', 'ev': '{{ product.title }}', 'gv': '{{ product.price | money_without_currency }}' } } } );"
@@ -957,8 +953,8 @@
                                          <a href="{{ check }}" rel="nofollow" class="single_add_to_cart_button button alt">{{ product.metafields.external | first | first }}</a>
                                          {%- endif -%}
                                           {% include 'iwish_v2' with 'iwishproduct' %}
-                                         </div>                                         
-                                    {%- endif -%}
+                                         </div>
+                                     {%- endif -%}
                                          {% if settings.enable_payment_button %}
                                            {{ form | payment_button }}
                                          {% endif %}                                          
@@ -1289,7 +1285,7 @@
                              {%- endif -%}
                           </div>
                           {%- if settings.product_img_trust_seal and settings.img_trust_seal != blank -%}{%- include 'product_img_trust_seal',padding_class:'gl_mb_20' -%}{%- endif -%}
-                                         {%- if product.has_only_default_variant == false or linklists[product.handle].links.size == 0 -%}</div>{%- endif-%}      
+                       {%- if product.has_only_default_variant == false or linklists[product.handle].links.size == 0 -%}</div>{%- endif-%}      
                     </div>                       
                  </div>
               </div><!-- .summary --> 
