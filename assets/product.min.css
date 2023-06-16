@@ -2248,6 +2248,10 @@ div#ProdDetailInfomobile {
 .single-product-content .product-images .thumbs-position-left .shopify-main-image {
     padding: 0;
 }
+
+  .single-product-content .summary-inner span.contact_us_button .button {
+    width: 100%;
+}
   
   .single-product-content .shopify-product-rating .shopify-app-block {
     margin-top: 0;
