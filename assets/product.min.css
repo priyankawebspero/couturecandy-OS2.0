@@ -1225,7 +1225,21 @@ border-color: #000;
     margin-right: 0;
     margin-bottom: 0;
    background: #afaaaa;
-  pointer-events: none;
+}
+
+.single-product-content .summary-inner span.contact_us_button .button {
+    color: #fff;
+    font-weight: normal;
+    /* margin-bottom: 20px; */
+    background: #000;
+    border-color: #000;
+}
+
+.single-product-content .summary-inner span.contact_us_button {
+    display: block;
+    background: #fff;
+    padding-bottom: 20px;
+    padding-top: 5px;
 }
 
 .single-product-content .single_variation_wrap {
