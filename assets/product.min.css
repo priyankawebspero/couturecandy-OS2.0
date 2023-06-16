@@ -2245,6 +2245,10 @@ div#ProdDetailInfomobile {
 
 
 @media only screen and (max-width: 767px){
+.single-product-content .product-images .thumbs-position-left .shopify-main-image {
+    padding: 0;
+}
+  
   .single-product-content .shopify-product-rating .shopify-app-block {
     margin-top: 0;
 }
