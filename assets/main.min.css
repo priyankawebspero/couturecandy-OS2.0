@@ -28,3 +28,32 @@ font-weight: bold;font-size: 12px;color: #fff;text-decoration: none;overflow: hi
 }*/
 
 /*iwish css ended----------------------*/
+
+/*-22-06-2023-*/
+.main-footer .col-md-3 {
+    width: 20%;
+}
+.main-footer ul.social-icons.text-center.social-share.icons-design-colored.icons-size-small {
+    display: block !important;
+}
+.bbb ul.social-icons.text-center.social-share.icons-design-colored.icons-size-small {
+    display: none !important;
+}
+p.custom_review_btn {
+    margin-top: -70px;
+}
+
+@media screen and (max-width: 768px)
+{
+  .footer-column.footer-column-4.col-md-3.col-sm-6 {
+    order: 4;
+}
+.footer-container .widget-area {
+    display: flex;
+    flex-wrap: wrap;
+}
+  p.custom_review_btn {
+    margin-top: -140px;
+}
+}
+/*-22-06-2023-*/
