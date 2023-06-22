@@ -40,7 +40,7 @@ font-weight: bold;font-size: 12px;color: #fff;text-decoration: none;overflow: hi
     display: none !important;
 }
 p.custom_review_btn {
-    margin-top: -70px;
+    margin-top: 0px;
 }
 
 @media screen and (max-width: 768px)
