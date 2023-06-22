@@ -1266,6 +1266,13 @@
               "menu": "information"
             }
           },
+          "abea2c91-8c03-4c3b-821d-7218a988962f": {
+            "type": "menu",
+            "settings": {
+              "title": "Explore",
+              "menu": "explore-links"
+            }
+          },
           "1531996949960": {
             "type": "html",
             "settings": {
@@ -1291,6 +1298,7 @@
         "block_order": [
           "1501138697288",
           "1531996084475",
+          "abea2c91-8c03-4c3b-821d-7218a988962f",
           "1531996949960",
           "1576045451429"
         ],
