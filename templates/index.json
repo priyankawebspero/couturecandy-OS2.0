@@ -375,7 +375,7 @@
     "16539999234cb01da9": {
       "type": "custom-content",
       "settings": {
-        "code": "<div id=\"reviewCarouselWidget\">\n<div class=\"headline\" style=\"\">Real Reviews From Real Customers<\/div>\n<div id=\"reviewCarouselWidgetInner\" class=\"stjr-widget\" style=\"min-height: 370px;\"><\/div>\n<\/div>\n\n<p class=\"custom_review_btn\" style=\"text-align: center; margin-bottom: 35px\"><a href=\"\/pages\/couture-candy-reviews\" class=\"btn btn-color-primary btn-style-default btn-size-default\">VIEW MORE<\/a><\/p>",
+        "code": "<div id=\"reviewCarouselWidget\">\n<div class=\"headline\" style=\"\">Real Reviews From Real Customers<\/div>\n<div id=\"reviewCarouselWidgetInner\" class=\"stjr-widget\" style=\"min-height: 370px;\"><\/div>\n<\/div>\n\n<p class=\"custom_review_btn\" style=\"text-align: center; margin-bottom: 35px\"><a href=\"\/pages\/couture-candy-reviews\" class=\"btn btn-color-primary btn-style-default btn-size-default\">SEE ALL REVIEWS<\/a><\/p>",
         "section_margin_top": "",
         "section_margin_bottom": "",
         "section_padding_top": "",
