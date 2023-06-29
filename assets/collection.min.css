@@ -506,11 +506,11 @@ background:none !important;}
     float: left;
     border-radius: 7px 7px 0 0!important;
     padding-left: 0;
-    min-height: 45px;
+    min-height: 42px;
     text-align: center;
     background: #fff;
     border: 1px solid #e94949;
-    padding: 18px 30px 12px 30px;
+    padding: 12px 18px 5px 18px;
 }
 
 .boost-pfs-filter-default-toolbar .boost-pfs-filter-tree-desktop-button span.boost-pfs-filter-tree-desktop-button-label::after {
@@ -526,7 +526,7 @@ background:none !important;}
 
 .boost-pfs-filter-default-toolbar .boost-pfs-filter-tree-desktop-button>button .boost-pfs-filter-tree-desktop-button-label {
     position: relative;
-    padding-left: 37px;
+    padding-left: 33px;
     /* transform: inherit; */
     margin-top: 0;
     margin-left: 0;
@@ -535,8 +535,8 @@ background:none !important;}
 .boost-pfs-filter-default-toolbar .boost-pfs-filter-tree-desktop-button>button .boost-pfs-filter-tree-desktop-button-label:before {
     content: "";
     background: url('https://cdn.shopify.com/s/files/1/0144/7018/5017/files/filter_icon_desktop.png');
-    width: 25px;
-    height: 27px;
+    width: 21px;
+    height: 23px;
     display: block;
     background-repeat: no-repeat;
     background-size: contain;
@@ -833,7 +833,7 @@ display:none;
 }
 
 .boost-pfs-filter-default-toolbar .boost-pfs-filter-tree-desktop-button>button {
-    font-size: 16px !important;
+    font-size: 15px !important;
     color: #000;
     font-family: 'product_sans_mediumregular';
 }
@@ -2322,4 +2322,6 @@ display:none;
     background: #000 !important;
     color: #fff !important;
 }
+
+
 
