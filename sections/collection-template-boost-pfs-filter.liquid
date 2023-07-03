@@ -471,6 +471,7 @@ endif
             {%- endif -%}
             </div>
 			<div class="helo boost-pfs-filter-products {{ products_item_settings }}">
+  {%- comment -%}
 			{%- for product in collection.products -%}
 				{%- render 'boost-pfs-filter-product-item',
 					product: product,
@@ -521,6 +522,7 @@ endif
           label_sale_percent: label_sale_percent
 				-%}
 				{%- endfor -%}
+  {%- endcomment -%}
 			</div>
 			<div class="boost-pfs-filter-bottom-pagination boost-pfs-filter-bottom-pagination-default">
 				{%- if paginate.pages > 1 -%}
