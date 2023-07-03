@@ -13,9 +13,9 @@ var boostPFSFilterConfig = {
     general: {
         limit: boostPFSThemeConfig.custom.products_per_page,
         /* Optional */
-        loadProductFirst: true,
+        loadProductFirst: false,
         // Placeholder  
-        showPlaceholderProductList: false,
+        showPlaceholderProductList: true,
         placeholderProductPerRow: 3,
         placeholderProductGridItemClass: 'boost-pfs-filter-product-item boost-pfs-filter-product-item-grid boost-pfs-filter-grid-width-3 boost-pfs-filter-grid-width-mb-2',
         aspect_ratio: boostPFSThemeConfig.custom.aspect_ratio,
