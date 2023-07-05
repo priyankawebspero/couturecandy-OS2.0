@@ -7599,3 +7599,16 @@ a.stjr-review__read_more_link{
     background: #fff;
     border-color: #fff;
 }
+
+@media only screen and (min-width: 992px) and (max-width: 1539px){
+  
+.footer-column .textwidget form .mailchimp-input-icon input[type="email"] {
+    padding-right: 15px;
+}
+
+.footer-column .textwidget form input[type="submit"] {
+    position: relative;
+    border-radius: 5px;
+}
+
+}
