@@ -4,7 +4,6 @@
 <link rel="alternate" hreflang="en" href="{{ canonical_url }}">
 {%- assign main_domain = canonical_url | split: '://' | last | split: '/' | first | split: 'www.' | last -%}
 {% assign canonical_path = canonical_url | split: main_domain | last -%}
-<link rel="alternate" hreflang="{{ "es" }}" href="https://{{ request.host }}/a/l/es{{ canonical_path }}">
 <link rel="alternate" hreflang="{{ "fr" }}" href="https://{{ request.host }}/a/l/fr{{ canonical_path }}">
 <link rel="alternate" hreflang="{{ "pt" }}" href="https://{{ request.host }}/a/l/pt{{ canonical_path }}">
 <link rel="alternate" hreflang="{{ "ar" }}" href="https://{{ request.host }}/a/l/ar{{ canonical_path }}">
