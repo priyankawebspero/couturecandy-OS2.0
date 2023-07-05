@@ -1385,3 +1385,741 @@ body section.brands-banner-section {
     font-size: 20px;}
 
 }
+
+
+
+/*---popular-section-css--*/
+
+.popular-brands .Wrap_button_cs .hover-mask {
+    bottom: -20px;
+    box-shadow: none;
+    -webkit-transform: inherit;
+    -moz-transform: inherit;
+    -o-transform: inherit;
+    left: 0;
+    right: 0;
+    background: none;
+}
+
+.popular-brands .Wrap_button_cs .hover-mask h3 {
+    padding: 0 !important;
+}
+
+.popular-brands .Wrap_button_cs .hover-mask h3 a {
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'google_sansregular';
+    padding: 14px 35px;
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    transform: inherit;
+    -webkit-transform: inherit;
+    -moz-transform: inherit;
+    font-style: normal;
+    text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.popular-brands .category-content:hover .Wrap_button_cs .hover-mask h3 a {
+    background: #e94949;color: #fff;
+}
+
+.popular-brands .row {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+}
+
+.popular-brands .col-xs-6.col-sm-4 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.popular-brands .product-category-thumbnail {
+    position: relative;
+    padding-bottom: 160%;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.popular-brands .product-category-thumbnail img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+@media only screen and (max-width:1199px){
+
+.popular-brands .Wrap_button_cs .hover-mask h3 a {
+    font-size: 15px;
+    padding: 11px 25px;
+    letter-spacing: 0.5px;
+}
+  
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+.popular-brands .col-xs-6.col-sm-4 {
+    width: 25% !important;
+}
+
+.popular-brands .spb__column.gl_column_container.gl_col-sm-12>.gl_column-inner {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.popular-brands .Wrap_button_cs .hover-mask h3 a {
+    font-size: 13px;
+    padding: 11px 14px;
+    letter-spacing: 0px;
+}
+
+}
+
+@media only screen and (max-width:768px){
+
+.popular-brands .col-xs-6.col-sm-4 {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.popular-brands .row {
+    margin-left: -5px !important;
+    margin-right: -5px !important;
+}
+  
+}
+
+@media only screen and (max-width: 767px){
+.popular-brands .spb__column.gl_column_container.gl_col-sm-12>.gl_column-inner {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  padding-top: 40px !important;
+    padding-bottom: 0 !important;
+}
+
+.popular-brands .product-category.product {
+    margin-bottom: 50px !important;
+}
+
+.popular-brands .Wrap_button_cs .hover-mask h3 a {
+    font-size: 13px;
+    padding: 11px 15px;
+    letter-spacing: 0px;
+}
+
+}
+
+@media only screen and (max-width: 350px){
+
+.popular-brands .Wrap_button_cs .hover-mask h3 a {
+    font-size: 12px;
+    padding: 11px 10px;
+    letter-spacing: 0px;
+}
+
+}
+
+/*------------popular-brand-css-end------------*/
+
+/*------------eight-cols-category-design-css---*/
+
+.section_new_promo_categories {
+    padding: 40px 50px 50px 50px;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-12.gl_col-lg-12 {
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-12.gl_col-lg-12 .gl_col-md-6.gl_col-lg-6 {
+    padding: 0;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-12.gl_col-lg-12 .wrapper-content-baner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    right: 0px;
+    /* position: relative; */
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-12.gl_col-lg-12 .wrapper-content-baner .banner-inner {
+    position: relative;
+    max-width: 58%;
+    margin-left: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-12.gl_col-lg-12 .wrapper-content-baner .banner-inner h2 {
+    font-size: 3.8vw;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-12.gl_col-lg-12 .wrapper-content-baner .banner-inner h2 + div {
+    font-size: 1.3vw;
+    color: #000;
+    letter-spacing: 1px;
+    margin: 20px 0;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child .btn {
+    min-width: inherit;
+    height: auto;
+    line-height: normal;
+    font-size: 14px;
+    background: #000;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 5px;
+    border: none;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child .btn:hover {
+    background: #e94949 !important;
+    color: #fff;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-12.gl_col-lg-12 .promo-banner .main-wrapp-img {
+    width: 100%;
+}
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-12.gl_col-lg-12 .promo-banner .main-wrapp-img .banner-image {
+    width: 100%;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-12.gl_col-lg-12 .promo-banner .main-wrapp-img .banner-image img {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+    display: block;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child .promo-banner {
+    overflow: visible;
+    margin: 0;
+    width: 100%;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .main-wrapp-img {
+    width: 100%;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .main-wrapp-img .banner-image {
+    width: 100%;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .main-wrapp-img .banner-image img {
+    background: #fff;
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+    display: block;
+    width: 100%;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-6.gl_col-lg-6 {
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-6.gl_col-lg-6:last-child {
+    padding-right: 0;
+    padding-left: 15px;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-6.gl_col-lg-6 .main-wrapp-img {
+    padding: 0;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .wrapper-content-baner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    right: 0px;
+    width: 100%;
+    padding: 0 !important;
+    top: 0;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .wrapper-content-baner .banner-inner {
+    max-width: 59%;
+    margin-left: auto;
+    text-align: center;
+    padding-left: 0;
+    position: relative;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .wrapper-content-baner .banner-inner h2 {
+    font-size: 2.1vw;
+    width: 100%;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .wrapper-content-baner .banner-inner h2 + div {
+    font-size: 1vw;
+    color: #000;
+    letter-spacing: 1px;
+    margin: 20px 0;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner {
+    padding-left: 23px;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:first-child>.gl_column-inner>.spb_wrapper .promo-banner.gl_col-md-6.gl_col-lg-6 {
+    width: 50%;
+    float: left;
+    padding: 0 15px;
+    overflow: visible;
+    margin-bottom: 30px;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:first-child>.gl_column-inner>.spb_wrapper .promo-banner.gl_col-md-6.gl_col-lg-6 .main-wrapp-img {
+    width: 100%;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:first-child>.gl_column-inner>.spb_wrapper .promo-banner.gl_col-md-6.gl_col-lg-6 .main-wrapp-img .banner-image img {
+    width: 100%;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:first-child>.gl_column-inner>.spb_wrapper .promo-banner.gl_col-md-6.gl_col-lg-6 .main-wrapp-img .banner-image img {
+    background: #fff;
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+    display: block;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6 .promo-banner-inner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6 .promo-banner-inner .wrapper-content-baner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    right: 0px;
+    width: 100%;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6 .promo-banner-inner .wrapper-content-baner .banner-inner {
+    max-width: 59%;
+    margin-left: auto;
+    text-align: center;
+    padding-left: 0;
+    position: relative;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6 .promo-banner-inner .wrapper-content-baner .banner-inner h2 {
+    font-size: 2.1vw;
+    width: 100%;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6 .promo-banner-inner .wrapper-content-baner .banner-inner h2 + div {
+    font-size: 1vw;
+    color: #000;
+    letter-spacing: 1px;
+    margin: 20px 0;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6 .promo-banner-inner .wrapper-content-baner .banner-inner .btn {
+    min-width: inherit;
+    height: auto;
+    line-height: normal;
+    font-size: 14px;
+    background: #000;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 0;
+    border: none;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6 .promo-banner-inner .wrapper-content-baner .banner-inner .btn:hover{
+  background: #e94949 !important;
+    color: #fff;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6.gl_col-lg-6:first-child>.gl_column-inner>.spb_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:first-child>.gl_column-inner>.spb_wrapper .promo-banner.gl_col-md-6.gl_col-lg-6 .main-wrapp-img .banner-image {
+    position: relative;
+    padding-bottom: 98.5%;
+    /* overflow: hidden; */
+}
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:first-child>.gl_column-inner>.spb_wrapper .promo-banner.gl_col-md-6.gl_col-lg-6 .main-wrapp-img .banner-image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  top: 0;
+    left: 0;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:first-child {
+    padding-right: 7px;
+}
+
+@media only screen and (max-width: 1550px){
+
+  .section_new_promo_categories {
+    padding: 40px 30px 30px 30px;
+}
+  
+}
+
+@media only screen and (max-width: 1199px) {
+
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child .btn {
+    font-size: 13px;
+    padding: 8px 12px;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6 .promo-banner-inner .wrapper-content-baner .banner-inner .btn {
+    font-size: 13px;
+    padding: 8px 12px;
+    border-radius: 5px
+}
+
+}
+
+@media only screen and (max-width: 1199px) and (min-width:992px){
+
+  .popular-brands>.spb__column.gl_column_container.gl_col-sm-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6 .promo-banner-inner .wrapper-content-baner .banner-inner h2 + div {
+    font-size: 1.3vw;
+}
+
+  .section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .wrapper-content-baner .banner-inner h2 + div {
+    font-size: 1.3vw;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:first-child {
+    padding-left: 0;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6 {
+    float: left;
+    width: 50%;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6 .main-wrapp-img {
+    padding: 0 !important;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6  .wrapper-content-baner {
+    width: 100%;
+    padding: 0 !important;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child {
+    padding: 0;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-12.gl_col-lg-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+  .section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-6.gl_col-lg-6 {
+    float: left;
+    width: 50%;
+    padding-left: 0;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-6.gl_col-lg-6 * {
+    width: 100%;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-6.gl_col-lg-6:last-child {
+    padding-right: 0;
+    padding-left: 15px;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-12.gl_col-lg-12 .wrapper-content-baner.gl_col-md-6.gl_col-lg-6 {
+    width: 100% !important;
+    float: none;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-12.gl_col-lg-12 .wrapper-content-baner.gl_col-md-6.gl_col-lg-6 a.btn {
+    width: auto;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child .btn {
+    width: auto !important;
+}
+
+  
+}
+
+@media only screen and (max-width: 991px) {
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6.gl_col-lg-6 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.section_new_promo_categories {
+    padding: 40px 5px 30px 5px;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6.gl_col-lg-6 .promo-banner.gl_col-md-6.gl_col-lg-6 .gl_col-md-6 {
+    padding: 0;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner {
+    padding-left: 0;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper {
+    display: block;
+    margin: 0 -15px;
+}
+
+  .section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-6.gl_col-lg-6 {
+    float: left;
+    width: 50%;
+    padding: 0 15px;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-6.gl_col-lg-6 * {
+    width: 100%;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-6.gl_col-lg-6:last-child {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-6.gl_col-lg-6 .btn {
+    width: auto !important;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-12.gl_col-lg-12 .gl_col-md-6.gl_col-lg-6 {
+    width: 100%;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6 .promo-banner-inner .wrapper-content-baner .banner-inner {
+    max-width: 65%;
+    width: 100%;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6 .promo-banner-inner .wrapper-content-baner .banner-inner h2 {
+    font-size: 3.1vw;
+    
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6 .promo-banner-inner .wrapper-content-baner .banner-inner h2 + div {
+    font-size: 1.8vw;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-12.gl_col-lg-12 .wrapper-content-baner .banner-inner h2 {
+    font-size: 4.8vw;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-12.gl_col-lg-12 .wrapper-content-baner .banner-inner h2 + div {
+    font-size: 2.3vw;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .wrapper-content-baner .banner-inner h2 {
+    font-size: 3.1vw;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .wrapper-content-baner .banner-inner h2 + div {
+    font-size: 1.8vw;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .wrapper-content-baner .banner-inner {
+    max-width: 70%;
+}
+  
+}
+
+@media only screen and (max-width: 767px) {
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:first-child>.gl_column-inner>.spb_wrapper .promo-banner.gl_col-md-6.gl_col-lg-6 {
+    width: 100%;margin-bottom: 20px;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-6.gl_col-lg-6 {
+    margin-bottom: 20px;width: 100%;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-12.gl_col-lg-12 .gl_col-md-6 {
+    margin-bottom: 0;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-12.gl_col-lg-12 {
+    padding-bottom: 5px;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-6.gl_col-lg-6 .gl_col-md-6 {
+    margin-bottom: 0;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6 .promo-banner-inner .wrapper-content-baner .banner-inner h2 + div {
+    font-size: 17px;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6 .promo-banner-inner .wrapper-content-baner .banner-inner h2 {
+    font-size: 41px;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6 .promo-banner-inner .wrapper-content-baner .banner-inner {
+    max-width: 225px;
+    width: 100%;
+    margin-right: 10vw;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6 .promo-banner-inner .wrapper-content-baner .banner-inner .btn {
+    font-size: 11px;
+    padding: 8px 15px;
+}
+
+  .section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child .btn {
+    font-size: 11px;
+    padding: 8px 15px;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .wrapper-content-baner .banner-inner h2 {
+    font-size: 41px;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .wrapper-content-baner .banner-inner h2 + div {
+    font-size: 18px;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-12.gl_col-lg-12 .wrapper-content-baner .banner-inner h2 {
+    font-size: 41px;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-12.gl_col-lg-12 .wrapper-content-baner .banner-inner h2 + div {
+    font-size: 18px;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .wrapper-content-baner .banner-inner {
+    max-width: 225px;
+    margin-right: 10vw;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-12.gl_col-lg-12 .wrapper-content-baner .banner-inner {
+    max-width: 225px;
+}
+
+.section_new_promo_categories {
+    padding: 20px 0px 10px 0px;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6 .main-wrapp-img .banner-image img.desk {
+    display: none !important;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6 .banner-image img.desk {
+    display: none !important;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:first-child>.gl_column-inner>.spb_wrapper .promo-banner.gl_col-md-6.gl_col-lg-6 .main-wrapp-img .banner-image {
+   
+    padding-bottom: 0;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:first-child>.gl_column-inner>.spb_wrapper .promo-banner.gl_col-md-6.gl_col-lg-6 .main-wrapp-img .banner-image img {
+    position: relative;
+    height: auto;
+}
+
+}
+
+@media only screen and (max-width: 479px) {
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6 .promo-banner-inner .wrapper-content-baner .banner-inner {
+    max-width: 225px;
+    margin-right: 0;
+    padding-left: 20px;
+}
+
+  .section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6 .promo-banner-inner .wrapper-content-baner .banner-inner h2 {
+    font-size: 30px;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .wrapper-content-baner .banner-inner {
+    margin-right: 0;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-12.gl_col-lg-12 .wrapper-content-baner .banner-inner h2 {
+    font-size: 30px;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-12.gl_col-lg-12 .wrapper-content-baner .banner-inner h2 + div {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .wrapper-content-baner .banner-inner h2 {
+    font-size: 30px;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .wrapper-content-baner .banner-inner h2 + div {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6 .promo-banner-inner .wrapper-content-baner .banner-inner h2 + div {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .wrapper-content-baner .banner-inner {
+    max-width: 185px;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-12.gl_col-lg-12 .wrapper-content-baner .banner-inner {
+    max-width: 185px;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6 .promo-banner-inner .wrapper-content-baner .banner-inner {
+    max-width: 185px;
+}
+
+}
+
+/*------------eight-cols-category-design-css-end---*/
+
