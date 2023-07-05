@@ -1347,4 +1347,41 @@ html[lang="pt"] div.gl_section_promo_categories .featured-collection>.gl_col-md-
 }
 }
 
+.shop-now-sezzel {
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: #1b1919;
+    font-family: product_sans_mediumregular;
+}
 
+
+@media only screen and (max-width:767px){
+.shop-now-sezzel img {
+    max-width: 90px;
+}
+
+.shop-now-sezzel {
+    font-size: 22px;
+    margin-bottom: 15px;
+    margin-top: -25px;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+body section.brands-banner-section {
+    padding: 50px 15px 30px !important;
+}
+  
+}
+
+
+@media only screen and (max-width:350px){
+
+.shop-now-sezzel img {
+    max-width: 80px;
+}
+
+  .shop-now-sezzel {
+    font-size: 20px;}
+
+}

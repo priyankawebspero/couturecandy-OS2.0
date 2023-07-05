@@ -89,6 +89,19 @@
         "section_padding_left": ""
       }
     },
+    "470b7839-552c-4b1a-bb0f-c6eca9424854": {
+      "type": "custom-content",
+      "settings": {
+        "code": "<div class=\"container text-center\"><div class=\"shop-now-sezzel\">Buy now, pay later with <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0144\/7018\/5017\/files\/logo-sezzle_150x.png?v=1688369193\" alt=\"sezzel\">\n<\/div><\/div>",
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding_top": "",
+        "section_padding_right": "",
+        "section_padding_bottom": "",
+        "section_padding_left": "",
+        "hidden_section": false
+      }
+    },
     "1653914668ef75e938": {
       "type": "our-brands",
       "blocks": {
@@ -452,6 +465,7 @@
     "16539111747fa4ce03",
     "1654005036571929f8",
     "165390901603cb214c",
+    "470b7839-552c-4b1a-bb0f-c6eca9424854",
     "1653914668ef75e938",
     "1653916013b1f6c860",
     "16541439641d011f7d",
