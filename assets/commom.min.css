@@ -7544,6 +7544,10 @@ body .iWishAddColl svg path {
     padding-top: 12px;
     padding-bottom: 12px;
 }
+
+div#reviewCarouselWidget  .stjr-reviews-carousel {
+    max-width: 100% !important;
+}
   
 }
 
