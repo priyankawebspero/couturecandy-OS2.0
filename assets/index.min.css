@@ -1805,6 +1805,11 @@ body section.brands-banner-section {
     font-size: 13px;
     padding: 10px 15px;
 }
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6 .promo-banner-inner .wrapper-content-baner .banner-inner .btn {
+    font-size: 13px;
+    padding: 10px 15px;
+}
   
 }
 
