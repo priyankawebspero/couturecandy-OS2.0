@@ -1823,6 +1823,20 @@ body section.brands-banner-section {
     padding: 0 !important;
 }
 
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:first-child {
+    padding-left: 0;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child .gl_col-md-12.gl_col-lg-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 }
   
 @media only screen and (max-width: 1199px) {
