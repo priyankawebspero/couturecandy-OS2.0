@@ -1842,6 +1842,15 @@ body section.brands-banner-section {
 }
 
 }
+
+@media only screen and (max-width: 1200px) and (min-width:768px){
+
+.popular-brands>.spb__column.gl_column_container.gl_col-sm-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+}
   
 @media only screen and (max-width: 1199px) {
 
