@@ -2036,6 +2036,10 @@ body section.brands-banner-section {
 
 @media only screen and (max-width: 767px) {
 
+  .product-grid-item.product .swatches-on-grid a {
+    vertical-align: top;
+}
+
 .section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:first-child>.gl_column-inner>.spb_wrapper .promo-banner.gl_col-md-6.gl_col-lg-6 {
     width: 100%;margin-bottom: 20px;
 }
