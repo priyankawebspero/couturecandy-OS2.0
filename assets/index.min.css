@@ -1850,6 +1850,11 @@ body section.brands-banner-section {
     padding-right: 0;
 }
 
+.gl-gird-collection-section .spb_column.gl_column_container.gl_col-sm-12, .product_categories .spb_column.gl_column_container.gl_col-sm-12  {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 }
   
 @media only screen and (max-width: 1199px) {
