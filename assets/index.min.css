@@ -1837,6 +1837,10 @@ body section.brands-banner-section {
     padding-right: 0;
 }
 
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child>.gl_column-inner>.spb_wrapper .gl_col-md-12.gl_col-lg-12 + .gl_col-md-6.gl_col-lg-6 {
+    padding-left: 0;
+}
+
 }
   
 @media only screen and (max-width: 1199px) {
