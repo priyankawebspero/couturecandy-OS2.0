@@ -89,7 +89,7 @@
         "section_padding_left": ""
       }
     },
-    "470b7839-552c-4b1a-bb0f-c6eca9424854": {
+    "5399664e-749b-46e5-a32f-42303d81e8be": {
       "type": "custom-content",
       "settings": {
         "code": "<div class=\"container text-center\"><div class=\"shop-now-sezzel\">Buy now, pay later with <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0144\/7018\/5017\/files\/logo-sezzle_150x.png?v=1688369193\" alt=\"sezzel\">\n<\/div><\/div>",
@@ -199,7 +199,7 @@
         "0eba3c45-382d-4897-b2f4-5f4d7e9be81a": {
           "type": "Brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Logo-01.png",
+            "image": "shopify:\/\/shop_images\/may-queen-logo_1.png",
             "link": "\/collections\/may-queen"
           }
         },
@@ -458,6 +458,148 @@
         "read_more": "Read More",
         "text_below": "<p>Wearing a designer prom dress shouldn’t be an exorbitant affair for any teen. We, at CoutureCandy, strive to get the best prices for our dear shoppers. Our on-sale prom dresses under $100 can be easily mistaken for $1000. We offer best-sellers from top designers like Jovani, Sherri Hill, and Blush, etc. at highly discounted prices online. Thousands of long and short prom dresses are available in different styles, sizes and price ranges - ready to be shipped to prom-goers around the world.<\/p>"
       }
+    },
+    "5f90642e-c6f0-40fc-a325-48ae103e487e": {
+      "type": "gl_section_categories_furniture",
+      "blocks": {
+        "template--14985369419859__5f90642e-c6f0-40fc-a325-48ae103e487e-168845284798e93e3b-0": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/montage-by-mon-cheri-119938-fitted-pleated-evening-dress-evening-dresses-0-navy-28205987037267.jpg",
+            "heading": "Chiffon Dresses",
+            "content": "",
+            "button": "",
+            "id_collection": "chiffon-dresses",
+            "width": "3"
+          }
+        },
+        "template--14985369419859__5f90642e-c6f0-40fc-a325-48ae103e487e-168845284798e93e3b-1": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/rachel-allan-50125-ruffle-sleeve-one-shoulder-jumpsuit-evening-dresses-00-fuchsia-29527287693395.jpg",
+            "heading": "Organza Dresses",
+            "content": "",
+            "button": "",
+            "id_collection": "organza-dresses",
+            "width": "3"
+          }
+        },
+        "template--14985369419859__5f90642e-c6f0-40fc-a325-48ae103e487e-168845284798e93e3b-2": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ieena-duggal-67985-ruffled-plunging-v-neck-long-dress-prom-dresses-30471791542355.jpg",
+            "heading": "Floral Dresses",
+            "content": "",
+            "button": "",
+            "id_collection": "floral-dresses",
+            "width": "3"
+          }
+        },
+        "template--14985369419859__5f90642e-c6f0-40fc-a325-48ae103e487e-168845284798e93e3b-3": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/la-femme-26036-v-neckline-strappy-open-back-fitted-gown-special-occasion-dress-00-burgundy-5514689314873.jpg",
+            "heading": "Satin Dresses",
+            "content": "",
+            "button": "",
+            "id_collection": "satin-dresses",
+            "width": "3"
+          }
+        }
+      },
+      "block_order": [
+        "template--14985369419859__5f90642e-c6f0-40fc-a325-48ae103e487e-168845284798e93e3b-0",
+        "template--14985369419859__5f90642e-c6f0-40fc-a325-48ae103e487e-168845284798e93e3b-1",
+        "template--14985369419859__5f90642e-c6f0-40fc-a325-48ae103e487e-168845284798e93e3b-2",
+        "template--14985369419859__5f90642e-c6f0-40fc-a325-48ae103e487e-168845284798e93e3b-3"
+      ],
+      "settings": {
+        "class": "popular-brands",
+        "title": "Comfortable Summer Fabrics",
+        "sub_title": "",
+        "categories_layout": "default",
+        "categories_design": "default",
+        "space_categories": "10",
+        "silder_speed": "5000",
+        "silder_per_view": "4",
+        "hide_pagination": false,
+        "hide_button": false,
+        "slider_loop": false,
+        "autoplay": false,
+        "section_bg_color": "",
+        "section_border_color": "",
+        "section_border_style": "solid",
+        "section_border": "",
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding_top": "",
+        "section_padding_right": "",
+        "section_padding_bottom": "",
+        "section_padding_left": ""
+      }
+    },
+    "11f1b396-cf48-4ad8-b071-0d32a642d98f": {
+      "type": "feature-new-categories",
+      "blocks": {
+        "b6a0bbc5-40ab-46e8-b670-318d646d7d5d": {
+          "type": "banner-1",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/min-prom-dresses-coll.jpg",
+            "image_mob": "shopify:\/\/shop_images\/Prom-dresses_9f6ee5b4-220a-4ef5-9f64-e3e1264f94f6.jpg",
+            "category_heading": "PROM DRESSES",
+            "category_content": "Shop our latest selection",
+            "banner_btn_title": "SHOP NOW",
+            "banner_link": "\/collections\/prom-dresses",
+            "image_first": "shopify:\/\/shop_images\/collection-Fall-Dresses.jpg",
+            "image_first_mob": "shopify:\/\/shop_images\/mobile-collection-Fall-Dresses.jpg",
+            "category_heading_first": "Fall Dresses",
+            "category_content_first": "",
+            "banner_btn_title_first": "SHOP NOW",
+            "banner_link_first": "shopify:\/\/collections\/fall-collection",
+            "image_secondd": "shopify:\/\/shop_images\/collection-Summer-Dresses.jpg",
+            "image_second_mob": "shopify:\/\/shop_images\/mobile-collection-Summer-Dresses.jpg",
+            "category_heading_second": "Summer Dresses",
+            "category_content_second": "",
+            "banner_btn_title_second": "SHOP NOW",
+            "banner_link_second": "shopify:\/\/collections\/summer-collection",
+            "image_third": "shopify:\/\/shop_images\/collection-short-Dresses.jpg",
+            "image_third_mob": "shopify:\/\/shop_images\/mobile-collection-short-Dresses.jpg",
+            "category_heading_third": "Short Dresses",
+            "category_content_third": "",
+            "banner_btn_title_third": "SHOP NOW",
+            "banner_link_third": "shopify:\/\/collections\/short-dresses"
+          }
+        },
+        "de2dd959-0ea5-449d-bd3d-8e5a79f1c297": {
+          "type": "banner-2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Occasion_878a88c9-3916-42d3-9109-3a59c61a1510.jpg",
+            "image_style_mob": "shopify:\/\/shop_images\/mobile-occasion-dress-pic_fa219560-a070-4b59-a5fa-f4ba359de26d.jpg",
+            "category_heading": "Occasion",
+            "category_content": "Dresses for every occasion",
+            "banner_btn_title": "SHOP NOW",
+            "banner_link": "\/collections\/dresses",
+            "image1": "shopify:\/\/shop_images\/min-Cocktail-dresses.jpg",
+            "image1_mob": "shopify:\/\/shop_images\/mobile-cocktail-dress-pic_b3e387c7-18a8-4182-a950-c7e2a48d492a.jpg",
+            "category_heading1": "COCKTAIL DRESSES",
+            "category_content1": "Looks that stay warm in style",
+            "banner_btn_title1": "SHOP NOW",
+            "banner_link1": "\/collections\/cocktail-dresses",
+            "image2": "shopify:\/\/shop_images\/min-Formal-Gowns.jpg",
+            "image2_mob": "shopify:\/\/shop_images\/mobile-formal-gowns-pic_733f8e64-d818-46cb-8f2f-4c913fc13224.jpg",
+            "category_heading2": "FORMAL GOWNS",
+            "category_content2": "In every shape & size",
+            "banner_btn_title2": "SHOP NOW",
+            "banner_link2": "\/collections\/formal-gowns"
+          }
+        }
+      },
+      "block_order": [
+        "b6a0bbc5-40ab-46e8-b670-318d646d7d5d",
+        "de2dd959-0ea5-449d-bd3d-8e5a79f1c297"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -465,7 +607,7 @@
     "16539111747fa4ce03",
     "1654005036571929f8",
     "165390901603cb214c",
-    "470b7839-552c-4b1a-bb0f-c6eca9424854",
+    "5399664e-749b-46e5-a32f-42303d81e8be",
     "1653914668ef75e938",
     "1653916013b1f6c860",
     "16541439641d011f7d",
@@ -473,6 +615,8 @@
     "16539975212558b7d0",
     "1655293959d5ab1c6c",
     "1655293802112cf900",
-    "16539976128b65b898"
+    "16539976128b65b898",
+    "5f90642e-c6f0-40fc-a325-48ae103e487e",
+    "11f1b396-cf48-4ad8-b071-0d32a642d98f"
   ]
 }
