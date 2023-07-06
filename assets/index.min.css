@@ -1800,6 +1800,11 @@ body section.brands-banner-section {
   .section_new_promo_categories {
     padding: 50px 30px 0px 30px;
 }
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6:last-child .btn {
+    font-size: 13px;
+    padding: 10px 15px;
+}
   
 }
 
