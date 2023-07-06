@@ -1855,6 +1855,11 @@ body section.brands-banner-section {
     padding-right: 0;
 }
 
+.featured_categories .spb__column.gl_column_container.gl_col-sm-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 }
   
 @media only screen and (max-width: 1199px) {
