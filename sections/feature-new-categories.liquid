@@ -1,0 +1,799 @@
+<div
+  data-section-id="{{ section.id }}"
+  data-section-type="banners-section"
+  class="gl_custom_{{section.id}} featured-new-collection"
+>
+  {%- for block in section.blocks -%}
+    {% if block.type == 'banner-1' %}
+      <div class="spb_column gl_column_container gl_col-md-6 gl_col-lg-6">
+        <div class="gl_column-inner">
+          <div class="spb_wrapper">
+            <div
+              class="promo-banner gl_col-md-6 gl_col-lg-6"
+              onclick="window.location.href='{{ block.settings.banner_link }}'"
+            >
+              <div class="promo-banner-inner">
+                <div class="main-wrapp-img gl_col-md-6 gl_col-lg-6">
+                  <div class="banner-image">
+                    {%- if block.settings.image == blank -%}
+                      <img
+                        class="promo-banner-image image-1"
+                        src="//cdn.shopify.com/s/files/1/1933/6253/files/portfolio-placeholder_600x400_crop_center.jpg?12790048884060573015"
+                        width="600"
+                        height="420"
+                        alt="market-banner-sport"
+                        title="market-banner-sport"
+                      >
+                    {%- else -%}
+                      {%- assign image = block.settings.image -%}
+                      {%- assign image_mob = block.settings.image_mob -%}
+                      {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                      {%- assign image_mob = image_mob | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                      <img
+                        src="{{ image | img_url: '50x50' }}"
+                        data-src="{{ img_url }}"
+                        data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 850]"
+                        data-aspectratio="{{ image.aspect_ratio }}"
+                        data-sizes="auto"
+                        class="lazyload w__100 promo-banner-image image-1 desk"
+                        alt="{{image.alt}}"
+                      >
+                      <img
+                        src="{{ image_mob | img_url: '50x50' }}"
+                        data-src="{{ image_mob }}"
+                        data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 850]"
+                        data-aspectratio="{{ image.aspect_ratio }}"
+                        data-sizes="auto"
+                        class="lazyload w__100 promo-banner-image image-1 mobile"
+                        alt="{{image.alt}}"
+                      >
+                      <div class="jas-wrap-lazy"></div>
+                    {%- endif -%}
+                  </div>
+                </div>
+                <div class="wrapper-content-baner gl_col-md-6 gl_col-lg-6">
+                  <div class="banner-inner">
+                    {%- if block.settings.category_heading != blank -%}
+                      <h2>
+                        <a href="{{ block.settings.banner_link }}">{{ block.settings.category_heading }}</a>
+                      </h2>
+                    {%- endif -%}
+                    {%- if block.settings.category_content != blank -%}
+                      <div>{{ block.settings.category_content }}</div>
+                    {%- endif -%}
+                    {%- if block.settings.banner_link != blank and block.settings.banner_btn_title != blank -%}
+                      <p>
+                        <a class="btn" href="{{ block.settings.banner_link }}">{{ block.settings.banner_btn_title }}</a>
+                      </p>
+                    {%- endif -%}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="promo-banner gl_col-md-6 gl_col-lg-6"
+              onclick="window.location.href='{{ block.settings.banner_link_first }}'"
+            >
+              <div class="promo-banner-inner">
+                <div class="main-wrapp-img gl_col-md-6 gl_col-lg-6">
+                  <div class="banner-image">
+                    {%- if block.settings.image_first == blank -%}
+                      <img
+                        class="promo-banner-image image-1"
+                        src="//cdn.shopify.com/s/files/1/1933/6253/files/portfolio-placeholder_600x400_crop_center.jpg?12790048884060573015"
+                        width="600"
+                        height="420"
+                        alt="market-banner-sport"
+                        title="market-banner-sport"
+                      >
+                    {%- else -%}
+                      {%- assign image = block.settings.image_first -%}
+                      {%- assign image_mob = block.settings.image_first_mob -%}
+                      {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                      {%- assign image_mob = image_mob | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                      <img
+                        src="{{ image | img_url: '50x50' }}"
+                        data-src="{{ img_url }}"
+                        data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 850]"
+                        data-aspectratio="{{ image.aspect_ratio }}"
+                        data-sizes="auto"
+                        class="lazyload w__100 promo-banner-image image-1 desk"
+                        alt="{{image.alt}}"
+                        width="420"
+                        height="420"
+                      >
+                      <img
+                        src="{{ image_mob | img_url: '50x50' }}"
+                        data-src="{{ image_mob }}"
+                        data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 850]"
+                        data-aspectratio="{{ image.aspect_ratio }}"
+                        data-sizes="auto"
+                        class="lazyload w__100 promo-banner-image image-1 mobile"
+                        alt="{{image.alt}}"
+                        width="420"
+                        height="420"
+                      >
+                      <div class="jas-wrap-lazy"></div>
+                    {%- endif -%}
+                  </div>
+                </div>
+                <div class="wrapper-content-baner gl_col-md-6 gl_col-lg-6">
+                  <div class="banner-inner">
+                    {%- if block.settings.category_heading_first != blank -%}
+                      <h2>
+                        <a href="{{ block.settings.banner_link }}">{{ block.settings.category_heading_first }}</a>
+                      </h2>
+                    {%- endif -%}
+                    {%- if block.settings.category_content_first != blank -%}
+                      <div>{{ block.settings.category_content_first }}</div>
+                    {%- endif -%}
+                    {%- if block.settings.banner_link_first != blank
+                      and block.settings.banner_btn_title_first != blank
+                    -%}
+                      <p>
+                        <a class="btn" href="{{ block.settings.banner_link_first }}">
+                          {{- block.settings.banner_btn_title_first -}}
+                        </a>
+                      </p>
+                    {%- endif -%}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="promo-banner gl_col-md-6 gl_col-lg-6"
+              onclick="window.location.href='{{ block.settings.banner_link_second }}'"
+            >
+              <div class="promo-banner-inner">
+                <div class="main-wrapp-img gl_col-md-6 gl_col-lg-6">
+                  <div class="banner-image">
+                    {%- if block.settings.image_secondd == blank -%}
+                      <img
+                        class="promo-banner-image image-1"
+                        src="//cdn.shopify.com/s/files/1/1933/6253/files/portfolio-placeholder_600x400_crop_center.jpg?12790048884060573015"
+                        width="600"
+                        height="420"
+                        alt="market-banner-sport"
+                        title="market-banner-sport"
+                      >
+                    {%- else -%}
+                      {%- assign image = block.settings.image_secondd -%}
+                      {%- assign image_mob = block.settings.image_second_mob -%}
+                      {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                      {%- assign image_mob = image_mob | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                      <img
+                        src="{{ image | img_url: '50x50' }}"
+                        data-src="{{ img_url }}"
+                        data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 850]"
+                        data-aspectratio="{{ image.aspect_ratio }}"
+                        data-sizes="auto"
+                        class="lazyload w__100 promo-banner-image image-1 desk"
+                        alt="{{image.alt}}"
+                        width="420"
+                        height="420"
+                      >
+                      <img
+                        src="{{ image_mob | img_url: '50x50' }}"
+                        data-src="{{ image_mob }}"
+                        data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 850]"
+                        data-aspectratio="{{ image.aspect_ratio }}"
+                        data-sizes="auto"
+                        class="lazyload w__100 promo-banner-image image-1 mobile"
+                        alt="{{image.alt}}"
+                        width="420"
+                        height="420"
+                      >
+                      <div class="jas-wrap-lazy"></div>
+                    {%- endif -%}
+                  </div>
+                </div>
+                <div class="wrapper-content-baner gl_col-md-6 gl_col-lg-6">
+                  <div class="banner-inner">
+                    {%- if block.settings.category_heading_second != blank -%}
+                      <h2>
+                        <a href="{{ block.settings.banner_link }}">{{ block.settings.category_heading_second }}</a>
+                      </h2>
+                    {%- endif -%}
+                    {%- if block.settings.category_content_second != blank -%}
+                      <div>{{ block.settings.category_content_second }}</div>
+                    {%- endif -%}
+                    {%- if block.settings.banner_link_second != blank
+                      and block.settings.banner_btn_title_second != blank
+                    -%}
+                      <p>
+                        <a class="btn" href="{{ block.settings.banner_link_second }}">
+                          {{- block.settings.banner_btn_title_second -}}
+                        </a>
+                      </p>
+                    {%- endif -%}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="promo-banner gl_col-md-6 gl_col-lg-6"
+              onclick="window.location.href='{{ block.settings.banner_link_third }}'"
+            >
+              <div class="promo-banner-inner">
+                <div class="main-wrapp-img gl_col-md-6 gl_col-lg-6">
+                  <div class="banner-image">
+                    {%- if block.settings.image_third == blank -%}
+                      <img
+                        class="promo-banner-image image-1"
+                        src="//cdn.shopify.com/s/files/1/1933/6253/files/portfolio-placeholder_600x400_crop_center.jpg?12790048884060573015"
+                        width="600"
+                        height="420"
+                        alt="market-banner-sport"
+                        title="market-banner-sport"
+                      >
+                    {%- else -%}
+                      {%- assign image = block.settings.image_third -%}
+                      {%- assign image_mob = block.settings.image_third_mob -%}
+                      {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                      {%- assign image_mob = image_mob | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                      <img
+                        src="{{ image | img_url: '50x50' }}"
+                        data-src="{{ img_url }}"
+                        data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 850]"
+                        data-aspectratio="{{ image.aspect_ratio }}"
+                        data-sizes="auto"
+                        class="lazyload w__100 promo-banner-image image-1 desk"
+                        alt="{{image.alt}}"
+                        width="420"
+                        height="420"
+                      >
+                      <img
+                        src="{{ image_mob | img_url: '50x50' }}"
+                        data-src="{{ image_mob }}"
+                        data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 850]"
+                        data-aspectratio="{{ image.aspect_ratio }}"
+                        data-sizes="auto"
+                        class="lazyload w__100 promo-banner-image image-1 mobile"
+                        alt="{{image.alt}}"
+                        width="420"
+                        height="420"
+                      >
+                      <div class="jas-wrap-lazy"></div>
+                    {%- endif -%}
+                  </div>
+                </div>
+                <div class="wrapper-content-baner gl_col-md-6 gl_col-lg-6">
+                  <div class="banner-inner">
+                    {%- if block.settings.category_heading_third != blank -%}
+                      <h2>
+                        <a href="{{ block.settings.banner_link }}">{{ block.settings.category_heading_third }}</a>
+                      </h2>
+                    {%- endif -%}
+                    {%- if block.settings.category_content_third != blank -%}
+                      <div>{{ block.settings.category_content_third }}</div>
+                    {%- endif -%}
+                    {%- if block.settings.banner_link_third != blank
+                      and block.settings.banner_btn_title_third != blank
+                    -%}
+                      <p>
+                        <a class="btn" href="{{ block.settings.banner_link_third }}">
+                          {{- block.settings.banner_btn_title_third -}}
+                        </a>
+                      </p>
+                    {%- endif -%}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% elsif block.type == 'banner-2' %}
+      <div class="spb_column gl_column_container gl_col-md-6 gl_col-lg-6">
+        <div class="gl_column-inner">
+          <div class="spb_wrapper">
+            <div class="gl_col-md-12 gl_col-lg-12">
+              <div class="promo-banner" onclick="window.location.href='{{ block.settings.banner_link }}'">
+                <div class="main-wrapp-img gl_col-md-6 gl_col-lg-6">
+                  <div class="banner-image">
+                    {%- if block.settings.image == blank -%}
+                      <img
+                        class="promo-banner-image image-1"
+                        src="//cdn.shopify.com/s/files/1/1933/6253/files/portfolio-placeholder_600x400_crop_center.jpg?12790048884060573015"
+                        width="600"
+                        height="420"
+                        alt="market-banner-sport"
+                        title="market-banner-sport"
+                      >
+                    {%- else -%}
+                      {%- assign image = block.settings.image -%}
+                      {%- assign image_mob = block.settings.image_style_mob -%}
+                      {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                      {%- assign image_mob = image_mob | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                      <img
+                        src="{{ image | img_url: '50x50' }}"
+                        data-src="{{ img_url }}"
+                        data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 850]"
+                        data-aspectratio="{{ image.aspect_ratio }}"
+                        data-sizes="auto"
+                        class="lazyload w__100 promo-banner-image image-1 desk"
+                        alt="{{image.alt}}"
+                        width="420"
+                        height="420"
+                      >
+                      <img
+                        src="{{ image_mob | img_url: '50x50' }}"
+                        data-src="{{ image_mob }}"
+                        data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 850]"
+                        data-aspectratio="{{ image.aspect_ratio }}"
+                        data-sizes="auto"
+                        class="lazyload w__100 promo-banner-image image-1 mobile"
+                        alt="{{image.alt}}"
+                        width="420"
+                        height="420"
+                      >
+                      <div class="jas-wrap-lazy"></div>
+                    {%- endif -%}
+                  </div>
+                </div>
+                <div class="wrapper-content-baner gl_col-md-6 gl_col-lg-6">
+                  <div class="banner-inner">
+                    {%- if block.settings.category_heading != blank -%}
+                      <h2>
+                        <a href="{{ block.settings.banner_link }}">{{ block.settings.category_heading }}</a>
+                      </h2>
+                    {%- endif -%}
+                    {%- if block.settings.category_content != blank -%}
+                      <div>{{ block.settings.category_content }}</div>
+                    {%- endif -%}
+                    {%- if block.settings.banner_link != blank and block.settings.banner_btn_title != blank -%}
+                      <p>
+                        <a class="btn" href="{{ block.settings.banner_link }}">{{ block.settings.banner_btn_title }}</a>
+                      </p>
+                    {%- endif -%}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gl_col-md-6 gl_col-lg-6">
+              <div class="promo-banner" onclick="window.location.href='{{ block.settings.banner_link1 }}'">
+                <div class="main-wrapp-img gl_col-md-6 gl_col-lg-6">
+                  <div class="banner-image">
+                    {%- if block.settings.image1 == blank -%}
+                      <img
+                        class="promo-banner-image image-1"
+                        src="//cdn.shopify.com/s/files/1/1933/6253/files/portfolio-placeholder_600x400_crop_center.jpg?12790048884060573015"
+                        width="600"
+                        height="420"
+                        alt="market-banner-sport"
+                        title="market-banner-sport"
+                      >
+                    {%- else -%}
+                      {%- assign image = block.settings.image1 -%}
+                      {%- assign image_mob = block.settings.image1_mob -%}
+                      {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                      {%- assign image_mob = image_mob | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                      <img
+                        src="{{ image | img_url: '50x50' }}"
+                        data-src="{{ img_url }}"
+                        data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                        data-aspectratio="{{ image.aspect_ratio }}"
+                        data-sizes="auto"
+                        class="lazyload w__100 promo-banner-image image-1 desk"
+                        alt="{{image.alt}}"
+                        width="420"
+                        height="420"
+                      >
+                      <img
+                        src="{{ image_mob | img_url: '50x50' }}"
+                        data-src="{{ image_mob }}"
+                        data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                        data-aspectratio="{{ image.aspect_ratio }}"
+                        data-sizes="auto"
+                        class="lazyload w__100 promo-banner-image image-1 mobile"
+                        alt="{{image.alt}}"
+                        width="420"
+                        height="420"
+                      >
+
+                      <div class="jas-wrap-lazy"></div>
+                    {%- endif -%}
+                  </div>
+                </div>
+                <div class="wrapper-content-baner gl_col-md-6 gl_col-lg-6">
+                  <div class="banner-inner">
+                    {%- if block.settings.category_heading1 != blank -%}
+                      <h2>
+                        <a href="{{ block.settings.banner_link1 }}">{{ block.settings.category_heading1 }}</a>
+                      </h2>
+                    {%- endif -%}
+                    {%- if block.settings.category_content1 != blank -%}
+                      <div>{{ block.settings.category_content1 }}</div>
+                    {%- endif -%}
+                    {%- if block.settings.banner_link1 != blank and block.settings.banner_btn_title1 != blank -%}
+                      <p>
+                        <a class="btn" href="{{ block.settings.banner_link1 }}">
+                          {{- block.settings.banner_btn_title1 -}}
+                        </a>
+                      </p>
+                    {%- endif -%}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gl_col-md-6 gl_col-lg-6">
+              <div class="promo-banner" onclick="window.location.href='{{ block.settings.banner_link2 }}'">
+                <div class="main-wrapp-img gl_col-md-6 gl_col-lg-6">
+                  <div class="banner-image">
+                    {%- if block.settings.image2 == blank -%}
+                      <img
+                        class="promo-banner-image image-1"
+                        src="//cdn.shopify.com/s/files/1/1933/6253/files/portfolio-placeholder_600x400_crop_center.jpg?12790048884060573015"
+                        width="600"
+                        height="420"
+                        alt="market-banner-sport"
+                        title="market-banner-sport"
+                      >
+                    {%- else -%}
+                      {%- assign image = block.settings.image2 -%}
+                      {%- assign image_mob = block.settings.image2_mob -%}
+                      {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                      {%- assign image_mob = image_mob | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                      <img
+                        src="{{ image | img_url: '50x50' }}"
+                        data-src="{{ img_url }}"
+                        data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 850]"
+                        data-aspectratio="{{ image.aspect_ratio }}"
+                        data-sizes="auto"
+                        class="lazyload w__100 promo-banner-image image-1 desk"
+                        alt="{{image.alt}}"
+                        width="420"
+                        height="420"
+                      >
+                      <img
+                        src="{{ image_mob | img_url: '50x50' }}"
+                        data-src="{{ image_mob }}"
+                        data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 850]"
+                        data-aspectratio="{{ image.aspect_ratio }}"
+                        data-sizes="auto"
+                        class="lazyload w__100 promo-banner-image image-1 mobile"
+                        alt="{{image.alt}}"
+                        width="420"
+                        height="420"
+                      >
+                      <div class="jas-wrap-lazy"></div>
+                    {%- endif -%}
+                  </div>
+                </div>
+                <div class="wrapper-content-baner gl_col-md-6 gl_col-lg-6">
+                  <div class="banner-inner">
+                    {%- if block.settings.category_heading2 != blank -%}
+                      <h2>
+                        <a href="{{ block.settings.banner_link2 }}">{{ block.settings.category_heading2 }}</a>
+                      </h2>
+                    {%- endif -%}
+                    {%- if block.settings.category_content2 != blank -%}
+                      <div>{{ block.settings.category_content2 }}</div>
+                    {%- endif -%}
+                    {%- if block.settings.banner_link2 != blank and block.settings.banner_btn_title2 != blank -%}
+                      <p>
+                        <a class="btn" href="{{ block.settings.banner_link2 }}">
+                          {{- block.settings.banner_btn_title2 -}}
+                        </a>
+                      </p>
+                    {%- endif -%}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {%- endfor -%}
+</div>
+
+{%- schema -%}
+{
+  "name": "Featured New Categories",
+  "class": "index-section section_new_promo_categories",
+  "max_blocks": 2,
+  "settings": [
+   ],
+  "blocks": [
+    {
+      "type": "banner-1",
+      "name": "Category Style 1",
+      "settings": [
+      {
+        "type": "header",
+        "content": "== Featured Categories settings"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image top",
+        "info": "Select image"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_mob",
+        "label": "Image top",
+        "info": "Select image Mobile"
+      },
+      {
+        "type": "text",
+        "id": "category_heading",
+        "label": "Category Heading",
+        "info": "Add here Category Heading"
+      },
+      {
+        "type": "text",
+        "id": "category_content",
+        "label": "Category Content",
+        "info": "Add here Category Content"
+      },
+      {
+        "type": "text",
+        "id": "banner_btn_title",
+        "label": "Button title",
+        "info": "Add here few words to your title button."
+      },
+      {
+        "type": "url",
+        "id": "banner_link",
+        "label": "Banner link",
+        "info": "Enter URL if you want this banner to have a link."
+      },
+            {
+              "type": "header",
+              "content": "== Promo Categories"
+            },
+            {
+              "type": "image_picker",
+              "id": "image_first",
+              "label": "Image top",
+              "info": "Select image"
+            },
+            {
+              "type": "image_picker",
+              "id": "image_first_mob",
+              "label": "Image top",
+              "info": "Select image Mobile"
+            },
+            {
+              "type": "text",
+              "id": "category_heading_first",
+              "label": "Category Heading",
+              "info": "Add here Category Heading"
+            },
+            {
+              "type": "text",
+              "id": "category_content_first",
+              "label": "Category Content",
+              "info": "Add here Category Content"
+            },
+            {
+              "type": "text",
+              "id": "banner_btn_title_first",
+              "label": "Button title",
+              "info": "Add here few words to your title button."
+            },
+            {
+              "type": "url",
+              "id": "banner_link_first",
+              "label": "Banner link",
+              "info": "Enter URL if you want this banner to have a link."
+            },
+            {
+              "type": "header",
+              "content": "== Promo Categories"
+            },
+            {
+              "type": "image_picker",
+              "id": "image_secondd",
+              "label": "Image top",
+              "info": "Select image"
+            },
+            {
+              "type": "image_picker",
+              "id": "image_second_mob",
+              "label": "Image top",
+              "info": "Select image Mobile"
+            },
+            {
+              "type": "text",
+              "id": "category_heading_second",
+              "label": "Category Heading",
+              "info": "Add here Category Heading"
+            },
+            {
+              "type": "text",
+              "id": "category_content_second",
+              "label": "Category Content",
+              "info": "Add here Category Content"
+            },
+            {
+              "type": "text",
+              "id": "banner_btn_title_second",
+              "label": "Button title",
+              "info": "Add here few words to your title button."
+            },
+            {
+              "type": "url",
+              "id": "banner_link_second",
+              "label": "Banner link",
+              "info": "Enter URL if you want this banner to have a link."
+            },
+            {
+              "type": "header",
+              "content": "== Promo Categories"
+            },
+            {
+              "type": "image_picker",
+              "id": "image_third",
+              "label": "Image top",
+              "info": "Select image"
+            },
+            {
+              "type": "image_picker",
+              "id": "image_third_mob",
+              "label": "Image top",
+              "info": "Select image Mobile"
+            },
+            {
+              "type": "text",
+              "id": "category_heading_third",
+              "label": "Category Heading",
+              "info": "Add here Category Heading"
+            },
+            {
+              "type": "text",
+              "id": "category_content_third",
+              "label": "Category Content",
+              "info": "Add here Category Content"
+            },
+            {
+              "type": "text",
+              "id": "banner_btn_title_third",
+              "label": "Button title",
+              "info": "Add here few words to your title button."
+            },
+            {
+              "type": "url",
+              "id": "banner_link_third",
+              "label": "Banner link",
+              "info": "Enter URL if you want this banner to have a link."
+            }
+
+      ]
+    },
+    {
+            "type": "banner-2",
+            "name": "Category Style 2",
+            "settings": [
+            {
+              "type": "header",
+              "content": "== Promo Categories settings"
+            },
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Image top",
+              "info": "Select image"
+            },
+            {
+              "type": "image_picker",
+              "id": "image_style_mob",
+              "label": "Image top",
+              "info": "Select image Mobile"
+            },
+            {
+              "type": "text",
+              "id": "category_heading",
+              "label": "Category Heading",
+              "info": "Add here Category Heading"
+            },
+            {
+              "type": "text",
+              "id": "category_content",
+              "label": "Category Content",
+              "info": "Add here Category Content"
+            },
+            {
+              "type": "text",
+              "id": "banner_btn_title",
+              "label": "Button title",
+              "info": "Add here few words to your title button."
+            },
+            {
+              "type": "url",
+              "id": "banner_link",
+              "label": "Banner link",
+              "info": "Enter URL if you want this banner to have a link."
+            }
+            ,{
+              "type": "header",
+              "content": "== Promo Categories second"
+            },
+            {
+              "type": "image_picker",
+              "id": "image1",
+              "label": "Image top",
+              "info": "Select image"
+            },
+            {
+              "type": "image_picker",
+              "id": "image1_mob",
+              "label": "Image top",
+              "info": "Select image Mobile"
+            },
+            {
+              "type": "text",
+              "id": "category_heading1",
+              "label": "Category Heading",
+              "info": "Add here Category Heading"
+            },
+            {
+              "type": "text",
+              "id": "category_content1",
+              "label": "Category Content",
+              "info": "Add here Category Content"
+            },
+            {
+              "type": "text",
+              "id": "banner_btn_title1",
+              "label": "Button title",
+              "info": "Add here few words to your title button."
+            },
+            {
+              "type": "url",
+              "id": "banner_link1",
+              "label": "Banner link",
+              "info": "Enter URL if you want this banner to have a link."
+            },{
+              "type": "header",
+              "content": "== Promo Categories third"
+            },
+            {
+              "type": "image_picker",
+              "id": "image2",
+              "label": "Image top",
+              "info": "Select image"
+            },
+            {
+              "type": "image_picker",
+              "id": "image2_mob",
+              "label": "Image top",
+              "info": "Select image Mobile"
+            },
+            {
+              "type": "text",
+              "id": "category_heading2",
+              "label": "Category Heading",
+              "info": "Add here Category Heading"
+            },
+            {
+              "type": "text",
+              "id": "category_content2",
+              "label": "Category Content",
+              "info": "Add here Category Content"
+            },
+            {
+              "type": "text",
+              "id": "banner_btn_title2",
+              "label": "Button title",
+              "info": "Add here few words to your title button."
+            },
+            {
+              "type": "url",
+              "id": "banner_link2",
+              "label": "Banner link",
+              "info": "Enter URL if you want this banner to have a link."
+            }
+            ]
+          }
+  ],
+  "presets": [
+    {
+      "name": "Featured New Categories",
+      "category": "Image"
+    }
+  ]
+}
+{%- endschema -%}
