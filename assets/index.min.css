@@ -1813,6 +1813,18 @@ body section.brands-banner-section {
   
 }
 
+@media only screen and (max-width: 1550px) and (min-width:992px){
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6 .main-wrapp-img {
+    padding: 0 !important;
+}
+
+.section_new_promo_categories .spb_column.gl_column_container.gl_col-md-6  .wrapper-content-baner {
+    padding: 0 !important;
+}
+
+}
+  
 @media only screen and (max-width: 1199px) {
 
 
